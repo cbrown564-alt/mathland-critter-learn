@@ -9,7 +9,7 @@ const modules = [
     subtitle: "Build Your Foundation",
     character: null,
     topics: ["Algebra basics", "Functions", "Graphing"],
-    status: "available",
+    status: "available" as const,
     description: "Strengthen your mathematical foundation with essential algebra and function concepts.",
     color: "from-gray-400 to-slate-500",
     prerequisites: []
@@ -20,7 +20,7 @@ const modules = [
     subtitle: "Direction and Magnitude",
     character: "Vera the Vector",
     topics: ["Vector operations", "Linear combinations", "Basis vectors"],
-    status: "locked",
+    status: "locked" as const,
     description: "Learn the fundamentals of vectors with Vera as your guide.",
     color: "from-red-400 to-orange-500",
     prerequisites: [0]
@@ -31,7 +31,7 @@ const modules = [
     subtitle: "Structure and Transformation",
     character: "Matrix Max",
     topics: ["Matrix operations", "Transformations", "Rank and nullity"],
-    status: "locked",
+    status: "locked" as const,
     description: "Discover the power of matrices with wise Max's guidance.",
     color: "from-blue-400 to-indigo-500",
     prerequisites: [1]
@@ -42,7 +42,7 @@ const modules = [
     subtitle: "Hidden Patterns",
     character: "Eileen Eigen",
     topics: ["Characteristic equations", "PCA applications", "Diagonalization"],
-    status: "locked",
+    status: "locked" as const,
     description: "Uncover hidden patterns in data with Eileen's expertise.",
     color: "from-purple-400 to-pink-500",
     prerequisites: [2]
@@ -53,7 +53,7 @@ const modules = [
     subtitle: "Understanding Change",
     character: "Dr. Delta",
     topics: ["Partial derivatives", "Gradients", "Jacobians"],
-    status: "locked",
+    status: "locked" as const,
     description: "Master the calculus of change with Dr. Delta's patient teaching.",
     color: "from-green-400 to-emerald-500",
     prerequisites: [2]
@@ -64,7 +64,7 @@ const modules = [
     subtitle: "Finding the Best Path",
     character: "Gradient Greta",
     topics: ["Critical points", "Convexity", "Optimization algorithms"],
-    status: "locked",
+    status: "locked" as const,
     description: "Learn to find optimal solutions with Greta's mountain climbing wisdom.",
     color: "from-teal-400 to-cyan-500",
     prerequisites: [4]
@@ -75,7 +75,7 @@ const modules = [
     subtitle: "Embracing Uncertainty",
     character: "Probability Pippa",
     topics: ["Random variables", "Common distributions", "Central limit theorem"],
-    status: "locked",
+    status: "locked" as const,
     description: "Navigate uncertainty with Pippa's magical probability insights.",
     color: "from-pink-400 to-rose-500",
     prerequisites: [0]
@@ -86,7 +86,7 @@ const modules = [
     subtitle: "Making Statistical Decisions",
     character: "Sigmund the Swan",
     topics: ["p-values", "Confidence intervals", "Type I & II errors"],
-    status: "locked",
+    status: "locked" as const,
     description: "Test hypotheses with Sigmund's elegant statistical approach.",
     color: "from-slate-400 to-gray-500",
     prerequisites: [6]
@@ -97,7 +97,7 @@ const modules = [
     subtitle: "Smart Reasoning",
     character: "Bayes the Fox",
     topics: ["Prior and posterior", "Bayes' theorem", "MCMC methods"],
-    status: "locked",
+    status: "locked" as const,
     description: "Master Bayesian reasoning with Bayes' clever insights.",
     color: "from-amber-400 to-orange-500",
     prerequisites: [6]
@@ -108,7 +108,7 @@ const modules = [
     subtitle: "Real-World Application",
     character: "All Characters",
     topics: ["End-to-end data science", "Model building", "Results presentation"],
-    status: "locked",
+    status: "locked" as const,
     description: "Apply everything you've learned in a comprehensive data science project.",
     color: "from-violet-400 to-purple-500",
     prerequisites: [1, 2, 3, 4, 5, 6, 7, 8]
