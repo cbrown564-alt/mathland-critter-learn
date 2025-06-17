@@ -1,5 +1,6 @@
 
 import { Lock, CheckCircle, PlayCircle, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import { ModuleCard } from "./ModuleCard";
 
 const modules = [
@@ -165,9 +166,11 @@ export const CourseRoadmap = () => {
               Start with Module 0 or take our placement assessment to find your perfect starting point.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-all">
-                Start Module 0
-              </button>
+              <Link to="/module-0">
+                <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-all">
+                  Start Module 0
+                </button>
+              </Link>
               <button className="border-2 border-green-400 text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-semibold transition-all">
                 Take Placement Test
               </button>
