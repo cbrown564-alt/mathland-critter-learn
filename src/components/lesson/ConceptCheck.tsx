@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CheckCircle, X, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CharacterAvatar } from "@/components/CharacterAvatar";
 
 interface ConceptCheckProps {
   conceptCheck: {
@@ -43,18 +44,15 @@ export const ConceptCheck = ({ conceptCheck, character, onComplete, isCompleted 
   const isCorrect = selectedAnswer === conceptCheck.correctAnswer;
 
   return (
-    <Card className="mb-8 border-l-4 border-l-green-400">
+    <Card className="mb-6 border-l-4 border-l-green-400 shadow-sm">
       <CardHeader 
-        className="cursor-pointer"
+        className="cursor-pointer hover:bg-gray-50 transition-colors"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <CardTitle className="flex items-center justify-between">
+        <CardTitle className="flex items-center justify-between text-lg">
           <span className="flex items-center gap-2">
             ✅ Concept Check
             {isCompleted && <CheckCircle className="w-5 h-5 text-green-500" />}
-          </span>
-          <span className="text-sm font-normal text-gray-500">
-            {isExpanded ? 'Click to collapse' : 'Click to expand'}
           </span>
         </CardTitle>
       </CardHeader>
@@ -100,50 +98,52 @@ export const ConceptCheck = ({ conceptCheck, character, onComplete, isCompleted 
           </div>
 
           {showResult && (
-            <div className={`rounded-lg p-4 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
-              <div className="flex items-start gap-3">
-                {isCorrect ? (
-                  <CheckCircle className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-                ) : (
-                  <AlertCircle className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" />
+            <>
+              <div className={`rounded-lg p-4 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
+                <div className="flex items-start gap-3">
+                  {isCorrect ? (
+                    <CheckCircle className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
+                  ) : (
+                    <AlertCircle className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" />
+                  )}
+                  <div className="flex-1">
+                    <p className={`font-medium mb-2 ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
+                      {isCorrect ? 'Correct!' : 'Not quite right.'}
+                    </p>
+                    <p className={`text-sm ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                      {conceptCheck.explanation}
+                    </p>
+                  </div>
+                </div>
+                
+                {!isCorrect && (
+                  <Button
+                    onClick={resetQuiz}
+                    variant="outline"
+                    size="sm"
+                    className="mt-3"
+                  >
+                    Try Again
+                  </Button>
                 )}
-                <div className="flex-1">
-                  <p className={`font-medium mb-2 ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
-                    {isCorrect ? 'Correct!' : 'Not quite right.'}
-                  </p>
-                  <p className={`text-sm ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                    {conceptCheck.explanation}
-                  </p>
-                </div>
               </div>
-              
-              {!isCorrect && (
-                <Button
-                  onClick={resetQuiz}
-                  variant="outline"
-                  size="sm"
-                  className="mt-3"
-                >
-                  Try Again
-                </Button>
-              )}
-            </div>
-          )}
 
-          {showResult && isCorrect && (
-            <div className={`bg-gradient-to-r ${character.color} bg-opacity-10 rounded-lg p-4`}>
-              <div className="flex items-center gap-3">
-                <img 
-                  src={character.avatar} 
-                  alt={character.name}
-                  className="w-12 h-12 rounded-full"
-                />
-                <div>
-                  <p className="font-medium text-gray-800">{character.name} says:</p>
-                  <p className="text-gray-700">"Excellent work! You've got this concept down."</p>
+              {isCorrect && (
+                <div className={`bg-gradient-to-r ${character.color} bg-opacity-10 rounded-lg p-4`}>
+                  <div className="flex items-center gap-3">
+                    <CharacterAvatar 
+                      src={character.avatar} 
+                      alt={character.name}
+                      size="md"
+                    />
+                    <div>
+                      <p className="font-medium text-gray-800">{character.name} says:</p>
+                      <p className="text-gray-700">"Excellent work! You've got this concept down."</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              )}
+            </>
           )}
         </CardContent>
       )}

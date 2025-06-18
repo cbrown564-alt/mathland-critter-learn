@@ -1,4 +1,3 @@
-
 import { Clock, Play, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
@@ -10,10 +9,10 @@ const module0Characters = [
     name: "Ollie the Otter",
     animal: "Otter",
     concept: "Algebraic Foundations",
-    tagline: "Let's take this step by step!",
-    description: "Methodical and encouraging, Ollie guides you through algebraic basics with patience and clear explanations.",
-    color: "from-amber-600 to-yellow-600",
-    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=face",
+    tagline: "Let's build this step by step!",
+    description: "Patient and methodical, Ollie guides you through algebraic basics with clear explanations and encouraging support.",
+    color: "from-amber-500 to-orange-500",
+    image: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png",
     lessons: ["0.1", "0.2", "0.3", "0.4"]
   },
   {
@@ -22,9 +21,9 @@ const module0Characters = [
     animal: "Robot",
     concept: "Functions & Graphing",
     tagline: "Input processed successfully!",
-    description: "Logical and systematic, Felix helps you understand functions and graphing with tech-savvy precision.",
-    color: "from-blue-600 to-indigo-600",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop&crop=face",
+    description: "Logical and systematic, Felix helps you understand functions and graphing with tech-savvy precision and analytical thinking.",
+    color: "from-blue-500 to-indigo-500",
+    image: "/lovable-uploads/3972307e-38ad-4120-a059-7785ae6a8516.png",
     lessons: ["0.5", "0.6", "0.7"]
   }
 ];
@@ -116,7 +115,7 @@ const Module0 = () => {
             <div className="flex items-center justify-center gap-6 text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                <span>3.5-4 hours of engaging learning</span>
+                <span>3.5-4 hours</span>
               </div>
               <div className="flex items-center gap-2">
                 <Play className="w-5 h-5" />
@@ -145,8 +144,8 @@ const Module0 = () => {
               </span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Two dedicated characters will guide you through the foundational concepts, 
-              making math approachable and engaging for your data science journey.
+              Two dedicated characters will guide you through foundational concepts, 
+              making math approachable and engaging.
             </p>
           </div>
 
@@ -167,8 +166,7 @@ const Module0 = () => {
               </span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Follow our carefully crafted path from basic algebra to function concepts, 
-              building the foundation you need for advanced data science mathematics.
+              Follow our carefully crafted path from basic algebra to function concepts.
             </p>
           </div>
 
@@ -179,7 +177,7 @@ const Module0 = () => {
         <section>
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              What You'll Master in Module 0
+              What You'll Master
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center p-4">
@@ -187,7 +185,7 @@ const Module0 = () => {
                   <span className="text-xl font-bold">±</span>
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Algebra Basics</h4>
-                <p className="text-sm text-gray-600">Operations, expressions, and equation solving</p>
+                <p className="text-sm text-gray-600">Operations, expressions, and equations</p>
               </div>
               <div className="text-center p-4">
                 <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
@@ -201,14 +199,14 @@ const Module0 = () => {
                   <span className="text-xl font-bold">📈</span>
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Graphing</h4>
-                <p className="text-sm text-gray-600">Coordinate systems and function visualization</p>
+                <p className="text-sm text-gray-600">Coordinate systems and visualization</p>
               </div>
               <div className="text-center p-4">
                 <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold">→</span>
                 </div>
                 <h4 className="font-semibold text-gray-800 mb-2">Vector Preview</h4>
-                <p className="text-sm text-gray-600">Introduction to vectors for Module 1</p>
+                <p className="text-sm text-gray-600">Introduction for Module 1</p>
               </div>
             </div>
           </div>
