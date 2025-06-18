@@ -1,0 +1,43 @@
+
+export interface LessonData {
+  id: string;
+  title: string;
+  duration: string;
+  character: {
+    name: string;
+    fullName: string;
+    personality: string;
+    catchphrase: string;
+    color: string;
+    avatar: string;
+  };
+  narrativeHook: {
+    story: string;
+    characterMessage: string;
+  };
+  learningObjectives: string[];
+  coreConcepts: string[];
+  memoryAids: {
+    mantra: string;
+    visual: string;
+  };
+  realWorldConnection: string;
+  conceptCheck: {
+    question: string;
+    options: string[];
+    correctAnswer: number;
+    explanation: string;
+  };
+  readContent: string;
+  seeContent: string;
+  hearContent: string;
+  doContent: string;
+}
+
+export interface LessonProgress {
+  sectionsCompleted: string[];
+  conceptsChecked: boolean[];
+  timeSpent: number;
+  confidenceRating: number;
+  currentSection: string;
+}

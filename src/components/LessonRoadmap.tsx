@@ -1,5 +1,6 @@
 
 import { Lock, CheckCircle, PlayCircle, ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface Lesson {
@@ -94,17 +95,24 @@ export const LessonRoadmap = ({ lessons }: LessonRoadmapProps) => {
                     <div className="text-xs text-gray-500">
                       {lesson.character === "Vera" ? "Preview for Module 1" : `Part of algebraic foundations`}
                     </div>
-                    <Button
-                      size="sm"
-                      className={`${
-                        isInteractive
-                          ? `bg-gradient-to-r ${characterColor} hover:opacity-90`
-                          : "bg-gray-300 cursor-not-allowed"
-                      } text-white`}
-                      disabled={!isInteractive}
-                    >
-                      {getStatusText(lesson.status)}
-                    </Button>
+                    {isInteractive ? (
+                      <Link to={`/lesson/${lesson.id}`}>
+                        <Button
+                          size="sm"
+                          className={`bg-gradient-to-r ${characterColor} hover:opacity-90 text-white`}
+                        >
+                          {getStatusText(lesson.status)}
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button
+                        size="sm"
+                        className="bg-gray-300 cursor-not-allowed text-white"
+                        disabled
+                      >
+                        {getStatusText(lesson.status)}
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
