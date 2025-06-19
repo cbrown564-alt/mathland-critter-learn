@@ -4,9 +4,14 @@ import { LessonData } from "@/types/lesson";
 
 const getLessonData = (lessonId: string): LessonData => {
   const characterImages = {
-    "Ollie the Otter": "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png",
-    "Felix the Function Machine": "/lovable-uploads/3972307e-38ad-4120-a059-7785ae6a8516.png",
-    "Vera the Vector": "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png"
+    "Ollie the Otter": "/lovable-uploads/ollie-the-otter.png",
+    "Felix the Function Machine": "/lovable-uploads/felix-the-function-machine.png",
+    "Vera the Vector": "/lovable-uploads/vera-the-vector.png",
+    "Ada the Algorithm": "/lovable-uploads/ada-the-algorithm.png",
+    "Carl the Calculator": "/lovable-uploads/carl-the-calculator.png",
+    "Stella the Stat": "/lovable-uploads/stella-the-stat.png",
+    "Max the Matrix": "/lovable-uploads/max-the-matrix.png",
+    "Penny the Probability": "/lovable-uploads/penny-the-probability.png"
   };
 
   const lessons: { [key: string]: LessonData } = {
@@ -31,6 +36,12 @@ const getLessonData = (lessonId: string): LessonData => {
         "Simplify complex algebraic expressions",
         "Identify and work with like terms",
         "Understand the distributive property"
+      ],
+      coreConcepts: [
+        "Order of operations (PEMDAS/BODMAS)",
+        "Simplifying algebraic expressions",
+        "Like terms and coefficients",
+        "Distributive property"
       ],
       readContent: "The order of operations is fundamental to all mathematics. Think of it as the grammar of math - without it, expressions become ambiguous. PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction) gives us a universal language for solving expressions consistently.",
       seeContent: "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",
