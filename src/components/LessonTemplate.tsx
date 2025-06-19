@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, Home, Clock, Play, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -25,6 +24,13 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     new Array(lesson.learningObjectives.length).fill(false)
   );
 
+  // Reset state when lesson changes
+  useEffect(() => {
+    setCompletedSections([]);
+    setObjectivesCompleted(new Array(lesson.learningObjectives.length).fill(false));
+    setActiveTab("read");
+  }, [lesson.id, lesson.learningObjectives.length]);
+
   const markSectionComplete = (sectionId: string) => {
     if (!completedSections.includes(sectionId)) {
       setCompletedSections([...completedSections, sectionId]);
@@ -37,9 +43,9 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     setObjectivesCompleted(newObjectives);
   };
 
-  const progressPercentage = Math.round(
-    (completedSections.length / 6) * 100 // 6 main sections: narrative, objectives, 4 tabs
-  );
+  // Fix progress calculation - count main sections only
+  const totalSections = 5; // narrative, objectives, one tab content, memory, concept, realworld
+  const progressPercentage = Math.round((completedSections.length / totalSections) * 100);
 
   return (
     <div className={`min-h-screen bg-gradient-to-br ${lesson.character.color} from-opacity-10 to-opacity-20`}>

@@ -17,6 +17,8 @@ const getLessonData = (lessonId: string): LessonData => {
       character: {
         name: "Ollie",
         fullName: "Ollie the Otter",
+        personality: "Methodical, Step-by-step",
+        catchphrase: "Let's take this step by step!",
         color: "from-amber-500 to-orange-500",
         avatar: characterImages["Ollie the Otter"]
       },
@@ -56,7 +58,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Methodical, Step-by-step",
         catchphrase: "Let's take this step by step!",
         color: "from-amber-600 to-yellow-600",
-        avatar: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Ollie the Otter"]
       },
       narrativeHook: {
         story: "Ollie's dam can be built in sections, then combined - or taken apart and rebuilt. Algebraic expressions work the same way: we can expand them into parts or factor them back together.",
@@ -106,7 +108,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Methodical, Step-by-step",
         catchphrase: "Let's take this step by step!",
         color: "from-amber-600 to-yellow-600",
-        avatar: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Ollie the Otter"]
       },
       narrativeHook: {
         story: "Sometimes Ollie needs to find the perfect spot where the water level meets his dam height. This is like solving equations - finding where two things are equal.",
@@ -156,7 +158,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Methodical, Step-by-step",
         catchphrase: "Let's take this step by step!",
         color: "from-amber-600 to-yellow-600",
-        avatar: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Ollie the Otter"]
       },
       narrativeHook: {
         story: "Ollie's dam needs to be at least 3 feet high to work properly, but no more than 6 feet to avoid flooding. This is like mathematical inequalities - values within a range.",
@@ -206,7 +208,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Logical, Systematic",
         catchphrase: "Input processed successfully!",
         color: "from-blue-600 to-indigo-600",
-        avatar: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Felix the Function Machine"]
       },
       narrativeHook: {
         story: "Meet Felix, a helpful robot who takes inputs and produces outputs following specific rules. Felix represents what we call 'functions' - mathematical machines that transform numbers.",
@@ -257,7 +259,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Logical, Systematic",
         catchphrase: "Input processed successfully!",
         color: "from-blue-600 to-indigo-600",
-        avatar: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Felix the Function Machine"]
       },
       narrativeHook: {
         story: "Felix's outputs can be visualized as a path on a graph. Different function types create different shapes - lines, curves, and more complex patterns that tell stories about data relationships.",
@@ -308,7 +310,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Logical, Systematic",
         catchphrase: "Input processed successfully!",
         color: "from-blue-600 to-indigo-600",
-        avatar: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Felix the Function Machine"]
       },
       narrativeHook: {
         story: "Felix needs to calculate distances and find midpoints between his processing stations. These geometric calculations are fundamental to understanding spatial relationships in data.",
@@ -357,7 +359,7 @@ const getLessonData = (lessonId: string): LessonData => {
         personality: "Adventurous, Forward-thinking",
         catchphrase: "Direction and magnitude matter!",
         color: "from-red-600 to-orange-600",
-        avatar: "https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400&h=400&fit=crop&crop=face"
+        avatar: characterImages["Vera the Vector"]
       },
       narrativeHook: {
         story: "Before we dive deeper with Vera in Module 1, let's meet her briefly and learn the language of mathematics - Greek symbols and basic vector notation that will be essential for advanced data science.",
