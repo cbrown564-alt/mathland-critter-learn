@@ -1,7 +1,8 @@
-import { Clock, Play, ArrowRight } from "lucide-react";
+import { Clock, Play, ArrowRight, ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
 import { LessonRoadmap } from "@/components/LessonRoadmap";
+import { useNavigate } from "react-router-dom";
 
 const module0Characters = [
   {
@@ -96,23 +97,36 @@ const lessons = [
 ];
 
 const Module0 = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header Section */}
-      <div className="bg-white/80 backdrop-blur-sm border-b border-amber-100">
+      <div className="bg-white/90 backdrop-blur-sm border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center justify-between mb-6">
+            <Button
+              variant="outline"
+              onClick={() => navigate("/")}
+              className="border-slate-300 text-slate-700 hover:bg-slate-50"
+            >
+              <Home className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </div>
+          
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-4">
-              <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
               Module 0
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
               Prerequisites & Refresher
             </h1>
-            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 mb-6 max-w-3xl mx-auto">
               Building Your Mathematical Foundation
             </p>
-            <div className="flex items-center justify-center gap-6 text-gray-500 mb-8">
+            <div className="flex items-center justify-center gap-6 text-slate-500 mb-8">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
                 <span>3.5-4 hours</span>
@@ -124,7 +138,8 @@ const Module0 = () => {
             </div>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 text-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+              onClick={() => navigate("/lesson/0.1")}
             >
               Start Module 0
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -137,13 +152,13 @@ const Module0 = () => {
         {/* Character Introductions */}
         <section className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
               Meet Your Learning{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                 Guides
               </span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Two dedicated characters will guide you through foundational concepts, 
               making math approachable and engaging.
             </p>
@@ -159,13 +174,13 @@ const Module0 = () => {
         {/* Learning Pathway */}
         <section className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
               Your Learning{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                 Journey
               </span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Follow our carefully crafted path from basic algebra to function concepts.
             </p>
           </div>
@@ -176,37 +191,37 @@ const Module0 = () => {
         {/* Module Overview */}
         <section>
           <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+            <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center">
               What You'll Master
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center p-4">
-                <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold">±</span>
                 </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Algebra Basics</h4>
-                <p className="text-sm text-gray-600">Operations, expressions, and equations</p>
+                <h4 className="font-semibold text-slate-800 mb-2">Algebra Basics</h4>
+                <p className="text-sm text-slate-600">Operations, expressions, and equations</p>
               </div>
               <div className="text-center p-4">
                 <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold">f(x)</span>
                 </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Functions</h4>
-                <p className="text-sm text-gray-600">Notation, concepts, and applications</p>
+                <h4 className="font-semibold text-slate-800 mb-2">Functions</h4>
+                <p className="text-sm text-slate-600">Notation, concepts, and applications</p>
               </div>
               <div className="text-center p-4">
-                <div className="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold">📈</span>
                 </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Graphing</h4>
-                <p className="text-sm text-gray-600">Coordinate systems and visualization</p>
+                <h4 className="font-semibold text-slate-800 mb-2">Graphing</h4>
+                <p className="text-sm text-slate-600">Coordinate systems and visualization</p>
               </div>
               <div className="text-center p-4">
-                <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold">→</span>
                 </div>
-                <h4 className="font-semibold text-gray-800 mb-2">Vector Preview</h4>
-                <p className="text-sm text-gray-600">Introduction for Module 1</p>
+                <h4 className="font-semibold text-slate-800 mb-2">Vector Preview</h4>
+                <p className="text-sm text-slate-600">Introduction for Module 1</p>
               </div>
             </div>
           </div>

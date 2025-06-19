@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 import { LessonTemplate } from "@/components/LessonTemplate";
 import { LessonData } from "@/types/lesson";
@@ -31,6 +32,12 @@ const getLessonData = (lessonId: string): LessonData => {
         "Simplify complex algebraic expressions",
         "Identify and work with like terms",
         "Understand the distributive property"
+      ],
+      coreConcepts: [
+        "Order of operations (PEMDAS/BODMAS)",
+        "Simplifying expressions",
+        "Like terms",
+        "Distributive property"
       ],
       readContent: "The order of operations is fundamental to all mathematics. Think of it as the grammar of math - without it, expressions become ambiguous. PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction) gives us a universal language for solving expressions consistently.",
       seeContent: "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",

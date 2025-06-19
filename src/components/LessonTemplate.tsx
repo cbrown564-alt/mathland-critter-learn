@@ -1,9 +1,10 @@
+
 import { useState, useEffect } from "react";
-import { ArrowLeft, ArrowRight, Home, Clock, Play, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Home, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 import { LessonData } from "@/types/lesson";
 import { NarrativeHook } from "./lesson/NarrativeHook";
 import { LearningObjectives } from "./lesson/LearningObjectives";
@@ -18,285 +19,194 @@ interface LessonTemplateProps {
 }
 
 export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: LessonTemplateProps) => {
-  const [activeTab, setActiveTab] = useState("read");
-  const [completedSections, setCompletedSections] = useState<string[]>([]);
-  const [objectivesCompleted, setObjectivesCompleted] = useState<boolean[]>(
-    new Array(lesson.learningObjectives.length).fill(false)
-  );
+  const navigate = useNavigate();
+  const [completedSections, setCompletedSections] = useState<Set<string>>(new Set());
+  const [currentSection, setCurrentSection] = useState<string>("narrative");
 
-  // Reset state when lesson changes
+  const sections = [
+    { id: "narrative", title: "Story Hook", component: NarrativeHook },
+    { id: "objectives", title: "Learning Goals", component: LearningObjectives },
+    { id: "read", title: "Read", component: () => <div className="prose max-w-none"><p>{lesson.readContent}</p></div> },
+    { id: "see", title: "See", component: () => <div className="prose max-w-none"><p>{lesson.seeContent}</p></div> },
+    { id: "hear", title: "Hear", component: () => <div className="prose max-w-none"><p>{lesson.hearContent}</p></div> },
+    { id: "do", title: "Do", component: () => <div className="prose max-w-none"><p>{lesson.doContent}</p></div> },
+    { id: "memory", title: "Memory Aids", component: MemoryAids },
+    { id: "concept", title: "Concept Check", component: ConceptCheck },
+    { id: "realworld", title: "Real World", component: RealWorldConnection }
+  ];
+
+  // Reset completed sections when lesson changes
   useEffect(() => {
-    setCompletedSections([]);
-    setObjectivesCompleted(new Array(lesson.learningObjectives.length).fill(false));
-    setActiveTab("read");
-  }, [lesson.id, lesson.learningObjectives.length]);
+    setCompletedSections(new Set());
+    setCurrentSection("narrative");
+  }, [lesson.id]);
 
-  const markSectionComplete = (sectionId: string) => {
-    if (!completedSections.includes(sectionId)) {
-      setCompletedSections([...completedSections, sectionId]);
+  const toggleSection = (sectionId: string) => {
+    const newCompleted = new Set(completedSections);
+    if (newCompleted.has(sectionId)) {
+      newCompleted.delete(sectionId);
+    } else {
+      newCompleted.add(sectionId);
     }
+    setCompletedSections(newCompleted);
   };
 
-  const toggleObjective = (index: number) => {
-    const newObjectives = [...objectivesCompleted];
-    newObjectives[index] = !newObjectives[index];
-    setObjectivesCompleted(newObjectives);
-  };
+  const progressPercentage = Math.min((completedSections.size / sections.length) * 100, 100);
 
-  // Fix progress calculation - count main sections only
-  const totalSections = 5; // narrative, objectives, one tab content, memory, concept, realworld
-  const progressPercentage = Math.round((completedSections.length / totalSections) * 100);
+  const CurrentComponent = sections.find(s => s.id === currentSection)?.component || NarrativeHook;
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${lesson.character.color} from-opacity-10 to-opacity-20`}>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Header */}
-      <div className="bg-white/90 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          {/* Navigation */}
-          <div className="flex items-center justify-between mb-4">
+      <div className="bg-white/90 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link to="/module-0">
-                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-gray-800">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Module 0
-                </Button>
-              </Link>
-              <Link to="/">
-                <Button variant="ghost" size="sm" className="text-gray-600 hover:text-gray-800">
-                  <Home className="w-4 h-4 mr-2" />
-                  Home
-                </Button>
-              </Link>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => navigate("/")}
+                className="border-slate-300 text-slate-700 hover:bg-slate-50"
+              >
+                <Home className="w-4 h-4 mr-2" />
+                Home
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => navigate("/module-0")}
+                className="border-slate-300 text-slate-700 hover:bg-slate-50"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Module 0
+              </Button>
             </div>
-            
-            <div className="flex items-center gap-4">
-              {previousLessonId && (
-                <Link to={`/lesson/${previousLessonId}`}>
-                  <Button variant="outline" size="sm">
-                    <ArrowLeft className="w-4 h-4 mr-2" />
-                    Previous
-                  </Button>
-                </Link>
-              )}
-              {nextLessonId && (
-                <Link to={`/lesson/${nextLessonId}`}>
-                  <Button size="sm" className={`bg-gradient-to-r ${lesson.character.color}`}>
-                    Next
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              )}
-            </div>
-          </div>
 
-          {/* Lesson Header */}
-          <div className="flex items-center gap-4">
-            <img 
-              src={lesson.character.avatar} 
-              alt={lesson.character.name}
-              className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
-            />
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-sm font-medium text-gray-500">Lesson {lesson.id}</span>
-                <span className="text-sm text-gray-400">•</span>
-                <span className="text-sm text-gray-500 flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  {lesson.duration}
-                </span>
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2 text-slate-600">
+                <Clock className="w-4 h-4" />
+                <span className="text-sm">{lesson.duration}</span>
               </div>
-              <h1 className="text-2xl font-bold text-gray-800 mb-1">{lesson.title}</h1>
-              <p className="text-sm text-gray-600">with {lesson.character.fullName}</p>
-            </div>
-            <div className="text-right">
-              <div className="text-2xl font-bold text-gray-800">{progressPercentage}%</div>
-              <div className="text-sm text-gray-500">Complete</div>
-            </div>
-          </div>
-
-          {/* Progress Bar */}
-          <div className="mt-4">
-            <div className="w-full bg-gray-200 rounded-full h-2">
-              <div 
-                className={`bg-gradient-to-r ${lesson.character.color} h-2 rounded-full transition-all duration-300`}
-                style={{ width: `${progressPercentage}%` }}
-              ></div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-slate-600">Progress</span>
+                <div className="w-24">
+                  <Progress value={progressPercentage} className="h-2" />
+                </div>
+                <span className="text-sm text-slate-600">{Math.round(progressPercentage)}%</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Narrative Hook */}
-        <NarrativeHook 
-          lesson={lesson} 
-          onComplete={() => markSectionComplete('narrative')}
-          isCompleted={completedSections.includes('narrative')}
-        />
-
-        {/* Learning Objectives */}
-        <LearningObjectives 
-          objectives={lesson.learningObjectives}
-          completed={objectivesCompleted}
-          onToggle={toggleObjective}
-          onComplete={() => markSectionComplete('objectives')}
-          isCompleted={completedSections.includes('objectives')}
-        />
-
-        {/* Multimodal Content Tabs */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <span>Learning Content</span>
-              <span className="text-sm font-normal text-gray-500">
-                Choose your preferred learning style
-              </span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <Tabs value={activeTab} onValueChange={setActiveTab}>
-              <TabsList className="grid w-full grid-cols-4 mb-6">
-                <TabsTrigger value="read" className="flex items-center gap-2">
-                  📖 Read
-                </TabsTrigger>
-                <TabsTrigger value="see" className="flex items-center gap-2">
-                  👁 See
-                </TabsTrigger>
-                <TabsTrigger value="hear" className="flex items-center gap-2">
-                  🎧 Hear
-                </TabsTrigger>
-                <TabsTrigger value="do" className="flex items-center gap-2">
-                  🧪 Do
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="read" className="space-y-4">
-                <div className="prose max-w-none">
-                  <p className="text-gray-700 leading-relaxed">{lesson.readContent}</p>
-                </div>
-                <Button 
-                  onClick={() => markSectionComplete('read')}
-                  className={`${completedSections.includes('read') ? 'bg-green-500' : `bg-gradient-to-r ${lesson.character.color}`}`}
-                >
-                  {completedSections.includes('read') ? (
-                    <>
-                      <CheckCircle className="w-4 h-4 mr-2" />
-                      Completed
-                    </>
-                  ) : (
-                    'Mark as Complete'
-                  )}
-                </Button>
-              </TabsContent>
-
-              <TabsContent value="see" className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-6 text-center">
-                  <div className="text-gray-500 mb-4">Interactive Visualization Area</div>
-                  <p className="text-gray-700">{lesson.seeContent}</p>
-                  <div className="mt-4 p-4 bg-white rounded border-2 border-dashed border-gray-300">
-                    <Play className="w-8 h-8 mx-auto text-gray-400 mb-2" />
-                    <p className="text-sm text-gray-500">Visual content will be loaded here</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <Card className="sticky top-32">
+              <CardContent className="p-6">
+                {/* Character */}
+                <div className="flex items-center gap-3 mb-6">
+                  <img 
+                    src={lesson.character.avatar} 
+                    alt={lesson.character.fullName}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-lg"
+                  />
+                  <div>
+                    <h3 className="font-semibold text-slate-800">{lesson.character.name}</h3>
+                    <p className="text-sm text-slate-600">{lesson.character.personality}</p>
                   </div>
                 </div>
-                <Button 
-                  onClick={() => markSectionComplete('see')}
-                  className={`${completedSections.includes('see') ? 'bg-green-500' : `bg-gradient-to-r ${lesson.character.color}`}`}
-                >
-                  {completedSections.includes('see') ? (
-                    <>
-                      <CheckCircle className="w-4 h-4 mr-2" />
-                      Completed
-                    </>
-                  ) : (
-                    'Mark as Complete'
-                  )}
-                </Button>
-              </TabsContent>
 
-              <TabsContent value="hear" className="space-y-4">
-                <div className="bg-gray-50 rounded-lg p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <img 
-                      src={lesson.character.avatar} 
-                      alt={lesson.character.name}
-                      className="w-12 h-12 rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="bg-white rounded-lg p-3 shadow-sm">
-                        <p className="text-gray-700">{lesson.hearContent}</p>
+                {/* Section Navigation */}
+                <div className="space-y-2">
+                  <h4 className="font-medium text-slate-800 mb-3">Lesson Sections</h4>
+                  {sections.map((section) => (
+                    <button
+                      key={section.id}
+                      onClick={() => setCurrentSection(section.id)}
+                      className={`w-full flex items-center justify-between p-3 rounded-lg text-sm transition-colors ${
+                        currentSection === section.id
+                          ? "bg-blue-50 text-blue-700 border border-blue-200"
+                          : "hover:bg-slate-50 text-slate-700"
+                      }`}
+                    >
+                      <span>{section.title}</span>
+                      <div className="flex items-center gap-2">
+                        {completedSections.has(section.id) && (
+                          <CheckCircle className="w-4 h-4 text-green-500" />
+                        )}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleSection(section.id);
+                          }}
+                          className={`w-4 h-4 rounded border-2 ${
+                            completedSections.has(section.id)
+                              ? "bg-green-500 border-green-500"
+                              : "border-slate-300 hover:border-slate-400"
+                          }`}
+                        />
                       </div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded border-2 border-dashed border-gray-300 p-4 text-center">
-                    <Play className="w-8 h-8 mx-auto text-gray-400 mb-2" />
-                    <p className="text-sm text-gray-500">Audio player will be integrated here</p>
-                  </div>
+                    </button>
+                  ))}
                 </div>
-                <Button 
-                  onClick={() => markSectionComplete('hear')}
-                  className={`${completedSections.includes('hear') ? 'bg-green-500' : `bg-gradient-to-r ${lesson.character.color}`}`}
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Main Content */}
+          <div className="lg:col-span-3">
+            <div className="mb-8">
+              <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+                Lesson {lesson.id}
+              </div>
+              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+                {lesson.title}
+              </h1>
+            </div>
+
+            <Card>
+              <CardContent className="p-8">
+                <CurrentComponent lesson={lesson} />
+              </CardContent>
+            </Card>
+
+            {/* Navigation */}
+            <div className="flex justify-between items-center mt-8">
+              {previousLessonId ? (
+                <Button
+                  variant="outline"
+                  onClick={() => navigate(`/lesson/${previousLessonId}`)}
+                  className="border-slate-300 text-slate-700 hover:bg-slate-50"
                 >
-                  {completedSections.includes('hear') ? (
-                    <>
-                      <CheckCircle className="w-4 h-4 mr-2" />
-                      Completed
-                    </>
-                  ) : (
-                    'Mark as Complete'
-                  )}
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Previous Lesson
                 </Button>
-              </TabsContent>
+              ) : (
+                <div />
+              )}
 
-              <TabsContent value="do" className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-6">
-                  <h4 className="font-semibold text-gray-800 mb-3">Interactive Exercise</h4>
-                  <p className="text-gray-700 mb-4">{lesson.doContent}</p>
-                  <div className="bg-white rounded border-2 border-dashed border-blue-300 p-6 text-center">
-                    <div className="text-blue-400 mb-2">🧪</div>
-                    <p className="text-sm text-gray-500">Interactive exercises will be loaded here</p>
-                  </div>
-                </div>
-                <Button 
-                  onClick={() => markSectionComplete('do')}
-                  className={`${completedSections.includes('do') ? 'bg-green-500' : `bg-gradient-to-r ${lesson.character.color}`}`}
+              {nextLessonId ? (
+                <Button
+                  onClick={() => navigate(`/lesson/${nextLessonId}`)}
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
                 >
-                  {completedSections.includes('do') ? (
-                    <>
-                      <CheckCircle className="w-4 h-4 mr-2" />
-                      Completed
-                    </>
-                  ) : (
-                    'Mark as Complete'
-                  )}
+                  Next Lesson
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-              </TabsContent>
-            </Tabs>
-          </CardContent>
-        </Card>
-
-        {/* Memory Aids */}
-        <MemoryAids 
-          memoryAids={lesson.memoryAids}
-          character={lesson.character}
-          onComplete={() => markSectionComplete('memory')}
-          isCompleted={completedSections.includes('memory')}
-        />
-
-        {/* Concept Check */}
-        <ConceptCheck 
-          conceptCheck={lesson.conceptCheck}
-          character={lesson.character}
-          onComplete={() => markSectionComplete('concept')}
-          isCompleted={completedSections.includes('concept')}
-        />
-
-        {/* Real-World Connection */}
-        <RealWorldConnection 
-          connection={lesson.realWorldConnection}
-          onComplete={() => markSectionComplete('realworld')}
-          isCompleted={completedSections.includes('realworld')}
-        />
+              ) : (
+                <Button
+                  onClick={() => navigate("/module-0")}
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Back to Module
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
