@@ -24,15 +24,15 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   const [currentSection, setCurrentSection] = useState<string>("narrative");
 
   const sections = [
-    { id: "narrative", title: "Story Hook", component: NarrativeHook },
-    { id: "objectives", title: "Learning Goals", component: LearningObjectives },
-    { id: "read", title: "Read", component: () => <div className="prose max-w-none"><p>{lesson.readContent}</p></div> },
-    { id: "see", title: "See", component: () => <div className="prose max-w-none"><p>{lesson.seeContent}</p></div> },
-    { id: "hear", title: "Hear", component: () => <div className="prose max-w-none"><p>{lesson.hearContent}</p></div> },
-    { id: "do", title: "Do", component: () => <div className="prose max-w-none"><p>{lesson.doContent}</p></div> },
-    { id: "memory", title: "Memory Aids", component: MemoryAids },
-    { id: "concept", title: "Concept Check", component: ConceptCheck },
-    { id: "realworld", title: "Real World", component: RealWorldConnection }
+    { id: "narrative", title: "Story Hook", component: "narrative" },
+    { id: "objectives", title: "Learning Goals", component: "objectives" },
+    { id: "read", title: "Read", component: "read" },
+    { id: "see", title: "See", component: "see" },
+    { id: "hear", title: "Hear", component: "hear" },
+    { id: "do", title: "Do", component: "do" },
+    { id: "memory", title: "Memory Aids", component: "memory" },
+    { id: "concept", title: "Concept Check", component: "concept" },
+    { id: "realworld", title: "Real World", component: "realworld" }
   ];
 
   // Reset completed sections when lesson changes
@@ -51,9 +51,109 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     setCompletedSections(newCompleted);
   };
 
+  const handleSectionComplete = (sectionId: string) => {
+    const newCompleted = new Set(completedSections);
+    newCompleted.add(sectionId);
+    setCompletedSections(newCompleted);
+  };
+
   const progressPercentage = Math.min((completedSections.size / sections.length) * 100, 100);
 
-  const CurrentComponent = sections.find(s => s.id === currentSection)?.component || NarrativeHook;
+  const renderCurrentSection = () => {
+    const isCompleted = completedSections.has(currentSection);
+    const onComplete = () => handleSectionComplete(currentSection);
+
+    switch (currentSection) {
+      case "narrative":
+        return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
+      case "objectives":
+        return (
+          <LearningObjectives 
+            objectives={lesson.learningObjectives}
+            completed={lesson.learningObjectives.map(() => false)}
+            onToggle={() => {}}
+            onComplete={onComplete}
+            isCompleted={isCompleted}
+          />
+        );
+      case "memory":
+        return (
+          <MemoryAids 
+            memoryAids={lesson.memoryAids}
+            character={lesson.character}
+            onComplete={onComplete}
+            isCompleted={isCompleted}
+          />
+        );
+      case "concept":
+        return (
+          <ConceptCheck 
+            conceptCheck={lesson.conceptCheck}
+            character={lesson.character}
+            onComplete={onComplete}
+            isCompleted={isCompleted}
+          />
+        );
+      case "realworld":
+        return (
+          <RealWorldConnection 
+            connection={lesson.realWorldConnection}
+            onComplete={onComplete}
+            isCompleted={isCompleted}
+          />
+        );
+      case "read":
+        return (
+          <div className="space-y-4">
+            <div className="prose max-w-none">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">📖 Read</h3>
+              <p className="text-slate-700 leading-relaxed">{lesson.readContent}</p>
+            </div>
+            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
+              {isCompleted ? 'Completed' : 'Mark as Read'}
+            </Button>
+          </div>
+        );
+      case "see":
+        return (
+          <div className="space-y-4">
+            <div className="prose max-w-none">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">👁️ See</h3>
+              <p className="text-slate-700 leading-relaxed">{lesson.seeContent}</p>
+            </div>
+            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
+              {isCompleted ? 'Completed' : 'Mark as Seen'}
+            </Button>
+          </div>
+        );
+      case "hear":
+        return (
+          <div className="space-y-4">
+            <div className="prose max-w-none">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">👂 Hear</h3>
+              <p className="text-slate-700 leading-relaxed">{lesson.hearContent}</p>
+            </div>
+            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
+              {isCompleted ? 'Completed' : 'Mark as Heard'}
+            </Button>
+          </div>
+        );
+      case "do":
+        return (
+          <div className="space-y-4">
+            <div className="prose max-w-none">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">✋ Do</h3>
+              <p className="text-slate-700 leading-relaxed">{lesson.doContent}</p>
+            </div>
+            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
+              {isCompleted ? 'Completed' : 'Mark as Done'}
+            </Button>
+          </div>
+        );
+      default:
+        return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
@@ -168,7 +268,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
             <Card>
               <CardContent className="p-8">
-                <CurrentComponent lesson={lesson} />
+                {renderCurrentSection()}
               </CardContent>
             </Card>
 

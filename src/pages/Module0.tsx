@@ -1,4 +1,5 @@
-import { Clock, Play, ArrowRight, ArrowLeft, Home } from "lucide-react";
+
+import { Clock, Play, ArrowRight, Home, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
 import { LessonRoadmap } from "@/components/LessonRoadmap";
@@ -136,14 +137,19 @@ const Module0 = () => {
                 <span>8 Interactive Lessons</span>
               </div>
             </div>
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
-              onClick={() => navigate("/lesson/0.1")}
-            >
-              Start Module 0
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="space-y-4">
+              <Button 
+                size="lg" 
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+                onClick={() => navigate("/lesson/0.1")}
+              >
+                Start with Lesson 0.1
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <p className="text-sm text-slate-500">
+                All lessons must be completed in order. Start with Ollie's first lesson to unlock the rest!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -159,14 +165,24 @@ const Module0 = () => {
               </span>
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Two dedicated characters will guide you through foundational concepts, 
-              making math approachable and engaging.
+              Two dedicated characters will guide you through foundational concepts. 
+              You'll start with Ollie for algebra basics, then progress to Felix for functions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {module0Characters.map((character) => (
-              <ModuleCharacterCard key={character.id} character={character} />
+              <div key={character.id} className="relative">
+                <ModuleCharacterCard character={character} />
+                {character.id === "felix" && (
+                  <div className="absolute inset-0 bg-slate-200/50 rounded-2xl flex items-center justify-center">
+                    <div className="bg-white rounded-lg p-4 shadow-lg flex items-center gap-2">
+                      <Lock className="w-5 h-5 text-slate-500" />
+                      <span className="text-slate-700 font-medium">Unlocks after Ollie's lessons</span>
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </section>
@@ -181,7 +197,7 @@ const Module0 = () => {
               </span>
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Follow our carefully crafted path from basic algebra to function concepts.
+              Follow our carefully crafted sequential path. Each lesson unlocks the next one.
             </p>
           </div>
 
