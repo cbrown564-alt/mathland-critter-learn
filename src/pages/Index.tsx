@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CourseTimeline } from "@/components/CourseTimeline";
 
 const Index = () => {
   return (
@@ -34,24 +35,29 @@ const Index = () => {
                 </Button>
               </Link>
               
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-4 text-lg"
-              >
-                Continue Learning
-              </Button>
+              <Link to="/course-structure">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-4 text-lg"
+                >
+                  View Full Course
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
 
+        {/* Course Timeline */}
+        <CourseTimeline />
+
         {/* Learning Path */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-800 mb-4">Your Learning Journey</h2>
+              <h2 className="text-3xl font-bold text-slate-800 mb-4">Start Your Journey</h2>
               <p className="text-slate-600 max-w-2xl mx-auto">
-                Progress through carefully designed modules with expert character guides
+                Begin with Module 0 and progress through carefully designed lessons with expert character guides
               </p>
             </div>
 
@@ -156,7 +162,7 @@ const Index = () => {
                 <div className="text-slate-600">Core Modules</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">35</div>
                 <div className="text-slate-600">Interactive Lessons</div>
               </div>
             </div>
