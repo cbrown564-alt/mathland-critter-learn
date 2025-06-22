@@ -4,35 +4,23 @@ import { Footer } from "@/components/Footer";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Clock, Users, Target } from "lucide-react";
+import { BookOpen, Clock, Users, CheckCircle } from "lucide-react";
 
 const CourseStructure = () => {
   const modules = [
     {
       id: 0,
-      title: "Algebraic Foundations",
+      title: "Prerequisites & Refresher",
+      subtitle: "Build Your Foundation",
       description: "Master the mathematical foundations needed for data science",
       duration: "4-5 hours",
       lessons: 8,
       status: "available",
       color: "from-amber-500 to-orange-500",
-      characters: [
-        {
-          name: "Ollie the Otter",
-          avatar: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png",
-          lessons: "0.1-0.4"
-        },
-        {
-          name: "Felix the Function Machine", 
-          avatar: "/lovable-uploads/3972307e-38ad-4120-a059-7785ae6a8516.png",
-          lessons: "0.5-0.7"
-        },
-        {
-          name: "Vera the Vector",
-          avatar: "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png",
-          lessons: "0.8"
-        }
-      ],
+      character: {
+        name: "Ollie & Felix",
+        avatar: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png"
+      },
       topics: [
         "Order of Operations & Algebraic Basics",
         "Factoring & Expanding Expressions", 
@@ -42,70 +30,242 @@ const CourseStructure = () => {
         "Graphing Functions",
         "Coordinate Geometry Essentials",
         "Vectors & Greek Symbols Preview"
-      ]
+      ],
+      prerequisites: "None - Start here!"
     },
     {
       id: 1,
-      title: "Linear Algebra",
-      description: "Vectors, matrices, and transformations for data science",
-      duration: "6-8 hours",
-      lessons: 12,
+      title: "Vectors & Vector Spaces",
+      subtitle: "Direction and Magnitude",
+      description: "Understanding vectors, linear combinations, and vector spaces",
+      duration: "5-6 hours",
+      lessons: 10,
       status: "coming-soon",
       color: "from-red-600 to-orange-600",
-      characters: [
-        {
-          name: "Vera the Vector",
-          avatar: "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png",
-          lessons: "All"
-        }
-      ],
+      character: {
+        name: "Vera the Vector",
+        avatar: "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png"
+      },
       topics: [
         "Vector Operations & Properties",
-        "Matrix Fundamentals",
-        "Matrix Multiplication", 
-        "Systems of Linear Equations",
-        "Determinants & Inverses",
-        "Eigenvalues & Eigenvectors",
-        "Linear Transformations",
-        "Vector Spaces & Basis",
-        "Principal Component Analysis",
-        "Singular Value Decomposition",
-        "Applications in Machine Learning",
-        "Data Science Case Studies"
-      ]
+        "Linear Combinations",
+        "Vector Spaces & Subspaces",
+        "Linear Independence",
+        "Basis & Dimension",
+        "Inner Products & Norms",
+        "Orthogonality & Projections",
+        "Gram-Schmidt Process",
+        "Applications in Data Science",
+        "Geometric Interpretations"
+      ],
+      prerequisites: "Module 0"
     },
     {
       id: 2,
-      title: "Statistics & Probability",
-      description: "Descriptive stats, distributions, and hypothesis testing",
-      duration: "8-10 hours", 
-      lessons: 15,
+      title: "Matrices & Linear Mappings",
+      subtitle: "Transforming Spaces",
+      description: "Matrix operations, transformations, and their properties",
+      duration: "6-7 hours",
+      lessons: 12,
+      status: "coming-soon",
+      color: "from-blue-600 to-indigo-600",
+      character: {
+        name: "Matrix Max",
+        avatar: "🔢"
+      },
+      topics: [
+        "Matrix Fundamentals",
+        "Matrix Operations",
+        "Matrix Multiplication Properties",
+        "Inverse Matrices",
+        "Determinants",
+        "Rank & Nullity",
+        "Linear Transformations",
+        "Change of Basis",
+        "Elementary Operations",
+        "Systems of Linear Equations",
+        "Matrix Decompositions",
+        "Applications in ML"
+      ],
+      prerequisites: "Module 1"
+    },
+    {
+      id: 3,
+      title: "Eigenvalues & Eigenvectors",
+      subtitle: "Special Directions",
+      description: "Understanding eigenvalues, eigenvectors, and their applications",
+      duration: "4-5 hours",
+      lessons: 8,
+      status: "coming-soon",
+      color: "from-purple-600 to-pink-600",
+      character: {
+        name: "Eileen Eigen",
+        avatar: "👸"
+      },
+      topics: [
+        "Eigenvalue Definition",
+        "Computing Eigenvalues",
+        "Eigenvectors & Eigenspaces",
+        "Characteristic Polynomial",
+        "Diagonalization",
+        "Symmetric Matrices",
+        "Principal Component Analysis",
+        "Real-World Applications"
+      ],
+      prerequisites: "Module 2"
+    },
+    {
+      id: 4,
+      title: "Multivariate Calculus Foundations",
+      subtitle: "Multiple Variables",
+      description: "Calculus with multiple variables for optimization",
+      duration: "5-6 hours",
+      lessons: 10,
       status: "coming-soon",
       color: "from-green-600 to-emerald-600",
-      characters: [
-        {
-          name: "Statistics Guide",
-          avatar: "📊",
-          lessons: "All"
-        }
-      ],
+      character: {
+        name: "Dr. Delta",
+        avatar: "🧮"
+      },
       topics: [
-        "Descriptive Statistics",
+        "Functions of Multiple Variables",
+        "Partial Derivatives",
+        "Chain Rule",
+        "Gradients & Directional Derivatives",
+        "Hessian Matrices",
+        "Jacobian Matrices",
+        "Taylor Series Expansion",
+        "Constrained Optimization",
+        "Lagrange Multipliers",
+        "Applications in ML"
+      ],
+      prerequisites: "Module 2"
+    },
+    {
+      id: 5,
+      title: "Optimisation & Gradient Descent",
+      subtitle: "Finding the Best",
+      description: "Optimization techniques and gradient-based algorithms",
+      duration: "4-5 hours",
+      lessons: 9,
+      status: "coming-soon",
+      color: "from-orange-600 to-red-600",
+      character: {
+        name: "Gradient Greta",
+        avatar: "📈"
+      },
+      topics: [
+        "Optimization Fundamentals",
+        "Critical Points",
+        "Convex Functions",
+        "Gradient Descent Algorithm",
+        "Stochastic Gradient Descent",
+        "Newton's Method",
+        "Constrained Optimization",
+        "KKT Conditions",
+        "Applications in Machine Learning"
+      ],
+      prerequisites: "Module 4"
+    },
+    {
+      id: 6,
+      title: "Probability & Distributions",
+      subtitle: "Understanding Uncertainty",
+      description: "Probability theory and common probability distributions",
+      duration: "6-7 hours",
+      lessons: 11,
+      status: "coming-soon",
+      color: "from-pink-600 to-rose-600",
+      character: {
+        name: "Probability Pippa",
+        avatar: "🎲"
+      },
+      topics: [
         "Probability Fundamentals",
+        "Conditional Probability",
         "Random Variables",
-        "Common Distributions",
-        "Central Limit Theorem",
+        "Probability Distributions",
+        "Normal Distribution",
+        "Binomial & Poisson",
+        "Continuous Distributions",
+        "Joint Distributions",
+        "Covariance & Correlation",
+        "Law of Large Numbers",
+        "Central Limit Theorem"
+      ],
+      prerequisites: "Module 0"
+    },
+    {
+      id: 7,
+      title: "Hypothesis Testing & Inference",
+      subtitle: "Making Decisions",
+      description: "Statistical inference and hypothesis testing methods",
+      duration: "5-6 hours",
+      lessons: 10,
+      status: "coming-soon",
+      color: "from-teal-600 to-cyan-600",
+      character: {
+        name: "Sigmund the Swan",
+        avatar: "🦢"
+      },
+      topics: [
+        "Statistical Inference",
+        "Sampling Distributions",
         "Confidence Intervals",
-        "Hypothesis Testing",
-        "Chi-Square Tests",
+        "Hypothesis Testing Framework",
+        "Type I & Type II Errors",
+        "p-values & Significance",
+        "t-tests & z-tests",
+        "Chi-square Tests",
         "ANOVA",
-        "Correlation & Regression",
-        "Bayesian Statistics",
-        "A/B Testing",
-        "Time Series Basics",
-        "Statistical Modeling",
-        "Real-World Applications"
-      ]
+        "Multiple Testing"
+      ],
+      prerequisites: "Module 6"
+    },
+    {
+      id: 8,
+      title: "Bayesian Inference",
+      subtitle: "Updating Beliefs",
+      description: "Bayesian statistics and probabilistic reasoning",
+      duration: "4-5 hours",
+      lessons: 8,
+      status: "coming-soon",
+      color: "from-indigo-600 to-purple-600",
+      character: {
+        name: "Bayes the Fox",
+        avatar: "🦊"
+      },
+      topics: [
+        "Bayes' Theorem",
+        "Prior & Posterior Distributions",
+        "Bayesian Inference",
+        "Conjugate Priors",
+        "Bayesian Estimation",
+        "Credible Intervals",
+        "Bayesian Model Selection",
+        "Applications in Data Science"
+      ],
+      prerequisites: "Module 6"
+    },
+    {
+      id: 9,
+      title: "Capstone Project",
+      subtitle: "Real-World Application",
+      description: "Apply all concepts in a comprehensive data science project",
+      duration: "8-10 hours",
+      lessons: 1,
+      status: "coming-soon",
+      color: "from-slate-600 to-gray-600",
+      character: {
+        name: "All Characters",
+        avatar: "🎓"
+      },
+      topics: [
+        "Real-world Data Science Workflow",
+        "End-to-end Project Implementation",
+        "Integration of All Mathematical Concepts"
+      ],
+      prerequisites: "Modules 1-8"
     }
   ];
 
@@ -124,102 +284,104 @@ const CourseStructure = () => {
           </div>
 
           {/* Course Timeline */}
-          <div className="relative mb-16">
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-300"></div>
-            
+          <div className="space-y-8">
             {modules.map((module, index) => (
-              <div key={module.id} className="relative flex items-start mb-12">
-                <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-xl relative z-10`}>
-                  {module.id}
-                </div>
-                
-                <Card className={`ml-8 flex-1 ${module.status === 'available' ? 'border-2 border-blue-200' : 'opacity-75'}`}>
-                  <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-800 mb-2">
-                          Module {module.id}: {module.title}
-                        </h3>
-                        <p className="text-slate-600 mb-4">{module.description}</p>
-                        
-                        <div className="flex items-center gap-6 text-sm text-slate-500 mb-4">
-                          <div className="flex items-center gap-2">
-                            <BookOpen className="w-4 h-4" />
-                            <span>{module.lessons} lessons</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <Clock className="w-4 h-4" />
-                            <span>{module.duration}</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <Badge variant={module.status === 'available' ? 'default' : 'secondary'}>
-                        {module.status === 'available' ? 'Available' : 'Coming Soon'}
-                      </Badge>
+              <Card key={module.id} className={`${module.status === 'available' ? 'border-2 border-blue-200 bg-blue-50/30' : 'opacity-90'} hover:shadow-lg transition-all duration-300`}>
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    {/* Module number */}
+                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-xl flex-shrink-0 shadow-lg`}>
+                      {module.id}
                     </div>
-
-                    {/* Characters */}
-                    <div className="mb-4">
-                      <h4 className="font-semibold text-slate-700 mb-2">Your Guides</h4>
-                      <div className="flex gap-4">
-                        {module.characters.map((character, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            {character.avatar.startsWith('/') ? (
-                              <CharacterAvatar 
-                                src={character.avatar}
-                                alt={character.name}
-                                size="sm"
-                              />
-                            ) : (
-                              <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-lg">
-                                {character.avatar}
-                              </div>
-                            )}
-                            <div className="text-sm">
-                              <div className="font-medium text-slate-700">{character.name}</div>
-                              <div className="text-slate-500">Lessons {character.lessons}</div>
+                    
+                    <div className="flex-1">
+                      <div className="flex justify-between items-start mb-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-slate-800 mb-2">
+                            Module {module.id}: {module.title}
+                          </h3>
+                          <p className="text-lg text-blue-600 font-medium mb-2">{module.subtitle}</p>
+                          <p className="text-slate-600 mb-4">{module.description}</p>
+                          
+                          <div className="flex items-center gap-6 text-sm text-slate-500 mb-4">
+                            <div className="flex items-center gap-2">
+                              <BookOpen className="w-4 h-4" />
+                              <span>{module.lessons} lesson{module.lessons !== 1 ? 's' : ''}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <Clock className="w-4 h-4" />
+                              <span>{module.duration}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4" />
+                              <span>Prerequisites: {module.prerequisites}</span>
                             </div>
                           </div>
-                        ))}
+                        </div>
+                        
+                        <Badge variant={module.status === 'available' ? 'default' : 'secondary'} className="text-sm">
+                          {module.status === 'available' ? 'Available Now' : 'Coming Soon'}
+                        </Badge>
                       </div>
-                    </div>
 
-                    {/* Topics */}
-                    <div>
-                      <h4 className="font-semibold text-slate-700 mb-2">Topics Covered</h4>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        {module.topics.map((topic, idx) => (
-                          <div key={idx} className="flex items-center text-sm text-slate-600">
-                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 flex-shrink-0"></span>
-                            {topic}
-                          </div>
-                        ))}
+                      {/* Character */}
+                      <div className="flex items-center gap-3 mb-6">
+                        <Users className="w-5 h-5 text-slate-500" />
+                        <span className="font-medium text-slate-700">Your Guide: </span>
+                        <div className="flex items-center gap-2">
+                          {module.character.avatar.startsWith('/') ? (
+                            <CharacterAvatar 
+                              src={module.character.avatar}
+                              alt={module.character.name}
+                              size="sm"
+                            />
+                          ) : (
+                            <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-lg">
+                              {module.character.avatar}
+                            </div>
+                          )}
+                          <span className="text-slate-600">{module.character.name}</span>
+                        </div>
+                      </div>
+
+                      {/* Topics */}
+                      <div>
+                        <h4 className="font-semibold text-slate-700 mb-3">What You'll Learn</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {module.topics.map((topic, idx) => (
+                            <div key={idx} className="flex items-center text-sm text-slate-600">
+                              <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>
+                              {topic}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 
           {/* Summary Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 bg-white rounded-lg p-6 shadow-sm">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">3</div>
-              <div className="text-slate-600">Modules</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">35</div>
-              <div className="text-slate-600">Total Lessons</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">18-23</div>
-              <div className="text-slate-600">Hours Content</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">8</div>
-              <div className="text-slate-600">Character Guides</div>
+          <div className="mt-16 bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">10</div>
+                <div className="text-slate-600 font-medium">Modules</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">97</div>
+                <div className="text-slate-600 font-medium">Total Lessons</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-slate-600 font-medium">Hours Content</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">9</div>
+                <div className="text-slate-600 font-medium">Expert Guides</div>
+              </div>
             </div>
           </div>
         </div>
