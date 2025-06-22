@@ -21,15 +21,10 @@ const CourseStructure = () => {
         name: "Ollie & Felix",
         avatar: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png"
       },
-      topics: [
-        "Order of Operations & Algebraic Basics",
-        "Factoring & Expanding Expressions", 
-        "Linear & Quadratic Equations",
-        "Inequalities & Absolute Values",
-        "Function Notation & Concepts",
-        "Graphing Functions",
-        "Coordinate Geometry Essentials",
-        "Vectors & Greek Symbols Preview"
+      concepts: [
+        "Order-of-operations", "Factorising & expanding", "Linear & quadratic equations", 
+        "Inequalities", "Function notation", "Domain/Range", "Graphing lines/quadratics/exponentials", 
+        "Coordinate geometry (distance, midpoint)", "Basic vector notation", "Greek symbols", "Σ / Π conventions"
       ],
       prerequisites: "None - Start here!"
     },
@@ -46,17 +41,10 @@ const CourseStructure = () => {
         name: "Vera the Vector",
         avatar: "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png"
       },
-      topics: [
-        "Vector Operations & Properties",
-        "Linear Combinations",
-        "Vector Spaces & Subspaces",
-        "Linear Independence",
-        "Basis & Dimension",
-        "Inner Products & Norms",
-        "Orthogonality & Projections",
-        "Gram-Schmidt Process",
-        "Applications in Data Science",
-        "Geometric Interpretations"
+      concepts: [
+        "Vector addition/scalar multiplication", "Dot product & norm", "Unit vectors", 
+        "Linear combination & span", "Linear independence", "Basis & dimension", 
+        "Row/column picture", "Subspace & null space"
       ],
       prerequisites: "Module 0"
     },
@@ -73,19 +61,10 @@ const CourseStructure = () => {
         name: "Matrix Max",
         avatar: "🔢"
       },
-      topics: [
-        "Matrix Fundamentals",
-        "Matrix Operations",
-        "Matrix Multiplication Properties",
-        "Inverse Matrices",
-        "Determinants",
-        "Rank & Nullity",
-        "Linear Transformations",
-        "Change of Basis",
-        "Elementary Operations",
-        "Systems of Linear Equations",
-        "Matrix Decompositions",
-        "Applications in ML"
+      concepts: [
+        "Matrix addition/multiplication", "Identity & inverse", "Determinant & rank", 
+        "Elementary row ops", "Matrix-vector product as transformation", "Composition of linear maps", 
+        "Change of basis", "Block matrices"
       ],
       prerequisites: "Module 1"
     },
@@ -102,15 +81,10 @@ const CourseStructure = () => {
         name: "Eileen Eigen",
         avatar: "👸"
       },
-      topics: [
-        "Eigenvalue Definition",
-        "Computing Eigenvalues",
-        "Eigenvectors & Eigenspaces",
-        "Characteristic Polynomial",
-        "Diagonalization",
-        "Symmetric Matrices",
-        "Principal Component Analysis",
-        "Real-World Applications"
+      concepts: [
+        "Characteristic equation", "Algebraic vs geometric multiplicity", "Diagonalisation", 
+        "Spectral decomposition", "SVD (teaser)", "Power iteration", 
+        "Real-world uses: PCA, PageRank, vibration modes"
       ],
       prerequisites: "Module 2"
     },
@@ -127,17 +101,9 @@ const CourseStructure = () => {
         name: "Dr. Delta",
         avatar: "🧮"
       },
-      topics: [
-        "Functions of Multiple Variables",
-        "Partial Derivatives",
-        "Chain Rule",
-        "Gradients & Directional Derivatives",
-        "Hessian Matrices",
-        "Jacobian Matrices",
-        "Taylor Series Expansion",
-        "Constrained Optimization",
-        "Lagrange Multipliers",
-        "Applications in ML"
+      concepts: [
+        "Limits in ℝ²/ℝ³", "Continuity surfaces", "Partial derivatives", 
+        "Gradient vector", "Directional derivative", "Jacobian matrix"
       ],
       prerequisites: "Module 2"
     },
@@ -154,16 +120,9 @@ const CourseStructure = () => {
         name: "Gradient Greta",
         avatar: "📈"
       },
-      topics: [
-        "Optimization Fundamentals",
-        "Critical Points",
-        "Convex Functions",
-        "Gradient Descent Algorithm",
-        "Stochastic Gradient Descent",
-        "Newton's Method",
-        "Constrained Optimization",
-        "KKT Conditions",
-        "Applications in Machine Learning"
+      concepts: [
+        "Critical points & Hessian", "Second-derivative test", "Convex vs non-convex", 
+        "Gradient-descent algorithm (step size, convergence)", "Momentum & learning-rate scheduling (teaser)"
       ],
       prerequisites: "Module 4"
     },
@@ -180,18 +139,10 @@ const CourseStructure = () => {
         name: "Probability Pippa",
         avatar: "🎲"
       },
-      topics: [
-        "Probability Fundamentals",
-        "Conditional Probability",
-        "Random Variables",
-        "Probability Distributions",
-        "Normal Distribution",
-        "Binomial & Poisson",
-        "Continuous Distributions",
-        "Joint Distributions",
-        "Covariance & Correlation",
-        "Law of Large Numbers",
-        "Central Limit Theorem"
+      concepts: [
+        "Sample space/events", "Conditional probability & independence", "Random variables", 
+        "Bernoulli, Binomial, Poisson, Uniform, Exponential, Normal", "Expectation & variance", 
+        "LLN & CLT", "PDF vs CDF", "Sampling variability"
       ],
       prerequisites: "Module 0"
     },
@@ -208,17 +159,9 @@ const CourseStructure = () => {
         name: "Sigmund the Swan",
         avatar: "🦢"
       },
-      topics: [
-        "Statistical Inference",
-        "Sampling Distributions",
-        "Confidence Intervals",
-        "Hypothesis Testing Framework",
-        "Type I & Type II Errors",
-        "p-values & Significance",
-        "t-tests & z-tests",
-        "Chi-square Tests",
-        "ANOVA",
-        "Multiple Testing"
+      concepts: [
+        "Sampling distribution & standard error", "Confidence intervals", "Null/alt hypotheses", 
+        "Test statistics & p-values", "t-tests, χ², ANOVA (teaser)", "Type I/II error", "Statistical power"
       ],
       prerequisites: "Module 6"
     },
@@ -235,15 +178,10 @@ const CourseStructure = () => {
         name: "Bayes the Fox",
         avatar: "🦊"
       },
-      topics: [
-        "Bayes' Theorem",
-        "Prior & Posterior Distributions",
-        "Bayesian Inference",
-        "Conjugate Priors",
-        "Bayesian Estimation",
-        "Credible Intervals",
-        "Bayesian Model Selection",
-        "Applications in Data Science"
+      concepts: [
+        "Prior, likelihood, posterior", "Conjugate priors (β-Binomial, normal-normal)", 
+        "Posterior predictive", "MAP vs MLE", "Bayes factors", 
+        "Real-world cases: medical diagnosis, spam filtering"
       ],
       prerequisites: "Module 6"
     },
@@ -260,10 +198,8 @@ const CourseStructure = () => {
         name: "All Characters",
         avatar: "🎓"
       },
-      topics: [
-        "Real-world Data Science Workflow",
-        "End-to-end Project Implementation",
-        "Integration of All Mathematical Concepts"
+      concepts: [
+        "End-to-end workflow: data wrangling → dimensionality reduction → model fitting → diagnostic inference → presentation"
       ],
       prerequisites: "Modules 1-8"
     }
@@ -344,14 +280,14 @@ const CourseStructure = () => {
                         </div>
                       </div>
 
-                      {/* Topics */}
+                      {/* Concepts */}
                       <div>
-                        <h4 className="font-semibold text-slate-700 mb-3">What You'll Learn</h4>
+                        <h4 className="font-semibold text-slate-700 mb-3">Key Concepts You'll Master</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                          {module.topics.map((topic, idx) => (
+                          {module.concepts.map((concept, idx) => (
                             <div key={idx} className="flex items-center text-sm text-slate-600">
                               <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></span>
-                              {topic}
+                              {concept}
                             </div>
                           ))}
                         </div>
