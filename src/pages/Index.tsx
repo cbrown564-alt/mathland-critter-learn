@@ -1,11 +1,11 @@
-
 import { ArrowRight, BookOpen, Users, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CourseTimeline } from "@/components/CourseTimeline";
+import { HeroSection } from "@/components/HeroSection";
+import { SimpleCourseTimeline } from "@/components/SimpleCourseTimeline";
 
 const Index = () => {
   return (
@@ -13,43 +13,10 @@ const Index = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              Learn Math for{" "}
-              <span className="text-blue-600">Data Science</span>
-            </h1>
-            
-            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-              Master the mathematical foundations you need for data science through character-guided lessons
-            </p>
+        <HeroSection />
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Link to="/module-0">
-                <Button 
-                  size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
-                >
-                  Start Module 0
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              
-              <Link to="/course-structure">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-4 text-lg"
-                >
-                  View Full Course
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Course Timeline */}
-        <CourseTimeline />
+        {/* Simple Course Timeline */}
+        <SimpleCourseTimeline />
 
         {/* Learning Path */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
