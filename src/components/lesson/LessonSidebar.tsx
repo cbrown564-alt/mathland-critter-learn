@@ -48,33 +48,33 @@ export const LessonSidebar = ({
         <div className="space-y-2">
           <h4 className="font-medium text-slate-800 mb-3">Lesson Sections</h4>
           {sections.map((section) => (
-            <button
+            <div
               key={section.id}
-              onClick={() => onSectionChange(section.id)}
-              className={`w-full flex items-center justify-between p-3 rounded-lg text-sm transition-colors ${
+              className={`w-full flex items-center justify-between p-3 rounded-lg text-sm transition-colors cursor-pointer ${
                 currentSection === section.id
                   ? "bg-blue-50 text-blue-700 border border-blue-200"
                   : "hover:bg-slate-50 text-slate-700"
               }`}
+              onClick={() => onSectionChange(section.id)}
             >
               <span>{section.title}</span>
               <div className="flex items-center gap-2">
                 {completedSections.has(section.id) && (
                   <CheckCircle className="w-4 h-4 text-green-500" />
                 )}
-                <button
+                <div
                   onClick={(e) => {
                     e.stopPropagation();
                     onToggleSection(section.id);
                   }}
-                  className={`w-4 h-4 rounded border-2 ${
+                  className={`w-4 h-4 rounded border-2 cursor-pointer ${
                     completedSections.has(section.id)
                       ? "bg-green-500 border-green-500"
                       : "border-slate-300 hover:border-slate-400"
                   }`}
                 />
               </div>
-            </button>
+            </div>
           ))}
         </div>
       </CardContent>

@@ -6,11 +6,12 @@ import { LessonHeader } from "./lesson/LessonHeader";
 import { LessonSidebar } from "./lesson/LessonSidebar";
 import { LessonNavigation } from "./lesson/LessonNavigation";
 import { NarrativeHook } from "./lesson/NarrativeHook";
-import { LearningObjectives } from "./lesson/LearningObjectives";
+import { LearningObjectivesBanner } from "./lesson/LearningObjectivesBanner";
 import { MemoryAids } from "./lesson/MemoryAids";
 import { ConceptCheck } from "./lesson/ConceptCheck";
 import { RealWorldConnection } from "./lesson/RealWorldConnection";
-import { Button } from "@/components/ui/button";
+import { BreadcrumbNavigation } from "./Breadcrumb";
+import { SectionCompletion } from "./lesson/SectionCompletion";
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -24,7 +25,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
   const sections = [
     { id: "narrative", title: "Story Hook" },
-    { id: "objectives", title: "Learning Goals" },
     { id: "read", title: "Read" },
     { id: "see", title: "See" },
     { id: "hear", title: "Hear" },
@@ -56,102 +56,95 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     setCompletedSections(newCompleted);
   };
 
+  const handleNextSection = () => {
+    const currentIndex = sections.findIndex(s => s.id === currentSection);
+    if (currentIndex < sections.length - 1) {
+      setCurrentSection(sections[currentIndex + 1].id);
+    }
+  };
+
   const progressPercentage = Math.min((completedSections.size / sections.length) * 100, 100);
+  const currentSectionIndex = sections.findIndex(s => s.id === currentSection);
+  const isLastSection = currentSectionIndex === sections.length - 1;
 
   const renderCurrentSection = () => {
     const isCompleted = completedSections.has(currentSection);
     const onComplete = () => handleSectionComplete(currentSection);
 
-    switch (currentSection) {
-      case "narrative":
-        return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
-      case "objectives":
-        return (
-          <LearningObjectives 
-            objectives={lesson.learningObjectives}
-            completed={lesson.learningObjectives.map(() => false)}
-            onToggle={() => {}}
-            onComplete={onComplete}
-            isCompleted={isCompleted}
-          />
-        );
-      case "memory":
-        return (
-          <MemoryAids 
-            memoryAids={lesson.memoryAids}
-            character={lesson.character}
-            onComplete={onComplete}
-            isCompleted={isCompleted}
-          />
-        );
-      case "concept":
-        return (
-          <ConceptCheck 
-            conceptCheck={lesson.conceptCheck}
-            character={lesson.character}
-            onComplete={onComplete}
-            isCompleted={isCompleted}
-          />
-        );
-      case "realworld":
-        return (
-          <RealWorldConnection 
-            connection={lesson.realWorldConnection}
-            onComplete={onComplete}
-            isCompleted={isCompleted}
-          />
-        );
-      case "read":
-        return (
-          <div className="space-y-4">
+    const sectionContent = (() => {
+      switch (currentSection) {
+        case "narrative":
+          return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
+        case "memory":
+          return (
+            <MemoryAids 
+              memoryAids={lesson.memoryAids}
+              character={lesson.character}
+              onComplete={onComplete}
+              isCompleted={isCompleted}
+            />
+          );
+        case "concept":
+          return (
+            <ConceptCheck 
+              conceptCheck={lesson.conceptCheck}
+              character={lesson.character}
+              onComplete={onComplete}
+              isCompleted={isCompleted}
+            />
+          );
+        case "realworld":
+          return (
+            <RealWorldConnection 
+              connection={lesson.realWorldConnection}
+              onComplete={onComplete}
+              isCompleted={isCompleted}
+            />
+          );
+        case "read":
+          return (
             <div className="prose max-w-none">
               <h3 className="text-2xl font-bold text-slate-800 mb-4">📖 Read</h3>
               <p className="text-slate-700 leading-relaxed">{lesson.readContent}</p>
             </div>
-            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
-              {isCompleted ? 'Completed' : 'Mark as Read'}
-            </Button>
-          </div>
-        );
-      case "see":
-        return (
-          <div className="space-y-4">
+          );
+        case "see":
+          return (
             <div className="prose max-w-none">
               <h3 className="text-2xl font-bold text-slate-800 mb-4">👁️ See</h3>
               <p className="text-slate-700 leading-relaxed">{lesson.seeContent}</p>
             </div>
-            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
-              {isCompleted ? 'Completed' : 'Mark as Seen'}
-            </Button>
-          </div>
-        );
-      case "hear":
-        return (
-          <div className="space-y-4">
+          );
+        case "hear":
+          return (
             <div className="prose max-w-none">
               <h3 className="text-2xl font-bold text-slate-800 mb-4">👂 Hear</h3>
               <p className="text-slate-700 leading-relaxed">{lesson.hearContent}</p>
             </div>
-            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
-              {isCompleted ? 'Completed' : 'Mark as Heard'}
-            </Button>
-          </div>
-        );
-      case "do":
-        return (
-          <div className="space-y-4">
+          );
+        case "do":
+          return (
             <div className="prose max-w-none">
               <h3 className="text-2xl font-bold text-slate-800 mb-4">✋ Do</h3>
               <p className="text-slate-700 leading-relaxed">{lesson.doContent}</p>
             </div>
-            <Button onClick={onComplete} className={isCompleted ? 'bg-green-500' : 'bg-blue-500'}>
-              {isCompleted ? 'Completed' : 'Mark as Done'}
-            </Button>
-          </div>
-        );
-      default:
-        return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
-    }
+          );
+        default:
+          return <NarrativeHook lesson={lesson} onComplete={onComplete} isCompleted={isCompleted} />;
+      }
+    })();
+
+    return (
+      <div>
+        {sectionContent}
+        <SectionCompletion
+          onComplete={onComplete}
+          onNext={handleNextSection}
+          isCompleted={isCompleted}
+          isLastSection={isLastSection}
+        />
+      </div>
+    );
   };
 
   return (
@@ -179,6 +172,11 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
           {/* Main Content */}
           <div className="lg:col-span-3">
+            <BreadcrumbNavigation 
+              lessonId={lesson.id}
+              lessonTitle={lesson.title}
+            />
+            
             <div className="mb-8">
               <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
                 Lesson {lesson.id}
@@ -187,6 +185,8 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
                 {lesson.title}
               </h1>
             </div>
+
+            <LearningObjectivesBanner objectives={lesson.learningObjectives} />
 
             <Card>
               <CardContent className="p-8">
