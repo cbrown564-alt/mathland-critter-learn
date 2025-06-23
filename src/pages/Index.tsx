@@ -34,8 +34,12 @@ const Index = () => {
               <Card className="relative overflow-hidden border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-yellow-50">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold shadow-lg">
-                      0
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                      <img 
+                        src="/lovable-uploads/e267cdea-bbbc-487c-b7e9-5c91fe5a6555.png" 
+                        alt="Ollie the Otter"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-800">Prerequisites & Refresher</h3>
@@ -62,8 +66,12 @@ const Index = () => {
               <Card className="relative overflow-hidden border-2 border-red-200 bg-gradient-to-br from-red-50 to-orange-50 opacity-75">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-red-500 opacity-50 flex items-center justify-center text-white font-bold shadow-lg">
-                      1
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg opacity-50">
+                      <img 
+                        src="/lovable-uploads/187f4ef7-dd45-4280-8f5d-626062d22c43.png" 
+                        alt="Vera the Vector"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-800">Vectors & Vector Spaces</h3>
@@ -87,8 +95,12 @@ const Index = () => {
               <Card className="relative overflow-hidden border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-75">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-500 opacity-50 flex items-center justify-center text-white font-bold shadow-lg">
-                      2
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg opacity-50">
+                      <img 
+                        src="/lovable-uploads/c18b892c-e964-45c1-9958-ae19c36dd3e7.png" 
+                        alt="Matrix Max"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-slate-800">Matrices & Linear Mappings</h3>
