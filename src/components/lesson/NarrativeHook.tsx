@@ -1,10 +1,10 @@
 
-import { useState } from "react";
 import { Play, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
 import { LessonData } from "@/types/lesson";
+import { SectionCompletion } from "./SectionCompletion";
 
 interface NarrativeHookProps {
   lesson: LessonData;
@@ -13,23 +13,16 @@ interface NarrativeHookProps {
 }
 
 export const NarrativeHook = ({ lesson, onComplete, isCompleted }: NarrativeHookProps) => {
-  const [isExpanded, setIsExpanded] = useState(true);
-
   return (
-    <Card className="mb-6 border-l-4 border-l-orange-400 shadow-sm">
-      <CardHeader 
-        className="cursor-pointer hover:bg-gray-50 transition-colors"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        <CardTitle className="flex items-center justify-between text-lg">
-          <span className="flex items-center gap-2">
+    <div className="space-y-6">
+      <Card className="border-l-4 border-l-orange-400 shadow-sm">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-lg">
             🎭 Story Introduction
             {isCompleted && <CheckCircle className="w-5 h-5 text-green-500" />}
-          </span>
-        </CardTitle>
-      </CardHeader>
-      
-      {isExpanded && (
+          </CardTitle>
+        </CardHeader>
+        
         <CardContent className="space-y-4">
           <div className="flex items-start gap-4">
             <CharacterAvatar 
@@ -47,18 +40,15 @@ export const NarrativeHook = ({ lesson, onComplete, isCompleted }: NarrativeHook
               </div>
             </div>
           </div>
-          
-          <div className="flex items-center gap-3 pt-2">
-            <Button
-              onClick={onComplete}
-              className={`${isCompleted ? 'bg-green-500 hover:bg-green-600' : `bg-gradient-to-r ${lesson.character.color} hover:opacity-90`} text-white`}
-              size="sm"
-            >
-              {isCompleted ? 'Completed' : 'Continue'}
-            </Button>
-          </div>
         </CardContent>
-      )}
-    </Card>
+      </Card>
+
+      <SectionCompletion
+        onComplete={onComplete}
+        onNext={() => {}} // Navigation is handled by LessonTemplate
+        isCompleted={isCompleted}
+        isLastSection={false}
+      />
+    </div>
   );
 };

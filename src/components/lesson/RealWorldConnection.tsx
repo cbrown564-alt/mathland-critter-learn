@@ -1,8 +1,8 @@
 
-import { useState } from "react";
 import { Globe, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SectionCompletion } from "./SectionCompletion";
 
 interface RealWorldConnectionProps {
   connection: string;
@@ -11,26 +11,16 @@ interface RealWorldConnectionProps {
 }
 
 export const RealWorldConnection = ({ connection, onComplete, isCompleted }: RealWorldConnectionProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
-    <Card className="mb-8 border-l-4 border-l-orange-400">
-      <CardHeader 
-        className="cursor-pointer"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        <CardTitle className="flex items-center justify-between">
-          <span className="flex items-center gap-2">
+    <div className="space-y-6">
+      <Card className="border-l-4 border-l-orange-400">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
             🌍 Real-World Connection
             {isCompleted && <CheckCircle className="w-5 h-5 text-green-500" />}
-          </span>
-          <span className="text-sm font-normal text-gray-500">
-            {isExpanded ? 'Click to collapse' : 'Click to expand'}
-          </span>
-        </CardTitle>
-      </CardHeader>
-      
-      {isExpanded && (
+          </CardTitle>
+        </CardHeader>
+        
         <CardContent className="space-y-4">
           <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-6">
             <div className="flex items-start gap-4">
@@ -43,16 +33,15 @@ export const RealWorldConnection = ({ connection, onComplete, isCompleted }: Rea
               </div>
             </div>
           </div>
-          
-          <Button
-            onClick={onComplete}
-            className={`${isCompleted ? 'bg-green-500' : 'bg-orange-500 hover:bg-orange-600'}`}
-            size="sm"
-          >
-            {isCompleted ? 'Connection Understood' : 'I See the Connection!'}
-          </Button>
         </CardContent>
-      )}
-    </Card>
+      </Card>
+
+      <SectionCompletion
+        onComplete={onComplete}
+        onNext={() => {}} // Navigation is handled by LessonTemplate
+        isCompleted={isCompleted}
+        isLastSection={false}
+      />
+    </div>
   );
 };

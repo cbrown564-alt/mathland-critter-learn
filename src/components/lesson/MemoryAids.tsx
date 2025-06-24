@@ -1,9 +1,9 @@
 
-import { useState } from "react";
 import { Brain, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { SectionCompletion } from "./SectionCompletion";
 
 interface MemoryAidsProps {
   memoryAids: {
@@ -20,23 +20,16 @@ interface MemoryAidsProps {
 }
 
 export const MemoryAids = ({ memoryAids, character, onComplete, isCompleted }: MemoryAidsProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
-    <Card className="mb-6 border-l-4 border-l-purple-400 shadow-sm">
-      <CardHeader 
-        className="cursor-pointer hover:bg-gray-50 transition-colors"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        <CardTitle className="flex items-center justify-between text-lg">
-          <span className="flex items-center gap-2">
+    <div className="space-y-6">
+      <Card className="border-l-4 border-l-purple-400 shadow-sm">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-lg">
             🧠 Memory Aids
             {isCompleted && <CheckCircle className="w-5 h-5 text-green-500" />}
-          </span>
-        </CardTitle>
-      </CardHeader>
-      
-      {isExpanded && (
+          </CardTitle>
+        </CardHeader>
+        
         <CardContent className="space-y-4">
           <div className={`bg-gradient-to-r ${character.color} bg-opacity-10 rounded-lg p-6`}>
             <div className="flex items-center gap-3 mb-4">
@@ -67,16 +60,15 @@ export const MemoryAids = ({ memoryAids, character, onComplete, isCompleted }: M
               </div>
             </div>
           </div>
-          
-          <Button
-            onClick={onComplete}
-            className={`${isCompleted ? 'bg-green-500 hover:bg-green-600' : 'bg-purple-500 hover:bg-purple-600'} text-white`}
-            size="sm"
-          >
-            {isCompleted ? 'Memory Aids Reviewed' : 'Got It!'}
-          </Button>
         </CardContent>
-      )}
-    </Card>
+      </Card>
+
+      <SectionCompletion
+        onComplete={onComplete}
+        onNext={() => {}} // Navigation is handled by LessonTemplate
+        isCompleted={isCompleted}
+        isLastSection={false}
+      />
+    </div>
   );
 };

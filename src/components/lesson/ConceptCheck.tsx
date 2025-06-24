@@ -4,6 +4,7 @@ import { CheckCircle, X, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { SectionCompletion } from "./SectionCompletion";
 
 interface ConceptCheckProps {
   conceptCheck: {
@@ -22,7 +23,6 @@ interface ConceptCheckProps {
 }
 
 export const ConceptCheck = ({ conceptCheck, character, onComplete, isCompleted }: ConceptCheckProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showResult, setShowResult] = useState(false);
 
@@ -44,20 +44,15 @@ export const ConceptCheck = ({ conceptCheck, character, onComplete, isCompleted 
   const isCorrect = selectedAnswer === conceptCheck.correctAnswer;
 
   return (
-    <Card className="mb-6 border-l-4 border-l-green-400 shadow-sm">
-      <CardHeader 
-        className="cursor-pointer hover:bg-gray-50 transition-colors"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        <CardTitle className="flex items-center justify-between text-lg">
-          <span className="flex items-center gap-2">
+    <div className="space-y-6">
+      <Card className="border-l-4 border-l-green-400 shadow-sm">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-lg">
             ✅ Concept Check
             {isCompleted && <CheckCircle className="w-5 h-5 text-green-500" />}
-          </span>
-        </CardTitle>
-      </CardHeader>
-      
-      {isExpanded && (
+          </CardTitle>
+        </CardHeader>
+        
         <CardContent className="space-y-4">
           <div className="bg-blue-50 rounded-lg p-4">
             <p className="text-gray-800 font-medium mb-4">{conceptCheck.question}</p>
@@ -146,7 +141,17 @@ export const ConceptCheck = ({ conceptCheck, character, onComplete, isCompleted 
             </>
           )}
         </CardContent>
-      )}
-    </Card>
+      </Card>
+
+      {/* Only show completion button if quiz is completed successfully */}
+      {!showResult || isCorrect ? (
+        <SectionCompletion
+          onComplete={onComplete}
+          onNext={() => {}} // Navigation is handled by LessonTemplate
+          isCompleted={isCompleted}
+          isLastSection={false}
+        />
+      ) : null}
+    </div>
   );
 };
