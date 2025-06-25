@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { LessonData } from "@/types/lesson";
@@ -21,16 +20,16 @@ interface LessonTemplateProps {
 
 // Simple localStorage utility for progress persistence
 const getStoredProgress = (lessonId: string) => {
-  if (typeof window === 'undefined') return { completedSections: new Set(), currentSection: "narrative" };
+  if (typeof window === 'undefined') return { completedSections: new Set<string>(), currentSection: "narrative" };
   const stored = localStorage.getItem(`lesson-progress-${lessonId}`);
   if (stored) {
     const parsed = JSON.parse(stored);
     return {
-      completedSections: new Set(parsed.completedSections || []),
+      completedSections: new Set<string>((parsed.completedSections || []) as string[]),
       currentSection: parsed.currentSection || "narrative"
     };
   }
-  return { completedSections: new Set(), currentSection: "narrative" };
+  return { completedSections: new Set<string>(), currentSection: "narrative" };
 };
 
 const storeProgress = (lessonId: string, completedSections: Set<string>, currentSection: string) => {
@@ -203,13 +202,8 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <LessonHeader 
-        lessonId={lesson.id}
-        lessonTitle={lesson.title}
-        duration={lesson.duration}
-        progressPercentage={progressPercentage}
-      />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 pt-1">
+      <LessonHeader progressPercentage={progressPercentage} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Learning Objectives Banner - Always Visible */}
