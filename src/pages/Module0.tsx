@@ -28,7 +28,7 @@ const module0Characters = [
     concept: "Algebraic Foundations",
     tagline: "Let's build this step by step!",
     description: "Patient and methodical, Ollie guides you through algebraic basics with clear explanations and encouraging support.",
-    color: "from-amber-500 to-orange-500",
+    gradientClass: "bg-gradient-ollie",
     image: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png",
     lessons: ["0.1", "0.2", "0.3", "0.4"]
   },
@@ -39,7 +39,7 @@ const module0Characters = [
     concept: "Functions & Graphing",
     tagline: "Input processed successfully!",
     description: "Logical and systematic, Felix helps you understand functions and graphing with tech-savvy precision and analytical thinking.",
-    color: "from-blue-500 to-indigo-500",
+    gradientClass: "bg-gradient-felix",
     image: "/lovable-uploads/3972307e-38ad-4120-a059-7785ae6a8516.png",
     lessons: ["0.5", "0.6", "0.7"]
   }

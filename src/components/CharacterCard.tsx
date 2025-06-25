@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +8,7 @@ interface Character {
   concept: string;
   tagline: string;
   description: string;
-  color: string;
+  gradientClass: string;
   image: string;
 }
 
@@ -21,7 +20,7 @@ export const CharacterCard = ({ character }: CharacterCardProps) => {
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100">
       {/* Character Image */}
-      <div className={`h-48 bg-gradient-to-br ${character.color} p-6 flex items-center justify-center`}>
+      <div className={`h-48 ${character.gradientClass} p-6 flex items-center justify-center`}>
         <img 
           src={character.image} 
           alt={character.name}
@@ -42,7 +41,7 @@ export const CharacterCard = ({ character }: CharacterCardProps) => {
         </div>
 
         <div className="text-center mb-4">
-          <p className={`text-sm font-medium bg-gradient-to-r ${character.color} bg-clip-text text-transparent`}>
+          <p className={`text-sm font-medium ${character.gradientClass} bg-clip-text text-transparent`}>
             "{character.tagline}"
           </p>
         </div>
@@ -52,7 +51,7 @@ export const CharacterCard = ({ character }: CharacterCardProps) => {
         </p>
 
         <Button 
-          className={`w-full bg-gradient-to-r ${character.color} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
+          className={`w-full ${character.gradientClass} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
         >
           Meet {character.name.split(' ')[0]}
           <ArrowRight className="ml-2 h-4 w-4" />
