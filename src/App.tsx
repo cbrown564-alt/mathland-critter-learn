@@ -8,6 +8,7 @@ import LessonPage from "./pages/LessonPage";
 import Characters from "./pages/Characters";
 import CourseStructure from "./pages/CourseStructure";
 import NotFound from "./pages/NotFound";
+import Course from "./pages/Course";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/lesson/:lessonId" element={<LessonPage />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/course-structure" element={<CourseStructure />} />
+          <Route path="/course" element={<Course />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

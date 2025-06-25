@@ -1,6 +1,6 @@
-
 import { Lock, CheckCircle, PlayCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface Module {
   id: number;
@@ -107,17 +107,28 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
         )}
 
         {/* Action Button */}
-        <Button
-          className={`w-full ${
-            isInteractive
-              ? `bg-gradient-to-r ${module.color} hover:opacity-90`
-              : "bg-gray-300 cursor-not-allowed"
-          } text-white`}
-          disabled={!isInteractive}
-        >
-          {getStatusText()}
-          {isInteractive && <ArrowRight className="ml-2 h-4 w-4" />}
-        </Button>
+        {isInteractive && module.id === 0 ? (
+          <Link to="/module-0">
+            <Button
+              className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
+            >
+              {getStatusText()}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        ) : (
+          <Button
+            className={`w-full ${
+              isInteractive
+                ? `bg-gradient-to-r ${module.color} hover:opacity-90`
+                : "bg-gray-300 cursor-not-allowed"
+            } text-white`}
+            disabled={!isInteractive}
+          >
+            {getStatusText()}
+            {isInteractive && <ArrowRight className="ml-2 h-4 w-4" />}
+          </Button>
+        )}
       </div>
 
       {/* Connection Line for Flow */}

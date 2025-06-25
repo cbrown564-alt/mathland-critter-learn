@@ -7,11 +7,17 @@ import { SectionCompletion } from "./SectionCompletion";
 
 interface NarrativeHookProps {
   lesson: LessonData;
+  character: {
+    name: string;
+    fullName: string;
+    personality: string;
+    avatar: string;
+  };
   onComplete: () => void;
   isCompleted: boolean;
 }
 
-export const NarrativeHook = ({ lesson, onComplete, isCompleted }: NarrativeHookProps) => {
+export const NarrativeHook = ({ lesson, character, onComplete, isCompleted }: NarrativeHookProps) => {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-2 text-xl font-semibold text-slate-800">
@@ -21,8 +27,8 @@ export const NarrativeHook = ({ lesson, onComplete, isCompleted }: NarrativeHook
 
       <div className="flex items-start gap-4">
         <CharacterAvatar 
-          src={lesson.character.avatar} 
-          alt={lesson.character.name}
+          src={character.avatar} 
+          alt={character.fullName}
           size="xl"
           className="mt-1"
         />
@@ -31,7 +37,7 @@ export const NarrativeHook = ({ lesson, onComplete, isCompleted }: NarrativeHook
             <p className="text-slate-700 leading-relaxed">{lesson.narrativeHook.story}</p>
           </div>
           <div className="rounded-lg p-4 border-l-4 border-orange-200 bg-orange-50/50">
-            <p className="font-medium text-slate-800 mb-2">{lesson.character.name} says:</p>
+            <p className="font-medium text-slate-800 mb-2">{character.name} says:</p>
             <p className="text-slate-700 italic">"{lesson.narrativeHook.characterMessage}"</p>
           </div>
         </div>

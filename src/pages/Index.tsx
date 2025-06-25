@@ -1,4 +1,3 @@
-
 import { ArrowRight, BookOpen, Users, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -7,6 +6,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { SimpleCourseTimeline } from "@/components/SimpleCourseTimeline";
+import { characters } from "../utils/characterData";
+
+const ollie = characters.find(c => c.id === "ollie");
+const vera = characters.find(c => c.id === "vera");
+const max = characters.find(c => c.id === "max");
 
 const Index = () => {
   return (
@@ -36,8 +40,8 @@ const Index = () => {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg">
                       <img 
-                        src="/lovable-uploads/e267cdea-bbbc-487c-b7e9-5c91fe5a6555.png" 
-                        alt="Ollie the Otter"
+                        src={ollie?.image} 
+                        alt={ollie?.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -68,8 +72,8 @@ const Index = () => {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg opacity-50">
                       <img 
-                        src="/lovable-uploads/187f4ef7-dd45-4280-8f5d-626062d22c43.png" 
-                        alt="Vera the Vector"
+                        src={vera?.image} 
+                        alt={vera?.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -97,8 +101,8 @@ const Index = () => {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-4 border-white shadow-lg opacity-50">
                       <img 
-                        src="/lovable-uploads/c18b892c-e964-45c1-9958-ae19c36dd3e7.png" 
-                        alt="Matrix Max"
+                        src={max?.image} 
+                        alt={max?.name}
                         className="w-full h-full object-cover"
                       />
                     </div>

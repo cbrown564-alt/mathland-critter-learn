@@ -13,6 +13,7 @@ interface ConceptCheckProps {
   };
   character: {
     name: string;
+    personality: string;
     color: string;
     avatar: string;
   };

@@ -1,16 +1,8 @@
-
 export interface LessonData {
   id: string;
   title: string;
   duration: string;
-  character: {
-    name: string;
-    fullName: string;
-    personality: string;
-    catchphrase: string;
-    color: string;
-    avatar: string;
-  };
+  characterId: string;
   narrativeHook: {
     story: string;
     characterMessage: string;

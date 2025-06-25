@@ -11,6 +11,7 @@ import { ConceptCheck } from "./lesson/ConceptCheck";
 import { RealWorldConnection } from "./lesson/RealWorldConnection";
 import { BreadcrumbNavigation } from "./Breadcrumb";
 import { SectionCompletion } from "./lesson/SectionCompletion";
+import { characters } from "../utils/characterData";
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -100,6 +101,23 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   const currentSectionIndex = sections.findIndex(s => s.id === currentSection);
   const isLastSection = currentSectionIndex === sections.length - 1;
 
+  // Look up the full character object using characterId
+  console.log('characters:', characters);
+  console.log('lesson.characterId:', lesson.characterId);
+  const character = characters.find(c => c.id === lesson.characterId);
+
+  // If character is not found, show a fallback UI or return null for critical components
+  if (!character) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-red-600 mb-2">Character Not Found</h2>
+          <p className="text-slate-700 mb-4">The character for this lesson could not be found. Please check your lesson data or characterData.ts.</p>
+        </div>
+      </div>
+    );
+  }
+
   const renderCurrentSection = () => {
     const isCompleted = completedSections.has(currentSection);
 
@@ -108,6 +126,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
         return (
           <NarrativeHook 
             lesson={lesson} 
+            character={character}
             onComplete={() => handleSectionComplete(currentSection)}
             isCompleted={isCompleted}
           />
@@ -116,7 +135,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
         return (
           <MemoryAids 
             memoryAids={lesson.memoryAids}
-            character={lesson.character}
+            character={character}
             onComplete={() => handleSectionComplete(currentSection)}
             isCompleted={isCompleted}
           />
@@ -125,7 +144,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
         return (
           <ConceptCheck 
             conceptCheck={lesson.conceptCheck}
-            character={lesson.character}
+            character={character}
             onComplete={() => handleSectionComplete(currentSection)}
             isCompleted={isCompleted}
           />
@@ -191,13 +210,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
           </div>
         );
       default:
-        return (
-          <NarrativeHook 
-            lesson={lesson} 
-            onComplete={() => handleSectionComplete(currentSection)}
-            isCompleted={isCompleted}
-          />
-        );
+        return null;
     }
   };
 
@@ -213,7 +226,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <LessonSidebar 
-              character={lesson.character}
+              character={character}
               sections={sections}
               currentSection={currentSection}
               completedSections={completedSections}

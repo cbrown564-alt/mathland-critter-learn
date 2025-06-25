@@ -11,6 +11,7 @@ interface MemoryAidsProps {
   };
   character: {
     name: string;
+    personality: string;
     color: string;
     avatar: string;
   };

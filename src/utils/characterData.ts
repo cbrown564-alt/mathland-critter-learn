@@ -1,18 +1,51 @@
 export const characters = [
   {
+    id: "ollie",
+    name: "Ollie the Otter",
+    animal: "Otter",
+    concept: "Foundations & Order",
+    tagline: "Build step by step",
+    image: "/lovable-uploads/ollie.png",
+    fullName: "Ollie the Otter",
+    catchphrase: "Let's take this step by step!",
+    avatar: "/lovable-uploads/ollie.png",
+    color: "from-amber-500 to-orange-500",
+    expertise: "Mathematical Foundations",
+    description: "Patient and methodical engineer otter, equipped with construction tools and wearing a hard hat. Ollie guides you through algebraic foundations with clear explanations and encouraging support, building mathematical confidence one step at a time.",
+    modules: ["Module 0: Prerequisites & Refresher (Lessons 0.1-0.4)"],
+    personality: "Methodical, Step-by-step"
+  },
+  {
+    id: "felix",
+    name: "Felix the Function Machine",
+    animal: "Robot",
+    concept: "Functions & Systems",
+    tagline: "Transform inputs to outputs",
+    image: "/lovable-uploads/felix.png",
+    fullName: "Felix the Function Machine",
+    catchphrase: "Input processed successfully!",
+    avatar: "/lovable-uploads/felix.png",
+    color: "from-blue-600 to-indigo-600",
+    expertise: "Functions & Coordinate Geometry",
+    description: "Friendly robot with a systematic approach to mathematical transformations. Felix helps you understand functions, graphing, and coordinate geometry through logical, step-by-step processing and clear input-output thinking.",
+    modules: ["Module 0: Prerequisites & Refresher (Lessons 0.5-0.8)"],
+    personality: "Logical, Systematic"
+  },
+  {
     id: "vera",
     name: "Vera the Vector",
     animal: "Red Panda",
     concept: "Vectors & Direction",
     tagline: "Discover direction and magnitude",
-    image: "/lovable-uploads/187f4ef7-dd45-4280-8f5d-626062d22c43.png",
+    image: "/lovable-uploads/vera.png",
     fullName: "Vera the Vector",
     catchphrase: "Direction and strength—that's my whole personality!",
-    avatar: "/lovable-uploads/187f4ef7-dd45-4280-8f5d-626062d22c43.png",
+    avatar: "/lovable-uploads/vera.png",
     color: "from-red-600 to-orange-600",
     expertise: "Vectors & Vector Spaces",
     description: "Cheerful and adventurous explorer, equipped with a compass and a small backpack. Vera thinks in multiple dimensions and helps you navigate the world of vectors, matrices, and linear transformations with confidence and enthusiasm.",
-    modules: ["Module 1: Vectors & Vector Spaces"]
+    modules: ["Module 1: Vectors & Vector Spaces"],
+    personality: "Curious, Encouraging"
   },
   {
     id: "max",
@@ -20,14 +53,15 @@ export const characters = [
     animal: "Owl",
     concept: "Matrices & Structure",
     tagline: "Master structure and transformations",
-    image: "/lovable-uploads/c18b892c-e964-45c1-9958-ae19c36dd3e7.png",
+    image: "/lovable-uploads/max.png",
     fullName: "Matrix Max",
     catchphrase: "I organize worlds—row by row, column by column!",
-    avatar: "/lovable-uploads/c18b892c-e964-45c1-9958-ae19c36dd3e7.png",
+    avatar: "/lovable-uploads/max.png",
     color: "from-blue-600 to-indigo-600",
     expertise: "Matrices & Linear Mappings",
     description: "Energetic mathematician with hints of architectural elements; wears grid-patterned clothing, sports a calculator watch. Max helps you understand how matrices organize and transform mathematical worlds.",
-    modules: ["Module 2: Matrices & Linear Mappings"]
+    modules: ["Module 2: Matrices & Linear Mappings"],
+    personality: "Analytical, Energetic"
   },
   {
     id: "eileen",
@@ -35,14 +69,15 @@ export const characters = [
     animal: "Cat",
     concept: "Eigenvalues & Patterns",
     tagline: "Uncover hidden patterns",
-    image: "/lovable-uploads/cd4be045-5470-40af-8be9-d32ee3e9258a.png",
+    image: "/lovable-uploads/eileen.png",
     fullName: "Eileen Eigen",
     catchphrase: "Discovering hidden directions—that's the Eileen Eigen way!",
-    avatar: "/lovable-uploads/cd4be045-5470-40af-8be9-d32ee3e9258a.png",
+    avatar: "/lovable-uploads/eileen.png",
     color: "from-purple-600 to-pink-600",
     expertise: "Eigenvalues & Eigenvectors",
     description: "Quirky detective-explorer hybrid, characterized by a detective hat and exploration gear in purple and deep blue hues. Eileen uncovers hidden directions in data and transformations.",
-    modules: ["Module 3: Eigenvalues & Eigenvectors"]
+    modules: ["Module 3: Eigenvalues & Eigenvectors"],
+    personality: "Quirky, Insightful"
   },
   {
     id: "delta",
@@ -50,14 +85,15 @@ export const characters = [
     animal: "Hedgehog",
     concept: "Calculus & Change",
     tagline: "Understand change and rates",
-    image: "/lovable-uploads/8ce908b7-0c65-464e-9eea-35e40714b0cd.png",
+    image: "/lovable-uploads/delta.png",
     fullName: "Dr. Delta",
     catchphrase: "Calculus is just watching how fast things change—and nobody does it better than Dr. Delta!",
-    avatar: "/lovable-uploads/8ce908b7-0c65-464e-9eea-35e40714b0cd.png",
+    avatar: "/lovable-uploads/delta.png",
     color: "from-green-600 to-emerald-600",
     expertise: "Multivariate Calculus",
     description: "Thoughtful, precise scientist with subtle engineering elements; dressed in a lab coat, wears glasses, carries a clipboard. Dr. Delta clarifies concepts of derivatives, partial derivatives, and gradients.",
-    modules: ["Module 4: Multivariate Calculus Foundations"]
+    modules: ["Module 4: Multivariate Calculus Foundations"],
+    personality: "Thoughtful, Precise"
   },
   {
     id: "greta",
@@ -65,14 +101,15 @@ export const characters = [
     animal: "Mountain Goat",
     concept: "Optimization",
     tagline: "Climb to optimal solutions",
-    image: "/lovable-uploads/e942438f-5319-4038-a87a-81ec3cb17c87.png",
+    image: "/lovable-uploads/greta.png",
     fullName: "Gradient Greta",
     catchphrase: "Climb with me step by step—we'll find the lowest point together!",
-    avatar: "/lovable-uploads/e942438f-5319-4038-a87a-81ec3cb17c87.png",
+    avatar: "/lovable-uploads/greta.png",
     color: "from-orange-600 to-red-600",
     expertise: "Optimization & Gradient Descent",
     description: "Determined climber and hiker, equipped with hiking gear, ropes, and earthy, natural-colored clothing. Greta teaches optimization through relatable analogies of climbing towards optimal solutions.",
-    modules: ["Module 5: Optimization & Gradient Descent"]
+    modules: ["Module 5: Optimization & Gradient Descent"],
+    personality: "Determined, Supportive"
   },
   {
     id: "pippa",
@@ -80,14 +117,15 @@ export const characters = [
     animal: "Rabbit",
     concept: "Probability & Chance",
     tagline: "Navigate uncertainty with magic",
-    image: "/lovable-uploads/05977652-4008-4b5b-aa0d-f95ce287d3c8.png",
+    image: "/lovable-uploads/pippa.png",
     fullName: "Probability Pippa",
     catchphrase: "Magic or math? Probability Pippa knows it's both!",
-    avatar: "/lovable-uploads/05977652-4008-4b5b-aa0d-f95ce287d3c8.png",
+    avatar: "/lovable-uploads/pippa.png",
     color: "from-pink-600 to-rose-600",
     expertise: "Probability & Distributions",
     description: "Quirky magician in playful, whimsical attire, featuring a magician's hat, wand, and costumes in rich purples and golds. Pippa explains probability using playful magic metaphors.",
-    modules: ["Module 6: Probability & Distributions"]
+    modules: ["Module 6: Probability & Distributions"],
+    personality: "Playful, Imaginative"
   },
   {
     id: "bayes",
@@ -95,14 +133,15 @@ export const characters = [
     animal: "Fox",
     concept: "Bayesian Inference",
     tagline: "Make smart inferences",
-    image: "/lovable-uploads/ae438bc6-bcec-4fc5-a53f-53ee53055ba8.png",
+    image: "/lovable-uploads/bayes.png",
     fullName: "Bayes the Fox",
     catchphrase: "When you're uncertain, follow Bayes the Fox to sniff out the truth!",
-    avatar: "/lovable-uploads/ae438bc6-bcec-4fc5-a53f-53ee53055ba8.png",
+    avatar: "/lovable-uploads/bayes.png",
     color: "from-indigo-600 to-purple-600",
     expertise: "Bayesian Inference",
     description: "Clever detective fox character, characterized by a detective's hat and magnifying glass, using warm orange and earthy tones. Bayes introduces Bayesian inference through detective narratives.",
-    modules: ["Module 8: Bayesian Inference"]
+    modules: ["Module 8: Bayesian Inference"],
+    personality: "Clever, Inquisitive"
   },
   {
     id: "sigmund",
@@ -110,14 +149,15 @@ export const characters = [
     animal: "Swan",
     concept: "Hypothesis Testing",
     tagline: "Test hypotheses elegantly",
-    image: "/lovable-uploads/86febada-e78e-48ec-9d4b-015896eac929.png",
+    image: "/lovable-uploads/sigmund.png",
     fullName: "Sigmund the Swan",
     catchphrase: "One black swan can change everything—Sigmund helps you understand why!",
-    avatar: "/lovable-uploads/86febada-e78e-48ec-9d4b-015896eac929.png",
+    avatar: "/lovable-uploads/sigmund.png",
     color: "from-teal-600 to-cyan-600",
     expertise: "Hypothesis Testing & Inference",
     description: "Elegant black swan with simple, iconic imagery, presented in clean black-and-white contrast. Sigmund teaches hypothesis testing using the powerful black swan metaphor.",
-    modules: ["Module 7: Hypothesis Testing & Inference"]
+    modules: ["Module 7: Hypothesis Testing & Inference"],
+    personality: "Elegant, Insightful"
   },
   {
     id: "sage",
@@ -125,13 +165,14 @@ export const characters = [
     animal: "Owl",
     concept: "Capstone Synthesis",
     tagline: "Turn insight into impact",
-    image: "/lovable-uploads/f1feea0f-0da6-45f5-a1aa-e0e8b5deab65.png",
+    image: "/lovable-uploads/sage.png",
     fullName: "Sage the Synthesis Owl",
     catchphrase: "Turning insight into impact—that's the Sage way!",
-    avatar: "/lovable-uploads/f1feea0f-0da6-45f5-a1aa-e0e8b5deab65.png",
+    avatar: "/lovable-uploads/sage.png",
     color: "from-slate-600 to-gray-600",
     expertise: "Capstone Project",
     description: "Wise and thoughtful owl character who guides students through synthesizing all their learning into practical applications. Sage helps bring together knowledge from all previous modules.",
-    modules: ["Module 9: Capstone Project"]
+    modules: ["Module 9: Capstone Project"],
+    personality: "Wise, Thoughtful"
   }
 ]; 

@@ -1,10 +1,22 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Clock, Users, CheckCircle } from "lucide-react";
+import { characters } from "../utils/characterData";
+
+const getCharacterAvatar = (characterName) => {
+  if (characterName === "Ollie & Felix" || characterName === "Ollie the Otter") {
+    const ollie = characters.find(c => c.id === "ollie");
+    return ollie?.avatar;
+  }
+  if (characterName === "All Characters") {
+    return null;
+  }
+  const char = characters.find(c => c.name === characterName || c.fullName === characterName);
+  return char ? char.avatar : null;
+};
 
 const CourseStructure = () => {
   const modules = [
@@ -18,8 +30,8 @@ const CourseStructure = () => {
       status: "available",
       color: "from-amber-500 to-orange-500",
       character: {
-        name: "Ollie & Felix",
-        avatar: "/lovable-uploads/2371fa94-e340-47aa-b1ed-5670d33066a8.png"
+        name: "Ollie the Otter",
+        avatar: getCharacterAvatar("Ollie the Otter")
       },
       concepts: [
         "Order-of-operations", "Factorising & expanding", "Linear & quadratic equations", 
@@ -39,7 +51,7 @@ const CourseStructure = () => {
       color: "from-red-600 to-orange-600",
       character: {
         name: "Vera the Vector",
-        avatar: "/lovable-uploads/228d1d3a-e74e-4db9-b5ff-632d454e4bb6.png"
+        avatar: getCharacterAvatar("Vera the Vector")
       },
       concepts: [
         "Vector addition/scalar multiplication", "Dot product & norm", "Unit vectors", 
@@ -59,7 +71,7 @@ const CourseStructure = () => {
       color: "from-blue-600 to-indigo-600",
       character: {
         name: "Matrix Max",
-        avatar: "🔢"
+        avatar: getCharacterAvatar("Matrix Max")
       },
       concepts: [
         "Matrix addition/multiplication", "Identity & inverse", "Determinant & rank", 
@@ -205,6 +217,18 @@ const CourseStructure = () => {
     }
   ];
 
+  // Attach character object to each module if possible
+  const modulesWithCharacter = modules.map(module => {
+    let characterObj = null;
+    if (module.character && module.character.name && typeof module.character.name === 'string') {
+      characterObj = characters.find(c => c.name === module.character.name);
+    }
+    return {
+      ...module,
+      characterObj
+    };
+  });
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <Header />
@@ -221,7 +245,7 @@ const CourseStructure = () => {
 
           {/* Course Timeline */}
           <div className="space-y-8">
-            {modules.map((module, index) => (
+            {modulesWithCharacter.map((module) => (
               <Card key={module.id} className={`${module.status === 'available' ? 'border-2 border-blue-200 bg-blue-50/30' : 'opacity-90'} hover:shadow-lg transition-all duration-300`}>
                 <CardContent className="p-8">
                   <div className="flex items-start gap-6">
@@ -265,18 +289,18 @@ const CourseStructure = () => {
                         <Users className="w-5 h-5 text-slate-500" />
                         <span className="font-medium text-slate-700">Your Guide: </span>
                         <div className="flex items-center gap-2">
-                          {module.character.avatar.startsWith('/') ? (
+                          {module.characterObj && module.characterObj.avatar ? (
                             <CharacterAvatar 
-                              src={module.character.avatar}
-                              alt={module.character.name}
+                              src={module.characterObj.avatar}
+                              alt={module.characterObj.name}
                               size="sm"
                             />
                           ) : (
                             <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-lg">
-                              {module.character.avatar}
+                              {module.character && module.character.avatar}
                             </div>
                           )}
-                          <span className="text-slate-600">{module.character.name}</span>
+                          <span className="text-slate-600">{module.character && module.character.name}</span>
                         </div>
                       </div>
 

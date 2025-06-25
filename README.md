@@ -1,58 +1,40 @@
-# Welcome to your Lovable project
+# Lovable: Interactive Math Learning Platform
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d
+This project is an interactive, web-based math learning platform designed to make foundational algebra concepts engaging and accessible for students. The platform features a modular lesson structure, playful character guides, and a variety of interactive activities to support different learning styles. Each lesson is broken down into narrative hooks, reading, visual and auditory explanations, hands-on practice, memory aids, concept checks, and real-world connections.
 
-## How can I edit this code?
+## Current Status
 
-There are several ways of editing your application.
+- **Core Features Implemented:**
+  - Modular lesson navigation with progress tracking (using localStorage)
+  - Character-driven lesson introductions and guidance
+  - Interactive learning objectives and completion banners
+  - Section-based content delivery (story, read, see, hear, do, memory aids, concept check, real world)
+  - Responsive UI built with React, TypeScript, Tailwind CSS, and shadcn-ui components
+- **Editing & Deployment:**
+  - Code can be edited via the Lovable web interface, locally in your IDE, or using GitHub/Codespaces
+  - Easy deployment and preview through the Lovable platform
 
-**Use Lovable**
+## Future Development Plans
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d) and start prompting.
+- **Content Expansion:**
+  - Add more lessons and modules covering additional math topics
+  - Develop richer character backstories and interactions
+- **Feature Enhancements:**
+  - Implement user accounts and cloud-synced progress
+  - Add gamification elements (badges, achievements, leaderboards)
+  - Integrate more interactive problem types and adaptive feedback
+  - Improve accessibility and support for diverse learners
+- **Collaboration & Community:**
+  - Enable teacher dashboards and classroom management tools
+  - Allow user-generated content and lesson sharing
 
-Changes made via Lovable will be committed automatically to this repo.
+## Project URL
 
-**Use your preferred IDE**
+[https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d](https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Tech Stack
 
 - Vite
 - TypeScript
@@ -60,14 +42,18 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Contributing & Editing
 
-Simply open [Lovable](https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d) and click on Share -> Publish.
+You can edit this project via:
+- The [Lovable web interface](https://lovable.dev/projects/bce691bb-c063-4907-be7f-a51461ebc50d)
+- Your local IDE (clone, `npm i`, `npm run dev`)
+- GitHub or GitHub Codespaces
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
 
-Yes, you can!
+To deploy, open the project in Lovable and use the Share → Publish feature.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Custom Domains
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Custom domains are supported. Go to Project > Settings > Domains in Lovable to connect your domain.  
+[Read the guide](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide) for more details.
