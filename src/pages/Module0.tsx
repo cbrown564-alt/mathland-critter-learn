@@ -1,9 +1,9 @@
+
 import { Clock, Play, ArrowRight, Home, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
 import { LessonRoadmap } from "@/components/LessonRoadmap";
 import { useNavigate } from "react-router-dom";
-import { getLessonOrder, getLessonData } from "../utils/lessonData";
 
 const module0Characters = [
   {
@@ -30,17 +30,72 @@ const module0Characters = [
   }
 ];
 
-const lessons = getLessonOrder().map((id) => {
-  const data = getLessonData(id);
-  return {
-    id: data.id,
-    title: data.title,
-    character: typeof data.character === "string" ? data.character : data.character?.name || "",
-    duration: data.duration,
-    status: "available" as const, // You may want to update this logic if you have a lock/unlock system
-    description: data.narrativeHook?.story || data.readContent || ""
-  };
-});
+const lessons = [
+  {
+    id: "0.1",
+    title: "Order of Operations & Algebraic Basics",
+    character: "Ollie",
+    duration: "25 min",
+    status: "available" as const,
+    description: "Master PEMDAS and fundamental algebraic operations"
+  },
+  {
+    id: "0.2",
+    title: "Factoring & Expanding Expressions",
+    character: "Ollie",
+    duration: "30 min",
+    status: "locked" as const,
+    description: "Learn to factor and expand algebraic expressions"
+  },
+  {
+    id: "0.3",
+    title: "Linear & Quadratic Equations",
+    character: "Ollie",
+    duration: "35 min",
+    status: "locked" as const,
+    description: "Solve linear and quadratic equations systematically"
+  },
+  {
+    id: "0.4",
+    title: "Inequalities & Absolute Values",
+    character: "Ollie",
+    duration: "25 min",
+    status: "locked" as const,
+    description: "Work with inequalities and absolute value expressions"
+  },
+  {
+    id: "0.5",
+    title: "Function Notation & Concepts",
+    character: "Felix",
+    duration: "30 min",
+    status: "locked" as const,
+    description: "Understand function notation and basic concepts"
+  },
+  {
+    id: "0.6",
+    title: "Graphing Functions",
+    character: "Felix",
+    duration: "35 min",
+    status: "locked" as const,
+    description: "Learn to graph and interpret various functions"
+  },
+  {
+    id: "0.7",
+    title: "Coordinate Geometry Essentials",
+    character: "Felix",
+    duration: "30 min",
+    status: "locked" as const,
+    description: "Master coordinate plane and geometric relationships"
+  },
+  {
+    id: "0.8",
+    title: "Vectors & Greek Symbols Preview",
+    character: "Vera",
+    duration: "20 min",
+    status: "locked" as const,
+    description: "Preview of vectors and mathematical notation for Module 1"
+  }
+];
 
 const Module0 = () => {
   const navigate = useNavigate();
