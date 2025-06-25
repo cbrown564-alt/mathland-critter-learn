@@ -1,4 +1,3 @@
-
 import { Target } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -10,18 +9,20 @@ export const LearningObjectivesBanner = ({ objectives }: LearningObjectivesBanne
   return (
     <Card className="mb-6 border-l-4 border-l-blue-400 bg-blue-50/50">
       <CardContent className="p-4">
-        <div className="flex items-start gap-3">
-          <Target className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-          <div>
-            <h3 className="font-semibold text-blue-900 mb-2">Learning Objectives</h3>
-            <ul className="space-y-1 text-sm text-blue-800">
+        <div className="flex items-center gap-3">
+          <Target className="w-5 h-5 text-blue-600 flex-shrink-0" />
+          <div className="flex flex-col gap-1 w-full">
+            <h3 className="font-semibold text-blue-900 mb-1">Learning Objectives</h3>
+            <div className="flex flex-wrap gap-2">
               {objectives.map((objective, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">•</span>
-                  <span>{objective}</span>
-                </li>
+                <span
+                  key={index}
+                  className="inline-block bg-blue-100 text-blue-800 text-xs font-medium rounded-full px-3 py-1 border border-blue-200 shadow-sm"
+                >
+                  {objective}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </CardContent>

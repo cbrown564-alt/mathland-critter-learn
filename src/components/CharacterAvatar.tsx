@@ -1,5 +1,5 @@
-
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface CharacterAvatarProps {
   src: string;
@@ -17,16 +17,22 @@ const sizeClasses = {
 
 export const CharacterAvatar = ({ src, alt, size = "md", className }: CharacterAvatarProps) => {
   return (
-    <div className={cn(
-      "rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0",
-      sizeClasses[size],
-      className
-    )}>
+    <motion.div
+      initial={{ scale: 0.7, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      whileHover={{ scale: 1.08 }}
+      className={cn(
+        "rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0",
+        sizeClasses[size],
+        className
+      )}
+    >
       <img 
         src={src} 
         alt={alt}
         className="w-full h-full object-cover"
       />
-    </div>
+    </motion.div>
   );
 };
