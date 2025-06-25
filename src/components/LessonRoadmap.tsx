@@ -1,7 +1,7 @@
-
 import { Lock, CheckCircle, PlayCircle, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { characters } from "../utils/characterData";
 
 interface Lesson {
   id: string;
@@ -17,16 +17,8 @@ interface LessonRoadmapProps {
 }
 
 const getCharacterColor = (character: string) => {
-  switch (character) {
-    case "Ollie":
-      return "from-amber-400 to-yellow-500";
-    case "Felix":
-      return "from-blue-400 to-indigo-500";
-    case "Vera":
-      return "from-red-400 to-orange-500";
-    default:
-      return "from-gray-400 to-slate-500";
-  }
+  const char = characters.find(c => c.name.split(' ')[0] === character || c.name === character || c.id === character.toLowerCase());
+  return char?.color || "from-gray-400 to-slate-500";
 };
 
 const getStatusIcon = (status: string) => {

@@ -67,8 +67,6 @@ export const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
             <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
-            <Link to="/characters" className="text-slate-600 hover:text-blue-600 transition-colors">Characters</Link>
-            <Link to="/course-structure" className="text-slate-600 hover:text-blue-600 transition-colors">Course</Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -93,8 +91,6 @@ export const Header = () => {
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
               <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
-              <Link to="/characters" className="text-slate-600 hover:text-blue-600 transition-colors">Characters</Link>
-              <Link to="/course-structure" className="text-slate-600 hover:text-blue-600 transition-colors">Course</Link>
               <div className="pt-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" onClick={handleContinue}>
                   {isNew ? "Start Learning" : "Continue Learning"}

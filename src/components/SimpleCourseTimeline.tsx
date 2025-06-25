@@ -3,16 +3,16 @@ import { characters } from "../utils/characterData";
 
 const SimpleCourseTimeline = () => {
   const modules = [
-    { id: 0, title: "Prerequisites & Refresher", status: "available", color: "bg-amber-500", image: characters.find(c => c.id === "ollie")?.image },
-    { id: 1, title: "Vectors & Vector Spaces", status: "locked", color: "bg-red-500", image: characters.find(c => c.id === "vera")?.image },
-    { id: 2, title: "Matrices & Linear Mappings", status: "locked", color: "bg-blue-500", image: characters.find(c => c.id === "max")?.image },
-    { id: 3, title: "Eigenvalues & Eigenvectors", status: "locked", color: "bg-purple-500", image: characters.find(c => c.id === "eileen")?.image },
-    { id: 4, title: "Multivariate Calculus", status: "locked", color: "bg-green-500", image: characters.find(c => c.id === "delta")?.image },
-    { id: 5, title: "Optimization & Gradient Descent", status: "locked", color: "bg-orange-500", image: characters.find(c => c.id === "greta")?.image },
-    { id: 6, title: "Probability & Distributions", status: "locked", color: "bg-pink-500", image: characters.find(c => c.id === "pippa")?.image },
-    { id: 7, title: "Hypothesis Testing", status: "locked", color: "bg-teal-500", image: characters.find(c => c.id === "sigmund")?.image },
-    { id: 8, title: "Bayesian Inference", status: "locked", color: "bg-indigo-500", image: characters.find(c => c.id === "bayes")?.image },
-    { id: 9, title: "Capstone Project", status: "locked", color: "bg-slate-600", image: characters.find(c => c.id === "sage")?.image },
+    { id: 0, title: "Prerequisites & Refresher", status: "available", color: characters.find(c => c.id === "ollie")?.color, image: characters.find(c => c.id === "ollie")?.image },
+    { id: 1, title: "Vectors & Vector Spaces", status: "locked", color: characters.find(c => c.id === "vera")?.color, image: characters.find(c => c.id === "vera")?.image },
+    { id: 2, title: "Matrices & Linear Mappings", status: "locked", color: characters.find(c => c.id === "max")?.color, image: characters.find(c => c.id === "max")?.image },
+    { id: 3, title: "Eigenvalues & Eigenvectors", status: "locked", color: characters.find(c => c.id === "eileen")?.color, image: characters.find(c => c.id === "eileen")?.image },
+    { id: 4, title: "Multivariate Calculus", status: "locked", color: characters.find(c => c.id === "delta")?.color, image: characters.find(c => c.id === "delta")?.image },
+    { id: 5, title: "Optimization & Gradient Descent", status: "locked", color: characters.find(c => c.id === "greta")?.color, image: characters.find(c => c.id === "greta")?.image },
+    { id: 6, title: "Probability & Distributions", status: "locked", color: characters.find(c => c.id === "pippa")?.color, image: characters.find(c => c.id === "pippa")?.image },
+    { id: 7, title: "Hypothesis Testing", status: "locked", color: characters.find(c => c.id === "sigmund")?.color, image: characters.find(c => c.id === "sigmund")?.image },
+    { id: 8, title: "Bayesian Inference", status: "locked", color: characters.find(c => c.id === "bayes")?.color, image: characters.find(c => c.id === "bayes")?.image },
+    { id: 9, title: "Capstone Project", status: "locked", color: characters.find(c => c.id === "sage")?.color, image: characters.find(c => c.id === "sage")?.image },
   ];
 
   return (
@@ -30,12 +30,8 @@ const SimpleCourseTimeline = () => {
           
           {modules.map((module, index) => (
             <div key={module.id} className="flex flex-col items-center relative z-10">
-              <div className={`w-12 h-12 rounded-full ${module.status === 'locked' ? 'opacity-50' : ''} flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 overflow-hidden border-4 border-white`}>
-                <img 
-                  src={module.image} 
-                  alt={module.title}
-                  className="w-full h-full object-cover"
-                />
+              <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}>
+                {module.id}
               </div>
               <div className="mt-3 text-center max-w-32">
                 <div className={`text-sm font-medium ${module.status === 'locked' ? 'text-slate-400' : 'text-slate-700'} leading-tight`}>

@@ -8,7 +8,7 @@ interface ModuleCharacter {
   concept: string;
   tagline: string;
   description: string;
-  gradientClass: string;
+  color: string;
   image: string;
   lessons: string[];
 }
@@ -21,7 +21,7 @@ export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => 
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden border border-gray-100">
       {/* Character Header */}
-      <div className={`h-32 ${character.gradientClass} p-6 flex items-center justify-center relative`}>
+      <div className={`h-32 bg-gradient-to-r ${character.color} p-6 flex items-center justify-center relative`}>
         <img 
           src={character.image} 
           alt={character.name}
@@ -46,7 +46,7 @@ export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => 
         </div>
 
         <div className="text-center mb-4">
-          <p className={`text-sm font-medium ${character.gradientClass} bg-clip-text text-transparent`}>
+          <p className={`text-sm font-medium bg-gradient-to-r ${character.color} bg-clip-text text-transparent`}>
             "{character.tagline}"
           </p>
         </div>
@@ -68,7 +68,7 @@ export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => 
         </div>
 
         <Button 
-          className={`w-full ${character.gradientClass} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
+          className={`w-full bg-gradient-to-r ${character.color} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
         >
           Start with {character.name.split(' ')[0]}
           <ArrowRight className="ml-2 h-4 w-4" />

@@ -1,6 +1,6 @@
-
 import { Badge } from "@/components/ui/badge";
 import { ChevronRight } from "lucide-react";
+import { characters } from "../utils/characterData";
 
 const CourseTimeline = () => {
   const modules = [
@@ -9,12 +9,12 @@ const CourseTimeline = () => {
       title: "Prerequisites & Refresher",
       subtitle: "Build Your Foundation",
       status: "available",
-      color: "bg-amber-500",
+      color: characters.find(c => c.id === "ollie")?.color,
       borderColor: "border-amber-200",
       bgColor: "bg-amber-50",
       lessons: 8,
       topics: ["Algebra basics", "Functions", "Graphing"],
-      character: null,
+      character: "Ollie the Otter",
       statusText: "Start Here"
     },
     {
@@ -22,7 +22,7 @@ const CourseTimeline = () => {
       title: "Vectors & Vector Spaces", 
       subtitle: "Direction and Magnitude",
       status: "locked",
-      color: "bg-red-500",
+      color: characters.find(c => c.id === "vera")?.color,
       borderColor: "border-red-200", 
       bgColor: "bg-red-50",
       lessons: 10,
@@ -35,7 +35,7 @@ const CourseTimeline = () => {
       title: "Matrices & Linear Mappings",
       subtitle: "Transforming Spaces",
       status: "locked",
-      color: "bg-blue-500",
+      color: characters.find(c => c.id === "max")?.color,
       borderColor: "border-blue-200",
       bgColor: "bg-blue-50", 
       lessons: 12,
@@ -48,7 +48,7 @@ const CourseTimeline = () => {
       title: "Eigenvalues & Eigenvectors",
       subtitle: "Special Directions",
       status: "locked",
-      color: "bg-purple-500",
+      color: characters.find(c => c.id === "eileen")?.color,
       borderColor: "border-purple-200",
       bgColor: "bg-purple-50",
       lessons: 8,
@@ -61,7 +61,7 @@ const CourseTimeline = () => {
       title: "Multivariate Calculus Foundations",
       subtitle: "Multiple Variables",
       status: "locked", 
-      color: "bg-green-500",
+      color: characters.find(c => c.id === "delta")?.color,
       borderColor: "border-green-200",
       bgColor: "bg-green-50",
       lessons: 10,
@@ -74,7 +74,7 @@ const CourseTimeline = () => {
       title: "Optimisation & Gradient Descent",
       subtitle: "Finding the Best",
       status: "locked",
-      color: "bg-orange-500", 
+      color: characters.find(c => c.id === "greta")?.color,
       borderColor: "border-orange-200",
       bgColor: "bg-orange-50",
       lessons: 9,
@@ -87,7 +87,7 @@ const CourseTimeline = () => {
       title: "Probability & Distributions",
       subtitle: "Understanding Uncertainty",
       status: "locked",
-      color: "bg-pink-500",
+      color: characters.find(c => c.id === "pippa")?.color,
       borderColor: "border-pink-200", 
       bgColor: "bg-pink-50",
       lessons: 11,
@@ -100,7 +100,7 @@ const CourseTimeline = () => {
       title: "Hypothesis Testing & Inference", 
       subtitle: "Making Decisions",
       status: "locked",
-      color: "bg-teal-500",
+      color: characters.find(c => c.id === "sigmund")?.color,
       borderColor: "border-teal-200",
       bgColor: "bg-teal-50", 
       lessons: 10,
@@ -113,7 +113,7 @@ const CourseTimeline = () => {
       title: "Bayesian Inference",
       subtitle: "Updating Beliefs", 
       status: "locked",
-      color: "bg-indigo-500",
+      color: characters.find(c => c.id === "bayes")?.color,
       borderColor: "border-indigo-200",
       bgColor: "bg-indigo-50",
       lessons: 8,
@@ -126,12 +126,12 @@ const CourseTimeline = () => {
       title: "Capstone Project",
       subtitle: "Real-World Application",
       status: "locked",
-      color: "bg-slate-600", 
+      color: characters.find(c => c.id === "sage")?.color,
       borderColor: "border-slate-200",
       bgColor: "bg-slate-50",
       lessons: 1,
       topics: ["Real-world data science workflow"],
-      character: "All Characters",
+      character: "Sage the Synthesis Owl",
       statusText: "Final Project"
     }
   ];
@@ -158,7 +158,7 @@ const CourseTimeline = () => {
               
               <div className={`relative ${module.bgColor} ${module.borderColor} border-2 rounded-xl p-6 h-full transition-all duration-300 hover:shadow-lg ${module.status === 'available' ? 'hover:scale-105' : 'opacity-75'}`}>
                 {/* Module number badge */}
-                <div className={`w-12 h-12 rounded-full ${module.color} flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}>
+                <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}>
                   {module.id}
                 </div>
                 
