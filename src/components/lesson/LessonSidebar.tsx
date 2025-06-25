@@ -1,7 +1,8 @@
-
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Circle, PlayCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface LessonSidebarProps {
   character: {
@@ -45,37 +46,44 @@ export const LessonSidebar = ({
         </div>
 
         {/* Section Navigation */}
-        <div className="space-y-2">
-          <h4 className="font-medium text-slate-800 mb-3">Lesson Sections</h4>
-          {sections.map((section) => (
-            <div
-              key={section.id}
-              className={`w-full flex items-center justify-between p-3 rounded-lg text-sm transition-colors cursor-pointer ${
-                currentSection === section.id
-                  ? "bg-blue-50 text-blue-700 border border-blue-200"
-                  : "hover:bg-slate-50 text-slate-700"
-              }`}
-              onClick={() => onSectionChange(section.id)}
-            >
-              <span>{section.title}</span>
-              <div className="flex items-center gap-2">
-                {completedSections.has(section.id) && (
-                  <CheckCircle className="w-4 h-4 text-green-500" />
+        <div className="space-y-1">
+          <h4 className="font-medium text-slate-800 mb-3 px-3">Lesson Sections</h4>
+          {sections.map((section) => {
+            const isCompleted = completedSections.has(section.id);
+            const isActive = currentSection === section.id;
+            
+            return (
+              <div
+                key={section.id}
+                className={cn(
+                  "flex items-center p-3 rounded-lg text-sm transition-colors cursor-pointer",
+                  isActive
+                    ? "bg-blue-100 text-blue-700 font-semibold"
+                    : "hover:bg-slate-100 text-slate-700 font-medium",
+                  isCompleted && !isActive && "text-slate-500"
                 )}
-                <div
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onToggleSection(section.id);
-                  }}
-                  className={`w-4 h-4 rounded border-2 cursor-pointer ${
-                    completedSections.has(section.id)
-                      ? "bg-green-500 border-green-500"
-                      : "border-slate-300 hover:border-slate-400"
-                  }`}
-                />
+                onClick={() => onSectionChange(section.id)}
+              >
+                {isActive ? (
+                  <PlayCircle className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" />
+                ) : isCompleted ? (
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    className="mr-3 flex-shrink-0"
+                  >
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                  </motion.span>
+                ) : (
+                  <Circle className="w-5 h-5 mr-3 text-slate-400 flex-shrink-0" />
+                )}
+                <span className={cn(isCompleted && !isActive && "line-through")}>
+                  {section.title}
+                </span>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </CardContent>
     </Card>
