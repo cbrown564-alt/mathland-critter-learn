@@ -4,6 +4,21 @@ import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
 import { LessonRoadmap } from "@/components/LessonRoadmap";
 import { useNavigate } from "react-router-dom";
 import { getLessonOrder, getLessonData } from "../utils/lessonData";
+import { useEffect, useState } from "react";
+
+// Utility to get lesson progress from localStorage
+const getStoredProgress = (lessonId: string) => {
+  if (typeof window === 'undefined') return { completedSections: new Set(), currentSection: "narrative" };
+  const stored = localStorage.getItem(`lesson-progress-${lessonId}`);
+  if (stored) {
+    const parsed = JSON.parse(stored);
+    return {
+      completedSections: new Set(parsed.completedSections || []),
+      currentSection: parsed.currentSection || "narrative"
+    };
+  }
+  return { completedSections: new Set(), currentSection: "narrative" };
+};
 
 const module0Characters = [
   {
@@ -30,20 +45,50 @@ const module0Characters = [
   }
 ];
 
-const lessons = getLessonOrder().map((id) => {
-  const data = getLessonData(id);
-  return {
-    id: data.id,
-    title: data.title,
-    character: typeof data.character === "string" ? data.character : data.character?.name || "",
-    duration: data.duration,
-    status: "available" as const, // You may want to update this logic if you have a lock/unlock system
-    description: data.narrativeHook?.story || data.readContent || ""
-  };
-});
+const getDynamicLessons = () => {
+  const lessonOrder = getLessonOrder();
+  let foundFirstIncomplete = false;
+  return lessonOrder.map((id) => {
+    const data = getLessonData(id);
+    const progress = getStoredProgress(id);
+    // Consider a lesson completed if all sections are completed (8 sections in LessonTemplate)
+    const isCompleted = progress.completedSections && progress.completedSections.size >= 8;
+    let status: 'locked' | 'available' | 'completed' | 'current' = 'locked';
+    if (isCompleted) {
+      status = 'completed';
+    } else if (!foundFirstIncomplete) {
+      status = 'available';
+      foundFirstIncomplete = true;
+    }
+    return {
+      id: data.id,
+      title: data.title,
+      character: typeof data.character === "string" ? data.character : data.character?.name || "",
+      duration: data.duration,
+      status,
+      description: data.narrativeHook?.story || data.readContent || ""
+    };
+  });
+};
 
 const Module0 = () => {
   const navigate = useNavigate();
+  const [lessons, setLessons] = useState(getDynamicLessons());
+
+  useEffect(() => {
+    const handle = () => setLessons(getDynamicLessons());
+    window.addEventListener('storage', handle);
+    // Also update on mount
+    handle();
+    return () => window.removeEventListener('storage', handle);
+  }, []);
+
+  // Determine if Felix should be locked (all Ollie lessons must be completed)
+  const ollieLessonIds = module0Characters.find(c => c.id === 'ollie')?.lessons || [];
+  const allOllieCompleted = ollieLessonIds.every(id => {
+    const progress = getStoredProgress(id);
+    return progress.completedSections && progress.completedSections.size >= 8;
+  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
@@ -119,7 +164,7 @@ const Module0 = () => {
             {module0Characters.map((character) => (
               <div key={character.id} className="relative">
                 <ModuleCharacterCard character={character} />
-                {character.id === "felix" && (
+                {character.id === "felix" && !allOllieCompleted && (
                   <div className="absolute inset-0 bg-slate-200/50 rounded-2xl flex items-center justify-center">
                     <div className="bg-white rounded-lg p-4 shadow-lg flex items-center gap-2">
                       <Lock className="w-5 h-5 text-slate-500" />
