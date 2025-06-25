@@ -9,6 +9,7 @@ import Characters from "./pages/Characters";
 import CourseStructure from "./pages/CourseStructure";
 import NotFound from "./pages/NotFound";
 import Course from "./pages/Course";
+import ModuleDetail from "./pages/ModuleDetail";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/characters" element={<Characters />} />
           <Route path="/course-structure" element={<CourseStructure />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/module/:id" element={<ModuleDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

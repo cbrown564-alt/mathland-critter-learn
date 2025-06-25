@@ -6,12 +6,14 @@ interface Module {
   id: number;
   title: string;
   subtitle: string;
-  character: string | null;
+  character: { name: string; avatar: string } | null;
   topics: string[];
   status: "available" | "locked" | "completed" | "current";
   description: string;
   color: string;
   prerequisites: number[];
+  concepts?: string[];
+  roadmapConcepts?: string[];
 }
 
 interface ModuleCardProps {
@@ -49,16 +51,17 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
   const isInteractive = module.status === "available" || module.status === "current";
 
   return (
-    <div className={`relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 ${
-      isInteractive ? "hover:shadow-xl hover:-translate-y-1 cursor-pointer" : "opacity-75"
-    }`}>
+    <div className={"relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"}>
       {/* Module Header */}
       <div className={`h-20 bg-gradient-to-r ${module.color} flex items-center justify-between px-6 text-white`}>
         <div>
           <h3 className="text-lg font-bold">Module {module.id}</h3>
           <p className="text-sm opacity-90">{module.subtitle}</p>
         </div>
-        {getStatusIcon()}
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-semibold">Find out more</span>
+          <ArrowRight className="w-5 h-5" />
+        </div>
       </div>
 
       {/* Module Content */}
@@ -66,31 +69,51 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
         <div className="mb-4">
           <h4 className="text-xl font-bold text-gray-800 mb-2">{module.title}</h4>
           {module.character && (
-            <p className="text-sm text-gray-500 font-medium">
-              Guided by {module.character}
-            </p>
+            <div className="flex items-center gap-2 text-sm text-gray-500 font-medium">
+              <img src={module.character.avatar} alt={module.character.name} className="w-6 h-6 rounded-full" />
+              Guided by {module.character.name}
+            </div>
           )}
         </div>
 
         <p className="text-gray-600 mb-4 leading-relaxed">{module.description}</p>
 
         {/* Topics */}
-        <div className="mb-6">
-          <h5 className="text-sm font-semibold text-gray-700 mb-2">Key Topics:</h5>
-          <div className="flex flex-wrap gap-2">
-            {module.topics.map((topic, i) => (
-              <span
-                key={i}
-                className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
-              >
-                {topic}
-              </span>
-            ))}
+        {Array.isArray(module.topics) && module.topics.length > 0 ? (
+          <div className="mb-6">
+            <h5 className="text-sm font-semibold text-gray-700 mb-2">Key Topics:</h5>
+            <div className="flex flex-wrap gap-2">
+              {module.topics.map((topic, i) => (
+                <span
+                  key={i}
+                  className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                >
+                  {topic}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : null}
+        {/* Key Concepts (short, single line, from roadmapConcepts if present) */}
+        {Array.isArray(module.roadmapConcepts) && module.roadmapConcepts.length > 0 ? (
+          <div className="mb-4">
+            <span className="text-sm text-gray-700 font-semibold">Key Concepts: </span>
+            <span className="text-sm text-gray-600">
+              {module.roadmapConcepts.join(' • ')}
+            </span>
+          </div>
+        ) : Array.isArray(module.concepts) && module.concepts.length > 0 && (
+          <div className="mb-4">
+            <span className="text-sm text-gray-700 font-semibold">Key Concepts: </span>
+            <span className="text-sm text-gray-600">
+              {module.concepts.slice(0, 3).join(' • ')}
+              {module.concepts.length > 3 && ' • ...'}
+            </span>
+          </div>
+        )}
 
         {/* Prerequisites */}
-        {module.prerequisites.length > 0 && (
+        {Array.isArray(module.prerequisites) && module.prerequisites.length > 0 ? (
           <div className="mb-6">
             <h5 className="text-sm font-semibold text-gray-700 mb-2">Prerequisites:</h5>
             <div className="flex flex-wrap gap-2">
@@ -104,7 +127,12 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
               ))}
             </div>
           </div>
-        )}
+        ) : (typeof module.prerequisites === 'string' && module.prerequisites) ? (
+          <div className="mb-6">
+            <h5 className="text-sm font-semibold text-gray-700 mb-2">Prerequisites:</h5>
+            <div className="text-xs text-slate-600">{module.prerequisites}</div>
+          </div>
+        ) : null}
 
         {/* Action Button */}
         {isInteractive && module.id === 0 ? (

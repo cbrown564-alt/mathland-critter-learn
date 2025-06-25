@@ -1,50 +1,10 @@
 import { Lock, CheckCircle, PlayCircle, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ModuleCard } from "./ModuleCard";
-import {
-  getLessonOrder,
-  getModule1LessonOrder,
-  getModule2LessonOrder,
-  getLessonData,
-  getModule1LessonData,
-  getModule2LessonData
-} from "../utils/lessonData";
 import { useEffect, useState } from "react";
+import { modulesData } from "../utils/modulesData";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-
-const MODULES = [
-  {
-    id: 0,
-    title: "Prerequisites & Refresher",
-    subtitle: "Build Your Foundation",
-    character: "Ollie the Otter & Felix the Function Machine",
-    color: "from-gray-400 to-slate-500",
-    getLessonOrder: getLessonOrder,
-    getLessonData: getLessonData,
-    topics: ["Algebra basics", "Functions", "Graphing"],
-  },
-  {
-    id: 1,
-    title: "Vectors & Vector Spaces",
-    subtitle: "Direction and Magnitude",
-    character: "Vera the Vector",
-    color: "from-red-400 to-orange-500",
-    getLessonOrder: getModule1LessonOrder,
-    getLessonData: getModule1LessonData,
-    topics: ["Vector operations", "Linear combinations", "Basis vectors"],
-  },
-  {
-    id: 2,
-    title: "Matrices & Linear Mappings",
-    subtitle: "Structure and Transformation",
-    character: "Matrix Max",
-    color: "from-blue-400 to-indigo-500",
-    getLessonOrder: getModule2LessonOrder,
-    getLessonData: getModule2LessonData,
-    topics: ["Matrix operations", "Transformations", "Rank and nullity"],
-  },
-];
 
 function getStoredProgress(lessonId) {
   if (typeof window === 'undefined') return { completedSections: new Set(), currentSection: "narrative" };
@@ -68,40 +28,33 @@ export const CourseRoadmap = () => {
     let prevModuleComplete = true;
     let totalLessons = 0;
     let totalCompleted = 0;
-    const computedModules = MODULES.map((mod, idx) => {
-      const lessonIds = mod.getLessonOrder();
-      const lessons = lessonIds.map(id => mod.getLessonData(id));
-      const completedLessons = lessonIds.filter(id => {
-        const progress = getStoredProgress(id);
-        return progress.completedSections && progress.completedSections.size >= 8;
-      });
-      totalLessons += lessonIds.length;
-      totalCompleted += completedLessons.length;
-      let status = "locked";
+    const computedModules = modulesData.map((mod, idx) => {
+      // For now, just use lessons count for progress (can be improved with lessonData linkage)
+      // You can later link to lesson IDs for more granular progress
+      let completedLessons = 0;
+      let status = mod.status;
       if (idx === 0 || prevModuleComplete) {
-        status = completedLessons.length === lessonIds.length ? "completed" : "available";
+        status = mod.status === "available" ? "available" : "coming-soon";
+      } else {
+        status = "locked";
       }
+      if (status === "available") prevModuleComplete = false;
       if (status === "completed") prevModuleComplete = true;
-      else prevModuleComplete = false;
+      totalLessons += mod.lessons;
+      // For now, assume 0 completed
       return {
-        id: mod.id,
-        title: mod.title,
-        subtitle: mod.subtitle,
-        character: mod.character,
-        topics: mod.topics,
-        color: mod.color,
+        ...mod,
         status,
-        progress: lessonIds.length > 0 ? completedLessons.length / lessonIds.length : 0,
-        completedLessons: completedLessons.length,
-        totalLessons: lessonIds.length,
-        prerequisites: []
+        progress: mod.lessons > 0 ? completedLessons / mod.lessons : 0,
+        completedLessons,
+        totalLessons: mod.lessons,
+        prerequisites: mod.prerequisites || []
       };
     });
     setModules(computedModules);
-    setOverallProgress(totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0);
+    setOverallProgress(totalLessons > 0 ? Math.round((0 / totalLessons) * 100) : 0);
     // Listen for localStorage changes (cross-tab)
     const handle = () => {
-      // re-run effect
       setModules([]);
     };
     window.addEventListener('storage', handle);
@@ -146,9 +99,14 @@ export const CourseRoadmap = () => {
 
             {/* Module Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {modules.map((module, index) => (
-                <ModuleCard key={module.id} module={module} index={index} />
-              ))}
+              {modules.map((module, index) => {
+                const detailUrl = `/module/${module.id}`;
+                return (
+                  <Link key={module.id} to={detailUrl} style={{ textDecoration: 'none' }}>
+                    <ModuleCard module={module} index={index} />
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Call to Action */}
