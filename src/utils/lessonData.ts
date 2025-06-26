@@ -770,7 +770,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Coordinates relative to a basis", 
       "Uniqueness of representation"
     ],
-    readContent: "A basis for a vector space is a set of linearly independent vectors that spans the entire space. Every vector can be uniquely expressed as a linear combination of basis vectors. The standard basis in 2D is {[1,0], [0,1]} and in 3D is {[1,0,0], [0,1,0], [0,0,1]}. The dimension of a space equals the number of vectors in any basis. Coordinates [a,b] relative to basis {**v₁**, **v₂**} means the vector equals a**v₁** + b**v₂**. Different bases provide different coordinate systems for the same space, like Cartesian vs. polar coordinates.",
+    readContent: "A basis is like having the perfect GPS coordinate system! It's the minimum set of independent vectors that can reach everywhere in the space. Just like latitude and longitude give unique coordinates for any Earth location, a basis gives unique coordinates for any vector. The standard basis {[1,0], [0,1]} in 2D is like having perfectly aligned north-south and east-west directions.",
+    readAnalogy: "A basis is like having the perfect set of Lego blocks - the minimum toolkit needed to build everything else. Just like you can build any Lego creation with the right basic pieces, you can express any vector with the right basis combination!",
+    readKeyPoints: [
+      "Basis = linearly independent vectors that span the entire space",
+      "Standard basis: {[1,0], [0,1]} in 2D, {[1,0,0], [0,1,0], [0,0,1]} in 3D",
+      "Dimension = number of vectors in any basis for the space"
+    ],
+    readDigDeeper: "Every vector has unique coordinates relative to a given basis. Different bases provide different coordinate systems for the same space, like Cartesian vs. polar coordinates. Changing basis is like switching between different map projections.",
+    readWhyMatters: "Principal Component Analysis (PCA) finds the best basis for your data, revealing hidden patterns and reducing complexity. Different coordinate systems optimize for different purposes - like how architects use different views to fully describe buildings.",
     seeContent: "Compare different bases for the same 2D space, showing how the same vectors have different coordinates in different basis systems. Watch the Coordinate Converter demonstrate basis transformations.",
     hearContent: "Listen as I explain how a basis is like having the perfect coordinate system - it gives you a unique address for every location in your mathematical space, just like street addresses for houses!",
     doContent: "Use the Basis Visualizer to compare different coordinate systems, practice with the Coordinate Converter to change between bases, and experiment with the Custom Basis Builder to create your own coordinate systems.",
@@ -945,6 +953,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Square vs rectangular matrices"
     ],
     readContent: "A matrix is a rectangular array of numbers organized in rows and columns, providing systematic storage and manipulation of multi-dimensional data. Matrix dimensions are expressed as m × n (m rows, n columns). Elements are accessed using notation A[i,j] or aᵢⱼ for the element in row i, column j. Special matrices include the zero matrix (all elements zero), identity matrix (1s on diagonal, 0s elsewhere), and diagonal matrices. Matrices enable efficient organization of data relationships, from simple tables to complex transformations in computer graphics and machine learning.",
+    readAnalogy: "Imagine the most perfectly organized library ever built - every book has a precise location (row, shelf), and you can find any information instantly by knowing its address. That's what matrices do for mathematical information!",
+    readKeyPoints: [
+      "Matrix dimensions: m × n means m rows by n columns",
+      "Element addressing: A[i,j] means row i, column j - always row first!",
+      "Special types: square (same rows/columns), zero (all zeros), identity (1s on diagonal)"
+    ],
+    readDigDeeper: "Matrices can represent various mathematical objects: transformation rules, systems of equations, data tables, adjacency graphs, and probability transitions. The organizational structure enables systematic manipulation of complex information.",
+    readWhyMatters: "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems represent road networks as matrices for navigation calculations.",
     seeContent: "Explore interactive matrix grids showing how information gets organized systematically. See how changing matrix dimensions affects data storage capacity and watch real-world examples like spreadsheets, image pixels, and database tables.",
     hearContent: "Listen as I explain how organizing information systematically is like having a perfectly arranged library - every book has its place, and you can find anything instantly when you know the organizational system!",
     doContent: "Practice with the Matrix Builder to create different sized matrices, use the Element Locator to find specific positions, and experiment with the Matrix Type Identifier to recognize different matrix categories.",
@@ -990,6 +1006,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Zero matrix as additive identity"
     ],
     readContent: "Matrix addition combines two matrices of the same dimensions by adding corresponding elements: C[i,j] = A[i,j] + B[i,j]. Matrices must have identical dimensions for addition to be defined. Scalar multiplication multiplies every element by the same number: (kA)[i,j] = k·A[i,j]. Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix (all elements zero) serves as the additive identity. These operations form the foundation for more complex matrix manipulations and linear transformations.",
+    readAnalogy: "Matrix addition is like combining two identical spreadsheets by adding corresponding cells. Scalar multiplication is like adjusting every number in a spreadsheet by the same percentage - systematic scaling of organized information.",
+    readKeyPoints: [
+      "Addition rule: C[i,j] = A[i,j] + B[i,j] for corresponding elements",
+      "Dimension requirement: matrices must be the same size for addition",
+      "Scalar multiplication: multiply every element by the same constant"
+    ],
+    readDigDeeper: "Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix serves as the additive identity. These properties make matrix spaces behave like familiar number systems.",
+    readWhyMatters: "Financial analysts add quarterly matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to systematically improve model performance.",
     seeContent: "Watch matrix addition happen element by element in an interactive grid, and see how scalar multiplication uniformly scales all values. Observe how dimension mismatches prevent addition and how the zero matrix behaves as an identity.",
     hearContent: "Listen as I explain how combining systematic information is like perfectly aligning two filing cabinets and merging their contents - everything has to match up precisely for the combination to work!",
     doContent: "Use the Matrix Combiner to practice addition with visual feedback, experiment with the Scalar Multiplier to see uniform scaling effects, and test the Dimension Checker to understand compatibility requirements.",
@@ -1035,6 +1059,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Applications in systems and graphics"
     ],
     readContent: "Matrix multiplication combines two matrices by taking dot products of rows from the first matrix with columns from the second matrix. For A (m×n) and B (n×p), the product AB is (m×p) where element C[i,j] equals the dot product of row i from A with column j from B. The inner dimensions must match (n=n) while outer dimensions (m,p) determine the result size. Unlike addition, matrix multiplication is not commutative: AB ≠ BA in general. Matrix multiplication represents systematic application of transformations, making it fundamental to computer graphics, solving linear systems, and data processing.",
+    readAnalogy: "Matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules. Every combination gets processed according to precise organizational protocols.",
+    readKeyPoints: [
+      "Multiplication rule: C[i,j] = (row i of A) · (column j of B)",
+      "Dimension compatibility: (m×n)(n×p) = (m×p) - inner dimensions must match",
+      "Non-commutative: AB ≠ BA in general - order matters!"
+    ],
+    readDigDeeper: "Matrix multiplication represents function composition, where applying transformation B then A equals applying transformation AB. This operation is associative (A(BC) = (AB)C) but not commutative, reflecting the order-dependent nature of transformations.",
+    readWhyMatters: "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
     seeContent: "Watch step-by-step matrix multiplication with highlighted row-column combinations, see how dimension mismatches prevent multiplication, and explore how matrix products represent transformations of geometric objects.",
     hearContent: "Listen as I explain how matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules!",
     doContent: "Practice with the Matrix Multiplier showing step-by-step calculations, use the Dimension Compatibility Checker, and experiment with the Transformation Visualizer to see matrix multiplication as geometric transformation.",
@@ -1053,7 +1085,7 @@ const module2Lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "For matrix multiplication A×B, the number of columns in A must equal the number of rows in B. (3×2)(2×4) works: inner dimensions 2=2. (3×2)(3×4) fails: inner dimensions 2≠3."
     },
-    realWorldConnection: "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how changes in one sector affect entire economies."
+    realWorldConnection: "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies."
   },
 
   "2.4": {
@@ -1080,6 +1112,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Applications in solving Ax = b"
     ],
     readContent: "The identity matrix I has 1s on the main diagonal and 0s elsewhere, serving as the multiplicative identity: AI = IA = A for any compatible matrix A. The inverse of matrix A, denoted A⁻¹, satisfies AA⁻¹ = A⁻¹A = I. For a 2×2 matrix [[a,b],[c,d]], the inverse is (1/det(A))[[d,-b],[-c,a]] where det(A) = ad-bc. If det(A) = 0, the matrix is singular (non-invertible). Matrix inverses solve linear systems: if Ax = b, then x = A⁻¹b. Geometrically, the identity preserves all transformations while inverses exactly reverse them.",
+    readAnalogy: "The identity matrix is like a perfect photocopier that reproduces everything exactly. Matrix inverses are like having a universal 'undo' button that can perfectly reverse any systematic transformation.",
+    readKeyPoints: [
+      "Identity matrix: I has 1s on diagonal, 0s elsewhere - the multiplicative identity",
+      "Inverse property: AA⁻¹ = A⁻¹A = I",
+      "2×2 inverse formula: A⁻¹ = (1/det(A))[[d,-b],[-c,a]] when det(A) ≠ 0"
+    ],
+    readDigDeeper: "If det(A) = 0, the matrix is singular (non-invertible) because it collapses space to lower dimensions. Only square matrices can have inverses, and the inverse is unique when it exists. Matrix inverses solve linear systems: if Ax = b, then x = A⁻¹b.",
+    readWhyMatters: "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified.",
     seeContent: "Watch the identity matrix act as a perfect mirror, see 2×2 inverse calculations step-by-step, and observe how multiplying a matrix by its inverse produces the identity matrix through interactive visualization.",
     hearContent: "Listen as I explain how the identity matrix is like having a perfect filing system that returns everything exactly as you put it in, while inverse matrices are like having perfect organizational reversal tools!",
     doContent: "Use the Identity Matrix Demonstrator to see preservation properties, practice with the 2×2 Inverse Calculator showing detailed steps, and experiment with the Inverse Tester to verify AA⁻¹ = I.",
@@ -1108,7 +1148,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     characterId: "max",
     narrativeHook: {
       story: "Max needs to measure the 'power' of his transformation matrices. How much do they stretch or shrink areas? Do they flip orientations? The determinant is Max's mathematical measuring tool that captures the essential transformation strength and behavior of any matrix in a single number.",
-      characterMessage: "Every transformation has a signature number that tells its complete story! The determinant measures transformation power - does it stretch areas, shrink them, preserve them, or collapse everything to a line? It's like having a transformation DNA test!"
+      characterMessage: "Every transformation has a signature number that tells its complete story! The determinant measures transformation power - how much does it stretch or shrink areas (2D) or volumes (3D)? For 2×2 matrices: det(A) = ad - bc. The absolute value |det(A)| shows the scaling factor, while the sign indicates orientation: positive preserves orientation, negative flips it like a mirror. If det(A) = 0, the transformation collapses everything to a lower dimension - it's singular and non-invertible."
     },
     learningObjectives: [
       "Calculate determinants for 2×2 and 3×3 matrices",
@@ -1118,13 +1158,23 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Apply determinant properties to solve practical problems"
     ],
     coreConcepts: [
-      "2×2 determinant: ad - bc",
+      "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
       "3×3 determinant using cofactor expansion",
       "Geometric interpretation: area/volume scaling",
       "det(A) = 0 ↔ matrix is singular",
       "Determinant properties and applications"
     ],
     readContent: "The determinant of a matrix measures how much the matrix transformation scales areas (2D) or volumes (3D). For 2×2 matrix [[a,b],[c,d]], det(A) = ad - bc. For 3×3 matrices, use cofactor expansion along any row or column. Geometrically, |det(A)| gives the scaling factor for areas/volumes, while the sign indicates orientation: positive preserves orientation, negative reverses it. If det(A) = 0, the matrix collapses space to lower dimension and is non-invertible (singular). If det(A) ≠ 0, the matrix is invertible with det(A⁻¹) = 1/det(A).",
+    readAnalogy: "The determinant is like measuring the transformation DNA of any matrix - it tells you exactly how powerful the transformation is and whether it flips things around!",
+    readKeyPoints: [
+      "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
+      "3×3 determinant: cofactor expansion - systematic way to calculate",
+      "Geometric interpretation: area/volume scaling",
+      "Sign: positive preserves orientation, negative reverses it",
+      "Singular vs invertible matrices"
+    ],
+    readDigDeeper: "The determinant is a powerful tool for understanding matrix properties: det(A) = 0 means the matrix is singular (non-invertible), det(A) ≠ 0 means the matrix is invertible. Determinant properties like multilinearity and alternating properties help simplify calculations.",
+    readWhyMatters: "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
     seeContent: "Visualize how determinants measure area scaling by watching unit squares transform into parallelograms, see how negative determinants flip orientations, and observe how zero determinants collapse space to lines.",
     hearContent: "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
     doContent: "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
@@ -1143,7 +1193,7 @@ const module2Lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "Determinant -3 means: |det| = 3 so areas scale by factor 3 (magnification), and the negative sign means orientation reverses (like a mirror flip). The transformation is invertible since det ≠ 0."
     },
-    realWorldConnection: "Computer graphics use determinants to ensure transformations don't collapse 3D objects. Physicists use determinants to calculate how electromagnetic fields change space. Engineers use determinants to determine if structural systems have unique solutions or are unstable."
+    realWorldConnection: "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations."
   },
 
   "2.6": {
@@ -1170,6 +1220,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Rank and linear independence connection"
     ],
     readContent: "Elementary row operations transform matrices while preserving their essential linear relationships: (1) Swap two rows, (2) Multiply a row by a non-zero constant, (3) Add a multiple of one row to another row. These operations convert matrices to row echelon form, where each row starts with a leading 1 (pivot) to the right of the previous row's pivot. Matrix rank equals the number of non-zero rows in row echelon form, representing the number of linearly independent rows. Rank determines the dimension of the row space and indicates how much independent information the matrix contains.",
+    readAnalogy: "Elementary row operations are like the basic tools in a carpenter's toolkit - they allow you to shape and modify the matrix structure without changing the underlying information.",
+    readKeyPoints: [
+      "Swap rows: switch two rows to change their order",
+      "Scale rows: multiply a row by a non-zero constant to change its height",
+      "Add rows: add a multiple of one row to another to combine information"
+    ],
+    readDigDeeper: "Row operations are reversible and can be used to simplify matrix calculations. They're also used to find the rank of a matrix, which is the number of linearly independent rows or columns.",
+    readWhyMatters: "Row operations are a fundamental part of linear algebra: they allow us to manipulate matrices to find solutions to systems of linear equations, calculate determinants, and understand matrix properties.",
     seeContent: "Watch step-by-step row operations transforming messy matrices into clean row echelon form, see how rank reveals the true independent information content, and observe how different matrices can have the same rank.",
     hearContent: "Listen as I explain how organizing matrix information is like reorganizing a filing cabinet systematically - the same information is there, but now it's perfectly arranged and easy to understand!",
     doContent: "Use the Row Operations Simulator to practice systematic matrix transformation, experiment with the Rank Calculator to find independent information content, and try the Echelon Form Converter for automatic organization.",
@@ -1215,6 +1273,14 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Linear transformation properties"
     ],
     readContent: "Matrix-vector multiplication Av transforms vector v according to the linear transformation represented by matrix A. The matrix columns show where the standard basis vectors [1,0] and [0,1] get mapped. Common transformations include: rotation (preserves length and angles), scaling (changes size), reflection (flips across lines), shear (slides parallel layers), and projection (flattens to lower dimensions). Transformation composition works by matrix multiplication: applying transformation B then A equals applying transformation AB. All linear transformations preserve vector addition and scalar multiplication: T(u + v) = T(u) + T(v) and T(cu) = cT(u).",
+    readAnalogy: "Matrix-vector multiplication is like applying a series of transformations to a vector - each transformation is represented by a matrix, and the result is the final transformed vector. This is a fundamental operation in linear algebra and computer graphics.",
+    readKeyPoints: [
+      "Matrix-vector multiplication: Av",
+      "Transformation interpretation: each column of A represents a transformed basis vector",
+      "Types of transformations: rotation, scaling, reflection, shear, projection"
+    ],
+    readDigDeeper: "Matrix-vector multiplication is a powerful tool for understanding linear transformations. It's used in various applications like computer graphics, robotics, and machine learning.",
+    readWhyMatters: "Matrix-vector multiplication is a fundamental operation in linear algebra and computer graphics: it allows us to apply linear transformations to vectors, which is essential for understanding and manipulating geometric transformations.",
     seeContent: "Watch vectors transform in real-time as matrix values change, see how different matrix types create rotation, scaling, reflection, and other transformations, and observe transformation composition through matrix multiplication.",
     hearContent: "Listen as I explain how every matrix has its own transformation personality - some are gentle rotators, others are aggressive stretchers, and some are precise projectors. Each one systematically changes vectors according to its mathematical nature!",
     doContent: "Use the Transformation Visualizer to see matrix-vector products as geometric changes, experiment with the Matrix Personality Detector to identify transformation types, and practice the Transformation Composer to combine multiple transformations.",
@@ -1259,7 +1325,15 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Coordinate conversion between bases",
       "Applications in graphics and data analysis"
     ],
-    readContent: "Composing linear transformations means applying multiple transformations in sequence. If transformation A is applied first, then B, the composition is BA (note the reverse order). Matrix multiplication represents this composition: (BA)v = B(Av). Order matters because transformations don't generally commute. Change of basis involves converting vector coordinates from one basis to another using transition matrices. If P converts from basis B to basis C, then P⁻¹ converts back from C to B. This allows viewing the same vectors through different coordinate frameworks, essential for optimization, data analysis, and computer graphics.",
+    readContent: "The ultimate organizational superpower: chaining transformations and changing perspectives! Transformation composition means applying multiple transformations in sequence - if A applies first, then B, the result is BA (note the reverse order). Matrix multiplication represents this: (BA)v = B(Av). Change of basis is even more powerful - it's like having multiple organizational frameworks for viewing the same information. Transition matrix P converts coordinates from one basis to another, while P⁻¹ converts back.",
+    readAnalogy: "Transformation composition is like running a systematic assembly line where each station adds its own transformation. Change of basis is like having multiple viewing windows that show the same organized information through different systematic perspectives.",
+    readKeyPoints: [
+      "Composition: applying B then A equals transformation BA (reverse order)",
+      "Matrix multiplication represents transformation composition",
+      "Change of basis: P converts between coordinate systems, P⁻¹ converts back"
+    ],
+    readDigDeeper: "Order matters in composition because transformations don't generally commute. Change of basis reveals that the same vector has different coordinates in different systems, like how the same location has different addresses in different coordinate systems.",
+    readWhyMatters: "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
     seeContent: "Watch transformation chains in action, see how changing order produces different results, and observe how the same vector looks different in various coordinate systems through interactive basis switching.",
     hearContent: "Listen as I explain how transformation composition is like having a systematic assembly line, and change of basis is like having multiple organizational perspectives for viewing the same information!",
     doContent: "Use the Transformation Chain Builder to experiment with composition order, practice with the Basis Change Calculator to convert coordinates, and explore the Perspective Switcher to see vectors in different coordinate systems.",
@@ -1305,6 +1379,16 @@ const module2Lessons: { [key: string]: LessonData } = {
       "Computational efficiency advantages"
     ],
     readContent: "Block matrices partition large matrices into smaller, manageable submatrices called blocks. This enables systematic organization of complex data and efficient computation. Block addition combines corresponding blocks: [A B; C D] + [E F; G H] = [A+E B+F; C+G D+H]. Block multiplication follows the same pattern as regular matrix multiplication but with blocks: the (i,j) block of the product equals the sum of products of corresponding blocks from row i and column j. Special forms include block diagonal matrices (off-diagonal blocks are zero) and block triangular matrices. Block structure often reflects natural problem partitioning and enables parallel computation on different blocks simultaneously.",
+    readAnalogy: "Block matrices are like having multiple filing cabinets within a single cabinet - each drawer handles a specific type of information, making it easier to find and organize large amounts of data.",
+    readKeyPoints: [
+      "Block matrix structure: [A B; C D]",
+      "Block addition: [A+E B+F; C+G D+H]",
+      "Block multiplication: [A B; C D] [E F; G H] = [AE+BG AF+BH; CE+DG CF+DH]",
+      "Special forms: diagonal, triangular",
+      "Applications in large-scale computation"
+    ],
+    readDigDeeper: "Block matrices are a powerful tool for managing and manipulating large datasets. They're used in various applications like parallel computing, data compression, and solving systems of linear equations.",
+    readWhyMatters: "Block matrices are a powerful tool for managing and manipulating large datasets. They're used in various applications like parallel computing, data compression, and solving systems of linear equations.",
     seeContent: "Visualize how large matrices get partitioned into meaningful blocks, watch block operations preserve structure while enabling efficient computation, and see how block diagonal matrices represent independent subsystems.",
     hearContent: "Listen as I explain how block organization is like having departments within a company - each block handles its specialized function while contributing to the systematic operation of the whole organization!",
     doContent: "Use the Block Matrix Builder to create and partition large matrices, practice with the Block Operations Calculator to perform addition and multiplication, and experiment with the Block Structure Analyzer to identify efficient partitioning strategies.",
