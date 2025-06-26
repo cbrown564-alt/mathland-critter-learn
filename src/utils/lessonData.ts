@@ -1,6 +1,6 @@
 import { LessonData } from "@/types/lesson";
 
-const lessons: { [key: string]: LessonData } = {
+const module0Lessons: { [key: string]: LessonData } = {
   "0.1": {
     id: "0.1",
     title: "Order of Operations & Algebraic Basics",
@@ -22,7 +22,15 @@ const lessons: { [key: string]: LessonData } = {
       "Like terms",
       "Distributive property"
     ],
-    readContent: "The order of operations is fundamental to all mathematics. Think of it as the grammar of math - without it, expressions become ambiguous. PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction) gives us a universal language for solving expressions consistently.",
+    readContent: "Think of PEMDAS as my construction rulebook. When I build a dam, I can't just slap sticks together randomly - foundation first, walls second, roof last. Same with math: some operations are like foundation work (parentheses), others are like the heavy construction (multiplication), and some are finishing touches (addition). Without this order, mathematical expressions become as unstable as a poorly built dam.",
+    readAnalogy: "Building a dam requires precise order: foundation stones first (parentheses), then the main structure with power tools (exponents), heavy construction work (multiplication/division), and finally the finishing details (addition/subtraction). Skip the order, and everything collapses!",
+    readKeyPoints: [
+      "Parentheses always come first - like reading blueprints before building",
+      "Exponents are power operations - the heavy machinery phase",
+      "Multiplication/Division happen before Addition/Subtraction - structure before details"
+    ],
+    readDigDeeper: "In programming languages, operator precedence follows PEMDAS but with additional rules for logical operations, assignment operators, and function calls. Some languages use different precedence orders, which is why explicit parentheses are often preferred in production code.",
+    readWhyMatters: "In Excel, the formula =2+3*4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless. Order of operations isn't just math theory - it's the foundation that keeps your data analysis from crumbling.",
     seeContent: "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",
     hearContent: "Listen as I walk you through each step, explaining why we choose each operation and how it builds toward our final answer.",
     doContent: "Practice with interactive problems that let you drag and drop operations in the correct order, with immediate feedback on your choices.",
@@ -60,11 +68,22 @@ const lessons: { [key: string]: LessonData } = {
       "Perfect square trinomials",
       "FOIL method"
     ],
+    readContent: "Just like I can break down my dam into individual sticks or combine sticks into larger sections, algebraic expressions can be factored into simpler pieces or expanded into detailed forms. The distributive property a(b + c) = ab + ac is my basic building tool. Key patterns include difference of squares (a² - b² = (a-b)(a+b)) and perfect square trinomials. These patterns appear everywhere in dam engineering calculations.",
+    readAnalogy: "Factoring is like taking apart a completed dam section to see how it was built from individual components. Expanding is like combining individual sticks and stones into a complete dam structure. Both processes reveal different aspects of the same mathematical construction.",
+    readKeyPoints: [
+      "Distributive property: a(b + c) = ab + ac - like distributing materials evenly",
+      "Difference of squares: a² - b² = (a-b)(a+b) - a special structural pattern",
+      "Common factors can be pulled out like identifying reusable building materials"
+    ],
+    readDigDeeper: "Advanced factoring includes techniques like grouping, substitution, and using the rational root theorem for higher-degree polynomials. In calculus, factoring helps with integration by partial fractions, and in number theory, factoring is fundamental to cryptography.",
+    readWhyMatters: "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. Machine learning algorithms often benefit from factored forms that expose underlying structure and reduce computational complexity.",
+    seeContent: "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
+    hearContent: "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
+    doContent: "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion.",
     memoryAids: {
       mantra: "Every dam can be taken apart and rebuilt - just like algebraic expressions!",
       visual: "Ollie's building blocks showing how expressions can be broken down into factors or combined into expanded forms"
     },
-    realWorldConnection: "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset.",
     conceptCheck: {
       question: "Factor the expression: x² - 9. What pattern does this represent?",
       options: [
@@ -76,10 +95,7 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "x² - 9 is a difference of squares pattern (a² - b²) where a = x and b = 3. It factors as (x - 3)(x + 3). This pattern appears frequently in data science optimization problems."
     },
-    readContent: "Factoring and expanding are inverse operations that help us work with algebraic expressions in different forms. The distributive property a(b + c) = ab + ac allows us to expand expressions, while factoring reverses this process. Key patterns include difference of squares (a² - b² = (a-b)(a+b)), perfect square trinomials, and factoring out common terms. The FOIL method (First, Outer, Inner, Last) helps multiply binomials systematically.",
-    seeContent: "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
-    hearContent: "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
-    doContent: "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion."
+    realWorldConnection: "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset."
   },
   "0.3": {
     id: "0.3",
@@ -119,7 +135,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "Subtract 5 from both sides: 2x = 8, then divide by 2: x = 4. The balance principle means whatever we do to one side, we must do to the other to maintain equality."
     },
-    readContent: "Solving equations means finding the value that makes both sides equal. For linear equations, we isolate the variable using inverse operations while maintaining balance. Quadratic equations (ax² + bx + c = 0) can be solved by factoring, completing the square, or using the quadratic formula. Systems of equations find values that satisfy multiple equations simultaneously. Always check your solutions by substituting back into the original equation.",
+    readContent: "Finding where two things are equal is like finding the perfect water level for my dam. Linear equations (ax + b = 0) are like finding the right height for a straight beam. Quadratic equations (ax² + bx + c = 0) are like finding the optimal curve for water flow. I solve them systematically: isolation for linear equations, factoring or the quadratic formula for quadratics.",
+    readAnalogy: "Solving equations is like finding the perfect balance point where all forces are equal. Just like my dam needs to balance water pressure with structural strength, equations balance mathematical expressions to find exact solutions.",
+    readKeyPoints: [
+      "Linear equations: isolate the variable like adjusting one measurement at a time",
+      "Quadratic formula: x = (-b ± √(b²-4ac))/(2a) - your reliable backup plan",
+      "Always check solutions by substituting back into the original equation"
+    ],
+    readDigDeeper: "Systems of equations can be solved using substitution, elimination, or matrix methods. The discriminant (b²-4ac) tells you about solution types: positive (2 real solutions), zero (1 repeated solution), negative (2 complex solutions).",
+    readWhyMatters: "Linear equations model constant relationships in data (like steady growth rates), while quadratic equations model curved relationships like profit optimization, population growth curves, and the trajectory of projectiles in physics simulations.",
     seeContent: "Watch balance beam visualizations showing how equation solving maintains equality, and see how quadratic equations create parabolic curves when graphed.",
     hearContent: "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
     doContent: "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step."
@@ -162,7 +186,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "The absolute value inequality |x - 3| < 5 means the distance from x to 3 is less than 5, giving us -5 < x - 3 < 5, which simplifies to -2 < x < 8."
     },
-    readContent: "Inequalities express relationships where values are greater than, less than, or within ranges rather than exactly equal. Linear inequalities follow similar solving rules as equations, except multiplying or dividing by negative numbers flips the inequality sign. Absolute value represents distance from zero, so |x| = 5 means x = ±5. Compound inequalities combine multiple conditions using 'and' (intersection) or 'or' (union). Interval notation provides a concise way to express solution sets.",
+    readContent: "My dam needs to operate within safe ranges - at least 3 feet high to function, but no more than 6 feet to prevent flooding. Inequalities express these range relationships: x ≥ 3 and x ≤ 6, or combined as 3 ≤ x ≤ 6. Absolute value |x-a| measures distance from point a, so |x-3| < 2 means within 2 units of position 3.",
+    readAnalogy: "Inequalities are like safety margins for my dam operations. Instead of exact measurements, I need acceptable ranges that keep everything functioning safely within operational limits.",
+    readKeyPoints: [
+      "Inequality signs: < (less than), ≤ (less than or equal), > (greater than), ≥ (greater than or equal)",
+      "Absolute value |x| measures distance from zero, regardless of direction",
+      "Compound inequalities use 'and' (intersection) or 'or' (union) to combine conditions"
+    ],
+    readDigDeeper: "When multiplying or dividing inequalities by negative numbers, the inequality sign flips. Absolute value inequalities split into two cases: |x| < a becomes -a < x < a, while |x| > a becomes x < -a or x > a.",
+    readWhyMatters: "Inequalities define confidence intervals in statistics, acceptable error ranges in engineering, constraint optimization in business, and classification thresholds in machine learning. They help us understand when data values are within acceptable operational limits.",
     seeContent: "Visualize inequality solutions on interactive number lines, and see how absolute value creates distance relationships on the coordinate plane.",
     hearContent: "Listen as I explain how setting boundaries and ranges for my dam is just like defining inequality constraints - we need safe operating zones for everything to work properly!",
     doContent: "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts."
@@ -206,7 +238,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "f(4) means substitute 4 for x in the function: f(4) = 2(4) + 3 = 8 + 3 = 11. Function notation tells us what output we get when we input a specific value."
     },
-    readContent: "Functions are mathematical relationships where each input has exactly one output. Function notation f(x) reads as 'f of x' and represents the output when x is the input. The domain is all possible input values, while the range is all possible output values. Function composition f(g(x)) means applying g first, then f to that result. Understanding functions is crucial for modeling real-world relationships in data science.",
+    readContent: "Felix the Function Machine follows strict rules: input goes in, transformation happens, output comes out. Function notation f(x) means 'apply function f to input x.' The domain is all valid inputs (what Felix can process), and the range is all possible outputs (what Felix can produce). Every input gets exactly one output - that's what makes Felix reliable!",
+    readAnalogy: "Think of functions as reliable machines like Felix - you put raw materials in one end, the machine follows its programming to transform them, and finished products come out the other end. Same input always produces the same output.",
+    readKeyPoints: [
+      "Function notation f(x) reads as 'f of x' - apply function f to input x",
+      "Domain: all possible input values that work",
+      "Range: all possible output values the function can produce"
+    ],
+    readDigDeeper: "Function composition f(g(x)) means apply g first, then f to that result. Inverse functions f⁻¹(x) undo what f(x) does. Piecewise functions have different rules for different input ranges.",
+    readWhyMatters: "In data science, functions model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the mathematical foundation of machine learning algorithms.",
     seeContent: "Watch Felix demonstrate function machines with animated inputs and outputs, showing how different function types transform numbers in predictable ways.",
     hearContent: "Listen as I explain how I follow rules to transform inputs - just like how data transformation pipelines work in real data science projects!",
     doContent: "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains."
@@ -250,7 +290,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "y = x² creates a U-shaped parabola opening upward. The vertex at (0,0) represents the minimum point where the function reaches its lowest value. This shape is fundamental in optimization problems."
     },
-    readContent: "Graphing functions reveals their behavior visually. Linear functions y = mx + b create straight lines where m is the slope and b is the y-intercept. Quadratic functions create parabolas that open up or down depending on the coefficient of x². Exponential functions show rapid growth or decay. The coordinate plane allows us to see domain restrictions, range limitations, and important features like intercepts, vertices, and asymptotes.",
+    readContent: "Felix's mathematical outputs create visual stories when plotted on graphs. Linear functions (y = mx + b) draw straight lines where m controls steepness and b sets the starting height. Quadratic functions create U-shaped parabolas perfect for optimization problems. Exponential functions show rapid growth or decay patterns. Each function type has its own visual signature.",
+    readAnalogy: "Graphing functions is like watching Felix's work patterns over time. Linear functions show steady, predictable progress. Quadratic functions show acceleration and optimization. Exponential functions show explosive growth or rapid decline.",
+    readKeyPoints: [
+      "Linear functions: y = mx + b creates straight lines (m = slope, b = y-intercept)",
+      "Quadratic functions: y = ax² + bx + c creates parabolas (a controls opening direction)",
+      "Exponential functions: y = abˣ shows growth (b > 1) or decay (0 < b < 1)"
+    ],
+    readDigDeeper: "Function transformations: f(x) + k shifts vertically, f(x + h) shifts horizontally, af(x) stretches vertically, f(bx) stretches horizontally. Understanding these patterns helps predict how parameter changes affect graph shapes.",
+    readWhyMatters: "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
     seeContent: "Use an interactive graphing tool to plot different function types, observe how changing parameters affects the graph shape, and explore real-world data visualizations.",
     hearContent: "Listen as I explain how reading the story that graphs tell is like understanding the data patterns that drive business decisions and scientific discoveries!",
     doContent: "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns."
@@ -292,7 +340,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "Using the distance formula: √[(6-3)² + (8-4)²] = √[3² + 4²] = √[9 + 16] = √25 = 5 units. This formula comes from the Pythagorean theorem applied to coordinate geometry."
     },
-    readContent: "Coordinate geometry combines algebra and geometry to analyze spatial relationships. The distance formula √[(x₂-x₁)² + (y₂-y₁)²] finds the straight-line distance between any two points. The midpoint formula ((x₁+x₂)/2, (y₁+y₂)/2) finds the center point of a line segment. Slope (rise over run) measures steepness and direction. Parallel lines have equal slopes, while perpendicular lines have slopes that are negative reciprocals.",
+    readContent: "Felix needs precise measurements between his processing stations. The distance formula √[(x₂-x₁)² + (y₂-y₁)²] calculates exact distances using the Pythagorean theorem. The midpoint formula ((x₁+x₂)/2, (y₁+y₂)/2) finds perfect center points. Slope (rise/run) measures steepness and direction of connections between stations.",
+    readAnalogy: "Coordinate geometry is like Felix's precision measurement toolkit. Distance formula measures cable lengths between stations, midpoint formula finds optimal connection points, and slope measures the efficiency of pathways.",
+    readKeyPoints: [
+      "Distance formula: √[(x₂-x₁)² + (y₂-y₁)²] - Pythagorean theorem in coordinates",
+      "Midpoint formula: ((x₁+x₂)/2, (y₁+y₂)/2) - perfect center between two points",
+      "Slope: (y₂-y₁)/(x₂-x₁) - rise over run measures steepness"
+    ],
+    readDigDeeper: "Parallel lines have identical slopes, while perpendicular lines have slopes that are negative reciprocals (m₁ × m₂ = -1). The point-slope form y - y₁ = m(x - x₁) creates line equations from one point and the slope.",
+    readWhyMatters: "Coordinate geometry is essential for clustering algorithms that measure similarity between data points, finding centroids in machine learning, and understanding geometric relationships in high-dimensional feature spaces.",
     seeContent: "Explore an interactive coordinate plane where you can plot points, measure distances, find midpoints, and visualize slope relationships between lines.",
     hearContent: "Listen as I explain how measuring relationships in coordinate space is like calculating the efficiency of connections in my processing network!",
     doContent: "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems."
@@ -336,7 +392,15 @@ const lessons: { [key: string]: LessonData } = {
       correctAnswer: 0,
       explanation: "Σ(xi) from i=1 to n means sum all x values starting from x₁ up to xₙ. This notation is fundamental in statistics and data science for expressing sums concisely."
     },
-    readContent: "Greek symbols provide a concise way to express mathematical concepts. Common symbols include α (alpha) for angles or significance levels, β (beta) for coefficients, θ (theta) for parameters, λ (lambda) for eigenvalues, μ (mu) for means, and σ (sigma) for standard deviation. Vectors represent quantities with both magnitude and direction, written as bold letters or with arrows. Sigma notation Σ expresses sums efficiently, while pi notation Π represents products.",
+    readContent: "Before Vera teaches you advanced vector mathematics, let's learn the language! Greek symbols are like the vocabulary of mathematics: α (alpha) for angles, β (beta) for parameters, σ (sigma) for standard deviation, μ (mu) for means. Vectors [x, y] represent quantities with both magnitude and direction. Sigma notation Σ efficiently expresses sums: Σᵢ₌₁ⁿ xᵢ means add up all x values from 1 to n.",
+    readAnalogy: "Learning Greek symbols is like learning the secret code that mathematicians use worldwide. Once you know the vocabulary, you can read mathematical stories written by scientists anywhere on Earth.",
+    readKeyPoints: [
+      "Common Greek letters: α (alpha), β (beta), θ (theta), λ (lambda), μ (mu), σ (sigma)",
+      "Vector notation: [x, y] or bold letters like v show direction and magnitude",
+      "Sigma notation: Σ compactly represents sums, Π represents products"
+    ],
+    readDigDeeper: "Advanced notation includes nabla (∇) for gradients, partial derivatives (∂), and integral symbols (∫). Each symbol carries specific mathematical meaning that becomes essential for calculus and beyond.",
+    readWhyMatters: "Greek symbols are the universal language of mathematics and science. In data science, you'll see σ for standard deviation, μ for mean, θ for parameters in machine learning, λ for regularization, and vectors for representing data points in multi-dimensional space.",
     seeContent: "Explore the Greek alphabet chart with mathematical applications, see vector representations with arrows showing direction and magnitude, and practice with notation builders.",
     hearContent: "Listen to proper pronunciation of Greek letters and understand why mathematicians chose these symbols for specific concepts - each has a story and purpose!",
     doContent: "Practice with Greek symbol matching games, build sigma notation expressions, and explore interactive vector representations to prepare for Module 1."
@@ -344,23 +408,32 @@ const lessons: { [key: string]: LessonData } = {
 };
 
 export const getLessonData = (lessonId: string): LessonData => {
-  return lessons[lessonId] || lessons["0.1"];
+  if (lessonId.startsWith("1.")) return getModule1LessonData(lessonId);
+  if (lessonId.startsWith("2.")) return getModule2LessonData(lessonId);
+  if (lessonId.startsWith("3.")) return getModule3LessonData(lessonId);
+  return module0Lessons[lessonId];
 };
 
 export const getLessonOrder = (): string[] => {
-  return ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8"];
+  return Object.keys(module0Lessons);
 };
 
 export const getPreviousLessonId = (currentId: string): string | undefined => {
-  const lessonOrder = getLessonOrder();
-  const currentIndex = lessonOrder.indexOf(currentId);
-  return currentIndex > 0 ? lessonOrder[currentIndex - 1] : undefined;
+  if (currentId.startsWith("1.")) return getModule1PreviousLessonId(currentId);
+  if (currentId.startsWith("2.")) return getModule2PreviousLessonId(currentId);
+  if (currentId.startsWith("3.")) return getModule3PreviousLessonId(currentId);
+  const order = getLessonOrder();
+  const currentIndex = order.indexOf(currentId);
+  return currentIndex > 0 ? order[currentIndex - 1] : undefined;
 };
 
 export const getNextLessonId = (currentId: string): string | undefined => {
-  const lessonOrder = getLessonOrder();
-  const currentIndex = lessonOrder.indexOf(currentId);
-  return currentIndex < lessonOrder.length - 1 ? lessonOrder[currentIndex + 1] : undefined;
+  if (currentId.startsWith("1.")) return getModule1NextLessonId(currentId);
+  if (currentId.startsWith("2.")) return getModule2NextLessonId(currentId);
+  if (currentId.startsWith("3.")) return getModule3NextLessonId(currentId);
+  const order = getLessonOrder();
+  const currentIndex = order.indexOf(currentId);
+  return currentIndex < order.length - 1 ? order[currentIndex + 1] : undefined;
 };
 
 const module1Lessons: { [key: string]: LessonData } = {
@@ -387,7 +460,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Position vectors vs. displacement vectors",
       "Zero vector and unit vectors"
     ],
-    readContent: "A vector is a mathematical object that has both magnitude (size) and direction, unlike scalars which only have magnitude. Vectors can be represented geometrically as arrows or algebraically as ordered pairs [x, y] or triplets [x, y, z]. The magnitude of a vector **v** = [x, y] is ||**v**|| = √(x² + y²). Unit vectors have magnitude 1 and show pure direction. The zero vector **0** has zero magnitude and undefined direction. Position vectors point from the origin to a specific location, while displacement vectors show movement from one point to another.",
+    readContent: "A vector is like giving directions to a fellow explorer - you need both distance and direction! When I say 'walk 5 kilometers,' you'll ask 'which way?' That's the difference between a scalar (just magnitude) and a vector (magnitude plus direction). Vectors can be written as arrows, ordered pairs [x, y], or bold letters v. The magnitude ||v|| = √(x² + y²) tells you how far, while the direction tells you which way.",
+    readAnalogy: "Think of vectors as GPS instructions that actually work! Instead of just saying 'go 3 miles' (which could be anywhere), vectors say 'go 3 miles northeast' - giving you the complete journey information in one mathematical package.",
+    readKeyPoints: [
+      "Vectors = magnitude + direction, unlike scalars which only have size",
+      "Notation: [x, y], v, or arrows showing direction and length",
+      "Magnitude: ||v|| = √(x² + y²) measures the vector's length"
+    ],
+    readDigDeeper: "Vectors exist in any dimension: 2D [x, y], 3D [x, y, z], or even higher dimensions for data science applications. Unit vectors have magnitude 1 and show pure direction. The zero vector 0 has zero magnitude and undefined direction.",
+    readWhyMatters: "Vectors represent everything with direction and magnitude: wind velocity, GPS coordinates, customer preferences in data science, forces in physics, and data points in machine learning feature spaces. They're the mathematical language of directed quantities.",
     seeContent: "Watch as we transform everyday directions into mathematical vectors using an interactive coordinate plane. See how GPS coordinates, wind velocity, and force diagrams all use vector thinking to represent real-world quantities.",
     hearContent: "Listen as I explain how thinking in vectors changes everything - from navigation to data science. Every time you give directions or describe movement, you're actually thinking like a vector mathematician!",
     doContent: "Practice with the Vector Playground where you can click and drag to create vectors, measure their magnitudes, and see how direction and distance combine to create complete mathematical descriptions of movement.",
@@ -432,7 +513,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Negative vectors and subtraction",
       "Properties of vector operations"
     ],
-    readContent: "Vector addition combines two or more vectors into a single resultant vector. Geometrically, use the tip-to-tail method: place the tail of the second vector at the tip of the first. Algebraically, add corresponding components: [a,b] + [c,d] = [a+c, b+d]. Vector addition is commutative (**u** + **v** = **v** + **u**) and associative. Scalar multiplication changes a vector's magnitude: k**v** stretches (|k| > 1), shrinks (0 < |k| < 1), or reverses direction (k < 0). Vector subtraction **u** - **v** equals **u** + (-**v**).",
+    readContent: "Combining journeys is where vectors shine! Vector addition uses the tip-to-tail method: start your second vector where the first one ends. Algebraically, just add corresponding components: [a,b] + [c,d] = [a+c, b+d]. The amazing thing? Order doesn't matter - [3,2] + [1,4] = [1,4] + [3,2]. Scalar multiplication stretches or shrinks vectors: 2v doubles the length, -v flips the direction.",
+    readAnalogy: "Vector addition is like following a treasure map with multiple clues. Whether you follow clue A then clue B, or clue B then clue A, you end up at the same treasure location! That's the commutative property working its magic.",
+    readKeyPoints: [
+      "Tip-to-tail method: place the tail of the second vector at the tip of the first",
+      "Algebraic addition: add corresponding components [a,b] + [c,d] = [a+c, b+d]",
+      "Scalar multiplication: kv stretches (|k| > 1), shrinks (|k| < 1), or flips (k < 0)"
+    ],
+    readDigDeeper: "Vector addition is commutative (u + v = v + u) and associative (u + (v + w) = (u + v) + w). The parallelogram method gives the same result as tip-to-tail. Vector subtraction u - v equals u + (-v).",
+    readWhyMatters: "Netflix combines multiple preference vectors to recommend movies. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns in data.",
     seeContent: "Explore animated tip-to-tail vector addition and see how the parallelogram method gives the same result. Watch how scalar multiplication transforms vectors by stretching, shrinking, and flipping them.",
     hearContent: "Listen as I explain how combining vectors is like planning the ultimate treasure hunt - multiple clues that lead to one destination, and amazingly, the order you follow them doesn't change where you end up!",
     doContent: "Use the Vector Addition Simulator to drag vectors and see their combinations, practice with the Parallelogram Constructor, and experiment with the Scalar Slider to see how multiplying by different numbers affects vector size and direction.",
@@ -522,7 +611,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Unit vectors: ||**u**|| = 1", 
       "Normalizing vectors: **u** = **v**/||**v**||"
     ],
-    readContent: "Vector norms measure the 'size' or 'length' of vectors. The L₂ (Euclidean) norm ||**v**|| = √(x² + y² + z²) gives straight-line distance. The L₁ (Manhattan) norm ||**v**|| = |x| + |y| + |z| measures city-block distance. The L∞ (maximum) norm ||**v**|| = max(|x|, |y|, |z|) gives the largest coordinate. Unit vectors have norm 1 and represent pure direction. To normalize any vector: **u** = **v**/||**v**||. Different norms are useful for different applications - Euclidean for physics, Manhattan for urban planning, maximum for optimization.",
+    readContent: "How far did I actually travel? Different norms measure distance in different ways! The L₂ (Euclidean) norm ||v|| = √(x² + y² + z²) gives straight-line distance. The L₁ (Manhattan) norm ||v|| = |x| + |y| + |z| measures city-block distance. The L∞ (maximum) norm ||v|| = max(|x|, |y|, |z|) gives the longest single coordinate. Each one is useful for different types of adventures!",
+    readAnalogy: "Think of three ways to measure how far you've traveled: as the crow flies (L₂), walking on city streets with right-angle turns (L₁), or your longest single direction movement (L∞). Each tells a different story about your journey!",
+    readKeyPoints: [
+      "L₂ (Euclidean) norm: ||v|| = √(x² + y² + z²) - straight-line distance",
+      "L₁ (Manhattan) norm: ||v|| = |x| + |y| + |z| - city-block distance",
+      "L∞ (Maximum) norm: ||v|| = max(|x|, |y|, |z|) - largest coordinate"
+    ],
+    readDigDeeper: "Unit vectors have norm 1 and represent pure direction. To normalize any vector: u = v/||v||. Different norms create different shaped 'unit balls' - circles for L₂, diamonds for L₁, squares for L∞.",
+    readWhyMatters: "Machine learning algorithms use different norms to measure 'distance' between data points. Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
     seeContent: "Compare different norm visualizations on the same vector, showing how L₁, L₂, and L∞ create different distance measurements. See how normalizing transforms vectors into unit circles.",
     hearContent: "Listen as I explain how choosing the right distance measurement is like choosing the right tool for exploration - sometimes you need straight-line distance, sometimes city-block distance!",
     doContent: "Use the Norm Visualizer to compare different distance metrics, experiment with the Unit Vector Creator, and explore the Distance Comparator to see when each norm type is most useful.",
@@ -567,7 +664,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Coefficients and their meaning",
       "Examples in 2D and 3D"
     ],
-    readContent: "A linear combination expresses one vector as a sum of scalar multiples of other vectors: **v** = c₁**v₁** + c₂**v₂** + ... + cₙ**vₙ**. The span of a set of vectors is all possible linear combinations of those vectors. In 2D, two non-parallel vectors can span the entire plane. In 3D, three non-coplanar vectors span all of 3D space. The coefficients (c₁, c₂, ...) control how much of each base vector to include. Linear combinations are fundamental to understanding vector spaces and form the basis for advanced topics like matrix operations and eigenvalue analysis.",
+    readContent: "Any destination in my forest can be reached by mixing basic directions in the right proportions! A linear combination c₁v₁ + c₂v₂ + ... + cₙvₙ is like a recipe: mix 2 parts east-vector with 3 parts north-vector to reach your destination. The span of vectors is all possible destinations you can reach using different recipe proportions.",
+    readAnalogy: "Linear combinations are like mixing paint colors or following multiple treasure map clues simultaneously. Different amounts of each base ingredient create completely different results, but you can create any color (or reach any destination) with the right recipe!",
+    readKeyPoints: [
+      "Linear combination: c₁v₁ + c₂v₂ + ... + cₙvₙ (mix vectors with different amounts)",
+      "Coefficients c₁, c₂, ... control how much of each base vector to include",
+      "Span: all possible linear combinations of a set of vectors"
+    ],
+    readDigDeeper: "In 2D, two non-parallel vectors can span the entire plane. In 3D, three non-coplanar vectors span all of 3D space. Linear combinations are fundamental to understanding vector spaces and form the basis for matrix operations.",
+    readWhyMatters: "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions.",
     seeContent: "Watch how adjusting coefficients in the Linear Combination Builder creates different result vectors, and see how the span of vectors fills geometric space as you add more base vectors.",
     hearContent: "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
     doContent: "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
@@ -612,7 +717,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Geometric interpretation",
       "Maximum independent vectors in n dimensions"
     ],
-    readContent: "Vectors are linearly independent if none can be written as a linear combination of the others. Equivalently, the only solution to c₁**v₁** + c₂**v₂** + ... + cₙ**vₙ** = **0** is when all coefficients equal zero. Geometrically, independent vectors point in genuinely different directions. In 2D, at most 2 vectors can be independent. In 3D, at most 3 vectors can be independent. Linear independence is crucial for determining dimension, solving systems of equations, and identifying redundant information in datasets.",
+    readContent: "Independent vectors give you genuinely new directions to explore! Vectors are linearly independent if none can be built from the others. It's like having the perfect exploration toolkit - no redundant tools, but everything you need to reach anywhere. In 2D, you can have at most 2 independent vectors. In 3D, at most 3. More than that, and some become redundant passengers!",
+    readAnalogy: "Think of your vector toolkit: independent vectors are essential tools that each do something unique, while dependent vectors are duplicates taking up backpack space. Can I get there without this vector? If yes, it's redundant!",
+    readKeyPoints: [
+      "Linear independence: no vector can be written as a combination of the others",
+      "Test: c₁v₁ + c₂v₂ + ... + cₙvₙ = 0 only when all c's equal zero",
+      "Maximum independent vectors in n dimensions: n vectors"
+    ],
+    readDigDeeper: "Linear dependence means at least one vector is redundant. Geometrically, dependent vectors point in directions already covered by other vectors. Testing independence often involves setting up and solving systems of equations.",
+    readWhyMatters: "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding redundancy and improving prediction accuracy.",
     seeContent: "Visualize how linearly dependent vectors collapse into lower-dimensional spaces, while independent vectors span full dimensional space. Watch the Independence Checker show when vectors provide genuinely new directions.",
     hearContent: "Listen as I explain how finding independent directions is like choosing the perfect exploration toolkit - you want enough tools to handle any situation, but no redundant weight slowing you down!",
     doContent: "Use the Independence Checker to test vector sets visually, experiment with the Dependency Detector to see how dependent vectors relate, and practice with the Redundancy Eliminator to streamline vector sets.",
@@ -702,7 +815,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Vector addition and scalar multiplication properties",
       "Null space and column space (preview)"
     ],
-    readContent: "A vector space is any collection of objects that follows specific rules for addition and scalar multiplication. The familiar 2D and 3D spaces are examples, but so are polynomial spaces, function spaces, and even solution sets to differential equations. All vector spaces share fundamental properties: closure under addition and scalar multiplication, existence of zero vectors, and distributive laws. Subspaces are vector spaces contained within larger vector spaces. Understanding vector space structure enables advanced topics like linear transformations, eigenvalue analysis, and machine learning algorithms that operate in high-dimensional feature spaces.",
+    readContent: "The same navigation principles work everywhere! Whether I'm exploring a 2D forest, flying through 3D space, or navigating abstract mathematical worlds, the same fundamental rules apply. That's the power of vector spaces - universal mathematical laws! Vector spaces are any collections that follow the basic rules: you can add vectors, multiply by scalars, there's a zero vector, and everything behaves predictably.",
+    readAnalogy: "Vector spaces are like different worlds that all follow the same fundamental physics. Whether it's 2D flatland, 3D reality, or abstract mathematical dimensions, once you know the universal laws, you can explore any space confidently!",
+    readKeyPoints: [
+      "Vector spaces follow universal rules for addition and scalar multiplication",
+      "Examples: ℝ², ℝ³, polynomial spaces, function spaces, solution sets",
+      "Subspaces are vector spaces contained within larger vector spaces"
+    ],
+    readDigDeeper: "Vector space axioms ensure consistent behavior: closure under operations, associativity, commutativity, distributive laws, existence of zero and inverse elements. These abstract rules enable powerful mathematical generalizations.",
+    readWhyMatters: "Machine learning models operate in high-dimensional vector spaces where each dimension represents a data feature. Neural networks process information by moving through these abstract vector spaces, finding patterns using the same mathematical rules I use for forest navigation.",
     seeContent: "Explore multiple examples of vector spaces, from geometric arrows to polynomial functions to solution sets. See how the same mathematical rules apply across vastly different contexts.",
     hearContent: "Listen as I explain how discovering universal mathematical laws is like finding that the same navigation principles work whether you're exploring forests, oceans, or even abstract mathematical worlds!",
     doContent: "Use the Vector Space Explorer to navigate different types of spaces, verify vector space properties with the Axiom Checker, and discover subspaces with the Subspace Detective tool.",
@@ -747,7 +868,15 @@ const module1Lessons: { [key: string]: LessonData } = {
       "Coverage analysis using linear independence",
       "Coordinate system creation using basis theory"
     ],
-    readContent: "This capstone project integrates all vector concepts through practical application. Part A uses vector addition to design efficient hiking trails and calculate total distances using various norms. Part B applies linear combinations to position wildlife cameras optimally while ensuring linear independence for maximum coverage. Part C analyzes visitor movement patterns as vectors, finds principal directions using span concepts, and creates custom coordinate systems using basis theory. The project demonstrates how vector mathematics provides systematic solutions to complex spatial problems.",
+    readContent: "Time for the ultimate vector adventure! I'm designing a comprehensive mapping system for a new national park using every vector concept we've mastered. We'll design efficient trail systems with vector addition, optimize wildlife camera placement using linear independence, analyze visitor movement patterns with basis theory, and calculate distances using various norms. This is where all our vector tools come together!",
+    readAnalogy: "This capstone is like being the chief navigator for an entire national park - using vectors as your universal toolkit to solve complex spatial problems systematically and efficiently.",
+    readKeyPoints: [
+      "Trail design using vector addition and scalar multiplication",
+      "Distance optimization using different vector norms",
+      "Camera placement using linear independence principles"
+    ],
+    readDigDeeper: "The project demonstrates how vector mathematics provides systematic solutions to complex spatial problems. Each vector concept becomes a practical tool for real-world navigation, measurement, and optimization challenges.",
+    readWhyMatters: "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science.",
     seeContent: "Work through interactive mapping tools that let you design trail systems, place cameras strategically, and visualize visitor flow patterns using all the vector concepts you've mastered.",
     hearContent: "Listen as I guide you through each phase of the project, showing how vector thinking transforms complex spatial problems into systematic mathematical solutions!",
     doContent: "Complete the three-part mapping project: design trail systems with vector addition, optimize camera placement with linear independence, and analyze visitor patterns with basis theory - creating a comprehensive portfolio of your vector mastery.",
