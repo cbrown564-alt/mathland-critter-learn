@@ -12,6 +12,7 @@ import { RealWorldConnection } from "./lesson/RealWorldConnection";
 import { BreadcrumbNavigation } from "./Breadcrumb";
 import { SectionCompletion } from "./lesson/SectionCompletion";
 import { characters } from "../utils/characterData";
+import { ReadSection } from "./lesson/ReadSection";
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -159,16 +160,13 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
         );
       case "read":
         return (
-          <div className="prose max-w-none">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">📖 Read</h3>
-            <div className="text-slate-700 leading-relaxed mb-8">{lesson.readContent}</div>
-            <SectionCompletion
-              onComplete={() => handleSectionComplete(currentSection)}
-              onNext={handleNextSection}
-              isCompleted={isCompleted}
-              isLastSection={isLastSection}
-            />
-          </div>
+          <ReadSection
+            content={lesson.readContent}
+            analogy={lesson.readAnalogy}
+            keyPoints={lesson.readKeyPoints}
+            digDeeper={lesson.readDigDeeper}
+            whyMatters={lesson.readWhyMatters}
+          />
         );
       case "see":
         return (

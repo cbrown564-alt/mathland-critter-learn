@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { characters } from "../utils/characterData";
+import { Link } from "react-router-dom";
 
 const SimpleCourseTimeline = () => {
   const modules = [
@@ -28,47 +29,69 @@ const SimpleCourseTimeline = () => {
           <div className="absolute top-6 left-6 right-6 h-0.5 bg-slate-200"></div>
           <div className="absolute top-6 left-6 w-0 h-0.5 bg-gradient-to-r from-amber-500 to-amber-500 transition-all duration-1000" style={{ width: '10%' }}></div>
           
-          {modules.map((module, index) => (
-            <div key={module.id} className="flex flex-col items-center relative z-10">
-              <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}>
-                {module.id}
-              </div>
-              <div className="mt-3 text-center max-w-32">
-                <div className={`text-sm font-medium ${module.status === 'locked' ? 'text-slate-400' : 'text-slate-700'} leading-tight`}>
-                  {module.title}
+          {modules.map((module, index) => {
+            const clickable = module.status === 'available';
+            const content = (
+              <div className={`flex flex-col items-center relative z-10 ${clickable ? 'cursor-pointer group' : ''}`}
+                tabIndex={clickable ? 0 : -1}
+                aria-disabled={!clickable}
+              >
+                <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${module.color} flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg ${clickable ? 'ring-2 ring-blue-200 group-hover:ring-4 group-hover:scale-110 transition-all' : ''} overflow-hidden`}>
+                  <img src={module.image} alt={module.title} className="w-full h-full object-cover" />
                 </div>
+                <div className="mt-3 text-center max-w-32">
+                  <div className={`text-sm font-medium ${module.status === 'locked' ? 'text-slate-400' : 'text-slate-700'} leading-tight`}>
+                    {module.title}
+                  </div>
+                </div>
+                {module.status === 'available' && (
+                  <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
+                )}
               </div>
-              {module.status === 'available' && (
-                <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
-              )}
-            </div>
-          ))}
+            );
+            return clickable ? (
+              <Link to={`/module/${module.id}`} key={module.id} tabIndex={0} aria-label={`Go to ${module.title}`}>{content}</Link>
+            ) : (
+              <div key={module.id}>{content}</div>
+            );
+          })}
         </div>
 
         {/* Mobile Timeline */}
         <div className="lg:hidden space-y-4">
-          {modules.map((module, index) => (
-            <div key={module.id} className="flex items-center gap-4">
-              <div className={`w-10 h-10 rounded-full ${module.status === 'locked' ? 'opacity-50' : ''} flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden border-2 border-white`}>
-                <img 
-                  src={module.image} 
-                  alt={module.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1">
-                <div className={`font-medium ${module.status === 'locked' ? 'text-slate-400' : 'text-slate-700'}`}>
-                  {module.title}
+          {modules.map((module, index) => {
+            const clickable = module.status === 'available';
+            const content = (
+              <div className={`flex items-center gap-4 ${clickable ? 'cursor-pointer group' : ''}`}
+                tabIndex={clickable ? 0 : -1}
+                aria-disabled={!clickable}
+              >
+                <div className={`w-10 h-10 rounded-full ${module.status === 'locked' ? 'opacity-50' : ''} flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden border-2 border-white ${clickable ? 'ring-2 ring-blue-200 group-hover:ring-4 group-hover:scale-110 transition-all' : ''}`}>
+                  <img 
+                    src={module.image} 
+                    alt={module.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <div className="flex-1">
+                  <div className={`font-medium ${module.status === 'locked' ? 'text-slate-400' : 'text-slate-700'}`}>
+                    {module.title}
+                  </div>
+                </div>
+                {module.status === 'available' && (
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                )}
+                {index < modules.length - 1 && (
+                  <ChevronRight className="w-4 h-4 text-slate-300" />
+                )}
               </div>
-              {module.status === 'available' && (
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              )}
-              {index < modules.length - 1 && (
-                <ChevronRight className="w-4 h-4 text-slate-300" />
-              )}
-            </div>
-          ))}
+            );
+            return clickable ? (
+              <Link to={`/module/${module.id}`} key={module.id} tabIndex={0} aria-label={`Go to ${module.title}`}>{content}</Link>
+            ) : (
+              <div key={module.id}>{content}</div>
+            );
+          })}
         </div>
       </div>
     </div>

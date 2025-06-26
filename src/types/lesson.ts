@@ -24,6 +24,10 @@ export interface LessonData {
   seeContent: string;
   hearContent: string;
   doContent: string;
+  readAnalogy?: string;
+  readKeyPoints?: string[];
+  readDigDeeper?: string;
+  readWhyMatters?: string;
 }
 
 export interface LessonProgress {

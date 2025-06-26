@@ -68,7 +68,7 @@ const Module0 = () => {
   }, []);
 
   // Determine if Felix should be locked (all Ollie lessons must be completed)
-  const ollieLessonIds = module0Characters.find(c => c.id === 'ollie')?.lessons || [];
+  const ollieLessonIds = module0Characters.find(c => c?.id === 'ollie')?.lessons || [];
   const allOllieCompleted = ollieLessonIds.every(id => {
     const progress = getStoredProgress(id);
     return progress.completedSections && progress.completedSections.size >= 8;

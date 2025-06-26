@@ -1,4 +1,3 @@
-
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -52,22 +51,11 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              Start Your Mathematical Journey
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-blue-400 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg shadow-md hover:shadow-lg transition-all duration-300"
-            >
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
-            </Button>
+            <a href="/course">
+              <Button className="mt-8 px-8 py-4 text-lg font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-all duration-300">
+                Start Your Mathematical Journey
+              </Button>
+            </a>
           </div>
 
           {/* Interactive Stats with hover effects */}
