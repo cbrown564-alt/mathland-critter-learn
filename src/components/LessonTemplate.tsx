@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { LessonData } from "@/types/lesson";
 import { LessonHeader } from "./lesson/LessonHeader";
@@ -45,6 +45,9 @@ const storeProgress = (lessonId: string, completedSections: Set<string>, current
 export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: LessonTemplateProps) => {
   const [completedSections, setCompletedSections] = useState<Set<string>>(new Set());
   const [currentSection, setCurrentSection] = useState<string>("narrative");
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [audioDuration, setAudioDuration] = useState(0);
+  const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
 
   const sections = [
     { id: "narrative", title: "Story Hook" },
@@ -119,6 +122,51 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     );
   }
 
+  const handleAudioLoaded = () => {
+    if (audioRef.current) {
+      setAudioDuration(audioRef.current.duration);
+    }
+  };
+
+  // Helper: calculate word-based time windows for transcript
+  function getTranscriptTimeWindows(transcript, audioDuration) {
+    if (!transcript || transcript.length === 0 || audioDuration === 0) return [];
+    const wordCounts = transcript.map(p => p.split(/\s+/).length);
+    const totalWords = wordCounts.reduce((a, b) => a + b, 0);
+    let acc = 0;
+    return wordCounts.map((count, i) => {
+      const start = (acc / totalWords) * audioDuration;
+      acc += count;
+      const end = (acc / totalWords) * audioDuration;
+      return { start, end };
+    });
+  }
+
+  const handleAudioTimeUpdate = () => {
+    if (!audioRef.current || !lesson.hearTranscript) return;
+    const { currentTime } = audioRef.current;
+    const transcript = lesson.hearTranscript;
+    const windows = getTranscriptTimeWindows(transcript, audioDuration);
+    const idx = windows.findIndex(w => currentTime >= w.start && currentTime < w.end);
+    setCurrentTranscriptIdx(idx === -1 ? transcript.length - 1 : idx);
+  };
+
+  function LiveTranscript({ transcript, audioRef }) {
+    const windows = getTranscriptTimeWindows(transcript, audioDuration);
+    return (
+      <div className="space-y-2">
+        {transcript.map((para, i) => (
+          <p
+            key={i}
+            className={`transition-all duration-300 px-2 py-1 rounded-md ${i === currentTranscriptIdx ? 'bg-blue-100 text-blue-900 font-semibold shadow' : 'text-slate-700 opacity-70'}`}
+          >
+            {para}
+          </p>
+        ))}
+      </div>
+    );
+  }
+
   const renderCurrentSection = () => {
     const isCompleted = completedSections.has(currentSection);
 
@@ -160,13 +208,21 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
         );
       case "read":
         return (
-          <ReadSection
-            content={lesson.readContent}
-            analogy={lesson.readAnalogy}
-            keyPoints={lesson.readKeyPoints}
-            digDeeper={lesson.readDigDeeper}
-            whyMatters={lesson.readWhyMatters}
-          />
+          <div className="prose max-w-none">
+            <ReadSection
+              content={lesson.readContent}
+              analogy={lesson.readAnalogy}
+              keyPoints={lesson.readKeyPoints}
+              digDeeper={lesson.readDigDeeper}
+              whyMatters={lesson.readWhyMatters}
+            />
+            <SectionCompletion
+              onComplete={() => handleSectionComplete(currentSection)}
+              onNext={handleNextSection}
+              isCompleted={isCompleted}
+              isLastSection={isLastSection}
+            />
+          </div>
         );
       case "see":
         return (
@@ -186,6 +242,33 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
           <div className="prose max-w-none">
             <h3 className="text-2xl font-bold text-slate-800 mb-4">👂 Hear</h3>
             <div className="text-slate-700 leading-relaxed mb-8">{lesson.hearContent}</div>
+            {lesson.hearAudioUrl && (
+              <div className="flex items-center gap-4 mb-6">
+                <img
+                  src={character.avatar}
+                  alt={character.name}
+                  className="w-16 h-16 rounded-full shadow-lg border-2 border-slate-200 bg-white object-cover"
+                  style={{ flexShrink: 0 }}
+                />
+                <audio
+                  controls
+                  className="w-full max-w-md h-14"
+                  ref={audioRef}
+                  onTimeUpdate={handleAudioTimeUpdate}
+                  onLoadedMetadata={handleAudioLoaded}
+                >
+                  <source src={lesson.hearAudioUrl} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            )}
+            {/* Live Transcript */}
+            {lesson.hearTranscript && lesson.hearTranscript.length > 0 && (
+              <div className="mt-4 bg-slate-50 rounded-lg p-4 border border-slate-200">
+                <h4 className="text-base font-semibold text-slate-700 mb-2">Transcript</h4>
+                <LiveTranscript transcript={lesson.hearTranscript} audioRef={audioRef} />
+              </div>
+            )}
             <SectionCompletion
               onComplete={() => handleSectionComplete(currentSection)}
               onNext={handleNextSection}

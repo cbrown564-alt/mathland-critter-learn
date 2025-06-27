@@ -23,6 +23,8 @@ export interface LessonData {
   readContent: string;
   seeContent: string;
   hearContent: string;
+  hearAudioUrl?: string;
+  hearTranscript?: string[];
   doContent: string;
   readAnalogy?: string;
   readKeyPoints?: string[];
