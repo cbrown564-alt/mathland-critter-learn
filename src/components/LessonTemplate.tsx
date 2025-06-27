@@ -13,6 +13,8 @@ import { BreadcrumbNavigation } from "./Breadcrumb";
 import { SectionCompletion } from "./lesson/SectionCompletion";
 import { characters } from "../utils/characterData";
 import { ReadSection } from "./lesson/ReadSection";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -45,7 +47,7 @@ const storeProgress = (lessonId: string, completedSections: Set<string>, current
 export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: LessonTemplateProps) => {
   const [completedSections, setCompletedSections] = useState<Set<string>>(new Set());
   const [currentSection, setCurrentSection] = useState<string>("narrative");
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<any>(null);
   const [audioDuration, setAudioDuration] = useState(0);
   const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
 
@@ -123,10 +125,18 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   }
 
   const handleAudioLoaded = () => {
-    if (audioRef.current) {
-      setAudioDuration(audioRef.current.duration);
-    }
+    const duration = audioRef.current?.audio?.current?.duration || 0;
+    setAudioDuration(duration);
   };
+
+  // Attach timeupdate event for smooth transcript sync
+  useEffect(() => {
+    const audioEl = audioRef.current?.audio?.current;
+    if (!audioEl) return;
+    const update = () => handleAudioTimeUpdate();
+    audioEl.addEventListener('timeupdate', update);
+    return () => audioEl.removeEventListener('timeupdate', update);
+  }, [audioRef.current, lesson.hearTranscript, audioDuration]);
 
   // Helper: calculate word-based time windows for transcript
   function getTranscriptTimeWindows(transcript, audioDuration) {
@@ -144,7 +154,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
   const handleAudioTimeUpdate = () => {
     if (!audioRef.current || !lesson.hearTranscript) return;
-    const { currentTime } = audioRef.current;
+    const currentTime = audioRef.current?.audio?.current?.currentTime || 0;
     const transcript = lesson.hearTranscript;
     const windows = getTranscriptTimeWindows(transcript, audioDuration);
     const idx = windows.findIndex(w => currentTime >= w.start && currentTime < w.end);
@@ -153,11 +163,18 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
   function LiveTranscript({ transcript, audioRef }) {
     const windows = getTranscriptTimeWindows(transcript, audioDuration);
+    const paraRefs = useRef([]);
+    useEffect(() => {
+      if (paraRefs.current[currentTranscriptIdx]) {
+        paraRefs.current[currentTranscriptIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, [currentTranscriptIdx]);
     return (
-      <div className="space-y-2">
+      <div className="space-y-2 max-h-64 overflow-y-auto">
         {transcript.map((para, i) => (
           <p
             key={i}
+            ref={el => paraRefs.current[i] = el}
             className={`transition-all duration-300 px-2 py-1 rounded-md ${i === currentTranscriptIdx ? 'bg-blue-100 text-blue-900 font-semibold shadow' : 'text-slate-700 opacity-70'}`}
           >
             {para}
@@ -250,16 +267,17 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
                   className="w-16 h-16 rounded-full shadow-lg border-2 border-slate-200 bg-white object-cover"
                   style={{ flexShrink: 0 }}
                 />
-                <audio
-                  controls
-                  className="w-full max-w-md h-14"
-                  ref={audioRef}
-                  onTimeUpdate={handleAudioTimeUpdate}
-                  onLoadedMetadata={handleAudioLoaded}
-                >
-                  <source src={lesson.hearAudioUrl} type="audio/mpeg" />
-                  Your browser does not support the audio element.
-                </audio>
+                <div className="flex-1">
+                  <AudioPlayer
+                    src={lesson.hearAudioUrl}
+                    ref={audioRef}
+                    onLoadedMetaData={handleAudioLoaded}
+                    showJumpControls={false}
+                    customAdditionalControls={[]}
+                    layout="horizontal"
+                    style={{ borderRadius: '0.75rem', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+                  />
+                </div>
               </div>
             )}
             {/* Live Transcript */}
