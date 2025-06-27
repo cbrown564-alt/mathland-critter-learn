@@ -25,6 +25,9 @@ export const NarrativeHook = ({ lesson, character, onComplete, isCompleted }: Na
         <h3>Story Introduction</h3>
       </div>
 
+      <div className="bg-slate-50 rounded-lg p-4 mb-4">
+        <p className="text-slate-700 leading-relaxed">{lesson.narrativeHook.story}</p>
+      </div>
       <div className="flex items-start gap-4">
         <CharacterAvatar 
           src={character.avatar} 
@@ -32,10 +35,7 @@ export const NarrativeHook = ({ lesson, character, onComplete, isCompleted }: Na
           size="xl"
           className="mt-1"
         />
-        <div className="flex-1 space-y-3">
-          <div className="bg-slate-50 rounded-lg p-4">
-            <p className="text-slate-700 leading-relaxed">{lesson.narrativeHook.story}</p>
-          </div>
+        <div className="flex-1">
           <div className="rounded-lg p-4 border-l-4 border-orange-200 bg-orange-50/50">
             <p className="font-medium text-slate-800 mb-2">{character.name} says:</p>
             <p className="text-slate-700 italic">"{lesson.narrativeHook.characterMessage}"</p>

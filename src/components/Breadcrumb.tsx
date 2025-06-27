@@ -1,4 +1,3 @@
-
 import { ChevronRight, Home } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
@@ -18,6 +17,7 @@ interface BreadcrumbNavigationProps {
 export const BreadcrumbNavigation = ({ lessonId, lessonTitle }: BreadcrumbNavigationProps) => {
   const moduleNumber = lessonId.split('.')[0];
   const moduleTitle = `Module ${moduleNumber}`;
+  const moduleLink = `/module/${moduleNumber}`;
   
   return (
     <Breadcrumb className="mb-4">
@@ -35,7 +35,7 @@ export const BreadcrumbNavigation = ({ lessonId, lessonTitle }: BreadcrumbNaviga
         </BreadcrumbSeparator>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link to="/module-0">{moduleTitle}</Link>
+            <Link to={moduleLink}>{moduleTitle}</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator>

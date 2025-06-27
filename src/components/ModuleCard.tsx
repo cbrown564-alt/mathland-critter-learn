@@ -135,8 +135,8 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
         ) : null}
 
         {/* Action Button */}
-        {isInteractive && module.id === 0 ? (
-          <Link to="/module-0">
+        {isInteractive ? (
+          <Link to={`/module/${module.id}`}>
             <Button
               className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
             >
@@ -146,15 +146,10 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
           </Link>
         ) : (
           <Button
-            className={`w-full ${
-              isInteractive
-                ? `bg-gradient-to-r ${module.color} hover:opacity-90`
-                : "bg-gray-300 cursor-not-allowed"
-            } text-white`}
-            disabled={!isInteractive}
+            className={`w-full bg-gray-300 cursor-not-allowed text-white`}
+            disabled
           >
             {getStatusText()}
-            {isInteractive && <ArrowRight className="ml-2 h-4 w-4" />}
           </Button>
         )}
       </div>

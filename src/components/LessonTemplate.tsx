@@ -15,6 +15,9 @@ import { characters } from "../utils/characterData";
 import { ReadSection } from "./lesson/ReadSection";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { SeeSection } from "./lesson/SeeSection";
+import { DoSection } from "./lesson/DoSection";
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -244,8 +247,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
       case "see":
         return (
           <div className="prose max-w-none">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">👁️ See</h3>
-            <div className="text-slate-700 leading-relaxed mb-8">{lesson.seeContent}</div>
+            <SeeSection lesson={lesson} character={character} />
             <SectionCompletion
               onComplete={() => handleSectionComplete(currentSection)}
               onNext={handleNextSection}
@@ -298,8 +300,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
       case "do":
         return (
           <div className="prose max-w-none">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">✋ Do</h3>
-            <div className="text-slate-700 leading-relaxed mb-8">{lesson.doContent}</div>
+            <DoSection lesson={lesson} />
             <SectionCompletion
               onComplete={() => handleSectionComplete(currentSection)}
               onNext={handleNextSection}

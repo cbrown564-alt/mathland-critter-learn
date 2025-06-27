@@ -22,6 +22,9 @@ export interface LessonData {
   };
   readContent: string;
   seeContent: string;
+  seeVideoUrl?: string;
+  seePreQuote?: string;
+  seePostQuote?: string;
   hearContent: string;
   hearAudioUrl?: string;
   hearTranscript?: string[];
@@ -30,6 +33,9 @@ export interface LessonData {
   readKeyPoints?: string[];
   readDigDeeper?: string;
   readWhyMatters?: string;
+  doType?: string;
+  doComponent?: string;
+  doInstructions?: string;
 }
 
 export interface LessonProgress {

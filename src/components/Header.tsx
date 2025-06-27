@@ -2,10 +2,10 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { getLessonOrder } from "../utils/lessonData";
+import { getLessonOrderForModule } from "../utils/lessonData";
 
 function getNextLessonId() {
-  const lessonOrder = getLessonOrder();
+  const lessonOrder = getLessonOrderForModule("0");
   for (let id of lessonOrder) {
     const stored = localStorage.getItem(`lesson-progress-${id}`);
     if (!stored) return id;
@@ -22,7 +22,7 @@ export const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const lessonOrder = getLessonOrder();
+    const lessonOrder = getLessonOrderForModule("0");
     let found = false;
     for (let id of lessonOrder) {
       const stored = localStorage.getItem(`lesson-progress-${id}`);

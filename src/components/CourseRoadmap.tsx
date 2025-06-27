@@ -29,19 +29,10 @@ export const CourseRoadmap = () => {
     let totalLessons = 0;
     let totalCompleted = 0;
     const computedModules = modulesData.map((mod, idx) => {
-      // For now, just use lessons count for progress (can be improved with lessonData linkage)
-      // You can later link to lesson IDs for more granular progress
+      // For testing: unlock all modules
+      let status = 'available';
       let completedLessons = 0;
-      let status = mod.status;
-      if (idx === 0 || prevModuleComplete) {
-        status = mod.status === "available" ? "available" : "coming-soon";
-      } else {
-        status = "locked";
-      }
-      if (status === "available") prevModuleComplete = false;
-      if (status === "completed") prevModuleComplete = true;
       totalLessons += mod.lessons;
-      // For now, assume 0 completed
       return {
         ...mod,
         status,
@@ -98,15 +89,12 @@ export const CourseRoadmap = () => {
             </div>
 
             {/* Module Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {modules.map((module, index) => {
-                const detailUrl = `/module/${module.id}`;
-                return (
-                  <Link key={module.id} to={detailUrl} style={{ textDecoration: 'none' }}>
-                    <ModuleCard module={module} index={index} />
-                  </Link>
-                );
-              })}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {modules.map((mod, idx) => (
+                <Link key={mod.id} to={`/module-detail/${mod.id}`} style={{ textDecoration: 'none' }}>
+                  <ModuleCard module={mod} index={idx} />
+                </Link>
+              ))}
             </div>
 
             {/* Call to Action */}

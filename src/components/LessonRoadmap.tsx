@@ -1,7 +1,5 @@
-import { Lock, CheckCircle, PlayCircle, ArrowDown } from "lucide-react";
+import { CheckCircle, Circle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { characters } from "../utils/characterData";
 
 interface Lesson {
   id: string;
@@ -10,147 +8,58 @@ interface Lesson {
   duration: string;
   status: "available" | "locked" | "completed" | "current";
   description: string;
+  moduleCompleted?: boolean;
 }
 
 interface LessonRoadmapProps {
   lessons: Lesson[];
+  color?: string; // Tailwind gradient classes
 }
 
-const getCharacterColor = (character: string) => {
-  const char = characters.find(c => c.name.split(' ')[0] === character || c.name === character || c.id === character.toLowerCase());
-  return char?.color || "from-gray-400 to-slate-500";
-};
-
-const getStatusIcon = (status: string) => {
-  switch (status) {
-    case "completed":
-      return <CheckCircle className="w-6 h-6 text-green-500" />;
-    case "current":
-      return <PlayCircle className="w-6 h-6 text-orange-500" />;
-    case "available":
-      return <PlayCircle className="w-6 h-6 text-blue-500" />;
-    default:
-      return <Lock className="w-6 h-6 text-gray-400" />;
-  }
-};
-
-const getStatusText = (status: string) => {
-  switch (status) {
-    case "completed":
-      return "Completed";
-    case "current":
-      return "Continue";
-    case "available":
-      return "Start Lesson";
-    default:
-      return "Locked";
-  }
-};
-
-export const LessonRoadmap = ({ lessons }: LessonRoadmapProps) => {
+export const LessonRoadmap = ({ lessons, color = "from-blue-400 to-blue-600" }: LessonRoadmapProps) => {
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="space-y-6">
-        {lessons.map((lesson, index) => {
-          const isInteractive = lesson.status === "available" || lesson.status === "current";
-          const characterColor = getCharacterColor(lesson.character);
-          
+    <div className="relative max-w-2xl mx-auto">
+      {/* Vertical stepper line */}
+      <div className={`absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b ${color}`} style={{ zIndex: 0 }} />
+      <div className="space-y-4">
+        {lessons.map((lesson, i) => {
+          const isCompleted = !!lesson.moduleCompleted;
           return (
-            <div key={lesson.id} className="relative">
-              {/* Lesson Card */}
-              <div className={`relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 ${
-                isInteractive ? "hover:shadow-xl hover:-translate-y-1 cursor-pointer" : "opacity-75"
-              }`}>
-                {/* Lesson Header */}
-                <div className={`h-16 bg-gradient-to-r ${characterColor} flex items-center justify-between px-6 text-white`}>
-                  <div className="flex items-center gap-4">
-                    <div className="text-lg font-bold">{lesson.id}</div>
-                    <div>
-                      <div className="text-sm opacity-90">with {lesson.character}</div>
-                      <div className="text-xs opacity-75">{lesson.duration}</div>
+            <div key={lesson.id} className="relative flex items-stretch">
+              {/* Stepper dot, vertically centered and aligned with the line */}
+              <div className="flex flex-col justify-center relative" style={{ width: '2.5rem' }}>
+                <div className={`w-4 h-4 rounded-full z-10 absolute left-1/4 -translate-x-1/2 ${
+                  isCompleted ? `bg-gradient-to-r ${color}` : `bg-gradient-to-r ${color} opacity-50`
+                }`} style={{ marginTop: 'auto', marginBottom: 'auto' }} />
+              </div>
+              <div className="flex-1">
+                <div className="bg-white rounded-xl shadow border border-gray-100 px-6 py-4 relative flex flex-col min-h-[110px]">
+                  {/* Top row: lesson info and button */}
+                  <div className="flex items-center justify-between mb-1">
+                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                      <span className={`font-semibold text-sm bg-clip-text text-transparent bg-gradient-to-r ${color}`}>{lesson.id}</span>
+                      <span>with {lesson.character}</span>
+                      <span className="text-gray-400">{lesson.duration}</span>
                     </div>
+                    <Link to={`/lesson/${lesson.id}`}>
+                      <button className={`flex items-center gap-1 px-3 py-1 rounded bg-gradient-to-r ${color} hover:opacity-90 text-white text-xs font-semibold`}>
+                        Go to Lesson <ArrowRight className="w-4 h-4" />
+                      </button>
+                    </Link>
                   </div>
-                  {getStatusIcon(lesson.status)}
-                </div>
-
-                {/* Lesson Content */}
-                <div className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-800 mb-2">{lesson.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">{lesson.description}</p>
+                  <div className="font-bold text-slate-800 mb-1 text-base">{lesson.title}</div>
+                  <div className="text-sm text-slate-600 mb-2">{lesson.description}</div>
+                  {/* Completed tick in bottom right */}
+                  {isCompleted && (
+                    <div className={`absolute bottom-3 right-4 flex items-center gap-1 text-green-600 text-xs font-semibold bg-green-50 rounded px-2 py-0.5`}>
+                      <CheckCircle className="w-4 h-4" /> Completed
                     </div>
-                  </div>
-
-                  {/* Action Button */}
-                  <div className="flex justify-between items-center">
-                    <div className="text-xs text-gray-500">
-                      {lesson.character === "Vera" ? "Preview for Module 1" : `Part of algebraic foundations`}
-                    </div>
-                    {isInteractive ? (
-                      <Link to={`/lesson/${lesson.id}`}>
-                        <Button
-                          size="sm"
-                          className={`bg-gradient-to-r ${characterColor} hover:opacity-90 text-white`}
-                        >
-                          {getStatusText(lesson.status)}
-                        </Button>
-                      </Link>
-                    ) : (
-                      <Button
-                        size="sm"
-                        className="bg-gray-300 cursor-not-allowed text-white"
-                        disabled
-                      >
-                        {getStatusText(lesson.status)}
-                      </Button>
-                    )}
-                  </div>
+                  )}
                 </div>
               </div>
-
-              {/* Connection Arrow */}
-              {index < lessons.length - 1 && (
-                <div className="flex justify-center py-4">
-                  <ArrowDown className="w-6 h-6 text-gray-300" />
-                </div>
-              )}
-
-              {/* Character Transition Marker */}
-              {index === 3 && (
-                <div className="flex justify-center py-6">
-                  <div className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-                    🤖 Switching to Felix the Function Machine
-                  </div>
-                </div>
-              )}
-              {index === 6 && (
-                <div className="flex justify-center py-6">
-                  <div className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">
-                    🐾 Preview with Vera the Vector
-                  </div>
-                </div>
-              )}
             </div>
           );
         })}
-      </div>
-
-      {/* Assessment Section */}
-      <div className="mt-12 text-center">
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-4">Module 0 Assessment</h3>
-          <p className="mb-6 opacity-90">
-            Complete all lessons to unlock your comprehensive assessment and earn your Module 0 completion badge!
-          </p>
-          <Button 
-            variant="outline" 
-            className="bg-white/20 border-white/30 text-white hover:bg-white/30"
-            disabled
-          >
-            Assessment Locked
-          </Button>
-        </div>
       </div>
     </div>
   );
