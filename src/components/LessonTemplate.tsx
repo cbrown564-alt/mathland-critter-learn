@@ -55,7 +55,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
 
   const sections = [
-    { id: "narrative", title: "Story Hook" },
+    { id: "narrative", title: "Introduction" },
     { id: "read", title: "Read" },
     { id: "see", title: "See" },
     { id: "hear", title: "Hear" },

@@ -22,7 +22,7 @@ export const NarrativeHook = ({ lesson, character, onComplete, isCompleted }: Na
     <div className="space-y-6">
       <div className="flex items-center gap-2 text-xl font-semibold text-slate-800">
         <Play className="w-6 h-6 text-orange-500" />
-        <h3>Story Introduction</h3>
+        <h3>Introduction</h3>
       </div>
 
       <div className="bg-slate-50 rounded-lg p-4 mb-4">
