@@ -20,11 +20,7 @@ interface NarrativeHookProps {
 export const NarrativeHook = ({ lesson, character, onComplete, isCompleted }: NarrativeHookProps) => {
   return (
     <div className="space-y-6">
-      <div className="flex items-center gap-2 text-xl font-semibold text-slate-800">
-        <Play className="w-6 h-6 text-orange-500" />
-        <h3>Introduction</h3>
-      </div>
-
+      {/* Main story content follows here */}
       <div className="bg-slate-50 rounded-lg p-4 mb-4">
         <p className="text-slate-700 leading-relaxed">{lesson.narrativeHook.story}</p>
       </div>

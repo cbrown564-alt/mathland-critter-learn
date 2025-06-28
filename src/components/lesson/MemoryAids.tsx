@@ -22,11 +22,6 @@ interface MemoryAidsProps {
 export const MemoryAids = ({ memoryAids, character, onComplete, isCompleted }: MemoryAidsProps) => {
   return (
     <div className="space-y-6">
-      <div className="flex items-center gap-2 text-xl font-semibold text-slate-800">
-        <Brain className="w-6 h-6 text-purple-500" />
-        <h3>Memory Aids</h3>
-      </div>
-
       <div className="bg-slate-50 rounded-lg p-6 border-l-4 border-slate-200">
         <div className="flex items-center gap-3 mb-4">
           <CharacterAvatar 

@@ -14,10 +14,7 @@ interface SeeSectionProps {
 export const SeeSection = ({ lesson, character }: SeeSectionProps) => {
   return (
     <>
-      <div className="flex items-center gap-2 text-xl font-semibold text-slate-800 mb-4">
-        <span role="img" aria-label="See">👁️</span>
-        <h3>See</h3>
-      </div>
+      {/* Section content follows here */}
       {lesson.seePreQuote && (
         <div className="flex items-start gap-4 mb-4">
           <CharacterAvatar src={character.avatar} alt={character.fullName} size="lg" />

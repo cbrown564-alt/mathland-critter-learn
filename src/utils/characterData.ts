@@ -13,7 +13,10 @@ export const characters = [
     expertise: "Mathematical Foundations",
     description: "Patient and methodical engineer otter, equipped with construction tools and wearing a hard hat. Ollie guides you through algebraic foundations with clear explanations and encouraging support, building mathematical confidence one step at a time.",
     modules: ["Module 0: Prerequisites & Refresher (Lessons 0.1-0.4)"],
-    personality: "Methodical, Step-by-step"
+    personality: "Methodical, Step-by-step",
+    icon: '🔧',
+    reactionVerb: 'builds',
+    explainVerb: 'constructs',
   },
   {
     id: "felix",
@@ -29,7 +32,10 @@ export const characters = [
     expertise: "Functions & Coordinate Geometry",
     description: "Friendly robot with a systematic approach to mathematical transformations. Felix helps you understand functions, graphing, and coordinate geometry through logical, step-by-step processing and clear input-output thinking.",
     modules: ["Module 0: Prerequisites & Refresher (Lessons 0.5-0.8)"],
-    personality: "Logical, Systematic"
+    personality: "Logical, Systematic",
+    icon: '⚙️',
+    reactionVerb: 'processes',
+    explainVerb: 'computes',
   },
   {
     id: "vera",
@@ -45,7 +51,10 @@ export const characters = [
     expertise: "Vectors & Vector Spaces",
     description: "Cheerful and adventurous explorer, equipped with a compass and a small backpack. Vera thinks in multiple dimensions and helps you navigate the world of vectors, matrices, and linear transformations with confidence and enthusiasm.",
     modules: ["Module 1: Vectors & Vector Spaces"],
-    personality: "Curious, Encouraging"
+    personality: "Curious, Encouraging",
+    icon: '🧭',
+    reactionVerb: 'celebrates',
+    explainVerb: 'navigates',
   },
   {
     id: "max",
@@ -61,7 +70,10 @@ export const characters = [
     expertise: "Matrices & Linear Mappings",
     description: "Energetic mathematician with hints of architectural elements; wears grid-patterned clothing, sports a calculator watch. Max helps you understand how matrices organize and transform mathematical worlds.",
     modules: ["Module 2: Matrices & Linear Mappings"],
-    personality: "Analytical, Energetic"
+    personality: "Analytical, Energetic",
+    icon: '⊞',
+    reactionVerb: 'organizes',
+    explainVerb: 'structures',
   },
   {
     id: "eileen",
@@ -77,7 +89,10 @@ export const characters = [
     expertise: "Eigenvalues & Eigenvectors",
     description: "Quirky detective-explorer hybrid, characterized by a detective hat and exploration gear in purple and deep blue hues. Eileen uncovers hidden directions in data and transformations.",
     modules: ["Module 3: Eigenvalues & Eigenvectors"],
-    personality: "Quirky, Insightful"
+    personality: "Quirky, Insightful",
+    icon: '🔍',
+    reactionVerb: 'deduces',
+    explainVerb: 'investigates',
   },
   {
     id: "delta",
@@ -93,7 +108,10 @@ export const characters = [
     expertise: "Multivariate Calculus",
     description: "Thoughtful, precise scientist with subtle engineering elements; dressed in a lab coat, wears glasses, carries a clipboard. Dr. Delta clarifies concepts of derivatives, partial derivatives, and gradients.",
     modules: ["Module 4: Multivariate Calculus Foundations"],
-    personality: "Thoughtful, Precise"
+    personality: "Thoughtful, Precise",
+    icon: '📈',
+    reactionVerb: 'measures',
+    explainVerb: 'analyzes',
   },
   {
     id: "greta",
@@ -109,7 +127,10 @@ export const characters = [
     expertise: "Optimization & Gradient Descent",
     description: "Determined climber and hiker, equipped with hiking gear, ropes, and earthy, natural-colored clothing. Greta teaches optimization through relatable analogies of climbing towards optimal solutions.",
     modules: ["Module 5: Optimization & Gradient Descent"],
-    personality: "Determined, Supportive"
+    personality: "Determined, Supportive",
+    icon: '⛰️',
+    reactionVerb: 'climbs',
+    explainVerb: 'guides',
   },
   {
     id: "pippa",
@@ -125,7 +146,10 @@ export const characters = [
     expertise: "Probability & Distributions",
     description: "Quirky magician in playful, whimsical attire, featuring a magician's hat, wand, and costumes in rich purples and golds. Pippa explains probability using playful magic metaphors.",
     modules: ["Module 6: Probability & Distributions"],
-    personality: "Playful, Imaginative"
+    personality: "Playful, Imaginative",
+    icon: '🪄',
+    reactionVerb: 'conjures',
+    explainVerb: 'reveals',
   },
   {
     id: "bayes",
@@ -141,7 +165,10 @@ export const characters = [
     expertise: "Bayesian Inference",
     description: "Clever detective fox character, characterized by a detective's hat and magnifying glass, using warm orange and earthy tones. Bayes introduces Bayesian inference through detective narratives.",
     modules: ["Module 8: Bayesian Inference"],
-    personality: "Clever, Inquisitive"
+    personality: "Clever, Inquisitive",
+    icon: '🧪',
+    reactionVerb: 'sniffs out',
+    explainVerb: 'uncovers',
   },
   {
     id: "sigmund",
@@ -157,7 +184,10 @@ export const characters = [
     expertise: "Hypothesis Testing & Inference",
     description: "Elegant black swan with simple, iconic imagery, presented in clean black-and-white contrast. Sigmund teaches hypothesis testing using the powerful black swan metaphor.",
     modules: ["Module 7: Hypothesis Testing & Inference"],
-    personality: "Elegant, Insightful"
+    personality: "Elegant, Insightful",
+    icon: '👁️',
+    reactionVerb: 'observes',
+    explainVerb: 'contemplates',
   },
   {
     id: "sage",
@@ -173,6 +203,24 @@ export const characters = [
     expertise: "Capstone Project",
     description: "Wise and thoughtful owl character who guides students through synthesizing all their learning into practical applications. Sage helps bring together knowledge from all previous modules.",
     modules: ["Module 9: Capstone Project"],
-    personality: "Wise, Thoughtful"
+    personality: "Wise, Thoughtful",
+    icon: '🧠',
+    reactionVerb: 'synthesizes',
+    explainVerb: 'integrates',
   }
-]; 
+];
+
+// CharacterConfig map for concept checks
+export const characterConfigMap = Object.fromEntries(
+  characters.map(c => [
+    c.id, {
+      id: c.id,
+      name: c.name,
+      color: c.color,
+      avatar: c.avatar,
+      icon: c.icon,
+      reactionVerb: c.reactionVerb,
+      explainVerb: c.explainVerb,
+    }
+  ])
+); 

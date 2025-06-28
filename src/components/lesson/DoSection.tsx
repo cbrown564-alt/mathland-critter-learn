@@ -1,5 +1,5 @@
 import { LessonData } from "@/types/lesson";
-import { customDoComponents } from "@/interactive_elements";
+import { customDoComponents } from "../../interactive_elements";
 
 interface DoSectionProps {
   lesson: LessonData;
@@ -34,10 +34,6 @@ export const DoSection = ({ lesson }: DoSectionProps) => {
 
   return (
     <div>
-      <div className="flex items-center gap-2 text-xl font-semibold text-slate-800 mb-4">
-        <span role="img" aria-label="Do">✋</span>
-        <h3>Do</h3>
-      </div>
       {doInstructions && (
         <div className="mb-4 text-slate-700">{doInstructions}</div>
       )}

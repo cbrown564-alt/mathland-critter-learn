@@ -18,6 +18,8 @@ import 'react-h5-audio-player/lib/styles.css';
 import { CharacterAvatar } from "@/components/CharacterAvatar";
 import { SeeSection } from "./lesson/SeeSection";
 import { DoSection } from "./lesson/DoSection";
+import { EnhancedConceptCheck } from './lesson/conceptCheck/EnhancedConceptCheck';
+import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -210,14 +212,35 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
           />
         );
       case "concept":
-        return (
-          <ConceptCheck 
-            conceptCheck={lesson.conceptCheck}
-            character={character}
-            onComplete={() => handleSectionComplete(currentSection)}
-            isCompleted={isCompleted}
-          />
-        );
+        // Use EnhancedConceptCheck for lesson 1.1 and 1.2, fallback to ConceptCheck otherwise
+        if (lesson.id === '1.1') {
+          return (
+            <EnhancedConceptCheck
+              conceptCheck={EXAMPLE_CONCEPT_CHECKS['vera-vectors']}
+              onComplete={() => handleSectionComplete(currentSection)}
+              isCompleted={isCompleted}
+              onNext={handleNextSection}
+            />
+          );
+        } else if (lesson.id === '1.2') {
+          return (
+            <EnhancedConceptCheck
+              conceptCheck={EXAMPLE_CONCEPT_CHECKS['vera-addition-scenario']}
+              onComplete={() => handleSectionComplete(currentSection)}
+              isCompleted={isCompleted}
+              onNext={handleNextSection}
+            />
+          );
+        } else {
+          return (
+            <ConceptCheck 
+              conceptCheck={lesson.conceptCheck}
+              character={character}
+              onComplete={() => handleSectionComplete(currentSection)}
+              isCompleted={isCompleted}
+            />
+          );
+        }
       case "realworld":
         return (
           <RealWorldConnection 
@@ -259,7 +282,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
       case "hear":
         return (
           <div className="prose max-w-none">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">👂 Hear</h3>
             <div className="text-slate-700 leading-relaxed mb-8">{lesson.hearContent}</div>
             {lesson.hearAudioUrl && (
               <div className="flex items-center gap-4 mb-6">
