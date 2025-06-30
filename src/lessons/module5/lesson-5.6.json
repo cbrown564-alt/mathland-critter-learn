@@ -1,0 +1,53 @@
+{
+  "id": "5.6",
+  "title": "Step Size & Learning Rate Selection",
+  "duration": "40-45 minutes",
+  "characterId": "greta",
+  "narrativeHook": {
+    "story": "Greta faces every mountaineer's dilemma: how big should each step be? Take tiny steps and you'll be climbing forever; take giant leaps and you might overshoot the valley or even fall off a cliff! Learning rate selection is the art of choosing the perfect step size for efficient and safe descent.",
+    "characterMessage": "Every experienced climber knows that step size is everything! Too small and I'll never reach the bottom before winter; too big and I'll overshoot the valley or stumble off a cliff. Choosing the right learning rate is like finding the perfect stride for each type of terrain. Let me teach you this crucial skill!"
+  },
+  "learningObjectives": [
+    "Understand how learning rate affects convergence behavior",
+    "Recognize signs of learning rates that are too large or too small",
+    "Apply learning rate scheduling and adaptive methods",
+    "Analyze convergence patterns and oscillations",
+    "Choose appropriate learning rates for different problem types"
+  ],
+  "coreConcepts": [
+    "Learning rate α effects on convergence",
+    "Too small: slow convergence",
+    "Too large: overshooting and divergence",
+    "Adaptive learning rates and scheduling",
+    "Convergence analysis and oscillation patterns"
+  ],
+  "readContent": "Learning rate selection balances convergence speed with stability. Small α ensures stability but requires many iterations; large α converges quickly but may overshoot minima or diverge. The optimal rate depends on function curvature - steep functions need smaller steps, shallow functions can handle larger steps. Adaptive methods adjust α during optimization: decrease when oscillating, increase when making steady progress. Learning rate scheduling reduces α over time using rules like α = α₀/√t or exponential decay. Monitoring convergence patterns reveals appropriate adjustments: zigzagging indicates α too large, slow progress suggests α too small.",
+  "readAnalogy": "Learning rate is like choosing the right stride for different mountain terrain! On steep, rocky slopes, I take small, careful steps to avoid slipping. On gentle meadows, I can take long strides to cover ground quickly. The best mountaineers adjust their pace based on the terrain - that's exactly what adaptive learning rates do!",
+  "readKeyPoints": [
+    "Small learning rates: stable but slow convergence",
+    "Large learning rates: fast but risk overshooting or divergence",
+    "Adaptive methods adjust step size based on optimization progress"
+  ],
+  "readDigDeeper": "The optimal learning rate for quadratic functions is α = 2/(λₘᵢₙ + λₘₐₓ) where λₘᵢₙ, λₘₐₓ are the smallest and largest eigenvalues of the Hessian. This connects learning rate selection to linear algebra and function curvature analysis.",
+  "readWhyMatters": "Deep learning success depends critically on learning rate schedules - too large causes training instability, too small means networks never converge. Robotics systems use adaptive learning rates for real-time optimization in changing environments. Financial trading algorithms adjust learning rates based on market volatility.",
+  "seeContent": "Visualize how different learning rates create different convergence paths, observe oscillation patterns from oversized steps, and watch adaptive algorithms automatically adjust step sizes based on progress patterns.",
+  "hearContent": "Listen as I explain how choosing the right step size is like being a skilled mountaineer who reads the terrain and adjusts pace accordingly - sometimes careful steps, sometimes confident strides!",
+  "hearAudioUrl": "/audio/5.6.mp3",
+  "doContent": "Use the Learning Rate Explorer with side-by-side comparisons, practice with the Convergence Pattern Analyzer, and experiment with the Adaptive Rate Simulator showing automatic adjustments.",
+  "memoryAids": {
+    "mantra": "Not too big, not too small - the learning rate must suit the call! Watch the path and adjust with care - that's optimization flair!",
+    "visual": "Picture Greta adjusting her stride based on terrain: tiny careful steps on steep rocky slopes, confident long strides on gentle meadows, always reading the ground and adapting her pace."
+  },
+  "conceptCheck": {
+    "question": "An optimization shows zigzag convergence pattern with large jumps around the minimum. What does this suggest about the learning rate?",
+    "options": [
+      "Learning rate is too large - reduce it to prevent overshooting",
+      "Learning rate is too small - increase it for faster convergence",
+      "Learning rate is perfect - zigzagging is normal behavior",
+      "The function is non-convex - learning rate is not the issue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Zigzag patterns with large jumps indicate the learning rate is too large, causing the algorithm to overshoot the minimum and bounce back and forth. Reducing the learning rate will create smoother convergence."
+  },
+  "realWorldConnection": "OpenAI trains GPT models using sophisticated learning rate schedules that start high and decay over time. Tesla's neural networks use adaptive learning rates for real-time decision making in autonomous driving. Google's recommendation systems continuously adjust learning rates based on user behavior patterns."
+}

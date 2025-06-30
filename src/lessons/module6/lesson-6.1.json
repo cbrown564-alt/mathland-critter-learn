@@ -1,0 +1,53 @@
+{
+  "id": "6.1",
+  "title": "Introduction to Probability & Sample Spaces",
+  "duration": "35-40 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Probability Pippa appears in a shower of sparkles, her magician's hat shimmering with mathematical possibilities! As a rabbit who specializes in the unpredictable, she knows that probability is the mathematics of uncertainty - turning the chaos of random events into precise, beautiful patterns that we can understand and predict.",
+    "characterMessage": "Welcome to the wonderful world of uncertainty! I'm Pippa, and I make the unpredictable predictable through the magic of probability! Every coin flip, every die roll, every random event follows beautiful mathematical patterns. Let me show you how to find order in chaos!"
+  },
+  "learningObjectives": [
+    "Define sample spaces as sets of all possible outcomes",
+    "Understand events as subsets of sample spaces",
+    "Calculate basic probabilities using counting principles",
+    "Apply probability rules: addition, multiplication, complement",
+    "Connect probability to real-world uncertainty and decision-making"
+  ],
+  "coreConcepts": [
+    "Sample space Ω: set of all possible outcomes",
+    "Events as subsets of sample space",
+    "Probability function P: assigns numbers to events",
+    "Basic probability rules and axioms",
+    "Counting principles for finite sample spaces"
+  ],
+  "readContent": "Probability quantifies uncertainty by assigning numbers between 0 and 1 to events. The sample space Ω contains all possible outcomes of an experiment, while events are subsets of this space. The probability function P satisfies three axioms: P(A) ≥ 0 for any event A, P(Ω) = 1, and P(A ∪ B) = P(A) + P(B) when A and B are disjoint. For finite sample spaces with equally likely outcomes, P(A) = |A|/|Ω| (favorable outcomes divided by total outcomes). Key rules include: P(Aᶜ) = 1 - P(A) for complements, and P(A ∪ B) = P(A) + P(B) - P(A ∩ B) for general unions.",
+  "readAnalogy": "Think of probability like my magic hat filled with all possible outcomes! The sample space is everything that could possibly be pulled from the hat, while events are specific collections of outcomes I'm interested in. The probability is simply the fraction of space each event takes up in my magical hat!",
+  "readKeyPoints": [
+    "Sample space Ω contains all possible outcomes of a random experiment",
+    "Events are subsets of the sample space we're interested in",
+    "Probability P(A) = favorable outcomes / total outcomes for equally likely cases"
+  ],
+  "readDigDeeper": "The axiomatic foundation of probability theory, developed by Kolmogorov, builds all probability concepts from three simple axioms. This mathematical framework underlies everything from quantum mechanics to machine learning algorithms.",
+  "readWhyMatters": "Weather forecasting uses probability to predict rain chances from atmospheric data. Medical diagnosis assigns probabilities to diseases based on symptoms. Insurance companies use probability to calculate fair premiums. Machine learning algorithms make predictions using probability distributions over possible outcomes.",
+  "seeContent": "Explore interactive sample space visualizations, see how events correspond to regions in probability spaces, and observe how counting principles determine probabilities in finite cases with equal likelihood.",
+  "hearContent": "Listen as I explain how probability is like organizing all the magic tricks in my hat - some outcomes are more likely to appear than others, but the mathematical rules help us predict the patterns!",
+  "hearAudioUrl": "/audio/6.1.mp3",
+  "doContent": "Use the Sample Space Explorer to visualize different experiments, practice with the Probability Calculator for basic events, and experiment with the Event Combinations tool showing unions, intersections, and complements.",
+  "memoryAids": {
+    "mantra": "Sample space holds all that could be, events are subsets we want to see! Count the favorable, divide by all - that's probability's magical call!",
+    "visual": "Picture Pippa's shimmering magic hat containing all possible outcomes, with events highlighted as glowing regions within the hat, and probabilities determined by how much space each region occupies."
+  },
+  "conceptCheck": {
+    "question": "Rolling two dice, what's the probability of getting a sum of 7, given that all 36 outcomes are equally likely?",
+    "options": [
+      "P(sum = 7) = 6/36 = 1/6, since there are 6 ways: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)",
+      "P(sum = 7) = 1/11, since sums range from 2 to 12",
+      "P(sum = 7) = 7/36, since we want sum 7 out of 36 outcomes",
+      "P(sum = 7) = 2/12, since 7 is in the middle of possible sums"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sample space has 36 equally likely outcomes. Event 'sum = 7' contains 6 outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Therefore P(sum = 7) = 6/36 = 1/6."
+  },
+  "realWorldConnection": "Netflix calculates probabilities that users will like different movies based on viewing history. Medical AI systems assign probabilities to different diagnoses based on symptoms. Weather services use probability models to forecast precipitation chances from atmospheric data."
+}

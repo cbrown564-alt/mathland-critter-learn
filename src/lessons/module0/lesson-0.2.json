@@ -1,0 +1,52 @@
+{
+  "id": "0.2",
+  "title": "Factoring & Expanding Expressions",
+  "duration": "30-35 minutes",
+  "characterId": "ollie",
+  "narrativeHook": {
+    "story": "Ollie's dam can be built in sections, then combined - or taken apart and rebuilt. Algebraic expressions work the same way: we can expand them into parts or factor them back together.",
+    "characterMessage": "Every dam can be taken apart and rebuilt! Just like how I can break down my dam into individual sticks or combine sticks into larger sections, we can factor and expand algebraic expressions."
+  },
+  "learningObjectives": [
+    "Apply the distributive property to expand expressions",
+    "Factor out common terms from algebraic expressions",
+    "Recognize and factor difference of squares patterns",
+    "Use the FOIL method for multiplying binomials"
+  ],
+  "coreConcepts": [
+    "Distributive property",
+    "Factoring common terms",
+    "Difference of squares",
+    "Perfect square trinomials",
+    "FOIL method"
+  ],
+  "readContent": "Just like I can break down my dam into individual sticks or combine sticks into larger sections, algebraic expressions can be factored into simpler pieces or expanded into detailed forms. The distributive property a(b + c) = ab + ac is my basic building tool. Key patterns include difference of squares (a² - b² = (a-b)(a+b)) and perfect square trinomials. These patterns appear everywhere in dam engineering calculations.",
+  "readAnalogy": "Factoring is like taking apart a completed dam section to see how it was built from individual components. Expanding is like combining individual sticks and stones into a complete dam structure. Both processes reveal different aspects of the same mathematical construction.",
+  "readKeyPoints": [
+    "Distributive property: a(b + c) = ab + ac - like distributing materials evenly",
+    "Difference of squares: a² - b² = (a-b)(a+b) - a special structural pattern",
+    "Common factors can be pulled out like identifying reusable building materials"
+  ],
+  "readDigDeeper": "Advanced factoring includes techniques like grouping, substitution, and using the rational root theorem for higher-degree polynomials. In calculus, factoring helps with integration by partial fractions, and in number theory, factoring is fundamental to cryptography.",
+  "readWhyMatters": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. Machine learning algorithms often benefit from factored forms that expose underlying structure and reduce computational complexity.",
+  "seeContent": "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
+  "hearContent": "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
+  "hearAudioUrl": "/audio/0.2.mp3",
+  "doContent": "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion.",
+  "memoryAids": {
+    "mantra": "Every dam can be taken apart and rebuilt - just like algebraic expressions!",
+    "visual": "Ollie's building blocks showing how expressions can be broken down into factors or combined into expanded forms"
+  },
+  "conceptCheck": {
+    "question": "Factor the expression: x² - 9. What pattern does this represent?",
+    "options": [
+      "(x - 3)(x + 3), a difference of squares",
+      "(x - 9)(x + 1), a linear factorization",
+      "x(x - 9), factoring out x",
+      "Cannot be factored further"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x² - 9 is a difference of squares pattern (a² - b²) where a = x and b = 3. It factors as (x - 3)(x + 3). This pattern appears frequently in data science optimization problems."
+  },
+  "realWorldConnection": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset."
+}

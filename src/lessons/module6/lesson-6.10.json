@@ -1,0 +1,53 @@
+{
+  "id": "6.10",
+  "title": "Pippa's Probability & Distributions Capstone",
+  "duration": "50-60 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa faces the ultimate probability challenge: a comprehensive magical investigation that requires every technique she's mastered! From basic sample spaces through complex distributions, from expectation calculations to sampling theory - this capstone synthesizes all probability concepts into one integrated exploration of uncertainty and randomness.",
+    "characterMessage": "Time for the grand finale of probability magic! This ultimate challenge brings together everything we've learned - sample spaces, distributions, expectation, variance, limit theorems, and sampling. Let's solve a complex real-world problem that showcases the full power of probability theory!"
+  },
+  "learningObjectives": [
+    "Synthesize all probability concepts in one comprehensive project",
+    "Apply multiple distribution types to model real phenomena",
+    "Calculate expectations, variances, and use limit theorems",
+    "Analyze sampling scenarios with proper statistical reasoning",
+    "Connect probability theory to practical decision-making applications"
+  ],
+  "coreConcepts": [
+    "Complete probability analysis workflow",
+    "Distribution selection and parameter estimation",
+    "Expectation and variance calculations",
+    "Limit theorem applications",
+    "Sampling theory and inference"
+  ],
+  "readContent": "This capstone project synthesizes every probability concept into one comprehensive investigation. You'll analyze complex scenarios from basic sample space construction through advanced limit theorem applications, demonstrating mastery of distributions, expectation, variance, conditional probability, and sampling theory. The project mirrors real-world applications where probability provides the mathematical foundation for decision-making under uncertainty: quality control, financial risk assessment, medical diagnosis, and machine learning. This integrated approach shows how probability theory enables quantitative reasoning about uncertain phenomena across diverse fields.",
+  "readAnalogy": "This capstone is like Pippa conducting the ultimate magical performance! Every probability technique must work together perfectly - from basic sample spaces through complex distributions to advanced sampling theory. It's the complete demonstration of how mathematics transforms uncertainty into actionable insights!",
+  "readKeyPoints": [
+    "Complete probability analysis: sample spaces through statistical inference",
+    "Integration of discrete and continuous distributions with real applications",
+    "Expectation, variance, and limit theorems for practical problem-solving"
+  ],
+  "readDigDeeper": "This project workflow mirrors professional probability applications: data scientists model user behavior with distributions, actuaries use probability for insurance pricing, engineers apply probability for reliability analysis, and economists use probability for market forecasting. The mathematical techniques you're mastering form the foundation of quantitative decision-making.",
+  "readWhyMatters": "This capstone demonstrates career-ready probability skills. Data scientists use these exact techniques for predictive modeling and A/B testing. Actuaries apply probability theory for insurance and pension calculations. Quality engineers use probability for process control and reliability analysis. Your probability mastery translates directly to high-impact careers in data science, finance, engineering, and research.",
+  "seeContent": "Work through comprehensive probability analysis tools that integrate distribution fitting, parameter estimation, expectation calculations, and sampling simulations in realistic application scenarios.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of probability mastery - every concept working together with the playful precision and magical insight that defines excellent probabilistic reasoning!",
+  "hearAudioUrl": "/audio/6.10.mp3",
+  "doContent": "Complete the comprehensive probability project: construct sample spaces, select and apply appropriate distributions, calculate expectations and variances, apply limit theorems for approximations, and analyze sampling scenarios with proper uncertainty quantification.",
+  "memoryAids": {
+    "mantra": "Every distribution, every theorem, every magical rule - probability mastery is the ultimate tool! From uncertainty to insight with mathematical might!",
+    "visual": "Picture yourself as Pippa's magical apprentice, using every probability technique with playful precision to transform a complex uncertain scenario into clear, quantified insights that guide real-world decisions."
+  },
+  "conceptCheck": {
+    "question": "In Part C, you model customer arrivals as Poisson(λ=5 per hour) and use Normal approximation. What justifies this approximation and what parameters should you use?",
+    "options": [
+      "Poisson(5) ≈ Normal(5, 5) since for large λ, Poisson approaches Normal with μ = σ² = λ",
+      "Use Normal(5, √5) since Poisson variance equals the mean",
+      "Cannot use Normal approximation since Poisson is discrete",
+      "Both A and B describe the same approximation with different variance notation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For large λ, Poisson(λ) ≈ Normal(λ, λ). Here: Poisson(5) ≈ Normal(5, 5). Since Normal uses standard deviation, this is Normal(μ=5, σ=√5). Both A and B are correct - A uses variance notation (σ²=5), B uses standard deviation notation (σ=√5)."
+  },
+  "realWorldConnection": "This project mirrors real data science workflows: modeling user behavior with appropriate distributions, calculating expected outcomes for business planning, using limit theorems for approximations, and applying sampling theory for A/B testing. The probability mastery you've developed applies directly to careers in data science, actuarial science, quality engineering, and quantitative research."
+}

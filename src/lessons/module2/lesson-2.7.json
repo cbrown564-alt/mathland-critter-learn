@@ -1,0 +1,53 @@
+{
+  "id": "2.7",
+  "title": "Matrix-Vector Products as Transformations",
+  "duration": "40-45 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max realizes that when he multiplies a matrix by a vector, he's not just calculating numbers - he's systematically transforming the vector into a new location. Every matrix is actually a transformation machine that takes input vectors and produces output vectors according to precise mathematical rules.",
+    "characterMessage": "This is where everything clicks together! When I multiply a matrix by a vector, I'm not just doing arithmetic - I'm applying a systematic transformation. Every matrix is actually a transformation machine with its own personality: some rotate, some stretch, some flip, some project. Let me show you how!"
+  },
+  "learningObjectives": [
+    "Interpret matrix-vector multiplication as geometric transformation",
+    "Understand how matrix columns determine where basis vectors go",
+    "Analyze different types of transformations: rotation, scaling, reflection, projection",
+    "Compose transformations by multiplying matrices",
+    "Connect linear transformations to real-world applications"
+  ],
+  "coreConcepts": [
+    "Matrix-vector product as transformation",
+    "Matrix columns as transformed basis vectors",
+    "Types: rotation, scaling, reflection, shear, projection",
+    "Composition of transformations",
+    "Linear transformation properties"
+  ],
+  "readContent": "Matrix-vector multiplication Av transforms vector v according to the linear transformation represented by matrix A. The matrix columns show where the standard basis vectors [1,0] and [0,1] get mapped. Common transformations include: rotation (preserves length and angles), scaling (changes size), reflection (flips across lines), shear (slides parallel layers), and projection (flattens to lower dimensions). Transformation composition works by matrix multiplication: applying transformation B then A equals applying transformation AB. All linear transformations preserve vector addition and scalar multiplication: T(u + v) = T(u) + T(v) and T(cu) = cT(u).",
+  "readAnalogy": "Matrix-vector multiplication is like applying a series of transformations to a vector - each transformation is represented by a matrix, and the result is the final transformed vector. This is a fundamental operation in linear algebra and computer graphics.",
+  "readKeyPoints": [
+    "Matrix-vector multiplication: Av",
+    "Transformation interpretation: each column of A represents a transformed basis vector",
+    "Types of transformations: rotation, scaling, reflection, shear, projection"
+  ],
+  "readDigDeeper": "Matrix-vector multiplication is a powerful tool for understanding linear transformations. It's used in various applications like computer graphics, robotics, and machine learning.",
+  "readWhyMatters": "Matrix-vector multiplication is a fundamental operation in linear algebra and computer graphics: it allows us to apply linear transformations to vectors, which is essential for understanding and manipulating geometric transformations.",
+  "seeContent": "Watch vectors transform in real-time as matrix values change, see how different matrix types create rotation, scaling, reflection, and other transformations, and observe transformation composition through matrix multiplication.",
+  "hearContent": "Listen as I explain how every matrix has its own transformation personality - some are gentle rotators, others are aggressive stretchers, and some are precise projectors. Each one systematically changes vectors according to its mathematical nature!",
+  "hearAudioUrl": "/audio/2.7.mp3",
+  "doContent": "Use the Transformation Visualizer to see matrix-vector products as geometric changes, experiment with the Matrix Personality Detector to identify transformation types, and practice the Transformation Composer to combine multiple transformations.",
+  "memoryAids": {
+    "mantra": "Every matrix is a transformation machine with its own personality - rotation, scaling, flipping, or projecting vectors systematically!",
+    "visual": "Picture Max as a transformation wizard: each matrix is a different spell that systematically changes vectors - some spells rotate, others stretch, flip, or flatten vectors according to precise magical rules."
+  },
+  "conceptCheck": {
+    "question": "Matrix [[0,-1],[1,0]] transforms vector [3,4]. What transformation does this matrix represent and what's the result?",
+    "options": [
+      "90° counterclockwise rotation, result is [-4,3]",
+      "Reflection across y=x line, result is [4,3]",
+      "Scaling by factor 2, result is [6,8]",
+      "Projection onto x-axis, result is [3,0]"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Matrix [[0,-1],[1,0]] rotates vectors 90° counterclockwise. Applying to [3,4]: [0×3 + (-1)×4, 1×3 + 0×4] = [-4,3]. The columns show where [1,0]→[0,1] and [0,1]→[-1,0], confirming 90° rotation."
+  },
+  "realWorldConnection": "Video games use transformation matrices to move, rotate, and scale 3D objects in real-time. Medical imaging applies transformations to reconstruct 3D body scans from 2D slices. Robotics uses transformation matrices to control precise arm movements and calculate positions in space."
+}

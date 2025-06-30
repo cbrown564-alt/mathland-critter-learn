@@ -1,56 +1,88 @@
 import { LessonData } from "@/types/lesson";
-import { module0Lessons } from "./lessonData/module0";
-import { module1Lessons } from "./lessonData/module1";
-import { module2Lessons } from "./lessonData/module2";
-import { module3Lessons } from "./lessonData/module3";
-import { module4Lessons } from "./lessonData/module4";
-import { module5Lessons } from "./lessonData/module5";
-import { module6Lessons } from "./lessonData/module6";
-import { module7Lessons } from "./lessonData/module7";
-import { module8Lessons } from "./lessonData/module8";
-import { module9Lessons } from "./lessonData/module9";
+import { 
+  loadModuleLessons, 
+  getLessonOrderForModule as getLessonOrderAsync,
+  getLessonDataForModule as getLessonDataAsync,
+  loadLesson
+} from "./lessonLoader";
 
+// This module provides backward compatibility for existing code
+// It maintains the same interface but uses the new JSON-based system
 
+// Cache for loaded modules
+let moduleCache: { [moduleId: string]: { [lessonId: string]: LessonData } } = {};
+let isInitialized = false;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Map of all module lessons for generic access
-export const allModuleLessons: { [moduleId: string]: { [lessonId: string]: LessonData } } = {
-  "0": module0Lessons,
-  "1": module1Lessons,
-  "2": module2Lessons,
-  "3": module3Lessons,
-  "4": module4Lessons,
-  "5": module5Lessons,
-  "6": module6Lessons,
-  "7": module7Lessons,
-  "8": module8Lessons,
-  "9": module9Lessons,
-  // Add more modules as needed
-};
-
-// Generic lesson order function
-export function getLessonOrderForModule(moduleId: string): string[] {
-  return Object.keys(allModuleLessons[moduleId] || {});
+// Initialize all modules on first access
+async function ensureInitialized() {
+  if (!isInitialized) {
+    await initializeAllModules();
+    isInitialized = true;
+  }
 }
 
-// Generic lesson data function
+// Load all modules into cache
+async function initializeAllModules() {
+  const loadPromises = Array.from({ length: 10 }, async (_, i) => {
+    const moduleId = i.toString();
+    try {
+      const lessons = await loadModuleLessons(moduleId);
+      if (Object.keys(lessons).length > 0) {
+        moduleCache[moduleId] = lessons;
+      }
+    } catch (error) {
+      console.warn(`Failed to load module ${moduleId}:`, error);
+    }
+  });
+
+  await Promise.all(loadPromises);
+}
+
+// Synchronous interface for backward compatibility
+// Note: These require calling ensureInitialized() first
+
+export const allModuleLessons: { [moduleId: string]: { [lessonId: string]: LessonData } } = new Proxy({}, {
+  get(target, moduleId: string) {
+    if (!isInitialized) {
+      console.warn('Lesson data accessed before initialization. Call ensureInitialized() first.');
+      return {};
+    }
+    return moduleCache[moduleId] || {};
+  }
+});
+
+export function getLessonOrderForModule(moduleId: string): string[] {
+  if (!isInitialized) {
+    console.warn('Lesson data accessed before initialization. Call ensureInitialized() first.');
+    return [];
+  }
+  const lessons = moduleCache[moduleId];
+  return lessons ? Object.keys(lessons).sort() : [];
+}
+
 export function getLessonDataForModule(moduleId: string, lessonId: string): LessonData | undefined {
-  return allModuleLessons[moduleId]?.[lessonId];
+  if (!isInitialized) {
+    console.warn('Lesson data accessed before initialization. Call ensureInitialized() first.');
+    return undefined;
+  }
+  return moduleCache[moduleId]?.[lessonId];
+}
+
+// Async versions that don't require initialization
+export async function getLessonOrderForModuleAsync(moduleId: string): Promise<string[]> {
+  return getLessonOrderAsync(moduleId);
+}
+
+export async function getLessonDataForModuleAsync(moduleId: string, lessonId: string): Promise<LessonData | undefined> {
+  return getLessonDataAsync(moduleId, lessonId);
+}
+
+// Export initialization function
+export { ensureInitialized };
+
+// Auto-initialize in development
+if (process.env.NODE_ENV === 'development') {
+  ensureInitialized().catch(console.error);
 }
 
 // Deprecated: old per-module functions (to be removed after migration)

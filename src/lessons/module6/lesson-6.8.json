@@ -1,0 +1,53 @@
+{
+  "id": "6.8",
+  "title": "PDF vs CDF: Complete Distribution Descriptions",
+  "duration": "40-45 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa reveals that every distribution has two magical faces! The PDF shows the 'density' of magic at each point - how concentrated the probability is. The CDF shows the 'accumulated' magic up to any point - what fraction of outcomes fall below that value. Together, they give the complete picture of any random phenomenon!",
+    "characterMessage": "Every distribution wears two magical masks! The PDF (or PMF for discrete) shows how dense the probability is at each spot, like seeing where my magic is most concentrated. The CDF accumulates all that magic up to any point, showing what fraction falls below any value. Together, they tell the complete story!"
+  },
+  "learningObjectives": [
+    "Understand PDF as probability density for continuous variables",
+    "Master CDF as cumulative probability P(X ≤ x)",
+    "Convert between PDF and CDF using calculus relationships",
+    "Interpret percentiles and quantiles using CDF",
+    "Apply both representations to solve probability problems"
+  ],
+  "coreConcepts": [
+    "PDF f(x): probability density, f(x) = F'(x)",
+    "CDF F(x) = P(X ≤ x): cumulative probability",
+    "Relationship: F(x) = ∫₋∞ˣ f(t)dt",
+    "Percentiles and quantiles from CDF",
+    "Probability calculations using both representations"
+  ],
+  "readContent": "The Probability Density Function (PDF) f(x) shows the relative likelihood density at each point for continuous variables. Probabilities require integration: P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx. The Cumulative Distribution Function (CDF) F(x) = P(X ≤ x) gives the probability that X doesn't exceed x. These connect via calculus: F(x) = ∫₋∞ˣ f(t)dt and f(x) = F'(x). CDF properties: F(-∞) = 0, F(∞) = 1, and F is non-decreasing. Percentiles and quantiles come from CDF: the pth percentile is the value x where F(x) = p/100. Both representations are essential for different probability calculations.",
+  "readAnalogy": "Think of PDF and CDF like two views of my magical mountain! PDF shows the 'steepness' at each elevation - where the magic is most concentrated. CDF shows the 'accumulated elevation' - what fraction of the mountain lies below any height. Both views together give me complete knowledge of the magical landscape!",
+  "readKeyPoints": [
+    "PDF f(x): shows probability density at each point (steepness)",
+    "CDF F(x): shows cumulative probability up to x (accumulated area)",
+    "Calculus relationship: F(x) = ∫₋∞ˣ f(t)dt and f(x) = F'(x)"
+  ],
+  "readDigDeeper": "The inverse CDF (quantile function) F⁻¹(p) gives the value x such that F(x) = p. This is used in random number generation: if U ~ Uniform(0,1), then F⁻¹(U) has distribution F, providing a universal method for generating random samples.",
+  "readWhyMatters": "Financial risk management uses CDFs to calculate Value-at-Risk percentiles. Medical research uses CDFs to interpret diagnostic test results and establish normal ranges. Manufacturing uses CDFs to set quality control limits and specification tolerances. Machine learning uses CDFs for model calibration and confidence estimation.",
+  "seeContent": "Visualize the relationship between PDF curves and CDF accumulation, observe how integration connects these representations, and explore how percentiles and quantiles emerge from CDF analysis.",
+  "hearContent": "Listen as I explain how PDF and CDF are like two magical viewing angles of the same distribution - one showing density concentration, the other showing cumulative accumulation!",
+  "hearAudioUrl": "/audio/6.8.mp3",
+  "doContent": "Use the PDF-CDF Converter with interactive integration, practice with the Percentile Calculator using CDF inversions, and experiment with the Distribution Analyzer comparing both representations.",
+  "memoryAids": {
+    "mantra": "PDF shows where magic's dense, CDF shows what's accumulated hence! Derivative and integral connect the two - that's probability's double view!",
+    "visual": "Picture Pippa examining a magical mountain from two angles: PDF showing the steepness at each point, CDF showing the accumulated height up to any elevation, both revealing the complete topography."
+  },
+  "conceptCheck": {
+    "question": "For continuous distribution with CDF F(x), how do you find P(2 < X ≤ 5) using the CDF?",
+    "options": [
+      "P(2 < X ≤ 5) = F(5) - F(2)",
+      "P(2 < X ≤ 5) = F(5) + F(2)",
+      "P(2 < X ≤ 5) = F(3.5) since that's the midpoint",
+      "P(2 < X ≤ 5) = ∫₂⁵ F(x)dx"
+    ],
+    "correctAnswer": 0,
+    "explanation": "P(2 < X ≤ 5) = P(X ≤ 5) - P(X ≤ 2) = F(5) - F(2). The CDF gives cumulative probabilities, so we subtract to get the probability in the interval."
+  },
+  "realWorldConnection": "Financial analysts use CDFs to calculate portfolio Value-at-Risk at specific confidence levels. Medical labs use CDFs to determine if patient test results fall within normal ranges. Quality control engineers use CDFs to set manufacturing tolerance limits that capture desired percentages of production."
+}

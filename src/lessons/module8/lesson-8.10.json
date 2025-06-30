@@ -1,0 +1,53 @@
+{
+  "id": "8.10",
+  "title": "Bayes' Bayesian Inference Mastery Capstone",
+  "duration": "50-60 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes faces his ultimate case: a comprehensive Bayesian investigation that synthesizes every technique in his detective arsenal. From prior specification through posterior analysis, from conjugate updating to model comparison - this capstone demonstrates the complete art of Bayesian reasoning applied to complex, realistic scenarios.",
+    "characterMessage": "Time for the ultimate Bayesian investigation! This final case brings together every technique we've mastered - prior elicitation, likelihood analysis, posterior updating, predictive distributions, and model comparison. Let's solve a complex mystery that showcases the full power of Bayesian detective work!"
+  },
+  "learningObjectives": [
+    "Synthesize all Bayesian concepts in comprehensive real-world investigations",
+    "Apply complete Bayesian workflow from prior specification to decision-making",
+    "Demonstrate mastery of conjugate updating, model comparison, and prediction",
+    "Interpret results with appropriate uncertainty quantification",
+    "Connect Bayesian reasoning to practical decision-making under uncertainty"
+  ],
+  "coreConcepts": [
+    "Complete Bayesian workflow: prior → likelihood → posterior → prediction",
+    "Prior sensitivity analysis and robustness checking",
+    "Model comparison using Bayes factors",
+    "Decision-making under uncertainty with posterior distributions",
+    "Communication of Bayesian results to non-technical audiences"
+  ],
+  "readContent": "This capstone project synthesizes every Bayesian concept into comprehensive real-world investigations. You'll specify informative priors based on domain knowledge, analyze complex likelihood functions, compute posteriors using conjugate relationships, generate predictive distributions for decision-making, and compare competing models using Bayes factors. The project emphasizes the complete Bayesian workflow: starting with careful prior elicitation, incorporating evidence through likelihood analysis, updating beliefs systematically, and using posterior distributions for practical decision-making. You'll also conduct sensitivity analysis to ensure conclusions are robust to prior assumptions and communicate results effectively to stakeholders who need to make decisions under uncertainty.",
+  "readAnalogy": "This capstone is like Bayes solving the ultimate detective case that requires every skill in his arsenal - from understanding the criminal background (priors) through analyzing all evidence (likelihood) to reaching systematic conclusions (posterior) and predicting future crimes (predictive distributions). It's the complete demonstration of Bayesian detective mastery!",
+  "readKeyPoints": [
+    "Complete Bayesian workflow: prior specification through decision-making applications",
+    "Integration of conjugate updating, model comparison, and predictive analysis",
+    "Sensitivity analysis and robust conclusions under uncertainty"
+  ],
+  "readDigDeeper": "This project workflow mirrors professional Bayesian analysis in industry and research. Data scientists use these complete workflows for A/B testing, recommendation systems, and predictive modeling. The ability to think coherently about uncertainty and update beliefs systematically distinguishes Bayesian practitioners.",
+  "readWhyMatters": "This capstone demonstrates career-ready Bayesian inference skills. Tech companies use complete Bayesian workflows for product analytics and machine learning. Pharmaceutical companies apply Bayesian methods for clinical trial design and analysis. Financial firms use Bayesian approaches for risk modeling and algorithmic trading with uncertainty quantification.",
+  "seeContent": "Work through comprehensive Bayesian analysis workflows integrating all course concepts, visualize complete uncertainty propagation from priors through predictions, and observe how Bayesian reasoning supports principled decision-making under uncertainty.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of Bayesian mastery - every concept working together with the cunning precision and skeptical wisdom that defines excellent Bayesian detective work!",
+  "hearAudioUrl": "/audio/8.10.mp3",
+  "doContent": "Complete comprehensive Bayesian projects: specify appropriate priors based on domain knowledge, analyze complex evidence through likelihood functions, compute posteriors using conjugate relationships, generate predictive distributions, compare competing models, and provide decision recommendations with full uncertainty quantification.",
+  "memoryAids": {
+    "mantra": "Every prior, every update, every Bayesian pursuit! From belief through evidence to decision - that's inference precision!",
+    "visual": "Picture yourself as Bayes' accomplished detective partner, using every Bayesian technique with cunning precision to solve complex real-world mysteries that require systematic reasoning under uncertainty and principled decision-making."
+  },
+  "conceptCheck": {
+    "question": "In Part C, you compare three models and find Bayes factors BF₁₂ = 8.5 and BF₁₃ = 23.1. What can you conclude about the relative evidence?",
+    "options": [
+      "Strong evidence for Model 1 over Models 2 and 3, with Model 1 vs 3 being most decisive",
+      "Model 1 is 8.5 times more likely than Model 2 and 23.1 times more likely than Model 3",
+      "Models can be ranked as 1 > 2 > 3 but strength differences are unclear",
+      "Need to calculate BF₂₃ = BF₁₃/BF₁₂ = 2.7 for complete comparison"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BF₁₂ = 8.5 provides substantial evidence for Model 1 over Model 2. BF₁₃ = 23.1 provides strong evidence for Model 1 over Model 3. The evidence most strongly favors Model 1, with the comparison against Model 3 being more decisive than against Model 2."
+  },
+  "realWorldConnection": "This capstone mirrors real Bayesian consulting workflows: pharmaceutical statisticians designing adaptive clinical trials, tech company data scientists building recommendation systems, and financial quants developing risk models. The complete Bayesian reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty with systematic belief updating."
+}

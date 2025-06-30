@@ -1,0 +1,53 @@
+{
+  "id": "4.7",
+  "title": "Directional Derivatives",
+  "duration": "40-45 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta realizes that while gradients show the steepest direction, sometimes we need to know the rate of change in a specific direction of our choosing. Directional derivatives let us measure change along any path - like determining how quickly temperature changes as we walk northeast across a landscape.",
+    "characterMessage": "Sometimes precision requires knowing the rate of change in a specific direction! While gradients show the steepest path, directional derivatives let me measure change along any direction I choose. It's like having a mathematical speedometer that works along any route!"
+  },
+  "learningObjectives": [
+    "Define directional derivatives as limits in specified directions",
+    "Compute directional derivatives using the gradient formula",
+    "Understand the relationship Dᵤf = ∇f · û",
+    "Interpret directional derivatives geometrically and physically",
+    "Apply directional derivatives to optimization and constraint problems"
+  ],
+  "coreConcepts": [
+    "Directional derivative definition: Dᵤf = lim(h→0) [f(a+hû) - f(a)]/h",
+    "Gradient formula: Dᵤf = ∇f · û where û is unit vector",
+    "Maximum directional derivative in gradient direction",
+    "Zero directional derivative along level curves",
+    "Applications to constraint optimization"
+  ],
+  "readContent": "Directional derivatives measure the rate of change of f in a specified direction û. The formal definition uses limits: Dᵤf = lim(h→0) [f(a+hû) - f(a)]/h, but the practical formula Dᵤf = ∇f · û (dot product with unit direction vector) makes computation straightforward. The maximum directional derivative occurs in the gradient direction with value ||∇f||, while the minimum occurs in the opposite direction with value -||∇f||. Directional derivatives are zero along level curves (perpendicular to gradient) and provide the foundation for constrained optimization.",
+  "readAnalogy": "Directional derivatives are like asking a hedgehog to measure how steep the ground feels when walking in any chosen direction. While the gradient shows where it's steepest overall, directional derivatives tell us the steepness along our chosen path - whether that's northeast, southwest, or any other direction we pick.",
+  "readKeyPoints": [
+    "Directional derivative: Dᵤf = ∇f · û measures change in direction û",
+    "Maximum value ||∇f|| occurs in gradient direction",
+    "Zero value occurs perpendicular to gradient (along level curves)"
+  ],
+  "readDigDeeper": "Directional derivatives in non-unit directions give Dᵥf = (∇f · v)/||v||. This shows that direction matters more than magnitude - the rate depends only on the direction component, scaled by the vector's length.",
+  "readWhyMatters": "Hikers use directional derivatives to assess trail difficulty in chosen directions. Engineers analyze stress changes along specific material orientations. Economics uses directional derivatives to understand how consumption changes when moving along budget constraints with specific preference patterns.",
+  "seeContent": "Watch directional derivative calculations along various paths, see how the dot product formula relates to geometric projections, and observe how directional derivatives vary as the chosen direction changes around a point.",
+  "hearContent": "Listen as I explain how directional derivatives are like a precision instrument that measures steepness along any path you choose - the mathematical equivalent of a customized compass!",
+  "hearAudioUrl": "/audio/4.7.mp3",
+  "doContent": "Use the Directional Derivative Calculator with vector input controls, practice with the Direction Chooser that shows how rates vary with angle, and experiment with the Gradient Projection Visualizer.",
+  "memoryAids": {
+    "mantra": "Dot the gradient with your chosen direction - that's the rate of change with mathematical precision!",
+    "visual": "Picture Dr. Delta walking along any chosen path with a precision gauge that measures exactly how steeply the mathematical landscape rises or falls in that specific direction."
+  },
+  "conceptCheck": {
+    "question": "For f(x,y) = x² + y² with ∇f(1,1) = ⟨2,2⟩, what is the directional derivative in direction û = ⟨1/√2, 1/√2⟩?",
+    "options": [
+      "Dᵤf = 4/√2 = 2√2, the maximum possible directional derivative",
+      "Dᵤf = 2, half the maximum possible directional derivative",
+      "Dᵤf = 4, twice the gradient magnitude",
+      "Dᵤf = 0, since û is perpendicular to the gradient"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dᵤf = ∇f · û = ⟨2,2⟩ · ⟨1/√2, 1/√2⟩ = 2/√2 + 2/√2 = 4/√2 = 2√2. Since û points in the same direction as ∇f, this gives the maximum directional derivative."
+  },
+  "realWorldConnection": "Hikers use directional derivatives to assess trail steepness in chosen directions. Aircraft engineers analyze how lift changes along specific flight path directions. Economists study how utility changes when consumers move along budget lines in specific spending directions."
+}

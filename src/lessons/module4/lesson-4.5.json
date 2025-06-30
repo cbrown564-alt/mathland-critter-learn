@@ -1,0 +1,53 @@
+{
+  "id": "4.5",
+  "title": "Computing Partial Derivatives",
+  "duration": "35-40 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta sharpens his computational skills, applying all the familiar differentiation rules to partial derivatives. The key insight: when computing ∂f/∂x, treat all other variables as constants and proceed with standard calculus techniques. It's like having a Swiss Army knife of differentiation rules!",
+    "characterMessage": "Now for the computational precision I love! Computing partial derivatives is beautifully systematic - all our familiar differentiation rules work perfectly, we just need to remember which variable we're focusing on and treat the others as constants. Let's build mastery through practice!"
+  },
+  "learningObjectives": [
+    "Apply product rule, quotient rule, and chain rule to partial derivatives",
+    "Handle trigonometric, exponential, and logarithmic functions",
+    "Compute higher-order partial derivatives and mixed partials",
+    "Use implicit differentiation for multivariable functions",
+    "Develop computational fluency with complex expressions"
+  ],
+  "coreConcepts": [
+    "Product rule: ∂/∂x[uv] = u(∂v/∂x) + v(∂u/∂x)",
+    "Quotient rule: ∂/∂x[u/v] = [v(∂u/∂x) - u(∂v/∂x)]/v²",
+    "Chain rule for composite functions",
+    "Higher-order partials: ∂²f/∂x², ∂²f/∂x∂y",
+    "Implicit partial differentiation"
+  ],
+  "readContent": "Computing partial derivatives uses all familiar single-variable rules with one crucial modification: treat other variables as constants. Product rule becomes ∂/∂x[uv] = u(∂v/∂x) + v(∂u/∂x) where u and v may depend on multiple variables. Chain rule handles compositions like ∂/∂x[f(g(x,y))] = f'(g(x,y))·(∂g/∂x). Higher-order partials involve repeated differentiation: ∂²f/∂x² differentiates twice with respect to x, while ∂²f/∂x∂y differentiates first with respect to y, then x. Mixed partials are often equal when continuous.",
+  "readAnalogy": "Computing partial derivatives is like being a hedgehog mechanic with a perfectly organized toolbox. Each differentiation rule is a specialized tool that works exactly the same way as in single-variable calculus, but now I carefully focus on one variable while treating others as fixed constants.",
+  "readKeyPoints": [
+    "All standard differentiation rules apply to partial derivatives",
+    "Key principle: treat other variables as constants during differentiation",
+    "Mixed partials ∂²f/∂x∂y often equal ∂²f/∂y∂x when continuous"
+  ],
+  "readDigDeeper": "Clairaut's theorem guarantees equality of mixed partials when they're continuous. This symmetry property is fundamental to many applications, including the exactness conditions for differential equations and conservative vector fields.",
+  "readWhyMatters": "Computational fluency with partial derivatives is essential for optimization, where we need to find critical points by setting all partial derivatives to zero. Engineers use complex partial derivative calculations for stress analysis, economists for utility maximization, and physicists for field theory computations.",
+  "seeContent": "Watch step-by-step partial derivative computations using different rules, see how higher-order partials create more complex expressions, and observe the computational patterns that emerge from systematic application of differentiation rules.",
+  "hearContent": "Listen as I demonstrate the systematic precision of partial derivative computation - like a well-organized hedgehog, every rule has its place and purpose in building computational mastery!",
+  "hearAudioUrl": "/audio/4.5.mp3",
+  "doContent": "Use the Advanced Partial Derivative Calculator with rule-by-rule breakdowns, practice with the Mixed Partial Checker that verifies equality, and experiment with the Implicit Differentiation Solver for complex expressions.",
+  "memoryAids": {
+    "mantra": "Same rules apply, just freeze the others in place - partial derivatives with computational grace!",
+    "visual": "Picture Dr. Delta with a precise mathematician's toolkit, methodically applying each differentiation rule while keeping perfect track of which variables are active and which are held constant."
+  },
+  "conceptCheck": {
+    "question": "For f(x,y) = e^(xy) sin(x²y), what is ∂f/∂x using the product rule?",
+    "options": [
+      "∂f/∂x = ye^(xy) sin(x²y) + e^(xy) · 2xy cos(x²y)",
+      "∂f/∂x = xe^(xy) sin(x²y) + e^(xy) · 2x cos(x²y)",
+      "∂f/∂x = ye^(xy) sin(x²y) + e^(xy) · 2x cos(x²y)",
+      "∂f/∂x = e^(xy) cos(x²y) + ye^(xy) sin(x²y)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using product rule: ∂f/∂x = [∂/∂x(e^(xy))] · sin(x²y) + e^(xy) · [∂/∂x(sin(x²y))] = ye^(xy) sin(x²y) + e^(xy) · cos(x²y) · 2xy = ye^(xy) sin(x²y) + 2xye^(xy) cos(x²y)."
+  },
+  "realWorldConnection": "Engineers compute complex partial derivatives for structural stress analysis using product and chain rules. Financial quantitative analysts use advanced partial derivative calculations for risk modeling. Climate scientists apply these computational techniques to atmospheric and oceanic modeling equations."
+}

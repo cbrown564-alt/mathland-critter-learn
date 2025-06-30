@@ -1,0 +1,53 @@
+{
+  "id": "5.5",
+  "title": "Introduction to Gradient Descent",
+  "duration": "45-50 minutes",
+  "characterId": "greta",
+  "narrativeHook": {
+    "story": "Greta reveals her secret climbing technique: when fog obscures the mountain and she can't see the destination, she uses her compass to always step in the direction of steepest descent! Gradient descent is the mathematical equivalent - when functions are too complex to solve analytically, we follow the negative gradient downhill step by step.",
+    "characterMessage": "Time to learn my signature mountaineering technique! When the peak is hidden in fog and the terrain is too complex to map completely, I use gradient descent - simply follow the steepest downhill direction step by step. It's like having a mathematical compass that always points toward lower ground!"
+  },
+  "learningObjectives": [
+    "Understand gradient descent as an iterative optimization algorithm",
+    "Implement the basic gradient descent update rule",
+    "Choose appropriate step sizes (learning rates)",
+    "Recognize convergence criteria and stopping conditions",
+    "Apply gradient descent to simple optimization problems"
+  ],
+  "coreConcepts": [
+    "Gradient descent algorithm: xₖ₊₁ = xₖ - α∇f(xₖ)",
+    "Learning rate α controls step size",
+    "Iterative approach to find minima",
+    "Convergence criteria and stopping conditions",
+    "Step-by-step algorithm implementation"
+  ],
+  "readContent": "Gradient descent iteratively moves toward minima by taking steps in the negative gradient direction: xₖ₊₁ = xₖ - α∇f(xₖ). The learning rate α controls step size - too small means slow convergence, too large causes overshooting or divergence. Starting from initial guess x₀, we compute the gradient ∇f(xₖ), step downhill to get xₖ₊₁, and repeat until convergence. Convergence criteria include: gradient magnitude below threshold ||∇f(xₖ)|| < ε, function change below threshold |f(xₖ₊₁) - f(xₖ)| < δ, or maximum iterations reached. This algorithm works for any differentiable function but only guarantees local minima.",
+  "readAnalogy": "Gradient descent is like my fog-navigation technique! When I can't see the valley bottom, I use my compass to point downhill and take a step in that direction. Then I check my compass again and take another step. The step size is crucial - too big and I might leap over the valley, too small and I'll take forever to reach the bottom!",
+  "readKeyPoints": [
+    "Update rule: xₖ₊₁ = xₖ - α∇f(xₖ) steps downhill using negative gradient",
+    "Learning rate α balances convergence speed vs stability",
+    "Algorithm repeats until gradient is small or maximum iterations reached"
+  ],
+  "readDigDeeper": "The convergence rate of gradient descent depends on the condition number of the Hessian matrix. Well-conditioned problems (eigenvalues similar) converge quickly, while ill-conditioned problems (very different eigenvalues) converge slowly, creating elongated convergence paths.",
+  "readWhyMatters": "Gradient descent trains virtually every neural network by minimizing loss functions over millions of parameters. Google's search algorithms use gradient descent variants to optimize ranking functions. Autonomous vehicles use gradient descent for real-time path optimization and obstacle avoidance.",
+  "seeContent": "Watch gradient descent algorithms navigate optimization landscapes step by step, observe how different learning rates affect convergence behavior, and see the algorithm's path toward minima on various function surfaces.",
+  "hearContent": "Listen as I explain how gradient descent is like navigating through fog using only a compass - step by step, always heading downhill, until we reach the valley bottom!",
+  "hearAudioUrl": "/audio/5.5.mp3",
+  "doContent": "Use the Gradient Descent Simulator with adjustable learning rates, practice with the Step-by-Step Optimizer showing algorithm traces, and experiment with the Convergence Analyzer to understand stopping criteria.",
+  "memoryAids": {
+    "mantra": "Step downhill with gradient guide, learning rate sets the stride - repeat until the bottom you find!",
+    "visual": "Picture Greta in thick fog, using her compass to point downhill, taking careful steps in that direction, then rechecking her compass for the next step - systematically descending toward the hidden valley bottom."
+  },
+  "conceptCheck": {
+    "question": "Starting at (4,2) with learning rate α = 0.1, what's the next point for f(x,y) = x² + 2y² with ∇f(4,2) = ⟨8,8⟩?",
+    "options": [
+      "Next point: (3.2, 1.2) using xₖ₊₁ = xₖ - α∇f(xₖ)",
+      "Next point: (4.8, 2.8) by moving in the gradient direction",
+      "Next point: (3.2, 1.2) but this step size is too large for stability",
+      "Cannot determine without checking the second derivative"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Gradient descent update: xₖ₊₁ = xₖ - α∇f(xₖ) = (4,2) - 0.1(8,8) = (4,2) - (0.8,0.8) = (3.2,1.2). We move opposite to the gradient direction."
+  },
+  "realWorldConnection": "Google trains massive neural networks using gradient descent variants on billions of parameters. Tesla's autopilot systems use gradient descent for real-time path optimization. Netflix optimizes recommendation algorithms using gradient descent to minimize prediction errors across millions of users."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "8.8",
+  "title": "Real-World Applications: Medical Diagnosis",
+  "duration": "45-50 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes applies his detective skills to one of the most important real-world domains: medical diagnosis. Every symptom is a clue, every test result is evidence, and every diagnosis requires combining prior knowledge about disease prevalence with patient-specific information. It's Bayesian reasoning with life-and-death consequences.",
+    "characterMessage": "Medical diagnosis is pure Bayesian detective work! Doctors start with base rates (how common is this disease?), observe symptoms (evidence), run tests (more evidence), and systematically update their diagnostic beliefs. Every piece of information changes the probability landscape - it's statistics in service of saving lives!"
+  },
+  "learningObjectives": [
+    "Apply Bayesian reasoning to medical diagnostic scenarios",
+    "Understand base rates and their critical importance in diagnosis",
+    "Calculate diagnostic probabilities using sensitivity and specificity",
+    "Recognize common diagnostic fallacies and base rate neglect",
+    "Interpret multiple test results using sequential Bayesian updating"
+  ],
+  "coreConcepts": [
+    "Base rate: disease prevalence P(Disease) in population",
+    "Sensitivity: P(Test+|Disease) = true positive rate",
+    "Specificity: P(Test-|No Disease) = true negative rate",
+    "Positive predictive value: P(Disease|Test+)",
+    "Sequential updating with multiple tests"
+  ],
+  "readContent": "Medical diagnosis exemplifies Bayesian reasoning: P(Disease|Symptoms, Tests) ∝ P(Symptoms, Tests|Disease) × P(Disease). The prior P(Disease) represents base rate prevalence in the relevant population. Test characteristics include sensitivity (true positive rate) and specificity (true negative rate). The posterior probability after a positive test is P(Disease|Test+) = Sensitivity × P(Disease) / [Sensitivity × P(Disease) + (1-Specificity) × (1-P(Disease))]. Base rate neglect - ignoring disease prevalence - leads to systematic overdiagnosis. Multiple tests require sequential updating, with each result modifying the probability for the next test. Rare diseases remain unlikely even after positive tests unless sensitivity is extremely high and specificity near perfect.",
+  "readAnalogy": "Medical diagnosis is like detective work where I start with 'how common is this type of crime in this neighborhood?' (base rate), then look for evidence like fingerprints (symptoms) and DNA tests (diagnostic tests). Each piece of evidence updates my theory, but I always remember that rare crimes stay rare unless the evidence is overwhelming. A positive test for a rare disease is like finding a common fingerprint pattern - suspicious but not conclusive.",
+  "readKeyPoints": [
+    "Base rates (disease prevalence) critically affect diagnostic probabilities",
+    "Positive predictive value depends on sensitivity, specificity, AND base rate",
+    "Rare diseases remain unlikely even after positive tests unless tests are nearly perfect"
+  ],
+  "readDigDeeper": "The diagnostic odds ratio (DOR) = (Sensitivity/(1-Sensitivity)) / ((1-Specificity)/Specificity) provides a single measure of test performance that's independent of disease prevalence, facilitating test comparison across different populations.",
+  "readWhyMatters": "Electronic health records increasingly incorporate Bayesian diagnostic assistance to help doctors avoid base rate neglect and diagnostic errors. Precision medicine uses Bayesian approaches to personalize treatment based on individual risk factors. Public health screening programs use Bayesian analysis to determine optimal testing strategies.",
+  "seeContent": "Work through medical diagnostic scenarios with interactive probability calculations, visualize how base rates affect diagnostic conclusions, and explore common diagnostic fallacies through realistic examples.",
+  "hearContent": "Listen as I walk through medical diagnosis like a detective case - starting with base rates, gathering symptomatic evidence, running tests, and systematically updating diagnostic probabilities!",
+  "hearAudioUrl": "/audio/8.8.mp3",
+  "doContent": "Use the Medical Diagnosis Calculator with real diagnostic scenarios, practice with the Base Rate Impact Simulator, and experiment with the Sequential Testing Analyzer for multiple test results.",
+  "memoryAids": {
+    "mantra": "Base rate first, then test with care - rare stays rare despite positive scare! Sensitivity, specificity, prevalence combine - Bayesian diagnosis, truly divine!",
+    "visual": "Picture Bayes as a medical detective, consulting case files for base rates (how common is this condition?), examining symptoms as clues, ordering tests as additional evidence, and systematically updating his diagnostic theory with each new piece of information."
+  },
+  "conceptCheck": {
+    "question": "A disease affects 1 in 1000 people. A test has 95% sensitivity and 95% specificity. What's P(Disease|Positive Test)?",
+    "options": [
+      "About 1.9% - most positive tests are false positives due to low base rate",
+      "95% - the test is 95% accurate",
+      "90% - sensitivity times specificity",
+      "50% - positive test makes disease equally likely as not"
+    ],
+    "correctAnswer": 0,
+    "explanation": "P(Disease|+) = (0.95 × 0.001) / [0.95 × 0.001 + 0.05 × 0.999] = 0.00095 / 0.050895 ≈ 0.019 = 1.9%. Low base rate (0.1%) means most positive tests are false positives despite good test characteristics."
+  },
+  "realWorldConnection": "IBM Watson Health uses Bayesian diagnostic reasoning to assist oncologists in cancer diagnosis and treatment planning. COVID-19 testing protocols incorporated Bayesian thinking about base rates in different populations to interpret test results. Genetic counseling uses Bayesian analysis to calculate disease risk probabilities based on family history and genetic test results."
+}

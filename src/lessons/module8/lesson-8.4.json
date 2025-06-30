@@ -1,0 +1,53 @@
+{
+  "id": "8.4",
+  "title": "Normal-Normal Conjugacy",
+  "duration": "40-45 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes encounters another mathematical partnership made in heaven: Normal-Normal conjugacy. When investigating continuous mysteries like heights, weights, or temperatures, the Normal distribution pairs with itself in elegant conjugate harmony, creating posterior updating rules that blend prior knowledge with new evidence in perfectly balanced proportions.",
+    "characterMessage": "The Normal-Normal conjugate pair is mathematical poetry for continuous data! When my prior beliefs and the evidence are both normally distributed, they combine with perfect mathematical harmony. It's like two expert witnesses giving testimony that blends seamlessly into a unified conclusion!"
+  },
+  "learningObjectives": [
+    "Understand Normal-Normal conjugacy for continuous parameter estimation",
+    "Calculate Normal posterior means as precision-weighted averages",
+    "Interpret how sample size affects the balance between prior and data",
+    "Apply Normal-Normal updating to real estimation problems",
+    "Understand the role of precision (inverse variance) in Bayesian updating"
+  ],
+  "coreConcepts": [
+    "Normal-Normal conjugacy for mean estimation with known variance",
+    "Posterior mean as precision-weighted average of prior and sample means",
+    "Precision τ = 1/σ² as weight in Bayesian updating",
+    "Prior and posterior uncertainty quantification",
+    "Limit behavior as sample size increases"
+  ],
+  "readContent": "For Normal likelihoods with known variance σ², the Normal prior is conjugate. If the prior is N(μ₀, σ₀²) and we observe sample mean x̄ from n observations, the posterior mean is a precision-weighted average: μₙ = (τ₀μ₀ + nτx̄)/(τ₀ + nτ), where τ = 1/σ² is precision. The posterior variance is 1/(τ₀ + nτ), showing uncertainty decreases as we add data. When the prior is weak (large σ₀²), the posterior is dominated by data. When the prior is strong (small σ₀²), it significantly influences the posterior. As n → ∞, the posterior converges to the sample mean regardless of prior, showing data eventually overwhelms prior beliefs.",
+  "readAnalogy": "Normal-Normal conjugacy is like having two expert witnesses testify about the same fact. The final conclusion (posterior mean) weighs their testimonies based on their credibility (precision). A very confident expert (high precision) gets more weight than an uncertain one. As more independent evidence accumulates, even a confident prior expert gets gradually outweighed by the mounting data.",
+  "readKeyPoints": [
+    "Posterior mean = precision-weighted average of prior mean and sample mean",
+    "Precision τ = 1/σ² determines weight in averaging: more precise gets more influence",
+    "Posterior uncertainty decreases as data accumulates: 1/(τ₀ + nτ)"
+  ],
+  "readDigDeeper": "The precision parameterization reveals the natural mathematical structure of Normal-Normal conjugacy. Precisions add when combining independent Normal information, making the mathematical relationships transparent and computationally efficient.",
+  "readWhyMatters": "Manufacturing quality control uses Normal-Normal updating to monitor process means with historical knowledge. Environmental monitoring combines prior climate knowledge with new temperature measurements. Financial modeling blends historical return estimates with current market data using Normal-Normal conjugacy.",
+  "seeContent": "Visualize how Normal priors and posteriors update with different sample sizes, explore precision-weighted averaging with interactive examples, and observe the balance between prior knowledge and data evidence.",
+  "hearContent": "Listen as I explain how Normal-Normal conjugacy creates the perfect mathematical blend of prior wisdom and new evidence - like expert testimony weighted by credibility!",
+  "hearAudioUrl": "/audio/8.4.mp3",
+  "doContent": "Use the Normal-Normal Calculator with precision-weighted averaging, practice with the Prior Strength Explorer showing weak vs strong priors, and experiment with the Sample Size Impact Simulator.",
+  "memoryAids": {
+    "mantra": "Precision weighs the evidence fair, prior and data both declare! More precise gets more say - that's the Normal-Normal way!",
+    "visual": "Picture Bayes consulting two expert witnesses (prior and data), each holding scales representing their precision/confidence, with the final verdict being a weighted average of their testimonies based on their expertise."
+  },
+  "conceptCheck": {
+    "question": "Prior: N(100, 10²), Sample: n=25, x̄=105, σ=15. What happens to the posterior mean as n increases?",
+    "options": [
+      "Posterior mean starts between 100 and 105, approaches 105 as n increases",
+      "Posterior mean always equals the sample mean 105",
+      "Posterior mean always equals the prior mean 100",
+      "Posterior mean depends only on the ratio of variances"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The posterior mean is a precision-weighted average. Initially it's between the prior mean (100) and sample mean (105). As n increases, the data precision (n/σ²) grows, giving more weight to the sample mean, so the posterior approaches 105."
+  },
+  "realWorldConnection": "Manufacturing uses Normal-Normal updating to monitor production line means while incorporating historical process knowledge. Weather forecasting combines prior climate models with current observations using Normal conjugacy. Laboratory testing blends prior instrument calibration with current measurements for improved accuracy."
+}

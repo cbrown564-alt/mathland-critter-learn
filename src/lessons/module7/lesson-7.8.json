@@ -1,0 +1,53 @@
+{
+  "id": "7.8",
+  "title": "Statistical Power",
+  "duration": "40-45 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund explores the concept of statistical power - the elegant measure of a test's ability to detect truth when truth exists. Like the swan's keen eyesight that spots distant movements on the water, statistical power represents our test's sensitivity to real effects hiding beneath the surface of random variation.",
+    "characterMessage": "Statistical power embodies our test's elegant sensitivity to truth! It measures how well we can detect real effects when they truly exist. Understanding power helps us design studies that won't miss important discoveries and interpret negative results with appropriate wisdom."
+  },
+  "learningObjectives": [
+    "Define statistical power as the probability of detecting true effects",
+    "Calculate power for various hypothesis testing scenarios",
+    "Understand factors that influence statistical power",
+    "Apply power analysis for sample size determination",
+    "Interpret studies with adequate vs inadequate power"
+  ],
+  "coreConcepts": [
+    "Statistical power: P(reject H₀ | H₀ false) = 1 - β",
+    "Power depends on: effect size, sample size, α level, population variance",
+    "Power analysis for sample size planning",
+    "Interpreting negative results in low-power studies",
+    "Cohen's conventions for effect sizes"
+  ],
+  "readContent": "Statistical power = 1 - β measures the probability of correctly rejecting a false null hypothesis, i.e., detecting a true effect when it exists. Power increases with: larger effect sizes (easier to detect big differences), larger sample sizes (more precise estimates), higher α levels (less stringent criteria), and smaller population variance (less noise). Cohen's conventions classify effect sizes as small (d = 0.2), medium (d = 0.5), or large (d = 0.8). Power analysis determines required sample sizes to achieve desired power (typically 80%) for expected effect sizes. Studies with low power may fail to detect real effects, leading to false negative conclusions. Power analysis is crucial for study planning and result interpretation.",
+  "readAnalogy": "Statistical power is like the keenness of my eyesight when hunting for subtle movements on the water's surface. With sharp vision (high power), I can detect even small ripples (small effects). Poor vision (low power) means I'll miss everything except the most obvious splashes. The clarity of my vision depends on lighting conditions (sample size), how big the movement is (effect size), and how carefully I'm looking (α level).",
+  "readKeyPoints": [
+    "Power = 1 - β = probability of detecting true effects when they exist",
+    "Increases with larger effect sizes, sample sizes, α levels; decreases with more variance",
+    "Power analysis determines sample sizes needed for adequate sensitivity"
+  ],
+  "readDigDeeper": "Optimal design theory finds the allocation of resources (e.g., sample sizes across groups) that maximizes power for fixed total cost, or minimizes cost for fixed power. This connects statistical power to experimental economics and efficient research design.",
+  "readWhyMatters": "Clinical trials require power analysis to ensure adequate sample sizes for detecting treatment effects. Tech companies use power analysis to plan A/B tests that won't miss important user behavior changes. Academic research uses power analysis to design studies that can reliably detect theoretically important effects.",
+  "seeContent": "Visualize power curves showing how probability of detection changes with effect size and sample size, explore power analysis calculations for study planning, and observe the relationship between power and other testing parameters.",
+  "hearContent": "Listen as I explain how statistical power measures our elegant ability to distinguish signal from noise - the mathematical expression of our sensitivity to truth when truth is there to be found!",
+  "hearAudioUrl": "/audio/7.8.mp3",
+  "doContent": "Use the Power Calculator for different effect sizes and sample sizes, practice with the Sample Size Planner using power analysis, and experiment with the Power Curve Explorer showing sensitivity relationships.",
+  "memoryAids": {
+    "mantra": "Power detects what's truly there, with size and samples we prepare! High power means we'll likely see the effects that really be!",
+    "visual": "Picture Sigmund with increasingly powerful telescopes (representing higher statistical power) that let him detect smaller and more distant phenomena on his statistical lake, showing how power enhances our ability to perceive truth."
+  },
+  "conceptCheck": {
+    "question": "A study has 60% power to detect a medium effect size. What does this mean and how could power be improved?",
+    "options": [
+      "60% chance of detecting the effect if it exists; improve by increasing sample size",
+      "The effect size is 60% of what we expected to find",
+      "60% of the data supports the alternative hypothesis",
+      "There's a 40% chance of making a Type I error"
+    ],
+    "correctAnswer": 0,
+    "explanation": "60% power means if a medium effect truly exists, this study has only a 60% chance of detecting it (40% chance of Type II error). Power can be improved by increasing sample size, using a larger α level, or if the true effect is larger than expected."
+  },
+  "realWorldConnection": "Pharmaceutical companies conduct power analysis to ensure clinical trials can detect meaningful treatment effects with adequate probability. Educational researchers use power analysis to design studies that won't miss important learning improvements. Environmental studies use power analysis to ensure adequate sensitivity for detecting pollution effects."
+}

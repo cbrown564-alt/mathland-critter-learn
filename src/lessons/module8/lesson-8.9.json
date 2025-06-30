@@ -1,0 +1,53 @@
+{
+  "id": "8.9",
+  "title": "Real-World Applications: Spam Filtering",
+  "duration": "40-45 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes turns his detective skills to the digital realm: email spam filtering. Every word in an email is a clue, and Bayesian classifiers learn from experience which word patterns distinguish legitimate emails from spam. It's machine learning powered by Bayesian reasoning, protecting millions of inboxes daily.",
+    "characterMessage": "Email spam filtering showcases Bayesian machine learning in action! Every word is evidence, and my job is learning which combinations point to spam versus legitimate email. As new emails arrive, I continuously update my beliefs about what spam looks like. It's adaptive detective work for the digital age!"
+  },
+  "learningObjectives": [
+    "Understand naive Bayes classification for text data",
+    "Apply Bayesian reasoning to feature-based classification",
+    "Recognize the 'naive' independence assumption and its practical effectiveness",
+    "Calculate spam probabilities using word frequency evidence",
+    "Understand how Bayesian classifiers adapt and learn from new data"
+  ],
+  "coreConcepts": [
+    "Naive Bayes classifier: P(Spam|Words) ∝ P(Words|Spam) × P(Spam)",
+    "Feature independence assumption: P(Words|Spam) = ∏P(Word_i|Spam)",
+    "Word frequency likelihoods from training data",
+    "Laplace smoothing for unseen words",
+    "Adaptive learning through continuous updating"
+  ],
+  "readContent": "Naive Bayes spam filtering classifies emails using P(Spam|Words) ∝ P(Words|Spam) × P(Spam). The 'naive' assumption treats words as independent given the class: P(Words|Spam) = ∏P(Word_i|Spam), greatly simplifying computation. Word probabilities are estimated from training data: P(Word|Spam) = (count of word in spam + α) / (total words in spam + α × vocabulary size), where α provides Laplace smoothing for unseen words. Despite the unrealistic independence assumption, naive Bayes performs remarkably well in practice. The classifier adapts by updating word probabilities as new labeled emails arrive, making it naturally adaptive to evolving spam tactics. Classification involves computing P(Spam|Email) and P(Ham|Email), choosing the class with higher posterior probability.",
+  "readAnalogy": "Spam filtering is like learning to recognize criminal signatures. Each word is like a behavioral clue - some words appear much more often in spam (like 'FREE!' or 'URGENT!') while others are more common in legitimate email (like names and work terms). Although I naively assume these clues are independent (which isn't really true), this simplification works amazingly well for catching digital criminals!",
+  "readKeyPoints": [
+    "Naive Bayes assumes word independence: P(Words|Class) = ∏P(Word_i|Class)",
+    "Word probabilities learned from training data with Laplace smoothing",
+    "Continuously adaptive: updates beliefs as new labeled emails arrive"
+  ],
+  "readDigDeeper": "Despite violating the independence assumption (words in emails are clearly dependent), naive Bayes remains effective because it only needs to rank classes correctly, not estimate probabilities accurately. The decision boundary is often robust to assumption violations.",
+  "readWhyMatters": "Gmail and other email providers use Bayesian-inspired spam filters to protect billions of users daily. Text classification applications extend to sentiment analysis, news categorization, and content moderation. The principles apply broadly to any classification problem with high-dimensional categorical features.",
+  "seeContent": "Explore spam classification with interactive word probability calculations, visualize how different words contribute evidence for spam vs ham classification, and observe adaptive learning as the classifier sees new examples.",
+  "hearContent": "Listen as I explain how Bayesian spam filtering turns every email into a detective case, using word patterns as evidence to distinguish digital criminals from legitimate correspondents!",
+  "hearAudioUrl": "/audio/8.9.mp3",
+  "doContent": "Use the Spam Classifier Simulator with real email examples, practice with the Word Evidence Analyzer showing probability contributions, and experiment with the Adaptive Learning Demonstrator.",
+  "memoryAids": {
+    "mantra": "Words are clues in digital crime, Bayes filters spam every time! Independence naive but works so well - email protection's Bayesian spell!",
+    "visual": "Picture Bayes examining emails like crime scenes, with each word highlighted as evidence pointing toward spam or legitimate email, continuously updating his criminal profiling database with each new case."
+  },
+  "conceptCheck": {
+    "question": "An email contains 'FREE' and 'money'. If P(FREE|Spam)=0.8, P(FREE|Ham)=0.1, P(money|Spam)=0.6, P(money|Ham)=0.3, and P(Spam)=0.4, what's P(Spam|FREE,money)?",
+    "options": [
+      "Higher than P(Ham|FREE,money) since spam likelihoods are higher for both words",
+      "Exactly 0.4 since that's the prior probability of spam",
+      "Cannot calculate without knowing the exact normalization constant",
+      "Equal to P(Ham|FREE,money) since we need more evidence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "P(Spam|Words) ∝ P(FREE|Spam) × P(money|Spam) × P(Spam) = 0.8 × 0.6 × 0.4 = 0.192. P(Ham|Words) ∝ 0.1 × 0.3 × 0.6 = 0.018. Since 0.192 > 0.018, the email is classified as spam."
+  },
+  "realWorldConnection": "Google's Gmail uses sophisticated Bayesian-inspired filters that have evolved beyond simple naive Bayes to protect over 1.5 billion users from spam. Social media platforms use similar techniques for content moderation and fake news detection. Customer service systems use Bayesian classification to route support tickets to appropriate departments."
+}

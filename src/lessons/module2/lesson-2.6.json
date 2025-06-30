@@ -1,0 +1,53 @@
+{
+  "id": "2.6",
+  "title": "Elementary Row Operations & Matrix Rank",
+  "duration": "40-45 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max has a messy filing cabinet that needs systematic reorganization. He can swap file drawers, multiply all files in a drawer by a constant factor, or add copies of one drawer's files to another drawer. These 'elementary operations' help Max transform any disorganized matrix into its cleanest, most informative form.",
+    "characterMessage": "Every messy filing system can be perfectly organized using just three simple operations! I can swap rows, scale rows, or add one row to another. With these tools, I can transform any matrix into its clearest, most informative form - revealing its true organizational structure!"
+  },
+  "learningObjectives": [
+    "Apply the three elementary row operations systematically",
+    "Use row operations to transform matrices to row echelon form",
+    "Understand how row operations preserve matrix information while changing appearance",
+    "Calculate matrix rank as the number of linearly independent rows",
+    "Recognize the relationship between rank and linear independence"
+  ],
+  "coreConcepts": [
+    "Elementary row operations: swap, scale, add",
+    "Row echelon form and reduced row echelon form",
+    "Row operations preserve linear relationships",
+    "Matrix rank as number of independent rows",
+    "Rank and linear independence connection"
+  ],
+  "readContent": "Elementary row operations transform matrices while preserving their essential linear relationships: (1) Swap two rows, (2) Multiply a row by a non-zero constant, (3) Add a multiple of one row to another row. These operations convert matrices to row echelon form, where each row starts with a leading 1 (pivot) to the right of the previous row's pivot. Matrix rank equals the number of non-zero rows in row echelon form, representing the number of linearly independent rows. Rank determines the dimension of the row space and indicates how much independent information the matrix contains.",
+  "readAnalogy": "Elementary row operations are like the basic tools in a carpenter's toolkit - they allow you to shape and modify the matrix structure without changing the underlying information.",
+  "readKeyPoints": [
+    "Swap rows: switch two rows to change their order",
+    "Scale rows: multiply a row by a non-zero constant to change its height",
+    "Add rows: add a multiple of one row to another to combine information"
+  ],
+  "readDigDeeper": "Row operations are reversible and can be used to simplify matrix calculations. They're also used to find the rank of a matrix, which is the number of linearly independent rows or columns.",
+  "readWhyMatters": "Row operations are a fundamental part of linear algebra: they allow us to manipulate matrices to find solutions to systems of linear equations, calculate determinants, and understand matrix properties.",
+  "seeContent": "Watch step-by-step row operations transforming messy matrices into clean row echelon form, see how rank reveals the true independent information content, and observe how different matrices can have the same rank.",
+  "hearContent": "Listen as I explain how organizing matrix information is like reorganizing a filing cabinet systematically - the same information is there, but now it's perfectly arranged and easy to understand!",
+  "hearAudioUrl": "/audio/2.6.mp3",
+  "doContent": "Use the Row Operations Simulator to practice systematic matrix transformation, experiment with the Rank Calculator to find independent information content, and try the Echelon Form Converter for automatic organization.",
+  "memoryAids": {
+    "mantra": "Swap, scale, add - three simple tools to organize any matrix into its clearest, most informative form!",
+    "visual": "Picture Max reorganizing his filing cabinet: swapping drawers, adjusting file quantities, and combining information strategically until everything is perfectly ordered and the true information content is revealed."
+  },
+  "conceptCheck": {
+    "question": "After row operations, a 4×5 matrix is in row echelon form with 3 non-zero rows. What is the rank and what does it mean?",
+    "options": [
+      "Rank = 3, meaning the matrix has 3 linearly independent rows containing all the unique information",
+      "Rank = 4, because that's the number of original rows",
+      "Rank = 5, because that's the number of columns",
+      "Rank = 1, because row operations reduce complexity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rank equals the number of non-zero rows in row echelon form. Rank = 3 means exactly 3 rows contain linearly independent information; the 4th row became zero, indicating it was dependent on the others."
+  },
+  "realWorldConnection": "Data scientists use row operations to clean datasets and find independent variables. Engineers use them to solve structural analysis problems. Economists use matrix rank to determine if economic models have enough independent equations to find unique solutions."
+}

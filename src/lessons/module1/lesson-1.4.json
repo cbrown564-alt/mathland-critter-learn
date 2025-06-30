@@ -1,0 +1,53 @@
+{
+  "id": "1.4",
+  "title": "Vector Norms - Measuring Distance",
+  "duration": "25-30 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "After a long day of hiking, Vera wants to know exactly how far she's traveled. Not just east-west or north-south, but the total distance. Vector norms help us measure the 'size' or 'length' of any vector, and there are different ways to measure distance depending on what you're trying to accomplish!",
+    "characterMessage": "How far did I actually travel? That's what norms tell us! But here's the cool part - there are different ways to measure distance. Straight line distance, city block distance, or even the longest single direction. Each one is useful for different adventures!"
+  },
+  "learningObjectives": [
+    "Calculate the L₂ (Euclidean) norm using the distance formula",
+    "Understand different types of norms: L₁, L₂, and L∞",
+    "Create unit vectors by normalizing any vector",
+    "Compare different distance metrics for practical problems",
+    "Apply norms to measure data similarity and clustering"
+  ],
+  "coreConcepts": [
+    "L₂ norm (Euclidean): ||**v**|| = √(x² + y² + z²)",
+    "L₁ norm (Manhattan): ||**v**|| = |x| + |y| + |z|",
+    "L∞ norm (Maximum): ||**v**|| = max(|x|, |y|, |z|)",
+    "Unit vectors: ||**u**|| = 1",
+    "Normalizing vectors: **u** = **v**/||**v**||"
+  ],
+  "readContent": "How far did I actually travel? Different norms measure distance in different ways! The L₂ (Euclidean) norm ||v|| = √(x² + y² + z²) gives straight-line distance. The L₁ (Manhattan) norm ||v|| = |x| + |y| + |z| measures city-block distance. The L∞ (maximum) norm ||v|| = max(|x|, |y|, |z|) gives the longest single coordinate. Each one is useful for different types of adventures!",
+  "readAnalogy": "Think of three ways to measure how far you've traveled: as the crow flies (L₂), walking on city streets with right-angle turns (L₁), or your longest single direction movement (L∞). Each tells a different story about your journey!",
+  "readKeyPoints": [
+    "L₂ (Euclidean) norm: ||v|| = √(x² + y² + z²) - straight-line distance",
+    "L₁ (Manhattan) norm: ||v|| = |x| + |y| + |z| - city-block distance",
+    "L∞ (Maximum) norm: ||v|| = max(|x|, |y|, |z|) - largest coordinate"
+  ],
+  "readDigDeeper": "Unit vectors have norm 1 and represent pure direction. To normalize any vector: u = v/||v||. Different norms create different shaped 'unit balls' - circles for L₂, diamonds for L₁, squares for L∞.",
+  "readWhyMatters": "Machine learning algorithms use different norms to measure 'distance' between data points. Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
+  "seeContent": "Compare different norm visualizations on the same vector, showing how L₁, L₂, and L∞ create different distance measurements. See how normalizing transforms vectors into unit circles.",
+  "hearContent": "Listen as I explain how choosing the right distance measurement is like choosing the right tool for exploration - sometimes you need straight-line distance, sometimes city-block distance!",
+  "hearAudioUrl": "/audio/1.4.mp3",
+  "doContent": "Use the Norm Visualizer to compare different distance metrics, experiment with the Unit Vector Creator, and explore the Distance Comparator to see when each norm type is most useful.",
+  "memoryAids": {
+    "mantra": "Straight line vs. city blocks vs. longest coordinate - different adventures need different distance measurements!",
+    "visual": "Picture three ways to measure how far you've traveled: as the crow flies (L₂), walking on city streets (L₁), or your longest single direction (L∞)."
+  },
+  "conceptCheck": {
+    "question": "Vector [3, 4] represents Vera's displacement. Find its L₂ norm and create a unit vector in the same direction.",
+    "options": [
+      "Norm = 5, unit vector = [0.6, 0.8]",
+      "Norm = 7, unit vector = [3/7, 4/7]",
+      "Norm = 12, unit vector = [1, 1]",
+      "Norm = 3.5, unit vector = [0.5, 0.5]"
+    ],
+    "correctAnswer": 0,
+    "explanation": "L₂ norm: √(3² + 4²) = √(9 + 16) = 5. Unit vector: [3,4]/5 = [3/5, 4/5] = [0.6, 0.8]. This preserves direction while making the magnitude exactly 1."
+  },
+  "realWorldConnection": "Machine learning algorithms use different norms to measure 'distance' between data points - Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data."
+}

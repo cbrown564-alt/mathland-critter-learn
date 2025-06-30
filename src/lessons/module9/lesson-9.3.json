@@ -1,0 +1,53 @@
+{
+  "id": "9.3",
+  "title": "Dimensionality Reduction & Feature Engineering",
+  "duration": "90-120 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage transforms into her most analytical mode, applying Eileen Eigen's eigenvalue wisdom and Vera Vector's spatial intuition to reduce complex, high-dimensional data into meaningful, manageable representations. This is where linear algebra theory becomes practical magic, revealing hidden structure in complex datasets.",
+    "characterMessage": "Now we apply Eileen's eigenvalue mastery and Vera's vector wisdom to one of data science's greatest challenges - making sense of high-dimensional data! Principal Component Analysis, feature selection, and dimensionality reduction are where linear algebra theory becomes practical power for handling real-world complexity."
+  },
+  "learningObjectives": [
+    "Apply Principal Component Analysis using eigenvalue decomposition",
+    "Implement feature selection techniques using statistical and linear algebra methods",
+    "Create meaningful derived features using domain knowledge and mathematical insight",
+    "Reduce dimensionality while preserving essential information",
+    "Validate dimensionality reduction effectiveness using multiple criteria"
+  ],
+  "coreConcepts": [
+    "Principal Component Analysis (PCA) using eigenvalue decomposition",
+    "Feature selection methods: statistical tests, correlation analysis, importance scores",
+    "Feature engineering: polynomial features, interactions, domain-specific transformations",
+    "Dimensionality reduction evaluation: explained variance, reconstruction error",
+    "Handling multicollinearity using linear algebra techniques"
+  ],
+  "readContent": "Dimensionality reduction transforms high-dimensional data into lower-dimensional representations that preserve essential structure while enabling efficient analysis. Principal Component Analysis (PCA) uses eigenvalue decomposition of the covariance matrix to find principal directions of variance - exactly what you learned with Eileen Eigen! The first few principal components often capture most data variation, enabling dramatic dimensionality reduction. Feature selection uses statistical tests (hypothesis testing with Sigmund's methods) and correlation analysis to identify the most informative variables. Feature engineering creates new variables through mathematical transformations: polynomial features using algebraic operations, interaction terms through multiplication, and domain-specific features using calculus-based derivatives or integrals. Multicollinearity detection uses linear algebra concepts like matrix rank and condition numbers to identify redundant features.",
+  "readAnalogy": "Dimensionality reduction is like creating a perfect map of a complex landscape. Eileen's eigenvalue techniques help identify the most important directions (principal components), while feature selection chooses the most informative landmarks. Feature engineering adds derived information like elevation gradients (calculus) or distance combinations (geometry). The goal is creating a simplified representation that preserves navigation utility while reducing complexity.",
+  "readKeyPoints": [
+    "PCA uses eigenvalue decomposition to find principal directions of data variation",
+    "Feature selection combines statistical testing with correlation analysis",
+    "Feature engineering creates new variables using mathematical transformations"
+  ],
+  "readDigDeeper": "Modern dimensionality reduction extends beyond PCA to include nonlinear methods like t-SNE, UMAP, and autoencoders. However, understanding PCA's mathematical foundation provides intuition for these advanced techniques and enables appropriate method selection.",
+  "readWhyMatters": "Companies like Google and Facebook handle datasets with millions of features requiring sophisticated dimensionality reduction. Genomics researchers apply PCA to DNA data with hundreds of thousands of variables. Financial firms use dimensionality reduction to identify key market factors from thousands of economic indicators.",
+  "seeContent": "Apply PCA to real high-dimensional datasets, implement feature selection algorithms using statistical criteria, and create engineered features using mathematical transformations with immediate feedback on effectiveness.",
+  "hearContent": "Listen as I show you how Eileen's eigenvalue wisdom and Vera's vector intuition combine to tame high-dimensional data - transforming overwhelming complexity into manageable, insightful representations!",
+  "hearAudioUrl": "/audio/9.3.mp3",
+  "doContent": "Implement PCA using eigenvalue decomposition on real datasets, apply multiple feature selection techniques with statistical validation, and engineer new features using mathematical transformations with effectiveness evaluation.",
+  "memoryAids": {
+    "mantra": "Eigenvectors show the way, reduce dimensions every day! Select features with statistical might, engineer new ones with mathematical sight!",
+    "visual": "Picture Sage consulting with Eileen (eigenvalue analysis for PCA) and Vera (vector operations for feature engineering) to transform a complex, multi-dimensional data cloud into a clear, simplified representation that preserves essential structure."
+  },
+  "conceptCheck": {
+    "question": "After PCA, the first 3 components explain 85% of variance in your 50-dimensional dataset. What does this suggest about your data structure?",
+    "options": [
+      "Strong underlying structure - most variation lies in just 3 key directions, enabling effective dimensionality reduction",
+      "The data is completely random since 85% is not sufficient retention",
+      "PCA failed since you still need 47 more components",
+      "The original 50 dimensions were all equally important"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When 3 components out of 50 explain 85% of variance, this indicates strong underlying structure. Most meaningful data variation is captured by just 3 principal directions, suggesting the high-dimensional data lies approximately on a 3-dimensional manifold."
+  },
+  "realWorldConnection": "Netflix uses PCA to reduce the dimensionality of user-movie preference matrices for recommendation systems. Spotify applies dimensionality reduction to audio features for music recommendation. Medical researchers use PCA on genetic data to identify population structure and disease associations from genome-wide studies."
+}

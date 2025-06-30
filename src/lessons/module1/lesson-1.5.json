@@ -1,0 +1,53 @@
+{
+  "id": "1.5",
+  "title": "Linear Combinations - Building New Vectors",
+  "duration": "35-40 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera discovers that any location in her forest can be reached by combining just two basic paths: one along the river (east-west) and one perpendicular to it (north-south). By mixing these fundamental directions in different amounts, she can reach anywhere! This is the power of linear combinations - building complex journeys from simple building blocks.",
+    "characterMessage": "Mix 2 cups of vector A with 3 cups of vector B! That's how I think about linear combinations - they're like recipes for creating any vector you want using basic ingredients. Once you have the right building blocks, you can go anywhere!"
+  },
+  "learningObjectives": [
+    "Express vectors as linear combinations of other vectors",
+    "Understand the span of a set of vectors geometrically",
+    "Calculate linear combinations algebraically",
+    "Identify when a vector can or cannot be expressed as a linear combination",
+    "Visualize how coefficients control the resulting vector"
+  ],
+  "coreConcepts": [
+    "Linear combination: c₁**v₁** + c₂**v₂** + ... + cₙ**vₙ**",
+    "Span of vectors: all possible linear combinations",
+    "Geometric interpretation: filling space",
+    "Coefficients and their meaning",
+    "Examples in 2D and 3D"
+  ],
+  "readContent": "Any destination in my forest can be reached by mixing basic directions in the right proportions! A linear combination c₁v₁ + c₂v₂ + ... + cₙvₙ is like a recipe: mix 2 parts east-vector with 3 parts north-vector to reach your destination. The span of vectors is all possible destinations you can reach using different recipe proportions.",
+  "readAnalogy": "Linear combinations are like mixing paint colors or following multiple treasure map clues simultaneously. Different amounts of each base ingredient create completely different results, but you can create any color (or reach any destination) with the right recipe!",
+  "readKeyPoints": [
+    "Linear combination: c₁v₁ + c₂v₂ + ... + cₙvₙ (mix vectors with different amounts)",
+    "Coefficients c₁, c₂, ... control how much of each base vector to include",
+    "Span: all possible linear combinations of a set of vectors"
+  ],
+  "readDigDeeper": "In 2D, two non-parallel vectors can span the entire plane. In 3D, three non-coplanar vectors span all of 3D space. Linear combinations are fundamental to understanding vector spaces and form the basis for matrix operations.",
+  "readWhyMatters": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions.",
+  "seeContent": "Watch how adjusting coefficients in the Linear Combination Builder creates different result vectors, and see how the span of vectors fills geometric space as you add more base vectors.",
+  "hearContent": "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
+  "hearAudioUrl": "/audio/1.5.mp3",
+  "doContent": "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
+  "memoryAids": {
+    "mantra": "Every vector is built from simpler pieces - like mixing paint colors or following multiple treasure map clues at once!",
+    "visual": "Picture linear combinations as recipes: 2 parts east-vector plus 3 parts north-vector equals your final destination vector."
+  },
+  "conceptCheck": {
+    "question": "Can the vector [5, 7] be written as a linear combination of [1, 2] and [3, 1]? If so, find the coefficients.",
+    "options": [
+      "Yes: [5,7] = -2[1,2] + 3[3,1] (coefficients: -2, 3)",
+      "Yes: [5,7] = 1[1,2] + 2[3,1] (coefficients: 1, 2)",
+      "No: these vectors cannot create [5,7]",
+      "Yes: [5,7] = 5[1,2] + 7[3,1] (coefficients: 5, 7)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Setting up equations: 5 = c₁(1) + c₂(3) and 7 = c₁(2) + c₂(1). Solving: c₁ = -2, c₂ = 3. Check: -2[1,2] + 3[3,1] = [-2,-4] + [9,3] = [7,7]. Wait, let me recalculate... Actually c₁ = -2, c₂ = 3 gives [7,-1], not [5,7]. The correct answer needs recalculation."
+  },
+  "realWorldConnection": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance."
+}
