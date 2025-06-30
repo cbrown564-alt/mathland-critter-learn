@@ -12,7 +12,12 @@ export const useAudioTranscript = (transcript?: string[], audioDuration: number 
   // Helper: calculate word-based time windows for transcript
   const getTranscriptTimeWindows = React.useCallback((transcript: string[], audioDuration: number): TranscriptWindow[] => {
     if (!transcript || transcript.length === 0 || audioDuration === 0) return [];
-    const wordCounts = transcript.map(p => p.split(/\s+/).length);
+    // Add 2 virtual words for each '...' in a paragraph
+    const wordCounts = transcript.map(p => {
+      const base = p.split(/\s+/).length;
+      const extra = (p.includes('...') ? 3 : 0);
+      return base + extra;
+    });
     const totalWords = wordCounts.reduce((a, b) => a + b, 0);
     let acc = 0;
     return wordCounts.map((count, i) => {
