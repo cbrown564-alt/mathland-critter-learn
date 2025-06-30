@@ -78,7 +78,7 @@ export const module1Lessons: { [key: string]: LessonData } = {
     duration: "35-40 minutes",
     characterId: "vera",
     narrativeHook: {
-      story: "Vera's friend Max the Owl wants to join her hike. They start from different trees but want to meet at the waterfall. How do we combine their separate journeys? This is where vector addition becomes our superpower - the ability to combine multiple movements into a single, efficient path!",
+      story: "Vera's friend Max the Squirrel wants to join her hike. They start from different trees but want to meet at the waterfall. How do we combine their separate journeys? This is where vector addition becomes our superpower - the ability to combine multiple movements into a single, efficient path!",
       characterMessage: "Follow clue 1, then clue 2 - where do you end up? That's vector addition! It's like having a magical ability to combine journeys, and the amazing thing is, order doesn't matter - math proves it!"
     },
     learningObjectives: [

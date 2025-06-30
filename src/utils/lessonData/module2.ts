@@ -10,7 +10,7 @@ export const module2Lessons: { [key: string]: LessonData } = {
     duration: "30-35 minutes",
     characterId: "max",
     narrativeHook: {
-      story: "Matrix Max the Owl has a problem: he needs to organize information about hundreds of forest locations, each with multiple attributes like elevation, tree density, water sources, and wildlife counts. A simple list won't work - he needs a systematic grid where he can find any piece of information instantly. This is where matrices shine: organized, systematic information management.",
+      story: "Matrix Max the Squirrel has a problem: he needs to organize information about hundreds of forest locations, each with multiple attributes like elevation, tree density, water sources, and wildlife counts. A simple list won't work - he needs a systematic grid where he can find any piece of information instantly. This is where matrices shine: organized, systematic information management.",
       characterMessage: "I organize worlds—row by row, column by column! Think of a matrix as the ultimate filing cabinet where every piece of information has a precise address. Row 3, Column 2? I can find that data instantly! Let me show you how systematic organization transforms chaos into clarity."
     },
     learningObjectives: [

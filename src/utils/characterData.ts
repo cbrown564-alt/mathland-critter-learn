@@ -59,7 +59,7 @@ export const characters = [
   {
     id: "max",
     name: "Matrix Max",
-    animal: "Owl",
+    animal: "Squirrel",
     concept: "Matrices & Structure",
     tagline: "Master structure and transformations",
     image: "/lovable-uploads/max.png",

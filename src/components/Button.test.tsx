@@ -1,3 +1,17 @@
+import { render, screen } from '@testing-library/react';
+import { CharacterCard } from './CharacterCard';
+
+const mockCharacter = {
+  id: '1',
+  name: 'Vera Vector',
+  animal: 'GIRAFFE',
+  concept: 'Vectors & Linear Algebra',
+  tagline: 'I help you see the direction!',
+  description: 'Meet Vera, our gentle giraffe who loves exploring the world of vectors and linear algebra.',
+  gradientClass: 'bg-gradient-to-br from-purple-400 to-pink-400',
+  image: '/lovable-uploads/vera.png'
+};
+
 describe('CharacterCard Component', () => {
   it('renders character information correctly', () => {
     render(<CharacterCard character={mockCharacter} />);

@@ -1,6 +1,6 @@
 import { Lock, CheckCircle, PlayCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface Module {
   id: number;
@@ -22,6 +22,17 @@ interface ModuleCardProps {
 }
 
 export const ModuleCard = ({ module, index }: ModuleCardProps) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/module-detail/${module.id}`);
+  };
+
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    navigate(`/module/${module.id}`);
+  };
+
   const getStatusIcon = () => {
     switch (module.status) {
       case "completed":
@@ -51,7 +62,10 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
   const isInteractive = module.status === "available" || module.status === "current";
 
   return (
-    <div className={"relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"}>
+    <div 
+      className={"relative bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer"}
+      onClick={handleCardClick}
+    >
       {/* Module Header */}
       <div className={`h-20 bg-gradient-to-r ${module.color} flex items-center justify-between px-6 text-white`}>
         <div>
@@ -136,18 +150,18 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
 
         {/* Action Button */}
         {isInteractive ? (
-          <Link to={`/module/${module.id}`}>
-            <Button
-              className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
-            >
-              {getStatusText()}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <Button
+            className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
+            onClick={handleButtonClick}
+          >
+            {getStatusText()}
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         ) : (
           <Button
             className={`w-full bg-gray-300 cursor-not-allowed text-white`}
             disabled
+            onClick={handleButtonClick}
           >
             {getStatusText()}
           </Button>
