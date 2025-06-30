@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "P(Disease|+) = (0.95 × 0.001) / [0.95 × 0.001 + 0.05 × 0.999] = 0.00095 / 0.050895 ≈ 0.019 = 1.9%. Low base rate (0.1%) means most positive tests are false positives despite good test characteristics."
   },
-  "realWorldConnection": "IBM Watson Health uses Bayesian diagnostic reasoning to assist oncologists in cancer diagnosis and treatment planning. COVID-19 testing protocols incorporated Bayesian thinking about base rates in different populations to interpret test results. Genetic counseling uses Bayesian analysis to calculate disease risk probabilities based on family history and genetic test results."
+  "realWorldConnection": "IBM Watson Health uses Bayesian diagnostic reasoning to assist oncologists in cancer diagnosis and treatment planning. COVID-19 testing protocols incorporated Bayesian thinking about base rates in different populations to interpret test results. Genetic counseling uses Bayesian analysis to calculate disease risk probabilities based on family history and genetic test results.",
+  "hearTranscript": [
+    "This is where Bayesian detective work transforms from academic exercise into tools that solve real-world mysteries every day.",
+    "Spam filtering was one of the first major Bayesian success stories. Email systems learn from user behavior, updating probabilities that emails with certain word patterns are spam versus legitimate correspondence. Every time you mark an email as spam, you're providing evidence that updates the system's beliefs.",
+    "Medical diagnosis increasingly relies on Bayesian reasoning. Doctors start with disease base rates for patient populations, then update probabilities as symptoms appear and test results arrive. Electronic health records enable systematic prior specification based on patient demographics and medical history.",
+    "Financial fraud detection uses Bayesian analysis to identify suspicious transaction patterns. Instead of rigid rules that criminals can game, these systems maintain probability distributions over normal versus fraudulent behavior, updating continuously as new transaction data arrives.",
+    "A/B testing in technology companies has moved toward Bayesian methods that provide more interpretable results than classical significance testing. Instead of asking whether there's a statistically significant difference, Bayesian A/B testing estimates the probability that one variant is better and by how much.",
+    "Criminal justice applications include DNA analysis, where Bayes' theorem properly combines DNA match probabilities with other case evidence. Cold case investigations use Bayesian methods to systematically update suspect probabilities as new evidence emerges.",
+    "The power of Bayesian thinking is that it provides a unified framework for reasoning under uncertainty across any domain where evidence accumulates over time and prior knowledge matters."
+  ]
 }

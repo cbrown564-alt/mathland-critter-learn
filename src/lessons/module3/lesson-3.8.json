@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Real part -0.1 < 0 indicates decay, while imaginary part ±2i indicates oscillation with frequency 2. Combined, this creates decaying oscillations - spiraling inward motion."
   },
-  "realWorldConnection": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics."
+  "realWorldConnection": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics.",
+  "hearTranscript": [
+    "When eigenvalues become complex numbers, matrices reveal their most dynamic secrets... rotation combined with scaling, creating spiral behaviors that govern everything from population cycles to engineering stability.",
+    "Complex eigenvalues always come in conjugate pairs for real matrices... if a plus bi is an eigenvalue, then a minus bi is also an eigenvalue. The real part determines whether systems grow or decay, while the imaginary part controls oscillation frequency.",
+    "In population biology, predator-prey systems often have complex eigenvalues that create spiral trajectories... populations cycle through boom and bust phases with mathematical precision.",
+    "Engineering stability analysis relies on eigenvalue location. If all eigenvalues have negative real parts, the system is stable... small perturbations decay back to equilibrium. But if any eigenvalue has positive real part, the system becomes unstable... small disturbances grow exponentially.",
+    "When civil engineers design buildings to withstand earthquakes, they analyze the eigenvalues of structural vibration modes. Complex eigenvalues with positive real parts indicate dangerous resonances that could amplify seismic motion catastrophically.",
+    "Economic models use eigenvalue analysis to study market stability. Complex eigenvalues often indicate boom-bust cycles, while eigenvalues near the unit circle suggest systems on the edge of stability.",
+    "Even seemingly stable systems can harbor complex eigenvalue secrets that predict surprising dynamic behaviors."
+  ]
 }

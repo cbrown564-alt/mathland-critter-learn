@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Sample space has 36 equally likely outcomes. Event 'sum = 7' contains 6 outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Therefore P(sum = 7) = 6/36 = 1/6."
   },
-  "realWorldConnection": "Netflix calculates probabilities that users will like different movies based on viewing history. Medical AI systems assign probabilities to different diagnoses based on symptoms. Weather services use probability models to forecast precipitation chances from atmospheric data."
+  "realWorldConnection": "Netflix calculates probabilities that users will like different movies based on viewing history. Medical AI systems assign probabilities to different diagnoses based on symptoms. Weather services use probability models to forecast precipitation chances from atmospheric data.",
+  "hearTranscript": [
+    "Hello there, fellow explorers of uncertainty! I'm Probability Pippa, and I make the unpredictable predictable through the magic of probability!",
+    "Every magical trick starts with knowing all the possible outcomes... and that's exactly what sample space is in probability. It's like having a magical hat that contains every possible result of any random experiment.",
+    "When I flip a coin, my sample space is simple: heads or tails. When I roll a six-sided die, the sample space contains six equally magical outcomes: one, two, three, four, five, and six. But when I pull cards from a deck or predict next week's weather, the sample spaces become wonderfully complex.",
+    "Events are the magical subsets we actually care about. Instead of listing every possible outcome, events let us group outcomes that matter for our predictions. \"Rolling an even number\" is an event containing three outcomes: two, four, and six.",
+    "Weather forecasting uses sample spaces constantly. Meteorologists consider all possible temperature, humidity, and wind combinations, then calculate probabilities for events like \"rain tomorrow\" or \"temperature above 75 degrees.\"",
+    "Medical diagnosis works the same way. Doctors consider sample spaces of all possible conditions, then calculate probabilities for events like \"patient has condition X given these symptoms.\"",
+    "The magic happens when we assign probabilities to events... transforming uncertainty into actionable mathematical insights."
+  ]
 }

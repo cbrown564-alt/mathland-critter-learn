@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Among local maxima, the one with the highest function value (B with f(B) = 15) is superior. Point B might be the global maximum, but we'd need to check the entire domain to be certain."
   },
-  "realWorldConnection": "Netflix optimizes recommendation algorithms to maximize user watch time. SpaceX optimizes rocket trajectories to minimize fuel while reaching orbit. Amazon optimizes warehouse locations to minimize delivery costs while maximizing coverage. Every engineering and business decision involves optimization thinking."
+  "realWorldConnection": "Netflix optimizes recommendation algorithms to maximize user watch time. SpaceX optimizes rocket trajectories to minimize fuel while reaching orbit. Amazon optimizes warehouse locations to minimize delivery costs while maximizing coverage. Every engineering and business decision involves optimization thinking.",
+  "hearTranscript": [
+    "Welcome to the mountains of optimization! I'm Greta, and I've climbed every mathematical peak there is. Whether you're seeking the highest point or the deepest valley, I'll teach you to read the terrain and find the optimal path to the best possible outcome.",
+    "Optimization is like mountaineering with mathematical precision... Sometimes I want the highest peak - that's maximization. Sometimes I need the deepest valley - that's minimization. But here's the crucial distinction every serious climber must understand: local versus global extrema.",
+    "A local maximum is like a hill in my immediate area - it might be the highest point I can see from here, but there could be much taller peaks beyond the ridge. The global maximum is the true summit of the entire mountain range... the absolute best solution in the whole domain.",
+    "My objective function is like elevation on a topographical map - it tells me exactly what I'm trying to optimize. Constraints are like the boundaries of the climbing area... they define my feasible region where solutions are actually possible.",
+    "Netflix optimizes recommendation algorithms to maximize your engagement time. Tesla optimizes battery chemistry to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints.",
+    "Every engineering design, every business decision, every route you take to work involves optimization thinking. The mathematics of finding the best isn't just academic theory... it's the invisible engine powering every improvement and efficiency gain in our modern world.",
+    "So grab your mathematical climbing gear! We're about to discover how the quest for \"better\" transforms absolutely everything around us!"
+  ]
 }

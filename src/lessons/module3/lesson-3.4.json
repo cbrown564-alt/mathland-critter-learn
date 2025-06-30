@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "A³ = PD³P⁻¹. With eigenvalues 3,1, we have D³ = [[3³,0],[0,1³]] = [[27,0],[0,1]]. The eigenvector matrix P = [[1,1],[0,1]], so A³ = P[[27,0],[0,1]]P⁻¹."
   },
-  "realWorldConnection": "Google's PageRank algorithm uses diagonalization to efficiently compute authority scores across billions of web pages. Population genetics uses diagonalized matrices to predict how gene frequencies change over many generations. Financial models diagonalize correlation matrices to identify independent risk factors."
+  "realWorldConnection": "Google's PageRank algorithm uses diagonalization to efficiently compute authority scores across billions of web pages. Population genetics uses diagonalized matrices to predict how gene frequencies change over many generations. Financial models diagonalize correlation matrices to identify independent risk factors.",
+  "hearTranscript": [
+    "This is my favorite mathematical magic trick... When a matrix has enough independent eigenvectors, I can reveal its true form using diagonalization.",
+    "Here's the secret: any matrix A can be written as P times D times P inverse, where P contains the eigenvectors as columns and D is diagonal with eigenvalues lined up perfectly on the diagonal.",
+    "It's like having mathematical X-ray vision. The messy, complicated matrix becomes transparent, revealing its clean diagonal skeleton where all the transformation power is concentrated in those eigenvalue entries.",
+    "But here's where diagonalization becomes truly powerful: matrix powers become trivial. Want to compute A to the tenth power? Just compute P times D to the tenth times P inverse. And D to any power? That's just each eigenvalue raised to that power... diagonal matrices are beautifully simple to work with.",
+    "Not every matrix can be diagonalized. Some matrices are defective... they don't have enough independent eigenvectors to form a complete eigenvector basis. But when diagonalization works, it's like discovering the matrix's mathematical DNA.",
+    "Google's PageRank algorithm uses diagonalization to efficiently compute authority scores across billions of web pages. Population genetics uses it to predict how gene frequencies change over many generations. Financial models diagonalize correlation matrices to identify independent risk factors."
+  ]
 }

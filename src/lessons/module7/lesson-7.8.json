@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "60% power means if a medium effect truly exists, this study has only a 60% chance of detecting it (40% chance of Type II error). Power can be improved by increasing sample size, using a larger α level, or if the true effect is larger than expected."
   },
-  "realWorldConnection": "Pharmaceutical companies conduct power analysis to ensure clinical trials can detect meaningful treatment effects with adequate probability. Educational researchers use power analysis to design studies that won't miss important learning improvements. Environmental studies use power analysis to ensure adequate sensitivity for detecting pollution effects."
+  "realWorldConnection": "Pharmaceutical companies conduct power analysis to ensure clinical trials can detect meaningful treatment effects with adequate probability. Educational researchers use power analysis to design studies that won't miss important learning improvements. Environmental studies use power analysis to ensure adequate sensitivity for detecting pollution effects.",
+  "hearTranscript": [
+    "When conducting multiple statistical tests simultaneously, the probability of false discoveries increases dramatically... sophisticated researchers use multiple comparison procedures to maintain appropriate error control.",
+    "If each individual test has a 5% Type I error rate, conducting twenty independent tests creates approximately a 64% probability of at least one false discovery. This multiple comparisons problem threatens the integrity of scientific conclusions.",
+    "Bonferroni correction provides conservative protection by dividing the desired overall error rate by the number of tests. While simple, this approach can be overly conservative, reducing power to detect genuine effects.",
+    "More sophisticated procedures like the False Discovery Rate approach control the expected proportion of false discoveries among all rejected hypotheses, providing better power while maintaining error control.",
+    "Genomics research demonstrates these challenges at scale. When testing thousands of genes simultaneously for disease associations, multiple comparison corrections are essential to distinguish genuine discoveries from chance findings.",
+    "Pharmaceutical companies face similar challenges when analyzing multiple endpoints in clinical trials. Without proper correction, they might claim drug effectiveness based on chance discoveries among many measured outcomes.",
+    "A/B testing in technology companies requires multiple comparison awareness. When testing numerous website variations simultaneously, companies must adjust significance levels to maintain reliable conclusions about truly effective changes.",
+    "The intellectual sophistication lies in recognizing that statistical significance becomes meaningless without proper adjustment for multiple testing... maintaining the integrity of scientific inference."
+  ]
 }

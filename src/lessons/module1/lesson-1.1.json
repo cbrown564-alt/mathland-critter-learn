@@ -43,8 +43,8 @@
   "hearTranscript": [
     "Hey there, fellow explorer! I'm Vera, and I think about everything in terms of direction and magnitude.",
     "When someone tells you to go somewhere, I always ask two questions: which way and how far? That's what makes vectors special... they tell the complete story of movement and purpose.",
-    "Imagine you're lost in the forest and someone says 'walk 5 kilometers.' That's not very helpful, is it? You could end up walking in circles! But if they say 'walk 5 kilometers northeast,' now you have a vector... both magnitude and direction working together.",
-    "Vectors are like GPS instructions that actually work. Instead of just saying 'go 3 miles' which could be anywhere, vectors say 'go 3 miles northeast'... giving you the complete journey information in one mathematical package.",
+    "Imagine you're lost in the forest and someone says \"walk 5 kilometers.\" That's not very helpful, is it? You could end up walking in circles! But if they say \"walk 5 kilometers northeast,\" now you have a vector... both magnitude and direction working together.",
+    "Vectors are like GPS instructions that actually work. Instead of just saying \"go 3 miles\" which could be anywhere, vectors say \"go 3 miles northeast\"... giving you the complete journey information in one mathematical package.",
     "Your phone uses vectors constantly. GPS calculates displacement vectors to find optimal routes. When you swipe the screen, that's a vector showing direction and speed. Even when games move characters around, they're using velocity vectors to control movement smoothly.",
     "Every vector has two parts: how much and which way. Once you start thinking this way, you'll see vectors everywhere in the world around you."
   ],

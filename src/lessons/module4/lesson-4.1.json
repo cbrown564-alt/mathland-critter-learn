@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "f(x,y) = x² + y² has level curves x² + y² = c, which are circles centered at the origin. This creates a circular paraboloid opening upward, like a perfectly symmetric bowl."
   },
-  "realWorldConnection": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple aerodynamic parameters. Economists model market dynamics where profit depends on price, volume, competition, and market conditions."
+  "realWorldConnection": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple aerodynamic parameters. Economists model market dynamics where profit depends on price, volume, competition, and market conditions.",
+  "hearTranscript": [
+    "Hello there, fellow explorer of change. I'm Dr. Delta, and I study how things transform over time and space.",
+    "You know, most people think calculus is about memorizing formulas and struggling through derivatives. But here's what they don't tell you... calculus is actually the secret language that runs our entire modern world.",
+    "When we move from single-variable to multivariable calculus, something fascinating happens. Instead of approaching a point along a single line, we can now approach from infinitely many directions... like a bird flying toward a landing spot from any angle in the sky.",
+    "This is where limits become truly sophisticated. In weather forecasting, meteorologists track how temperature changes across both space and time. They need to understand what happens as we approach specific locations from different directions... north, south, east, west, or along curved paths.",
+    "The mathematical beauty is that a multivariable limit exists only when all possible approach paths give the same answer. It's like saying that no matter which direction you walk toward a lighthouse, you should see the same beacon intensity when you arrive.",
+    "Medical imaging relies on this principle. MRI machines calculate gradients across tissue boundaries by taking multidimensional limits to reconstruct precise 3D images of your body.",
+    "The precision required for these calculations is extraordinary... and it's this mathematical rigor that enables the technological miracles we use every day."
+  ]
 }

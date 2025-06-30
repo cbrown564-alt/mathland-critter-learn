@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Dᵤf = ∇f · û = ⟨2,2⟩ · ⟨1/√2, 1/√2⟩ = 2/√2 + 2/√2 = 4/√2 = 2√2. Since û points in the same direction as ∇f, this gives the maximum directional derivative."
   },
-  "realWorldConnection": "Hikers use directional derivatives to assess trail steepness in chosen directions. Aircraft engineers analyze how lift changes along specific flight path directions. Economists study how utility changes when consumers move along budget lines in specific spending directions."
+  "realWorldConnection": "Hikers use directional derivatives to assess trail steepness in chosen directions. Aircraft engineers analyze how lift changes along specific flight path directions. Economists study how utility changes when consumers move along budget lines in specific spending directions.",
+  "hearTranscript": [
+    "The multivariable chain rule is like having a sophisticated tracking system that follows how changes propagate through interconnected networks of variables.",
+    "In single-variable calculus, the chain rule handles simple compositions. But in multivariable calculus, variables can depend on multiple other variables, creating complex webs of interdependence that require systematic analysis.",
+    "Supply chain management uses multivariable chain rule reasoning constantly. Changes in raw material costs affect manufacturing expenses, which influence retail prices, which impact consumer demand, which feeds back to affect production volumes. Each connection requires careful derivative analysis.",
+    "Climate modeling depends on chain rule calculations to track how small changes in solar radiation affect ocean temperatures, which influence atmospheric moisture, which modifies cloud formation, which changes precipitation patterns. The mathematical complexity is staggering, but the chain rule provides systematic methods for tracking these cascading effects.",
+    "Neural network backpropagation is essentially a massive application of the multivariable chain rule. When training deep learning models, error signals propagate backward through layers, with each connection requiring chain rule calculations to determine how to adjust individual parameters.",
+    "The beauty of the multivariable chain rule is that it decomposes complex change analysis into manageable, systematic steps. Instead of being overwhelmed by interconnected complexity, you can trace each pathway methodically.",
+    "This mathematical precision enables accurate modeling of real-world systems where everything depends on everything else."
+  ]
 }

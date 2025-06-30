@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Beta-Binomial conjugate updating: Beta(α,β) + s successes in n trials → Beta(α+s, β+(n-s)). Here: Beta(2,3) + 7 successes in 10 trials → Beta(2+7, 3+3) = Beta(9,6)."
   },
-  "realWorldConnection": "Conversion rate optimization platforms like Optimizely use Beta-Binomial updating to provide real-time A/B test results. Medical device companies use conjugate priors to incorporate historical safety data into new clinical trials. Online advertising uses Beta-Binomial models to optimize click-through rates with streaming data."
+  "realWorldConnection": "Conversion rate optimization platforms like Optimizely use Beta-Binomial updating to provide real-time A/B test results. Medical device companies use conjugate priors to incorporate historical safety data into new clinical trials. Online advertising uses Beta-Binomial models to optimize click-through rates with streaming data.",
+  "hearTranscript": [
+    "Every investigation begins somewhere, and that starting point... your prior distribution... can make or break your case.",
+    "Priors represent what you know before seeing the current evidence. They're not just guesses... they're informed judgments based on historical patterns, domain expertise, and relevant context.",
+    "In criminal investigations, priors come from crime statistics, behavioral patterns, and situational factors. If someone reports a burglary in a high-crime neighborhood, that affects my prior probability compared to the same report from a low-crime area.",
+    "The beauty of Bayesian analysis is that it makes these assumptions explicit. Classical statistics often pretends we start with no prior knowledge... but that's rarely true. Bayesian methods force you to state your assumptions clearly.",
+    "Now, here's where it gets interesting: different priors can lead to different conclusions from the same evidence. This isn't a weakness... it's a feature. It shows how background knowledge legitimately influences interpretation.",
+    "Conjugate priors are particularly elegant. They're mathematical families where the prior and posterior have the same form, making calculations clean and intuitive. For binary outcomes, beta distributions are conjugate to binomial likelihoods. For continuous measurements, normal distributions are conjugate to normal likelihoods.",
+    "The key is choosing priors that reflect genuine prior knowledge while being transparent about their influence on your conclusions."
+  ]
 }

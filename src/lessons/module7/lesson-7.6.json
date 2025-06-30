@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "This scenario compares means between two independent groups (drug vs placebo), making the two-sample t-test the appropriate choice. We're testing if μdrug ≠ μplacebo for continuous blood pressure measurements."
   },
-  "realWorldConnection": "Clinical trials use two-sample t-tests to compare treatment outcomes between experimental and control groups. Social media companies use chi-square tests to analyze user engagement patterns across different demographics. Educational researchers use ANOVA to compare test scores across multiple teaching methods or schools."
+  "realWorldConnection": "Clinical trials use two-sample t-tests to compare treatment outcomes between experimental and control groups. Social media companies use chi-square tests to analyze user engagement patterns across different demographics. Educational researchers use ANOVA to compare test scores across multiple teaching methods or schools.",
+  "hearTranscript": [
+    "Statistical inference involves unavoidable risks... Type I and Type II errors represent the fundamental trade-offs inherent in making decisions under uncertainty.",
+    "Type I error occurs when we reject a true null hypothesis... concluding that an effect exists when it actually doesn't. This represents false discovery, finding significance where none exists.",
+    "Type II error occurs when we fail to reject a false null hypothesis... missing genuine effects that actually exist. This represents false negative results, failing to detect real phenomena.",
+    "These errors are inversely related. Reducing Type I error probability typically increases Type II error probability, and vice versa. This creates an elegant tension requiring thoughtful balance based on the consequences of different mistakes.",
+    "Criminal justice systems embody this trade-off. Convicting innocent defendants represents Type I error... concluding guilt when defendants are actually innocent. Acquitting guilty defendants represents Type II error... failing to convict when defendants are actually guilty.",
+    "Medical screening follows identical logic. False positive results represent Type I errors... diagnosing disease in healthy patients. False negative results represent Type II errors... missing disease in affected patients.",
+    "The alpha level controls Type I error probability, typically set at 5%. This means we accept a 5% chance of false discovery in exchange for reasonable sensitivity to genuine effects.",
+    "Understanding these error types enables sophisticated thinking about evidence standards and decision criteria in any domain where uncertainty is unavoidable."
+  ]
 }

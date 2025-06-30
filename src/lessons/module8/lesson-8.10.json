@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "BF₁₂ = 8.5 provides substantial evidence for Model 1 over Model 2. BF₁₃ = 23.1 provides strong evidence for Model 1 over Model 3. The evidence most strongly favors Model 1, with the comparison against Model 3 being more decisive than against Model 2."
   },
-  "realWorldConnection": "This capstone mirrors real Bayesian consulting workflows: pharmaceutical statisticians designing adaptive clinical trials, tech company data scientists building recommendation systems, and financial quants developing risk models. The complete Bayesian reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty with systematic belief updating."
+  "realWorldConnection": "This capstone mirrors real Bayesian consulting workflows: pharmaceutical statisticians designing adaptive clinical trials, tech company data scientists building recommendation systems, and financial quants developing risk models. The complete Bayesian reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty with systematic belief updating.",
+  "hearTranscript": [
+    "Time for the ultimate Bayesian investigation! This final case brings together every technique in my detective arsenal... from prior specification through posterior analysis, from conjugate updating to model comparison. It's the complete demonstration of Bayesian detective mastery.",
+    "This isn't just theory anymore... this is real-world investigative work where every Bayesian concept becomes a tool for solving complex mysteries that require systematic reasoning under uncertainty.",
+    "Part A: Prior elicitation and sensitivity analysis. I'm carefully specifying what I believe before seeing evidence, then testing whether my conclusions remain robust when I adjust these initial assumptions. Good detective work requires honest acknowledgment of investigative biases.",
+    "Part B: Complex likelihood analysis and conjugate updating. Using mathematical elegance to update beliefs systematically as evidence accumulates. Conjugate priors make the mathematics beautiful while maintaining interpretable results throughout the investigation.",
+    "Part C: Model comparison using Bayes factors. When competing theories explain the same evidence, I calculate BF₁₂ = 8.5 and BF₁₃ = 23.1, providing substantial evidence for Model 1 over Model 2 and strong evidence over Model 3. The numbers tell the investigative story.",
+    "Part D: Predictive distributions and decision-making under uncertainty. Moving beyond analysis to practical recommendations that acknowledge uncertainty while enabling principled action.",
+    "Every prior, every update, every Bayesian technique working with cunning precision... this is inference mastery that transforms uncertain evidence into systematic knowledge for complex real-world decision-making!",
+    "Welcome to the ultimate Bayesian detective challenge - where every piece of evidence changes the probability landscape!"
+  ]
 }

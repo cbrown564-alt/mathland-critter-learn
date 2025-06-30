@@ -49,5 +49,14 @@
     "correctAnswer": 2,
     "explanation": "In 2D space, at most 2 vectors can be linearly independent. With 3 vectors in 2D, at least one must be expressible as a linear combination of the others. Indeed, [4,3] = [1,2] + [3,1], confirming dependence."
   },
-  "realWorldConnection": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding the 'curse of dimensionality' and improving prediction accuracy."
+  "realWorldConnection": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding the 'curse of dimensionality' and improving prediction accuracy.",
+  "hearTranscript": [
+    "Independent vectors give you new directions to explore! It's like having the perfect toolkit... no redundant tools, but everything you need to reach anywhere you want to go.",
+    "Here's the key question I always ask: \"Can I get there without this vector?\" If the answer is yes, then that vector is redundant... it's a linear combination of the others and doesn't add any new directional capabilities.",
+    "Linear independence is about eliminating redundancy while keeping all essential directions. In 2D space, you need exactly 2 independent vectors to reach anywhere. In 3D space, you need exactly 3. Any more, and you have redundancy.",
+    "Think of it like exploring with a compass. If you have north and east directions, you can reach any point in the plane. Adding northeast doesn't give you new capabilities... it's just a combination of north and east you already have.",
+    "In data science, linear independence reveals the intrinsic dimensionality of datasets. You might have 100 variables describing customers, but maybe only 5 independent patterns explain most of the variation. The rest is redundancy.",
+    "Machine learning models depend on linear independence. Redundant features can cause numerical instability and overfitting. Independent features provide clean, non-overlapping information that models can learn from effectively.",
+    "When vectors are linearly independent, they form a basis... a minimal set of directions that can reach everywhere in their space through linear combinations."
+  ]
 }

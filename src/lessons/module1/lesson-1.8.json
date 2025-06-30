@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "2×2 matrices follow all vector space axioms: matrix addition is commutative and associative, scalar multiplication distributes, and there's a zero matrix. The dimension is 4 because any 2×2 matrix can be written as a linear combination of four basis matrices."
   },
-  "realWorldConnection": "Machine learning models live in high-dimensional vector spaces where each dimension represents a data feature. Neural networks process information by moving through these abstract vector spaces, finding patterns that would be impossible to visualize but follow the same mathematical rules Vera uses for forest navigation."
+  "realWorldConnection": "Machine learning models live in high-dimensional vector spaces where each dimension represents a data feature. Neural networks process information by moving through these abstract vector spaces, finding patterns that would be impossible to visualize but follow the same mathematical rules Vera uses for forest navigation.",
+  "hearTranscript": [
+    "Vector spaces are like mathematical universes with their own laws of physics... but these laws are beautifully simple and consistent.",
+    "A vector space needs just two operations: vector addition and scalar multiplication. But these operations must follow specific rules... addition must be commutative and associative, scalar multiplication must distribute properly, and there must be zero and identity elements.",
+    "The beautiful thing is that many mathematical objects form vector spaces, even when they don't look like arrows. Polynomials form a vector space... you can add polynomials and multiply them by scalars. Functions form vector spaces. Even matrices form vector spaces.",
+    "Subspaces are like countries within the vector space universe. They're closed under the vector space operations... if you add two vectors from a subspace, you stay in the subspace. Same with scalar multiplication.",
+    "Linear transformations are like the fundamental forces in vector space physics. They preserve the vector space structure... linear combinations go to linear combinations, maintaining the mathematical relationships that define the space.",
+    "Computer graphics model 3D space as a vector space. Every object, every transformation, every lighting calculation respects vector space laws... ensuring that rotations, scaling, and translations work predictably and smoothly.",
+    "Understanding vector spaces gives you the mathematical foundation for linear algebra, calculus, and advanced data science... it's the universal language of mathematical structure."
+  ]
 }

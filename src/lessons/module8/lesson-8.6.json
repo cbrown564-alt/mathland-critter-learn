@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "With Beta(2,2) prior + 3 successes in 5 trials, posterior is Beta(5,4). MAP = mode = (5-1)/(5+4-2) = 4/6 = 2/3. MLE = 3/5 = 0.6. MAP is pulled toward the prior mean (0.5) compared to MLE."
   },
-  "realWorldConnection": "Deep learning uses MAP estimation with weight decay (L2 regularization) to prevent overfitting in neural networks. Medical imaging uses MAP estimation to reconstruct images from noisy measurements, balancing data fidelity with smoothness priors. Speech recognition uses MAP estimation for parameter estimation in hidden Markov models."
+  "realWorldConnection": "Deep learning uses MAP estimation with weight decay (L2 regularization) to prevent overfitting in neural networks. Medical imaging uses MAP estimation to reconstruct images from noisy measurements, balancing data fidelity with smoothness priors. Speech recognition uses MAP estimation for parameter estimation in hidden Markov models.",
+  "hearTranscript": [
+    "Some prior-likelihood combinations create mathematical elegance that would make any detective appreciate beautiful reasoning... these are conjugate priors.",
+    "When your prior and likelihood belong to conjugate families, the posterior has the same functional form as the prior. This creates computational beauty and interpretive clarity that makes complex Bayesian analysis tractable.",
+    "The beta-binomial combination is the classic example. Start with a beta prior for a success probability, observe binomial data, and get a beta posterior. The mathematics works out perfectly... you just add successes to one parameter and failures to another.",
+    "This isn't just mathematical convenience. Conjugate priors often represent natural ways to accumulate evidence over time. Each new observation updates your beliefs in a systematic, interpretable way.",
+    "In quality control, conjugate analysis helps track defect rates. Start with historical knowledge encoded in a beta prior, observe new production runs, and get updated beliefs about current quality levels through clean posterior calculations.",
+    "Normal-normal conjugacy handles continuous measurements elegantly. If you're estimating average customer satisfaction from survey data, normal priors and normal likelihoods produce normal posteriors with intuitive parameter updates.",
+    "The beauty of conjugate analysis is that it provides exact analytical solutions rather than requiring computational approximation. This lets you focus on interpretation rather than numerical methods."
+  ]
 }

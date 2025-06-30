@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Eigenvalue 1.2 > 1 causes exponential growth, while 0.8 < 1 causes decay. Over time, the 1.2-eigenvalue component dominates, so population grows exponentially in the direction of that eigenvector."
   },
-  "realWorldConnection": "Epidemiologists use eigenvalue analysis to predict disease spread - eigenvalues determine whether outbreaks grow or die out. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution."
+  "realWorldConnection": "Epidemiologists use eigenvalue analysis to predict disease spread - eigenvalues determine whether outbreaks grow or die out. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
+  "hearTranscript": [
+    "Want to see mathematical time travel? I've discovered that eigenvalues hold the key to predicting what happens when matrices are multiplied by themselves many times... or even raised to infinite powers!",
+    "Here's the secret that unlocks temporal mathematics... When A equals P D P inverse, then A to the nth power equals P D to the nth P inverse. Diagonalization makes matrix powers trivial! The eigenvalue magnitudes become crystal balls for long-term behavior.",
+    "If the absolute value of lambda is greater than 1, that direction grows exponentially over time. If it's less than 1, that direction decays toward zero. If it equals exactly 1, that direction remains perfectly stable. It's like having mathematical DNA that determines the destiny of every system.",
+    "Matrix exponentials work the same way... e to the At equals P e to the Dt P inverse, where eigenvalues directly control the exponential growth rates of different directions in continuous time.",
+    "Markov chains use this detective work to find steady states... the eigenvalue of exactly 1 and its eigenvector reveal where the system eventually settles. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance.",
+    "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Climate scientists use matrix exponentials to model long-term temperature evolution.",
+    "The beauty is profound... eigenvalues are like mathematical time machines that let me compute the future behavior of any dynamic system with detective precision!"
+  ]
 }

@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "L₂ norm: √(3² + 4²) = √(9 + 16) = 5. Unit vector: [3,4]/5 = [3/5, 4/5] = [0.6, 0.8]. This preserves direction while making the magnitude exactly 1."
   },
-  "realWorldConnection": "Machine learning algorithms use different norms to measure 'distance' between data points - Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data."
+  "realWorldConnection": "Machine learning algorithms use different norms to measure 'distance' between data points - Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
+  "hearTranscript": [
+    "The dot product is like having a mathematical conversation between two vectors... it tells you how much they agree with each other.",
+    "When two vectors point in exactly the same direction, their dot product is maximum. When they're perpendicular, the dot product is zero... they're completely independent. And when they point in opposite directions? The dot product is negative.",
+    "Here's the beautiful geometric interpretation: the dot product measures how much one vector projects onto another. It's like asking \"if I shine a flashlight from the tip of vector A toward vector B, how long is the shadow?\"",
+    "I use dot products all the time for calculating work in physics. Work equals force dot displacement... the dot product naturally captures that only the component of force in the direction of movement does useful work.",
+    "In machine learning, dot products are everywhere. Similarity between data points? Dot product of their feature vectors. Neural network computations? Layers of dot products transforming information step by step.",
+    "Computer graphics use dot products for lighting calculations. The dot product between surface normal vectors and light direction vectors determines how bright each pixel should be... creating realistic shading and shadows.",
+    "The dot product gives you the magnitude of one vector, times the magnitude of the other, times the cosine of the angle between them. It's geometry and algebra working together perfectly."
+  ]
 }

@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Standard error for sample means: SE = σ/√n = 15/√25 = 15/5 = 3. This measures how much sample means typically vary around the true population mean μ across different samples of size 25."
   },
-  "realWorldConnection": "Gallup polls use standard errors to calculate ±3% margins of error for political surveys. Medical researchers report standard errors to show the precision of treatment effect estimates. Market research companies use standard errors to quantify uncertainty in consumer preference estimates from sample surveys."
+  "realWorldConnection": "Gallup polls use standard errors to calculate ±3% margins of error for political surveys. Medical researchers report standard errors to show the precision of treatment effect estimates. Market research companies use standard errors to quantify uncertainty in consumer preference estimates from sample surveys.",
+  "hearTranscript": [
+    "Confidence intervals represent statistical sophistication at its finest... they provide ranges of plausible values while elegantly acknowledging the inherent uncertainty in any inference from limited data.",
+    "Unlike point estimates that suggest false precision, confidence intervals communicate both what we know and what we don't know. A 95% confidence interval means that if we repeated our sampling procedure many times, 95% of such intervals would contain the true population parameter.",
+    "This interpretation requires intellectual maturity. The interval either contains the true parameter or it doesn't... there's no probability about that fact. The probability refers to the long-run performance of our interval construction procedure.",
+    "Political polling illustrates this elegance perfectly. When surveys report that a candidate has 52% support with a margin of error of ±3%, they're providing a confidence interval. The sophistication lies in acknowledging uncertainty while still enabling informed decision-making.",
+    "Medical research uses confidence intervals to communicate treatment effect sizes with appropriate uncertainty. Instead of claiming a drug reduces symptoms by exactly 15%, researchers might report a 95% confidence interval of 10% to 20% reduction, providing both the estimate and its precision.",
+    "Quality control applications use confidence intervals to assess whether manufacturing processes are operating within specifications. Process engineers can distinguish between random variation and systematic problems by examining whether parameter estimates fall within expected confidence bounds.",
+    "Confidence intervals embody the statistical principle that honest uncertainty is more valuable than false certainty."
+  ]
 }

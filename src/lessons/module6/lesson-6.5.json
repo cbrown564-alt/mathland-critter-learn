@@ -49,5 +49,14 @@
     "correctAnswer": 3,
     "explanation": "For Exponential(λ), P(X ≤ x) = 1 - e^(-λx). Method A uses this formula directly. Method C integrates the PDF: ∫₀¹ 2e^(-2x)dx = [-e^(-2x)]₀¹ = (1 - e^(-2)) - (1 - 1) = 1 - e^(-2) ≈ 0.865. Both give the same answer."
   },
-  "realWorldConnection": "Netflix models video streaming session lengths using Exponential distributions. Manufacturing companies use Normal distributions to model product dimension variations. Financial analysts use Normal distributions for modeling daily stock return fluctuations. Call centers use Exponential distributions to model customer service call durations."
+  "realWorldConnection": "Netflix models video streaming session lengths using Exponential distributions. Manufacturing companies use Normal distributions to model product dimension variations. Financial analysts use Normal distributions for modeling daily stock return fluctuations. Call centers use Exponential distributions to model customer service call durations.",
+  "hearTranscript": [
+    "Expectation and variance are like magical crystal balls that summarize entire probability distributions with just two numbers... central tendency and spread.",
+    "Expected value isn't what you expect to happen... it's the long-run average if you could repeat the same uncertain situation thousands of times. When I flip a fair coin for dollar bets, my expected value is zero. Sometimes I win, sometimes I lose, but over many flips, they balance out.",
+    "Variance measures how spread out the outcomes are around the expectation. Low variance means outcomes cluster tightly around the average. High variance means outcomes are scattered widely, creating more uncertainty.",
+    "Casinos understand expectation perfectly. Every game has negative expected value for players... the house edge ensures long-run profitability. Individual players might win big, but the casino's expected profit is mathematically guaranteed.",
+    "Investment portfolios balance expected returns with variance. High-return investments often have high variance... greater potential gains come with greater uncertainty. Portfolio theory uses mathematical optimization to find the best risk-return combinations.",
+    "Quality control uses expectation and variance to monitor manufacturing processes. Product specifications have target values (expectation) and tolerance ranges (variance). Statistical process control detects when either measure moves outside acceptable bounds.",
+    "Understanding expectation and variance gives you mathematical tools to summarize and compare any uncertain situation with precision."
+  ]
 }

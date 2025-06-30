@@ -49,5 +49,14 @@
     "correctAnswer": 3,
     "explanation": "For Binomial(n,p): E[X] = np = 4×0.5 = 2. Variance formula is Var(X) = np(1-p) = 4×0.5×(1-0.5) = 4×0.5×0.5 = 1. Both A and B express this correctly."
   },
-  "realWorldConnection": "Portfolio managers use expected returns and variance to optimize investment strategies balancing reward and risk. Manufacturing uses expectation and variance to monitor product quality and process control. Insurance companies calculate expected claim costs and variance to set appropriate premium levels and reserves."
+  "realWorldConnection": "Portfolio managers use expected returns and variance to optimize investment strategies balancing reward and risk. Manufacturing uses expectation and variance to monitor product quality and process control. Insurance companies calculate expected claim costs and variance to set appropriate premium levels and reserves.",
+  "hearTranscript": [
+    "These are the most powerful theorems in all of probability... mathematical magic that transforms chaos into beautiful, predictable patterns.",
+    "The Law of Large Numbers is like having a magical guarantee: no matter how random individual events are, averages become predictable as sample sizes grow large. Flip a coin ten times, and you might get seven heads. Flip it ten thousand times, and you'll get very close to fifty percent heads.",
+    "This law enables insurance, quality control, and scientific research. Individual outcomes remain uncertain, but large-scale patterns become remarkably stable and predictable.",
+    "The Central Limit Theorem is even more magical: it says that averages of any random variable will form normal distributions, regardless of the original distribution's shape. Start with any crazy, irregular probability distribution... take lots of samples and calculate their averages... and those averages will magically arrange themselves into perfect bell curves.",
+    "This is why normal distributions appear everywhere. Heights, test scores, measurement errors... they're all averages of many small random effects, so the Central Limit Theorem forces them into bell curve patterns.",
+    "Polling uses the Central Limit Theorem to predict election outcomes from small samples. Quality control uses it to monitor production processes. Scientific research uses it to establish statistical significance.",
+    "These theorems reveal something profound: underneath apparent randomness lies deep mathematical order. Individual events may be unpredictable, but aggregate patterns follow beautiful, universal laws."
+  ]
 }

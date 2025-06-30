@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "The null hypothesis H₀ represents status quo (no improvement), while alternative H₁ represents the research claim being tested (improvement). The burden of proof lies with demonstrating improvement, not maintaining the status quo."
   },
-  "realWorldConnection": "FDA drug approval requires hypothesis testing to demonstrate efficacy beyond placebo effects. Tech companies like Google use A/B testing with hypothesis testing to validate new features. Medical researchers use hypothesis testing to establish treatment effectiveness in clinical trials."
+  "realWorldConnection": "FDA drug approval requires hypothesis testing to demonstrate efficacy beyond placebo effects. Tech companies like Google use A/B testing with hypothesis testing to validate new features. Medical researchers use hypothesis testing to establish treatment effectiveness in clinical trials.",
+  "hearTranscript": [
+    "Test statistics and p-values provide the mathematical machinery for quantifying evidence strength... they transform subjective impressions into precise measures of how surprising our data would be under null hypothesis assumptions.",
+    "A test statistic standardizes our sample evidence, typically expressing how many standard errors our observation lies from the null hypothesis expectation. Large test statistics indicate that our data are quite incompatible with null hypothesis assumptions.",
+    "The p-value quantifies this incompatibility with elegant precision. It represents the probability of observing evidence as extreme or more extreme than what we actually observed, assuming the null hypothesis is true.",
+    "Crucially, the p-value is not the probability that the null hypothesis is true. This common misinterpretation reflects a fundamental confusion about conditional probability. The p-value tells us how surprised we should be by our data if the null hypothesis were true.",
+    "Environmental science uses p-values to evaluate pollution reduction claims. When researchers test whether new regulations decreased contamination levels, they calculate the probability of observing such large improvements if the regulations had no actual effect. Small p-values suggest that regulatory improvements are genuine rather than random fluctuation.",
+    "Manufacturing quality control employs p-values to detect process deterioration. When defect rates appear elevated, statistical tests determine whether the increase likely reflects random variation or systematic problems requiring intervention.",
+    "The elegance of p-values lies in their universal interpretability... they provide standardized measures of evidence strength across any domain where hypothesis testing applies."
+  ]
 }

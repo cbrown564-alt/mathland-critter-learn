@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Lagrange multiplier condition: ∇f = λ∇g at the optimum. Here: ⟨2x,2y⟩ = λ⟨1,1⟩, giving 2x = λ and 2y = λ, so x = y. Combined with constraint x + y = 2, we get x = y = 1."
   },
-  "realWorldConnection": "Tesla optimizes battery placement subject to weight distribution and safety constraints. Portfolio managers maximize returns subject to budget and risk constraints. Netflix optimizes recommendation algorithms subject to computational time and diversity constraints."
+  "realWorldConnection": "Tesla optimizes battery placement subject to weight distribution and safety constraints. Portfolio managers maximize returns subject to budget and risk constraints. Netflix optimizes recommendation algorithms subject to computational time and diversity constraints.",
+  "hearTranscript": [
+    "Machine learning is essentially optimization at scale... teaching algorithms to find patterns by systematically minimizing prediction errors across massive datasets.",
+    "Every neural network training session involves navigating high-dimensional optimization landscapes with millions or billions of parameters. The loss function creates a mathematical terrain where lower valleys represent better model performance.",
+    "Backpropagation is gradient descent applied to neural network training. Error signals propagate backward through network layers, calculating gradients that guide parameter updates toward better predictions.",
+    "Regularization techniques add constraints to prevent overfitting... like requiring that optimization solutions remain within reasonable bounds. L1 and L2 regularization create modified optimization landscapes that balance model accuracy with simplicity.",
+    "Batch normalization and layer normalization reshape optimization landscapes to make training more stable and efficient. These techniques smooth the mathematical terrain, making it easier for optimization algorithms to find good solutions.",
+    "Transfer learning applies optimization insights from pre-trained models to new problems. Instead of starting optimization from scratch, you begin from a good starting point and fine-tune toward task-specific optima.",
+    "Hyperparameter optimization involves optimizing the optimization process itself... finding learning rates, architectures, and training strategies that enable efficient convergence to high-quality solutions.",
+    "The success of modern AI depends entirely on our ability to solve these massive optimization problems efficiently and reliably."
+  ]
 }

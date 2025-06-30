@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Using conditional probability formula: P(tea|coffee) = P(tea ∩ coffee)/P(coffee) = 0.20/0.60 = 1/3. Knowing someone likes coffee changes the probability they like tea from 40% to 33.3%."
   },
-  "realWorldConnection": "Google's search algorithm uses conditional probabilities to rank pages based on user click patterns given specific queries. Medical diagnostic systems calculate disease probabilities conditional on observed symptoms. Netflix recommends movies using conditional probabilities based on viewing history and user similarities."
+  "realWorldConnection": "Google's search algorithm uses conditional probabilities to rank pages based on user click patterns given specific queries. Medical diagnostic systems calculate disease probabilities conditional on observed symptoms. Netflix recommends movies using conditional probabilities based on viewing history and user similarities.",
+  "hearTranscript": [
+    "Conditional probability is like having magical powers that get stronger every time you learn something new... each piece of information updates your predictions!",
+    "When I perform card tricks, conditional probability is everything. If I know the first card drawn was red, that changes the probability that the next card will be red too. There are fewer red cards left in the deck, so the probabilities shift accordingly.",
+    "Independence is a special kind of magic where events don't influence each other. Coin flips are independent... knowing the first flip came up heads doesn't change the probability of heads on the second flip. The coin has no memory of previous results.",
+    "But most real-world events aren't independent. If you know someone exercises regularly, that changes the probability they have low blood pressure. If you know it's cloudy, that changes the probability of rain. These conditional relationships are what make prediction possible.",
+    "Medical diagnosis relies heavily on conditional probability. The probability of having a disease changes dramatically based on test results, symptoms, and risk factors. Doctors constantly update disease probabilities as new information becomes available.",
+    "Financial markets use conditional probability for risk assessment. The probability of stock price movements depends on economic indicators, company news, and market sentiment. Each new piece of information updates the probability calculations.",
+    "Understanding conditional probability gives you the mathematical tools to think clearly about how new information should change your beliefs."
+  ]
 }

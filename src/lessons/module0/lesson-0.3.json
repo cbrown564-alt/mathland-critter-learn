@@ -48,5 +48,13 @@
   "seeContent": "Watch balance beam visualizations showing how equation solving maintains equality, and see how quadratic equations create parabolic curves when graphed.",
   "hearContent": "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
   "hearAudioUrl": "/audio/0.3.mp3",
-  "doContent": "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step."
+  "doContent": "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step.",
+  "hearTranscript": [
+    "Solving equations is like being a mathematical detective... you're systematically uncovering the value of unknown variables using logical steps and proven techniques.",
+    "Linear equations are the straightforward cases. If I have 3x plus 7 equals 22, I solve it step by step... subtract 7 from both sides to get 3x equals 15, then divide both sides by 3 to find x equals 5. It's like following a clear construction sequence... each step moves me closer to the solution.",
+    "The key principle is maintaining balance... whatever I do to one side of the equation, I must do to the other side. It's like keeping a bridge level... if I add weight to one side, I need to add equal weight to the other side.",
+    "Quadratic equations require more sophisticated techniques. When I have x squared minus 5x plus 6 equals 0, I can factor it into x minus 2 times x minus 3 equals 0. Then I use the zero product property... if two factors multiply to zero, at least one must be zero. So x equals 2 or x equals 3.",
+    "The quadratic formula is my universal tool for when factoring gets complicated. For any quadratic ax squared plus bx plus c equals 0, the solution is x equals negative b plus or minus the square root of b squared minus 4ac, all divided by 2a.",
+    "In data science, you're constantly solving equations... finding optimal parameters for machine learning models, calculating statistical measures, or determining break-even points for business decisions. These equation-solving skills are your mathematical foundation tools."
+  ]
 }

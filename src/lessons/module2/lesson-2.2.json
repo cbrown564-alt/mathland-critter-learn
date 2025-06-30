@@ -49,5 +49,11 @@
     "correctAnswer": 0,
     "explanation": "2A + B means each spring count is doubled, then added to the corresponding summer count. This could represent giving spring data twice the weight in a seasonal analysis model."
   },
-  "realWorldConnection": "Financial analysts add quarterly earnings matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to improve model performance systematically."
+  "realWorldConnection": "Financial analysts add quarterly earnings matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to improve model performance systematically.",
+  "hearTranscript": [
+    "Combining organized information is like merging two perfectly aligned filing systems... Element by element, position by position, everything matches up precisely.",
+    "Here's the key: you can only add matrices of the same size. It's like trying to combine two different filing cabinet designs... they have to match perfectly for the system to work.",
+    "Matrix addition is beautifully simple: just add corresponding elements. Same position, same purpose. And scalar multiplication? That's even more elegant... multiply every element by the same number. It's like adjusting your entire filing system by the same percentage.",
+    "The real power shows up when financial analysts combine quarterly data matrices to get annual totals, or when image processing systems blend pixel matrices to create those smooth transitions you see in your favorite apps."
+  ]
 }

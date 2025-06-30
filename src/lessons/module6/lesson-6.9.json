@@ -49,5 +49,15 @@
     "correctAnswer": 3,
     "explanation": "Standard error SE = σ/√n. For n=36: SE = 12/√36 = 12/6 = 2. For n=144: SE = 12/√144 = 12/12 = 1. Quadrupling the sample size (36→144) halves the standard error (2→1)."
   },
-  "realWorldConnection": "Gallup polls estimate election results from ~1,000 voters with ±3% margin of error using sampling theory. Medical researchers test new drugs on limited patient samples to make population inferences. Netflix analyzes user behavior from sample data to understand broader viewing patterns across millions of users."
+  "realWorldConnection": "Gallup polls estimate election results from ~1,000 voters with ±3% margin of error using sampling theory. Medical researchers test new drugs on limited patient samples to make population inferences. Netflix analyzes user behavior from sample data to understand broader viewing patterns across millions of users.",
+  "hearTranscript": [
+    "Machine learning is essentially probability magic at scale... algorithms that learn patterns from data and make predictions under uncertainty.",
+    "Spam filters use probability models to classify emails. They calculate the probability that an email is spam based on word frequencies, sender patterns, and other features. Bayesian methods update these probabilities as new examples arrive.",
+    "Recommendation systems model user preferences as probability distributions. Netflix calculates the probability you'll enjoy different movies based on your viewing history and the preferences of similar users. These collaborative filtering algorithms rely on probabilistic similarity measures.",
+    "Neural networks use probability throughout their architecture. Dropout randomly sets activations to zero during training, preventing overfitting through probabilistic regularization. Output layers often use softmax functions to generate probability distributions over possible classes.",
+    "Reinforcement learning agents make decisions under uncertainty using probabilistic policies. They balance exploration of unknown actions with exploitation of known good actions, using probability to guide this trade-off systematically.",
+    "Computer vision algorithms use probabilistic models for object recognition. They calculate probability distributions over possible object identities and locations, enabling robust recognition despite noise and variation.",
+    "Natural language processing models predict word sequences using probability distributions over vocabulary. Language models generate text by sampling from learned probability distributions of likely next words.",
+    "Understanding probability gives you insight into how modern AI systems handle uncertainty and make reliable predictions from noisy data."
+  ]
 }

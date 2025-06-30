@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Different audiences need different emphasis while maintaining core message integrity. CEOs care about business impact, analysts need methodological rigor, and marketing managers need actionable implementation guidance. Each gets the same fundamental result tailored to their decision-making needs."
   },
-  "realWorldConnection": "Data science teams at companies like Spotify and Uber employ dedicated 'analytics translators' who specialize in converting technical analysis into executive strategy. Consulting firms like McKinsey build entire practices around translating quantitative insights into business transformation strategies."
+  "realWorldConnection": "Data science teams at companies like Spotify and Uber employ dedicated 'analytics translators' who specialize in converting technical analysis into executive strategy. Consulting firms like McKinsey build entire practices around translating quantitative insights into business transformation strategies.",
+  "hearTranscript": [
+    "Your capstone portfolio represents the culmination of your mathematical journey... a professional demonstration of how integrated mathematical thinking solves complex real-world challenges.",
+    "Project selection should showcase the breadth of your mathematical competence while addressing meaningful problems that demonstrate business relevance. Each project should integrate multiple mathematical domains to show synthesis capability.",
+    "Technical documentation requires explaining mathematical methodology clearly enough for peer review while highlighting the integration of different approaches. You're demonstrating not just technical competence but intellectual sophistication.",
+    "Code organization reflects mathematical thinking applied to software engineering. Clean, modular code with appropriate abstraction demonstrates that you understand both mathematical structure and implementation best practices.",
+    "Results presentation should balance technical rigor with accessibility, showing mathematical sophistication while communicating insights that enable decision-making by non-technical stakeholders.",
+    "Reflection narratives demonstrate your meta-cognitive awareness about the learning process... how mathematical concepts connect, where integration challenges arise, and how you've developed problem-solving frameworks that transcend specific techniques.",
+    "Career connection requires articulating how mathematical mastery enables professional contribution in your chosen field... whether that's data science, research, consulting, product development, or policy analysis.",
+    "The portfolio demonstrates transformation from student to practitioner... someone who can apply mathematical reasoning to create value in uncertain, complex environments."
+  ]
 }

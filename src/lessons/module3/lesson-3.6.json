@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "The percentage of variance explained is additive for orthogonal principal components. First component: 60%, second component: 25%, total: 60% + 25% = 85% of original variance is preserved."
   },
-  "realWorldConnection": "Netflix uses PCA to compress movie rating patterns and find user preference clusters. Geneticists use PCA to identify population structures from DNA data. Financial analysts use PCA to find the main risk factors driving stock market movements, reducing thousands of stocks to a few key components."
+  "realWorldConnection": "Netflix uses PCA to compress movie rating patterns and find user preference clusters. Geneticists use PCA to identify population structures from DNA data. Financial analysts use PCA to find the main risk factors driving stock market movements, reducing thousands of stocks to a few key components.",
+  "hearTranscript": [
+    "This is where eigenvector analysis reveals its true power... Principal Component Analysis uses eigenvalues and eigenvectors to find the most important patterns hiding in complex data.",
+    "Imagine you're analyzing customer behavior data with hundreds of variables: purchase history, browsing patterns, demographic information, seasonal preferences. Most of this information is redundant... many variables are correlated and move together.",
+    "PCA finds the principal components... the fundamental directions that capture the most variation in your data. These are the eigenvectors of the data's covariance matrix, ranked by their eigenvalues.",
+    "The first principal component points in the direction of maximum variation. The second component, perpendicular to the first, captures the most remaining variation. Together, just a few principal components often explain 80% or more of all the patterns in your data.",
+    "It's like discovering that a complex symphony with dozens of instruments can be understood through just a few fundamental harmonic themes.",
+    "Facial recognition systems use eigenfaces... the principal components of human face variation. Instead of storing millions of pixels for each person, they store just the coefficients for the most important eigenface directions.",
+    "Geneticists use PCA to trace human migration patterns by analyzing the principal components of DNA variation across populations. Climate scientists use it to identify the few fundamental modes like El Niño that drive most global weather patterns.",
+    "Principal component analysis transforms the curse of dimensionality into the blessing of hidden simplicity."
+  ]
 }

@@ -51,5 +51,12 @@
     "correctAnswer": 0,
     "explanation": "Determinant -3 means: |det| = 3 so areas scale by factor 3 (magnification), and the negative sign means orientation reverses (like a mirror flip). The transformation is invertible since det ≠ 0."
   },
-  "realWorldConnection": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations."
+  "realWorldConnection": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
+  "hearTranscript": [
+    "Every transformation has a signature number that tells its complete story... the determinant.",
+    "For a 2 by 2 matrix, it's beautifully simple: a times d minus b times c. That single number captures the transformation's essential personality.",
+    "The absolute value tells you the scaling factor... how much areas grow or shrink. A determinant of 3 means areas triple in size. A determinant of one-half means areas shrink by half.",
+    "The sign reveals even more: positive means the transformation preserves orientation, negative means it flips everything like a mirror. Zero determinant? That's the ultimate collapse... the transformation squashes everything into a lower dimension.",
+    "When your phone's camera automatically adjusts focus, when economists model how sector changes ripple through entire economies, when engineers calculate structural stability... they're all reading the determinant to understand transformation power."
+  ]
 }

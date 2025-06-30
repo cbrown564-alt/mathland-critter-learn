@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "BF₁₂ = 15 means the observed data is 15 times more likely under Model 1 than Model 2, providing strong evidence (BF > 10) favoring Model 1. This is about evidence strength, not absolute model probabilities."
   },
-  "realWorldConnection": "Particle physics uses Bayes factors to compare competing theories about fundamental particles from collision data. Genetics uses Bayes factors to compare different evolutionary models explaining DNA sequence variation. Astronomy uses Bayes factors to compare models of stellar formation and galactic structure."
+  "realWorldConnection": "Particle physics uses Bayes factors to compare competing theories about fundamental particles from collision data. Genetics uses Bayes factors to compare different evolutionary models explaining DNA sequence variation. Astronomy uses Bayes factors to compare models of stellar formation and galactic structure.",
+  "hearTranscript": [
+    "Real detective work involves comparing competing theories about what happened. Bayesian model comparison provides systematic methods for weighing different explanations against evidence.",
+    "Bayes factors compare the evidence support for different models. They answer the question: how much more likely is the evidence under model A compared to model B? Values greater than 1 favor model A... values less than 1 favor model B.",
+    "This goes beyond just fitting data well. Bayesian model comparison automatically penalizes complexity through the principle of Occam's razor. Simple models that explain the evidence get higher scores than complex models that overfit.",
+    "In medical diagnosis, model comparison helps choose between different disease explanations for a patient's symptoms. Each potential diagnosis is a model, and Bayes factors help rank which explanations best account for all observed symptoms and test results.",
+    "Scientific hypothesis testing uses Bayesian model comparison to evaluate competing theories. Climate models, drug mechanisms, economic theories... Bayes factors provide principled ways to weight evidence for different explanations.",
+    "The marginal likelihood... the denominator in Bayes' theorem... becomes crucial for model comparison. It measures how well each model predicts the observed data across all possible parameter values.",
+    "Unlike classical hypothesis testing that focuses on rejecting null hypotheses, Bayesian model comparison quantifies relative evidence strength for different explanations. This provides more nuanced, informative conclusions about which theories deserve attention."
+  ]
 }

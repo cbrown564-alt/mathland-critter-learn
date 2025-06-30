@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "P(2 < X ≤ 5) = P(X ≤ 5) - P(X ≤ 2) = F(5) - F(2). The CDF gives cumulative probabilities, so we subtract to get the probability in the interval."
   },
-  "realWorldConnection": "Financial analysts use CDFs to calculate portfolio Value-at-Risk at specific confidence levels. Medical labs use CDFs to determine if patient test results fall within normal ranges. Quality control engineers use CDFs to set manufacturing tolerance limits that capture desired percentages of production."
+  "realWorldConnection": "Financial analysts use CDFs to calculate portfolio Value-at-Risk at specific confidence levels. Medical labs use CDFs to determine if patient test results fall within normal ranges. Quality control engineers use CDFs to set manufacturing tolerance limits that capture desired percentages of production.",
+  "hearTranscript": [
+    "Sampling variability is the magical fact that different samples from the same population will give different results... and understanding this variation is crucial for making reliable inferences.",
+    "When I pull samples from my magic hat, each sample tells a slightly different story about what's inside the hat. Sample means vary around the true population mean. Sample proportions fluctuate around true population proportions. This isn't error... it's the natural mathematics of sampling.",
+    "Standard error measures this magical variability. It tells you how much sample statistics typically vary from sample to sample. Larger samples have smaller standard errors... more data reduces uncertainty about population parameters.",
+    "Polling demonstrates sampling variability perfectly. Different polls of the same election will give different results, even with identical methodology. The differences aren't mistakes... they're sampling variability in action.",
+    "Medical research uses sampling variability to establish treatment effectiveness. Drug trials compare treatment and control groups, accounting for natural sample-to-sample variation to determine if observed differences represent genuine effects.",
+    "Manufacturing quality control uses sampling variability to monitor production processes. Sample defect rates vary naturally, so control charts distinguish between normal sampling variation and genuine process problems.",
+    "Understanding sampling variability prevents overinterpretation of individual samples while enabling proper statistical inference from collected data."
+  ]
 }

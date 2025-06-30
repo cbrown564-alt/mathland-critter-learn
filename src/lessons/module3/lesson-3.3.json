@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "(A - 2I) = [[1,1],[0,0]]. Solving [[1,1],[0,0]][x,y]ᵀ = [0,0]ᵀ gives x + y = 0, so y = -x. But there's an error in my setup. Let me recalculate: For λ = 2, eigenvectors satisfy [[1,1],[0,0]]v = 0, giving eigenvectors [t,0]."
   },
-  "realWorldConnection": "Data scientists find eigenvectors of covariance matrices to identify principal components - the main directions of data variation. Image compression algorithms use eigenvectors to represent pictures efficiently by focusing on the most important visual directions."
+  "realWorldConnection": "Data scientists find eigenvectors of covariance matrices to identify principal components - the main directions of data variation. Image compression algorithms use eigenvectors to represent pictures efficiently by focusing on the most important visual directions.",
+  "hearTranscript": [
+    "Now for the real detective work... Once I know the eigenvalues, I need to find their eigenvector families.",
+    "Each eigenvalue has its own secret hideout called the null space. Here's how the investigation works: take your eigenvalue lambda, subtract it from the diagonal of your matrix to get A minus lambda I, then find all the vectors that this new matrix sends to zero.",
+    "This is null space analysis... systematic detective work to find every vector that belongs to each eigenvalue's family.",
+    "Some eigenvalues are loners with just one eigenvector direction. Others have large families with multiple linearly independent eigenvectors spanning entire subspaces. The dimension of each eigenspace tells you how many independent secret agents work for each eigenvalue boss.",
+    "Here's the beautiful part: eigenvectors can be scaled by any non-zero constant and they're still eigenvectors. It's like having a family where everyone shares the same directional DNA, but they can be different sizes.",
+    "When data scientists perform principal component analysis to find the most important patterns in massive datasets, when engineers identify the natural vibration modes of buildings and bridges... they're hunting through null spaces to find the eigenvector families that reveal hidden structure.",
+    "The null space hunting reveals each eigenvalue's complete family tree."
+  ]
 }

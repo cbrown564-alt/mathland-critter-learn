@@ -49,5 +49,17 @@
     "correctAnswer": 0,
     "explanation": "Mixed eigenvalue signs (λ₁ = 3 > 0, λ₂ = -1 < 0) indicate a saddle point. The function increases in one direction and decreases in another, making (2,1) neither a local maximum nor minimum."
   },
-  "realWorldConnection": "This project mirrors real data science workflows: analyzing loss function landscapes, computing gradients for optimization algorithms, and finding optimal parameters for machine learning models. The mathematical precision you've developed translates directly to careers in AI, engineering, quantitative finance, and scientific research."
+  "realWorldConnection": "This project mirrors real data science workflows: analyzing loss function landscapes, computing gradients for optimization algorithms, and finding optimal parameters for machine learning models. The mathematical precision you've developed translates directly to careers in AI, engineering, quantitative finance, and scientific research.",
+  "hearTranscript": [
+    "The ultimate multivariable calculus challenge... I'm designing a complete data science optimization system that uses every calculus concept we've mastered to solve real-world analytical problems.",
+    "Your mission: build a recommendation system that optimizes user engagement while respecting privacy constraints and computational limitations. This requires sophisticated multivariable analysis at every step.",
+    "Part A: Model user preferences as multivariable functions depending on content features, timing patterns, and social factors. Use partial derivatives to understand how each factor influences engagement independently.",
+    "Part B: Calculate gradients to identify directions for improving recommendation accuracy. Implement gradient-based optimization algorithms that systematically adjust model parameters to minimize prediction errors.",
+    "Part C: Apply constrained optimization to balance multiple objectives... maximize user satisfaction while minimizing computational costs and respecting privacy limitations. Use Lagrange multipliers to find optimal trade-offs.",
+    "Part D: Analyze the Jacobian matrix of your recommendation transformation to understand how input changes propagate through your model. This helps ensure stable, predictable system behavior.",
+    "Part E: Implement real-time optimization using directional derivatives to adapt recommendations based on immediate user feedback while staying within system constraints.",
+    "This project demonstrates how multivariable calculus provides the mathematical foundation for sophisticated data science applications. The same techniques power search engines, social media feeds, financial trading algorithms, and scientific modeling.",
+    "You're not just learning mathematics... you're developing the analytical precision that transforms complex, multivariable problems into systematic, optimal solutions.",
+    "Welcome to the ultimate multivariable calculus challenge - where every concept works together to solve real-world problems with mathematical precision!"
+  ]
 }

@@ -49,5 +49,15 @@
     "correctAnswer": 2,
     "explanation": "This is Binomial(100, 0.02) exactly. Since n=100 is large and p=0.02 is small with np=2, Poisson(2) provides an excellent approximation. Both approaches are mathematically valid, with Poisson being computationally simpler."
   },
-  "realWorldConnection": "Amazon uses Poisson distributions to model customer order arrivals for inventory planning. Clinical trials use Binomial distributions to analyze drug efficacy rates. Call centers use Poisson models to predict customer service demand. Quality control systems use Binomial distributions to monitor manufacturing defect rates."
+  "realWorldConnection": "Amazon uses Poisson distributions to model customer order arrivals for inventory planning. Clinical trials use Binomial distributions to analyze drug efficacy rates. Call centers use Poisson models to predict customer service demand. Quality control systems use Binomial distributions to monitor manufacturing defect rates.",
+  "hearTranscript": [
+    "Different types of uncertainty create their own magical probability patterns... these are the common distributions that appear everywhere in the real world.",
+    "The Bernoulli distribution is the simplest magic: success or failure, heads or tails, click or no click. Every yes-or-no situation follows this pattern.",
+    "Binomial distributions count successes in repeated trials. How many customers will purchase? How many emails will get opened? How many free throws will the player make? These questions create beautiful bell-shaped probability patterns.",
+    "Normal distributions are the most magical of all... they appear everywhere nature creates variation. Heights, weights, test scores, measurement errors... all tend toward the famous bell curve. This isn't coincidence... it's mathematical magic called the Central Limit Theorem.",
+    "Poisson distributions model rare events happening over time. Customer arrivals, equipment failures, natural disasters, website crashes... when events happen randomly but with consistent average rates, Poisson distributions predict their patterns perfectly.",
+    "Exponential distributions model waiting times between events. How long until the next customer? How long until equipment failure? How long until your next social media notification? These create graceful decay curves that help businesses plan for uncertainty.",
+    "Insurance companies use these distributions to set premiums. Each type of risk follows predictable probability patterns that enable accurate pricing.",
+    "Understanding common distributions gives you the mathematical vocabulary to recognize and model uncertainty in any domain."
+  ]
 }

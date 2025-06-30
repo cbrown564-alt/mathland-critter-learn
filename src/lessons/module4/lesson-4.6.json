@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "∇f = ⟨2x, 4y⟩, so ∇f(1,2) = ⟨2,8⟩. This vector points in the direction of steepest increase at (1,2) with magnitude ||∇f|| = √(4+64) = √68."
   },
-  "realWorldConnection": "Mountain rescue teams use terrain gradients to find optimal search paths. Machine learning algorithms follow gradients to train neural networks by minimizing error functions. Heat transfer engineers use temperature gradients to design efficient cooling systems. Weather forecasting uses pressure gradients to predict wind patterns."
+  "realWorldConnection": "Mountain rescue teams use terrain gradients to find optimal search paths. Machine learning algorithms follow gradients to train neural networks by minimizing error functions. Heat transfer engineers use temperature gradients to design efficient cooling systems. Weather forecasting uses pressure gradients to predict wind patterns.",
+  "hearTranscript": [
+    "The Jacobian matrix is like having a comprehensive dashboard that displays how every output changes with respect to every input... it's the complete picture of multivariable transformation.",
+    "When you have multiple functions depending on multiple variables, the Jacobian organizes all possible partial derivatives into a systematic matrix. Each entry tells you how one output responds to changes in one input, while the entire matrix captures the complete transformation behavior.",
+    "Economic modeling relies heavily on Jacobian analysis. Macroeconomic models track how variables like GDP, inflation, and unemployment respond to policy changes in interest rates, government spending, and taxation. The Jacobian matrix reveals which policy levers have the strongest effects on different economic outcomes.",
+    "Robotics uses Jacobians for precise movement control. When a robotic arm moves its joints, the Jacobian matrix relates joint angle changes to end-effector position changes. This enables smooth, coordinated movements where multiple joints work together to achieve precise positioning.",
+    "Computer graphics employ Jacobians for realistic animation. Character movement systems use Jacobian matrices to coordinate how individual bone rotations combine to create natural-looking motion. This prevents the mechanical, jerky movements that would result from independent joint control.",
+    "The determinant of the Jacobian matrix has special significance... it measures how much the transformation stretches or compresses local areas. When the determinant is zero, the transformation becomes singular, indicating potential problems or special geometric behavior.",
+    "Understanding Jacobians gives you the mathematical tools to analyze and control complex systems where multiple inputs affect multiple outputs simultaneously."
+  ]
 }

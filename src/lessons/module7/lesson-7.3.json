@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "The 95% confidence level refers to the long-run success rate of the interval procedure in capturing the true population parameter. We're 95% confident that this specific interval [168, 172] contains the unknown population mean height."
   },
-  "realWorldConnection": "Pharmaceutical companies report confidence intervals for drug efficacy to regulators for approval decisions. Public health agencies use confidence intervals to communicate disease prevalence estimates. Market research uses confidence intervals to guide business strategy decisions with quantified uncertainty about consumer behavior."
+  "realWorldConnection": "Pharmaceutical companies report confidence intervals for drug efficacy to regulators for approval decisions. Public health agencies use confidence intervals to communicate disease prevalence estimates. Market research uses confidence intervals to guide business strategy decisions with quantified uncertainty about consumer behavior.",
+  "hearTranscript": [
+    "The null and alternative hypothesis framework provides the logical architecture for principled scientific inquiry... a systematic method for evaluating evidence claims while protecting against wishful thinking.",
+    "The null hypothesis typically represents the status quo, the absence of effect, or the skeptical position. It serves as the default assumption that must be overcome by compelling evidence. The alternative hypothesis represents the claim we seek to establish through data.",
+    "This framework embodies intellectual humility. We don't prove our theories correct... we demonstrate that the evidence is inconsistent with the null hypothesis, lending support to our alternative explanation.",
+    "Drug approval exemplifies this sophisticated reasoning. Pharmaceutical companies must demonstrate that their treatments work better than placebo. The null hypothesis assumes no treatment effect, while the alternative proposes genuine therapeutic benefit. Regulatory agencies require overwhelming evidence against the null before approving new medications.",
+    "Educational research follows identical logic when evaluating new teaching methods. The null hypothesis assumes that innovative approaches perform no better than traditional methods. Only compelling evidence against this skeptical position supports implementing costly educational changes.",
+    "The beauty of this framework lies in its built-in conservatism. By requiring strong evidence to reject null hypotheses, we protect against hasty conclusions while still enabling progressive knowledge accumulation when evidence truly supports new claims.",
+    "This represents statistical reasoning at its most intellectually mature."
+  ]
 }

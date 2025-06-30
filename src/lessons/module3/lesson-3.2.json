@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "For matrix [[3,1],[0,2]], det(A-λI) = det([[3-λ,1],[0,2-λ]]) = (3-λ)(2-λ) - 0×1 = (3-λ)(2-λ). Setting equal to zero gives eigenvalues λ = 3 and λ = 2."
   },
-  "realWorldConnection": "Engineers solve characteristic equations to find resonant frequencies in structures - eigenvalues predict when buildings or bridges might vibrate dangerously. Quantum physicists use characteristic equations to find energy levels in atoms, where eigenvalues represent measurable energy states."
+  "realWorldConnection": "Engineers solve characteristic equations to find resonant frequencies in structures - eigenvalues predict when buildings or bridges might vibrate dangerously. Quantum physicists use characteristic equations to find energy levels in atoms, where eigenvalues represent measurable energy states.",
+  "hearTranscript": [
+    "Time for some mathematical detective work... Every matrix carries its eigenvalue secrets locked inside a special polynomial.",
+    "Here's how we crack the code: we start with the fundamental eigenvector equation... A times v equals lambda times v. Rearrange this cleverly, and you get A minus lambda times I, all multiplied by v, equals zero.",
+    "For this equation to have interesting solutions... non-trivial ones where v isn't just the zero vector... the matrix A minus lambda I must be singular. And singular matrices? They have determinant zero.",
+    "So we set the determinant of A minus lambda I equal to zero. This creates what we call the characteristic equation... a polynomial where lambda is the unknown we're hunting for.",
+    "For a 2 by 2 matrix, this becomes a quadratic equation. For 3 by 3, it's cubic. The roots of this polynomial? Those are our eigenvalues... all of them revealed at once.",
+    "It's like breaking a combination lock where each eigenvalue is a different combination that unlocks the matrix's transformation secrets. Some matrices have real eigenvalues that stretch or shrink... others have complex eigenvalues that indicate rotational behavior with scaling."
+  ]
 }

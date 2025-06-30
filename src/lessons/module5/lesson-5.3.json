@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "D = fₓₓfᵧᵧ - (fₓᵧ)² = (-4)(-2) - 1² = 8 - 1 = 7 > 0. Since D > 0 and fₓₓ = -4 < 0, this is a local maximum."
   },
-  "realWorldConnection": "Deep learning researchers analyze Hessian matrices to understand neural network loss landscapes and design better optimization algorithms. Aerospace engineers use second-order analysis to ensure aircraft designs have stable flight characteristics. Financial quants analyze Hessian matrices of portfolio risk functions to understand market stability."
+  "realWorldConnection": "Deep learning researchers analyze Hessian matrices to understand neural network loss landscapes and design better optimization algorithms. Aerospace engineers use second-order analysis to ensure aircraft designs have stable flight characteristics. Financial quants analyze Hessian matrices of portfolio risk functions to understand market stability.",
+  "hearTranscript": [
+    "The second derivative test is like having a reliable way to confirm whether you've reached a true peak, valley, or just a tricky mountain pass.",
+    "In single-variable optimization, the second derivative test is straightforward. Positive second derivative at a critical point means you're in a valley. Negative means you're on a peak. Zero means you need more investigation.",
+    "But multivariable optimization requires more sophisticated analysis. This is where the Hessian matrix becomes your navigation tool. The eigenvalues of the Hessian determine the nature of each critical point definitively.",
+    "All positive eigenvalues? You've found a local minimum... a mathematical valley where solutions can't get any better in any direction. All negative eigenvalues? That's a local maximum... a peak where every nearby point is worse.",
+    "Mixed eigenvalues create saddle points... fascinating mathematical formations that are optimal in some directions but terrible in others. These can trap optimization algorithms if you're not careful about your climbing strategy.",
+    "Autonomous vehicles use second derivative tests constantly. When planning routes, the algorithms need to verify that proposed paths truly minimize travel time while avoiding obstacles. False peaks in the optimization landscape could lead to suboptimal or unsafe routes.",
+    "The second derivative test transforms uncertainty into mathematical confidence about the quality of your solutions."
+  ]
 }

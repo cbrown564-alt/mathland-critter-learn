@@ -49,5 +49,16 @@
     "correctAnswer": 3,
     "explanation": "For large λ, Poisson(λ) ≈ Normal(λ, λ). Here: Poisson(5) ≈ Normal(5, 5). Since Normal uses standard deviation, this is Normal(μ=5, σ=√5). Both A and B are correct - A uses variance notation (σ²=5), B uses standard deviation notation (σ=√5)."
   },
-  "realWorldConnection": "This project mirrors real data science workflows: modeling user behavior with appropriate distributions, calculating expected outcomes for business planning, using limit theorems for approximations, and applying sampling theory for A/B testing. The probability mastery you've developed applies directly to careers in data science, actuarial science, quality engineering, and quantitative research."
+  "realWorldConnection": "This project mirrors real data science workflows: modeling user behavior with appropriate distributions, calculating expected outcomes for business planning, using limit theorems for approximations, and applying sampling theory for A/B testing. The probability mastery you've developed applies directly to careers in data science, actuarial science, quality engineering, and quantitative research.",
+  "hearTranscript": [
+    "The ultimate probability adventure... I'm designing a magical performance that demonstrates every probability concept we've mastered through one spectacular show!",
+    "Your mission: create a complete uncertainty analysis for a new business launch. You'll use probability mathematics to model customer behavior, predict sales, and optimize marketing strategies.",
+    "Part A: Define sample spaces and events for customer interactions. Model the complete range of possible outcomes from marketing campaigns, website visits, and purchase decisions. Use conditional probability to understand how different customer segments respond to various approaches.",
+    "Part B: Choose appropriate probability distributions for different business metrics. Model customer arrivals with Poisson distributions, purchase amounts with normal distributions, and conversion rates with binomial distributions. Calculate expected values and variances for revenue forecasting.",
+    "Part C: Apply the Central Limit Theorem to create confidence intervals for projected outcomes. Use sampling theory to determine how much market research data you need for reliable predictions.",
+    "Part D: Build probabilistic models that update predictions as new data arrives. Implement Bayesian approaches that combine prior business knowledge with observed customer behavior.",
+    "Part E: Design probability-based decision rules for marketing optimization. Use expected value calculations to choose between different campaign strategies, accounting for both potential gains and risks.",
+    "This project demonstrates how probability thinking transforms business uncertainty into systematic, mathematical analysis. The same approaches enable data-driven decision making in any domain where outcomes are uncertain but patterns exist.",
+    "You're not just learning mathematics... you're developing the probabilistic intuition that enables intelligent reasoning under uncertainty in our wonderfully unpredictable world!"
+  ]
 }

@@ -41,5 +41,13 @@
     "correctAnswer": 0,
     "explanation": "Dot product: [3,4] · [1,2] = (3)(1) + (4)(2) = 3 + 8 = 11. Since this is positive, the vectors point in generally the same direction - the hikers are heading roughly the same way!"
   },
-  "realWorldConnection": "Google uses dot products to measure how similar your search query is to web pages - higher dot products mean more relevant results. Spotify calculates dot products between your listening history and song characteristics to recommend music. Machine learning uses dot products billions of times to find patterns and make predictions."
+  "realWorldConnection": "Google uses dot products to measure how similar your search query is to web pages - higher dot products mean more relevant results. Spotify calculates dot products between your listening history and song characteristics to recommend music. Machine learning uses dot products billions of times to find patterns and make predictions.",
+  "hearTranscript": [
+    "Scalar multiplication is like having a magical amplifier for your adventures... you can make any journey longer or shorter while keeping the same direction.",
+    "When I multiply a vector by 2, I'm saying \"go twice as far in the same direction.\" Multiply by one-half? \"Go half the distance but stay on the same path.\" It's beautifully simple and incredibly powerful.",
+    "Here's what's fascinating: scalar multiplication can even reverse directions. Multiply by negative 1, and you're pointing exactly opposite to where you started. Multiply by negative 3, and you're going three times as far in the completely opposite direction.",
+    "Unit vectors are my favorite application of scalar multiplication. Take any vector, divide by its length, and you get a unit vector... a pure direction with magnitude exactly 1. It's like extracting the essence of direction from any movement.",
+    "Machine learning algorithms use scalar multiplication constantly. When training neural networks, they adjust vector weights by multiplying by small scalars... gradually tuning the model's behavior through thousands of tiny scalar adjustments.",
+    "Even in physics, scalar multiplication governs everything. Force vectors get multiplied by time to calculate momentum. Velocity vectors get multiplied by mass to determine kinetic energy."
+  ]
 }

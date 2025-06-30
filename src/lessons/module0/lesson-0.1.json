@@ -47,5 +47,14 @@
     "correctAnswer": 1,
     "explanation": "Following PEMDAS: First 2² = 4, then 4 × 4 = 16, finally 3 + 16 = 19."
   },
-  "realWorldConnection": "Order of operations appears everywhere in data science: from calculating statistical measures to programming algorithms. Machine learning models rely on precise mathematical calculations where order matters - a misplaced operation can completely change your model's predictions!"
+  "realWorldConnection": "Order of operations appears everywhere in data science: from calculating statistical measures to programming algorithms. Machine learning models rely on precise mathematical calculations where order matters - a misplaced operation can completely change your model's predictions!",
+  "hearTranscript": [
+    "Hey there! I'm Ollie, and I love building things step by step. Math is just like construction... you need to follow the right order, or everything falls apart!",
+    "Think of PEMDAS as my construction rulebook. When I build a dam, I can't just slap sticks together randomly... foundation first, walls second, roof last. Same with math: some operations are like foundation work, others are heavy construction, and some are finishing touches.",
+    "Parentheses always come first... like reading blueprints before building. Then exponents... that's the power tool phase where we handle the heavy lifting. Multiplication and division happen next... the main structural work. Finally, addition and subtraction... the finishing details that complete our project.",
+    "Without this order, mathematical expressions become as unstable as a poorly built dam. In Excel, the formula equals 2 plus 3 times 4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless.",
+    "When we combine like terms, it's like organizing similar materials in my workshop. You can't add 3 boards plus 5 nails... but you can add 3 boards plus 5 boards to get 8 boards. Same with algebra: 3x plus 5x equals 8x, but 3x plus 5y stays separate.",
+    "The distributive property is like using a template to cut multiple pieces... 2 times the quantity x plus 3 means 2x plus 6. One pattern, applied systematically.",
+    "Let's take this step by step, and build your mathematical confidence one solid foundation at a time!"
+  ]
 }

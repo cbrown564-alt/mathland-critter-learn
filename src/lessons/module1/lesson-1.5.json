@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Setting up equations: 5 = c₁(1) + c₂(3) and 7 = c₁(2) + c₂(1). Solving: c₁ = -2, c₂ = 3. Check: -2[1,2] + 3[3,1] = [-2,-4] + [9,3] = [7,7]. Wait, let me recalculate... Actually c₁ = -2, c₂ = 3 gives [7,-1], not [5,7]. The correct answer needs recalculation."
   },
-  "realWorldConnection": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance."
+  "realWorldConnection": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance.",
+  "hearTranscript": [
+    "Linear combinations are like being a master chef with vector ingredients... different amounts of each base vector create completely different result vectors.",
+    "Think of it as following multiple treasure map clues simultaneously. Take 2 parts of the \"east vector\" plus 3 parts of the \"north vector,\" and you end up with a unique destination that combines both influences proportionally.",
+    "The span of vectors is one of my favorite concepts. Given a set of vectors, their span is every possible destination you can reach using linear combinations. Two non-parallel vectors in a plane? Their span fills the entire plane. Three non-coplanar vectors in space? Their span fills all of 3D space.",
+    "Color mixing in computer graphics uses linear combinations perfectly. Every color is a linear combination of red, green, and blue vectors. Different coefficients create millions of possible colors... all from just three base vectors.",
+    "Financial portfolios are linear combinations too. Your investment might be 50% stocks plus 30% bonds plus 20% real estate... different coefficient combinations create different risk-return profiles.",
+    "Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance. Double the recipe? That's scalar multiplication. Adjust sweetness while keeping everything else proportional? That's optimizing linear combination coefficients.",
+    "The beautiful thing about linear combinations is that they preserve the linear structure... the result inherits properties from the base vectors in predictable, mathematical ways."
+  ]
 }

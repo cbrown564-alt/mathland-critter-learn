@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "The posterior mean is a precision-weighted average. Initially it's between the prior mean (100) and sample mean (105). As n increases, the data precision (n/σ²) grows, giving more weight to the sample mean, so the posterior approaches 105."
   },
-  "realWorldConnection": "Manufacturing uses Normal-Normal updating to monitor production line means while incorporating historical process knowledge. Weather forecasting combines prior climate models with current observations using Normal conjugacy. Laboratory testing blends prior instrument calibration with current measurements for improved accuracy."
+  "realWorldConnection": "Manufacturing uses Normal-Normal updating to monitor production line means while incorporating historical process knowledge. Weather forecasting combines prior climate models with current observations using Normal conjugacy. Laboratory testing blends prior instrument calibration with current measurements for improved accuracy.",
+  "hearTranscript": [
+    "The likelihood function is where evidence meets theory... it answers the crucial question: how probable is this evidence under different explanations?",
+    "Think like a detective analyzing fingerprints. The evidence is the print pattern found at the scene. The likelihood function tells you: if suspect A left this print, how probable is this pattern? If suspect B left it, how probable is the pattern? If it's from an unknown person, what's the probability?",
+    "Likelihood is not the probability that a theory is true given the evidence... that's a common mistake. Likelihood is the probability of observing this evidence assuming a particular theory is true.",
+    "In spam filtering, the likelihood function evaluates how probable certain word patterns are in spam emails versus legitimate emails. Words like \"urgent\" and \"limited time\" have high likelihood in spam, low likelihood in normal correspondence.",
+    "Medical testing provides clear likelihood examples. If someone has a disease, what's the probability they test positive? If they're healthy, what's the probability of a false positive? These are likelihood values that help interpret test results properly.",
+    "Strong evidence has likelihood functions that clearly favor one explanation over alternatives. Weak evidence has likelihood functions that are similar across different theories... it doesn't help discriminate between possibilities.",
+    "Understanding likelihood helps you evaluate evidence quality and avoid the trap of treating all evidence as equally informative."
+  ]
 }

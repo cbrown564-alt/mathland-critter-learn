@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "Order matters in composition. AB means: first apply A (rotate 45°), then apply B (scale by 2). BA means: first apply B (scale by 2), then apply A (rotate 45°). Different orders produce different final vectors."
   },
-  "realWorldConnection": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision."
+  "realWorldConnection": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
+  "hearTranscript": [
+    "The ultimate organizational superpower: chaining transformations and changing perspectives simultaneously.",
+    "Transformation composition is like running a systematic assembly line... each station adds its own transformation step. If transformation A goes first, then B, the combined effect is BA. Notice the reverse order... that's because we read transformations from right to left, just like function composition.",
+    "But here's where it gets even more powerful: change of basis. It's like having multiple organizational frameworks for viewing the same information. The same vector has different coordinates in different systems... like how the same location has different addresses depending on which coordinate system you're using.",
+    "Animation software chains transformation matrices to create complex character movements. First scale, then rotate, then translate... each step building on the previous systematic transformation.",
+    "Data scientists change basis to find optimal coordinate systems for machine learning algorithms. Engineers use composition to model multi-stage manufacturing processes with mathematical precision.",
+    "The beauty is in the systematic control... you can organize transformation sequences and switch perspectives to solve problems from the most efficient angle."
+  ]
 }

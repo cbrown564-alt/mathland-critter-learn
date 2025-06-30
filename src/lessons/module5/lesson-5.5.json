@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Gradient descent update: xₖ₊₁ = xₖ - α∇f(xₖ) = (4,2) - 0.1(8,8) = (4,2) - (0.8,0.8) = (3.2,1.2). We move opposite to the gradient direction."
   },
-  "realWorldConnection": "Google trains massive neural networks using gradient descent variants on billions of parameters. Tesla's autopilot systems use gradient descent for real-time path optimization. Netflix optimizes recommendation algorithms using gradient descent to minimize prediction errors across millions of users."
+  "realWorldConnection": "Google trains massive neural networks using gradient descent variants on billions of parameters. Tesla's autopilot systems use gradient descent for real-time path optimization. Netflix optimizes recommendation algorithms using gradient descent to minimize prediction errors across millions of users.",
+  "hearTranscript": [
+    "Gradient descent is like having a systematic mountaineering strategy... follow the steepest downhill direction step by step until you reach the valley floor.",
+    "The algorithm is beautifully simple: calculate the gradient at your current position, take a step in the negative gradient direction, then repeat until you converge to an optimal solution. Each step moves you closer to a better outcome.",
+    "But here's where the art meets the science... choosing the right step size is crucial. Too small, and you'll take forever to reach your destination. Too large, and you might overshoot and miss the optimal solution entirely.",
+    "Learning rate scheduling is like adjusting your hiking pace based on terrain difficulty. Start with larger steps when you're far from the optimum, then take smaller, more careful steps as you approach the best solution.",
+    "Every machine learning model uses gradient descent variants during training. When your smartphone camera automatically adjusts focus, when Netflix updates your recommendations, when GPS systems recalculate optimal routes... they're all following gradients toward better performance.",
+    "Momentum methods add sophisticated dynamics to gradient descent... like building up hiking momentum that helps carry you through small uphill sections toward globally better solutions.",
+    "The convergence properties depend heavily on your optimization landscape. Convex problems guarantee global convergence, while non-convex landscapes require more sophisticated exploration strategies.",
+    "Gradient descent transforms the abstract goal of \"finding the best solution\" into concrete, systematic steps that algorithms can execute automatically."
+  ]
 }

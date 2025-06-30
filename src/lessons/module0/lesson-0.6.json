@@ -49,5 +49,14 @@
   "seeContent": "Use an interactive graphing tool to plot different function types, observe how changing parameters affects the graph shape, and explore real-world data visualizations.",
   "hearContent": "Listen as I explain how reading the story that graphs tell is like understanding the data patterns that drive business decisions and scientific discoveries!",
   "hearAudioUrl": "/audio/0.6.mp3",
-  "doContent": "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns."
+  "doContent": "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns.",
+  "hearTranscript": [
+    "When I plot my outputs on a coordinate system, they create beautiful visual patterns... each function type has its own signature shape that tells a mathematical story.",
+    "Linear functions create straight lines with consistent slope... like y equals 2x plus 3. The slope of 2 means for every 1 unit I move right, I move 2 units up. The y-intercept of 3 tells me where the line crosses the vertical axis. These represent constant rates of change.",
+    "Quadratic functions create U-shaped parabolas... like y equals x squared. The vertex represents the minimum or maximum point, perfect for optimization problems. Business applications use parabolas to model profit maximization and cost minimization.",
+    "Exponential functions show rapid growth or decay... like y equals 2 to the x power. When the base is greater than 1, outputs grow explosively. When the base is between 0 and 1, outputs decay toward zero. These patterns model population growth, compound interest, and viral spread.",
+    "Each function family has its characteristic visual signature. Linear equals steady progress, quadratic equals acceleration and optimization, exponential equals explosive change.",
+    "In data visualization, recognizing these patterns helps you choose appropriate models for your data. Is your relationship linear, quadratic, exponential, or something more complex? The graph reveals the underlying mathematical structure.",
+    "Understanding function shapes enables you to match mathematical models to real-world phenomena systematically."
+  ]
 }

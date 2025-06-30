@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Zigzag patterns with large jumps indicate the learning rate is too large, causing the algorithm to overshoot the minimum and bounce back and forth. Reducing the learning rate will create smoother convergence."
   },
-  "realWorldConnection": "OpenAI trains GPT models using sophisticated learning rate schedules that start high and decay over time. Tesla's neural networks use adaptive learning rates for real-time decision making in autonomous driving. Google's recommendation systems continuously adjust learning rates based on user behavior patterns."
+  "realWorldConnection": "OpenAI trains GPT models using sophisticated learning rate schedules that start high and decay over time. Tesla's neural networks use adaptive learning rates for real-time decision making in autonomous driving. Google's recommendation systems continuously adjust learning rates based on user behavior patterns.",
+  "hearTranscript": [
+    "Advanced optimization techniques are like having professional mountaineering equipment and strategies for the most challenging mathematical terrains.",
+    "Stochastic gradient descent introduces controlled randomness into the climbing process. Instead of calculating gradients using all available data, you use random samples. This creates noisy but efficient optimization that can escape local optima and scale to massive datasets.",
+    "Adaptive learning rate methods like Adam automatically adjust step sizes based on gradient history. It's like having smart boots that adapt their grip based on terrain conditions... larger steps on gentle slopes, smaller steps on steep or uncertain ground.",
+    "Conjugate gradient methods use sophisticated mathematical insights to choose search directions that build on previous progress. Instead of always following the steepest descent, they consider the optimization history to make more intelligent directional choices.",
+    "Constrained optimization handles real-world limitations systematically. Lagrange multipliers help find optimal solutions while respecting budget constraints, safety requirements, or resource limitations. It's like finding the best camping spot while staying within designated wilderness areas.",
+    "Multi-objective optimization tackles problems with competing goals. Instead of finding a single optimal solution, these methods discover the Pareto frontier... the set of solutions where improving one objective requires sacrificing another.",
+    "Evolutionary algorithms and swarm intelligence methods mimic natural optimization processes. They explore multiple solution candidates simultaneously, sharing information and adapting strategies like biological populations evolving toward better fitness.",
+    "These advanced techniques enable optimization in scenarios that would be impossible with basic gradient descent methods."
+  ]
 }

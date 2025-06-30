@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "Along path y = mx, we get f(x,mx) = x(mx)/(x² + (mx)²) = mx²/(x²(1 + m²)) = m/(1 + m²). Since this depends on m, different paths give different limits, so the overall limit doesn't exist."
   },
-  "realWorldConnection": "Engineers analyze heat distribution where temperature must vary continuously across material boundaries. Computer graphics requires continuous surface functions for realistic rendering. Climate models need continuous atmospheric variable transitions across geographic boundaries."
+  "realWorldConnection": "Engineers analyze heat distribution where temperature must vary continuously across material boundaries. Computer graphics requires continuous surface functions for realistic rendering. Climate models need continuous atmospheric variable transitions across geographic boundaries.",
+  "hearTranscript": [
+    "Continuity in multiple dimensions is like studying the smoothness of mathematical landscapes... some surfaces are perfectly smooth, others have sudden cliffs or mysterious gaps.",
+    "When I analyze a function of two variables, I'm essentially studying a three-dimensional surface floating in mathematical space. Continuity means this surface has no sudden tears, holes, or jumps... you can walk across it without falling through unexpected gaps.",
+    "Think of elevation maps used by hikers. A continuous elevation function means you can trace any path without encountering impossible vertical cliffs. Discontinuities would represent mathematical waterfalls... places where elevation suddenly drops to different levels.",
+    "Engineering applications depend critically on surface continuity. When designing airplane wings, aerodynamicists need smooth airflow patterns. Discontinuities in the mathematical models could indicate dangerous turbulence zones that would affect flight safety.",
+    "Computer graphics use continuity analysis to create realistic 3D surfaces. Game engines ensure that virtual landscapes have proper continuity so characters can move smoothly without glitching through mathematical holes in the terrain.",
+    "The remarkable thing about continuity is that it bridges the gap between abstract mathematical theory and tangible real-world applications. Every smooth animation, every precisely manufactured surface, every weather prediction relies on our understanding of mathematical continuity."
+  ]
 }

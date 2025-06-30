@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "The spectral theorem states that symmetric matrices always have orthogonal eigenvectors, regardless of whether eigenvalues are distinct or repeated. This is a fundamental property of symmetric matrices."
   },
-  "realWorldConnection": "Principal Component Analysis (PCA) uses orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems where eigenvectors represent normal modes of oscillation with real frequencies."
+  "realWorldConnection": "Principal Component Analysis (PCA) uses orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems where eigenvectors represent normal modes of oscillation with real frequencies.",
+  "hearTranscript": [
+    "Symmetric matrices are mathematical royalty... They're so well-behaved that they always have real eigenvalues and perpendicular eigenvectors.",
+    "When a matrix equals its own transpose, something magical happens. All eigenvalues are guaranteed to be real numbers... no complex rotational behavior, just pure stretching and shrinking along perpendicular directions.",
+    "Even better, eigenvectors from different eigenvalues are automatically orthogonal... they meet at perfect right angles. And for repeated eigenvalues, we can always choose orthogonal eigenvectors within each eigenspace.",
+    "This enables orthogonal diagonalization: A equals Q times D times Q transpose, where Q contains orthonormal eigenvectors. Notice Q transpose instead of Q inverse... that's because orthogonal matrices have the beautiful property that their transpose equals their inverse.",
+    "Geometrically, this means every symmetric matrix represents a pure scaling transformation along perpendicular axes... no rotation, no shearing, just elegant stretching or shrinking in coordinate directions determined by the eigenvectors.",
+    "This is the mathematical foundation of principal component analysis. When data scientists find the main directions of variation in high-dimensional datasets, they're finding the eigenvectors of symmetric covariance matrices.",
+    "Symmetric matrices reveal their secrets willingly... they're the most honest transformations in all of linear algebra."
+  ]
 }

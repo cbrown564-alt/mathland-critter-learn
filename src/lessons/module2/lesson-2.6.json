@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "Rank equals the number of non-zero rows in row echelon form. Rank = 3 means exactly 3 rows contain linearly independent information; the 4th row became zero, indicating it was dependent on the others."
   },
-  "realWorldConnection": "Data scientists use row operations to clean datasets and find independent variables. Engineers use them to solve structural analysis problems. Economists use matrix rank to determine if economic models have enough independent equations to find unique solutions."
+  "realWorldConnection": "Data scientists use row operations to clean datasets and find independent variables. Engineers use them to solve structural analysis problems. Economists use matrix rank to determine if economic models have enough independent equations to find unique solutions.",
+  "hearTranscript": [
+    "Every messy filing system can be perfectly organized using just three simple operations... Think of me as the ultimate organizational consultant with the most systematic toolkit ever created.",
+    "Picture the most chaotic filing cabinet you've ever seen... papers everywhere, drawers in the wrong order, information scattered randomly. But I have three magical organizational tools that can transform any mess into perfect clarity.",
+    "Tool one: row swapping. I can exchange any two file drawers instantly. Tool two: row scaling. I can multiply every document in a drawer by the same factor. Tool three: row addition. I can take copies from one drawer and systematically add them to another drawer.",
+    "These three operations are reversible and preserve all the essential information... they just reveal it more clearly. When I'm finished, the matrix is in row echelon form... like a perfectly organized staircase where each row starts further to the right than the one above it.",
+    "But here's the profound discovery: the number of non-zero rows after my systematic organization reveals the matrix's true rank... its independent information content. A 4 by 5 matrix might look complex, but if only 3 rows survive my organizational process, then it truly contains just 3 pieces of independent information.",
+    "Data scientists use these techniques to clean massive datasets, finding which variables actually contain unique information versus redundant copies."
+  ]
 }

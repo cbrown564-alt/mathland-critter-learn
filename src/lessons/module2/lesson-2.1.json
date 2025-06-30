@@ -49,5 +49,11 @@
     "correctAnswer": 0,
     "explanation": "A[2,3] means row 2, column 3. A 3×4 matrix has 3 rows and 4 columns, so total elements = 3 × 4 = 12. Matrix addressing always follows [row, column] convention."
   },
-  "realWorldConnection": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems use matrices to represent road networks for navigation calculations."
+  "realWorldConnection": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems use matrices to represent road networks for navigation calculations.",
+  "hearTranscript": [
+    "Think of matrices as the ultimate filing system... Every piece of information has a precise address. Row 3, Column 2? I can find that data instantly!",
+    "You see, most people think matrices are just grids of numbers. But they're actually organizational masterpieces. Imagine the most perfectly arranged library ever built... every book has its exact location, and you never waste time searching.",
+    "That's what matrices do for mathematical information. The beauty is in the system: m by n means m rows by n columns. Always row first, then column... just like reading directions on a map.",
+    "When Netflix recommends your next binge-watch, when your GPS calculates the fastest route, when your bank processes millions of transactions... they're all using my systematic matrix organization to keep everything perfectly arranged and instantly accessible."
+  ]
 }

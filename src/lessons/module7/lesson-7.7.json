@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "α = 0.05 means 5% Type I error rate (false positives - test says disease when none exists). β = 0.20 means 20% Type II error rate (false negatives - test misses real disease). Power = 1 - β = 80% chance of detecting disease when present."
   },
-  "realWorldConnection": "FDA drug approval balances Type I errors (approving ineffective drugs) against Type II errors (rejecting effective drugs). Airport security balances false alarms (Type I) against missing real threats (Type II). COVID-19 testing balanced false positives causing unnecessary quarantine against false negatives spreading infection."
+  "realWorldConnection": "FDA drug approval balances Type I errors (approving ineffective drugs) against Type II errors (rejecting effective drugs). Airport security balances false alarms (Type I) against missing real threats (Type II). COVID-19 testing balanced false positives causing unnecessary quarantine against false negatives spreading infection.",
+  "hearTranscript": [
+    "Statistical power represents the probability of correctly rejecting false null hypotheses... the ability to detect genuine effects when they actually exist.",
+    "Power depends on four interconnected factors: effect size, sample size, significance level, and population variability. Larger effects are easier to detect. Larger samples provide more power. More lenient significance levels increase power. Less variable populations enable better discrimination.",
+    "Clinical trials illustrate power calculations beautifully. Before conducting expensive drug studies, researchers calculate required sample sizes to achieve adequate power for detecting clinically meaningful treatment effects. Underpowered studies waste resources by failing to detect beneficial treatments.",
+    "Educational research uses power analysis to design studies capable of detecting meaningful learning improvements. Without adequate power, potentially effective teaching methods might be dismissed due to insufficient evidence.",
+    "Post-hoc power analysis helps interpret non-significant results. When studies fail to reject null hypotheses, power calculations determine whether this likely reflects genuine absence of effects versus insufficient sample sizes to detect existing effects.",
+    "Business applications include A/B testing for website optimization. Companies calculate power requirements to ensure their tests can detect commercially meaningful conversion rate improvements. Underpowered tests might miss profitable changes.",
+    "The sophisticated use of power analysis transforms study design from guesswork into principled planning that balances resource constraints with inferential goals.",
+    "High power studies enable confident conclusions whether results are significant or non-significant."
+  ]
 }

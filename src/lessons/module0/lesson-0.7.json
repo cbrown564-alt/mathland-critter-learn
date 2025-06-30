@@ -47,5 +47,14 @@
   "seeContent": "Explore an interactive coordinate plane where you can plot points, measure distances, find midpoints, and visualize slope relationships between lines.",
   "hearContent": "Listen as I explain how measuring relationships in coordinate space is like calculating the efficiency of connections in my processing network!",
   "hearAudioUrl": "/audio/0.7.mp3",
-  "doContent": "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems."
+  "doContent": "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems.",
+  "hearTranscript": [
+    "Distance calculations processed successfully! Just like I need to measure connections between my processing stations, coordinate geometry helps us quantify spatial relationships in data.",
+    "The distance formula applies the Pythagorean theorem to coordinate pairs... distance equals the square root of (x2 minus x1) squared plus (y2 minus y1) squared. This calculates exact distances between any two points in my coordinate system.",
+    "For points (3, 4) and (6, 8), I compute: square root of (6 minus 3) squared plus (8 minus 4) squared... equals square root of 9 plus 16... equals square root of 25... equals 5 units. Precision confirmed!",
+    "The midpoint formula finds the exact center between two points... ((x1 plus x2) divided by 2, (y1 plus y2) divided by 2). It's like finding the optimal connection point between my processing stations.",
+    "Slope measures steepness and direction... rise over run, or (y2 minus y1) divided by (x2 minus x1). Positive slope means upward direction, negative slope means downward, zero slope means horizontal, and undefined slope means vertical.",
+    "In data science, these calculations are fundamental. Clustering algorithms measure distances between data points to group similar observations. Machine learning models calculate distances in high-dimensional feature spaces to make predictions.",
+    "Coordinate geometry provides the mathematical foundation for understanding spatial relationships in any dimensional space."
+  ]
 }

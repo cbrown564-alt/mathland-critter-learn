@@ -49,5 +49,12 @@
     "correctAnswer": 0,
     "explanation": "For matrix multiplication A×B, the number of columns in A must equal the number of rows in B. (3×2)(2×4) works: inner dimensions 2=2. (3×2)(3×4) fails: inner dimensions 2≠3."
   },
-  "realWorldConnection": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies."
+  "realWorldConnection": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
+  "hearTranscript": [
+    "This is where my organizational superpowers really shine... Matrix multiplication isn't just calculation, it's systematic transformation.",
+    "Think of it as the ultimate assembly line. Each row from the first matrix meets each column from the second matrix... they perform their dot product calculation, and out comes the result. Row meets column, dot product magic.",
+    "But here's what makes it profound: when computer graphics rotate that character in your video game, when neural networks process millions of data points during training, when GPS systems calculate optimal routes through traffic... they're all using matrix multiplication to transform information systematically.",
+    "The rule is simple but powerful: the inner dimensions must match. For matrices A and B, if A is m by n and B is n by p, then AB is m by p. The shared dimension n is where the magic happens... that's where the systematic transformation occurs.",
+    "Remember: order matters. AB is usually different from BA. Just like putting on socks then shoes versus shoes then socks... the sequence of transformations creates entirely different results."
+  ]
 }

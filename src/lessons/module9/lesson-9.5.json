@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "p = 0.03 < 0.05 indicates statistical significance - the improvement is likely real. However, statistical significance doesn't guarantee practical importance. The 3% improvement needs evaluation in business context to determine if it justifies model deployment costs."
   },
-  "realWorldConnection": "A/B testing platforms like Optimizely use rigorous statistical validation to ensure observed conversion rate improvements are significant before recommending changes. Clinical trial statisticians apply these methods to validate drug efficacy. Tech companies use statistical validation before deploying algorithm changes affecting millions of users."
+  "realWorldConnection": "A/B testing platforms like Optimizely use rigorous statistical validation to ensure observed conversion rate improvements are significant before recommending changes. Clinical trial statisticians apply these methods to validate drug efficacy. Tech companies use statistical validation before deploying algorithm changes affecting millions of users.",
+  "hearTranscript": [
+    "Professional model validation requires sophisticated integration of statistical inference, probability theory, and practical domain knowledge... moving beyond simple accuracy metrics to comprehensive uncertainty assessment.",
+    "Confidence intervals for predictions combine statistical sampling theory with model uncertainty to provide ranges that capture both aleatory and epistemic uncertainty. You're applying probability theory to quantify what you know and what you don't know.",
+    "Hypothesis testing enables rigorous comparison between models or assessment of whether improvements are statistically significant versus random variation. Sigmund's frameworks help distinguish genuine model improvements from chance fluctuations.",
+    "Bayesian approaches provide natural uncertainty quantification by treating model parameters as probability distributions rather than fixed values. This enables coherent updating as new data arrives and honest acknowledgment of parameter uncertainty.",
+    "Cross-validation provides empirical assessment of generalization performance, but requires careful statistical interpretation. Understanding sampling distributions of validation metrics helps distinguish between real performance differences and random variation.",
+    "Residual analysis applies statistical diagnostic techniques to assess whether model assumptions are violated. This requires understanding probability distributions, independence assumptions, and how violations affect inference reliability.",
+    "Business impact validation translates statistical performance into economic value. This requires understanding decision theory, cost-benefit analysis, and how statistical uncertainty propagates through business processes.",
+    "The goal is demonstrating that your mathematical models create reliable value under real-world uncertainty... the ultimate test of integrated mathematical competence."
+  ]
 }

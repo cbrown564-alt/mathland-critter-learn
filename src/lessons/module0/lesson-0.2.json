@@ -48,5 +48,13 @@
     "correctAnswer": 0,
     "explanation": "x² - 9 is a difference of squares pattern (a² - b²) where a = x and b = 3. It factors as (x - 3)(x + 3). This pattern appears frequently in data science optimization problems."
   },
-  "realWorldConnection": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset."
+  "realWorldConnection": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset.",
+  "hearTranscript": [
+    "Factoring and expanding are like having architectural blueprints that work both ways... you can go from detailed plans to the big picture, or break down complex structures into simpler components.",
+    "When I expand expressions, I'm like an architect taking a compact design and showing all the detailed elements. Take the expression 3 times the quantity x plus 4... when I expand it, I get 3x plus 12. I'm distributing that 3 to each part inside the parentheses, like applying the same construction technique to each section of a building.",
+    "Factoring works in reverse... it's like looking at a complex structure and recognizing the simple pattern that created it. If I see 6x plus 9, I can factor out the common factor of 3 to get 3 times the quantity 2x plus 3. I'm finding the shared blueprint that generates the whole expression.",
+    "Greatest common factors are like finding the standard tools that work throughout a project. When I see 12x squared plus 18x, both terms share 6x as a common factor, giving me 6x times the quantity 2x plus 3.",
+    "Factoring quadratics is like reverse-engineering a design. If I have x squared plus 5x plus 6, I need two numbers that multiply to 6 and add to 5... that's 2 and 3, giving me the factors x plus 2 and x plus 3.",
+    "These skills are essential for data science... when you're optimizing cost functions or simplifying statistical formulas, you're using the same systematic thinking that makes my construction projects successful."
+  ]
 }

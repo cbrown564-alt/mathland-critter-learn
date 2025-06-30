@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Missing data concentrated in specific demographics suggests MNAR (missing not at random), indicating systematic patterns that could bias results. This requires careful investigation of the missing data mechanism and appropriate handling strategies to avoid biased conclusions."
   },
-  "realWorldConnection": "Netflix data scientists spend significant effort understanding viewing data quality across different user segments and device types. Healthcare researchers carefully analyze missing data patterns in electronic health records. Financial firms employ sophisticated data quality teams using statistical methods to ensure trading algorithm reliability."
+  "realWorldConnection": "Netflix data scientists spend significant effort understanding viewing data quality across different user segments and device types. Healthcare researchers carefully analyze missing data patterns in electronic health records. Financial firms employ sophisticated data quality teams using statistical methods to ensure trading algorithm reliability.",
+  "hearTranscript": [
+    "Professional data science requires systematic workflow design that integrates mathematical techniques with practical problem-solving... this is where mathematical knowledge becomes actionable intelligence.",
+    "Every successful project begins with problem formulation that translates business questions into mathematical frameworks. You must identify which aspects require vector analysis, which need statistical inference, which demand optimization, and how these components connect systematically.",
+    "Data acquisition and preprocessing often require linear algebra for dimensionality management, statistical thinking for sampling design, and optimization for feature engineering. The mathematical foundation determines the quality of everything that follows.",
+    "Exploratory analysis combines Pippa's probability intuition with Eileen's pattern detection and Vera's geometric thinking. You're not just making charts... you're applying mathematical reasoning to understand data structure and identify modeling opportunities.",
+    "Model development synthesizes everything: calculus-based optimization for parameter estimation, linear algebra for computational efficiency, probability theory for uncertainty quantification, and statistical inference for validation.",
+    "Results interpretation requires Sigmund's statistical sophistication for significance assessment, Bayes' reasoning for updating beliefs based on evidence, and professional communication that translates mathematical insights into business recommendations.",
+    "The workflow demonstrates that mathematical mastery isn't about individual techniques... it's about orchestrating diverse mathematical approaches to create solutions that are robust, interpretable, and actionable."
+  ]
 }

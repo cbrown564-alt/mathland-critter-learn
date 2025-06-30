@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Using product rule: ∂f/∂x = [∂/∂x(e^(xy))] · sin(x²y) + e^(xy) · [∂/∂x(sin(x²y))] = ye^(xy) sin(x²y) + e^(xy) · cos(x²y) · 2xy = ye^(xy) sin(x²y) + 2xye^(xy) cos(x²y)."
   },
-  "realWorldConnection": "Engineers compute complex partial derivatives for structural stress analysis using product and chain rules. Financial quantitative analysts use advanced partial derivative calculations for risk modeling. Climate scientists apply these computational techniques to atmospheric and oceanic modeling equations."
+  "realWorldConnection": "Engineers compute complex partial derivatives for structural stress analysis using product and chain rules. Financial quantitative analysts use advanced partial derivative calculations for risk modeling. Climate scientists apply these computational techniques to atmospheric and oceanic modeling equations.",
+  "hearTranscript": [
+    "Directional derivatives are like having a mathematical speedometer that measures how fast things change along any path you choose... not just the steepest ones.",
+    "While the gradient tells you the direction of maximum change, directional derivatives let you ask more specific questions: if I walk northeast from this point, how fast will the temperature increase? If I move diagonally across this economic landscape, how quickly will costs change?",
+    "This flexibility is crucial for practical optimization. Sometimes you can't move in the steepest direction because of constraints. A hiker might want to climb steeply but needs to follow an existing trail. A company might want to maximize profit but faces regulatory restrictions on certain variables.",
+    "Financial portfolio management uses directional derivatives to understand risk along specific investment strategies. Instead of asking how returns change with respect to individual stocks, analysts calculate how portfolio performance changes along planned allocation directions.",
+    "Autonomous vehicles use directional derivatives for path planning. Self-driving cars calculate how safety metrics change along proposed trajectories, helping them choose routes that minimize collision risk while maintaining reasonable speed.",
+    "The mathematical beauty is that directional derivatives equal the dot product of the gradient with the unit direction vector. This elegant formula connects vector operations with calculus, showing how linear algebra and calculus work together seamlessly.",
+    "Understanding directional derivatives gives you precise control over how you measure and navigate change in complex multivariable environments."
+  ]
 }

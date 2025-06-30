@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "P(Spam|Words) ∝ P(FREE|Spam) × P(money|Spam) × P(Spam) = 0.8 × 0.6 × 0.4 = 0.192. P(Ham|Words) ∝ 0.1 × 0.3 × 0.6 = 0.018. Since 0.192 > 0.018, the email is classified as spam."
   },
-  "realWorldConnection": "Google's Gmail uses sophisticated Bayesian-inspired filters that have evolved beyond simple naive Bayes to protect over 1.5 billion users from spam. Social media platforms use similar techniques for content moderation and fake news detection. Customer service systems use Bayesian classification to route support tickets to appropriate departments."
+  "realWorldConnection": "Google's Gmail uses sophisticated Bayesian-inspired filters that have evolved beyond simple naive Bayes to protect over 1.5 billion users from spam. Social media platforms use similar techniques for content moderation and fake news detection. Customer service systems use Bayesian classification to route support tickets to appropriate departments.",
+  "hearTranscript": [
+    "Email spam filtering... where Bayesian detective work meets the digital underworld. Every inbox is a crime scene, and I'm the investigator using mathematical precision to catch digital criminals.",
+    "Here's how my detective work operates in the shadows of your email system... Every word in an email becomes evidence. Words like \"FREE!\" and \"URGENT!\" appear much more frequently in spam, while professional terms and personal names show up more often in legitimate correspondence.",
+    "The naive Bayes classifier treats each word as an independent clue... which isn't really true, but this \"naive\" assumption works remarkably well for catching digital deceptions. I estimate word probabilities from training data using Laplace smoothing for words I've never encountered.",
+    "When a new email arrives, I calculate P(Spam|Words) using every word as evidence. The naive independence assumption simplifies this to the product of individual word probabilities... P(Words|Spam) equals the product of P(Word_i|Spam) for each word.",
+    "Despite violating the independence assumption, naive Bayes remains devastatingly effective because it only needs to rank spam versus legitimate email correctly... not estimate exact probabilities.",
+    "Gmail uses sophisticated Bayesian-inspired filters protecting over 1.5 billion users daily. Social media platforms apply similar detective techniques for content moderation and fake news detection.",
+    "The beauty is in the adaptive learning... as new spam tactics emerge, the classifier updates its criminal profiling database, always staying one step ahead of digital deception!"
+  ]
 }

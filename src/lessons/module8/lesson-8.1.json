@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "Bayesian approach combines prior knowledge (1% base rate) with test evidence (95% accuracy) using Bayes' theorem. The posterior probability will be higher than 1% but much lower than 95% due to the low prior probability of disease."
   },
-  "realWorldConnection": "Netflix recommendation systems use Bayesian approaches to update user preference models with each viewing choice. Email spam filters learn using Bayesian methods that update word probability associations. Medical AI systems combine symptom likelihoods with disease prevalence priors for diagnosis assistance."
+  "realWorldConnection": "Netflix recommendation systems use Bayesian approaches to update user preference models with each viewing choice. Email spam filters learn using Bayesian methods that update word probability associations. Medical AI systems combine symptom likelihoods with disease prevalence priors for diagnosis assistance.",
+  "hearTranscript": [
+    "Hello there, fellow investigators of uncertainty. I'm Bayes the Fox, and I approach every statistical mystery with cunning, skeptical precision.",
+    "Most people think statistics is about finding fixed answers from data, like solving a simple puzzle. But here's what separates the seasoned detectives from the amateurs... Bayesian inference is the art of evolving evidence.",
+    "I start every case with what we call a \"prior\"... my initial hunch based on experience, context, and what I know about similar cases. Then I gather evidence... the \"likelihood\" that tells me how probable this evidence would be under different theories.",
+    "The beautiful thing about Bayesian reasoning? It's systematic belief updating. Every new piece of evidence changes my conclusions in precisely calculated ways. No gut feelings, no jumping to conclusions... just methodical probability adjustment.",
+    "When forensic scientists solve cold cases by combining new DNA evidence with old witness testimony, when fraud detection systems catch sophisticated financial crimes, when cybersecurity experts identify threats by updating threat models... they're all using my detective methods.",
+    "The key insight is this: we never start with a blank slate. Every investigation begins with prior knowledge, and every piece of evidence systematically updates our beliefs about what really happened.",
+    "That's the difference between classical statistics and Bayesian thinking... I treat uncertainty as information to be managed, not eliminated."
+  ]
 }

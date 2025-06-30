@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "When 3 components out of 50 explain 85% of variance, this indicates strong underlying structure. Most meaningful data variation is captured by just 3 principal directions, suggesting the high-dimensional data lies approximately on a 3-dimensional manifold."
   },
-  "realWorldConnection": "Netflix uses PCA to reduce the dimensionality of user-movie preference matrices for recommendation systems. Spotify applies dimensionality reduction to audio features for music recommendation. Medical researchers use PCA on genetic data to identify population structure and disease associations from genome-wide studies."
+  "realWorldConnection": "Netflix uses PCA to reduce the dimensionality of user-movie preference matrices for recommendation systems. Spotify applies dimensionality reduction to audio features for music recommendation. Medical researchers use PCA on genetic data to identify population structure and disease associations from genome-wide studies.",
+  "hearTranscript": [
+    "Data preprocessing represents the first major integration challenge... applying mathematical principles to transform raw information into analysis-ready datasets that enable sophisticated modeling.",
+    "Missing data handling requires probability thinking about mechanisms that create gaps, statistical reasoning about imputation strategies, and matrix algebra for computational implementation. You're not just filling holes... you're preserving the mathematical structure that enables reliable inference.",
+    "Feature scaling and normalization apply vector operations and statistical standardization to ensure that different measurements contribute appropriately to distance calculations and optimization algorithms. Poor preprocessing can make sophisticated models fail completely.",
+    "Dimensionality reduction synthesizes linear algebra, statistics, and optimization. Principal component analysis uses eigenvalue decomposition to find directions of maximum variation. Feature selection applies statistical testing to identify relevant predictors while controlling for multiple comparisons.",
+    "Categorical encoding requires probability understanding for handling rare categories, linear algebra knowledge for one-hot encoding implications, and optimization awareness for computational efficiency.",
+    "Data validation combines statistical process control with domain knowledge to identify outliers, assess data quality, and ensure that preprocessing transformations preserve information integrity.",
+    "Each preprocessing decision reflects mathematical understanding applied to practical constraints... demonstrating that data preparation is applied mathematics, not just technical manipulation.",
+    "The quality of your mathematical foundation determines the ceiling for everything that follows."
+  ]
 }

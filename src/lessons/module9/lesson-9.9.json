@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Good peer feedback deserves investigation. Model uncertainty beyond parameter estimation uncertainty is a valid concern that might require bootstrap methods, Bayesian approaches, or ensemble techniques for more honest uncertainty quantification."
   },
-  "realWorldConnection": "Netflix data science teams conduct extensive peer review before algorithm changes affect user experience. Financial firms require multiple analyst review before trading algorithm deployment. Your ability to participate effectively in peer review processes directly impacts your professional success in analytical roles."
+  "realWorldConnection": "Netflix data science teams conduct extensive peer review before algorithm changes affect user experience. Financial firms require multiple analyst review before trading algorithm deployment. Your ability to participate effectively in peer review processes directly impacts your professional success in analytical roles.",
+  "hearTranscript": [
+    "As you complete your mathematical journey, take time to reflect on the profound intellectual transformation you've experienced... the development of quantitative reasoning capabilities that will serve you throughout your professional life.",
+    "Mathematical maturity means recognizing when different approaches are appropriate, understanding how techniques complement each other, and developing intuition about which mathematical frameworks best address specific problem types.",
+    "Integration thinking enables you to see connections across domains... recognizing that optimization problems often require statistical validation, that linear algebra enables efficient probability calculations, that calculus provides the foundation for machine learning algorithms.",
+    "Problem-solving confidence comes from having a comprehensive toolkit and the judgment to apply appropriate techniques systematically. You've developed the intellectual courage to tackle complex challenges using rigorous quantitative reasoning.",
+    "Professional identity formation involves recognizing that mathematical competence creates opportunities to contribute meaningfully to important challenges... whether in technology, science, business, policy, or social impact.",
+    "Lifelong learning orientation acknowledges that mathematical knowledge continues evolving... new techniques, computational capabilities, and application domains will require continued intellectual growth.",
+    "The characters who guided your journey represent more than mathematical concepts... they embody different ways of thinking that you can apply creatively to whatever challenges capture your imagination and passion.",
+    "Your mathematical education has prepared you to be a thoughtful, capable practitioner who can create value through rigorous quantitative analysis."
+  ]
 }

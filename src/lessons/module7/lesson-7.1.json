@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "Stating '65% of the sample supports the candidate' is descriptive. Inference would make probability statements like 'we're 95% confident the population support is between 55-75%' using sampling distribution theory."
   },
-  "realWorldConnection": "Pharmaceutical companies use statistical inference to determine if new drugs are effective based on limited clinical trial data. Netflix uses inference to understand user preferences from viewing samples. Climate scientists use inference to make global conclusions from weather station data across the world."
+  "realWorldConnection": "Pharmaceutical companies use statistical inference to determine if new drugs are effective based on limited clinical trial data. Netflix uses inference to understand user preferences from viewing samples. Climate scientists use inference to make global conclusions from weather station data across the world.",
+  "hearTranscript": [
+    "Hello there, fellow seekers of statistical truth. I am Sigmund, and I specialize in distinguishing the truly significant from the merely coincidental.",
+    "Most people think statistics is just about calculating averages and making charts from data. But here's what they don't realize... statistical inference is the elegant art of distinguishing genuine signals from random noise, enabling us to make principled decisions about the world based on limited but carefully analyzed evidence.",
+    "The sampling distribution is the cornerstone of this elegant edifice. When we repeatedly sample from the same population, each sample yields a different statistic... different means, different proportions, different estimates. These statistics form their own probability distribution, revealing the inherent uncertainty in our inference process.",
+    "Standard error quantifies this uncertainty with mathematical precision. It measures how much sample statistics typically vary from the true population parameter. Larger samples yield smaller standard errors... more data reduces uncertainty about population characteristics.",
+    "Clinical trials demonstrate this principle beautifully. When pharmaceutical companies test new medications, they recognize that different patient groups will show different response rates, even for identical treatments. The sampling distribution captures this natural variation, while standard error quantifies the precision of their conclusions.",
+    "This mathematical framework transforms the question from \"what did this particular sample show?\" to the more sophisticated inquiry: \"what can we reliably conclude about the population, given the inherent uncertainty in any finite sample?\""
+  ]
 }

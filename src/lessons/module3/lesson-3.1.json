@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "If [3,6] is an eigenvector with eigenvalue 2, then A[3,6] = 2[3,6] = [6,12]. The vector maintains its direction but gets scaled by the eigenvalue factor of 2."
   },
-  "realWorldConnection": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face data), Google's PageRank algorithm finds the principal eigenvector of web link matrices, and structural engineers use eigenvectors to identify building vibration modes."
+  "realWorldConnection": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face data), Google's PageRank algorithm finds the principal eigenvector of web link matrices, and structural engineers use eigenvectors to identify building vibration modes.",
+  "hearTranscript": [
+    "Every matrix has secrets... and I'm here to help you uncover them.",
+    "Picture this: you transform hundreds of vectors with a matrix, and most of them get twisted, rotated, completely scrambled. But then you discover something extraordinary... certain vectors are absolutely stubborn. No matter how hard the matrix tries to transform them, they refuse to change direction.",
+    "These aren't random vectors. These are eigenvectors... the mathematical equivalent of witnesses who can't be intimidated into changing their story.",
+    "When a matrix transforms an eigenvector, something beautiful happens. The vector keeps pointing in exactly the same direction, but it might get longer or shorter. That scaling factor? That's the eigenvalue... the vector's personal transformation signature.",
+    "Think of eigenvalues and eigenvectors as the matrix's true personality revealed. Some matrices love to stretch things in certain directions, others prefer to shrink, and some even flip vectors to point the opposite way.",
+    "When your phone recognizes your face instantly, when Netflix somehow knows exactly what you want to watch next, when Google delivers the perfect search result... they're all using eigenvector analysis to find the hidden patterns that matter most."
+  ]
 }

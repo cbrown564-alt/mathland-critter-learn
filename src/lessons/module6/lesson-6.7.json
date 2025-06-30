@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "By CLT, X̄ ~ N(μ, σ²/n) = N(50, 20²/100) = N(50, 4). The standard error is σ/√n = 20/√100 = 20/10 = 2."
   },
-  "realWorldConnection": "Gallup polls use CLT to estimate election outcomes from samples of ~1,000 people with known margins of error. Netflix uses CLT to analyze user rating patterns and recommend content. Amazon uses CLT in quality control to monitor shipping times and customer satisfaction from sample data."
+  "realWorldConnection": "Gallup polls use CLT to estimate election outcomes from samples of ~1,000 people with known margins of error. Netflix uses CLT to analyze user rating patterns and recommend content. Amazon uses CLT in quality control to monitor shipping times and customer satisfaction from sample data.",
+  "hearTranscript": [
+    "Probability density functions and cumulative distribution functions are like having two different magical lenses for viewing the same uncertainty... each reveals different insights.",
+    "The PDF shows probability density at each value... like a probability landscape with hills and valleys. For discrete distributions, these are probability masses at specific points. For continuous distributions, these are smooth curves showing relative likelihood across ranges.",
+    "The CDF shows cumulative probability... the magical running total of all probability up to any given value. It always starts at zero and climbs to one, creating smooth S-shaped curves that capture the complete probability story.",
+    "Think of exam scores: the PDF shows how many students got each score, creating the familiar bell curve. The CDF shows what percentage of students scored below any given value... perfect for calculating percentiles and rankings.",
+    "Medical research uses both views constantly. PDFs show the distribution of treatment effects across patients. CDFs show what percentage of patients will respond better than any threshold level.",
+    "Financial risk management relies on CDFs to calculate value-at-risk... the probability of losses exceeding specific amounts. Insurance companies use CDFs to determine premiums based on loss probabilities.",
+    "Understanding both PDF and CDF perspectives gives you complete mathematical vision for analyzing any probability distribution."
+  ]
 }

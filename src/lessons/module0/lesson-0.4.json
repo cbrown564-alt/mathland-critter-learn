@@ -48,5 +48,14 @@
   "seeContent": "Visualize inequality solutions on interactive number lines, and see how absolute value creates distance relationships on the coordinate plane.",
   "hearContent": "Listen as I explain how setting boundaries and ranges for my dam is just like defining inequality constraints - we need safe operating zones for everything to work properly!",
   "hearAudioUrl": "/audio/0.4.mp3",
-  "doContent": "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts."
+  "doContent": "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts.",
+  "hearTranscript": [
+    "Inequalities and absolute values help us understand ranges, constraints, and real-world limitations... essential tools for data science applications where exact answers are less important than understanding boundaries.",
+    "Linear inequalities work like equations, with one crucial difference... when you multiply or divide by a negative number, you flip the inequality sign. It's like changing the direction of a construction project... if I'm building downward instead of upward, all my directional references reverse.",
+    "If I have negative 2x plus 6 is greater than 10, I subtract 6 from both sides to get negative 2x greater than 4. Then I divide by negative 2, flipping the inequality to get x less than negative 2.",
+    "Compound inequalities describe ranges. When I write negative 3 less than x less than or equal to 5, I'm describing all values between negative 3 and 5, including 5 but not negative 3. It's like specifying the safe operating range for construction equipment.",
+    "Absolute values measure distance from zero, regardless of direction. The absolute value of negative 7 equals 7, just like the absolute value of positive 7 equals 7. When solving absolute value equations like the absolute value of x minus 3 equals 5, I consider both cases... x minus 3 equals 5 OR x minus 3 equals negative 5, giving me x equals 8 or x equals negative 2.",
+    "In manufacturing, tolerances use inequality thinking... a part might need to be 10 millimeters plus or minus 0.1 millimeters. In data science, confidence intervals and error bounds use the same mathematical reasoning.",
+    "These concepts help you think about uncertainty, constraints, and acceptable ranges... fundamental skills for real-world problem solving."
+  ]
 }

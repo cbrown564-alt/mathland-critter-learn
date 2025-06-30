@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "∇f = ⟨2x+2, -2y⟩ = ⟨0,0⟩ gives critical point (-1,0). Second partials: fₓₓ = 2, fᵧᵧ = -2, fₓᵧ = 0. Discriminant D = (2)(-2) - 0² = -4 < 0, so (-1,0) is a saddle point."
   },
-  "realWorldConnection": "Netflix optimizes recommendation algorithms by minimizing prediction errors using gradient descent. Tesla optimizes battery placement to minimize weight while maximizing range. Investment firms optimize portfolios to maximize returns while minimizing risk using multivariable calculus techniques."
+  "realWorldConnection": "Netflix optimizes recommendation algorithms by minimizing prediction errors using gradient descent. Tesla optimizes battery placement to minimize weight while maximizing range. Investment firms optimize portfolios to maximize returns while minimizing risk using multivariable calculus techniques.",
+  "hearTranscript": [
+    "Constrained optimization is like solving puzzles where you want to find the best possible solution while respecting important limitations... it's mathematics meeting real-world practicality.",
+    "Lagrange multipliers provide an elegant method for handling constraints. Instead of struggling with complicated substitutions, you introduce multiplier variables that systematically incorporate constraint information into the optimization process.",
+    "Business applications are everywhere. Companies want to maximize profits while staying within budget constraints, regulatory requirements, and resource limitations. Marketing departments optimize advertising spend across different channels while respecting total budget constraints.",
+    "Engineering design frequently involves constrained optimization. Structural engineers design buildings that minimize material costs while satisfying safety requirements, earthquake resistance standards, and architectural specifications. Each constraint adds complexity but also ensures practical feasibility.",
+    "Environmental management uses constrained optimization for sustainability planning. Resource allocation models balance economic development with environmental protection, finding solutions that maximize economic benefit while keeping pollution within acceptable limits.",
+    "The geometric interpretation is beautiful... you're finding the highest point on a multivariable surface while staying on the path defined by your constraints. Lagrange multipliers help identify where the constraint curve is tangent to level curves of your objective function.",
+    "This mathematical framework transforms complex trade-off decisions into systematic, solvable problems with optimal solutions that respect real-world limitations."
+  ]
 }

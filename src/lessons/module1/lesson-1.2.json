@@ -49,5 +49,13 @@
     "correctAnswer": 0,
     "explanation": "Vector addition: [3,2] + [1,4] = [3+1, 2+4] = [4,6]. The commutative property means [3,2] + [1,4] = [1,4] + [3,2] - same final destination regardless of order!"
   },
-  "realWorldConnection": "Netflix combines multiple preference vectors to recommend movies - your comedy preference + recent viewing + time-of-day patterns. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns."
+  "realWorldConnection": "Netflix combines multiple preference vectors to recommend movies - your comedy preference + recent viewing + time-of-day patterns. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns.",
+  "hearTranscript": [
+    "Adding vectors is like following a treasure map with multiple clues... each step builds on the previous one to get you to your final destination.",
+    "Picture this: you walk 3 kilometers east, then 4 kilometers north. Where do you end up? That's vector addition in action! The beautiful thing is, it doesn't matter which order you follow the directions... east then north gives you the same final position as north then east.",
+    "I love the parallelogram rule for vector addition. Place the vectors tip-to-tail like a walking path, and the sum is the direct route from start to finish. It's like discovering the shortcut that connects your entire journey.",
+    "In computer graphics, every smooth animation uses vector addition. When a character walks across the screen while the camera pans, that's adding movement vectors plus camera vectors to create the final motion you see.",
+    "GPS systems add velocity vectors constantly. Your car's velocity plus wind resistance plus road incline... all these vectors combine to predict exactly where you'll be and how long it will take to reach your destination.",
+    "Vector addition follows the same rules as regular addition... it's commutative and associative, making complex multi-step movements predictable and reliable."
+  ]
 }

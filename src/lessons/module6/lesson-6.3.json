@@ -49,5 +49,15 @@
     "correctAnswer": 3,
     "explanation": "P(X ≤ 2) includes X=1 and X=2, so P(X ≤ 2) = 0.3 + 0.5 = 0.8. Alternatively, P(X ≤ 2) = 1 - P(X > 2) = 1 - P(X=3) = 1 - 0.2 = 0.8. Both methods give 0.8."
   },
-  "realWorldConnection": "Netflix models user ratings as discrete random variables to predict preferences. Uber models ride request times as continuous random variables for driver allocation. Amazon models package delivery times using continuous distributions for logistics planning. Weather services model precipitation amounts as continuous random variables."
+  "realWorldConnection": "Netflix models user ratings as discrete random variables to predict preferences. Uber models ride request times as continuous random variables for driver allocation. Amazon models package delivery times using continuous distributions for logistics planning. Weather services model precipitation amounts as continuous random variables.",
+  "hearTranscript": [
+    "Random variables are like magical transformers that turn chaotic, uncertain situations into clean, numerical outcomes we can analyze mathematically.",
+    "Think of a random variable as a mathematical function that assigns numbers to random outcomes. When I roll dice, the random variable might be \"sum of both dice.\" When tracking website visitors, the random variable might be \"number of clicks per hour.\"",
+    "Discrete random variables count things: number of customers, number of defective products, number of email clicks. These create neat, separated values like one, two, three, four...",
+    "Continuous random variables measure things: height, weight, temperature, time between events. These flow smoothly across ranges, taking any value within specified intervals.",
+    "The beautiful thing about random variables is that they let us apply mathematical analysis to uncertain situations. Instead of just saying \"customers arrive randomly,\" we can model arrival patterns, calculate expected values, and predict busy periods.",
+    "Quality control uses random variables to monitor manufacturing processes. Instead of inspecting every product, companies sample randomly and use statistical analysis to ensure quality standards.",
+    "Netflix uses random variables to model user behavior. Viewing time, show preferences, and engagement patterns become random variables that drive recommendation algorithms.",
+    "Random variables transform uncertainty from something we endure into something we can measure, model, and optimize."
+  ]
 }

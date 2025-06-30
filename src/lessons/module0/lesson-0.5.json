@@ -49,5 +49,15 @@
   "seeContent": "Watch Felix demonstrate function machines with animated inputs and outputs, showing how different function types transform numbers in predictable ways.",
   "hearContent": "Listen as I explain how I follow rules to transform inputs - just like how data transformation pipelines work in real data science projects!",
   "hearAudioUrl": "/audio/0.5.mp3",
-  "doContent": "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains."
+  "doContent": "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains.",
+  "hearTranscript": [
+    "Input processed successfully! I'm Felix the Function Machine, and I transform inputs into outputs following precise mathematical rules.",
+    "Think of me as a reliable processing system... you put raw data in one end, I follow my programming to transform it, and finished results come out the other end. Same input always produces the same output... that's what makes me a function!",
+    "Function notation f(x) means \"apply function f to input x.\" When you see f(x) equals 2x plus 3, that's my instruction manual. If you input 4, I substitute it everywhere I see x: f(4) equals 2 times 4 plus 3, which equals 11. Input 4, output 11... processing complete!",
+    "My domain is all the valid inputs I can handle... like the types of data my system accepts. My range is all possible outputs I can produce... the complete catalog of results I'm capable of generating.",
+    "The key principle: every input gets exactly one output. I can't be indecisive or produce multiple results from the same input... that would break my function protocols.",
+    "In data science, functions model relationships everywhere. How does advertising spend affect sales? How does temperature affect energy consumption? How do user behaviors predict preferences? These are all function relationships that data scientists use to build predictive models.",
+    "Machine learning algorithms are essentially complex functions... they take input data and transform it into predictions, classifications, or recommendations using systematic mathematical rules.",
+    "Understanding functions prepares you for the systematic thinking that drives all data transformation pipelines."
+  ]
 }

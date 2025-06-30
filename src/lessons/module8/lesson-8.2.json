@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "With uniform prior P(p) = 1 and likelihood P(HHH|p) = p³, the posterior P(p|HHH) ∝ p³ × 1 = p³. This favors higher values of p but maintains uncertainty across all possible values, showing the coin is likely biased toward heads."
   },
-  "realWorldConnection": "Financial models combine prior market knowledge with current price data to update investment strategies. Medical diagnosis systems combine disease prevalence priors with symptom likelihoods to calculate diagnostic probabilities. Weather forecasting combines physical model priors with observational data for prediction updates."
+  "realWorldConnection": "Financial models combine prior market knowledge with current price data to update investment strategies. Medical diagnosis systems combine disease prevalence priors with symptom likelihoods to calculate diagnostic probabilities. Weather forecasting combines physical model priors with observational data for prediction updates.",
+  "hearTranscript": [
+    "Every good detective needs a systematic method for combining evidence with prior knowledge. Bayes' Theorem is my mathematical magnifying glass.",
+    "The formula looks deceptively simple: the posterior probability equals the prior times the likelihood, divided by the evidence. But this elegant equation captures something profound about how intelligent reasoning should work.",
+    "Let me walk you through a case. Suppose I'm investigating whether someone committed a crime. My prior probability is based on the circumstances... maybe 10% based on opportunity and motive. Then new evidence appears... DNA at the scene that matches the suspect.",
+    "The likelihood asks: if this person is guilty, how probable is this DNA evidence? Very high. If they're innocent, how probable is this evidence? Much lower, depending on contamination rates and coincidental matches.",
+    "Bayes' Theorem systematically combines these components to give me an updated posterior probability. The DNA evidence doesn't prove guilt absolutely... it updates my probability estimate based on the strength and reliability of the evidence.",
+    "Medical diagnosis works exactly the same way. Doctors start with base rates for diseases, then update probabilities as test results arrive. Each new symptom or lab result shifts the diagnostic probabilities using Bayesian reasoning.",
+    "The genius of this approach is that it makes uncertainty explicit and manageable rather than hiding it behind false certainty."
+  ]
 }

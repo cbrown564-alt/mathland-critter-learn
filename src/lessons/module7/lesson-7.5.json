@@ -49,5 +49,15 @@
     "correctAnswer": 0,
     "explanation": "Since p-value = 0.03 < α = 0.05, we reject H₀. The p-value means that if H₀ were true, we would observe data this extreme or more extreme only 3% of the time. This is strong evidence against H₀."
   },
-  "realWorldConnection": "Pharmaceutical trials report p-values to demonstrate drug efficacy to regulatory agencies. Netflix uses p-values in A/B testing to determine if new features significantly improve user engagement. Academic journals require p-values to establish statistical significance of research findings."
+  "realWorldConnection": "Pharmaceutical trials report p-values to demonstrate drug efficacy to regulatory agencies. Netflix uses p-values in A/B testing to determine if new features significantly improve user engagement. Academic journals require p-values to establish statistical significance of research findings.",
+  "hearTranscript": [
+    "Different research questions require different statistical tests... each designed to address specific types of evidence evaluation with appropriate mathematical sophistication.",
+    "The t-test family handles questions about means. One-sample t-tests compare sample means to known standards. Two-sample t-tests compare means between groups. Paired t-tests analyze before-after differences or matched comparisons.",
+    "Chi-square tests address questions about categorical relationships. They determine whether observed frequency patterns differ significantly from expected patterns under independence assumptions.",
+    "ANOVA extends t-test logic to multiple groups simultaneously, while controlling the probability of false discoveries that would inflate when conducting many pairwise comparisons.",
+    "Medical research illustrates these applications elegantly. Clinical trials use t-tests to compare treatment and control group outcomes. Epidemiological studies use chi-square tests to examine relationships between risk factors and disease occurrence. Multi-site drug trials use ANOVA to compare several treatment regimens simultaneously.",
+    "Market research employs these same tools for business questions. A/B testing uses t-tests to compare conversion rates between website versions. Consumer preference studies use chi-square tests to analyze categorical choice patterns. Marketing campaigns use ANOVA to compare effectiveness across multiple demographic segments.",
+    "The sophistication lies in matching the statistical test to the research question's structure... ensuring that mathematical assumptions align with data characteristics and inferential goals.",
+    "Each test represents a refined tool for specific types of scientific inquiry."
+  ]
 }

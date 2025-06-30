@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "For a single future trial with Beta(α,β) posterior, the predictive probability of success is the posterior mean: α/(α+β) = 5/(5+3) = 5/8 = 0.625. This integrates over all possible success rates weighted by their posterior probabilities."
   },
-  "realWorldConnection": "E-commerce companies use posterior predictive distributions to forecast next month's sales with uncertainty bands for inventory planning. Healthcare systems use predictive distributions to forecast patient demand for resource allocation. Weather services use Bayesian predictive distributions for probabilistic forecasting beyond point estimates."
+  "realWorldConnection": "E-commerce companies use posterior predictive distributions to forecast next month's sales with uncertainty bands for inventory planning. Healthcare systems use predictive distributions to forecast patient demand for resource allocation. Weather services use Bayesian predictive distributions for probabilistic forecasting beyond point estimates.",
+  "hearTranscript": [
+    "The posterior distribution is where the investigation pays off... it's your updated belief after systematically combining prior knowledge with new evidence.",
+    "Unlike classical statistics that gives you point estimates with confidence intervals, Bayesian analysis gives you complete probability distributions over possible values. This captures the full uncertainty about what you're investigating.",
+    "In drug efficacy trials, the posterior distribution shows not just whether the drug works, but the complete range of possible effect sizes and their probabilities. This richer information helps make better decisions about treatment protocols.",
+    "The beautiful thing about posterior distributions is that they become the prior for your next investigation. Bayesian learning is inherently sequential... each new piece of evidence builds on everything you've learned before.",
+    "Credible intervals from posterior distributions have intuitive interpretations. A 95% credible interval means there's a 95% probability that the true value lies within that range, given your evidence and assumptions.",
+    "Financial risk assessment uses posterior distributions extensively. Instead of predicting that a stock will return exactly 8%, Bayesian models provide the full distribution of possible returns, helping investors understand not just expected outcomes but the probability of various scenarios.",
+    "The key insight is that posterior distributions preserve the uncertainty structure in your problem. They tell you what you know, what you don't know, and how confident you should be about different conclusions."
+  ]
 }

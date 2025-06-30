@@ -49,5 +49,17 @@
     "correctAnswer": 0,
     "explanation": "p = 0.001 shows statistical significance, but Cohen's d = 0.15 indicates a very small effect size (below 'small' threshold of 0.2). The large sample (n = 1,000) enabled detection of a statistically reliable but practically trivial difference."
   },
-  "realWorldConnection": "This capstone mirrors real statistical consulting workflows: pharmaceutical statisticians conducting clinical trial analyses, tech company data scientists running A/B testing programs, and policy researchers evaluating intervention effectiveness. The complete inferential reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty."
+  "realWorldConnection": "This capstone mirrors real statistical consulting workflows: pharmaceutical statisticians conducting clinical trial analyses, tech company data scientists running A/B testing programs, and policy researchers evaluating intervention effectiveness. The complete inferential reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty.",
+  "hearTranscript": [
+    "The ultimate statistical inference challenge... I'm designing a comprehensive research project that demonstrates the complete elegance of hypothesis testing across multiple domains simultaneously.",
+    "Your mission: evaluate the effectiveness of a new educational technology intervention using the complete statistical inference framework we've mastered.",
+    "Part A: Design null and alternative hypotheses that appropriately capture the research question while acknowledging inherent uncertainty. Calculate required sample sizes using power analysis to ensure adequate ability to detect meaningful educational effects.",
+    "Part B: Collect data using proper randomization procedures, then calculate appropriate test statistics and p-values. Implement multiple comparison corrections when testing several outcome measures simultaneously.",
+    "Part C: Construct confidence intervals that communicate both effect magnitude and uncertainty. Distinguish between statistical significance and practical significance by calculating effect sizes and their educational implications.",
+    "Part D: Address Type I and Type II error considerations by examining the consequences of false discoveries versus missed opportunities in educational contexts.",
+    "Part E: Present results with statistical sophistication that acknowledges limitations while enabling informed decision-making about intervention implementation.",
+    "This project demonstrates how statistical inference transforms subjective impressions about educational effectiveness into principled, evidence-based conclusions that appropriately balance skepticism with openness to genuine improvements.",
+    "You're not just learning statistical techniques... you're developing the intellectual sophistication to evaluate evidence claims across any domain where reliable knowledge must be extracted from uncertain data.",
+    "This represents statistical reasoning at its most mature and elegant form."
+  ]
 }

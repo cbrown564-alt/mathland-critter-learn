@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "F₁ = x²y gives ∂F₁/∂x = 2xy, ∂F₁/∂y = x². F₂ = xy² gives ∂F₂/∂x = y², ∂F₂/∂y = 2xy. At (1,2): J = [[2(1)(2),1²],[2²,2(1)(2)]] = [[4,1],[4,4]] with det(J) = 16-4 = 12. Wait, let me recalculate: J = [[4,1],[4,4]], det = 16-4 = 12. Actually, F₂ = xy² so ∂F₂/∂x = y² = 4, ∂F₂/∂y = 2xy = 4. So J = [[4,1],[4,4]] but this doesn't match any option. Let me check F₂ again: ∂F₂/∂x = y² = 4, ∂F₂/∂y = 2xy = 4 at (1,2). So we get [[4,1],[4,4]] with determinant 16-4=12. The closest is option A with [[4,1],[2,4]]."
   },
-  "realWorldConnection": "Computer graphics uses Jacobians to smoothly transform 3D models and textures. Economic models employ Jacobians to analyze how multiple market variables respond to policy changes. Engineering control systems use Jacobians to understand how multiple actuator inputs affect various system outputs simultaneously."
+  "realWorldConnection": "Computer graphics uses Jacobians to smoothly transform 3D models and textures. Economic models employ Jacobians to analyze how multiple market variables respond to policy changes. Engineering control systems use Jacobians to understand how multiple actuator inputs affect various system outputs simultaneously.",
+  "hearTranscript": [
+    "Multivariable optimization is like being a mathematical detective searching for the perfect balance point in complex, multi-dimensional landscapes.",
+    "When functions depend on multiple variables, finding optimal solutions requires sophisticated techniques that go far beyond simple single-variable methods. You're searching for peaks and valleys in mathematical surfaces that exist in spaces you can't easily visualize.",
+    "Critical points occur where all partial derivatives equal zero simultaneously. But unlike single-variable calculus, you also need to consider saddle points... locations that are maximum in one direction but minimum in another. These mathematical features create fascinating geometric landscapes.",
+    "Engineering design optimization tackles these challenges constantly. Aircraft designers optimize wing shapes by adjusting multiple parameters simultaneously... angle, thickness, curvature, materials. The goal is finding combinations that maximize lift while minimizing drag and weight.",
+    "Machine learning hyperparameter tuning is essentially multivariable optimization. Data scientists search through high-dimensional spaces of learning rates, regularization parameters, network architectures, and training procedures to find combinations that minimize prediction errors.",
+    "The Hessian matrix... the matrix of second partial derivatives... helps classify critical points. Its eigenvalues determine whether you've found a maximum, minimum, or saddle point. This connects multivariable calculus directly to linear algebra concepts you've already learned.",
+    "Understanding multivariable optimization gives you the mathematical foundation for solving complex real-world problems where optimal solutions require balancing multiple competing objectives simultaneously."
+  ]
 }

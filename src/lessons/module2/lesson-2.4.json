@@ -49,5 +49,12 @@
     "correctAnswer": 0,
     "explanation": "det = 3(1) - 1(2) = 1. Inverse = (1/1)[[1,-1],[-2,3]] = [[1,-1],[-2,3]]. Verification: [[3,1],[2,1]][[1,-1],[-2,3]] = [[3-2,−3+3],[2-2,−2+3]] = [[1,0],[0,1]] ✓"
   },
-  "realWorldConnection": "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified."
+  "realWorldConnection": "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified.",
+  "hearTranscript": [
+    "Every organized system needs two essential tools: a perfect mirror and a universal undo button.",
+    "The identity matrix is my perfect mirror... it reflects everything back exactly as it came in. All ones on the diagonal, zeros everywhere else. When any matrix meets the identity matrix, it comes back unchanged. It's the mathematical equivalent of a photocopier that produces perfect copies.",
+    "And matrix inverses? They're my mathematical time machines. If matrix A transforms a vector one way, then A inverse transforms it back perfectly. A times A inverse always equals the identity matrix... complete organizational reversal.",
+    "The determinant tells you whether an inverse exists. If the determinant is zero, the matrix is singular... it collapses information and cannot be reversed. But if the determinant is non-zero, you can calculate the inverse and have perfect mathematical undo power.",
+    "Computer graphics use inverses to undo rotations and translations. Cryptography employs them for encoding and decoding secret messages."
+  ]
 }

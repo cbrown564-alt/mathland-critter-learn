@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "While p=0.03 indicates statistical significance, the tiny effect size (0.2 points) is practically meaningless in educational contexts. Large samples (n=10,000) can detect trivial differences that have no real-world importance."
   },
-  "realWorldConnection": "Pharmaceutical companies must demonstrate both statistical significance and clinically meaningful effect sizes for drug approval. Educational technology companies seek effect sizes large enough to improve learning outcomes meaningfully, not just statistical detectability. Business A/B tests require effect sizes that translate to meaningful revenue impacts."
+  "realWorldConnection": "Pharmaceutical companies must demonstrate both statistical significance and clinically meaningful effect sizes for drug approval. Educational technology companies seek effect sizes large enough to improve learning outcomes meaningfully, not just statistical detectability. Business A/B tests require effect sizes that translate to meaningful revenue impacts.",
+  "hearTranscript": [
+    "Statistical significance and practical significance represent distinct concepts... sophisticated analysis requires evaluating both the reliability and the magnitude of observed effects.",
+    "Effect sizes quantify the magnitude of differences or relationships, independent of sample size. Cohen's d measures standardized mean differences. Correlation coefficients indicate relationship strength. Explained variance measures practical importance.",
+    "Large samples can detect trivially small effects with high statistical significance. Conversely, small samples might miss large effects due to insufficient power. Effect sizes help interpret whether statistically significant results are practically meaningful.",
+    "Clinical research illustrates this distinction elegantly. A blood pressure medication might produce statistically significant reductions that are too small to improve patient outcomes meaningfully. Alternatively, promising treatments might show large effect sizes that fail to reach significance in small pilot studies.",
+    "Educational interventions face similar interpretation challenges. New teaching methods might show statistically significant improvement that represents only a few additional points on standardized tests... significant statistically but perhaps not educationally meaningful.",
+    "Business analytics requires effect size thinking for resource allocation decisions. Marketing campaigns might generate statistically significant sales increases that are too small to justify their costs. Conversely, large effect sizes might warrant investment even when significance tests are inconclusive.",
+    "The sophistication lies in combining statistical and practical significance assessments to make informed decisions about research findings and their real-world implications."
+  ]
 }

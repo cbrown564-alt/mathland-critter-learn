@@ -49,5 +49,14 @@
     "correctAnswer": 0,
     "explanation": "For x ≠ y, f(x,y) = (x² - y²)/(x - y) = (x + y)(x - y)/(x - y) = x + y. The limit as (x,y) → (a,a) is 2a, so defining f(a,a) = 2a removes the discontinuity."
   },
-  "realWorldConnection": "Physical laws require continuity - temperature distributions in materials must be smooth, pressure changes continuously in fluid flow, and electromagnetic fields must be continuous at boundaries. Structural engineers design smooth stress distributions to prevent failure points and material fractures."
+  "realWorldConnection": "Physical laws require continuity - temperature distributions in materials must be smooth, pressure changes continuously in fluid flow, and electromagnetic fields must be continuous at boundaries. Structural engineers design smooth stress distributions to prevent failure points and material fractures.",
+  "hearTranscript": [
+    "Partial derivatives are like having a scientific microscope that can isolate individual causes of change while holding everything else constant.",
+    "Imagine you're studying how customer satisfaction depends on both product quality and customer service. A partial derivative with respect to quality tells you: if we improve quality by one unit while keeping service exactly the same, how much does satisfaction change?",
+    "This is the essential tool for understanding complex systems with multiple variables. In economics, companies use partial derivatives to optimize pricing strategies. They calculate how revenue changes with respect to price while holding advertising spend constant, and separately how revenue changes with advertising while holding price constant.",
+    "Weather prediction relies heavily on partial derivatives. Meteorologists track how temperature changes with respect to altitude while holding time constant, and how it changes with respect to time while holding altitude constant. These isolated rates of change help model complex atmospheric dynamics.",
+    "Machine learning algorithms use partial derivatives billions of times during training. Neural networks calculate how prediction errors change with respect to each individual parameter while holding all others fixed. This enables systematic optimization of incredibly complex models.",
+    "The beauty of partial derivatives is that they decompose complicated multivariable changes into understandable, isolated effects. Instead of being overwhelmed by complexity, we can study one variable's influence at a time.",
+    "This methodical approach transforms chaos into systematic understanding."
+  ]
 }
