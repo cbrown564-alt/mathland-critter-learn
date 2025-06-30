@@ -5,19 +5,7 @@ import { useEffect, useState } from "react";
 import { modulesData } from "../utils/modulesData";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-
-function getStoredProgress(lessonId) {
-  if (typeof window === 'undefined') return { completedSections: new Set(), currentSection: "narrative" };
-  const stored = localStorage.getItem(`lesson-progress-${lessonId}`);
-  if (stored) {
-    const parsed = JSON.parse(stored);
-    return {
-      completedSections: new Set(parsed.completedSections || []),
-      currentSection: parsed.currentSection || "narrative"
-    };
-  }
-  return { completedSections: new Set(), currentSection: "narrative" };
-}
+import { getLessonProgress } from "@/hooks/useLessonProgress";
 
 export const CourseRoadmap = () => {
   const [modules, setModules] = useState([]);

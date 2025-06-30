@@ -2,7 +2,7 @@ export interface CharacterConfig {
   id: string;
   name: string;
   color: string; // Tailwind color name like 'orange', 'purple'
-  icon: any; // LucideIcon or similar
+  icon: (props: { className?: string; size?: number | string }) => unknown; // Lucide icons or similar SVG components
   reactionVerb: string; // "celebrates", "deduces", "calculates"
   explainVerb: string; // "explains", "investigates", "analyzes"
   avatar: string; // path to character image
@@ -25,7 +25,7 @@ export interface StepConfig {
 
 export interface VisualConfig {
   title: string;
-  component: React.ReactNode | ((progress: Record<string, string>) => React.ReactNode);
+  component: unknown | ((progress: Record<string, string>) => unknown);
 }
 
 export interface ChallengeConfig {

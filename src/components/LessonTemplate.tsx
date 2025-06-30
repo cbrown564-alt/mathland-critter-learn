@@ -6,8 +6,15 @@ import { LessonNavigation } from "./lesson/LessonNavigation";
 import { LearningObjectivesBanner } from "./lesson/LearningObjectivesBanner";
 import { BreadcrumbNavigation } from "./Breadcrumb";
 import { characters } from "../utils/characterData";
-import { LessonSectionRenderer } from "./lesson/LessonSectionRenderer";
-import { useProgressPersistence } from "../hooks/useProgressPersistence";
+import { ReadSection } from "./lesson/ReadSection";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { SeeSection } from "./lesson/SeeSection";
+import { DoSection } from "./lesson/DoSection";
+import { EnhancedConceptCheck } from './lesson/conceptCheck/EnhancedConceptCheck';
+import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
+import { useLessonProgress } from '@/hooks/useLessonProgress';
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -16,6 +23,18 @@ interface LessonTemplateProps {
 }
 
 export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: LessonTemplateProps) => {
+  const {
+    completedSections,
+    currentSection,
+    toggleSection,
+    completeSection,
+    setCurrentSection,
+    getCompletionPercentage
+  } = useLessonProgress(lesson.id);
+
+  const audioRef = useRef<any>(null);
+  const [audioDuration, setAudioDuration] = useState(0);
+  const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
   const sections = [
     { id: "narrative", title: "Introduction" },
     { id: "read", title: "Read" },
@@ -27,16 +46,26 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     { id: "realworld", title: "Real World" }
   ];
 
-  const {
-    completedSections,
-    currentSection,
-    setCurrentSection,
-    toggleSection,
-    handleSectionComplete,
-    handleNextSection,
-    progressPercentage,
-    isLastSection
-  } = useProgressPersistence(lesson.id, sections);
+  const handleSectionComplete = (sectionId: string) => {
+    completeSection(sectionId);
+    
+    // Auto-advance to next section
+    const currentIndex = sections.findIndex(s => s.id === sectionId);
+    if (currentIndex < sections.length - 1) {
+      setCurrentSection(sections[currentIndex + 1].id);
+    }
+  };
+
+  const handleNextSection = () => {
+    const currentIndex = sections.findIndex(s => s.id === currentSection);
+    if (currentIndex < sections.length - 1) {
+      setCurrentSection(sections[currentIndex + 1].id);
+    }
+  };
+
+  const progressPercentage = getCompletionPercentage(sections.length);
+  const currentSectionIndex = sections.findIndex(s => s.id === currentSection);
+  const isLastSection = currentSectionIndex === sections.length - 1;
 
   // Look up the full character object using characterId
   console.log('characters:', characters);

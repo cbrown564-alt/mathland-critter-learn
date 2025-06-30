@@ -34,6 +34,7 @@ export interface LessonData {
   readDigDeeper?: string;
   readWhyMatters?: string;
   doType?: string;
+  doEmbedUrl?: string;
   doComponent?: string;
   doInstructions?: string;
 }
