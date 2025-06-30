@@ -1,16 +1,10 @@
-import { useState, useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { LessonData } from "@/types/lesson";
 import { LessonHeader } from "./lesson/LessonHeader";
 import { LessonSidebar } from "./lesson/LessonSidebar";
 import { LessonNavigation } from "./lesson/LessonNavigation";
-import { NarrativeHook } from "./lesson/NarrativeHook";
 import { LearningObjectivesBanner } from "./lesson/LearningObjectivesBanner";
-import { MemoryAids } from "./lesson/MemoryAids";
-import { ConceptCheck } from "./lesson/ConceptCheck";
-import { RealWorldConnection } from "./lesson/RealWorldConnection";
 import { BreadcrumbNavigation } from "./Breadcrumb";
-import { SectionCompletion } from "./lesson/SectionCompletion";
 import { characters } from "../utils/characterData";
 import { ReadSection } from "./lesson/ReadSection";
 import AudioPlayer from 'react-h5-audio-player';
@@ -41,7 +35,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   const audioRef = useRef<any>(null);
   const [audioDuration, setAudioDuration] = useState(0);
   const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
-
   const sections = [
     { id: "narrative", title: "Introduction" },
     { id: "read", title: "Read" },
@@ -91,213 +84,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     );
   }
 
-  const handleAudioLoaded = () => {
-    const duration = audioRef.current?.audio?.current?.duration || 0;
-    setAudioDuration(duration);
-  };
-
-  // Attach timeupdate event for smooth transcript sync
-  useEffect(() => {
-    const audioEl = audioRef.current?.audio?.current;
-    if (!audioEl) return;
-    const update = () => handleAudioTimeUpdate();
-    audioEl.addEventListener('timeupdate', update);
-    return () => audioEl.removeEventListener('timeupdate', update);
-  }, [audioRef.current, lesson.hearTranscript, audioDuration]);
-
-  // Helper: calculate word-based time windows for transcript
-  function getTranscriptTimeWindows(transcript, audioDuration) {
-    if (!transcript || transcript.length === 0 || audioDuration === 0) return [];
-    const wordCounts = transcript.map(p => p.split(/\s+/).length);
-    const totalWords = wordCounts.reduce((a, b) => a + b, 0);
-    let acc = 0;
-    return wordCounts.map((count, i) => {
-      const start = (acc / totalWords) * audioDuration;
-      acc += count;
-      const end = (acc / totalWords) * audioDuration;
-      return { start, end };
-    });
-  }
-
-  const handleAudioTimeUpdate = () => {
-    if (!audioRef.current || !lesson.hearTranscript) return;
-    const currentTime = audioRef.current?.audio?.current?.currentTime || 0;
-    const transcript = lesson.hearTranscript;
-    const windows = getTranscriptTimeWindows(transcript, audioDuration);
-    const idx = windows.findIndex(w => currentTime >= w.start && currentTime < w.end);
-    setCurrentTranscriptIdx(idx === -1 ? transcript.length - 1 : idx);
-  };
-
-  function LiveTranscript({ transcript, audioRef }) {
-    const windows = getTranscriptTimeWindows(transcript, audioDuration);
-    const paraRefs = useRef([]);
-    useEffect(() => {
-      if (paraRefs.current[currentTranscriptIdx]) {
-        paraRefs.current[currentTranscriptIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, [currentTranscriptIdx]);
-    return (
-      <div className="space-y-2 max-h-64 overflow-y-auto">
-        {transcript.map((para, i) => (
-          <p
-            key={i}
-            ref={el => paraRefs.current[i] = el}
-            className={`transition-all duration-300 px-2 py-1 rounded-md ${i === currentTranscriptIdx ? 'bg-blue-100 text-blue-900 font-semibold shadow' : 'text-slate-700 opacity-70'}`}
-          >
-            {para}
-          </p>
-        ))}
-      </div>
-    );
-  }
-
-  const renderCurrentSection = () => {
-    const isCompleted = completedSections.has(currentSection);
-
-    switch (currentSection) {
-      case "narrative":
-        return (
-          <NarrativeHook 
-            lesson={lesson} 
-            character={character}
-            onComplete={() => handleSectionComplete(currentSection)}
-            isCompleted={isCompleted}
-          />
-        );
-      case "memory":
-        return (
-          <MemoryAids 
-            memoryAids={lesson.memoryAids}
-            character={character}
-            onComplete={() => handleSectionComplete(currentSection)}
-            isCompleted={isCompleted}
-          />
-        );
-      case "concept":
-        // Use EnhancedConceptCheck for lesson 1.1 and 1.2, fallback to ConceptCheck otherwise
-        if (lesson.id === '1.1') {
-          return (
-            <EnhancedConceptCheck
-              conceptCheck={EXAMPLE_CONCEPT_CHECKS['vera-vectors']}
-              onComplete={() => handleSectionComplete(currentSection)}
-              isCompleted={isCompleted}
-              onNext={handleNextSection}
-            />
-          );
-        } else if (lesson.id === '1.2') {
-          return (
-            <EnhancedConceptCheck
-              conceptCheck={EXAMPLE_CONCEPT_CHECKS['vera-addition-scenario']}
-              onComplete={() => handleSectionComplete(currentSection)}
-              isCompleted={isCompleted}
-              onNext={handleNextSection}
-            />
-          );
-        } else {
-          return (
-            <ConceptCheck 
-              conceptCheck={lesson.conceptCheck}
-              character={character}
-              onComplete={() => handleSectionComplete(currentSection)}
-              isCompleted={isCompleted}
-            />
-          );
-        }
-      case "realworld":
-        return (
-          <RealWorldConnection 
-            connection={lesson.realWorldConnection}
-            onComplete={() => handleSectionComplete(currentSection)}
-            isCompleted={isCompleted}
-          />
-        );
-      case "read":
-        return (
-          <div className="prose max-w-none">
-            <ReadSection
-              content={lesson.readContent}
-              analogy={lesson.readAnalogy}
-              keyPoints={lesson.readKeyPoints}
-              digDeeper={lesson.readDigDeeper}
-              whyMatters={lesson.readWhyMatters}
-            />
-            <SectionCompletion
-              onComplete={() => handleSectionComplete(currentSection)}
-              onNext={handleNextSection}
-              isCompleted={isCompleted}
-              isLastSection={isLastSection}
-            />
-          </div>
-        );
-      case "see":
-        return (
-          <div className="prose max-w-none">
-            <SeeSection lesson={lesson} character={character} />
-            <SectionCompletion
-              onComplete={() => handleSectionComplete(currentSection)}
-              onNext={handleNextSection}
-              isCompleted={isCompleted}
-              isLastSection={isLastSection}
-            />
-          </div>
-        );
-      case "hear":
-        return (
-          <div className="prose max-w-none">
-            <div className="text-slate-700 leading-relaxed mb-8">{lesson.hearContent}</div>
-            {lesson.hearAudioUrl && (
-              <div className="flex items-center gap-4 mb-6">
-                <img
-                  src={character.avatar}
-                  alt={character.name}
-                  className="w-16 h-16 rounded-full shadow-lg border-2 border-slate-200 bg-white object-cover"
-                  style={{ flexShrink: 0 }}
-                />
-                <div className="flex-1">
-                  <AudioPlayer
-                    src={lesson.hearAudioUrl}
-                    ref={audioRef}
-                    onLoadedMetaData={handleAudioLoaded}
-                    showJumpControls={false}
-                    customAdditionalControls={[]}
-                    layout="horizontal"
-                    style={{ borderRadius: '0.75rem', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
-                  />
-                </div>
-              </div>
-            )}
-            {/* Live Transcript */}
-            {lesson.hearTranscript && lesson.hearTranscript.length > 0 && (
-              <div className="mt-4 bg-slate-50 rounded-lg p-4 border border-slate-200">
-                <h4 className="text-base font-semibold text-slate-700 mb-2">Transcript</h4>
-                <LiveTranscript transcript={lesson.hearTranscript} audioRef={audioRef} />
-              </div>
-            )}
-            <SectionCompletion
-              onComplete={() => handleSectionComplete(currentSection)}
-              onNext={handleNextSection}
-              isCompleted={isCompleted}
-              isLastSection={isLastSection}
-            />
-          </div>
-        );
-      case "do":
-        return (
-          <div className="prose max-w-none">
-            <DoSection lesson={lesson} />
-            <SectionCompletion
-              onComplete={() => handleSectionComplete(currentSection)}
-              onNext={handleNextSection}
-              isCompleted={isCompleted}
-              isLastSection={isLastSection}
-            />
-          </div>
-        );
-      default:
-        return null;
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 pt-1">
       <LessonHeader progressPercentage={progressPercentage} />
@@ -337,7 +123,15 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
             <Card>
               <CardContent className="p-8">
-                {renderCurrentSection()}
+                <LessonSectionRenderer
+                  lesson={lesson}
+                  character={character}
+                  currentSection={currentSection}
+                  completedSections={completedSections}
+                  onSectionComplete={handleSectionComplete}
+                  onNextSection={handleNextSection}
+                  isLastSection={isLastSection}
+                />
               </CardContent>
             </Card>
 
