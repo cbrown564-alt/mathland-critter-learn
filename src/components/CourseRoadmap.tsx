@@ -8,18 +8,18 @@ import { Footer } from "./Footer";
 import { getLessonProgress } from "@/hooks/useLessonProgress";
 
 export const CourseRoadmap = () => {
-  const [modules, setModules] = useState([]);
+  const [modules, setModules] = useState<any[]>([]);
   const [overallProgress, setOverallProgress] = useState(0);
 
   useEffect(() => {
     // Compute module progress and status
-    let prevModuleComplete = true;
+    const prevModuleComplete = true;
     let totalLessons = 0;
-    let totalCompleted = 0;
+    const totalCompleted = 0;
     const computedModules = modulesData.map((mod, idx) => {
       // For testing: unlock all modules
-      let status = 'available';
-      let completedLessons = 0;
+      const status = 'available';
+      const completedLessons = 0;
       totalLessons += mod.lessons;
       return {
         ...mod,
@@ -79,9 +79,7 @@ export const CourseRoadmap = () => {
             {/* Module Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {modules.map((mod, idx) => (
-                <Link key={mod.id} to={`/module-detail/${mod.id}`} style={{ textDecoration: 'none' }}>
-                  <ModuleCard module={mod} index={idx} />
-                </Link>
+                <ModuleCard key={mod.id} module={mod} index={idx} />
               ))}
             </div>
 

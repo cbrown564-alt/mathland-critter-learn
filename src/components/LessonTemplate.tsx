@@ -1,3 +1,4 @@
+import React, { useRef, useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { LessonData } from "@/types/lesson";
 import { LessonHeader } from "./lesson/LessonHeader";
@@ -15,6 +16,7 @@ import { DoSection } from "./lesson/DoSection";
 import { EnhancedConceptCheck } from './lesson/conceptCheck/EnhancedConceptCheck';
 import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
 import { useLessonProgress } from '@/hooks/useLessonProgress';
+import { LessonSectionRenderer } from './lesson/LessonSectionRenderer';
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -48,7 +50,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
 
   const handleSectionComplete = (sectionId: string) => {
     completeSection(sectionId);
-    
     // Auto-advance to next section
     const currentIndex = sections.findIndex(s => s.id === sectionId);
     if (currentIndex < sections.length - 1) {
@@ -68,8 +69,6 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
   const isLastSection = currentSectionIndex === sections.length - 1;
 
   // Look up the full character object using characterId
-  console.log('characters:', characters);
-  console.log('lesson.characterId:', lesson.characterId);
   const character = characters.find(c => c.id === lesson.characterId);
 
   // If character is not found, show a fallback UI or return null for critical components

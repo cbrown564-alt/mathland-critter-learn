@@ -7,7 +7,7 @@ import { getLessonProgress, isLessonCompleted } from "@/hooks/useLessonProgress"
 
 function getNextLessonId() {
   const lessonOrder = getLessonOrderForModule("0");
-  for (let id of lessonOrder) {
+  for (const id of lessonOrder) {
     if (!isLessonCompleted(id, 8)) {
       return id;
     }
@@ -24,7 +24,7 @@ export const Header = () => {
   useEffect(() => {
     const lessonOrder = getLessonOrderForModule("0");
     let found = false;
-    for (let id of lessonOrder) {
+    for (const id of lessonOrder) {
       if (!isLessonCompleted(id, 8)) {
         setNextLessonId(id);
         setIsNew(id === lessonOrder[0]);

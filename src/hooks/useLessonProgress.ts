@@ -57,6 +57,12 @@ const storeProgress = (lessonId: string, completedSections: Set<string>, current
   }
 };
 
+function areSetsEqual(a: Set<any>, b: Set<any>) {
+  if (a.size !== b.size) return false;
+  for (let item of a) if (!b.has(item)) return false;
+  return true;
+}
+
 export const useLessonProgress = (lessonId: string): LessonProgress & LessonProgressActions => {
   const [completedSections, setCompletedSections] = useState<Set<string>>(new Set());
   const [currentSection, setCurrentSectionState] = useState<string>("narrative");
@@ -77,8 +83,14 @@ export const useLessonProgress = (lessonId: string): LessonProgress & LessonProg
   useEffect(() => {
     const handleProgressUpdate = (event: CustomEvent) => {
       if (event.detail.lessonId === lessonId) {
-        setCompletedSections(new Set(event.detail.completedSections));
-        setCurrentSectionState(event.detail.currentSection);
+        const newCompleted = new Set<string>(event.detail.completedSections);
+        if (
+          !areSetsEqual(newCompleted, completedSections) ||
+          event.detail.currentSection !== currentSection
+        ) {
+          setCompletedSections(newCompleted);
+          setCurrentSectionState(event.detail.currentSection);
+        }
       }
     };
 
@@ -94,7 +106,7 @@ export const useLessonProgress = (lessonId: string): LessonProgress & LessonProg
       window.removeEventListener('lessonProgressUpdate', handleProgressUpdate as EventListener);
       window.removeEventListener('storage', () => {});
     };
-  }, [lessonId]);
+  }, [lessonId, completedSections, currentSection]);
 
   const updateProgress = useCallback((newCompletedSections: Set<string>, newCurrentSection: string) => {
     setCompletedSections(newCompletedSections);

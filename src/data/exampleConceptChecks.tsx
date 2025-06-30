@@ -4,7 +4,7 @@ import { ScenarioConfig, StepConfig, VisualConfig, ChallengeConfig, ApproachConf
 
 export const EXAMPLE_CONCEPT_CHECKS = {
   'vera-vectors': {
-    type: 'multi-step' as 'multi-step',
+    type: 'multi-step' as const,
     characterId: 'vera',
     scenario: {
       description: "Vera walks 4 meters east, then 3 meters north. Help her calculate her displacement vector and its magnitude.",
@@ -91,7 +91,7 @@ export const EXAMPLE_CONCEPT_CHECKS = {
     } as VisualConfig
   },
   'eileen-eigenvalues': {
-    type: 'scenario' as 'scenario',
+    type: 'scenario' as const,
     characterId: 'eileen',
     challenge: {
       title: "The Case of the Mysterious Matrix",
@@ -123,7 +123,7 @@ export const EXAMPLE_CONCEPT_CHECKS = {
     ] as ApproachConfig[]
   },
   'vera-addition-scenario': {
-    type: 'scenario' as 'scenario',
+    type: 'scenario' as const,
     characterId: 'vera',
     challenge: {
       title: 'Combining Journeys',
