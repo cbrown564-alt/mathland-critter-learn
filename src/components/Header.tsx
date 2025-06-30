@@ -3,14 +3,14 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { getLessonOrderForModule } from "../utils/lessonData";
+import { getLessonProgress, isLessonCompleted } from "@/hooks/useLessonProgress";
 
 function getNextLessonId() {
   const lessonOrder = getLessonOrderForModule("0");
   for (let id of lessonOrder) {
-    const stored = localStorage.getItem(`lesson-progress-${id}`);
-    if (!stored) return id;
-    const parsed = JSON.parse(stored);
-    if (!parsed.completedSections || parsed.completedSections.length < 8) return id;
+    if (!isLessonCompleted(id, 8)) {
+      return id;
+    }
   }
   return lessonOrder[lessonOrder.length - 1]; // fallback to last lesson if all complete
 }
@@ -25,15 +25,7 @@ export const Header = () => {
     const lessonOrder = getLessonOrderForModule("0");
     let found = false;
     for (let id of lessonOrder) {
-      const stored = localStorage.getItem(`lesson-progress-${id}`);
-      if (!stored) {
-        setNextLessonId(id);
-        setIsNew(id === lessonOrder[0]);
-        found = true;
-        break;
-      }
-      const parsed = JSON.parse(stored);
-      if (!parsed.completedSections || parsed.completedSections.length < 8) {
+      if (!isLessonCompleted(id, 8)) {
         setNextLessonId(id);
         setIsNew(id === lessonOrder[0]);
         found = true;

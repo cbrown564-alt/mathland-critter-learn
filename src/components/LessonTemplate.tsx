@@ -20,6 +20,7 @@ import { SeeSection } from "./lesson/SeeSection";
 import { DoSection } from "./lesson/DoSection";
 import { EnhancedConceptCheck } from './lesson/conceptCheck/EnhancedConceptCheck';
 import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
+import { useLessonProgress } from '@/hooks/useLessonProgress';
 
 interface LessonTemplateProps {
   lesson: LessonData;
@@ -27,31 +28,16 @@ interface LessonTemplateProps {
   nextLessonId?: string;
 }
 
-// Simple localStorage utility for progress persistence
-const getStoredProgress = (lessonId: string) => {
-  if (typeof window === 'undefined') return { completedSections: new Set<string>(), currentSection: "narrative" };
-  const stored = localStorage.getItem(`lesson-progress-${lessonId}`);
-  if (stored) {
-    const parsed = JSON.parse(stored);
-    return {
-      completedSections: new Set<string>((parsed.completedSections || []) as string[]),
-      currentSection: parsed.currentSection || "narrative"
-    };
-  }
-  return { completedSections: new Set<string>(), currentSection: "narrative" };
-};
-
-const storeProgress = (lessonId: string, completedSections: Set<string>, currentSection: string) => {
-  if (typeof window === 'undefined') return;
-  localStorage.setItem(`lesson-progress-${lessonId}`, JSON.stringify({
-    completedSections: Array.from(completedSections),
-    currentSection
-  }));
-};
-
 export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: LessonTemplateProps) => {
-  const [completedSections, setCompletedSections] = useState<Set<string>>(new Set());
-  const [currentSection, setCurrentSection] = useState<string>("narrative");
+  const {
+    completedSections,
+    currentSection,
+    toggleSection,
+    completeSection,
+    setCurrentSection,
+    getCompletionPercentage
+  } = useLessonProgress(lesson.id);
+
   const audioRef = useRef<any>(null);
   const [audioDuration, setAudioDuration] = useState(0);
   const [currentTranscriptIdx, setCurrentTranscriptIdx] = useState(0);
@@ -67,32 +53,8 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     { id: "realworld", title: "Real World" }
   ];
 
-  // Load progress when lesson changes
-  useEffect(() => {
-    const stored = getStoredProgress(lesson.id);
-    setCompletedSections(stored.completedSections);
-    setCurrentSection(stored.currentSection);
-  }, [lesson.id]);
-
-  // Store progress whenever it changes
-  useEffect(() => {
-    storeProgress(lesson.id, completedSections, currentSection);
-  }, [lesson.id, completedSections, currentSection]);
-
-  const toggleSection = (sectionId: string) => {
-    const newCompleted = new Set(completedSections);
-    if (newCompleted.has(sectionId)) {
-      newCompleted.delete(sectionId);
-    } else {
-      newCompleted.add(sectionId);
-    }
-    setCompletedSections(newCompleted);
-  };
-
   const handleSectionComplete = (sectionId: string) => {
-    const newCompleted = new Set(completedSections);
-    newCompleted.add(sectionId);
-    setCompletedSections(newCompleted);
+    completeSection(sectionId);
     
     // Auto-advance to next section
     const currentIndex = sections.findIndex(s => s.id === sectionId);
@@ -108,7 +70,7 @@ export const LessonTemplate = ({ lesson, previousLessonId, nextLessonId }: Lesso
     }
   };
 
-  const progressPercentage = Math.min((completedSections.size / sections.length) * 100, 100);
+  const progressPercentage = getCompletionPercentage(sections.length);
   const currentSectionIndex = sections.findIndex(s => s.id === currentSection);
   const isLastSection = currentSectionIndex === sections.length - 1;
 

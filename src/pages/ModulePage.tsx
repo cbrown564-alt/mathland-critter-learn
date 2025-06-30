@@ -7,20 +7,7 @@ import { characters } from "../utils/characterData";
 import { Header } from "@/components/Header";
 import { modulesData } from "../utils/modulesData";
 import { getLessonOrderForModule, getLessonDataForModule } from "../utils/lessonData";
-
-// Utility to get completedSections from localStorage
-const getStoredProgress = (lessonId: string) => {
-  if (typeof window === 'undefined') return { completedSections: new Set<string>(), currentSection: "narrative" };
-  const stored = localStorage.getItem(`lesson-progress-${lessonId}`);
-  if (stored) {
-    const parsed = JSON.parse(stored);
-    return {
-      completedSections: new Set<string>((parsed.completedSections || []) as string[]),
-      currentSection: parsed.currentSection || "narrative"
-    };
-  }
-  return { completedSections: new Set<string>(), currentSection: "narrative" };
-};
+import { getLessonProgress } from "@/hooks/useLessonProgress";
 
 const getModuleLessons = (moduleId: string) => {
   return getLessonOrderForModule(moduleId).map(id => getLessonDataForModule(moduleId, id));
@@ -58,7 +45,7 @@ const ModulePage = () => {
     const lessonObjs = getModuleLessons(moduleId).map(data => {
       if (!data) return null;
       const charObj = characters.find(c => c.id === data.characterId);
-      const progress = getStoredProgress(data.id);
+      const progress = getLessonProgress(data.id);
       const sectionCount = getLessonSectionCount(data);
       const moduleCompleted = progress.completedSections.size >= sectionCount;
       return {
