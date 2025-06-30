@@ -35,19 +35,14 @@ export const HeroSection = () => {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="text-gray-800">Master Math for</span>{" "}
+            <span className="text-gray-800">Math for</span>{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 animate-gradient-x">
               Data Science
-            </span>
-            <br />
-            <span className="text-3xl md:text-4xl lg:text-5xl text-gray-600 font-normal">
-              Through Stories & Characters
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Build confidence in algebra, calculus, and statistics with our character-driven 
-            learning experience designed for adult learners
+            Where mathematical concepts become unforgettable stories
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
@@ -61,7 +56,7 @@ export const HeroSection = () => {
           {/* Interactive Stats with hover effects */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-blue-100">
             <div className="group text-center p-6 rounded-xl hover:bg-white/50 hover:shadow-lg transition-all duration-300">
-              <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">9</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">11</div>
               <div className="text-gray-600 font-medium">Character Guides</div>
             </div>
             <div className="group text-center p-6 rounded-xl hover:bg-white/50 hover:shadow-lg transition-all duration-300">

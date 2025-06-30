@@ -27,7 +27,7 @@ const SimpleCourseTimeline = () => {
         {/* Desktop Timeline */}
         <div className="hidden lg:flex items-center justify-between relative">
           <div className="absolute top-6 left-6 right-6 h-0.5 bg-slate-200"></div>
-          <div className="absolute top-6 left-6 w-0 h-0.5 bg-gradient-to-r from-amber-500 to-amber-500 transition-all duration-1000" style={{ width: '10%' }}></div>
+          <div className="absolute top-6 left-6 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-700 transition-all duration-1000" style={{ width: '10%' }}></div>
           
           {modules.map((module, index) => {
             const clickable = module.status === 'available';

@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="bg-white border-t border-slate-200 text-slate-700 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-8">
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
-          <a href="/" className="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-400 rounded-lg flex items-center justify-center">
+          <a href="/" className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">M</span>
           </a>
           <span className="text-2xl font-bold">Mathland</span>

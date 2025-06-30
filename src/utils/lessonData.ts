@@ -33,6 +33,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "In Excel, the formula =2+3*4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless. Order of operations isn't just math theory - it's the foundation that keeps your data analysis from crumbling.",
     seeContent: "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",
     hearContent: "Listen as I walk you through each step, explaining why we choose each operation and how it builds toward our final answer.",
+    hearAudioUrl: "/audio/0.1.mp3",
     doContent: "Practice with interactive problems that let you drag and drop operations in the correct order, with immediate feedback on your choices.",
     memoryAids: {
       mantra: "Please Excuse My Dear Aunt Sally - she always follows the rules!",
@@ -79,7 +80,9 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. Machine learning algorithms often benefit from factored forms that expose underlying structure and reduce computational complexity.",
     seeContent: "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
     hearContent: "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
+    hearAudioUrl: "/audio/0.2.mp3",
     doContent: "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion.",
+
     memoryAids: {
       mantra: "Every dam can be taken apart and rebuilt - just like algebraic expressions!",
       visual: "Ollie's building blocks showing how expressions can be broken down into factors or combined into expanded forms"
@@ -146,6 +149,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Linear equations model constant relationships in data (like steady growth rates), while quadratic equations model curved relationships like profit optimization, population growth curves, and the trajectory of projectiles in physics simulations.",
     seeContent: "Watch balance beam visualizations showing how equation solving maintains equality, and see how quadratic equations create parabolic curves when graphed.",
     hearContent: "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
+    hearAudioUrl: "/audio/0.3.mp3",
     doContent: "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step."
   },
   "0.4": {
@@ -197,6 +201,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Inequalities define confidence intervals in statistics, acceptable error ranges in engineering, constraint optimization in business, and classification thresholds in machine learning. They help us understand when data values are within acceptable operational limits.",
     seeContent: "Visualize inequality solutions on interactive number lines, and see how absolute value creates distance relationships on the coordinate plane.",
     hearContent: "Listen as I explain how setting boundaries and ranges for my dam is just like defining inequality constraints - we need safe operating zones for everything to work properly!",
+    hearAudioUrl: "/audio/0.4.mp3",
     doContent: "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts."
   },
   "0.5": {
@@ -249,6 +254,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "In data science, functions model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the mathematical foundation of machine learning algorithms.",
     seeContent: "Watch Felix demonstrate function machines with animated inputs and outputs, showing how different function types transform numbers in predictable ways.",
     hearContent: "Listen as I explain how I follow rules to transform inputs - just like how data transformation pipelines work in real data science projects!",
+    hearAudioUrl: "/audio/0.5.mp3",
     doContent: "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains."
   },
   "0.6": {
@@ -301,6 +307,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
     seeContent: "Use an interactive graphing tool to plot different function types, observe how changing parameters affects the graph shape, and explore real-world data visualizations.",
     hearContent: "Listen as I explain how reading the story that graphs tell is like understanding the data patterns that drive business decisions and scientific discoveries!",
+    hearAudioUrl: "/audio/0.6.mp3",
     doContent: "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns."
   },
   "0.7": {
@@ -351,6 +358,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Coordinate geometry is essential for clustering algorithms that measure similarity between data points, finding centroids in machine learning, and understanding geometric relationships in high-dimensional feature spaces.",
     seeContent: "Explore an interactive coordinate plane where you can plot points, measure distances, find midpoints, and visualize slope relationships between lines.",
     hearContent: "Listen as I explain how measuring relationships in coordinate space is like calculating the efficiency of connections in my processing network!",
+    hearAudioUrl: "/audio/0.7.mp3",
     doContent: "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems."
   },
   "0.8": {
@@ -403,6 +411,7 @@ const module0Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Greek symbols are the universal language of mathematics and science. In data science, you'll see σ for standard deviation, μ for mean, θ for parameters in machine learning, λ for regularization, and vectors for representing data points in multi-dimensional space.",
     seeContent: "Explore the Greek alphabet chart with mathematical applications, see vector representations with arrows showing direction and magnitude, and practice with notation builders.",
     hearContent: "Listen to proper pronunciation of Greek letters and understand why mathematicians chose these symbols for specific concepts - each has a story and purpose!",
+    hearAudioUrl: "/audio/0.8.mp3",
     doContent: "Practice with Greek symbol matching games, build sigma notation expressions, and explore interactive vector representations to prepare for Module 1."
   }
 };
@@ -510,6 +519,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Netflix combines multiple preference vectors to recommend movies. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns in data.",
     seeContent: "Explore animated tip-to-tail vector addition and see how the parallelogram method gives the same result. Watch how scalar multiplication transforms vectors by stretching, shrinking, and flipping them.",
     hearContent: "Listen as I explain how combining vectors is like planning the ultimate treasure hunt - multiple clues that lead to one destination, and amazingly, the order you follow them doesn't change where you end up!",
+    hearAudioUrl: "/audio/1.2.mp3",
     doContent: "Use the Vector Addition Simulator to drag vectors and see their combinations, practice with the Parallelogram Constructor, and experiment with the Scalar Slider to see how multiplying by different numbers affects vector size and direction.",
     memoryAids: {
       mantra: "Tip-to-tail takes you there - start where the first arrow ends, and draw the second arrow from there!",
@@ -555,6 +565,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readContent: "The dot product measures how much two vectors point in the same direction. Geometrically: **u** · **v** = |**u**||**v**|cos(θ) where θ is the angle between vectors. Algebraically: **u** · **v** = u₁v₁ + u₂v₂ + u₃v₃. Results: positive (similar directions), zero (perpendicular), negative (opposite directions). The dot product equals zero when vectors are orthogonal (perpendicular). It's commutative (**u** · **v** = **v** · **u**) and distributive over addition. For unit vectors, the dot product directly gives cos(θ).",
     seeContent: "Visualize how dot products measure the 'projection' of one vector onto another, like measuring shadows. Watch the Similarity Meter show how vector angles affect dot product values from -1 to +1.",
     hearContent: "Listen as I explain how the dot product is like measuring how much vectors 'agree' with each other - it's the mathematical way to quantify whether things are pointing in similar directions!",
+    hearAudioUrl: "/audio/1.3.mp3",
     doContent: "Experiment with the Dot Product Visualizer to see how changing vector angles affects results, use the Orthogonal Detector to find perpendicular vectors, and practice with the Projection Calculator.",
     memoryAids: {
       mantra: "Positive = same direction, zero = perpendicular, negative = opposite - it's the agreement scale for vectors!",
@@ -608,6 +619,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Machine learning algorithms use different norms to measure 'distance' between data points. Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
     seeContent: "Compare different norm visualizations on the same vector, showing how L₁, L₂, and L∞ create different distance measurements. See how normalizing transforms vectors into unit circles.",
     hearContent: "Listen as I explain how choosing the right distance measurement is like choosing the right tool for exploration - sometimes you need straight-line distance, sometimes city-block distance!",
+    hearAudioUrl: "/audio/1.4.mp3",
     doContent: "Use the Norm Visualizer to compare different distance metrics, experiment with the Unit Vector Creator, and explore the Distance Comparator to see when each norm type is most useful.",
     memoryAids: {
       mantra: "Straight line vs. city blocks vs. longest coordinate - different adventures need different distance measurements!",
@@ -661,6 +673,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions.",
     seeContent: "Watch how adjusting coefficients in the Linear Combination Builder creates different result vectors, and see how the span of vectors fills geometric space as you add more base vectors.",
     hearContent: "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
+    hearAudioUrl: "/audio/1.5.mp3",
     doContent: "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
     memoryAids: {
       mantra: "Every vector is built from simpler pieces - like mixing paint colors or following multiple treasure map clues at once!",
@@ -714,6 +727,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding redundancy and improving prediction accuracy.",
     seeContent: "Visualize how linearly dependent vectors collapse into lower-dimensional spaces, while independent vectors span full dimensional space. Watch the Independence Checker show when vectors provide genuinely new directions.",
     hearContent: "Listen as I explain how finding independent directions is like choosing the perfect exploration toolkit - you want enough tools to handle any situation, but no redundant weight slowing you down!",
+    hearAudioUrl: "/audio/1.6.mp3",
     doContent: "Use the Independence Checker to test vector sets visually, experiment with the Dependency Detector to see how dependent vectors relate, and practice with the Redundancy Eliminator to streamline vector sets.",
     memoryAids: {
       mantra: "Independent vectors open new paths - dependent vectors just repeat directions you already have!",
@@ -767,6 +781,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Principal Component Analysis (PCA) finds the best basis for your data, revealing hidden patterns and reducing complexity. Different coordinate systems optimize for different purposes - like how architects use different views to fully describe buildings.",
     seeContent: "Compare different bases for the same 2D space, showing how the same vectors have different coordinates in different basis systems. Watch the Coordinate Converter demonstrate basis transformations.",
     hearContent: "Listen as I explain how a basis is like having the perfect coordinate system - it gives you a unique address for every location in your mathematical space, just like street addresses for houses!",
+    hearAudioUrl: "/audio/1.7.mp3",
     doContent: "Use the Basis Visualizer to compare different coordinate systems, practice with the Coordinate Converter to change between bases, and experiment with the Custom Basis Builder to create your own coordinate systems.",
     memoryAids: {
       mantra: "Basis = GPS coordinates for any space! Minimum tools needed to reach everywhere, with a unique address for each location.",
@@ -820,6 +835,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Machine learning models operate in high-dimensional vector spaces where each dimension represents a data feature. Neural networks process information by moving through these abstract vector spaces, finding patterns using the same mathematical rules I use for forest navigation.",
     seeContent: "Explore multiple examples of vector spaces, from geometric arrows to polynomial functions to solution sets. See how the same mathematical rules apply across vastly different contexts.",
     hearContent: "Listen as I explain how discovering universal mathematical laws is like finding that the same navigation principles work whether you're exploring forests, oceans, or even abstract mathematical worlds!",
+    hearAudioUrl: "/audio/1.8.mp3",
     doContent: "Use the Vector Space Explorer to navigate different types of spaces, verify vector space properties with the Axiom Checker, and discover subspaces with the Subspace Detective tool.",
     memoryAids: {
       mantra: "Once you know the rules, you can explore any space - the same fundamental laws work everywhere!",
@@ -873,6 +889,7 @@ const module1Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science.",
     seeContent: "Work through interactive mapping tools that let you design trail systems, place cameras strategically, and visualize visitor flow patterns using all the vector concepts you've mastered.",
     hearContent: "Listen as I guide you through each phase of the project, showing how vector thinking transforms complex spatial problems into systematic mathematical solutions!",
+    hearAudioUrl: "/audio/1.9.mp3",
     doContent: "Complete the three-part mapping project: design trail systems with vector addition, optimize camera placement with linear independence, and analyze visitor patterns with basis theory - creating a comprehensive portfolio of your vector mastery.",
     memoryAids: {
       mantra: "Every vector concept becomes a practical tool in this ultimate mapping adventure!",
@@ -928,6 +945,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems represent road networks as matrices for navigation calculations.",
     seeContent: "Explore interactive matrix grids showing how information gets organized systematically. See how changing matrix dimensions affects data storage capacity and watch real-world examples like spreadsheets, image pixels, and database tables.",
     hearContent: "Listen as I explain how organizing information systematically is like having a perfectly arranged library - every book has its place, and you can find anything instantly when you know the organizational system!",
+    hearAudioUrl: "/audio/2.1.mp3",
     doContent: "Practice with the Matrix Builder to create different sized matrices, use the Element Locator to find specific positions, and experiment with the Matrix Type Identifier to recognize different matrix categories.",
     memoryAids: {
       mantra: "Row by row, column by column - every piece of information has its perfect place in my organized world!",
@@ -981,6 +999,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Financial analysts add quarterly matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to systematically improve model performance.",
     seeContent: "Watch matrix addition happen element by element in an interactive grid, and see how scalar multiplication uniformly scales all values. Observe how dimension mismatches prevent addition and how the zero matrix behaves as an identity.",
     hearContent: "Listen as I explain how combining systematic information is like perfectly aligning two filing cabinets and merging their contents - everything has to match up precisely for the combination to work!",
+    hearAudioUrl: "/audio/2.2.mp3",
     doContent: "Use the Matrix Combiner to practice addition with visual feedback, experiment with the Scalar Multiplier to see uniform scaling effects, and test the Dimension Checker to understand compatibility requirements.",
     memoryAids: {
       mantra: "Same position, same purpose - that's how organized information combines systematically!",
@@ -1034,6 +1053,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
     seeContent: "Watch step-by-step matrix multiplication with highlighted row-column combinations, see how dimension mismatches prevent multiplication, and explore how matrix products represent transformations of geometric objects.",
     hearContent: "Listen as I explain how matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules!",
+    hearAudioUrl: "/audio/2.3.mp3",
     doContent: "Practice with the Matrix Multiplier showing step-by-step calculations, use the Dimension Compatibility Checker, and experiment with the Transformation Visualizer to see matrix multiplication as geometric transformation.",
     memoryAids: {
       mantra: "Row meets column, dot product magic - systematic transformation of organized information!",
@@ -1087,6 +1107,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified.",
     seeContent: "Watch the identity matrix act as a perfect mirror, see 2×2 inverse calculations step-by-step, and observe how multiplying a matrix by its inverse produces the identity matrix through interactive visualization.",
     hearContent: "Listen as I explain how the identity matrix is like having a perfect filing system that returns everything exactly as you put it in, while inverse matrices are like having perfect organizational reversal tools!",
+    hearAudioUrl: "/audio/2.4.mp3",
     doContent: "Use the Identity Matrix Demonstrator to see preservation properties, practice with the 2×2 Inverse Calculator showing detailed steps, and experiment with the Inverse Tester to verify AA⁻¹ = I.",
     memoryAids: {
       mantra: "Identity preserves everything perfectly, inverse undoes everything completely - the ultimate organizational tools!",
@@ -1142,6 +1163,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
     seeContent: "Visualize how determinants measure area scaling by watching unit squares transform into parallelograms, see how negative determinants flip orientations, and observe how zero determinants collapse space to lines.",
     hearContent: "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
+    hearAudioUrl: "/audio/2.5.mp3",
     doContent: "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
     memoryAids: {
       mantra: "Transformation power in a single number - scaling factor and flip detector all in one!",
@@ -1195,6 +1217,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Row operations are a fundamental part of linear algebra: they allow us to manipulate matrices to find solutions to systems of linear equations, calculate determinants, and understand matrix properties.",
     seeContent: "Watch step-by-step row operations transforming messy matrices into clean row echelon form, see how rank reveals the true independent information content, and observe how different matrices can have the same rank.",
     hearContent: "Listen as I explain how organizing matrix information is like reorganizing a filing cabinet systematically - the same information is there, but now it's perfectly arranged and easy to understand!",
+    hearAudioUrl: "/audio/2.6.mp3",
     doContent: "Use the Row Operations Simulator to practice systematic matrix transformation, experiment with the Rank Calculator to find independent information content, and try the Echelon Form Converter for automatic organization.",
     memoryAids: {
       mantra: "Swap, scale, add - three simple tools to organize any matrix into its clearest, most informative form!",
@@ -1248,6 +1271,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Matrix-vector multiplication is a fundamental operation in linear algebra and computer graphics: it allows us to apply linear transformations to vectors, which is essential for understanding and manipulating geometric transformations.",
     seeContent: "Watch vectors transform in real-time as matrix values change, see how different matrix types create rotation, scaling, reflection, and other transformations, and observe transformation composition through matrix multiplication.",
     hearContent: "Listen as I explain how every matrix has its own transformation personality - some are gentle rotators, others are aggressive stretchers, and some are precise projectors. Each one systematically changes vectors according to its mathematical nature!",
+    hearAudioUrl: "/audio/2.7.mp3",
     doContent: "Use the Transformation Visualizer to see matrix-vector products as geometric changes, experiment with the Matrix Personality Detector to identify transformation types, and practice the Transformation Composer to combine multiple transformations.",
     memoryAids: {
       mantra: "Every matrix is a transformation machine with its own personality - rotation, scaling, flipping, or projecting vectors systematically!",
@@ -1301,7 +1325,8 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
     seeContent: "Watch transformation chains in action, see how changing order produces different results, and observe how the same vector looks different in various coordinate systems through interactive basis switching.",
     hearContent: "Listen as I explain how transformation composition is like having a systematic assembly line, and change of basis is like having multiple organizational perspectives for viewing the same information!",
-    doContent: "Use the Transformation Chain Builder to experiment with composition order, practice with the Basis Change Calculator to convert coordinates, and explore the Perspective Switcher to see vectors in different coordinate systems.",
+    hearAudioUrl: "/audio/2.8.mp3",
+      doContent: "Use the Transformation Chain Builder to experiment with composition order, practice with the Basis Change Calculator to convert coordinates, and explore the Perspective Switcher to see vectors in different coordinate systems.",
     memoryAids: {
       mantra: "Chain transformations like assembly lines, switch coordinate systems like changing perspective - systematic organization from every angle!",
       visual: "Picture Max running a transformation factory with assembly lines (composition) and multiple viewing windows (different bases) that show the same products from different systematic perspectives."
@@ -1356,6 +1381,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Block matrices are a powerful tool for managing and manipulating large datasets. They're used in various applications like parallel computing, data compression, and solving systems of linear equations.",
     seeContent: "Visualize how large matrices get partitioned into meaningful blocks, watch block operations preserve structure while enabling efficient computation, and see how block diagonal matrices represent independent subsystems.",
     hearContent: "Listen as I explain how block organization is like having departments within a company - each block handles its specialized function while contributing to the systematic operation of the whole organization!",
+    hearAudioUrl: "/audio/2.9.mp3",
     doContent: "Use the Block Matrix Builder to create and partition large matrices, practice with the Block Operations Calculator to perform addition and multiplication, and experiment with the Block Structure Analyzer to identify efficient partitioning strategies.",
     memoryAids: {
       mantra: "Organization within organization - specialized departments working together in perfect systematic harmony!",
@@ -1401,6 +1427,7 @@ const module2Lessons: { [key: string]: LessonData } = {
     readContent: "This capstone project integrates all matrix concepts through systematic urban data management. Part A organizes traffic flow data using matrices and applies matrix addition to combine rush hour patterns. Part B uses matrix multiplication for resource allocation optimization and determinants to check system stability. Part C implements coordinate transformations for mapping different city zones and uses inverses to convert between planning systems. Part D designs block matrix structures for managing massive urban datasets efficiently. The project demonstrates how matrix mathematics provides systematic solutions for complex real-world organizational challenges.",
     seeContent: "Work through interactive city planning tools that let you organize traffic data systematically, optimize resource allocation using matrix operations, and transform coordinate systems for urban development projects.",
     hearContent: "Listen as I guide you through each phase of the smart city project, showing how systematic matrix organization transforms chaotic urban data into clear, actionable intelligence for city management!",
+    hearAudioUrl: "/audio/2.10.mp3",
     doContent: "Complete the four-part smart city project: organize traffic data with matrix structures, optimize resources with matrix operations, transform planning coordinates with matrix transformations, and design efficient block structures for large-scale urban data management.",
     memoryAids: {
       mantra: "Every matrix concept becomes a systematic tool for organizing and optimizing the ultimate complex system - a smart city!",
@@ -1456,6 +1483,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face images), Google's PageRank finds the principal eigenvector of web connections, and structural engineers use eigenvectors to identify building vibration modes.",
     seeContent: "Watch interactive demonstrations where matrices transform vectors, highlighting how most vectors change direction but eigenvectors maintain their orientation while only changing in length by the eigenvalue factor.",
     hearContent: "Listen as I explain how eigenvectors are like the matrix's favorite directions - the paths it naturally wants to follow when transforming space, revealing the hidden personality of any mathematical transformation!",
+    hearAudioUrl: "/audio/3.1.mp3",
     doContent: "Use the Eigenvector Detective tool to find special vectors that don't change direction, experiment with the Matrix Personality Analyzer, and practice with the Direction Preservation Checker to identify eigenvector candidates.",
     memoryAids: {
       mantra: "Same direction, different length - that's the eigenvector fingerprint that reveals every matrix's secrets!",
@@ -1509,6 +1537,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Engineers solve characteristic equations to find resonant frequencies - eigenvalues predict when bridges might vibrate dangerously in wind. Quantum physicists use them to find energy levels in atoms, where eigenvalues represent the only allowed energy states that particles can occupy.",
     seeContent: "Watch step-by-step characteristic equation derivations, see how the determinant calculation creates polynomials, and observe how solving these polynomials reveals all eigenvalues simultaneously.",
     hearContent: "Listen as I explain how the characteristic equation is like breaking a combination lock - once we solve it, all the eigenvalue secrets tumble out at once, revealing the complete mathematical fingerprint!",
+    hearAudioUrl: "/audio/3.2.mp3",
     doContent: "Practice with the Characteristic Equation Solver showing detailed polynomial steps, use the Eigenvalue Calculator for various matrix sizes, and experiment with the Polynomial Root Finder to understand solution patterns.",
     memoryAids: {
       mantra: "Determinant equals zero unlocks the door - that's where all the eigenvalue treasures hide!",
@@ -1562,6 +1591,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Data scientists find eigenvectors of covariance matrices to perform Principal Component Analysis - revealing the main directions of variation in datasets. Image compression algorithms use eigenvectors to identify the most important visual patterns, allowing massive file size reduction while preserving image quality.",
     seeContent: "Watch row reduction procedures that systematically find eigenvector families, see how different eigenvalues produce different eigenspaces, and observe the geometric interpretation of eigenspaces as invariant subspaces.",
     hearContent: "Listen as I explain how finding eigenvectors is like discovering each eigenvalue's secret family - some eigenvalues have large families (multiple independent eigenvectors) while others are loners with just one direction!",
+    hearAudioUrl: "/audio/3.3.mp3",
     doContent: "Use the Eigenvector Hunter to systematically solve null space problems, practice with the Row Reduction Stepper for detailed eigenvector calculations, and experiment with the Eigenspace Visualizer to see eigenvector families geometrically.",
     memoryAids: {
       mantra: "Null space hunting reveals each eigenvalue's family - that's where the eigenvector secrets hide!",
@@ -1615,6 +1645,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Google's PageRank algorithm uses diagonalization to efficiently compute authority scores for billions of web pages. Population geneticists use diagonalized matrices to predict how gene frequencies evolve over many generations. Financial analysts diagonalize correlation matrices to identify independent risk factors in complex portfolios.",
     seeContent: "Watch the diagonalization construction process, see how matrix powers become trivial in diagonal form, and observe the geometric interpretation as coordinate system changes that reveal natural scaling directions.",
     hearContent: "Listen as I explain how diagonalization is like having X-ray vision for matrices - suddenly you can see through all the complexity to the simple scaling structure hidden underneath!",
+    hearAudioUrl: "/audio/3.4.mp3",
     doContent: "Use the Diagonalization Constructor to build PDP⁻¹ decompositions, practice with the Matrix Power Calculator that uses diagonal forms, and experiment with the Basis Change Visualizer to see diagonalization geometrically.",
     memoryAids: {
       mantra: "P holds the eigenvectors, D holds the eigenvalues - together they reveal the matrix's true mathematical soul!",
@@ -1668,6 +1699,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Principal Component Analysis (PCA) relies on orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems, where eigenvectors represent normal modes and eigenvalues give oscillation frequencies.",
     seeContent: "Visualize how symmetric matrices create elliptical transformations with perpendicular principal axes, watch orthogonal diagonalization separate rotation from scaling, and see how this connects to data analysis principal components.",
     hearContent: "Listen as I explain why symmetric matrices are the mathematical aristocrats - so elegant and well-behaved that they can always be perfectly organized using pure rotations and reflections!",
+    hearAudioUrl: "/audio/3.5.mp3",
     doContent: "Use the Symmetric Matrix Analyzer to verify orthogonal eigenvectors, practice with the Orthogonal Diagonalization Builder, and experiment with the Principal Axis Visualizer to see geometric interpretations.",
     memoryAids: {
       mantra: "Symmetric means elegant - real eigenvalues, perpendicular eigenvectors, pure rotational diagonalization!",
@@ -1721,6 +1753,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Netflix uses PCA to compress user preference patterns and identify movie clusters. Geneticists apply PCA to DNA data to trace human migration patterns. Financial analysts use PCA to reduce thousands of stock price movements to a few key market factors.",
     seeContent: "Watch real datasets get transformed through PCA, see how principal components reveal hidden data structure, and observe dimensionality reduction that maintains essential information while eliminating noise.",
     hearContent: "Listen as I explain how PCA is like being a data detective - finding the few key storylines that explain most of what's happening in complex, messy datasets!",
+    hearAudioUrl: "/audio/3.6.mp3",
     doContent: "Use the PCA Detective tool to analyze real datasets, practice with the Variance Explorer to see how eigenvalues rank importance, and experiment with the Dimension Reducer to compress data optimally.",
     memoryAids: {
       mantra: "Biggest eigenvalue, biggest story - PCA finds the main plot threads in any data mystery!",
@@ -1774,6 +1807,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Google's PageRank finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
     seeContent: "Watch matrix powers evolve over time, see how eigenvalue magnitudes control long-term behavior, and observe how Markov chains converge to steady states determined by principal eigenvectors.",
     hearContent: "Listen as I explain how eigenvalues are like mathematical DNA - they determine whether systems grow, shrink, oscillate, or reach equilibrium over time!",
+    hearAudioUrl: "/audio/3.7.mp3",
     doContent: "Use the Matrix Power Predictor to see long-term evolution, experiment with the Stability Analyzer based on eigenvalue magnitudes, and practice with the Markov Chain Simulator to find steady states.",
     memoryAids: {
       mantra: "Eigenvalue size predicts the future - bigger than 1 grows, smaller than 1 shrinks, exactly 1 stays steady!",
@@ -1827,6 +1861,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics.",
     seeContent: "Visualize how complex eigenvalues create spiraling motions, see how magnitude controls spiral tightness while argument controls rotation speed, and watch oscillatory solutions emerge from complex eigenvalue systems.",
     hearContent: "Listen as I explain how complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
+    hearAudioUrl: "/audio/3.8.mp3",
     doContent: "Use the Complex Eigenvalue Analyzer to decompose rotation and growth components, experiment with the Spiral Trajectory Generator, and practice with the Oscillation Predictor for dynamic systems.",
     memoryAids: {
       mantra: "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
@@ -1880,6 +1915,7 @@ const module3Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "This project mirrors real data science careers: genomics researchers use eigenvalue analysis for population genetics, financial quants use PCA for risk modeling, and control engineers use eigenvalue stability analysis for autonomous systems. Your eigenvalue detective skills transfer directly to high-impact technical careers.",
     seeContent: "Work through interactive pattern discovery tools that let you perform complete eigenvalue analysis on real datasets, visualize principal components, and predict system behavior using eigenvalue insights.",
     hearContent: "Listen as I guide you through each phase of the ultimate pattern discovery project, showing how eigenvalue detective work reveals the mathematical DNA hidden in complex real-world systems!",
+    hearAudioUrl: "/audio/3.9.mp3",
     doContent: "Complete the comprehensive pattern discovery project: analyze correlation matrices with eigenvalue decomposition, predict system stability using eigenvalue criteria, reduce data dimensionality with PCA, and investigate oscillatory patterns through complex eigenvalue analysis.",
     memoryAids: {
       mantra: "Every eigenvalue technique becomes a detective tool in the ultimate pattern discovery adventure!",
@@ -1935,6 +1971,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple shape parameters. Economists model market behavior where outcomes depend on price, supply, demand, and external factors.",
     seeContent: "Explore interactive 3D surface plots showing how functions create landscapes, examine level curve visualizations that reveal function structure, and observe how changing input parameters affects surface shape and contour patterns.",
     hearContent: "Listen as I explain how multivariable functions are like precise mathematical recipes - each ingredient (variable) contributes to the final result, creating rich behaviors that single-variable functions simply cannot capture!",
+    hearAudioUrl: "/audio/4.1.mp3",
     doContent: "Use the Multivariable Function Explorer to visualize surfaces and level curves, practice with the Domain Sketcher for region identification, and experiment with the Surface Shape Analyzer to see how parameter changes affect function behavior.",
     memoryAids: {
       mantra: "Multiple inputs, single output - surfaces and contours reveal the mathematical route!",
@@ -1988,6 +2025,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Understanding multivariable limits is crucial for analyzing continuity in physical systems. Engineers need these concepts when studying heat transfer, where temperature must vary continuously across material boundaries. Computer graphics relies on continuous surface functions for realistic rendering.",
     seeContent: "Watch interactive demonstrations showing different approach paths to the same point, observe cases where limits exist versus cases where path-dependence creates non-existence, and see polar coordinate transformations that simplify complex limit calculations.",
     hearContent: "Listen as I explain how multivariable limits are like a hedgehog's careful approach to home - we must check every possible path to ensure they all lead to the same mathematical destination!",
+    hearAudioUrl: "/audio/4.2.mp3",
     doContent: "Use the Path Explorer to test different approach routes, practice with the Limit Calculator that checks path independence, and experiment with the Polar Coordinate Transformer for challenging limit problems.",
     memoryAids: {
       mantra: "All paths must agree for the limit to be - that's multivariable precision, you see!",
@@ -2041,6 +2079,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Physical laws require continuity - temperature can't jump discontinuously across space, pressure changes smoothly in fluids, and electromagnetic fields must be continuous at material boundaries. Engineering designs depend on smooth stress distributions to prevent structural failures.",
     seeContent: "Visualize smooth continuous surfaces versus discontinuous functions with holes and jumps, explore how composition creates complex continuous surfaces from simple building blocks, and observe the geometric interpretation of different discontinuity types.",
     hearContent: "Listen as I explain how continuity creates mathematical surfaces as smooth as a hedgehog's quills - every point flows seamlessly into its neighbors without any jarring discontinuities!",
+    hearAudioUrl: "/audio/4.3.mp3",
     doContent: "Use the Continuity Checker to test function smoothness, practice with the Surface Explorer that highlights discontinuities, and experiment with the Composition Builder to create complex continuous functions.",
     memoryAids: {
       mantra: "Smooth as hedgehog quills, no jumps or tears - that's continuity everywhere!",
@@ -2094,6 +2133,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Engineers use partial derivatives to optimize designs: how does changing wing angle affect lift while keeping speed constant? Economists analyze marginal effects: how does price change affect demand while income stays fixed? Medical researchers isolate drug dosage effects while controlling for patient age and weight.",
     seeContent: "Watch surface cross-sections that show partial derivative slopes, see how partial derivatives create tangent planes to surfaces, and observe the geometric relationship between function surfaces and their partial derivative interpretations.",
     hearContent: "Listen as I explain how partial derivatives are like scientific experiments where I precisely control all variables except one, allowing me to measure exact cause-and-effect relationships!",
+    hearAudioUrl: "/audio/4.4.mp3",
     doContent: "Use the Partial Derivative Calculator with step-by-step explanations, practice with the Surface Slicer that shows cross-sectional slopes, and experiment with the Sensitivity Analyzer for multivariable functions.",
     memoryAids: {
       mantra: "Hold others constant, let one variable dance - that's how partial derivatives enhance your glance!",
@@ -2147,6 +2187,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Computational fluency with partial derivatives is essential for optimization, where we need to find critical points by setting all partial derivatives to zero. Engineers use complex partial derivative calculations for stress analysis, economists for utility maximization, and physicists for field theory computations.",
     seeContent: "Watch step-by-step partial derivative computations using different rules, see how higher-order partials create more complex expressions, and observe the computational patterns that emerge from systematic application of differentiation rules.",
     hearContent: "Listen as I demonstrate the systematic precision of partial derivative computation - like a well-organized hedgehog, every rule has its place and purpose in building computational mastery!",
+    hearAudioUrl: "/audio/4.5.mp3",
     doContent: "Use the Advanced Partial Derivative Calculator with rule-by-rule breakdowns, practice with the Mixed Partial Checker that verifies equality, and experiment with the Implicit Differentiation Solver for complex expressions.",
     memoryAids: {
       mantra: "Same rules apply, just freeze the others in place - partial derivatives with computational grace!",
@@ -2200,6 +2241,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Mountain climbers use gradients (literally) to find the steepest paths up peaks. Neural networks learn by following gradients to minimize error functions. Heat always flows in the direction opposite to temperature gradients. Economics uses gradients to find utility-maximizing consumption patterns.",
     seeContent: "Visualize gradient vectors overlaid on contour plots, watch how gradient direction relates to level curves, and observe gradient vector fields that show the flow of steepest increase across entire regions.",
     hearContent: "Listen as I explain how the gradient is like a mathematical compass and speedometer combined - always pointing toward steepest increase while measuring the rate of that climb!",
+    hearAudioUrl: "/audio/4.6.mp3",
     doContent: "Use the Gradient Calculator to compute and visualize gradient vectors, practice with the Contour and Gradient Explorer, and experiment with the Gradient Field Visualizer to see vector patterns across domains.",
     memoryAids: {
       mantra: "Gradient points uphill with maximum skill - the steepest path with mathematical will!",
@@ -2253,6 +2295,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Hikers use directional derivatives to assess trail difficulty in chosen directions. Engineers analyze stress changes along specific material orientations. Economics uses directional derivatives to understand how consumption changes when moving along budget constraints with specific preference patterns.",
     seeContent: "Watch directional derivative calculations along various paths, see how the dot product formula relates to geometric projections, and observe how directional derivatives vary as the chosen direction changes around a point.",
     hearContent: "Listen as I explain how directional derivatives are like a precision instrument that measures steepness along any path you choose - the mathematical equivalent of a customized compass!",
+    hearAudioUrl: "/audio/4.7.mp3",
     doContent: "Use the Directional Derivative Calculator with vector input controls, practice with the Direction Chooser that shows how rates vary with angle, and experiment with the Gradient Projection Visualizer.",
     memoryAids: {
       mantra: "Dot the gradient with your chosen direction - that's the rate of change with mathematical precision!",
@@ -2306,6 +2349,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Computer graphics uses Jacobians to transform 3D models smoothly. Economics employs Jacobians to analyze how multiple market variables respond to policy changes. Engineering uses Jacobians in control systems to understand how actuator inputs affect multiple system outputs simultaneously.",
     seeContent: "Watch Jacobian matrix construction for various vector functions, see how linear approximations relate to actual transformations, and observe how Jacobian determinants predict area scaling in coordinate transformations.",
     hearContent: "Listen as I explain how the Jacobian matrix is like the ultimate organizational tool - every possible input-output relationship gets its own precise location in this systematic mathematical filing system!",
+    hearAudioUrl: "/audio/4.8.mp3",
     doContent: "Use the Jacobian Matrix Builder for vector functions, practice with the Linear Approximation Visualizer, and experiment with the Transformation Analyzer that shows area scaling through determinants.",
     memoryAids: {
       mantra: "Every input, every output, organized with care - that's the Jacobian matrix, systematic and fair!",
@@ -2359,6 +2403,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Machine learning algorithms minimize error functions using gradient-based optimization. Engineers minimize weight while maximizing strength in structural design. Economists find utility-maximizing consumption patterns subject to budget constraints. Financial analysts optimize portfolio returns while minimizing risk.",
     seeContent: "Visualize critical point finding on 3D surfaces, watch the second derivative test classify different critical point types, and observe how optimization algorithms navigate complex mathematical landscapes toward optimal solutions.",
     hearContent: "Listen as I explain how optimization combines all our multivariable calculus tools into a systematic approach for finding the best solutions to complex real-world problems!",
+    hearAudioUrl: "/audio/4.9.mp3",
     doContent: "Use the Critical Point Finder with gradient calculations, practice with the Optimization Classifier using second derivative tests, and experiment with the Gradient Descent Simulator for machine learning applications.",
     memoryAids: {
       mantra: "Set gradients to zero, then test with care - that's how optimization finds solutions everywhere!",
@@ -2412,6 +2457,7 @@ const module4Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "This capstone demonstrates career-ready mathematical skills. Data scientists use these exact techniques for machine learning optimization. Engineers apply multivariable calculus for design optimization. Quantitative analysts use these tools for financial modeling. Your mathematical precision translates directly to high-impact technical careers.",
     seeContent: "Work through comprehensive function analysis tools, visualize optimization landscapes with critical point identification, and observe how mathematical theory connects to real-world applications through integrated problem-solving workflows.",
     hearContent: "Listen as I guide you through the ultimate demonstration of multivariable calculus mastery - every concept working together with the precision and systematic approach that defines excellent mathematical problem-solving!",
+    hearAudioUrl: "/audio/4.10.mp3",
     doContent: "Complete the comprehensive multivariable calculus project: analyze function properties, compute all types of derivatives, perform gradient and directional derivative analysis, construct Jacobian matrices, and solve optimization problems with complete critical point classification.",
     memoryAids: {
       mantra: "Every tool, every technique, working with precision - that's multivariable calculus mastery in action!",
@@ -2467,6 +2513,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Netflix optimizes recommendation algorithms to maximize user engagement. Tesla optimizes battery design to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints. Every engineering design involves optimization trade-offs.",
     seeContent: "Explore 3D optimization landscapes showing peaks, valleys, and saddle points, visualize the difference between local and global extrema, and observe how constraints create feasible regions that limit where optimal solutions can exist.",
     hearContent: "Listen as I explain how optimization is like mountaineering with mathematical precision - every peak and valley has meaning, and finding the true summit requires understanding the entire landscape!",
+    hearAudioUrl: "/audio/5.1.mp3",
     doContent: "Use the Optimization Landscape Explorer to identify different types of extrema, practice with the Constraint Sketcher to define feasible regions, and experiment with the Objective Function Analyzer to understand optimization setup.",
     memoryAids: {
       mantra: "Peak or valley, local or global - optimization finds the best with mathematical protocol!",
@@ -2520,6 +2567,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Machine learning algorithms find critical points of loss functions to train neural networks. Engineers find critical points of stress functions to identify potential failure locations. Economists find critical points of utility functions to determine optimal consumption patterns.",
     seeContent: "Watch systematic critical point finding through gradient calculations, observe different types of critical points on 3D surfaces, and see how solving systems of partial derivative equations reveals candidate optimization points.",
     hearContent: "Listen as I explain how finding critical points is like identifying every flat camping spot on the mountain - some are perfect peaks, others are valley bottoms, and some are just convenient rest stops along the way!",
+    hearAudioUrl: "/audio/5.2.mp3",
     doContent: "Use the Critical Point Finder with step-by-step equation solving, practice with the Gradient Calculator that shows when ∇f = 0, and experiment with the System Solver for complex critical point problems.",
     memoryAids: {
       mantra: "Gradient zero, flat terrain - critical points mark where extrema might reign!",
@@ -2573,6 +2621,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Neural networks use Hessian analysis to understand loss function curvature for advanced optimization algorithms. Structural engineers analyze Hessian matrices to predict material behavior under stress. Financial analysts use second-order analysis to understand portfolio risk surfaces.",
     seeContent: "Visualize Hessian matrix construction and discriminant calculations, see how different D values correspond to different surface curvatures, and observe the geometric interpretation of eigenvalues as principal curvature directions.",
     hearContent: "Listen as I explain how the Hessian matrix is like a sophisticated mountain surveying tool that measures curvature in every direction, helping me distinguish between true peaks, valleys, and misleading mountain passes!",
+    hearAudioUrl: "/audio/5.3.mp3",
     doContent: "Use the Hessian Calculator with automatic discriminant computation, practice with the Critical Point Classifier, and experiment with the Curvature Visualizer to see eigenvalue interpretation geometrically.",
     memoryAids: {
       mantra: "Hessian shows the curve, discriminant reveals the serve - peaks curl down, valleys curl up, saddles do both with mathematical nerve!",
@@ -2626,6 +2675,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Machine learning heavily relies on convex optimization for reliable training algorithms. Linear regression, support vector machines, and logistic regression all use convex loss functions to guarantee global optima. Portfolio optimization in finance uses convex models to ensure reliable investment strategies.",
     seeContent: "Visualize the difference between convex bowl-shaped surfaces and non-convex mountain ranges, see how line segments relate to surface curvature, and observe why convex optimization algorithms always succeed while non-convex ones may fail.",
     hearContent: "Listen as I explain how recognizing convex terrain is like having a mountaineering superpower - once you know the landscape is convex, you're guaranteed to find the true bottom of the valley!",
+    hearAudioUrl: "/audio/5.4.mp3",
     doContent: "Use the Convexity Checker to test functions mathematically and visually, practice with the Hessian Analyzer for convexity verification, and experiment with the Optimization Comparison tool showing convex vs non-convex challenges.",
     memoryAids: {
       mantra: "Bowl-shaped and upward curving - convex functions make optimization serving! Any local min is global too - that's the convex guarantee for you!",
@@ -2679,6 +2729,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Gradient descent trains virtually every neural network by minimizing loss functions over millions of parameters. Google's search algorithms use gradient descent variants to optimize ranking functions. Autonomous vehicles use gradient descent for real-time path optimization and obstacle avoidance.",
     seeContent: "Watch gradient descent algorithms navigate optimization landscapes step by step, observe how different learning rates affect convergence behavior, and see the algorithm's path toward minima on various function surfaces.",
     hearContent: "Listen as I explain how gradient descent is like navigating through fog using only a compass - step by step, always heading downhill, until we reach the valley bottom!",
+    hearAudioUrl: "/audio/5.5.mp3",
     doContent: "Use the Gradient Descent Simulator with adjustable learning rates, practice with the Step-by-Step Optimizer showing algorithm traces, and experiment with the Convergence Analyzer to understand stopping criteria.",
     memoryAids: {
       mantra: "Step downhill with gradient guide, learning rate sets the stride - repeat until the bottom you find!",
@@ -2732,6 +2783,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Deep learning success depends critically on learning rate schedules - too large causes training instability, too small means networks never converge. Robotics systems use adaptive learning rates for real-time optimization in changing environments. Financial trading algorithms adjust learning rates based on market volatility.",
     seeContent: "Visualize how different learning rates create different convergence paths, observe oscillation patterns from oversized steps, and watch adaptive algorithms automatically adjust step sizes based on progress patterns.",
     hearContent: "Listen as I explain how choosing the right step size is like being a skilled mountaineer who reads the terrain and adjusts pace accordingly - sometimes careful steps, sometimes confident strides!",
+    hearAudioUrl: "/audio/5.6.mp3",
     doContent: "Use the Learning Rate Explorer with side-by-side comparisons, practice with the Convergence Pattern Analyzer, and experiment with the Adaptive Rate Simulator showing automatic adjustments.",
     memoryAids: {
       mantra: "Not too big, not too small - the learning rate must suit the call! Watch the path and adjust with care - that's optimization flair!",
@@ -2785,6 +2837,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Deep learning models train using momentum-based optimizers like Adam to handle the complex loss landscapes of neural networks. Computer vision models use momentum to escape saddle points that plague high-dimensional optimization. Natural language processing uses advanced momentum methods to train transformers efficiently.",
     seeContent: "Watch momentum algorithms build up speed in consistent directions, observe how momentum helps escape shallow valleys that trap vanilla gradient descent, and see the smoothing effect on oscillatory convergence patterns.",
     hearContent: "Listen as I explain how momentum transforms optimization from careful walking to confident skiing - building up speed in good directions while smoothly navigating the complex terrain of mathematical landscapes!",
+    hearAudioUrl: "/audio/5.7.mp3",
     doContent: "Use the Momentum Optimizer with adjustable β parameters, practice with the Momentum vs Vanilla comparison tool, and experiment with the Advanced Optimizer Simulator showing Adam and RMSprop behavior.",
     memoryAids: {
       mantra: "Build momentum like a skier's flow - remember the past to help you go! Smooth the path and speed the way - that's momentum's optimization play!",
@@ -2838,6 +2891,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Portfolio optimization maximizes returns subject to budget constraints and risk limits. Engineering design optimizes performance subject to weight, cost, and safety constraints. Machine learning uses constrained optimization for support vector machines and regularized regression models.",
     seeContent: "Visualize how constraints create feasible regions on optimization surfaces, see how optimal points often lie on constraint boundaries, and observe the geometric interpretation of Lagrange multiplier conditions.",
     hearContent: "Listen as I explain how constrained optimization is like following mountain trails with specific rules - finding the best reachable destination while respecting all the boundaries and restrictions!",
+    hearAudioUrl: "/audio/5.8.mp3",
     doContent: "Use the Constraint Visualizer to see feasible regions, practice with the Lagrange Multiplier Solver for simple problems, and experiment with the Constrained Optimization Explorer showing real-world examples.",
     memoryAids: {
       mantra: "Stay within bounds while seeking the best - constraints make optimization a different test! Lagrange multipliers show the way - optimal solutions where gradients play!",
@@ -2891,6 +2945,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "Drug discovery uses global optimization to find molecular configurations with optimal properties. Neural network training accepts local minima because finding global optima is computationally impossible. Portfolio optimization seeks global optima for risk-return trade-offs but often settles for local solutions due to complexity.",
     seeContent: "Visualize complex optimization landscapes with multiple local minima, see how different starting points lead to different local optima, and observe global optimization strategies attempting to escape local traps.",
     hearContent: "Listen as I explain how distinguishing local from global optima is like being a master mountaineer who understands that the nearest peak might not be the highest peak in the entire range!",
+    hearAudioUrl: "/audio/5.9.mp3",
     doContent: "Use the Local vs Global Explorer with multiple minima landscapes, practice with the Multi-Start Optimizer, and experiment with the Global Optimization Strategy Simulator.",
     memoryAids: {
       mantra: "Local best nearby, global best overall - knowing the difference prevents optimization's fall! Many peaks exist, but one summit's true - global optimization seeks that view!",
@@ -2944,6 +2999,7 @@ const module5Lessons: { [key: string]: LessonData } = {
     readWhyMatters: "This capstone demonstrates industry-ready optimization skills. Machine learning engineers use these exact techniques for neural network training. Quantitative analysts apply optimization for portfolio management. Operations researchers use these methods for supply chain optimization. Your mathematical mountaineering skills translate directly to high-impact technical careers.",
     seeContent: "Work through comprehensive optimization analysis tools, implement gradient descent algorithms with visualization, and observe how mathematical theory guides practical algorithm selection and tuning.",
     hearContent: "Listen as I guide you through the ultimate demonstration of optimization mastery - every technique working together with the determination and precision that defines excellent mathematical mountaineering!",
+    hearAudioUrl: "/audio/5.10.mp3",
     doContent: "Complete the comprehensive optimization project: analyze function landscapes mathematically, classify critical points using second-derivative tests, implement gradient descent with momentum, characterize convexity properties, and solve constrained optimization problems with real-world interpretation.",
     memoryAids: {
       mantra: "Every peak, every valley, every algorithm too - optimization mastery shows what math can do! From theory to practice, summit to base - that's Greta's optimization ace!",

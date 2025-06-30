@@ -61,7 +61,7 @@ export const CourseRoadmap = () => {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 Your Learning {" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700">
                   Journey
                 </span>
               </h2>
@@ -79,12 +79,12 @@ export const CourseRoadmap = () => {
                   <p className="text-gray-600">Start your mathematical adventure today</p>
                 </div>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-orange-500">{overallProgress}%</div>
+                  <div className="text-3xl font-bold text-blue-600">{overallProgress}%</div>
                   <div className="text-sm text-gray-500">Complete</div>
                 </div>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-3">
-                <div className="bg-gradient-to-r from-orange-500 to-red-500 h-3 rounded-full" style={{ width: `${overallProgress}%` }}></div>
+                <div className="bg-gradient-to-r from-blue-500 to-blue-700 h-3 rounded-full" style={{ width: `${overallProgress}%` }}></div>
               </div>
             </div>
 
