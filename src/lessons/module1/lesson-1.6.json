@@ -1,0 +1,53 @@
+{
+  "id": "1.6",
+  "title": "Linear Independence - Fundamental Directions",
+  "duration": "35-40 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera realizes that some of her forest paths are redundant. If she can reach any point using the river path and the perpendicular path, then a third diagonal path doesn't give her any new capabilities. This insight leads to one of the most important concepts in mathematics: linear independence - the art of eliminating redundancy while keeping all essential directions.",
+    "characterMessage": "Independent vectors give you new directions to explore! It's like having the perfect toolkit - no redundant tools, but everything you need to reach anywhere you want to go. Can I get there without this vector? If yes, it's redundant!"
+  },
+  "learningObjectives": [
+    "Define linear independence and dependence mathematically",
+    "Test sets of vectors for linear independence",
+    "Understand the geometric meaning of independence",
+    "Identify the maximum number of independent vectors in n dimensions",
+    "Recognize when vectors provide genuinely new information"
+  ],
+  "coreConcepts": [
+    "Linear independence definition",
+    "Linear dependence: when vectors are redundant",
+    "Testing for independence",
+    "Geometric interpretation",
+    "Maximum independent vectors in n dimensions"
+  ],
+  "readContent": "Independent vectors give you genuinely new directions to explore! Vectors are linearly independent if none can be built from the others. It's like having the perfect exploration toolkit - no redundant tools, but everything you need to reach anywhere. In 2D, you can have at most 2 independent vectors. In 3D, at most 3. More than that, and some become redundant passengers!",
+  "readAnalogy": "Think of your vector toolkit: independent vectors are essential tools that each do something unique, while dependent vectors are duplicates taking up backpack space. Can I get there without this vector? If yes, it's redundant!",
+  "readKeyPoints": [
+    "Linear independence: no vector can be written as a combination of the others",
+    "Test: c₁v₁ + c₂v₂ + ... + cₙvₙ = 0 only when all c's equal zero",
+    "Maximum independent vectors in n dimensions: n vectors"
+  ],
+  "readDigDeeper": "Linear dependence means at least one vector is redundant. Geometrically, dependent vectors point in directions already covered by other vectors. Testing independence often involves setting up and solving systems of equations.",
+  "readWhyMatters": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding redundancy and improving prediction accuracy.",
+  "seeContent": "Visualize how linearly dependent vectors collapse into lower-dimensional spaces, while independent vectors span full dimensional space. Watch the Independence Checker show when vectors provide genuinely new directions.",
+  "hearContent": "Listen as I explain how finding independent directions is like choosing the perfect exploration toolkit - you want enough tools to handle any situation, but no redundant weight slowing you down!",
+  "hearAudioUrl": "/audio/1.6.mp3",
+  "doContent": "Use the Independence Checker to test vector sets visually, experiment with the Dependency Detector to see how dependent vectors relate, and practice with the Redundancy Eliminator to streamline vector sets.",
+  "memoryAids": {
+    "mantra": "Independent vectors open new paths - dependent vectors just repeat directions you already have!",
+    "visual": "Picture your vector toolkit: independent vectors are essential tools that each do something unique, while dependent vectors are duplicates taking up space."
+  },
+  "conceptCheck": {
+    "question": "Are vectors [1, 2], [3, 1], and [4, 3] linearly independent? Explain both algebraically and geometrically.",
+    "options": [
+      "No - [4,3] = [1,2] + [3,1], so they're linearly dependent",
+      "Yes - all three vectors point in different directions",
+      "No - you can only have 2 independent vectors in 2D space",
+      "Yes - the determinant test confirms independence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In 2D space, at most 2 vectors can be linearly independent. With 3 vectors in 2D, at least one must be expressible as a linear combination of the others. Indeed, [4,3] = [1,2] + [3,1], confirming dependence."
+  },
+  "realWorldConnection": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding the 'curse of dimensionality' and improving prediction accuracy."
+}

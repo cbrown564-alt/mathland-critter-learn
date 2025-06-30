@@ -1,0 +1,51 @@
+{
+  "id": "0.1",
+  "title": "Order of Operations & Algebraic Basics",
+  "duration": "25 min",
+  "characterId": "ollie",
+  "narrativeHook": {
+    "story": "Ollie is building a dam and needs to calculate materials precisely. Each measurement must follow the correct order, just like mathematical operations!",
+    "characterMessage": "Hey there! I'm Ollie, and I love building things step by step. Math is just like construction - you need to follow the right order, or everything falls apart! Let's learn how to tackle any mathematical expression with confidence."
+  },
+  "learningObjectives": [
+    "Apply the order of operations (PEMDAS/BODMAS) correctly",
+    "Simplify complex algebraic expressions",
+    "Identify and work with like terms",
+    "Understand the distributive property"
+  ],
+  "coreConcepts": [
+    "Order of operations (PEMDAS/BODMAS)",
+    "Simplifying expressions",
+    "Like terms",
+    "Distributive property"
+  ],
+  "readContent": "Think of PEMDAS as my construction rulebook. When I build a dam, I can't just slap sticks together randomly - foundation first, walls second, roof last. Same with math: some operations are like foundation work (parentheses), others are like the heavy construction (multiplication), and some are finishing touches (addition). Without this order, mathematical expressions become as unstable as a poorly built dam.",
+  "readAnalogy": "Building a dam requires precise order: foundation stones first (parentheses), then the main structure with power tools (exponents), heavy construction work (multiplication/division), and finally the finishing details (addition/subtraction). Skip the order, and everything collapses!",
+  "readKeyPoints": [
+    "Parentheses always come first - like reading blueprints before building",
+    "Exponents are power operations - the heavy machinery phase",
+    "Multiplication/Division happen before Addition/Subtraction - structure before details"
+  ],
+  "readDigDeeper": "In programming languages, operator precedence follows PEMDAS but with additional rules for logical operations, assignment operators, and function calls. Some languages use different precedence orders, which is why explicit parentheses are often preferred in production code.",
+  "readWhyMatters": "In Excel, the formula =2+3*4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless. Order of operations isn't just math theory - it's the foundation that keeps your data analysis from crumbling.",
+  "seeContent": "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",
+  "hearContent": "Listen as I walk you through each step, explaining why we choose each operation and how it builds toward our final answer.",
+  "hearAudioUrl": "/audio/0.1.mp3",
+  "doContent": "Practice with interactive problems that let you drag and drop operations in the correct order, with immediate feedback on your choices.",
+  "memoryAids": {
+    "mantra": "Please Excuse My Dear Aunt Sally - she always follows the rules!",
+    "visual": "Picture a construction site where Ollie builds from the foundation up: first the frame (parentheses), then the roof (exponents), then the walls (multiplication/division), and finally the finishing touches (addition/subtraction)."
+  },
+  "conceptCheck": {
+    "question": "What is the result of: 3 + 4 × 2²?",
+    "options": [
+      "28",
+      "19",
+      "196",
+      "49"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Following PEMDAS: First 2² = 4, then 4 × 4 = 16, finally 3 + 16 = 19."
+  },
+  "realWorldConnection": "Order of operations appears everywhere in data science: from calculating statistical measures to programming algorithms. Machine learning models rely on precise mathematical calculations where order matters - a misplaced operation can completely change your model's predictions!"
+}

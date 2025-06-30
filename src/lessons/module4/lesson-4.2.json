@@ -1,0 +1,53 @@
+{
+  "id": "4.2",
+  "title": "Limits in Multivariable Calculus",
+  "duration": "40-45 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta encounters a fascinating challenge: in single-variable calculus, approaching a point meant moving along a line, but with multiple variables, there are infinitely many paths to approach any point! This creates both beautiful complexity and the need for more precise mathematical tools.",
+    "characterMessage": "Limits become much more interesting with multiple variables! Unlike the single path approach in one dimension, we can now approach any point from infinitely many directions. This requires extra precision and care - exactly the kind of mathematical challenge I love!"
+  },
+  "learningObjectives": [
+    "Understand multivariable limits as approaching from all possible paths",
+    "Recognize why path-independence is required for limit existence",
+    "Compute limits using direct substitution when possible",
+    "Identify when limits don't exist due to path-dependence",
+    "Apply squeeze theorem and polar coordinates for limit evaluation"
+  ],
+  "coreConcepts": [
+    "Limit definition: lim(x,y)→(a,b) f(x,y) = L",
+    "Path independence requirement",
+    "Direct substitution method",
+    "Path-dependent limits and non-existence",
+    "Polar coordinate substitution technique"
+  ],
+  "readContent": "Multivariable limits require the function to approach the same value L along every possible path to point (a,b). Unlike single-variable limits with only left/right approaches, we now have infinitely many approach paths: straight lines, curves, spirals, and more exotic routes. If any two paths give different limiting values, the limit doesn't exist. When direct substitution works (continuous functions), the limit equals f(a,b). For indeterminate forms, we use techniques like polar coordinates or the squeeze theorem.",
+  "readAnalogy": "Think of multivariable limits like a hedgehog carefully approaching its burrow. In one dimension, there's only a left path and right path, but in two dimensions, the hedgehog can approach from north, south, east, west, or any curved path imaginable. The limit exists only if all possible approach routes lead to the same destination!",
+  "readKeyPoints": [
+    "Multivariable limits must be the same along ALL possible approach paths",
+    "If two different paths give different limits, the overall limit doesn't exist",
+    "Direct substitution works when the function is continuous at the point"
+  ],
+  "readDigDeeper": "The ε-δ definition of multivariable limits uses neighborhoods: for every ε > 0, there exists δ > 0 such that whenever 0 < ||(x,y) - (a,b)|| < δ, we have |f(x,y) - L| < ε. This generalizes naturally to higher dimensions.",
+  "readWhyMatters": "Understanding multivariable limits is crucial for analyzing continuity in physical systems. Engineers need these concepts when studying heat transfer, where temperature must vary continuously across material boundaries. Computer graphics relies on continuous surface functions for realistic rendering.",
+  "seeContent": "Watch interactive demonstrations showing different approach paths to the same point, observe cases where limits exist versus cases where path-dependence creates non-existence, and see polar coordinate transformations that simplify complex limit calculations.",
+  "hearContent": "Listen as I explain how multivariable limits are like a hedgehog's careful approach to home - we must check every possible path to ensure they all lead to the same mathematical destination!",
+  "hearAudioUrl": "/audio/4.2.mp3",
+  "doContent": "Use the Path Explorer to test different approach routes, practice with the Limit Calculator that checks path independence, and experiment with the Polar Coordinate Transformer for challenging limit problems.",
+  "memoryAids": {
+    "mantra": "All paths must agree for the limit to be - that's multivariable precision, you see!",
+    "visual": "Picture Dr. Delta testing every possible route to a point, like a careful hedgehog ensuring all paths through the mathematical forest lead to the same precise destination."
+  },
+  "conceptCheck": {
+    "question": "For f(x,y) = xy/(x² + y²), what happens to the limit as (x,y) → (0,0) along the path y = mx?",
+    "options": [
+      "The limit is m/(1 + m²), which depends on the slope m",
+      "The limit is always 0 regardless of the slope m",
+      "The limit is always 1 regardless of the slope m",
+      "The limit is undefined because of division by zero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Along path y = mx, we get f(x,mx) = x(mx)/(x² + (mx)²) = mx²/(x²(1 + m²)) = m/(1 + m²). Since this depends on m, different paths give different limits, so the overall limit doesn't exist."
+  },
+  "realWorldConnection": "Engineers analyze heat distribution where temperature must vary continuously across material boundaries. Computer graphics requires continuous surface functions for realistic rendering. Climate models need continuous atmospheric variable transitions across geographic boundaries."
+}

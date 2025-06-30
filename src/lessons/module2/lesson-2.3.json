@@ -1,0 +1,53 @@
+{
+  "id": "2.3",
+  "title": "Matrix Multiplication - Systematic Transformation",
+  "duration": "40-45 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max discovers something profound: when he organizes transformation rules in one matrix and data in another, matrix multiplication systematically applies every transformation to every piece of data simultaneously. It's like having a master processor that can transform entire datasets with mathematical precision.",
+    "characterMessage": "This is where my organizational superpowers really shine! Matrix multiplication isn't just calculation - it's systematic transformation. I can take transformation rules, organize them perfectly, and apply them to entire datasets at once. It's like conducting an orchestra where every instrument knows exactly what to play!"
+  },
+  "learningObjectives": [
+    "Calculate matrix products using the row-column dot product method",
+    "Understand when matrix multiplication is defined (inner dimensions must match)",
+    "Recognize that matrix multiplication is not commutative",
+    "Interpret matrix multiplication as systematic transformation application",
+    "Apply matrix multiplication to solve systems and perform transformations"
+  ],
+  "coreConcepts": [
+    "Matrix multiplication algorithm (row × column)",
+    "Dimension compatibility (m×n)(n×p) = (m×p)",
+    "Non-commutative property: AB ≠ BA generally",
+    "Matrix multiplication as transformation",
+    "Applications in systems and graphics"
+  ],
+  "readContent": "Matrix multiplication combines two matrices by taking dot products of rows from the first matrix with columns from the second matrix. For A (m×n) and B (n×p), the product AB is (m×p) where element C[i,j] equals the dot product of row i from A with column j from B. The inner dimensions must match (n=n) while outer dimensions (m,p) determine the result size. Unlike addition, matrix multiplication is not commutative: AB ≠ BA in general. Matrix multiplication represents systematic application of transformations, making it fundamental to computer graphics, solving linear systems, and data processing.",
+  "readAnalogy": "Matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules. Every combination gets processed according to precise organizational protocols.",
+  "readKeyPoints": [
+    "Multiplication rule: C[i,j] = (row i of A) · (column j of B)",
+    "Dimension compatibility: (m×n)(n×p) = (m×p) - inner dimensions must match",
+    "Non-commutative: AB ≠ BA in general - order matters!"
+  ],
+  "readDigDeeper": "Matrix multiplication represents function composition, where applying transformation B then A equals applying transformation AB. This operation is associative (A(BC) = (AB)C) but not commutative, reflecting the order-dependent nature of transformations.",
+  "readWhyMatters": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
+  "seeContent": "Watch step-by-step matrix multiplication with highlighted row-column combinations, see how dimension mismatches prevent multiplication, and explore how matrix products represent transformations of geometric objects.",
+  "hearContent": "Listen as I explain how matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules!",
+  "hearAudioUrl": "/audio/2.3.mp3",
+  "doContent": "Practice with the Matrix Multiplier showing step-by-step calculations, use the Dimension Compatibility Checker, and experiment with the Transformation Visualizer to see matrix multiplication as geometric transformation.",
+  "memoryAids": {
+    "mantra": "Row meets column, dot product magic - systematic transformation of organized information!",
+    "visual": "Picture Max as an orchestra conductor: each row represents an instrument section, each column represents a musical phrase, and multiplication creates the perfect harmony of systematic transformation."
+  },
+  "conceptCheck": {
+    "question": "Why can't you multiply a 3×2 matrix by a 3×4 matrix, but you can multiply a 3×2 by a 2×4?",
+    "options": [
+      "Inner dimensions must match: (3×2)(2×4) works because 2=2, but (3×2)(3×4) fails because 2≠3",
+      "You can only multiply square matrices",
+      "The first matrix must be larger than the second",
+      "Matrix multiplication requires the same dimensions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For matrix multiplication A×B, the number of columns in A must equal the number of rows in B. (3×2)(2×4) works: inner dimensions 2=2. (3×2)(3×4) fails: inner dimensions 2≠3."
+  },
+  "realWorldConnection": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies."
+}

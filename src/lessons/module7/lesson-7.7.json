@@ -1,0 +1,53 @@
+{
+  "id": "7.7",
+  "title": "Type I & Type II Errors",
+  "duration": "40-45 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund contemplates the inherent duality of decision-making under uncertainty. Every hypothesis test faces two possible errors: rejecting truth (Type I) or accepting falsehood (Type II). Like the balance between being too suspicious or too trusting, these errors represent the fundamental trade-off in statistical decision-making.",
+    "characterMessage": "Every statistical decision carries the elegant weight of uncertainty! We can never eliminate all possibility of error, but we can understand and control these risks. Type I and Type II errors represent the fundamental balance between skepticism and acceptance in our quest for truth."
+  },
+  "learningObjectives": [
+    "Define and distinguish Type I and Type II errors clearly",
+    "Understand the trade-off relationship between error types",
+    "Calculate error probabilities in hypothesis testing contexts",
+    "Recognize factors affecting statistical power",
+    "Apply error analysis to real-world decision scenarios"
+  ],
+  "coreConcepts": [
+    "Type I error: reject true H₀, probability = α",
+    "Type II error: fail to reject false H₀, probability = β",
+    "Statistical power: 1 - β, probability of detecting true effect",
+    "Trade-off between α and β",
+    "Factors affecting power: effect size, sample size, α level"
+  ],
+  "readContent": "Type I error occurs when we reject a true null hypothesis (false positive), with probability α equal to our significance level. Type II error occurs when we fail to reject a false null hypothesis (false negative), with probability β. Statistical power = 1 - β represents the probability of correctly detecting a true effect. These errors trade off: reducing α (being more conservative) increases β (reduces power), while increasing α decreases β. Power increases with larger effect sizes, larger sample sizes, and higher α levels. The choice of α and β reflects the relative costs of different types of errors in specific contexts. Medical testing exemplifies this trade-off: false positives cause unnecessary anxiety and treatment, while false negatives miss real diseases.",
+  "readAnalogy": "Type I and Type II errors are like the eternal balance between being too suspicious or too trusting. If I'm overly cautious about detecting predators (low α), I might miss real threats (high β). If I'm too quick to sound alarms (high α), I'll often cry wolf when there's no danger (Type I error). The elegant challenge is finding the right balance for each situation, acknowledging that perfection is impossible but wisdom lies in understanding the trade-offs.",
+  "readKeyPoints": [
+    "Type I error: reject true H₀ (false positive), probability = α",
+    "Type II error: fail to reject false H₀ (false negative), probability = β",
+    "Power = 1 - β increases with larger effects, samples, and α levels"
+  ],
+  "readDigDeeper": "The receiver operating characteristic (ROC) curve plots sensitivity (1-β) against 1-specificity (α) across different decision thresholds, providing a complete picture of the Type I/Type II error trade-off. The area under the ROC curve measures overall test performance.",
+  "readWhyMatters": "Medical diagnostic tests balance false positives (unnecessary anxiety/treatment) against false negatives (missed diseases). Legal systems balance convicting innocents (Type I) against freeing guilty parties (Type II). Quality control balances rejecting good products (Type I) against accepting defective ones (Type II).",
+  "seeContent": "Visualize error regions in hypothesis testing distributions, explore power curves showing how factors affect Type II error rates, and observe ROC curves demonstrating the fundamental trade-off between error types.",
+  "hearContent": "Listen as I explain how Type I and Type II errors represent the elegant mathematical formalization of life's fundamental uncertainty - we cannot eliminate all error, but we can understand and choose our risks with dignity!",
+  "hearAudioUrl": "/audio/7.7.mp3",
+  "doContent": "Use the Error Type Visualizer showing distribution overlap, practice with the Power Calculator for different scenarios, and experiment with the Error Trade-off Simulator demonstrating α/β relationships.",
+  "memoryAids": {
+    "mantra": "Type I cries wolf when none appears, Type II misses danger that is near! Power grows with size and effect - statistical balance we must perfect!",
+    "visual": "Picture Sigmund gracefully balancing on a seesaw where one side represents Type I errors (false alarms) and the other Type II errors (missed signals), understanding that perfect balance is impossible but wisdom lies in conscious choice."
+  },
+  "conceptCheck": {
+    "question": "A medical test has α = 0.05 and β = 0.20. What do these values mean?",
+    "options": [
+      "5% false positive rate, 20% false negative rate, 80% power to detect disease",
+      "5% of tests are wrong, 20% chance the disease exists",
+      "95% accuracy, 80% sensitivity in disease detection",
+      "5% Type II error rate, 20% Type I error rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "α = 0.05 means 5% Type I error rate (false positives - test says disease when none exists). β = 0.20 means 20% Type II error rate (false negatives - test misses real disease). Power = 1 - β = 80% chance of detecting disease when present."
+  },
+  "realWorldConnection": "FDA drug approval balances Type I errors (approving ineffective drugs) against Type II errors (rejecting effective drugs). Airport security balances false alarms (Type I) against missing real threats (Type II). COVID-19 testing balanced false positives causing unnecessary quarantine against false negatives spreading infection."
+}

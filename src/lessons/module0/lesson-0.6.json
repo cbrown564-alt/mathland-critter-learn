@@ -1,0 +1,53 @@
+{
+  "id": "0.6",
+  "title": "Graphing Functions",
+  "duration": "40-45 minutes",
+  "characterId": "felix",
+  "narrativeHook": {
+    "story": "Felix's outputs can be visualized as a path on a graph. Different function types create different shapes - lines, curves, and more complex patterns that tell stories about data relationships.",
+    "characterMessage": "Input processed successfully! When I plot my outputs on a graph, they create beautiful patterns. Each function type has its own signature shape - let me show you!"
+  },
+  "learningObjectives": [
+    "Graph linear functions and identify slope and y-intercept",
+    "Graph quadratic functions and identify vertex and axis of symmetry",
+    "Graph exponential functions and understand growth patterns",
+    "Interpret graphs to understand function behavior",
+    "Connect algebraic and graphical representations"
+  ],
+  "coreConcepts": [
+    "Coordinate plane basics",
+    "Linear functions (y = mx + b)",
+    "Quadratic functions (parabolas)",
+    "Exponential functions",
+    "Graph interpretation"
+  ],
+  "memoryAids": {
+    "mantra": "Each function type has its own shape signature - I can recognize them all!",
+    "visual": "Felix's graph gallery showing the characteristic shapes of different function families"
+  },
+  "realWorldConnection": "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
+  "conceptCheck": {
+    "question": "What does the graph of y = x² look like, and what does the vertex represent?",
+    "options": [
+      "A U-shaped parabola with vertex at (0,0), the minimum point",
+      "A straight line through the origin with slope 2",
+      "An exponential curve growing rapidly",
+      "A horizontal line at y = 0"
+    ],
+    "correctAnswer": 0,
+    "explanation": "y = x² creates a U-shaped parabola opening upward. The vertex at (0,0) represents the minimum point where the function reaches its lowest value. This shape is fundamental in optimization problems."
+  },
+  "readContent": "Felix's mathematical outputs create visual stories when plotted on graphs. Linear functions (y = mx + b) draw straight lines where m controls steepness and b sets the starting height. Quadratic functions create U-shaped parabolas perfect for optimization problems. Exponential functions show rapid growth or decay patterns. Each function type has its own visual signature.",
+  "readAnalogy": "Graphing functions is like watching Felix's work patterns over time. Linear functions show steady, predictable progress. Quadratic functions show acceleration and optimization. Exponential functions show explosive growth or rapid decline.",
+  "readKeyPoints": [
+    "Linear functions: y = mx + b creates straight lines (m = slope, b = y-intercept)",
+    "Quadratic functions: y = ax² + bx + c creates parabolas (a controls opening direction)",
+    "Exponential functions: y = abˣ shows growth (b > 1) or decay (0 < b < 1)"
+  ],
+  "readDigDeeper": "Function transformations: f(x) + k shifts vertically, f(x + h) shifts horizontally, af(x) stretches vertically, f(bx) stretches horizontally. Understanding these patterns helps predict how parameter changes affect graph shapes.",
+  "readWhyMatters": "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
+  "seeContent": "Use an interactive graphing tool to plot different function types, observe how changing parameters affects the graph shape, and explore real-world data visualizations.",
+  "hearContent": "Listen as I explain how reading the story that graphs tell is like understanding the data patterns that drive business decisions and scientific discoveries!",
+  "hearAudioUrl": "/audio/0.6.mp3",
+  "doContent": "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns."
+}

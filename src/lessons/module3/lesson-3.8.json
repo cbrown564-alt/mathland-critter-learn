@@ -1,0 +1,53 @@
+{
+  "id": "3.8",
+  "title": "Complex Eigenvalues & Oscillatory Behavior",
+  "duration": "40-45 minutes",
+  "characterId": "eileen",
+  "narrativeHook": {
+    "story": "Eileen encounters her most mysterious case yet: matrices with complex eigenvalues! These mathematical mysteries create rotating, oscillating behaviors that spiral through space. Understanding complex eigenvalues unlocks the secrets of vibration, waves, and periodic phenomena.",
+    "characterMessage": "Complex eigenvalues are the most mysterious of all! They create spiraling, rotating behaviors that seem almost magical. But I've cracked their code - they're the mathematical signature of oscillation and periodic motion!"
+  },
+  "learningObjectives": [
+    "Understand complex eigenvalues as indicators of rotational behavior",
+    "Interpret complex eigenvalue magnitude and argument geometrically",
+    "Analyze oscillatory solutions to differential equation systems",
+    "Connect complex eigenvalues to spiraling and periodic motion",
+    "Apply complex eigenvalue analysis to vibration and wave problems"
+  ],
+  "coreConcepts": [
+    "Complex eigenvalues: λ = a ± bi",
+    "Magnitude |λ| determines growth/decay",
+    "Argument arg(λ) determines rotation frequency",
+    "Complex eigenvectors and real solutions",
+    "Applications to oscillatory systems"
+  ],
+  "readContent": "Complex eigenvalues λ = a ± bi appear in conjugate pairs for real matrices, indicating rotational or oscillatory behavior. The real part 'a' controls growth (a > 0) or decay (a < 0), while the imaginary part 'b' determines rotation frequency. The magnitude |λ| = √(a² + b²) shows overall growth/decay rate, and the argument determines oscillation period. Although eigenvectors are complex, real solutions can be constructed using the real and imaginary parts of complex eigenvectors. This creates spiraling trajectories in phase space, essential for understanding vibrations, electrical circuits, and population cycles.",
+  "readAnalogy": "Complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
+  "readKeyPoints": [
+    "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
+    "Magnitude |λ| shows overall growth/decay rate",
+    "Argument arg(λ) determines rotation frequency"
+  ],
+  "readDigDeeper": "Complex eigenvalues create spiraling motions in phase space. The real part controls whether the system grows or decays, while the imaginary part controls the rotation speed. This is crucial for understanding oscillatory systems in engineering and physics.",
+  "readWhyMatters": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics.",
+  "seeContent": "Visualize how complex eigenvalues create spiraling motions, see how magnitude controls spiral tightness while argument controls rotation speed, and watch oscillatory solutions emerge from complex eigenvalue systems.",
+  "hearContent": "Listen as I explain how complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
+  "hearAudioUrl": "/audio/3.8.mp3",
+  "doContent": "Use the Complex Eigenvalue Analyzer to decompose rotation and growth components, experiment with the Spiral Trajectory Generator, and practice with the Oscillation Predictor for dynamic systems.",
+  "memoryAids": {
+    "mantra": "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
+    "visual": "Picture Eileen watching mathematical dancers: complex eigenvalues choreograph spiraling motions where the real part controls how tight the spiral gets and the imaginary part controls how fast it spins."
+  },
+  "conceptCheck": {
+    "question": "A system has complex eigenvalues λ = -0.1 ± 2i. What type of behavior does this predict?",
+    "options": [
+      "Decaying oscillations - the system spirals inward while rotating",
+      "Growing oscillations - the system spirals outward while rotating",
+      "Pure rotation without growth or decay",
+      "Exponential decay without oscillation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Real part -0.1 < 0 indicates decay, while imaginary part ±2i indicates oscillation with frequency 2. Combined, this creates decaying oscillations - spiraling inward motion."
+  },
+  "realWorldConnection": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics."
+}

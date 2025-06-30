@@ -1,0 +1,53 @@
+{
+  "id": "7.10",
+  "title": "Sigmund's Hypothesis Testing Mastery Capstone",
+  "duration": "50-60 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund faces the ultimate test of statistical elegance: a comprehensive project that synthesizes every aspect of hypothesis testing mastery. From formulating hypotheses through calculating power, from interpreting p-values to assessing practical significance - this capstone demonstrates the complete art of making principled decisions under uncertainty.",
+    "characterMessage": "Time for the ultimate demonstration of hypothesis testing mastery! This comprehensive challenge brings together every element we've studied - hypothesis formulation, test selection, error analysis, power calculations, and the wisdom to distinguish statistical from practical significance. Let's conduct statistical inference with complete elegance!"
+  },
+  "learningObjectives": [
+    "Synthesize all hypothesis testing concepts in comprehensive real-world scenarios",
+    "Apply appropriate tests while considering assumptions and limitations",
+    "Interpret results with full consideration of error types and power",
+    "Distinguish between statistical and practical significance appropriately",
+    "Demonstrate mastery of complete inferential reasoning process"
+  ],
+  "coreConcepts": [
+    "Complete hypothesis testing workflow",
+    "Test selection and assumption checking",
+    "Error analysis and power considerations",
+    "Effect size interpretation and practical significance",
+    "Principled statistical decision-making"
+  ],
+  "readContent": "This capstone project synthesizes every hypothesis testing concept into comprehensive real-world investigations. You'll formulate hypotheses, select appropriate tests, calculate test statistics and p-values, analyze Type I/II errors and power, and distinguish statistical from practical significance. The project mirrors professional statistical practice where technical competence must combine with practical wisdom. You'll work through scenarios that require not just computational skills but also judgment about what constitutes meaningful evidence and important effects. This integrated approach demonstrates how hypothesis testing serves as a principled framework for making decisions under uncertainty while acknowledging the inherent limitations of statistical inference.",
+  "readAnalogy": "This capstone is like Sigmund conducting a complete statistical symphony where every element must work in elegant harmony - from the opening theme of hypothesis formulation through the complex movements of test selection and power analysis, culminating in the graceful finale of practical interpretation. Every note matters, and the beauty lies in the complete composition.",
+  "readKeyPoints": [
+    "Complete inferential workflow: hypothesis formulation through practical interpretation",
+    "Integration of technical computation with practical wisdom about significance",
+    "Professional-level statistical reasoning that acknowledges uncertainty and limitations"
+  ],
+  "readDigDeeper": "This project workflow mirrors professional statistical consulting where technical expertise must combine with domain knowledge and practical judgment. The ability to synthesize computational skills with interpretive wisdom distinguishes competent statistical practitioners from mere calculators.",
+  "readWhyMatters": "This capstone demonstrates career-ready statistical inference skills. Data scientists use these complete workflows for product analytics and A/B testing. Medical researchers apply comprehensive hypothesis testing for clinical trial analysis. Policy researchers use these skills to evaluate intervention effectiveness with appropriate recognition of statistical and practical significance.",
+  "seeContent": "Work through comprehensive hypothesis testing workflows that integrate all course concepts, visualize complete statistical reasoning processes, and observe how technical analysis connects to practical decision-making in realistic scenarios.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of hypothesis testing mastery - every concept working together with the elegance and principled reasoning that defines excellent statistical practice!",
+  "hearAudioUrl": "/audio/7.10.mp3",
+  "doContent": "Complete comprehensive hypothesis testing projects: formulate hypotheses for complex scenarios, select and apply appropriate tests, analyze power and error implications, calculate effect sizes, and provide practical interpretations that guide real-world decision-making.",
+  "memoryAids": {
+    "mantra": "Every hypothesis, every test, every elegant decision manifest! From formulation through interpretation - that's statistical perfection!",
+    "visual": "Picture yourself as Sigmund's accomplished partner, gracefully conducting complete statistical investigations with the elegance and wisdom that transforms raw data into principled insights for important decisions."
+  },
+  "conceptCheck": {
+    "question": "In Part B, you find p = 0.001 with Cohen's d = 0.15 in a study of n = 1,000. How should you interpret this result?",
+    "options": [
+      "Statistically significant but practically trivial effect - large sample detected tiny difference",
+      "Strong evidence for both statistical and practical significance",
+      "The large sample size proves this is an important finding",
+      "The low p-value indicates a meaningful effect regardless of effect size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "p = 0.001 shows statistical significance, but Cohen's d = 0.15 indicates a very small effect size (below 'small' threshold of 0.2). The large sample (n = 1,000) enabled detection of a statistically reliable but practically trivial difference."
+  },
+  "realWorldConnection": "This capstone mirrors real statistical consulting workflows: pharmaceutical statisticians conducting clinical trial analyses, tech company data scientists running A/B testing programs, and policy researchers evaluating intervention effectiveness. The complete inferential reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "2.4",
+  "title": "Identity Matrix & Matrix Inverses",
+  "duration": "35-40 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max discovers the mathematical equivalent of a mirror and a universal undo button. The identity matrix reflects any data back unchanged, while inverse matrices provide the exact reverse of any transformation. It's like having perfect organizational tools that can preserve or perfectly reverse any systematic change.",
+    "characterMessage": "Every organized system needs a 'do nothing' operation and an 'undo' operation! The identity matrix is my perfect mirror - it reflects everything back exactly as it came in. And inverse matrices? They're my mathematical time machines that can perfectly reverse any transformation!"
+  },
+  "learningObjectives": [
+    "Understand the identity matrix as the multiplicative identity",
+    "Calculate 2×2 matrix inverses using the determinant formula",
+    "Determine when matrices are invertible vs singular",
+    "Apply matrix inverses to solve linear equations",
+    "Recognize geometric interpretations of identity and inverse transformations"
+  ],
+  "coreConcepts": [
+    "Identity matrix: I with 1s on diagonal, 0s elsewhere",
+    "Matrix inverse: A⁻¹ where AA⁻¹ = I",
+    "2×2 inverse formula using determinant",
+    "Singular vs invertible matrices",
+    "Applications in solving Ax = b"
+  ],
+  "readContent": "The identity matrix I has 1s on the main diagonal and 0s elsewhere, serving as the multiplicative identity: AI = IA = A for any compatible matrix A. The inverse of matrix A, denoted A⁻¹, satisfies AA⁻¹ = A⁻¹A = I. For a 2×2 matrix [[a,b],[c,d]], the inverse is (1/det(A))[[d,-b],[-c,a]] where det(A) = ad-bc. If det(A) = 0, the matrix is singular (non-invertible). Matrix inverses solve linear systems: if Ax = b, then x = A⁻¹b. Geometrically, the identity preserves all transformations while inverses exactly reverse them.",
+  "readAnalogy": "The identity matrix is like a perfect photocopier that reproduces everything exactly. Matrix inverses are like having a universal 'undo' button that can perfectly reverse any systematic transformation.",
+  "readKeyPoints": [
+    "Identity matrix: I has 1s on diagonal, 0s elsewhere - the multiplicative identity",
+    "Inverse property: AA⁻¹ = A⁻¹A = I",
+    "2×2 inverse formula: A⁻¹ = (1/det(A))[[d,-b],[-c,a]] when det(A) ≠ 0"
+  ],
+  "readDigDeeper": "If det(A) = 0, the matrix is singular (non-invertible) because it collapses space to lower dimensions. Only square matrices can have inverses, and the inverse is unique when it exists. Matrix inverses solve linear systems: if Ax = b, then x = A⁻¹b.",
+  "readWhyMatters": "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified.",
+  "seeContent": "Watch the identity matrix act as a perfect mirror, see 2×2 inverse calculations step-by-step, and observe how multiplying a matrix by its inverse produces the identity matrix through interactive visualization.",
+  "hearContent": "Listen as I explain how the identity matrix is like having a perfect filing system that returns everything exactly as you put it in, while inverse matrices are like having perfect organizational reversal tools!",
+  "hearAudioUrl": "/audio/2.4.mp3",
+  "doContent": "Use the Identity Matrix Demonstrator to see preservation properties, practice with the 2×2 Inverse Calculator showing detailed steps, and experiment with the Inverse Tester to verify AA⁻¹ = I.",
+  "memoryAids": {
+    "mantra": "Identity preserves everything perfectly, inverse undoes everything completely - the ultimate organizational tools!",
+    "visual": "Picture the identity as Max's perfect mirror that reflects everything unchanged, and inverses as his mathematical time machine that can perfectly reverse any systematic transformation."
+  },
+  "conceptCheck": {
+    "question": "Find the inverse of matrix [[3,1],[2,1]] and verify your answer.",
+    "options": [
+      "Inverse is [[1,-1],[-2,3]], verification: [[3,1],[2,1]][[1,-1],[-2,3]] = [[1,0],[0,1]]",
+      "Inverse is [[1,1],[2,3]], verification gives [[5,4],[4,5]]",
+      "Matrix has no inverse because det = 0",
+      "Inverse is [[1/3,1],[1/2,1]] by dividing each element"
+    ],
+    "correctAnswer": 0,
+    "explanation": "det = 3(1) - 1(2) = 1. Inverse = (1/1)[[1,-1],[-2,3]] = [[1,-1],[-2,3]]. Verification: [[3,1],[2,1]][[1,-1],[-2,3]] = [[3-2,−3+3],[2-2,−2+3]] = [[1,0],[0,1]] ✓"
+  },
+  "realWorldConnection": "Computer graphics use inverse matrices to undo rotations and translations. Cryptography employs matrix inverses for encoding and decoding secret messages. Economic models use inverses to determine input requirements when desired outputs are specified."
+}

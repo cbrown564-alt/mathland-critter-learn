@@ -1,0 +1,45 @@
+{
+  "id": "2.10",
+  "title": "Max's Data Organization Capstone Project",
+  "duration": "50-60 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max has been commissioned to design a comprehensive data management system for a smart city initiative. He must use every matrix concept he's mastered - from basic organization to complex transformations - to create systematic solutions for traffic optimization, resource allocation, and urban planning.",
+    "characterMessage": "The ultimate organizational challenge! I'm designing a complete smart city data system using every matrix superpower I've developed. We'll organize traffic data, optimize resource allocation, and transform urban planning information - all through systematic matrix mastery!"
+  },
+  "learningObjectives": [
+    "Apply matrix addition and multiplication to combine and transform city data systematically",
+    "Use determinants and inverses to solve urban optimization problems",
+    "Implement matrix transformations for coordinate system conversions in city planning",
+    "Design block matrix structures for large-scale urban data organization",
+    "Synthesize all matrix concepts in a comprehensive real-world project"
+  ],
+  "coreConcepts": [
+    "Urban data organization using matrix structures",
+    "Traffic flow optimization using matrix operations",
+    "Resource allocation through matrix calculations",
+    "Coordinate transformations for city planning",
+    "Large-scale data management with block matrices"
+  ],
+  "readContent": "This capstone project integrates all matrix concepts through systematic urban data management. Part A organizes traffic flow data using matrices and applies matrix addition to combine rush hour patterns. Part B uses matrix multiplication for resource allocation optimization and determinants to check system stability. Part C implements coordinate transformations for mapping different city zones and uses inverses to convert between planning systems. Part D designs block matrix structures for managing massive urban datasets efficiently. The project demonstrates how matrix mathematics provides systematic solutions for complex real-world organizational challenges.",
+  "seeContent": "Work through interactive city planning tools that let you organize traffic data systematically, optimize resource allocation using matrix operations, and transform coordinate systems for urban development projects.",
+  "hearContent": "Listen as I guide you through each phase of the smart city project, showing how systematic matrix organization transforms chaotic urban data into clear, actionable intelligence for city management!",
+  "hearAudioUrl": "/audio/2.10.mp3",
+  "doContent": "Complete the four-part smart city project: organize traffic data with matrix structures, optimize resources with matrix operations, transform planning coordinates with matrix transformations, and design efficient block structures for large-scale urban data management.",
+  "memoryAids": {
+    "mantra": "Every matrix concept becomes a systematic tool for organizing and optimizing the ultimate complex system - a smart city!",
+    "visual": "Picture yourself as Max the urban data architect, using matrices as systematic blueprints to organize, transform, and optimize every aspect of city life through mathematical precision."
+  },
+  "conceptCheck": {
+    "question": "In Part B, you use a 3×3 matrix to allocate resources among police, fire, and medical services across 3 districts. If the determinant is zero, what does this mean for the allocation system?",
+    "options": [
+      "The allocation system is unstable - some districts or services are redundantly covered while others may be neglected",
+      "The allocation is perfectly balanced across all services and districts",
+      "Resource allocation is impossible with a 3×3 matrix",
+      "Zero determinant means maximum efficiency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A zero determinant indicates the allocation matrix is singular, meaning the resource distribution system has dependencies or redundancies. Some combinations of districts and services are not independently controllable, creating potential coverage gaps or overlaps."
+  },
+  "realWorldConnection": "This project mirrors real smart city implementations: traffic management systems use matrix operations for signal optimization, resource allocation algorithms distribute emergency services efficiently, and urban planning software employs coordinate transformations for development projects. Your matrix skills directly apply to urban informatics careers."
+}

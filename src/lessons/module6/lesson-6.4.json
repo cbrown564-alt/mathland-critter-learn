@@ -1,0 +1,53 @@
+{
+  "id": "6.4",
+  "title": "Common Discrete Distributions",
+  "duration": "45-50 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa opens her collection of specialized magic hats, each designed for different types of random experiments! The Bernoulli hat for yes/no questions, the Binomial hat for counting successes, the Poisson hat for rare events, and more. Each distribution has its own magical personality and special use cases!",
+    "characterMessage": "Welcome to my distribution collection! Each of these magical patterns appears in different real-world situations. Bernoulli for single trials, Binomial for counting successes, Poisson for rare events - every distribution has its specialty. Let me introduce you to my favorites!"
+  },
+  "learningObjectives": [
+    "Understand Bernoulli distribution for single success/failure trials",
+    "Master Binomial distribution for counting successes in n trials",
+    "Apply Poisson distribution for modeling rare events",
+    "Recognize when to use each distribution type",
+    "Calculate probabilities and interpret parameters for each distribution"
+  ],
+  "coreConcepts": [
+    "Bernoulli(p): single trial with success probability p",
+    "Binomial(n,p): number of successes in n independent trials",
+    "Poisson(λ): number of rare events in fixed time/space",
+    "Geometric distribution for waiting times",
+    "Parameter interpretation and real-world applications"
+  ],
+  "readContent": "Bernoulli(p) models single success/failure trials with P(X=1) = p and P(X=0) = 1-p. Binomial(n,p) counts successes in n independent Bernoulli trials: P(X=k) = C(n,k)p^k(1-p)^(n-k). This applies when we have fixed n, constant success probability p, and independent trials. Poisson(λ) models rare events occurring at average rate λ: P(X=k) = e^(-λ)λ^k/k!. It approximates Binomial when n is large and p is small. Geometric distribution models waiting times until first success. Each distribution emerges naturally from specific experimental conditions and assumptions.",
+  "readAnalogy": "Think of my distribution collection like specialized magic tricks! Bernoulli is my coin flip trick - simple success or failure. Binomial counts how many successes in multiple coin flips. Poisson is my surprise trick - it predicts rare events like how many shooting stars we'll see tonight. Each trick works perfectly for its intended situation!",
+  "readKeyPoints": [
+    "Bernoulli(p): single trial, P(success) = p",
+    "Binomial(n,p): count successes in n trials, each with probability p",
+    "Poisson(λ): rare events with average rate λ per time unit"
+  ],
+  "readDigDeeper": "The Poisson limit theorem shows that Binomial(n,p) → Poisson(np) as n → ∞ and p → 0 while np stays constant. This explains why Poisson appears when modeling rare events as limits of many small-probability trials.",
+  "readWhyMatters": "Quality control uses Binomial to model defect rates in manufacturing. Call centers use Poisson to model customer arrival patterns. Clinical trials use Binomial to analyze treatment success rates. Network engineering uses Poisson to model packet arrivals in data transmission.",
+  "seeContent": "Explore interactive calculators for each distribution, visualize how parameters affect distribution shapes, and observe real-world scenarios where each distribution naturally applies through simulation and examples.",
+  "hearContent": "Listen as I explain how each distribution in my collection has its own magical specialty - from simple yes/no questions to counting successes to predicting rare surprises!",
+  "hearAudioUrl": "/audio/6.4.mp3",
+  "doContent": "Use the Distribution Selector to match scenarios with appropriate distributions, practice with the Parameter Explorer showing how values affect shapes, and experiment with the Real-World Application Simulator.",
+  "memoryAids": {
+    "mantra": "Bernoulli for one, Binomial to count, Poisson for rare events that truly amount! Each distribution fits its special case - that's probability's magical ace!",
+    "visual": "Picture Pippa with a collection of specialized magic hats: a simple coin-flip hat (Bernoulli), a counting hat with multiple compartments (Binomial), and a surprise hat for rare events (Poisson)."
+  },
+  "conceptCheck": {
+    "question": "A factory produces items with 2% defect rate. In a batch of 100 items, what distribution models the number of defects, and what's P(exactly 2 defects)?",
+    "options": [
+      "Binomial(100, 0.02): P(X=2) = C(100,2)(0.02)²(0.98)⁹⁸ ≈ 0.273",
+      "Poisson(2): P(X=2) = e⁻²(2²)/2! ≈ 0.271 (since np = 100×0.02 = 2)",
+      "Both A and B are valid; B uses Poisson approximation since n large, p small",
+      "Bernoulli(0.02): P(X=2) = 0.02² = 0.0004"
+    ],
+    "correctAnswer": 2,
+    "explanation": "This is Binomial(100, 0.02) exactly. Since n=100 is large and p=0.02 is small with np=2, Poisson(2) provides an excellent approximation. Both approaches are mathematically valid, with Poisson being computationally simpler."
+  },
+  "realWorldConnection": "Amazon uses Poisson distributions to model customer order arrivals for inventory planning. Clinical trials use Binomial distributions to analyze drug efficacy rates. Call centers use Poisson models to predict customer service demand. Quality control systems use Binomial distributions to monitor manufacturing defect rates."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "3.5",
+  "title": "Symmetric Matrices & Orthogonal Diagonalization",
+  "duration": "40-45 minutes",
+  "characterId": "eileen",
+  "narrativeHook": {
+    "story": "Eileen discovers that symmetric matrices are the most well-behaved of all matrices - they always have real eigenvalues and perpendicular eigenvectors! These mathematical aristocrats can be diagonalized using orthogonal matrices, creating the most elegant transformations possible.",
+    "characterMessage": "Symmetric matrices are mathematical royalty! They're so well-behaved that their eigenvectors are always perpendicular to each other, and I can diagonalize them using rotations and reflections only - no stretching needed!"
+  },
+  "learningObjectives": [
+    "Understand why symmetric matrices have real eigenvalues",
+    "Recognize that symmetric matrices have orthogonal eigenvectors",
+    "Perform orthogonal diagonalization using orthonormal eigenvectors",
+    "Apply the spectral theorem for symmetric matrices",
+    "Connect orthogonal diagonalization to principal component analysis"
+  ],
+  "coreConcepts": [
+    "Symmetric matrices: A = Aᵀ",
+    "Real eigenvalues for symmetric matrices",
+    "Orthogonal eigenvectors from different eigenvalues",
+    "Orthogonal diagonalization: A = QDQᵀ",
+    "Spectral theorem and applications"
+  ],
+  "readContent": "Symmetric matrices (A = Aᵀ) have special properties: all eigenvalues are real, and eigenvectors from different eigenvalues are orthogonal. Even for repeated eigenvalues, symmetric matrices have orthogonal eigenvector bases. This enables orthogonal diagonalization A = QDQᵀ where Q has orthonormal eigenvectors as columns and QᵀQ = I. The spectral theorem guarantees this decomposition exists for any symmetric matrix. Orthogonal diagonalization represents the transformation as rotation to principal axes (Q), scaling along those axes (D), then rotation back (Qᵀ). This is fundamental to principal component analysis, quadratic forms, and optimization.",
+  "readAnalogy": "Symmetric matrices are like perfectly balanced dancers who can only perform elegant rotations and graceful scalings. They're incapable of the awkward stretching and skewing that other matrices might attempt.",
+  "readKeyPoints": [
+    "Symmetric matrices: A = A^T have real eigenvalues and orthogonal eigenvectors",
+    "Spectral theorem guarantees orthogonal diagonalization: A = QDQ^T",
+    "Transformation separates into rotation → scaling → rotation back"
+  ],
+  "readDigDeeper": "The spectral theorem is one of the most beautiful results in linear algebra. It guarantees that any real symmetric matrix can be diagonalized by an orthogonal matrix, meaning the eigenvectors form a perfect orthonormal basis for the space.",
+  "readWhyMatters": "Principal Component Analysis (PCA) relies on orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems, where eigenvectors represent normal modes and eigenvalues give oscillation frequencies.",
+  "seeContent": "Visualize how symmetric matrices create elliptical transformations with perpendicular principal axes, watch orthogonal diagonalization separate rotation from scaling, and see how this connects to data analysis principal components.",
+  "hearContent": "Listen as I explain why symmetric matrices are the mathematical aristocrats - so elegant and well-behaved that they can always be perfectly organized using pure rotations and reflections!",
+  "hearAudioUrl": "/audio/3.5.mp3",
+  "doContent": "Use the Symmetric Matrix Analyzer to verify orthogonal eigenvectors, practice with the Orthogonal Diagonalization Builder, and experiment with the Principal Axis Visualizer to see geometric interpretations.",
+  "memoryAids": {
+    "mantra": "Symmetric means elegant - real eigenvalues, perpendicular eigenvectors, pure rotational diagonalization!",
+    "visual": "Picture Eileen working with mathematical royalty: symmetric matrices are so refined they only need elegant rotations and reflections, never messy skewing or shearing."
+  },
+  "conceptCheck": {
+    "question": "For symmetric matrix [[5,3],[3,1]], why are the eigenvectors guaranteed to be orthogonal?",
+    "options": [
+      "The spectral theorem guarantees symmetric matrices have orthogonal eigenvectors",
+      "Only because this matrix has distinct eigenvalues",
+      "Symmetric matrices always have eigenvalues 0 and 1",
+      "Orthogonality only happens for 2×2 symmetric matrices"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The spectral theorem states that symmetric matrices always have orthogonal eigenvectors, regardless of whether eigenvalues are distinct or repeated. This is a fundamental property of symmetric matrices."
+  },
+  "realWorldConnection": "Principal Component Analysis (PCA) uses orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems where eigenvectors represent normal modes of oscillation with real frequencies."
+}

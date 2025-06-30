@@ -1,0 +1,53 @@
+{
+  "id": "4.1",
+  "title": "Introduction to Multivariable Functions",
+  "duration": "30-35 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta, the calm and precise hedgehog, observes that the world around us depends on multiple variables simultaneously. Temperature changes with both latitude and altitude, profit depends on price and quantity, and surfaces curve in response to two spatial coordinates. It's time to extend calculus beyond single variables.",
+    "characterMessage": "Welcome to the fascinating world of multiple variables! As a hedgehog who's always been precise about change, I've discovered that most interesting phenomena depend on several factors at once. Let's carefully explore how functions can take multiple inputs and create beautiful, complex outputs!"
+  },
+  "learningObjectives": [
+    "Understand multivariable functions as mappings from ℝⁿ to ℝ",
+    "Visualize functions of two variables using surfaces and level curves",
+    "Interpret domain and range in multivariable contexts",
+    "Recognize real-world applications of multivariable functions",
+    "Develop intuition for how multiple inputs affect single outputs"
+  ],
+  "coreConcepts": [
+    "Functions f: ℝⁿ → ℝ with multiple inputs",
+    "Surface representations: z = f(x,y)",
+    "Level curves and contour plots",
+    "Domain and range in higher dimensions",
+    "Examples from physics, economics, and engineering"
+  ],
+  "readContent": "Multivariable functions extend our single-variable calculus toolkit to handle the complexity of real-world phenomena. A function f(x,y) takes two inputs and produces one output, creating a surface in three-dimensional space. Level curves show where the function has constant values, like elevation contours on topographic maps. The domain becomes a region in the xy-plane, while the range remains a set of real numbers. These functions model everything from temperature distributions to profit optimization.",
+  "readAnalogy": "Think of a multivariable function like a precise recipe where the final taste depends on multiple ingredients. Just as a cake's flavor depends on both flour amount and baking time, mathematical functions can depend on multiple variables simultaneously, creating rich, complex behaviors.",
+  "readKeyPoints": [
+    "Multivariable functions: f(x,y) creates surfaces in 3D space",
+    "Level curves show constant function values, like topographic contours",
+    "Domain becomes a region in input space, range remains real numbers"
+  ],
+  "readDigDeeper": "Functions of three or more variables (f(x,y,z,w,...)) cannot be directly visualized as surfaces, but level sets become hypersurfaces in higher dimensions. Understanding the two-variable case provides intuition for these higher-dimensional generalizations.",
+  "readWhyMatters": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple shape parameters. Economists model market behavior where outcomes depend on price, supply, demand, and external factors.",
+  "seeContent": "Explore interactive 3D surface plots showing how functions create landscapes, examine level curve visualizations that reveal function structure, and observe how changing input parameters affects surface shape and contour patterns.",
+  "hearContent": "Listen as I explain how multivariable functions are like precise mathematical recipes - each ingredient (variable) contributes to the final result, creating rich behaviors that single-variable functions simply cannot capture!",
+  "hearAudioUrl": "/audio/4.1.mp3",
+  "doContent": "Use the Multivariable Function Explorer to visualize surfaces and level curves, practice with the Domain Sketcher for region identification, and experiment with the Surface Shape Analyzer to see how parameter changes affect function behavior.",
+  "memoryAids": {
+    "mantra": "Multiple inputs, single output - surfaces and contours reveal the mathematical route!",
+    "visual": "Picture Dr. Delta carefully examining a 3D landscape where every point represents a precise function value, with contour lines mapping the elevation like a hedgehog's perfectly organized territory."
+  },
+  "conceptCheck": {
+    "question": "For function f(x,y) = x² + y², what do the level curves look like and what does this tell us about the surface?",
+    "options": [
+      "Circles centered at origin - the surface is a paraboloid opening upward",
+      "Parallel lines - the surface is a tilted plane",
+      "Ellipses - the surface is a saddle shape",
+      "Hyperbolas - the surface has a minimum at the origin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "f(x,y) = x² + y² has level curves x² + y² = c, which are circles centered at the origin. This creates a circular paraboloid opening upward, like a perfectly symmetric bowl."
+  },
+  "realWorldConnection": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple aerodynamic parameters. Economists model market dynamics where profit depends on price, volume, competition, and market conditions."
+}

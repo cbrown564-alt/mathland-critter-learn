@@ -1,0 +1,53 @@
+{
+  "id": "4.4",
+  "title": "Introduction to Partial Derivatives",
+  "duration": "40-45 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta realizes that to understand how multivariable functions change, he needs to examine one variable at a time while holding others constant. Partial derivatives reveal how sensitive a function is to each individual input, like determining which ingredient most affects a recipe's outcome.",
+    "characterMessage": "Time to dissect change with surgical precision! Partial derivatives let me examine how a function responds to each variable individually, holding all others perfectly still. It's like being a mathematical scientist who can isolate variables in a controlled experiment!"
+  },
+  "learningObjectives": [
+    "Define partial derivatives as limits of difference quotients",
+    "Understand the geometric interpretation as surface slopes",
+    "Compute partial derivatives using single-variable techniques",
+    "Interpret partial derivatives as rates of change in specific directions",
+    "Apply partial derivative notation and terminology correctly"
+  ],
+  "coreConcepts": [
+    "Partial derivative definition: ∂f/∂x = lim(h→0) [f(x+h,y) - f(x,y)]/h",
+    "Geometric interpretation as surface slopes",
+    "Computing partials by treating other variables as constants",
+    "Notation: fx, ∂f/∂x, ∂z/∂x",
+    "Physical interpretation as sensitivity analysis"
+  ],
+  "readContent": "Partial derivatives measure how a function changes with respect to one variable while holding all others constant. The partial derivative ∂f/∂x represents the instantaneous rate of change in the x-direction, computed as a limit of difference quotients just like single-variable derivatives. Geometrically, ∂f/∂x gives the slope of the surface in a vertical plane parallel to the x-axis. To compute partials, treat all other variables as constants and apply standard differentiation rules. This isolates the effect of each variable, providing precise sensitivity analysis.",
+  "readAnalogy": "Partial derivatives are like a hedgehog scientist conducting controlled experiments. To understand how temperature affects plant growth, I'd hold sunlight and water constant while varying only temperature. Similarly, partial derivatives isolate one variable's effect by freezing all others in place.",
+  "readKeyPoints": [
+    "Partial derivatives measure change in one variable while others stay constant",
+    "Geometrically represent surface slopes in coordinate directions",
+    "Computed using standard rules while treating other variables as constants"
+  ],
+  "readDigDeeper": "Mixed partial derivatives like ∂²f/∂x∂y measure how the rate of change in one direction varies as we move in another direction. Clairaut's theorem states that mixed partials are equal when continuous: ∂²f/∂x∂y = ∂²f/∂y∂x.",
+  "readWhyMatters": "Engineers use partial derivatives to optimize designs: how does changing wing angle affect lift while keeping speed constant? Economists analyze marginal effects: how does price change affect demand while income stays fixed? Medical researchers isolate drug dosage effects while controlling for patient age and weight.",
+  "seeContent": "Watch surface cross-sections that show partial derivative slopes, see how partial derivatives create tangent planes to surfaces, and observe the geometric relationship between function surfaces and their partial derivative interpretations.",
+  "hearContent": "Listen as I explain how partial derivatives are like scientific experiments where I precisely control all variables except one, allowing me to measure exact cause-and-effect relationships!",
+  "hearAudioUrl": "/audio/4.4.mp3",
+  "doContent": "Use the Partial Derivative Calculator with step-by-step explanations, practice with the Surface Slicer that shows cross-sectional slopes, and experiment with the Sensitivity Analyzer for multivariable functions.",
+  "memoryAids": {
+    "mantra": "Hold others constant, let one variable dance - that's how partial derivatives enhance your glance!",
+    "visual": "Picture Dr. Delta in a laboratory coat, carefully adjusting one variable at a time while keeping all others locked in place, measuring the precise effect on the function's output."
+  },
+  "conceptCheck": {
+    "question": "For f(x,y) = x³y² + 2xy, what is ∂f/∂x?",
+    "options": [
+      "∂f/∂x = 3x²y² + 2y",
+      "∂f/∂x = x³y² + 2x",
+      "∂f/∂x = 3x²y² + 2xy²",
+      "∂f/∂x = 2x³y + 2y"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treating y as constant: ∂f/∂x = ∂/∂x(x³y²) + ∂/∂x(2xy) = 3x²y² + 2y. The y terms act as constants during x-differentiation."
+  },
+  "realWorldConnection": "Engineers optimize aircraft designs using partial derivatives to isolate how wing shape affects lift while keeping speed constant. Economists analyze how price changes affect demand while controlling for income levels. Medical researchers determine drug dosage effects while controlling for patient demographics."
+}

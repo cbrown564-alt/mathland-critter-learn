@@ -1,0 +1,53 @@
+{
+  "id": "6.9",
+  "title": "Sampling & Sampling Variability",
+  "duration": "40-45 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa faces a practical challenge: she can't examine every rabbit in the magical forest, but she needs to understand the whole population! Sampling is the art of learning about large groups by studying carefully chosen smaller groups. But samples vary randomly, creating uncertainty that must be quantified and understood.",
+    "characterMessage": "Time for real-world magic! I can't study every single rabbit in the forest, so I need to learn about the whole population from samples. But here's the tricky part - different samples give different answers! Understanding sampling variability is crucial for making reliable conclusions from limited data."
+  },
+  "learningObjectives": [
+    "Understand sampling as selecting subsets from populations",
+    "Distinguish between population parameters and sample statistics",
+    "Quantify sampling variability using standard errors",
+    "Apply sampling distributions to make population inferences",
+    "Recognize sources of sampling bias and random variation"
+  ],
+  "coreConcepts": [
+    "Population vs sample distinction",
+    "Parameters (μ, σ) vs statistics (X̄, s)",
+    "Sampling distribution of sample mean",
+    "Standard error: SE = σ/√n",
+    "Sampling bias vs random sampling error"
+  ],
+  "readContent": "Sampling involves selecting subsets from populations to make inferences about the whole. Population parameters (μ, σ, p) are fixed but unknown, while sample statistics (X̄, s, p̂) are random variables that estimate parameters. The sampling distribution describes how statistics vary across different samples. For sample means, the Central Limit Theorem gives X̄ ~ N(μ, σ²/n), with standard error SE = σ/√n measuring precision. Larger samples give more precise estimates (smaller SE). Random sampling ensures representativeness, while bias occurs when sampling methods systematically favor certain outcomes. Understanding sampling variability is essential for statistical inference.",
+  "readAnalogy": "Sampling is like trying to understand the magical forest by studying just a few clearings! The whole forest (population) has true characteristics I want to know, but I can only visit a few spots (sample). Each expedition gives slightly different results due to random variation, but if I choose spots fairly and visit enough of them, I can learn about the whole forest with known precision!",
+  "readKeyPoints": [
+    "Samples estimate population parameters with random variability",
+    "Standard error SE = σ/√n measures sampling precision",
+    "Larger samples reduce sampling variability and improve estimates"
+  ],
+  "readDigDeeper": "Finite population corrections modify standard errors when sampling without replacement from small populations: SE = (σ/√n)√[(N-n)/(N-1)] where N is population size. This shows how standard errors depend on the fraction sampled, not just absolute sample size.",
+  "readWhyMatters": "Political polling uses sampling theory to estimate election outcomes from small samples with quantified margins of error. Medical trials use sampling principles to test drug effectiveness on limited patient groups. Market research uses sampling to understand consumer preferences without surveying everyone. Quality control uses sampling to monitor production without testing every item.",
+  "seeContent": "Visualize how different samples from the same population give different statistics, observe how standard errors change with sample size, and explore the relationship between sampling distributions and population parameters.",
+  "hearContent": "Listen as I explain how sampling is like exploring the magical forest through small expeditions - each trip gives slightly different results, but proper sampling methods let us understand the whole forest with quantified precision!",
+  "hearAudioUrl": "/audio/6.9.mp3",
+  "doContent": "Use the Sampling Simulator to draw multiple samples and observe variability, practice with the Standard Error Calculator, and experiment with the Bias vs Precision Demonstrator.",
+  "memoryAids": {
+    "mantra": "Sample to learn about the whole, standard error shows the sampling toll! Bigger samples, smaller error - that's sampling's mathematical mirror!",
+    "visual": "Picture Pippa sending out multiple small expeditions into the magical forest, with each expedition reporting slightly different findings, but the pattern of results revealing the true nature of the whole forest."
+  },
+  "conceptCheck": {
+    "question": "A population has standard deviation σ = 12. Compare the standard errors for sample sizes n = 36 and n = 144.",
+    "options": [
+      "SE₃₆ = 12/6 = 2, SE₁₄₄ = 12/12 = 1, so quadrupling sample size halves standard error",
+      "SE₃₆ = 12/36 = 1/3, SE₁₄₄ = 12/144 = 1/12, smaller sample has larger error",
+      "SE₃₆ = 2, SE₁₄₄ = 1, since standard error is σ/√n",
+      "Both A and C are correct calculations"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Standard error SE = σ/√n. For n=36: SE = 12/√36 = 12/6 = 2. For n=144: SE = 12/√144 = 12/12 = 1. Quadrupling the sample size (36→144) halves the standard error (2→1)."
+  },
+  "realWorldConnection": "Gallup polls estimate election results from ~1,000 voters with ±3% margin of error using sampling theory. Medical researchers test new drugs on limited patient samples to make population inferences. Netflix analyzes user behavior from sample data to understand broader viewing patterns across millions of users."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "0.3",
+  "title": "Linear & Quadratic Equations",
+  "duration": "35-40 minutes",
+  "characterId": "ollie",
+  "narrativeHook": {
+    "story": "Sometimes Ollie needs to find the perfect spot where the water level meets his dam height. This is like solving equations - finding where two things are equal.",
+    "characterMessage": "Finding the balance point is like solving equations! Just like I need to find where my dam height meets the water level perfectly, we solve equations to find where expressions are equal."
+  },
+  "learningObjectives": [
+    "Solve linear equations with one variable systematically",
+    "Apply the quadratic formula and factoring to solve quadratic equations",
+    "Solve simple systems of linear equations",
+    "Check solutions and identify extraneous solutions"
+  ],
+  "coreConcepts": [
+    "Solving linear equations",
+    "Quadratic formula",
+    "Factoring quadratic equations",
+    "Systems of linear equations",
+    "Checking solutions"
+  ],
+  "memoryAids": {
+    "mantra": "What you do to one side, do to the other - just like keeping my dam balanced!",
+    "visual": "Balance beam showing how equations stay equal when the same operations are applied to both sides"
+  },
+  "realWorldConnection": "Linear equations help us understand trends in data, while quadratic equations model curved relationships like population growth, profit optimization, or the trajectory of projectiles in physics simulations.",
+  "conceptCheck": {
+    "question": "Solve for x: 2x + 5 = 13. What principle keeps the equation balanced?",
+    "options": [
+      "x = 4, using the balance principle",
+      "x = 9, by adding 5 to both sides",
+      "x = 6.5, by dividing everything by 2",
+      "x = 8, by subtracting 5 from the left side only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Subtract 5 from both sides: 2x = 8, then divide by 2: x = 4. The balance principle means whatever we do to one side, we must do to the other to maintain equality."
+  },
+  "readContent": "Finding where two things are equal is like finding the perfect water level for my dam. Linear equations (ax + b = 0) are like finding the right height for a straight beam. Quadratic equations (ax² + bx + c = 0) are like finding the optimal curve for water flow. I solve them systematically: isolation for linear equations, factoring or the quadratic formula for quadratics.",
+  "readAnalogy": "Solving equations is like finding the perfect balance point where all forces are equal. Just like my dam needs to balance water pressure with structural strength, equations balance mathematical expressions to find exact solutions.",
+  "readKeyPoints": [
+    "Linear equations: isolate the variable like adjusting one measurement at a time",
+    "Quadratic formula: x = (-b ± √(b²-4ac))/(2a) - your reliable backup plan",
+    "Always check solutions by substituting back into the original equation"
+  ],
+  "readDigDeeper": "Systems of equations can be solved using substitution, elimination, or matrix methods. The discriminant (b²-4ac) tells you about solution types: positive (2 real solutions), zero (1 repeated solution), negative (2 complex solutions).",
+  "readWhyMatters": "Linear equations model constant relationships in data (like steady growth rates), while quadratic equations model curved relationships like profit optimization, population growth curves, and the trajectory of projectiles in physics simulations.",
+  "seeContent": "Watch balance beam visualizations showing how equation solving maintains equality, and see how quadratic equations create parabolic curves when graphed.",
+  "hearContent": "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
+  "hearAudioUrl": "/audio/0.3.mp3",
+  "doContent": "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step."
+}

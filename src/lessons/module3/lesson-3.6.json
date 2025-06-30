@@ -1,0 +1,53 @@
+{
+  "id": "3.6",
+  "title": "Applications: PCA & Data Analysis",
+  "duration": "45-50 minutes",
+  "characterId": "eileen",
+  "narrativeHook": {
+    "story": "Eileen puts her detective skills to work on real data! Principal Component Analysis uses her eigenvalue expertise to find the hidden patterns in complex datasets. She can take thousands of measurements and reveal the few key directions that explain most of the variation.",
+    "characterMessage": "Time to solve real mysteries with eigenvalues! Principal Component Analysis is my favorite application - I can take messy, high-dimensional data and find the hidden patterns that explain everything. It's like finding the main plot threads in a complex detective story!"
+  },
+  "learningObjectives": [
+    "Understand PCA as eigenvalue decomposition of covariance matrices",
+    "Compute principal components from data using eigenvalue analysis",
+    "Interpret principal components as directions of maximum variance",
+    "Apply dimensionality reduction using top eigenvalues/eigenvectors",
+    "Recognize PCA applications in data science and machine learning"
+  ],
+  "coreConcepts": [
+    "Covariance matrix and its eigenvalue decomposition",
+    "Principal components as eigenvectors",
+    "Explained variance and eigenvalues",
+    "Dimensionality reduction and data compression",
+    "Applications in face recognition, genetics, finance"
+  ],
+  "readContent": "Principal Component Analysis (PCA) finds the main directions of variation in data by computing eigenvalues and eigenvectors of the covariance matrix. Each eigenvector (principal component) points in a direction of data variation, with the corresponding eigenvalue measuring the variance in that direction. The first principal component captures maximum variance, the second captures maximum remaining variance (orthogonal to the first), and so on. PCA enables dimensionality reduction by keeping only the top k components that explain most variance. This compresses high-dimensional data while preserving essential structure.",
+  "readAnalogy": "PCA is like being a data detective with X-ray vision. You can see through the chaos of high-dimensional data to spot the few fundamental patterns that explain most of what's happening. It's reducing a complex mystery novel to its essential plot elements.",
+  "readKeyPoints": [
+    "PCA diagonalizes covariance matrices to find principal directions of data variation",
+    "Eigenvalues rank the importance of each principal component by variance explained",
+    "Dimensionality reduction keeps top k components that capture most variance"
+  ],
+  "readDigDeeper": "PCA assumes linear relationships and that variance equals importance. For non-linear patterns, kernel PCA or manifold learning techniques extend the basic eigenvalue approach to curved data structures.",
+  "readWhyMatters": "Netflix uses PCA to compress user preference patterns and identify movie clusters. Geneticists apply PCA to DNA data to trace human migration patterns. Financial analysts use PCA to reduce thousands of stock price movements to a few key market factors.",
+  "seeContent": "Watch real datasets get transformed through PCA, see how principal components reveal hidden data structure, and observe dimensionality reduction that maintains essential information while eliminating noise.",
+  "hearContent": "Listen as I explain how PCA is like being a data detective - finding the few key storylines that explain most of what's happening in complex, messy datasets!",
+  "hearAudioUrl": "/audio/3.6.mp3",
+  "doContent": "Use the PCA Detective tool to analyze real datasets, practice with the Variance Explorer to see how eigenvalues rank importance, and experiment with the Dimension Reducer to compress data optimally.",
+  "memoryAids": {
+    "mantra": "Biggest eigenvalue, biggest story - PCA finds the main plot threads in any data mystery!",
+    "visual": "Picture Eileen as a data detective using eigenvalue magnifying glasses to spot the most important patterns hidden in clouds of messy data points."
+  },
+  "conceptCheck": {
+    "question": "In PCA, if the first principal component explains 60% of variance and the second explains 25%, how much information is preserved using just these two components?",
+    "options": [
+      "85% of the original data variance is captured",
+      "35% of the original data variance is captured",
+      "60% since the first component is most important",
+      "Cannot determine without knowing the original dimensions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The percentage of variance explained is additive for orthogonal principal components. First component: 60%, second component: 25%, total: 60% + 25% = 85% of original variance is preserved."
+  },
+  "realWorldConnection": "Netflix uses PCA to compress movie rating patterns and find user preference clusters. Geneticists use PCA to identify population structures from DNA data. Financial analysts use PCA to find the main risk factors driving stock market movements, reducing thousands of stocks to a few key components."
+}

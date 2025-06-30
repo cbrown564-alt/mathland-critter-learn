@@ -1,0 +1,53 @@
+{
+  "id": "8.2",
+  "title": "Prior, Likelihood, and Posterior",
+  "duration": "40-45 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes opens his detective case files to reveal the three essential components of every Bayesian investigation: the Prior (what we believed before), the Likelihood (what the evidence tells us), and the Posterior (our updated conclusion). Like any good detective story, each element plays a crucial role in reaching the truth.",
+    "characterMessage": "Every good detective story has three acts! First, the setup - what I believe going in (prior). Second, the investigation - what the evidence reveals (likelihood). Third, the conclusion - my updated theory combining both (posterior). Master these three, and you master Bayesian reasoning!"
+  },
+  "learningObjectives": [
+    "Define and distinguish prior, likelihood, and posterior distributions",
+    "Calculate posteriors using Bayes' theorem in simple cases",
+    "Understand how different priors affect posterior conclusions",
+    "Interpret likelihood functions as evidence summaries",
+    "Apply the complete Bayesian workflow to real problems"
+  ],
+  "coreConcepts": [
+    "Prior distribution P(θ): beliefs before data",
+    "Likelihood function P(data|θ): evidence given parameters",
+    "Posterior distribution P(θ|data): updated beliefs",
+    "Bayes' theorem calculation workflow",
+    "Sensitivity analysis for different priors"
+  ],
+  "readContent": "The prior distribution P(θ) represents our beliefs about parameters before observing data, encoding existing knowledge or assumptions. The likelihood function P(data|θ) summarizes what the observed data tells us about different parameter values - it's not a probability distribution over θ but a function showing how likely the data is for each possible θ value. The posterior distribution P(θ|data) combines prior and likelihood via Bayes' theorem: P(θ|data) = P(data|θ)P(θ)/P(data), where P(data) is the normalizing constant. The posterior represents our updated beliefs after seeing the evidence. Different priors can lead to different posteriors, making sensitivity analysis important for understanding how prior assumptions affect conclusions.",
+  "readAnalogy": "Think of each component like elements in my detective work. The prior is my initial theory about the case based on similar cases I've seen before. The likelihood is what each piece of evidence suggests about different theories - some evidence strongly supports certain suspects, other evidence is ambiguous. The posterior is my final theory that combines my initial hunches with all the evidence I've gathered, weighted appropriately.",
+  "readKeyPoints": [
+    "Prior P(θ): initial beliefs before data; Likelihood P(data|θ): evidence summary",
+    "Posterior P(θ|data): updated beliefs combining prior and likelihood via Bayes' theorem",
+    "Different priors can lead to different posteriors - sensitivity analysis is important"
+  ],
+  "readDigDeeper": "The likelihood principle states that all information about θ contained in the data is captured by the likelihood function. This principle underlies Bayesian inference and distinguishes it from frequentist methods that may depend on unobserved data or experimental design details.",
+  "readWhyMatters": "Drug discovery uses Bayesian methods where prior knowledge about molecular structures combines with experimental evidence. Climate modeling incorporates prior physical knowledge with observational data. A/B testing increasingly uses Bayesian approaches that naturally incorporate business context as priors.",
+  "seeContent": "Visualize how priors, likelihoods, and posteriors relate mathematically and graphically, explore how different priors affect posterior conclusions, and observe the complete Bayesian updating process step-by-step.",
+  "hearContent": "Listen as I walk you through each component of Bayesian reasoning like a detective explaining the three acts of a perfect case - setup, investigation, and resolution!",
+  "hearAudioUrl": "/audio/8.2.mp3",
+  "doContent": "Use the Prior-Likelihood-Posterior Calculator with interactive sliders, practice with the Sensitivity Analysis Tool for different priors, and experiment with the Bayesian Workflow Simulator.",
+  "memoryAids": {
+    "mantra": "Prior sets the stage, likelihood weighs the evidence, posterior shows the sage! Three components in perfect dance - that's Bayesian inference's stance!",
+    "visual": "Picture Bayes' detective office with three distinct areas: a filing cabinet of prior cases, an evidence examination table with magnifying glass (likelihood), and a conclusion board where everything comes together (posterior)."
+  },
+  "conceptCheck": {
+    "question": "You flip a coin 3 times and get HHH. With a uniform prior on p (probability of heads), what does Bayes' theorem tell us?",
+    "options": [
+      "Posterior ∝ p³ × 1, favoring higher values of p but maintaining uncertainty",
+      "The coin is definitely biased since three heads is unlikely",
+      "The posterior equals the likelihood function exactly",
+      "We need more data before making any inferences"
+    ],
+    "correctAnswer": 0,
+    "explanation": "With uniform prior P(p) = 1 and likelihood P(HHH|p) = p³, the posterior P(p|HHH) ∝ p³ × 1 = p³. This favors higher values of p but maintains uncertainty across all possible values, showing the coin is likely biased toward heads."
+  },
+  "realWorldConnection": "Financial models combine prior market knowledge with current price data to update investment strategies. Medical diagnosis systems combine disease prevalence priors with symptom likelihoods to calculate diagnostic probabilities. Weather forecasting combines physical model priors with observational data for prediction updates."
+}

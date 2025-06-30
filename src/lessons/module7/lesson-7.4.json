@@ -1,0 +1,53 @@
+{
+  "id": "7.4",
+  "title": "Introduction to Hypothesis Testing",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund encounters the fundamental challenge of scientific inquiry: distinguishing meaningful signals from random noise. Hypothesis testing provides the elegant framework for making these crucial distinctions, setting up null and alternative hypotheses like a formal debate where evidence must reach a threshold of convincing proof.",
+    "characterMessage": "Hypothesis testing is the heart of scientific reasoning! We set up competing hypotheses - null and alternative - then gather evidence to see if we can elegantly reject the status quo in favor of something new. It's a formal process that maintains statistical dignity while pursuing truth."
+  },
+  "learningObjectives": [
+    "Formulate null and alternative hypotheses correctly",
+    "Understand the logic and structure of hypothesis testing",
+    "Define Type I and Type II errors in testing context",
+    "Apply hypothesis testing framework to real problems",
+    "Recognize the burden of proof concept in statistical testing"
+  ],
+  "coreConcepts": [
+    "Null hypothesis H₀: status quo or no effect",
+    "Alternative hypothesis H₁: claim to be tested",
+    "Type I error: rejecting true H₀ (false positive)",
+    "Type II error: failing to reject false H₀ (false negative)",
+    "Significance level α and testing logic"
+  ],
+  "readContent": "Hypothesis testing evaluates competing claims about population parameters using sample evidence. The null hypothesis H₀ represents the status quo or 'no effect' position, while the alternative hypothesis H₁ represents the research claim we're testing. The logic follows 'proof by contradiction': assume H₀ is true, then determine if observed data is sufficiently unlikely under this assumption to reject H₀ in favor of H₁. Type I error occurs when we reject a true H₀ (false positive), with probability α (significance level). Type II error occurs when we fail to reject a false H₀ (false negative), with probability β. The framework places burden of proof on the alternative hypothesis, requiring strong evidence to overturn the null.",
+  "readAnalogy": "Hypothesis testing is like a formal court proceeding where the null hypothesis is 'innocent until proven guilty.' The alternative hypothesis makes an accusation that must be supported by strong evidence. Just as courts can make two types of errors - convicting the innocent (Type I) or acquitting the guilty (Type II) - statistical tests face the same elegant challenge of balancing these risks.",
+  "readKeyPoints": [
+    "H₀ (null): status quo/no effect; H₁ (alternative): research claim to test",
+    "Logic: assume H₀ true, reject only if data sufficiently unlikely under H₀",
+    "Type I error: reject true H₀; Type II error: fail to reject false H₀"
+  ],
+  "readDigDeeper": "The Neyman-Pearson paradigm formalizes hypothesis testing by fixing Type I error rate α and minimizing Type II error rate β for given effect size. This decision-theoretic approach treats hypothesis testing as an optimal decision procedure under uncertainty.",
+  "readWhyMatters": "Drug approval requires hypothesis testing to prove efficacy beyond placebo effects. Quality control uses hypothesis testing to detect manufacturing problems. A/B testing in tech companies uses hypothesis testing to validate product improvements. Scientific research relies on hypothesis testing to establish credible findings.",
+  "seeContent": "Explore the logical structure of hypothesis testing, visualize Type I and Type II errors in context, and observe how the testing framework applies across different scientific domains.",
+  "hearContent": "Listen as I explain how hypothesis testing brings elegant formal logic to the messy world of uncertainty - creating a principled framework for distinguishing signal from noise!",
+  "hearAudioUrl": "/audio/7.4.mp3",
+  "doContent": "Use the Hypothesis Formulation Tool for practice scenarios, experiment with the Error Type Visualizer, and practice with the Testing Logic Simulator showing decision outcomes.",
+  "memoryAids": {
+    "mantra": "Null says 'nothing new here,' alternative claims 'change is clear!' Evidence must be strong to reject the null - that's hypothesis testing's protocol!",
+    "visual": "Picture Sigmund as an elegant judge presiding over a formal debate between null and alternative hypotheses, requiring compelling evidence before gracefully ruling in favor of change over the status quo."
+  },
+  "conceptCheck": {
+    "question": "A researcher tests whether a new teaching method improves test scores. What are appropriate null and alternative hypotheses?",
+    "options": [
+      "H₀: μₙₑw = μₒₗd (no improvement), H₁: μₙₑw > μₒₗd (improvement)",
+      "H₀: μₙₑw > μₒₗd (improvement), H₁: μₙₑw = μₒₗd (no improvement)",
+      "H₀: new method works, H₁: new method doesn't work",
+      "H₀: μₙₑw ≠ μₒₗd (difference), H₁: μₙₑw = μₒₗd (no difference)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The null hypothesis H₀ represents status quo (no improvement), while alternative H₁ represents the research claim being tested (improvement). The burden of proof lies with demonstrating improvement, not maintaining the status quo."
+  },
+  "realWorldConnection": "FDA drug approval requires hypothesis testing to demonstrate efficacy beyond placebo effects. Tech companies like Google use A/B testing with hypothesis testing to validate new features. Medical researchers use hypothesis testing to establish treatment effectiveness in clinical trials."
+}
