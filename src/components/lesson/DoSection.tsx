@@ -6,7 +6,7 @@ interface DoSectionProps {
 }
 
 export const DoSection = ({ lesson }: DoSectionProps) => {
-  const { doType, doEmbedUrl, doComponent, doInstructions } = lesson as any;
+  const { doType, doEmbedUrl, doComponent, doInstructions } = lesson;
 
   let content = null;
 
