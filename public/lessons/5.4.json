@@ -1,0 +1,53 @@
+{
+  "id": "5.4",
+  "title": "Convex vs Non-Convex Functions",
+  "duration": "40-45 minutes",
+  "characterId": "greta",
+  "narrativeHook": {
+    "story": "Greta encounters two completely different types of mathematical terrain! Convex landscapes are like perfect bowl-shaped valleys with a single bottom point - easy to navigate with guaranteed success. Non-convex terrain is like a mountain range full of false peaks and hidden valleys - beautiful but treacherous for optimization!",
+    "characterMessage": "Understanding terrain type is crucial for any serious climber! Convex functions are like perfect bowl-shaped valleys - any local minimum is THE global minimum, making optimization straightforward. Non-convex functions are like complex mountain ranges with false peaks and hidden valleys - much more challenging but often more interesting!"
+  },
+  "learningObjectives": [
+    "Define convex and concave functions mathematically",
+    "Recognize convex functions geometrically and algebraically",
+    "Understand why convex optimization is globally solvable",
+    "Identify convex functions using second derivative tests",
+    "Appreciate the challenges of non-convex optimization"
+  ],
+  "coreConcepts": [
+    "Convex function definition: f(λx + (1-λ)y) ≤ λf(x) + (1-λ)f(y)",
+    "Geometric interpretation: line segments lie above surface",
+    "Second derivative test: fₓₓ ≥ 0, fᵧᵧ ≥ 0, D ≥ 0 for convexity",
+    "Global vs local minima in convex functions",
+    "Non-convex challenges: multiple local minima"
+  ],
+  "readContent": "A function is convex if any line segment connecting two points on its graph lies above or on the surface. Mathematically: f(λx + (1-λ)y) ≤ λf(x) + (1-λ)f(y) for λ ∈ [0,1]. Geometrically, convex functions look like bowls or have upward curvature. The crucial property: any local minimum of a convex function is automatically the global minimum. For twice-differentiable functions, convexity requires a positive semidefinite Hessian everywhere. Non-convex functions can have multiple local minima, making optimization much more challenging as algorithms may get trapped in suboptimal solutions.",
+  "readAnalogy": "Convex functions are like perfectly shaped valleys - if I roll a ball anywhere on the surface, it will always find the same bottom point. Non-convex functions are like complex mountain ranges where a ball might get stuck in various local valleys, never reaching the deepest point. This makes convex optimization like navigating with a GPS that guarantees finding the destination!",
+  "readKeyPoints": [
+    "Convex functions: line segments between surface points lie above the surface",
+    "Key property: any local minimum is automatically the global minimum",
+    "Convexity testing: positive semidefinite Hessian matrix everywhere"
+  ],
+  "readDigDeeper": "Jensen's inequality generalizes convexity: for convex f and probabilities pᵢ, f(∑pᵢxᵢ) ≤ ∑pᵢf(xᵢ). This connects convexity to probability theory and information theory, showing why convex functions appear throughout mathematics.",
+  "readWhyMatters": "Machine learning heavily relies on convex optimization for reliable training algorithms. Linear regression, support vector machines, and logistic regression all use convex loss functions to guarantee global optima. Portfolio optimization in finance uses convex models to ensure reliable investment strategies.",
+  "seeContent": "Visualize the difference between convex bowl-shaped surfaces and non-convex mountain ranges, see how line segments relate to surface curvature, and observe why convex optimization algorithms always succeed while non-convex ones may fail.",
+  "hearContent": "Listen as I explain how recognizing convex terrain is like having a mountaineering superpower - once you know the landscape is convex, you're guaranteed to find the true bottom of the valley!",
+  "hearAudioUrl": "/audio/5.4.mp3",
+  "doContent": "Use the Convexity Checker to test functions mathematically and visually, practice with the Hessian Analyzer for convexity verification, and experiment with the Optimization Comparison tool showing convex vs non-convex challenges.",
+  "memoryAids": {
+    "mantra": "Bowl-shaped and upward curving - convex functions make optimization serving! Any local min is global too - that's the convex guarantee for you!",
+    "visual": "Picture Greta examining two types of terrain: a perfect bowl-shaped valley (convex) where any dropped ball finds the same bottom, versus a complex mountain range (non-convex) where balls get trapped in various local valleys."
+  },
+  "conceptCheck": {
+    "question": "Function f(x,y) = x² + 3y² + 2xy has Hessian H = [[2,2],[2,6]]. Is this function convex?",
+    "options": [
+      "Yes, convex since H has eigenvalues 2+2√2 > 0 and 2-2√2 ≈ -0.83 < 0",
+      "No, not convex since the mixed partial 2xy creates non-convex behavior",
+      "Yes, convex since det(H) = 8 > 0 and tr(H) = 8 > 0",
+      "Cannot determine without checking the discriminant D"
+    ],
+    "correctAnswer": 2,
+    "explanation": "For 2×2 matrices, positive definiteness (convexity) requires det(H) > 0 and tr(H) > 0. Here: det(H) = 2×6 - 2×2 = 8 > 0 and tr(H) = 2+6 = 8 > 0, so H is positive definite and f is convex. Actually, let me recalculate the eigenvalues: characteristic polynomial is (2-λ)(6-λ) - 4 = λ² - 8λ + 8, giving λ = 4 ± 2√2. Both eigenvalues 4+2√2 ≈ 6.83 and 4-2√2 ≈ 1.17 are positive, confirming convexity."
+  },
+  "realWorldConnection": "Support vector machines use convex optimization to guarantee finding the optimal separating hyperplane. Portfolio optimization uses convex models to ensure reliable investment strategies without getting trapped in suboptimal allocations. Neural network researchers seek convex approximations to avoid local minima in training."
+}

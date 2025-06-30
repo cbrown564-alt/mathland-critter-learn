@@ -1,0 +1,53 @@
+{
+  "id": "9.1",
+  "title": "Capstone Project Overview & Planning",
+  "duration": "60-90 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage the Synthesis Owl perches atop the highest tower in Mathland, her wise eyes surveying the entire mathematical landscape below. She has watched you journey through every domain - from Vera's vectors to Bayes' detective work - and now it's time for the ultimate challenge: synthesizing all this knowledge into a comprehensive real-world data science project that demonstrates true mastery.",
+    "characterMessage": "Welcome to the culmination of your mathematical journey! I'm Sage, and I've been watching your progress through every module. Now comes the most important phase - turning insight into impact through a comprehensive capstone project that weaves together every concept you've learned into a real-world data science masterpiece."
+  },
+  "learningObjectives": [
+    "Understand the complete data science workflow from raw data to insights",
+    "Plan a comprehensive project that integrates multiple mathematical domains",
+    "Select appropriate datasets and define meaningful research questions",
+    "Design a project timeline that demonstrates progressive skill building",
+    "Connect mathematical techniques to real-world business or research impact"
+  ],
+  "coreConcepts": [
+    "End-to-end data science workflow",
+    "Project planning and scope definition",
+    "Research question formulation",
+    "Dataset selection and evaluation criteria",
+    "Mathematical technique integration strategy"
+  ],
+  "readContent": "The capstone project represents the synthesis of your entire mathematical journey through Mathland. This comprehensive undertaking will integrate concepts from every module: vector operations for data representation, matrix transformations for dimensionality reduction, optimization for model fitting, probability distributions for uncertainty quantification, hypothesis testing for validation, and Bayesian inference for decision-making. The project follows a complete data science workflow: (1) Problem Definition & Data Acquisition, (2) Exploratory Data Analysis using statistical methods, (3) Data Preprocessing with linear algebra techniques, (4) Model Development using optimization, (5) Statistical Validation through hypothesis testing, (6) Uncertainty Quantification via Bayesian methods, and (7) Results Communication with actionable insights. This isn't just an academic exercise - it's preparation for real-world data science practice where mathematical theory meets practical impact.",
+  "readAnalogy": "Think of the capstone project like designing and building a complete house after learning individual construction skills. You've mastered the foundation (linear algebra), framing (calculus), electrical work (optimization), plumbing (probability), inspection (hypothesis testing), and interior design (Bayesian inference). Now you'll combine all these skills to create something functional, beautiful, and valuable - a complete data science solution that demonstrates true craftsmanship.",
+  "readKeyPoints": [
+    "Integrates all mathematical concepts from Modules 1-8 into coherent workflow",
+    "Follows complete data science pipeline from raw data to actionable insights",
+    "Emphasizes real-world impact and practical application of mathematical theory"
+  ],
+  "readDigDeeper": "Professional data science projects require not just technical competence but also domain expertise, communication skills, and business acumen. The capstone project develops these meta-skills by requiring you to justify technical choices, interpret results for non-technical audiences, and connect mathematical insights to practical decisions.",
+  "readWhyMatters": "This capstone project directly mirrors real-world data science work where mathematical techniques must be combined skillfully to solve complex problems. Whether in tech companies optimizing user experience, healthcare organizations improving patient outcomes, or financial firms managing risk, data scientists daily apply the integrated mathematical toolkit you're now mastering.",
+  "seeContent": "Explore the complete data science workflow with interactive project planning tools, examine real-world capstone project examples across various domains, and preview how different mathematical concepts integrate throughout the pipeline.",
+  "hearContent": "Listen as I guide you through the art of synthesis - how to weave together all the mathematical threads you've learned into a tapestry of insight that creates real-world impact and demonstrates your mastery of data science fundamentals!",
+  "hearAudioUrl": "/audio/9.1.mp3",
+  "doContent": "Use the Project Planning Worksheet to define scope and objectives, practice with the Dataset Evaluation Tool for selecting appropriate data sources, and experiment with the Workflow Designer to map mathematical techniques to project phases.",
+  "memoryAids": {
+    "mantra": "From vectors to Bayes, every concept plays its part - synthesis and wisdom create the data science art! Theory meets practice, insight becomes impact - that's the capstone compact!",
+    "visual": "Picture Sage perched atop a magnificent tree whose branches represent all the mathematical concepts you've learned, with the trunk representing your capstone project that draws strength and nutrients from every branch to grow into something greater than the sum of its parts."
+  },
+  "conceptCheck": {
+    "question": "Your capstone project analyzes customer behavior data. Which mathematical concepts will you likely need to integrate?",
+    "options": [
+      "All concepts: vectors for data representation, matrices for dimensionality reduction, optimization for modeling, probability for uncertainty, and Bayesian inference for prediction",
+      "Only statistics and probability since this is behavioral data analysis",
+      "Primarily linear algebra and calculus for the mathematical modeling components",
+      "Just the machine learning modules since this is a predictive modeling project"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A comprehensive customer behavior analysis requires integration across all mathematical domains: linear algebra for data manipulation, calculus for optimization, probability for modeling uncertainty, statistics for validation, and Bayesian methods for prediction and decision-making."
+  },
+  "realWorldConnection": "This capstone structure mirrors real data science projects at companies like Netflix (recommendation systems), Uber (demand forecasting), or hospitals (patient outcome prediction). Professional data scientists regularly integrate the full mathematical toolkit to solve complex, multifaceted problems that create business value."
+}

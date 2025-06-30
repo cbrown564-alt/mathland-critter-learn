@@ -1,0 +1,53 @@
+{
+  "id": "7.1",
+  "title": "Introduction to Statistical Inference",
+  "duration": "35-40 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund the Swan glides gracefully across the still waters of statistical inference, his elegant black form a perfect symbol of rare and significant events. As a creature who understands both beauty and rarity, Sigmund knows that statistical inference is the art of making principled decisions about populations based on limited sample evidence.",
+    "characterMessage": "Welcome to the realm of statistical inference, where elegance meets evidence! I am Sigmund, and I specialize in distinguishing the truly significant from the merely coincidental. Statistical inference allows us to make principled conclusions about populations from samples, always with quantified uncertainty."
+  },
+  "learningObjectives": [
+    "Understand statistical inference as population conclusions from sample data",
+    "Distinguish between descriptive and inferential statistics",
+    "Recognize the role of sampling distributions in inference",
+    "Understand uncertainty quantification in statistical conclusions",
+    "Connect inference to scientific method and decision-making"
+  ],
+  "coreConcepts": [
+    "Population parameters vs sample statistics",
+    "Statistical inference framework",
+    "Sampling distributions as inference foundation",
+    "Uncertainty and variability in conclusions",
+    "Scientific method and statistical evidence"
+  ],
+  "readContent": "Statistical inference draws conclusions about populations from sample data, acknowledging inherent uncertainty. We distinguish between population parameters (unknown, fixed values) and sample statistics (observed, random values that estimate parameters). The inference framework involves: collecting representative samples, computing sample statistics, using sampling distributions to quantify uncertainty, and making probabilistic statements about population parameters. Unlike descriptive statistics that summarize data, inferential statistics make claims beyond the observed sample. The sampling distribution bridges sample and population, showing how statistics vary across possible samples and enabling probability statements about parameter estimates.",
+  "readAnalogy": "Statistical inference is like observing my elegant flight patterns to understand all swans everywhere. You see me glide across one lake (sample), but you want to know about swan behavior in general (population). The key insight is that different observers at different lakes will see slightly different patterns due to natural variation, but mathematical principles let us quantify this uncertainty and still make reliable statements about all swans.",
+  "readKeyPoints": [
+    "Inference makes population conclusions from sample evidence with quantified uncertainty",
+    "Sampling distributions show how statistics vary across possible samples",
+    "Distinguished from descriptive statistics by making claims beyond observed data"
+  ],
+  "readDigDeeper": "The frequentist interpretation of probability underlies classical statistical inference: probability statements refer to long-run frequencies across repeated sampling. This philosophical foundation distinguishes classical inference from Bayesian approaches that treat parameters as random variables.",
+  "readWhyMatters": "Medical researchers use statistical inference to determine drug effectiveness from clinical trials. Political polling uses inference to predict election outcomes from sample surveys. Quality control uses inference to monitor manufacturing processes. A/B testing in tech companies relies on statistical inference to make product decisions.",
+  "seeContent": "Visualize the relationship between populations and samples, observe how sampling distributions enable probability statements about parameters, and explore the conceptual framework that underlies all statistical inference.",
+  "hearContent": "Listen as I explain how statistical inference is like the elegant art of understanding the whole from glimpses of the part - always with the grace to acknowledge our uncertainty while maintaining principled conclusions!",
+  "hearAudioUrl": "/audio/7.1.mp3",
+  "doContent": "Use the Population vs Sample Explorer to understand the inference gap, practice with the Sampling Distribution Visualizer, and experiment with the Uncertainty Quantification Simulator.",
+  "memoryAids": {
+    "mantra": "From sample to population with elegant precision - statistical inference bridges the decision! Uncertainty acknowledged, conclusions principled - that's inference refined!",
+    "visual": "Picture Sigmund gracefully observing his reflection in multiple lakes, understanding that each glimpse reveals something about swan nature in general, while elegantly acknowledging the inherent uncertainty in generalizing from limited observations."
+  },
+  "conceptCheck": {
+    "question": "A researcher observes that 65% of a sample of 100 voters support a candidate. What distinguishes this from statistical inference?",
+    "options": [
+      "This is descriptive statistics; inference would make probability statements about the population percentage",
+      "This is already statistical inference since we're using a sample",
+      "This is inference because 65% estimates the population parameter",
+      "There's no difference - sample percentages are always inferential"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stating '65% of the sample supports the candidate' is descriptive. Inference would make probability statements like 'we're 95% confident the population support is between 55-75%' using sampling distribution theory."
+  },
+  "realWorldConnection": "Pharmaceutical companies use statistical inference to determine if new drugs are effective based on limited clinical trial data. Netflix uses inference to understand user preferences from viewing samples. Climate scientists use inference to make global conclusions from weather station data across the world."
+}

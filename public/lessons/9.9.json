@@ -1,0 +1,53 @@
+{
+  "id": "9.9",
+  "title": "Peer Review & Feedback Integration",
+  "duration": "90-120 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage facilitates a collaborative review process where fellow learners examine each other's work with the critical eye of experienced practitioners. This peer review mirrors real-world data science practice where analysis undergoes scrutiny from colleagues before driving important business decisions.",
+    "characterMessage": "Professional data science is collaborative! Peer review brings fresh perspectives, catches errors we might miss, and improves our work through constructive feedback. This process mirrors real industry practice where analysis undergoes colleague scrutiny before informing important decisions."
+  },
+  "learningObjectives": [
+    "Conduct thorough peer reviews using structured evaluation criteria",
+    "Provide constructive feedback that improves analytical quality",
+    "Receive and integrate feedback to strengthen project outcomes",
+    "Apply professional review standards to mathematical analysis",
+    "Develop collaborative skills essential for data science careers"
+  ],
+  "coreConcepts": [
+    "Structured peer review methodology",
+    "Mathematical analysis evaluation criteria",
+    "Constructive feedback delivery and integration",
+    "Collaborative improvement processes",
+    "Professional quality assurance standards"
+  ],
+  "readContent": "Peer review ensures analytical quality through systematic colleague evaluation. Review criteria cover mathematical rigor (appropriate technique selection, assumption validation, uncertainty quantification), technical implementation (code quality, reproducibility, documentation), and business relevance (problem alignment, actionable insights, impact quantification). Effective feedback balances strengths recognition with improvement suggestions, focusing on specific, actionable recommendations rather than general criticism. Feedback integration requires critical evaluation: which suggestions improve accuracy, clarity, or impact? Professional review processes include methodology validation, result verification, and communication assessment. This collaborative quality assurance mirrors industry practice where analysis undergoes multiple review cycles before informing decisions.",
+  "readAnalogy": "Peer review is like having fellow detectives examine your case before presenting to the court. Fresh eyes catch details you missed, alternative perspectives suggest better approaches, and collaborative scrutiny ensures your conclusions can withstand challenge. It's the difference between amateur investigation and professional-grade analysis.",
+  "readKeyPoints": [
+    "Structured review criteria ensure comprehensive evaluation of mathematical and business aspects",
+    "Constructive feedback focuses on specific, actionable improvements",
+    "Professional review processes mirror industry quality assurance standards"
+  ],
+  "readDigDeeper": "Leading tech companies implement extensive peer review for analytical work. Google's analysis review process includes methodology validation, result verification, and business impact assessment. This collaborative approach significantly improves decision-making quality.",
+  "readWhyMatters": "Data science teams at companies like Amazon and Microsoft require peer review before analysis informs product decisions. Academic research undergoes rigorous peer review before publication. Your ability to both give and receive constructive feedback determines your effectiveness in collaborative analytical environments.",
+  "seeContent": "Practice structured peer review using professional evaluation criteria, learn to provide constructive feedback that improves analytical quality, and experience the collaborative improvement process that characterizes excellent data science teams.",
+  "hearContent": "Listen as I guide you through professional peer review practices that transform individual analysis into collaborative excellence - the hallmark of high-performing data science teams!",
+  "hearAudioUrl": "/audio/9.9.mp3",
+  "doContent": "Conduct comprehensive peer reviews using structured criteria, provide constructive feedback focused on mathematical rigor and business impact, and integrate received feedback to strengthen your project outcomes.",
+  "memoryAids": {
+    "mantra": "Review with care, feedback to share! Collaborative minds make excellence shine - peer review by design!",
+    "visual": "Picture Sage facilitating a roundtable of mathematical detectives, each bringing unique perspectives to examine and improve each other's analytical work, creating a collaborative pursuit of excellence."
+  },
+  "conceptCheck": {
+    "question": "During peer review, a colleague suggests your confidence intervals are too narrow because you didn't account for model uncertainty. How should you respond?",
+    "options": [
+      "Investigate their concern by checking if bootstrap or Bayesian methods would give wider, more honest uncertainty estimates",
+      "Defend your original approach since it followed standard statistical procedures",
+      "Ignore the feedback since confidence intervals are mathematically correct",
+      "Immediately change the analysis without understanding the underlying issue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Good peer feedback deserves investigation. Model uncertainty beyond parameter estimation uncertainty is a valid concern that might require bootstrap methods, Bayesian approaches, or ensemble techniques for more honest uncertainty quantification."
+  },
+  "realWorldConnection": "Netflix data science teams conduct extensive peer review before algorithm changes affect user experience. Financial firms require multiple analyst review before trading algorithm deployment. Your ability to participate effectively in peer review processes directly impacts your professional success in analytical roles."
+}

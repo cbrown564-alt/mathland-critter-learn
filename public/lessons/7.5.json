@@ -1,0 +1,53 @@
+{
+  "id": "7.5",
+  "title": "Test Statistics & P-values",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund reveals the mathematical heart of hypothesis testing: test statistics transform sample data into standardized measures of evidence, while p-values quantify exactly how rare the observed result would be if the null hypothesis were true. These elegant tools turn raw data into precise statements about statistical significance.",
+    "characterMessage": "Now we reach the mathematical essence of hypothesis testing! Test statistics standardize our evidence into elegant mathematical form, while p-values answer the crucial question: 'How rare is what we observed?' These tools transform data into dignified statistical conclusions."
+  },
+  "learningObjectives": [
+    "Calculate test statistics for various hypothesis tests",
+    "Understand p-values as conditional probabilities under H₀",
+    "Interpret p-values correctly in hypothesis testing context",
+    "Apply decision rules using p-values and significance levels",
+    "Recognize common misconceptions about p-value interpretation"
+  ],
+  "coreConcepts": [
+    "Test statistic: standardized measure of evidence against H₀",
+    "P-value: P(observing data this extreme | H₀ true)",
+    "P-value interpretation and decision rules",
+    "One-tailed vs two-tailed tests",
+    "Statistical significance vs practical significance"
+  ],
+  "readContent": "Test statistics standardize sample evidence into a common scale for comparison with theoretical distributions. For population means: t = (X̄ - μ₀)/(s/√n), which measures how many standard errors the sample mean is from the hypothesized value. The p-value is the probability of observing data at least as extreme as what we observed, assuming H₀ is true. For two-tailed tests, p-value = 2 × P(T > |t|), while one-tailed tests use p-value = P(T > t). Decision rule: reject H₀ if p-value < α. Statistical significance (low p-value) doesn't guarantee practical importance - effect size matters. Common misconceptions: p-value is NOT the probability that H₀ is true, nor the probability of making an error.",
+  "readAnalogy": "Test statistics are like standardized scoring systems that let us compare different types of evidence on the same elegant scale. P-values answer 'If the null hypothesis were true, how shocking would our observation be?' It's like asking: if swans truly can't fly over mountains, how surprising would it be to see what we just observed? The smaller the p-value, the more our evidence contradicts the null hypothesis.",
+  "readKeyPoints": [
+    "Test statistic standardizes evidence: t = (X̄ - μ₀)/(s/√n) for means",
+    "P-value = P(data this extreme | H₀ true), NOT P(H₀ true | data)",
+    "Decision rule: reject H₀ if p-value < α (significance level)"
+  ],
+  "readDigDeeper": "The p-value function p(x) = P(T ≥ t(x) | H₀) where t(x) is the test statistic computed from data x, provides a complete summary of evidence against H₀ for all possible observations. This function captures more information than just whether p < α.",
+  "readWhyMatters": "Medical journals require p-values to establish treatment efficacy. Tech companies use p-values in A/B testing to validate product changes. Quality control uses p-values to detect manufacturing defects. Scientific research relies on p-values to establish credible findings, though with increasing awareness of their limitations.",
+  "seeContent": "Watch test statistic calculations step-by-step, visualize p-value areas under probability curves, and observe how p-values relate to evidence strength against null hypotheses.",
+  "hearContent": "Listen as I explain how test statistics and p-values transform messy data into elegant measures of evidence - the mathematical poetry of statistical significance!",
+  "hearAudioUrl": "/audio/7.5.mp3",
+  "doContent": "Use the Test Statistic Calculator for various scenarios, practice with the P-value Visualizer showing tail areas, and experiment with the Significance Decision Simulator.",
+  "memoryAids": {
+    "mantra": "Test statistic measures how far we stray, p-value shows how rare the day! If p-value's small, reject with grace - statistical significance takes its place!",
+    "visual": "Picture Sigmund calculating how far his flight deviates from expected patterns (test statistic), then elegantly determining how rare such a deviation would be in the world of null hypothesis (p-value)."
+  },
+  "conceptCheck": {
+    "question": "A test gives t = 2.1 with p-value = 0.03. What does this mean if α = 0.05?",
+    "options": [
+      "Reject H₀; if H₀ were true, we'd see data this extreme only 3% of the time",
+      "Accept H₀; the sample mean is 2.1 standard errors above the null value",
+      "There's a 3% chance the null hypothesis is true",
+      "We're making a Type I error with 3% probability"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Since p-value = 0.03 < α = 0.05, we reject H₀. The p-value means that if H₀ were true, we would observe data this extreme or more extreme only 3% of the time. This is strong evidence against H₀."
+  },
+  "realWorldConnection": "Pharmaceutical trials report p-values to demonstrate drug efficacy to regulatory agencies. Netflix uses p-values in A/B testing to determine if new features significantly improve user engagement. Academic journals require p-values to establish statistical significance of research findings."
+}

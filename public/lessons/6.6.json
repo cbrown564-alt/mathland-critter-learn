@@ -1,0 +1,53 @@
+{
+  "id": "6.6",
+  "title": "Expectation & Variance",
+  "duration": "40-45 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa reveals the secret measurements that characterize every magical distribution! Expectation is like the 'center of gravity' of her magic hat - where outcomes balance on average. Variance measures the 'spreadiness' - how much the magic tends to scatter around that center point. Together, they capture the essential personality of any random variable!",
+    "characterMessage": "Time to learn the fundamental measurements of randomness! Expectation tells me where my magical outcomes center on average, while variance reveals how much they spread around that center. These two numbers capture the essential personality of any random phenomenon!"
+  },
+  "learningObjectives": [
+    "Define expectation E[X] as the weighted average of outcomes",
+    "Calculate expectations for discrete and continuous distributions",
+    "Understand variance Var(X) = E[(X-μ)²] as spread measurement",
+    "Apply linearity of expectation and variance properties",
+    "Interpret expectation and variance in real-world contexts"
+  ],
+  "coreConcepts": [
+    "Expectation: E[X] = Σx·P(X=x) or ∫x·f(x)dx",
+    "Variance: Var(X) = E[(X-μ)²] = E[X²] - (E[X])²",
+    "Standard deviation: σ = √Var(X)",
+    "Linearity: E[aX + b] = aE[X] + b",
+    "Variance properties: Var(aX + b) = a²Var(X)"
+  ],
+  "readContent": "Expectation E[X] is the probability-weighted average: E[X] = Σx·P(X=x) for discrete or E[X] = ∫x·f(x)dx for continuous variables. It represents the 'center of mass' of the distribution. Variance Var(X) = E[(X-μ)²] measures spread around the mean, computed as Var(X) = E[X²] - (E[X])². Standard deviation σ = √Var(X) has the same units as X. Expectation is linear: E[aX + b] = aE[X] + b, but variance is not: Var(aX + b) = a²Var(X). These moments completely characterize many distributions and provide essential summary statistics.",
+  "readAnalogy": "Expectation is like finding the balance point of my magical outcomes - if I put all possible values on a seesaw with weights equal to their probabilities, expectation is where it balances! Variance measures how much the magic spreads out from that balance point - low variance means outcomes cluster tightly, high variance means they scatter widely!",
+  "readKeyPoints": [
+    "Expectation E[X]: probability-weighted average, the 'center of mass'",
+    "Variance Var(X): measures spread around the mean via E[(X-μ)²]",
+    "Linearity: E[aX + b] = aE[X] + b, but Var(aX + b) = a²Var(X)"
+  ],
+  "readDigDeeper": "Higher moments like skewness (third moment) and kurtosis (fourth moment) capture distribution shape beyond center and spread. These become important in advanced statistics and financial risk modeling where distribution tails matter significantly.",
+  "readWhyMatters": "Investment analysis uses expected returns and variance (risk) for portfolio optimization. Quality control uses expectation and variance to monitor manufacturing processes. Insurance companies use expectation to set fair premiums and variance to assess risk. Machine learning uses expectation and variance for model performance evaluation.",
+  "seeContent": "Visualize expectation as the balance point of probability distributions, observe how variance affects distribution spread, and explore how linear transformations affect these fundamental measures.",
+  "hearContent": "Listen as I explain how expectation and variance are like measuring the personality of my magical distributions - expectation finds the center of the magic, variance reveals how wild and spread out it gets!",
+  "hearAudioUrl": "/audio/6.6.mp3",
+  "doContent": "Use the Expectation Calculator with visual balance point demonstrations, practice with the Variance Explorer showing spread measurements, and experiment with the Linear Transformation Analyzer.",
+  "memoryAids": {
+    "mantra": "Expectation centers, variance spreads - these two numbers show where randomness heads! Balance point and scatter measure - that's probability's treasure!",
+    "visual": "Picture Pippa balancing a magical seesaw with outcomes as weights, finding the expectation balance point, then measuring how far the magic typically scatters from that center (variance)."
+  },
+  "conceptCheck": {
+    "question": "For X ~ Binomial(n=4, p=0.5), calculate E[X] and Var(X) using the formulas E[X] = np and Var(X) = np(1-p).",
+    "options": [
+      "E[X] = 4×0.5 = 2, Var(X) = 4×0.5×0.5 = 1",
+      "E[X] = 4×0.5 = 2, Var(X) = 4×0.5×(1-0.5) = 1",
+      "E[X] = 0.5, Var(X) = 0.25 since these are the basic Bernoulli parameters",
+      "Both A and B are correct formulations giving the same answer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For Binomial(n,p): E[X] = np = 4×0.5 = 2. Variance formula is Var(X) = np(1-p) = 4×0.5×(1-0.5) = 4×0.5×0.5 = 1. Both A and B express this correctly."
+  },
+  "realWorldConnection": "Portfolio managers use expected returns and variance to optimize investment strategies balancing reward and risk. Manufacturing uses expectation and variance to monitor product quality and process control. Insurance companies calculate expected claim costs and variance to set appropriate premium levels and reserves."
+}

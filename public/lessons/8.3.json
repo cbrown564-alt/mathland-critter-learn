@@ -1,0 +1,53 @@
+{
+  "id": "8.3",
+  "title": "Conjugate Priors & Beta-Binomial",
+  "duration": "45-50 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes discovers the mathematical elegance of conjugate priors - special prior distributions that play perfectly with certain likelihoods, creating posteriors in the same family. The Beta-Binomial partnership is like a detective duo that always works in perfect harmony, making calculations elegant and interpretations intuitive.",
+    "characterMessage": "Some mathematical partnerships are pure genius! Conjugate priors are like perfect detective partners - they work so smoothly with certain likelihoods that the posterior is always in the same family. The Beta-Binomial duo is my favorite example of this mathematical elegance in action!"
+  },
+  "learningObjectives": [
+    "Understand conjugate priors as mathematically convenient prior-likelihood pairs",
+    "Master the Beta-Binomial conjugate relationship",
+    "Interpret Beta distribution parameters as prior successes and failures",
+    "Calculate Beta-Binomial posteriors analytically",
+    "Recognize other common conjugate pairs and their applications"
+  ],
+  "coreConcepts": [
+    "Conjugate prior: prior that yields posterior in same family",
+    "Beta-Binomial: Beta(α,β) prior + Binomial likelihood → Beta posterior",
+    "Beta distribution parameters: α (prior successes), β (prior failures)",
+    "Posterior updating: Beta(α+s, β+f) where s,f are observed successes/failures",
+    "Other conjugate pairs: Normal-Normal, Gamma-Poisson"
+  ],
+  "readContent": "Conjugate priors create mathematical elegance by producing posteriors in the same distribution family as the prior. For Binomial likelihoods, the Beta distribution is conjugate: if the prior is Beta(α,β) and we observe s successes in n trials, the posterior is Beta(α+s, β+n-s). The Beta parameters have intuitive interpretations: α represents prior 'pseudo-successes' and β represents prior 'pseudo-failures,' reflecting our prior equivalent sample size of α+β. This makes updating trivial - just add observed successes to α and failures to β. Other conjugate pairs include Normal-Normal (known variance), Gamma-Poisson, and Dirichlet-Multinomial. Conjugacy enables analytical solutions and provides intuitive parameter interpretations that aid in prior specification.",
+  "readAnalogy": "Conjugate priors are like having the perfect detective partner who speaks your exact language. When I (Beta prior) team up with Binomial likelihood evidence, we communicate so perfectly that our conclusion (Beta posterior) is expressed in my same language, just with updated parameters. It's like having a conversation where each new piece of evidence simply updates my running tally of successes and failures.",
+  "readKeyPoints": [
+    "Conjugate priors yield posteriors in the same distribution family",
+    "Beta-Binomial: Beta(α,β) + s successes → Beta(α+s, β+n-s)",
+    "Beta parameters: α = prior successes, β = prior failures, α+β = prior sample size"
+  ],
+  "readDigDeeper": "The exponential family structure underlies conjugacy: when both prior and likelihood are in exponential family form, conjugate priors exist naturally. This mathematical structure explains why certain distribution pairs work together so elegantly.",
+  "readWhyMatters": "A/B testing platforms use Beta-Binomial updating for real-time conversion rate analysis. Clinical trials use conjugate priors to incorporate historical data about treatment success rates. Quality control uses conjugate updating to monitor defect rates with accumulating evidence.",
+  "seeContent": "Watch Beta-Binomial updating in action with interactive parameter adjustments, visualize how prior parameters affect posterior conclusions, and explore other conjugate pairs in various applications.",
+  "hearContent": "Listen as I demonstrate the mathematical poetry of conjugate priors - how Beta and Binomial dance together in perfect harmony to create beautifully simple posterior updating!",
+  "hearAudioUrl": "/audio/8.3.mp3",
+  "doContent": "Use the Beta-Binomial Calculator with real-time updating, practice with the Conjugate Prior Explorer for different distribution families, and experiment with the Prior Parameter Interpreter.",
+  "memoryAids": {
+    "mantra": "Beta meets Binomial in perfect dance, conjugate priors enhance! Add successes to alpha, failures to beta - posterior updating's perfect theta!",
+    "visual": "Picture Bayes and his perfect detective partner (Beta and Binomial) working seamlessly together, with each new case (data point) simply updating their shared case file in exactly the same format they've always used."
+  },
+  "conceptCheck": {
+    "question": "Starting with Beta(2,3) prior for conversion rate, you observe 7 successes in 10 trials. What's the posterior?",
+    "options": [
+      "Beta(9,6): α = 2+7 = 9, β = 3+(10-7) = 6",
+      "Beta(7,3): only the successes matter for updating α",
+      "Beta(2,10): add the total trials to β",
+      "Need to calculate using Bayes' theorem - no simple updating rule"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Beta-Binomial conjugate updating: Beta(α,β) + s successes in n trials → Beta(α+s, β+(n-s)). Here: Beta(2,3) + 7 successes in 10 trials → Beta(2+7, 3+3) = Beta(9,6)."
+  },
+  "realWorldConnection": "Conversion rate optimization platforms like Optimizely use Beta-Binomial updating to provide real-time A/B test results. Medical device companies use conjugate priors to incorporate historical safety data into new clinical trials. Online advertising uses Beta-Binomial models to optimize click-through rates with streaming data."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "3.1",
+  "title": "Introduction to Eigenvalues & Eigenvectors",
+  "duration": "35-40 minutes",
+  "characterId": "eileen",
+  "narrativeHook": {
+    "story": "Eileen Eigen, the detective cat, is investigating a mysterious mathematical phenomenon: some vectors, when transformed by matrices, don't change direction at all - they only get longer or shorter! These special vectors hold the key to understanding the hidden structure of any transformation.",
+    "characterMessage": "Every matrix has secrets, and I'm here to help you uncover them! Some vectors are so special that when a matrix transforms them, they keep pointing in exactly the same direction. These are eigenvectors, and they reveal the matrix's true personality!"
+  },
+  "learningObjectives": [
+    "Understand eigenvectors as special directions preserved by matrix transformations",
+    "Define eigenvalues as scaling factors along eigenvector directions",
+    "Recognize the geometric meaning of eigenvalue-eigenvector pairs",
+    "Identify why eigenvalues and eigenvectors reveal matrix structure",
+    "Connect eigenvector concepts to real-world applications"
+  ],
+  "coreConcepts": [
+    "Eigenvector definition: Av = λv where v ≠ 0",
+    "Eigenvalue as scaling factor λ",
+    "Geometric interpretation: preserved directions",
+    "Matrix personality through eigenstructure",
+    "Applications in data analysis and physics"
+  ],
+  "readContent": "Picture this: I'm investigating a mathematical crime scene where most vectors get completely scrambled when a matrix transforms them, but some stubborn vectors refuse to change direction! These are eigenvectors - the key witnesses that reveal a matrix's true identity. They only get longer or shorter (scaled by their eigenvalue λ), never turning aside. It's like finding people who can't be influenced to change their fundamental nature, no matter what pressure is applied.",
+  "readAnalogy": "Think of eigenvectors as the matrix's 'favorite directions' - like how a river always flows downhill no matter what obstacles it encounters. The eigenvalue tells you how much the matrix amplifies that direction, but the direction itself remains unchanged.",
+  "readKeyPoints": [
+    "Eigenvector equation: Av = λv where v ≠ 0 (direction preserved, magnitude scaled)",
+    "Eigenvalue λ can be positive (same direction), negative (opposite), or complex (rotation)",
+    "Every matrix has a unique 'personality' revealed through its eigenvalue-eigenvector pairs"
+  ],
+  "readDigDeeper": "Complex eigenvalues indicate rotational behavior - the matrix doesn't just stretch space, it twists it. The magnitude |λ| controls growth/decay while the argument controls rotation speed. This is crucial for understanding oscillatory systems in engineering and physics.",
+  "readWhyMatters": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face images), Google's PageRank finds the principal eigenvector of web connections, and structural engineers use eigenvectors to identify building vibration modes.",
+  "seeContent": "Watch interactive demonstrations where matrices transform vectors, highlighting how most vectors change direction but eigenvectors maintain their orientation while only changing in length by the eigenvalue factor.",
+  "hearContent": "Listen as I explain how eigenvectors are like the matrix's favorite directions - the paths it naturally wants to follow when transforming space, revealing the hidden personality of any mathematical transformation!",
+  "hearAudioUrl": "/audio/3.1.mp3",
+  "doContent": "Use the Eigenvector Detective tool to find special vectors that don't change direction, experiment with the Matrix Personality Analyzer, and practice with the Direction Preservation Checker to identify eigenvector candidates.",
+  "memoryAids": {
+    "mantra": "Same direction, different length - that's the eigenvector fingerprint that reveals every matrix's secrets!",
+    "visual": "Picture Eileen as a detective finding vectors that are so stubborn they refuse to change direction no matter how the matrix tries to transform them."
+  },
+  "conceptCheck": {
+    "question": "If vector [3, 6] is an eigenvector of matrix A with eigenvalue 2, what happens when A transforms this vector?",
+    "options": [
+      "The result is [6, 12] - same direction, doubled length",
+      "The result is [5, 8] - different direction and length",
+      "The result is [3, 6] - completely unchanged",
+      "The result is [1.5, 3] - same direction, halved length"
+    ],
+    "correctAnswer": 0,
+    "explanation": "If [3,6] is an eigenvector with eigenvalue 2, then A[3,6] = 2[3,6] = [6,12]. The vector maintains its direction but gets scaled by the eigenvalue factor of 2."
+  },
+  "realWorldConnection": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face data), Google's PageRank algorithm finds the principal eigenvector of web link matrices, and structural engineers use eigenvectors to identify building vibration modes."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "1.3",
+  "title": "The Dot Product - Measuring Similarity",
+  "duration": "40-45 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera and her friend Pippa the Rabbit are both hiking, but in different directions. How can we measure how 'similar' their paths are? Are they going roughly the same way, or in completely opposite directions? The dot product is our mathematical tool for measuring agreement between vectors!",
+    "characterMessage": "How much do two directions agree with each other? That's what the dot product tells us! Positive means we're heading the same way, zero means we're perpendicular, and negative means we're going in opposite directions. It's like a friendship meter for vectors!"
+  },
+  "learningObjectives": [
+    "Calculate dot products using both geometric and algebraic formulas",
+    "Interpret dot product results in terms of vector similarity",
+    "Understand the geometric meaning of dot product as projection",
+    "Identify orthogonal vectors using the dot product",
+    "Apply dot products to real-world similarity problems"
+  ],
+  "coreConcepts": [
+    "Dot product: **u** · **v** = |**u**||**v**|cos(θ)",
+    "Algebraic formula: **u** · **v** = u₁v₁ + u₂v₂ + u₃v₃",
+    "Geometric interpretation: projection and similarity",
+    "Orthogonal vectors (dot product = 0)",
+    "Properties: commutative, distributive"
+  ],
+  "readContent": "The dot product measures how much two vectors point in the same direction. Geometrically: **u** · **v** = |**u**||**v**|cos(θ) where θ is the angle between vectors. Algebraically: **u** · **v** = u₁v₁ + u₂v₂ + u₃v₃. Results: positive (similar directions), zero (perpendicular), negative (opposite directions). The dot product equals zero when vectors are orthogonal (perpendicular). It's commutative (**u** · **v** = **v** · **u**) and distributive over addition. For unit vectors, the dot product directly gives cos(θ).",
+  "seeContent": "Visualize how dot products measure the 'projection' of one vector onto another, like measuring shadows. Watch the Similarity Meter show how vector angles affect dot product values from -1 to +1.",
+  "hearContent": "Listen as I explain how the dot product is like measuring how much vectors 'agree' with each other - it's the mathematical way to quantify whether things are pointing in similar directions!",
+  "hearAudioUrl": "/audio/1.3.mp3",
+  "doContent": "Experiment with the Dot Product Visualizer to see how changing vector angles affects results, use the Orthogonal Detector to find perpendicular vectors, and practice with the Projection Calculator.",
+  "memoryAids": {
+    "mantra": "Positive = same direction, zero = perpendicular, negative = opposite - it's the agreement scale for vectors!",
+    "visual": "Picture two hikers: if they're walking in similar directions their dot product is positive, if perpendicular it's zero, if opposite it's negative."
+  },
+  "conceptCheck": {
+    "question": "Two hiking paths are represented by vectors [3, 4] and [1, 2]. Calculate their dot product and interpret the result.",
+    "options": [
+      "11 - the paths are going in generally the same direction",
+      "5 - the paths are perpendicular to each other",
+      "-1 - the paths are going in opposite directions",
+      "0 - there's no relationship between the paths"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dot product: [3,4] · [1,2] = (3)(1) + (4)(2) = 3 + 8 = 11. Since this is positive, the vectors point in generally the same direction - the hikers are heading roughly the same way!"
+  },
+  "realWorldConnection": "Google uses dot products to measure how similar your search query is to web pages - higher dot products mean more relevant results. Spotify calculates dot products between your listening history and song characteristics to recommend music. Machine learning uses dot products billions of times to find patterns and make predictions."
+}

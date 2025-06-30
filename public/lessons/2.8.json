@@ -1,0 +1,53 @@
+{
+  "id": "2.8",
+  "title": "Composition of Linear Maps & Change of Basis",
+  "duration": "40-45 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max discovers he can chain transformations together like a systematic assembly line, and even change his entire coordinate system to view the same information from different perspectives. It's like having multiple organizational frameworks that can work together or view the same data through different systematic lenses.",
+    "characterMessage": "The ultimate organizational superpower: chaining transformations and changing perspectives! I can create transformation assembly lines where each matrix adds its own systematic change, and I can switch coordinate systems to view the same information through completely different organizational frameworks!"
+  },
+  "learningObjectives": [
+    "Compose linear transformations through matrix multiplication",
+    "Understand how transformation order affects the final result",
+    "Perform change of basis using transition matrices",
+    "Convert between different coordinate systems systematically",
+    "Apply composition and basis change to solve complex problems"
+  ],
+  "coreConcepts": [
+    "Transformation composition: (BA)(v) = B(A(v))",
+    "Order matters: AB ≠ BA generally",
+    "Change of basis using transition matrices",
+    "Coordinate conversion between bases",
+    "Applications in graphics and data analysis"
+  ],
+  "readContent": "The ultimate organizational superpower: chaining transformations and changing perspectives! Transformation composition means applying multiple transformations in sequence - if A applies first, then B, the result is BA (note the reverse order). Matrix multiplication represents this: (BA)v = B(Av). Change of basis is even more powerful - it's like having multiple organizational frameworks for viewing the same information. Transition matrix P converts coordinates from one basis to another, while P⁻¹ converts back.",
+  "readAnalogy": "Transformation composition is like running a systematic assembly line where each station adds its own transformation. Change of basis is like having multiple viewing windows that show the same organized information through different systematic perspectives.",
+  "readKeyPoints": [
+    "Composition: applying B then A equals transformation BA (reverse order)",
+    "Matrix multiplication represents transformation composition",
+    "Change of basis: P converts between coordinate systems, P⁻¹ converts back"
+  ],
+  "readDigDeeper": "Order matters in composition because transformations don't generally commute. Change of basis reveals that the same vector has different coordinates in different systems, like how the same location has different addresses in different coordinate systems.",
+  "readWhyMatters": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
+  "seeContent": "Watch transformation chains in action, see how changing order produces different results, and observe how the same vector looks different in various coordinate systems through interactive basis switching.",
+  "hearContent": "Listen as I explain how transformation composition is like having a systematic assembly line, and change of basis is like having multiple organizational perspectives for viewing the same information!",
+  "hearAudioUrl": "/audio/2.8.mp3",
+  "doContent": "Use the Transformation Chain Builder to experiment with composition order, practice with the Basis Change Calculator to convert coordinates, and explore the Perspective Switcher to see vectors in different coordinate systems.",
+  "memoryAids": {
+    "mantra": "Chain transformations like assembly lines, switch coordinate systems like changing perspective - systematic organization from every angle!",
+    "visual": "Picture Max running a transformation factory with assembly lines (composition) and multiple viewing windows (different bases) that show the same products from different systematic perspectives."
+  },
+  "conceptCheck": {
+    "question": "If transformation A rotates 45° and transformation B scales by 2, what's the difference between AB and BA applied to a vector?",
+    "options": [
+      "AB: rotate 45° then scale by 2; BA: scale by 2 then rotate 45° - different final vectors",
+      "AB and BA produce identical results because both transformations are applied",
+      "AB is undefined because you can't multiply these transformation types",
+      "AB: scale then rotate; BA: rotate then scale - same as option A but backward"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Order matters in composition. AB means: first apply A (rotate 45°), then apply B (scale by 2). BA means: first apply B (scale by 2), then apply A (rotate 45°). Different orders produce different final vectors."
+  },
+  "realWorldConnection": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision."
+}

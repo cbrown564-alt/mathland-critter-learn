@@ -1,0 +1,53 @@
+{
+  "id": "1.7",
+  "title": "Basis and Dimension - The Foundation Framework",
+  "duration": "40-45 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera has discovered the perfect navigation system for her forest: a minimal set of paths that can reach everywhere, with no redundant routes. This is a 'basis' - the smallest set of building blocks that can construct everything in the space. It's like having the master key to any vector space!",
+    "characterMessage": "A basis is like having the perfect set of Lego blocks! It's the minimum toolkit needed to build everything else. Just like latitude and longitude let you describe any location on Earth, a basis lets you describe any vector in the space with coordinates!"
+  },
+  "learningObjectives": [
+    "Define a basis as linearly independent vectors that span the space",
+    "Understand how standard basis vectors work in coordinate systems",
+    "Calculate the dimension of a vector space",
+    "Express vectors in terms of different bases",
+    "Recognize the uniqueness of basis representations"
+  ],
+  "coreConcepts": [
+    "Basis: linearly independent + spans the space",
+    "Standard basis vectors: **i**, **j**, **k**",
+    "Dimension: number of vectors in any basis",
+    "Coordinates relative to a basis",
+    "Uniqueness of representation"
+  ],
+  "readContent": "A basis is like having the perfect GPS coordinate system! It's the minimum set of independent vectors that can reach everywhere in the space. Just like latitude and longitude give unique coordinates for any Earth location, a basis gives unique coordinates for any vector. The standard basis {[1,0], [0,1]} in 2D is like having perfectly aligned north-south and east-west directions.",
+  "readAnalogy": "A basis is like having the perfect set of Lego blocks - the minimum toolkit needed to build everything else. Just like you can build any Lego creation with the right basic pieces, you can express any vector with the right basis combination!",
+  "readKeyPoints": [
+    "Basis = linearly independent vectors that span the entire space",
+    "Standard basis: {[1,0], [0,1]} in 2D, {[1,0,0], [0,1,0], [0,0,1]} in 3D",
+    "Dimension = number of vectors in any basis for the space"
+  ],
+  "readDigDeeper": "Every vector has unique coordinates relative to a given basis. Different bases provide different coordinate systems for the same space, like Cartesian vs. polar coordinates. Changing basis is like switching between different map projections.",
+  "readWhyMatters": "Principal Component Analysis (PCA) finds the best basis for your data, revealing hidden patterns and reducing complexity. Different coordinate systems optimize for different purposes - like how architects use different views to fully describe buildings.",
+  "seeContent": "Compare different bases for the same 2D space, showing how the same vectors have different coordinates in different basis systems. Watch the Coordinate Converter demonstrate basis transformations.",
+  "hearContent": "Listen as I explain how a basis is like having the perfect coordinate system - it gives you a unique address for every location in your mathematical space, just like street addresses for houses!",
+  "hearAudioUrl": "/audio/1.7.mp3",
+  "doContent": "Use the Basis Visualizer to compare different coordinate systems, practice with the Coordinate Converter to change between bases, and experiment with the Custom Basis Builder to create your own coordinate systems.",
+  "memoryAids": {
+    "mantra": "Basis = GPS coordinates for any space! Minimum tools needed to reach everywhere, with a unique address for each location.",
+    "visual": "Picture basis vectors as the fundamental directions on your map - like north/south and east/west - that let you give coordinates to reach any destination."
+  },
+  "conceptCheck": {
+    "question": "Show that vectors [1, 0] and [1, 1] form a basis for ℝ². Express vector [3, 5] in this basis.",
+    "options": [
+      "[3,5] = -2[1,0] + 5[1,1] in the new basis",
+      "[3,5] = 3[1,0] + 5[1,1] in the new basis",
+      "[3,5] = 2[1,0] + 3[1,1] in the new basis",
+      "These vectors don't form a basis for ℝ²"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The vectors are linearly independent and span ℝ², so they form a basis. To express [3,5] = a[1,0] + b[1,1]: 3 = a + b and 5 = b. Solving: b = 5, a = -2. So [3,5] = -2[1,0] + 5[1,1]."
+  },
+  "realWorldConnection": "Principal Component Analysis (PCA) finds the best basis for your data, revealing hidden patterns and reducing complexity. Different coordinate systems optimize for different purposes - just like how architects use different views (front, side, top) to fully describe a building."
+}

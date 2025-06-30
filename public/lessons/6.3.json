@@ -1,0 +1,53 @@
+{
+  "id": "6.3",
+  "title": "Random Variables & Probability Distributions",
+  "duration": "40-45 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa waves her magic wand and transforms chaotic outcomes into neat numerical values! Random variables are like magical translators that turn any random experiment - coin flips, dice rolls, or rabbit appearances - into numbers we can work with mathematically. Each random variable brings its own special distribution pattern!",
+    "characterMessage": "Time for the ultimate magical transformation! Random variables turn any random outcome into numbers, and each one comes with its own beautiful distribution pattern. It's like having different magical formulae that tell me exactly how likely each number is to appear from my hat!"
+  },
+  "learningObjectives": [
+    "Define random variables as functions from outcomes to real numbers",
+    "Distinguish between discrete and continuous random variables",
+    "Understand probability mass functions (PMF) for discrete variables",
+    "Introduce probability density functions (PDF) for continuous variables",
+    "Visualize distributions and interpret their shapes and properties"
+  ],
+  "coreConcepts": [
+    "Random variable: X: Ω → ℝ maps outcomes to numbers",
+    "Discrete vs continuous random variables",
+    "Probability mass function (PMF): P(X = x)",
+    "Probability density function (PDF): f(x)",
+    "Cumulative distribution function (CDF): F(x) = P(X ≤ x)"
+  ],
+  "readContent": "A random variable X is a function that assigns numerical values to experimental outcomes: X: Ω → ℝ. Discrete random variables take countable values (like dice rolls), described by probability mass functions P(X = x) that give exact probabilities for each value. Continuous random variables take uncountable values (like heights), described by probability density functions f(x) where probabilities are computed as integrals: P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx. The cumulative distribution function F(x) = P(X ≤ x) works for both types, giving the probability that X doesn't exceed x. Different random phenomena produce characteristic distribution shapes.",
+  "readAnalogy": "Random variables are like magical number-generating machines! Each experiment gets translated into numbers, and every machine has its own personality (distribution). Some machines prefer certain numbers (discrete distributions), while others spread smoothly across ranges (continuous distributions). The distribution tells me each machine's preferences!",
+  "readKeyPoints": [
+    "Random variables X map experimental outcomes to numerical values",
+    "Discrete: PMF gives P(X = x); Continuous: PDF gives probability densities",
+    "CDF F(x) = P(X ≤ x) works for both discrete and continuous variables"
+  ],
+  "readDigDeeper": "The fundamental theorem of calculus connects PDFs and CDFs: f(x) = F'(x) for continuous distributions. This relationship parallels how instantaneous rates relate to accumulated quantities, showing deep connections between probability and calculus.",
+  "readWhyMatters": "Financial models use random variables to represent stock prices and market volatility. Quality control uses distributions to model manufacturing variations. Machine learning treats data features as realizations of random variables with specific distributions. Climate science models temperature as continuous random variables.",
+  "seeContent": "Explore how random variables transform experimental outcomes into numbers, visualize different distribution shapes for discrete and continuous cases, and observe how PDFs and CDFs represent the same information differently.",
+  "hearContent": "Listen as I explain how random variables are like magical translators that turn any chaotic experiment into organized numbers, each with its own beautiful distribution personality!",
+  "hearAudioUrl": "/audio/6.3.mp3",
+  "doContent": "Use the Random Variable Generator to see outcome-to-number mappings, practice with the Distribution Visualizer for PMFs and PDFs, and experiment with the CDF Explorer showing cumulative probabilities.",
+  "memoryAids": {
+    "mantra": "Random variables turn chaos to numbers neat, distributions show which values we'll meet! PMF for discrete, PDF for flow - that's how probability patterns grow!",
+    "visual": "Picture Pippa's magic wand transforming random experimental outcomes into streams of numbers, each following its own beautiful distribution pattern with characteristic shape and behavior."
+  },
+  "conceptCheck": {
+    "question": "For a discrete random variable X with PMF P(X=1)=0.3, P(X=2)=0.5, P(X=3)=0.2, what is P(X ≤ 2)?",
+    "options": [
+      "P(X ≤ 2) = P(X=1) + P(X=2) = 0.3 + 0.5 = 0.8",
+      "P(X ≤ 2) = P(X=2) = 0.5, since we want exactly 2",
+      "P(X ≤ 2) = 1 - P(X=3) = 1 - 0.2 = 0.8",
+      "Both A and C are correct methods giving the same answer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "P(X ≤ 2) includes X=1 and X=2, so P(X ≤ 2) = 0.3 + 0.5 = 0.8. Alternatively, P(X ≤ 2) = 1 - P(X > 2) = 1 - P(X=3) = 1 - 0.2 = 0.8. Both methods give 0.8."
+  },
+  "realWorldConnection": "Netflix models user ratings as discrete random variables to predict preferences. Uber models ride request times as continuous random variables for driver allocation. Amazon models package delivery times using continuous distributions for logistics planning. Weather services model precipitation amounts as continuous random variables."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "2.2",
+  "title": "Matrix Addition & Scalar Multiplication",
+  "duration": "25-30 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max needs to combine data from two different forest surveys: spring wildlife counts and summer wildlife counts. How do you systematically combine two organized datasets? Matrix addition lets Max merge corresponding information perfectly, while scalar multiplication lets him scale entire datasets when needed.",
+    "characterMessage": "Combining organized information is like merging two perfectly aligned filing systems! Element by element, position by position, we can add corresponding data or scale entire datasets. The systematic organization makes everything predictable and reliable."
+  },
+  "learningObjectives": [
+    "Add matrices by combining corresponding elements systematically",
+    "Multiply matrices by scalars to scale entire datasets uniformly",
+    "Understand when matrix addition is possible (same dimensions required)",
+    "Apply the commutative and associative properties of matrix addition",
+    "Recognize the zero matrix as the additive identity"
+  ],
+  "coreConcepts": [
+    "Matrix addition: element-wise operation",
+    "Scalar multiplication: uniform scaling",
+    "Dimension compatibility for addition",
+    "Properties: commutative, associative",
+    "Zero matrix as additive identity"
+  ],
+  "readContent": "Matrix addition combines two matrices of the same dimensions by adding corresponding elements: C[i,j] = A[i,j] + B[i,j]. Matrices must have identical dimensions for addition to be defined. Scalar multiplication multiplies every element by the same number: (kA)[i,j] = k·A[i,j]. Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix (all elements zero) serves as the additive identity. These operations form the foundation for more complex matrix manipulations and linear transformations.",
+  "readAnalogy": "Matrix addition is like combining two identical spreadsheets by adding corresponding cells. Scalar multiplication is like adjusting every number in a spreadsheet by the same percentage - systematic scaling of organized information.",
+  "readKeyPoints": [
+    "Addition rule: C[i,j] = A[i,j] + B[i,j] for corresponding elements",
+    "Dimension requirement: matrices must be the same size for addition",
+    "Scalar multiplication: multiply every element by the same constant"
+  ],
+  "readDigDeeper": "Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix serves as the additive identity. These properties make matrix spaces behave like familiar number systems.",
+  "readWhyMatters": "Financial analysts add quarterly matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to systematically improve model performance.",
+  "seeContent": "Watch matrix addition happen element by element in an interactive grid, and see how scalar multiplication uniformly scales all values. Observe how dimension mismatches prevent addition and how the zero matrix behaves as an identity.",
+  "hearContent": "Listen as I explain how combining systematic information is like perfectly aligning two filing cabinets and merging their contents - everything has to match up precisely for the combination to work!",
+  "hearAudioUrl": "/audio/2.2.mp3",
+  "doContent": "Use the Matrix Combiner to practice addition with visual feedback, experiment with the Scalar Multiplier to see uniform scaling effects, and test the Dimension Checker to understand compatibility requirements.",
+  "memoryAids": {
+    "mantra": "Same position, same purpose - that's how organized information combines systematically!",
+    "visual": "Picture two identical filing cabinets where you combine contents of each matching drawer and folder position, or use a photocopier to scale an entire filing system larger or smaller."
+  },
+  "conceptCheck": {
+    "question": "If Matrix A represents spring wildlife counts and Matrix B represents summer counts, what does 2A + B represent ecologically?",
+    "options": [
+      "Double the spring counts plus summer counts - weighted seasonal analysis",
+      "Spring counts squared plus summer counts",
+      "Average of spring and summer counts",
+      "The difference between seasons"
+    ],
+    "correctAnswer": 0,
+    "explanation": "2A + B means each spring count is doubled, then added to the corresponding summer count. This could represent giving spring data twice the weight in a seasonal analysis model."
+  },
+  "realWorldConnection": "Financial analysts add quarterly earnings matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to improve model performance systematically."
+}

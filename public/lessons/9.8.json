@@ -1,0 +1,53 @@
+{
+  "id": "9.8",
+  "title": "Portfolio Presentation & Documentation",
+  "duration": "120-150 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage helps you create a comprehensive portfolio that showcases your complete mathematical journey through Mathland. This isn't just project documentation - it's a professional demonstration of your ability to apply sophisticated mathematical concepts to solve real-world problems that create measurable business value.",
+    "characterMessage": "Time to create a portfolio that tells your complete mathematical story! This comprehensive documentation demonstrates your mastery of every concept from vectors through Bayesian inference, showing how mathematical theory transforms into practical problem-solving power that creates real business value."
+  },
+  "learningObjectives": [
+    "Document the complete analytical workflow from problem to solution",
+    "Demonstrate integration of mathematical concepts across all modules",
+    "Create professional-quality deliverables suitable for career portfolios",
+    "Articulate the business value created through mathematical analysis",
+    "Reflect on learning journey and identify areas for continued growth"
+  ],
+  "coreConcepts": [
+    "Comprehensive project documentation standards",
+    "Mathematical concept integration demonstration",
+    "Professional portfolio development",
+    "Business value articulation and ROI quantification",
+    "Reflective learning and growth planning"
+  ],
+  "readContent": "Portfolio creation synthesizes your entire mathematical journey into professional documentation that demonstrates practical competence. The documentation follows industry standards: executive summary for business stakeholders, technical methodology for peer review, implementation details for reproducibility, and results interpretation for decision-makers. Mathematical concept integration gets explicitly highlighted: how linear algebra enabled data preprocessing, calculus guided optimization, probability quantified uncertainty, statistics validated results, and Bayesian methods informed decisions. Code documentation follows best practices with clear commenting, modular structure, and reproducible workflows. Business value quantification translates technical achievements into financial impact: revenue increases, cost savings, efficiency gains, or risk reductions. Reflective analysis identifies strengths, growth areas, and next learning priorities based on project experience.",
+  "readAnalogy": "Portfolio creation is like Sage helping you write the definitive biography of your mathematical journey - not just what you learned, but how you applied each concept to create real value. It's your professional story told through practical achievement, demonstrating that you can transform mathematical theory into business impact.",
+  "readKeyPoints": [
+    "Professional documentation demonstrates mathematical concept integration across all modules",
+    "Business value quantification translates technical achievements into measurable impact",
+    "Reflective analysis identifies learning strengths and guides future development"
+  ],
+  "readDigDeeper": "Industry-quality portfolios distinguish candidates in competitive data science markets. Employers specifically look for evidence of mathematical sophistication applied to practical problems, exactly what this capstone project demonstrates.",
+  "readWhyMatters": "Tech companies like Google and Meta evaluate candidates based on portfolio projects that demonstrate end-to-end analytical capability. Consulting firms like BCG and Bain seek analysts who can apply mathematical rigor to business problems. Your portfolio becomes the evidence of your capability to transform mathematical training into professional impact.",
+  "seeContent": "Develop comprehensive project documentation using industry-standard formats, create professional portfolio materials suitable for career advancement, and practice articulating business value created through mathematical analysis.",
+  "hearContent": "Listen as I guide you through creating portfolio documentation that tells your complete mathematical story - from theoretical understanding through practical application to measurable business impact!",
+  "hearAudioUrl": "/audio/9.8.mp3",
+  "doContent": "Create comprehensive project documentation including executive summaries, technical methodologies, and business impact analyses, develop professional portfolio materials, and complete reflective analysis of your mathematical learning journey.",
+  "memoryAids": {
+    "mantra": "Document with pride, let achievements guide! Mathematical journey complete and true - portfolio power sees you through!",
+    "visual": "Picture Sage helping you assemble a magnificent portfolio album where each page represents a mathematical concept mastered and applied, creating a visual story of your transformation from student to practitioner."
+  },
+  "conceptCheck": {
+    "question": "In your portfolio's business impact section, how should you present a model that improved prediction accuracy from 75% to 82%?",
+    "options": [
+      "Calculate the business value: if 1000 daily decisions improve by 7%, quantify the resulting cost savings or revenue increase",
+      "Simply state '7% accuracy improvement' without further context",
+      "Focus only on the technical methodology used to achieve the improvement",
+      "Present just the statistical significance test results"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Business impact requires translating technical improvements into financial terms. A 7% accuracy improvement in 1000 daily decisions creates measurable value through better outcomes, reduced costs, or increased revenue that should be quantified for stakeholder understanding."
+  },
+  "realWorldConnection": "Data scientists at companies like LinkedIn and Salesforce maintain portfolios of projects that demonstrate business impact through mathematical analysis. Consulting firms require case studies showing quantified value creation. Your portfolio becomes evidence of your ability to create measurable business value through mathematical expertise."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "0.8",
+  "title": "Vectors & Greek Symbols Preview",
+  "duration": "20-25 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Before we dive deeper with Vera in Module 1, let's meet her briefly and learn the language of mathematics - Greek symbols and basic vector notation that will be essential for advanced data science.",
+    "characterMessage": "Direction and magnitude matter! I'm excited to work with you in Module 1, but first, let's learn the mathematical language we'll need - Greek symbols are like the vocabulary of advanced mathematics!"
+  },
+  "learningObjectives": [
+    "Recognize and pronounce common Greek symbols used in mathematics",
+    "Understand basic vector notation and representation",
+    "Use sigma (Σ) notation for sums",
+    "Understand pi (Π) notation for products",
+    "Familiarize with mathematical conventions and notation"
+  ],
+  "coreConcepts": [
+    "Greek alphabet in mathematics",
+    "Basic vector notation",
+    "Sigma (Σ) notation",
+    "Pi (Π) notation",
+    "Mathematical conventions"
+  ],
+  "memoryAids": {
+    "mantra": "Each Greek letter has a special mathematical meaning - I'll teach you more about vectors soon!",
+    "visual": "Greek symbol reference chart showing common uses: α (alpha) for angles, β (beta) for parameters, σ (sigma) for standard deviation"
+  },
+  "realWorldConnection": "Greek symbols are the universal language of mathematics and science. In data science, you'll see σ for standard deviation, μ for mean, θ for parameters in machine learning, λ for regularization, and vectors for representing data points in multi-dimensional space.",
+  "conceptCheck": {
+    "question": "What does the notation Σ(xi) from i=1 to n represent?",
+    "options": [
+      "The sum of all x values from x₁ to xₙ",
+      "The product of all x values",
+      "The average of x values",
+      "The Greek letter sigma only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Σ(xi) from i=1 to n means sum all x values starting from x₁ up to xₙ. This notation is fundamental in statistics and data science for expressing sums concisely."
+  },
+  "readContent": "Before Vera teaches you advanced vector mathematics, let's learn the language! Greek symbols are like the vocabulary of mathematics: α (alpha) for angles, β (beta) for parameters, σ (sigma) for standard deviation, μ (mu) for means. Vectors [x, y] represent quantities with both magnitude and direction. Sigma notation Σ efficiently expresses sums: Σᵢ₌₁ⁿ xᵢ means add up all x values from 1 to n.",
+  "readAnalogy": "Learning Greek symbols is like learning the secret code that mathematicians use worldwide. Once you know the vocabulary, you can read mathematical stories written by scientists anywhere on Earth.",
+  "readKeyPoints": [
+    "Common Greek letters: α (alpha), β (beta), θ (theta), λ (lambda), μ (mu), σ (sigma)",
+    "Vector notation: [x, y] or bold letters like v show direction and magnitude",
+    "Sigma notation: Σ compactly represents sums, Π represents products"
+  ],
+  "readDigDeeper": "Advanced notation includes nabla (∇) for gradients, partial derivatives (∂), and integral symbols (∫). Each symbol carries specific mathematical meaning that becomes essential for calculus and beyond.",
+  "readWhyMatters": "Greek symbols are the universal language of mathematics and science. In data science, you'll see σ for standard deviation, μ for mean, θ for parameters in machine learning, λ for regularization, and vectors for representing data points in multi-dimensional space.",
+  "seeContent": "Explore the Greek alphabet chart with mathematical applications, see vector representations with arrows showing direction and magnitude, and practice with notation builders.",
+  "hearContent": "Listen to proper pronunciation of Greek letters and understand why mathematicians chose these symbols for specific concepts - each has a story and purpose!",
+  "hearAudioUrl": "/audio/0.8.mp3",
+  "doContent": "Practice with Greek symbol matching games, build sigma notation expressions, and explore interactive vector representations to prepare for Module 1."
+}

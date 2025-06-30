@@ -1,0 +1,53 @@
+{
+  "id": "5.8",
+  "title": "Constrained Optimization Preview",
+  "duration": "40-45 minutes",
+  "characterId": "greta",
+  "narrativeHook": {
+    "story": "Greta encounters a new challenge: sometimes she can't climb anywhere she wants! Imagine needing to find the highest point on a mountain, but you're restricted to following a specific trail. Constrained optimization adds boundaries and rules to our optimization problems, making them more realistic but more complex.",
+    "characterMessage": "Real-world optimization rarely lets us go anywhere we want! Sometimes I need to find the lowest point while staying on a designated trail, or the highest peak while avoiding certain dangerous areas. Constrained optimization adds realistic limitations to our mathematical mountaineering!"
+  },
+  "learningObjectives": [
+    "Understand constraints as restrictions on feasible solutions",
+    "Distinguish between equality and inequality constraints",
+    "Introduce Lagrange multipliers conceptually",
+    "Recognize constrained optimization in real applications",
+    "Preview advanced techniques for constraint handling"
+  ],
+  "coreConcepts": [
+    "Constraint types: g(x,y) = 0 (equality), h(x,y) ≤ 0 (inequality)",
+    "Feasible region defined by constraints",
+    "Lagrange multipliers for equality constraints",
+    "KKT conditions for inequality constraints",
+    "Real-world constraint examples"
+  ],
+  "readContent": "Constrained optimization restricts solutions to feasible regions defined by constraints. Equality constraints g(x,y) = 0 force solutions onto curves or surfaces, while inequality constraints h(x,y) ≤ 0 define regions where solutions must lie. The method of Lagrange multipliers handles equality constraints by introducing new variables λ that measure the 'cost' of the constraint. The optimality conditions become ∇f = λ∇g along with the constraint g(x,y) = 0. Inequality constraints use Karush-Kuhn-Tucker (KKT) conditions, which generalize Lagrange multipliers. Many real problems involve multiple constraints, creating complex feasible regions.",
+  "readAnalogy": "Constrained optimization is like mountaineering with rules! Sometimes I must stay on marked trails (equality constraints), sometimes I must avoid dangerous areas (inequality constraints). The highest point I can reach might not be the mountain's true summit - it's the highest point I can reach while following the rules. Lagrange multipliers are like trail guides who help me find the best reachable spot!",
+  "readKeyPoints": [
+    "Constraints restrict optimization to feasible regions",
+    "Equality constraints: g(x,y) = 0 define curves/surfaces to stay on",
+    "Lagrange multipliers find optima subject to equality constraints"
+  ],
+  "readDigDeeper": "The constraint qualification conditions ensure that Lagrange multiplier methods work properly. When constraints are 'well-behaved' (linearly independent gradients), the multiplier approach gives correct necessary conditions for optimality.",
+  "readWhyMatters": "Portfolio optimization maximizes returns subject to budget constraints and risk limits. Engineering design optimizes performance subject to weight, cost, and safety constraints. Machine learning uses constrained optimization for support vector machines and regularized regression models.",
+  "seeContent": "Visualize how constraints create feasible regions on optimization surfaces, see how optimal points often lie on constraint boundaries, and observe the geometric interpretation of Lagrange multiplier conditions.",
+  "hearContent": "Listen as I explain how constrained optimization is like following mountain trails with specific rules - finding the best reachable destination while respecting all the boundaries and restrictions!",
+  "hearAudioUrl": "/audio/5.8.mp3",
+  "doContent": "Use the Constraint Visualizer to see feasible regions, practice with the Lagrange Multiplier Solver for simple problems, and experiment with the Constrained Optimization Explorer showing real-world examples.",
+  "memoryAids": {
+    "mantra": "Stay within bounds while seeking the best - constraints make optimization a different test! Lagrange multipliers show the way - optimal solutions where gradients play!",
+    "visual": "Picture Greta finding the highest viewpoint while staying on designated mountain trails, using special mathematical guides (Lagrange multipliers) to identify the best reachable spot within the allowed area."
+  },
+  "conceptCheck": {
+    "question": "To optimize f(x,y) = x² + y² subject to constraint g(x,y) = x + y - 2 = 0, what condition must be satisfied at the optimum?",
+    "options": [
+      "∇f = λ∇g, meaning ⟨2x,2y⟩ = λ⟨1,1⟩ for some λ",
+      "∇f · ∇g = 0, meaning the gradients are perpendicular",
+      "∇f + ∇g = 0, meaning the gradients cancel out",
+      "f(x,y) = g(x,y) at the optimal point"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lagrange multiplier condition: ∇f = λ∇g at the optimum. Here: ⟨2x,2y⟩ = λ⟨1,1⟩, giving 2x = λ and 2y = λ, so x = y. Combined with constraint x + y = 2, we get x = y = 1."
+  },
+  "realWorldConnection": "Tesla optimizes battery placement subject to weight distribution and safety constraints. Portfolio managers maximize returns subject to budget and risk constraints. Netflix optimizes recommendation algorithms subject to computational time and diversity constraints."
+}

@@ -1,0 +1,55 @@
+{
+  "id": "2.5",
+  "title": "Determinants & Matrix Properties",
+  "duration": "35-40 minutes",
+  "characterId": "max",
+  "narrativeHook": {
+    "story": "Max needs to measure the 'power' of his transformation matrices. How much do they stretch or shrink areas? Do they flip orientations? The determinant is Max's mathematical measuring tool that captures the essential transformation strength and behavior of any matrix in a single number.",
+    "characterMessage": "Every transformation has a signature number that tells its complete story! The determinant measures transformation power - how much does it stretch or shrink areas (2D) or volumes (3D)? For 2×2 matrices: det(A) = ad - bc. The absolute value |det(A)| shows the scaling factor, while the sign indicates orientation: positive preserves orientation, negative flips it like a mirror. If det(A) = 0, the transformation collapses everything to a lower dimension - it's singular and non-invertible."
+  },
+  "learningObjectives": [
+    "Calculate determinants for 2×2 and 3×3 matrices",
+    "Interpret determinants as area/volume scaling factors",
+    "Understand the relationship between determinants and matrix invertibility",
+    "Recognize how determinants indicate orientation preservation or reversal",
+    "Apply determinant properties to solve practical problems"
+  ],
+  "coreConcepts": [
+    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
+    "3×3 determinant using cofactor expansion",
+    "Geometric interpretation: area/volume scaling",
+    "det(A) = 0 ↔ matrix is singular",
+    "Determinant properties and applications"
+  ],
+  "readContent": "The determinant of a matrix measures how much the matrix transformation scales areas (2D) or volumes (3D). For 2×2 matrix [[a,b],[c,d]], det(A) = ad - bc. For 3×3 matrices, use cofactor expansion along any row or column. Geometrically, |det(A)| gives the scaling factor for areas/volumes, while the sign indicates orientation: positive preserves orientation, negative reverses it. If det(A) = 0, the matrix collapses space to lower dimension and is non-invertible (singular). If det(A) ≠ 0, the matrix is invertible with det(A⁻¹) = 1/det(A).",
+  "readAnalogy": "The determinant is like measuring the transformation DNA of any matrix - it tells you exactly how powerful the transformation is and whether it flips things around!",
+  "readKeyPoints": [
+    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
+    "3×3 determinant: cofactor expansion - systematic way to calculate",
+    "Geometric interpretation: area/volume scaling",
+    "Sign: positive preserves orientation, negative reverses it",
+    "Singular vs invertible matrices"
+  ],
+  "readDigDeeper": "The determinant is a powerful tool for understanding matrix properties: det(A) = 0 means the matrix is singular (non-invertible), det(A) ≠ 0 means the matrix is invertible. Determinant properties like multilinearity and alternating properties help simplify calculations.",
+  "readWhyMatters": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
+  "seeContent": "Visualize how determinants measure area scaling by watching unit squares transform into parallelograms, see how negative determinants flip orientations, and observe how zero determinants collapse space to lines.",
+  "hearContent": "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
+  "hearAudioUrl": "/audio/2.5.mp3",
+  "doContent": "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
+  "memoryAids": {
+    "mantra": "Transformation power in a single number - scaling factor and flip detector all in one!",
+    "visual": "Picture Max measuring transformation strength with a special scale: the number shows how much areas grow or shrink, and the sign shows whether the transformation is a mirror flip."
+  },
+  "conceptCheck": {
+    "question": "A transformation matrix has determinant -3. What does this tell you about the transformation?",
+    "options": [
+      "Areas are scaled by factor 3 and orientation is reversed (mirror flip)",
+      "Areas are scaled by factor -3 (impossible negative area)",
+      "The transformation shrinks everything by 1/3",
+      "The matrix is not invertible"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Determinant -3 means: |det| = 3 so areas scale by factor 3 (magnification), and the negative sign means orientation reverses (like a mirror flip). The transformation is invertible since det ≠ 0."
+  },
+  "realWorldConnection": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "6.7",
+  "title": "Law of Large Numbers & Central Limit Theorem",
+  "duration": "45-50 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa discovers the most magical theorems in all of probability! The Law of Large Numbers promises that averages of many random draws converge to the true expectation - magic becomes predictable with enough repetitions. The Central Limit Theorem is even more amazing: no matter what distribution you start with, averages always approach the beautiful Normal bell curve!",
+    "characterMessage": "Prepare for the most mind-blowing magical theorems ever! The Law of Large Numbers says that if I repeat my magic tricks enough times, the average result gets closer and closer to the expected value. But the Central Limit Theorem is pure magic - it says that averages ALWAYS become bell-shaped, no matter what distribution I start with!"
+  },
+  "learningObjectives": [
+    "Understand the Law of Large Numbers as convergence of sample means",
+    "Explore the Central Limit Theorem for sums and averages",
+    "Apply Normal approximation to various distributions",
+    "Calculate probabilities using CLT approximations",
+    "Appreciate why Normal distributions appear everywhere in practice"
+  ],
+  "coreConcepts": [
+    "Law of Large Numbers: X̄ₙ → μ as n → ∞",
+    "Central Limit Theorem: (X̄ₙ - μ)/(σ/√n) → N(0,1)",
+    "Sample mean distribution: X̄ₙ ~ N(μ, σ²/n)",
+    "Normal approximation to other distributions",
+    "Sample size requirements for CLT applicability"
+  ],
+  "readContent": "The Law of Large Numbers (LLN) states that sample means X̄ₙ = (X₁ + ... + Xₙ)/n converge to the population mean μ as n → ∞, regardless of the original distribution. This guarantees that averages become predictable with large samples. The Central Limit Theorem (CLT) goes further: for any distribution with mean μ and variance σ², the standardized sample mean (X̄ₙ - μ)/(σ/√n) approaches Standard Normal N(0,1) as n → ∞. This means X̄ₙ ~ N(μ, σ²/n) for large n. CLT explains why Normal distributions appear everywhere - they emerge naturally from averaging processes. Typical guidelines suggest n ≥ 30 for CLT applicability.",
+  "readAnalogy": "The Law of Large Numbers is like my magic becoming perfectly predictable with enough repetitions - if I flip coins all day, the average will get closer and closer to 0.5. But the Central Limit Theorem is pure magic: no matter what crazy distribution I start with, when I average enough trials, I ALWAYS get that beautiful bell curve! It's like nature's favorite shape emerges automatically!",
+  "readKeyPoints": [
+    "LLN: Sample averages X̄ₙ converge to population mean μ as n increases",
+    "CLT: Sample averages approach Normal distribution regardless of original distribution",
+    "Standard error σ/√n shows how sample mean precision improves with sample size"
+  ],
+  "readDigDeeper": "The CLT has different versions: identical distributions (classic), independent but not identical (Lyapunov), and dependent variables (martingale CLT). These extensions show the theorem's remarkable generality across different probability structures.",
+  "readWhyMatters": "Opinion polls use CLT to calculate margins of error from sample sizes. Quality control uses CLT to monitor manufacturing processes with small samples. A/B testing in tech companies relies on CLT for statistical significance testing. Insurance companies use CLT to predict aggregate claim patterns from individual policies.",
+  "seeContent": "Watch sample means converge to population means through LLN simulations, observe how different starting distributions all lead to Normal sample mean distributions via CLT, and see how standard errors decrease with sample size.",
+  "hearContent": "Listen as I explain the most magical theorems in probability - how randomness becomes predictable through averaging, and how the bell curve emerges from any starting distribution like nature's universal pattern!",
+  "hearAudioUrl": "/audio/6.7.mp3",
+  "doContent": "Use the LLN Simulator showing convergence with increasing sample sizes, practice with the CLT Demonstrator for different starting distributions, and experiment with the Normal Approximation Calculator.",
+  "memoryAids": {
+    "mantra": "Large numbers make averages true, Central Limit makes them Normal too! Any start becomes bell-shaped when averaged with mathematical grace!",
+    "visual": "Picture Pippa repeatedly pulling from any magical distribution, watching the averages converge to a predictable center (LLN) and form a beautiful bell curve shape (CLT) regardless of the original chaos."
+  },
+  "conceptCheck": {
+    "question": "A population has mean μ = 50 and standard deviation σ = 20. For samples of size n = 100, what's the distribution of the sample mean X̄?",
+    "options": [
+      "X̄ ~ N(50, 20²/100) = N(50, 4), so standard error = 2",
+      "X̄ ~ N(50, 20) - same as the population distribution",
+      "X̄ ~ N(50, 20/100) = N(50, 0.2), so standard error = 0.2",
+      "Cannot determine without knowing the original population distribution"
+    ],
+    "correctAnswer": 0,
+    "explanation": "By CLT, X̄ ~ N(μ, σ²/n) = N(50, 20²/100) = N(50, 4). The standard error is σ/√n = 20/√100 = 20/10 = 2."
+  },
+  "realWorldConnection": "Gallup polls use CLT to estimate election outcomes from samples of ~1,000 people with known margins of error. Netflix uses CLT to analyze user rating patterns and recommend content. Amazon uses CLT in quality control to monitor shipping times and customer satisfaction from sample data."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "7.3",
+  "title": "Confidence Intervals",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund discovers the elegant solution to expressing uncertainty: confidence intervals create graceful ranges that capture unknown parameters with specified probability. Like the swan's flight path traced against the sky, confidence intervals map the probable territory where truth resides, acknowledging uncertainty while maintaining statistical dignity.",
+    "characterMessage": "Confidence intervals embody statistical elegance at its finest! Rather than single-point estimates, we create intervals that capture the unknown parameter with known probability. It's a graceful way to express both our knowledge and our appropriate humility before uncertainty."
+  },
+  "learningObjectives": [
+    "Construct confidence intervals for population means",
+    "Interpret confidence level and confidence interval meaning",
+    "Apply t-distribution for unknown population variance",
+    "Understand the relationship between confidence level and interval width",
+    "Recognize factors affecting confidence interval precision"
+  ],
+  "coreConcepts": [
+    "Confidence interval: X̄ ± margin of error",
+    "Confidence level interpretation",
+    "Critical values from Normal and t-distributions",
+    "Margin of error: ME = t*SE or z*SE",
+    "Factors affecting interval width"
+  ],
+  "readContent": "A confidence interval provides a range of plausible values for an unknown population parameter. For population means: X̄ ± t(α/2,df) × SE, where t is the critical value from t-distribution with df = n-1 degrees of freedom. The confidence level (e.g., 95%) indicates that if we repeated this procedure many times, 95% of intervals would contain the true parameter. We use t-distribution when population variance is unknown (typical case) and Normal distribution when variance is known. Margin of error ME = t × SE determines interval width. Larger samples, lower confidence levels, and smaller population variance all produce narrower intervals.",
+  "readAnalogy": "Confidence intervals are like gracefully sketching the probable flight zone where I'll appear next. You can't predict my exact location, but statistical principles let you draw elegant boundaries that will contain my flight path 95% of the time if you repeat this process. The confidence level tells you how often these beautiful boundaries succeed in their purpose.",
+  "readKeyPoints": [
+    "Confidence interval: X̄ ± t(α/2,df) × SE captures parameter with known probability",
+    "Confidence level: percentage of intervals that contain true parameter in repeated sampling",
+    "Use t-distribution when population variance unknown (typical case)"
+  ],
+  "readDigDeeper": "The duality between confidence intervals and hypothesis tests: a 95% confidence interval contains all parameter values that would not be rejected in a two-sided hypothesis test at α = 0.05. This connects interval estimation to hypothesis testing through the same mathematical foundation.",
+  "readWhyMatters": "Medical studies report confidence intervals for treatment effects to show clinical significance. Political polls use confidence intervals to communicate uncertainty in candidate support estimates. Engineering uses confidence intervals for quality specifications and safety margins. Business analytics uses confidence intervals for forecasting and decision-making.",
+  "seeContent": "Watch confidence interval construction step-by-step, observe how confidence level affects interval width, and visualize the long-run interpretation through repeated sampling simulations.",
+  "hearContent": "Listen as I explain how confidence intervals provide elegant mathematical dignity to uncertainty - creating beautiful boundaries that honor both our knowledge and our limitations!",
+  "hearAudioUrl": "/audio/7.3.mp3",
+  "doContent": "Use the Confidence Interval Calculator with adjustable parameters, practice with the t-Distribution Critical Value Finder, and experiment with the Confidence Level Simulator showing long-run interpretation.",
+  "memoryAids": {
+    "mantra": "Sample plus-minus margin of error - confidence intervals show where truth may lurk! Not the parameter itself we find, but elegant bounds that ease the mind!",
+    "visual": "Picture Sigmund creating graceful boundaries on a lake, knowing that while he can't predict exactly where he'll land, these elegant mathematical boundaries will contain his landing spot with known probability across many flights."
+  },
+  "conceptCheck": {
+    "question": "A 95% confidence interval for mean height is [168, 172] cm. What does this mean?",
+    "options": [
+      "We're 95% confident the true population mean is between 168-172 cm",
+      "95% of individuals have heights between 168-172 cm",
+      "There's a 95% probability the sample mean is between 168-172 cm",
+      "The true mean has a 95% chance of being exactly 170 cm"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The 95% confidence level refers to the long-run success rate of the interval procedure in capturing the true population parameter. We're 95% confident that this specific interval [168, 172] contains the unknown population mean height."
+  },
+  "realWorldConnection": "Pharmaceutical companies report confidence intervals for drug efficacy to regulators for approval decisions. Public health agencies use confidence intervals to communicate disease prevalence estimates. Market research uses confidence intervals to guide business strategy decisions with quantified uncertainty about consumer behavior."
+}

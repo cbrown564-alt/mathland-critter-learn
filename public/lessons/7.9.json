@@ -1,0 +1,53 @@
+{
+  "id": "7.9",
+  "title": "Practical vs Statistical Significance",
+  "duration": "40-45 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund discovers a profound distinction that transcends mere mathematical significance. Statistical significance tells us an effect is real, but practical significance asks whether that real effect actually matters. Like distinguishing between detecting a whisper and hearing something worth listening to, this separation embodies statistical wisdom and restraint.",
+    "characterMessage": "Here lies one of statistics' most elegant lessons! Statistical significance proves an effect exists, but practical significance asks whether we should care. A truly wise statistician understands that mathematical precision must be tempered with real-world judgment about what matters."
+  },
+  "learningObjectives": [
+    "Distinguish clearly between statistical and practical significance",
+    "Understand how large samples can make trivial effects statistically significant",
+    "Apply effect size measures to assess practical importance",
+    "Recognize the limitations of p-value-only interpretations",
+    "Make informed decisions combining statistical and practical considerations"
+  ],
+  "coreConcepts": [
+    "Statistical significance: p < α (effect is real)",
+    "Practical significance: effect size large enough to matter",
+    "Effect size measures: Cohen's d, eta-squared, correlation",
+    "Confidence intervals for effect size interpretation",
+    "Context-dependent definitions of practical importance"
+  ],
+  "readContent": "Statistical significance indicates an effect is reliably different from zero, but says nothing about magnitude or importance. With large samples, even trivial differences become statistically significant because standard errors shrink. Practical significance requires effect sizes large enough to matter in real-world contexts. Cohen's d measures standardized effect sizes: small (0.2), medium (0.5), large (0.8). However, practical significance is context-dependent - a small medical effect might be practically significant if it saves lives, while a large effect on trivial outcomes may be practically meaningless. Confidence intervals for effect sizes provide more informative conclusions than p-values alone, showing both statistical significance and practical relevance.",
+  "readAnalogy": "Statistical significance is like having perfect hearing that can detect the faintest whisper, while practical significance asks whether that whisper contains anything worth hearing. With sensitive enough equipment (large samples), we can detect virtually any difference, but wisdom lies in distinguishing between 'detectable' and 'meaningful.' A statistically significant but tiny effect is like hearing someone whisper '2+2=4' - real but not revolutionary.",
+  "readKeyPoints": [
+    "Statistical significance (p < α): effect is real; Practical significance: effect is meaningful",
+    "Large samples make trivial effects statistically significant",
+    "Effect sizes and confidence intervals provide more complete information than p-values"
+  ],
+  "readDigDeeper": "The minimum clinically important difference (MCID) in medical research exemplifies context-dependent practical significance. Regulatory agencies often require both statistical significance and clinically meaningful effect sizes for drug approval, recognizing that statistical and practical significance must align.",
+  "readWhyMatters": "Medical research distinguishes between statistically significant and clinically meaningful treatment effects. Educational interventions must show practically significant learning improvements, not just statistical differences. Business analytics seeks effect sizes large enough to impact revenue, not just statistically detectable changes.",
+  "seeContent": "Explore scenarios where statistical and practical significance diverge, visualize effect size interpretations alongside p-values, and observe how sample size affects the relationship between statistical and practical significance.",
+  "hearContent": "Listen as I explain how true statistical wisdom lies in understanding that detecting an effect and caring about an effect are beautifully distinct questions requiring different types of judgment!",
+  "hearAudioUrl": "/audio/7.9.mp3",
+  "doContent": "Use the Significance Comparison Tool showing statistical vs practical importance, practice with the Effect Size Calculator for various scenarios, and experiment with the Sample Size Impact Simulator.",
+  "memoryAids": {
+    "mantra": "Statistical says 'it's real and true,' practical asks 'what does it do?' Big samples find tiny effects - but do tiny effects earn respect?",
+    "visual": "Picture Sigmund using an extremely powerful magnifying glass (large sample) that can detect the tiniest scratches on the water's surface, while asking the deeper question of whether those scratches actually matter for navigation."
+  },
+  "conceptCheck": {
+    "question": "A large study (n=10,000) finds a statistically significant difference in test scores: treatment group M=75.2, control M=75.0, p=0.03. What should you conclude?",
+    "options": [
+      "The effect is statistically significant but the 0.2-point difference is likely not practically meaningful",
+      "This is strong evidence for a meaningful educational improvement",
+      "The large sample size proves this is an important finding",
+      "The significant p-value shows the treatment has practical value"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While p=0.03 indicates statistical significance, the tiny effect size (0.2 points) is practically meaningless in educational contexts. Large samples (n=10,000) can detect trivial differences that have no real-world importance."
+  },
+  "realWorldConnection": "Pharmaceutical companies must demonstrate both statistical significance and clinically meaningful effect sizes for drug approval. Educational technology companies seek effect sizes large enough to improve learning outcomes meaningfully, not just statistical detectability. Business A/B tests require effect sizes that translate to meaningful revenue impacts."
+}

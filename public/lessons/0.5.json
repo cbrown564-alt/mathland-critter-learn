@@ -1,0 +1,53 @@
+{
+  "id": "0.5",
+  "title": "Function Notation & Concepts",
+  "duration": "30-35 minutes",
+  "characterId": "felix",
+  "narrativeHook": {
+    "story": "Meet Felix, a helpful robot who takes inputs and produces outputs following specific rules. Felix represents what we call 'functions' - mathematical machines that transform numbers.",
+    "characterMessage": "Input processed successfully! I follow rules to transform inputs into outputs. Every input gets exactly one output - that's what makes me a function!"
+  },
+  "learningObjectives": [
+    "Understand function notation f(x) and its meaning",
+    "Identify domain and range of functions",
+    "Evaluate functions at specific values",
+    "Understand function composition basics",
+    "Distinguish between one-to-one and many-to-one functions"
+  ],
+  "coreConcepts": [
+    "Function notation f(x)",
+    "Domain and range",
+    "Evaluating functions",
+    "Function composition",
+    "One-to-one vs many-to-one"
+  ],
+  "memoryAids": {
+    "mantra": "Input → Rule → Output - that's how I process everything!",
+    "visual": "Felix as a machine with input slot, processing unit, and output slot, showing the function transformation process"
+  },
+  "realWorldConnection": "In data science, functions help us model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the foundation of machine learning algorithms.",
+  "conceptCheck": {
+    "question": "If f(x) = 2x + 3, what is f(4) and what does this notation mean?",
+    "options": [
+      "f(4) = 11, meaning input 4 gives output 11",
+      "f(4) = 7, meaning multiply 4 by 2 then subtract 3",
+      "f(4) = 2x + 7, meaning add 4 to the function",
+      "f(4) = 8, meaning only multiply by 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "f(4) means substitute 4 for x in the function: f(4) = 2(4) + 3 = 8 + 3 = 11. Function notation tells us what output we get when we input a specific value."
+  },
+  "readContent": "Felix the Function Machine follows strict rules: input goes in, transformation happens, output comes out. Function notation f(x) means 'apply function f to input x.' The domain is all valid inputs (what Felix can process), and the range is all possible outputs (what Felix can produce). Every input gets exactly one output - that's what makes Felix reliable!",
+  "readAnalogy": "Think of functions as reliable machines like Felix - you put raw materials in one end, the machine follows its programming to transform them, and finished products come out the other end. Same input always produces the same output.",
+  "readKeyPoints": [
+    "Function notation f(x) reads as 'f of x' - apply function f to input x",
+    "Domain: all possible input values that work",
+    "Range: all possible output values the function can produce"
+  ],
+  "readDigDeeper": "Function composition f(g(x)) means apply g first, then f to that result. Inverse functions f⁻¹(x) undo what f(x) does. Piecewise functions have different rules for different input ranges.",
+  "readWhyMatters": "In data science, functions model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the mathematical foundation of machine learning algorithms.",
+  "seeContent": "Watch Felix demonstrate function machines with animated inputs and outputs, showing how different function types transform numbers in predictable ways.",
+  "hearContent": "Listen as I explain how I follow rules to transform inputs - just like how data transformation pipelines work in real data science projects!",
+  "hearAudioUrl": "/audio/0.5.mp3",
+  "doContent": "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains."
+}

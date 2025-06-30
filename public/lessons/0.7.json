@@ -1,0 +1,51 @@
+{
+  "id": "0.7",
+  "title": "Coordinate Geometry Essentials",
+  "duration": "25-30 minutes",
+  "characterId": "felix",
+  "narrativeHook": {
+    "story": "Felix needs to calculate distances and find midpoints between his processing stations. These geometric calculations are fundamental to understanding spatial relationships in data.",
+    "characterMessage": "Distance calculations processed successfully! Just like I need to measure connections between my processing stations, coordinate geometry helps us quantify spatial relationships in data science."
+  },
+  "learningObjectives": [
+    "Apply the distance formula to find distances between points",
+    "Use the midpoint formula to find centers of line segments",
+    "Calculate slope to measure steepness and direction",
+    "Identify parallel and perpendicular line relationships"
+  ],
+  "coreConcepts": [
+    "Distance formula",
+    "Midpoint formula",
+    "Slope calculation",
+    "Parallel and perpendicular lines"
+  ],
+  "memoryAids": {
+    "mantra": "Distance is like measuring cable length between my processing stations!",
+    "visual": "Felix's coordinate system showing processing stations connected by measured distances and calculated midpoints"
+  },
+  "realWorldConnection": "Coordinate geometry is essential in data science for clustering algorithms, measuring similarity between data points, finding centroids, and understanding geometric relationships in machine learning feature spaces.",
+  "conceptCheck": {
+    "question": "Find the distance between points (3, 4) and (6, 8). What formula do we use?",
+    "options": [
+      "5 units, using the distance formula √[(x₂-x₁)² + (y₂-y₁)²]",
+      "7 units, by adding the coordinate differences",
+      "3 units, using only the x-coordinate difference",
+      "12 units, by multiplying the coordinates"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Using the distance formula: √[(6-3)² + (8-4)²] = √[3² + 4²] = √[9 + 16] = √25 = 5 units. This formula comes from the Pythagorean theorem applied to coordinate geometry."
+  },
+  "readContent": "Felix needs precise measurements between his processing stations. The distance formula √[(x₂-x₁)² + (y₂-y₁)²] calculates exact distances using the Pythagorean theorem. The midpoint formula ((x₁+x₂)/2, (y₁+y₂)/2) finds perfect center points. Slope (rise/run) measures steepness and direction of connections between stations.",
+  "readAnalogy": "Coordinate geometry is like Felix's precision measurement toolkit. Distance formula measures cable lengths between stations, midpoint formula finds optimal connection points, and slope measures the efficiency of pathways.",
+  "readKeyPoints": [
+    "Distance formula: √[(x₂-x₁)² + (y₂-y₁)²] - Pythagorean theorem in coordinates",
+    "Midpoint formula: ((x₁+x₂)/2, (y₁+y₂)/2) - perfect center between two points",
+    "Slope: (y₂-y₁)/(x₂-x₁) - rise over run measures steepness"
+  ],
+  "readDigDeeper": "Parallel lines have identical slopes, while perpendicular lines have slopes that are negative reciprocals (m₁ × m₂ = -1). The point-slope form y - y₁ = m(x - x₁) creates line equations from one point and the slope.",
+  "readWhyMatters": "Coordinate geometry is essential for clustering algorithms that measure similarity between data points, finding centroids in machine learning, and understanding geometric relationships in high-dimensional feature spaces.",
+  "seeContent": "Explore an interactive coordinate plane where you can plot points, measure distances, find midpoints, and visualize slope relationships between lines.",
+  "hearContent": "Listen as I explain how measuring relationships in coordinate space is like calculating the efficiency of connections in my processing network!",
+  "hearAudioUrl": "/audio/0.7.mp3",
+  "doContent": "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems."
+}

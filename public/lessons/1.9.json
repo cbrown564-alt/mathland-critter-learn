@@ -1,0 +1,53 @@
+{
+  "id": "1.9",
+  "title": "Vera's Forest Mapping Capstone Project",
+  "duration": "45-60 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera has been hired to create a comprehensive mapping system for a new national park. She needs to use everything she's learned about vectors - from basic direction and magnitude to advanced concepts like basis and dimension - to solve real navigation, measurement, and optimization problems.",
+    "characterMessage": "Time for the ultimate adventure! I'm putting together everything we've learned to create a complete mapping system. We'll design trails, optimize camera placement, and analyze visitor patterns - all using the power of vector mathematics!"
+  },
+  "learningObjectives": [
+    "Apply vector addition and scalar multiplication to design trail systems",
+    "Use vector norms and dot products for distance and similarity calculations",
+    "Implement linear combinations and independence for optimal resource placement",
+    "Create coordinate systems using basis and dimension concepts",
+    "Synthesize all vector concepts in a comprehensive real-world project"
+  ],
+  "coreConcepts": [
+    "Trail system design using vector addition",
+    "Distance calculations using norms",
+    "Optimal positioning using linear combinations",
+    "Coverage analysis using linear independence",
+    "Coordinate system creation using basis theory"
+  ],
+  "readContent": "Time for the ultimate vector adventure! I'm designing a comprehensive mapping system for a new national park using every vector concept we've mastered. We'll design efficient trail systems with vector addition, optimize wildlife camera placement using linear independence, analyze visitor movement patterns with basis theory, and calculate distances using various norms. This is where all our vector tools come together!",
+  "readAnalogy": "This capstone is like being the chief navigator for an entire national park - using vectors as your universal toolkit to solve complex spatial problems systematically and efficiently.",
+  "readKeyPoints": [
+    "Trail design using vector addition and scalar multiplication",
+    "Distance optimization using different vector norms",
+    "Camera placement using linear independence principles"
+  ],
+  "readDigDeeper": "The project demonstrates how vector mathematics provides systematic solutions to complex spatial problems. Each vector concept becomes a practical tool for real-world navigation, measurement, and optimization challenges.",
+  "readWhyMatters": "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science.",
+  "seeContent": "Work through interactive mapping tools that let you design trail systems, place cameras strategically, and visualize visitor flow patterns using all the vector concepts you've mastered.",
+  "hearContent": "Listen as I guide you through each phase of the project, showing how vector thinking transforms complex spatial problems into systematic mathematical solutions!",
+  "hearAudioUrl": "/audio/1.9.mp3",
+  "doContent": "Complete the three-part mapping project: design trail systems with vector addition, optimize camera placement with linear independence, and analyze visitor patterns with basis theory - creating a comprehensive portfolio of your vector mastery.",
+  "memoryAids": {
+    "mantra": "Every vector concept becomes a practical tool in this ultimate mapping adventure!",
+    "visual": "Picture yourself as a mathematical cartographer, using vectors as your tools to map, measure, and optimize everything in the national park."
+  },
+  "conceptCheck": {
+    "question": "In Part A of the project, you design a trail from the visitor center [0,0] to the waterfall [6,8] with a rest stop at [3,4]. What's the total trail distance using L₂ norm?",
+    "options": [
+      "10 units: 5 units to rest stop + 5 units to waterfall",
+      "14 units: straight line distance from start to finish",
+      "18 units: sum of x and y coordinates",
+      "8 units: using the Pythagorean theorem incorrectly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Distance from [0,0] to [3,4]: √(3² + 4²) = 5. Distance from [3,4] to [6,8]: √((6-3)² + (8-4)²) = √(9 + 16) = 5. Total trail distance: 5 + 5 = 10 units."
+  },
+  "realWorldConnection": "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science."
+}

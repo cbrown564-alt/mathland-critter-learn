@@ -1,0 +1,53 @@
+{
+  "id": "1.2",
+  "title": "Vector Addition & Scalar Multiplication",
+  "duration": "35-40 minutes",
+  "characterId": "vera",
+  "narrativeHook": {
+    "story": "Vera's friend Max the Owl wants to join her hike. They start from different trees but want to meet at the waterfall. How do we combine their separate journeys? This is where vector addition becomes our superpower - the ability to combine multiple movements into a single, efficient path!",
+    "characterMessage": "Follow clue 1, then clue 2 - where do you end up? That's vector addition! It's like having a magical ability to combine journeys, and the amazing thing is, order doesn't matter - math proves it!"
+  },
+  "learningObjectives": [
+    "Add vectors using both geometric (tip-to-tail) and algebraic methods",
+    "Apply the commutative property of vector addition",
+    "Multiply vectors by scalars and understand the geometric effect",
+    "Understand vector subtraction as addition of negative vectors",
+    "Apply vector operations to solve real-world problems"
+  ],
+  "coreConcepts": [
+    "Vector addition: geometric and algebraic methods",
+    "Commutative property: **u** + **v** = **v** + **u**",
+    "Scalar multiplication: stretching and shrinking",
+    "Negative vectors and subtraction",
+    "Properties of vector operations"
+  ],
+  "readContent": "Combining journeys is where vectors shine! Vector addition uses the tip-to-tail method: start your second vector where the first one ends. Algebraically, just add corresponding components: [a,b] + [c,d] = [a+c, b+d]. The amazing thing? Order doesn't matter - [3,2] + [1,4] = [1,4] + [3,2]. Scalar multiplication stretches or shrinks vectors: 2v doubles the length, -v flips the direction.",
+  "readAnalogy": "Vector addition is like following a treasure map with multiple clues. Whether you follow clue A then clue B, or clue B then clue A, you end up at the same treasure location! That's the commutative property working its magic.",
+  "readKeyPoints": [
+    "Tip-to-tail method: place the tail of the second vector at the tip of the first",
+    "Algebraic addition: add corresponding components [a,b] + [c,d] = [a+c, b+d]",
+    "Scalar multiplication: kv stretches (|k| > 1), shrinks (|k| < 1), or flips (k < 0)"
+  ],
+  "readDigDeeper": "Vector addition is commutative (u + v = v + u) and associative (u + (v + w) = (u + v) + w). The parallelogram method gives the same result as tip-to-tail. Vector subtraction u - v equals u + (-v).",
+  "readWhyMatters": "Netflix combines multiple preference vectors to recommend movies. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns in data.",
+  "seeContent": "Explore animated tip-to-tail vector addition and see how the parallelogram method gives the same result. Watch how scalar multiplication transforms vectors by stretching, shrinking, and flipping them.",
+  "hearContent": "Listen as I explain how combining vectors is like planning the ultimate treasure hunt - multiple clues that lead to one destination, and amazingly, the order you follow them doesn't change where you end up!",
+  "hearAudioUrl": "/audio/1.2.mp3",
+  "doContent": "Use the Vector Addition Simulator to drag vectors and see their combinations, practice with the Parallelogram Constructor, and experiment with the Scalar Slider to see how multiplying by different numbers affects vector size and direction.",
+  "memoryAids": {
+    "mantra": "Tip-to-tail takes you there - start where the first arrow ends, and draw the second arrow from there!",
+    "visual": "Imagine following a treasure map with multiple clues - each vector is a clue, and vector addition shows your final destination no matter what order you follow them."
+  },
+  "conceptCheck": {
+    "question": "If Vera walks vector [3, 2] and then vector [1, 4], what's her final displacement? Why does order not matter?",
+    "options": [
+      "[4, 6] - order doesn't matter due to the commutative property",
+      "[3, 8] - you multiply the first vector by the second",
+      "[2, 2] - you take the average of both vectors",
+      "[4, 6] - but only if you go in the correct order"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Vector addition: [3,2] + [1,4] = [3+1, 2+4] = [4,6]. The commutative property means [3,2] + [1,4] = [1,4] + [3,2] - same final destination regardless of order!"
+  },
+  "realWorldConnection": "Netflix combines multiple preference vectors to recommend movies - your comedy preference + recent viewing + time-of-day patterns. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns."
+}

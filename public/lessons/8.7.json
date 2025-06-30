@@ -1,0 +1,53 @@
+{
+  "id": "8.7",
+  "title": "Bayes Factors & Model Comparison",
+  "duration": "45-50 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes faces the ultimate detective challenge: comparing competing theories about the same evidence. Bayes factors provide the mathematical framework for weighing different models against each other, answering questions like 'Which explanation better accounts for what we observed?' It's statistical forensics at its finest.",
+    "characterMessage": "Now for the ultimate detective skill - comparing competing theories! Bayes factors let me weigh different explanations against each other using the same evidence. It's not just about fitting one model, but determining which of several models best explains what we've observed!"
+  },
+  "learningObjectives": [
+    "Define Bayes factors as ratios of marginal likelihoods",
+    "Understand Bayes factors as evidence for model comparison",
+    "Interpret Bayes factor magnitudes using standard scales",
+    "Apply Bayes factors to hypothesis testing scenarios",
+    "Recognize advantages and limitations of Bayes factor approaches"
+  ],
+  "coreConcepts": [
+    "Bayes factor: BF₁₂ = P(data|M₁)/P(data|M₂)",
+    "Marginal likelihood P(data|M) = ∫ P(data|θ,M)P(θ|M)dθ",
+    "Evidence interpretation: BF > 10 strong, BF > 100 decisive",
+    "Model posterior odds: posterior odds = prior odds × Bayes factor",
+    "Automatic Occam's razor through marginal likelihood"
+  ],
+  "readContent": "Bayes factors compare models by taking ratios of their marginal likelihoods: BF₁₂ = P(data|M₁)/P(data|M₂). The marginal likelihood P(data|M) = ∫ P(data|θ,M)P(θ|M)dθ represents the probability of observing the data under model M, averaging over all possible parameter values weighted by their priors. Bayes factors update prior model beliefs: posterior odds = prior odds × Bayes factor. Standard interpretation scales suggest BF > 3 provides substantial evidence, BF > 10 strong evidence, and BF > 100 decisive evidence for one model over another. Bayes factors automatically implement Occam's razor - complex models are penalized unless they provide substantially better fit, since their marginal likelihood must spread probability mass over larger parameter spaces.",
+  "readAnalogy": "Bayes factors are like having a mathematical jury that weighs competing explanations for the same crime. Each theory (model) gets a score based on how well it predicted what actually happened, accounting for how specific vs vague each theory was beforehand. A theory that makes very specific predictions and gets them right beats a vague theory that could explain anything. It's built-in protection against overly complicated explanations.",
+  "readKeyPoints": [
+    "Bayes factor BF₁₂ = P(data|M₁)/P(data|M₂) compares evidence for competing models",
+    "Marginal likelihood averages fit over all parameter values weighted by priors",
+    "Automatic Occam's razor: complex models penalized unless substantially better"
+  ],
+  "readDigDeeper": "Computing marginal likelihoods can be challenging, especially for complex models. Modern approaches include harmonic mean estimators, thermodynamic integration, and nested sampling. The choice of priors affects Bayes factors, making sensitivity analysis important.",
+  "readWhyMatters": "Model selection in machine learning uses Bayes factors to choose between different architectures while avoiding overfitting. Scientific hypothesis testing uses Bayes factors to compare competing theories. Medical diagnosis uses Bayes factors to compare different diagnostic explanations for symptoms.",
+  "seeContent": "Explore Bayes factor calculations for simple model comparisons, visualize how model complexity affects marginal likelihoods, and observe automatic Occam's razor behavior through examples.",
+  "hearContent": "Listen as I explain how Bayes factors create the ultimate detective showdown - letting competing theories duke it out mathematically to see which best explains the evidence!",
+  "hearAudioUrl": "/audio/8.7.mp3",
+  "doContent": "Use the Bayes Factor Calculator for model comparison scenarios, practice with the Evidence Interpretation Guide, and experiment with the Occam's Razor Demonstrator showing complexity penalties.",
+  "memoryAids": {
+    "mantra": "Models compete, Bayes factors judge - which theory won't budge? Evidence ratio tells the tale - best explanation will prevail!",
+    "visual": "Picture Bayes conducting a courtroom where competing model theories present their cases, with Bayes factors as the mathematical jury determining which explanation better accounts for the observed evidence."
+  },
+  "conceptCheck": {
+    "question": "Comparing two models, you calculate BF₁₂ = 15. What does this tell you about the evidence?",
+    "options": [
+      "Strong evidence favoring Model 1 over Model 2 (15:1 evidence ratio)",
+      "Model 1 is 15 times more likely to be true than Model 2",
+      "Model 1 explains 15% more variance than Model 2",
+      "Need additional information to interpret this Bayes factor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BF₁₂ = 15 means the observed data is 15 times more likely under Model 1 than Model 2, providing strong evidence (BF > 10) favoring Model 1. This is about evidence strength, not absolute model probabilities."
+  },
+  "realWorldConnection": "Particle physics uses Bayes factors to compare competing theories about fundamental particles from collision data. Genetics uses Bayes factors to compare different evolutionary models explaining DNA sequence variation. Astronomy uses Bayes factors to compare models of stellar formation and galactic structure."
+}

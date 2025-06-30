@@ -1,0 +1,53 @@
+{
+  "id": "6.5",
+  "title": "Common Continuous Distributions",
+  "duration": "45-50 minutes",
+  "characterId": "pippa",
+  "narrativeHook": {
+    "story": "Pippa unveils her collection of continuous magic! Unlike discrete distributions that prefer specific numbers, continuous distributions flow smoothly across ranges like magical rivers. The Uniform distribution spreads evenly, Exponential distribution models waiting times, and the magnificent Normal distribution creates the famous bell curve that appears everywhere in nature!",
+    "characterMessage": "Now for the smooth, flowing magic of continuous distributions! These don't pick specific numbers - they flow like magical rivers across ranges of possibilities. Uniform spreads evenly, Exponential handles waiting times, and Normal creates that beautiful bell curve we see everywhere in nature!"
+  },
+  "learningObjectives": [
+    "Understand Uniform distribution for equally likely ranges",
+    "Master Exponential distribution for waiting times and decay",
+    "Explore Normal distribution and its bell curve properties",
+    "Calculate probabilities using integration and standard tables",
+    "Recognize when continuous distributions apply in real scenarios"
+  ],
+  "coreConcepts": [
+    "Uniform(a,b): constant density f(x) = 1/(b-a) on [a,b]",
+    "Exponential(λ): waiting times, f(x) = λe^(-λx) for x ≥ 0",
+    "Normal(μ,σ²): bell curve, f(x) = (1/σ√2π)e^(-(x-μ)²/2σ²)",
+    "Standard Normal Z ~ N(0,1) and Z-scores",
+    "Integration for probability calculations"
+  ],
+  "readContent": "Uniform(a,b) has constant density f(x) = 1/(b-a) on interval [a,b], modeling scenarios where all values in a range are equally likely. Exponential(λ) models waiting times between events with f(x) = λe^(-λx), exhibiting memoryless property. Normal(μ,σ²) creates the famous bell curve with f(x) = (1/σ√2π)e^(-(x-μ)²/2σ²), where μ controls center and σ controls spread. The Standard Normal Z ~ N(0,1) allows probability calculations via standardization: Z = (X-μ)/σ. Probabilities require integration: P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx, often done using tables or computational tools.",
+  "readAnalogy": "Continuous distributions are like magical flowing rivers! Uniform distribution flows at constant speed everywhere in its range. Exponential starts as a rushing torrent but slows down exponentially - perfect for modeling how long until the next magical event. Normal distribution flows in that beautiful bell shape we see everywhere in nature - from heights to test scores!",
+  "readKeyPoints": [
+    "Uniform(a,b): equal likelihood across interval [a,b]",
+    "Exponential(λ): models waiting times, has memoryless property",
+    "Normal(μ,σ²): bell curve centered at μ with spread σ"
+  ],
+  "readDigDeeper": "The Central Limit Theorem explains why Normal distributions appear everywhere: sums of many independent random variables tend toward Normal distributions regardless of the original distributions, making the bell curve nature's favorite pattern.",
+  "readWhyMatters": "Financial models use Normal distributions for stock price changes and portfolio returns. Manufacturing uses Normal distributions to model measurement errors and quality variations. Telecommunications uses Exponential distributions for modeling call durations and service times. Psychology uses Normal distributions for modeling test scores and cognitive abilities.",
+  "seeContent": "Visualize smooth probability density curves for each distribution, explore how parameters change distribution shapes, and observe integration areas that represent probabilities for continuous random variables.",
+  "hearContent": "Listen as I explain how continuous distributions flow like magical rivers - some constant like Uniform streams, some rushing then slowing like Exponential waterfalls, others forming beautiful bell-shaped Normal flows!",
+  "hearAudioUrl": "/audio/6.5.mp3",
+  "doContent": "Use the Continuous Distribution Explorer with parameter sliders, practice with the Probability Calculator using integration, and experiment with the Normal Distribution Z-score converter.",
+  "memoryAids": {
+    "mantra": "Uniform flows constant and true, Exponential waits for events due, Normal bell rings everywhere - continuous magic fills the air!",
+    "visual": "Picture Pippa conducting three magical rivers: a steady uniform stream, an exponential waterfall that starts rushing then slows, and a graceful bell-shaped normal fountain that appears throughout nature."
+  },
+  "conceptCheck": {
+    "question": "For Exponential(λ=2) modeling waiting time in hours, what's P(wait ≤ 1 hour) = P(X ≤ 1)?",
+    "options": [
+      "P(X ≤ 1) = 1 - e^(-2×1) = 1 - e^(-2) ≈ 0.865",
+      "P(X ≤ 1) = 2e^(-2×1) = 2e^(-2) ≈ 0.271",
+      "P(X ≤ 1) = ∫₀¹ 2e^(-2x)dx = [-e^(-2x)]₀¹ = 1 - e^(-2) ≈ 0.865",
+      "Both A and C are correct using different methods"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For Exponential(λ), P(X ≤ x) = 1 - e^(-λx). Method A uses this formula directly. Method C integrates the PDF: ∫₀¹ 2e^(-2x)dx = [-e^(-2x)]₀¹ = (1 - e^(-2)) - (1 - 1) = 1 - e^(-2) ≈ 0.865. Both give the same answer."
+  },
+  "realWorldConnection": "Netflix models video streaming session lengths using Exponential distributions. Manufacturing companies use Normal distributions to model product dimension variations. Financial analysts use Normal distributions for modeling daily stock return fluctuations. Call centers use Exponential distributions to model customer service call durations."
+}

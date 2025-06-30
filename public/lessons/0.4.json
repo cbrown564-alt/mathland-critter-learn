@@ -1,0 +1,52 @@
+{
+  "id": "0.4",
+  "title": "Inequalities & Absolute Values",
+  "duration": "25-30 minutes",
+  "characterId": "ollie",
+  "narrativeHook": {
+    "story": "Ollie's dam needs to be at least 3 feet high to work properly, but no more than 6 feet to avoid flooding. This is like mathematical inequalities - values within a range.",
+    "characterMessage": "The water level must be between these marks! Just like my dam has safe operating ranges, inequalities help us define acceptable ranges of values in mathematics and data science."
+  },
+  "learningObjectives": [
+    "Solve linear inequalities and represent solutions on number lines",
+    "Work with compound inequalities and intersection/union concepts",
+    "Solve absolute value equations and inequalities",
+    "Use interval notation to express solution sets"
+  ],
+  "coreConcepts": [
+    "Linear inequalities",
+    "Compound inequalities",
+    "Absolute value equations",
+    "Absolute value inequalities",
+    "Interval notation"
+  ],
+  "memoryAids": {
+    "mantra": "The water level must be between these marks - just like inequality ranges!",
+    "visual": "Number line with highlighted ranges showing safe operating zones for Ollie's dam"
+  },
+  "realWorldConnection": "Inequalities are everywhere in data science: confidence intervals, acceptable error ranges, constraint optimization, and defining thresholds for classification algorithms. They help us understand when data values are within acceptable limits.",
+  "conceptCheck": {
+    "question": "Solve the inequality: |x - 3| < 5. What does this represent?",
+    "options": [
+      "-2 < x < 8, values within 5 units of 3",
+      "x < -2 or x > 8, values outside the range",
+      "x = 3 ± 5, two specific solutions",
+      "-5 < x < 5, symmetric around zero"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The absolute value inequality |x - 3| < 5 means the distance from x to 3 is less than 5, giving us -5 < x - 3 < 5, which simplifies to -2 < x < 8."
+  },
+  "readContent": "My dam needs to operate within safe ranges - at least 3 feet high to function, but no more than 6 feet to prevent flooding. Inequalities express these range relationships: x ≥ 3 and x ≤ 6, or combined as 3 ≤ x ≤ 6. Absolute value |x-a| measures distance from point a, so |x-3| < 2 means within 2 units of position 3.",
+  "readAnalogy": "Inequalities are like safety margins for my dam operations. Instead of exact measurements, I need acceptable ranges that keep everything functioning safely within operational limits.",
+  "readKeyPoints": [
+    "Inequality signs: < (less than), ≤ (less than or equal), > (greater than), ≥ (greater than or equal)",
+    "Absolute value |x| measures distance from zero, regardless of direction",
+    "Compound inequalities use 'and' (intersection) or 'or' (union) to combine conditions"
+  ],
+  "readDigDeeper": "When multiplying or dividing inequalities by negative numbers, the inequality sign flips. Absolute value inequalities split into two cases: |x| < a becomes -a < x < a, while |x| > a becomes x < -a or x > a.",
+  "readWhyMatters": "Inequalities define confidence intervals in statistics, acceptable error ranges in engineering, constraint optimization in business, and classification thresholds in machine learning. They help us understand when data values are within acceptable operational limits.",
+  "seeContent": "Visualize inequality solutions on interactive number lines, and see how absolute value creates distance relationships on the coordinate plane.",
+  "hearContent": "Listen as I explain how setting boundaries and ranges for my dam is just like defining inequality constraints - we need safe operating zones for everything to work properly!",
+  "hearAudioUrl": "/audio/0.4.mp3",
+  "doContent": "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts."
+}

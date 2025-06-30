@@ -1,0 +1,53 @@
+{
+  "id": "7.6",
+  "title": "t-tests, χ², & ANOVA Preview",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
+  "narrativeHook": {
+    "story": "Sigmund surveys the elegant family of hypothesis tests, each designed for specific statistical situations. The t-test for means, chi-square for categorical data, and ANOVA for multiple groups - each test embodies the same fundamental logic while adapting gracefully to different data types and research questions.",
+    "characterMessage": "Behold the elegant family of hypothesis tests! Each test applies our fundamental logic to different situations: t-tests for means, chi-square for categorical relationships, and ANOVA for multiple group comparisons. The mathematical beauty lies in how the same principles adapt to diverse research questions."
+  },
+  "learningObjectives": [
+    "Apply one-sample and two-sample t-tests appropriately",
+    "Understand chi-square tests for independence and goodness of fit",
+    "Preview ANOVA for comparing multiple group means",
+    "Recognize when to use each type of test",
+    "Interpret results from different test families"
+  ],
+  "coreConcepts": [
+    "One-sample t-test: t = (X̄ - μ₀)/(s/√n)",
+    "Two-sample t-test for comparing means",
+    "Chi-square test for independence in contingency tables",
+    "Chi-square goodness of fit test",
+    "ANOVA F-test for multiple group comparison"
+  ],
+  "readContent": "Different research questions require different hypothesis tests, but all follow the same elegant logic. One-sample t-tests compare a sample mean to a hypothesized value using t = (X̄ - μ₀)/(s/√n) with df = n-1. Two-sample t-tests compare means between groups, requiring careful consideration of equal vs unequal variances. Chi-square tests analyze categorical data: independence tests examine relationships in contingency tables using χ² = Σ(O-E)²/E, while goodness-of-fit tests compare observed frequencies to theoretical distributions. ANOVA extends t-tests to multiple groups using F-statistics, testing whether any group means differ while controlling overall Type I error rate. Each test adapts the fundamental hypothesis testing framework to specific data types and research questions.",
+  "readAnalogy": "Think of hypothesis tests like an elegant collection of specialized dance forms. Each dance (test) follows the same fundamental rhythm and structure (hypothesis testing logic), but adapts gracefully to different music and occasions. T-tests are like classical ballet for comparing means, chi-square is like interpretive dance for categorical relationships, and ANOVA is like orchestral performance for multiple group comparisons.",
+  "readKeyPoints": [
+    "T-tests: compare means using t-distribution (one-sample, two-sample)",
+    "Chi-square: analyze categorical data relationships and distributions",
+    "ANOVA: compare multiple group means using F-distribution"
+  ],
+  "readDigDeeper": "The general linear model unifies many tests: t-tests, ANOVA, and regression are all special cases of Y = Xβ + ε. This framework shows how different tests are variations on the same mathematical theme, providing elegant theoretical unity to diverse statistical procedures.",
+  "readWhyMatters": "Medical research uses t-tests to compare treatment effects between groups. Market research uses chi-square tests to analyze consumer preference patterns. Educational research uses ANOVA to compare teaching methods across multiple schools. Tech companies use these tests to analyze user behavior across different platforms.",
+  "seeContent": "Explore test selection flowcharts for different research scenarios, visualize test statistics under their respective distributions, and observe how different tests address specific types of research questions.",
+  "hearContent": "Listen as I explain how each test in our elegant statistical family specializes in different questions while maintaining the same fundamental grace and logic of hypothesis testing!",
+  "hearAudioUrl": "/audio/7.6.mp3",
+  "doContent": "Use the Test Selection Guide for various scenarios, practice with the t-Test Calculator for mean comparisons, and experiment with the Chi-Square Test Analyzer for categorical data.",
+  "memoryAids": {
+    "mantra": "T for means, chi-square for counts, ANOVA when multiple groups amount! Same logic, different dance - each test has its statistical stance!",
+    "visual": "Picture Sigmund conducting an elegant statistical orchestra where each instrument (test type) plays its specialized part while following the same fundamental musical score of hypothesis testing logic."
+  },
+  "conceptCheck": {
+    "question": "You want to test if a new drug affects blood pressure differently than a placebo. Which test is most appropriate?",
+    "options": [
+      "Two-sample t-test to compare mean blood pressure between drug and placebo groups",
+      "One-sample t-test to compare drug group mean to a standard value",
+      "Chi-square test to analyze the relationship between treatment and blood pressure",
+      "ANOVA to compare multiple blood pressure measurements"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This scenario compares means between two independent groups (drug vs placebo), making the two-sample t-test the appropriate choice. We're testing if μdrug ≠ μplacebo for continuous blood pressure measurements."
+  },
+  "realWorldConnection": "Clinical trials use two-sample t-tests to compare treatment outcomes between experimental and control groups. Social media companies use chi-square tests to analyze user engagement patterns across different demographics. Educational researchers use ANOVA to compare test scores across multiple teaching methods or schools."
+}

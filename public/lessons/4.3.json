@@ -1,0 +1,53 @@
+{
+  "id": "4.3",
+  "title": "Continuity and Surfaces",
+  "duration": "35-40 minutes",
+  "characterId": "delta",
+  "narrativeHook": {
+    "story": "Dr. Delta discovers that continuous multivariable functions create smooth, unbroken surfaces without holes, jumps, or tears. These mathematical landscapes have profound implications for modeling real-world phenomena where abrupt changes would be physically impossible.",
+    "characterMessage": "Continuity in multiple variables creates the most beautiful mathematical surfaces! Just as a hedgehog's quills flow smoothly across its body, continuous functions create surfaces without any sudden jumps or tears. This smoothness is essential for modeling the physical world!"
+  },
+  "learningObjectives": [
+    "Define continuity for multivariable functions using limits",
+    "Visualize continuity as smooth, unbroken surfaces",
+    "Identify points of discontinuity and their geometric interpretation",
+    "Understand how composition preserves continuity",
+    "Connect continuity to physical modeling requirements"
+  ],
+  "coreConcepts": [
+    "Continuity definition: lim(x,y)→(a,b) f(x,y) = f(a,b)",
+    "Continuous surfaces without holes or jumps",
+    "Removable vs non-removable discontinuities",
+    "Continuity of composite functions",
+    "Physical interpretation of smoothness"
+  ],
+  "readContent": "A function f(x,y) is continuous at point (a,b) if lim(x,y)→(a,b) f(x,y) = f(a,b). This means three conditions: the limit exists, the function value exists, and they're equal. Geometrically, continuity creates smooth surfaces without holes, jumps, or vertical asymptotes. Discontinuities appear as tears in the surface fabric. Elementary functions (polynomials, trigonometric, exponential) are continuous everywhere in their domains. Composition of continuous functions remains continuous, building complex smooth surfaces from simple pieces.",
+  "readAnalogy": "Continuous functions are like a hedgehog's perfectly smooth quill surface - no sudden jumps or gaps that would be uncomfortable or unnatural. The mathematical surface flows smoothly just like how a hedgehog's quills transition seamlessly from one to the next.",
+  "readKeyPoints": [
+    "Continuity: function value equals limit value at every point",
+    "Creates smooth surfaces without holes, jumps, or tears",
+    "Elementary functions are continuous on their domains"
+  ],
+  "readDigDeeper": "Uniform continuity extends the concept: f is uniformly continuous if the same δ works for all points simultaneously. This is stronger than pointwise continuity and important for theoretical analysis of function behavior across entire domains.",
+  "readWhyMatters": "Physical laws require continuity - temperature can't jump discontinuously across space, pressure changes smoothly in fluids, and electromagnetic fields must be continuous at material boundaries. Engineering designs depend on smooth stress distributions to prevent structural failures.",
+  "seeContent": "Visualize smooth continuous surfaces versus discontinuous functions with holes and jumps, explore how composition creates complex continuous surfaces from simple building blocks, and observe the geometric interpretation of different discontinuity types.",
+  "hearContent": "Listen as I explain how continuity creates mathematical surfaces as smooth as a hedgehog's quills - every point flows seamlessly into its neighbors without any jarring discontinuities!",
+  "hearAudioUrl": "/audio/4.3.mp3",
+  "doContent": "Use the Continuity Checker to test function smoothness, practice with the Surface Explorer that highlights discontinuities, and experiment with the Composition Builder to create complex continuous functions.",
+  "memoryAids": {
+    "mantra": "Smooth as hedgehog quills, no jumps or tears - that's continuity everywhere!",
+    "visual": "Picture Dr. Delta running his precise paws across a perfectly smooth mathematical surface, like checking that every quill on his back flows seamlessly into the next without any gaps or jumps."
+  },
+  "conceptCheck": {
+    "question": "Function f(x,y) = (x² - y²)/(x - y) appears discontinuous when x = y. How can we make it continuous?",
+    "options": [
+      "Define f(x,x) = 2x using the limit, creating a removable discontinuity",
+      "The function cannot be made continuous at x = y",
+      "Define f(x,x) = 0 to avoid division by zero",
+      "The function is already continuous everywhere"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For x ≠ y, f(x,y) = (x² - y²)/(x - y) = (x + y)(x - y)/(x - y) = x + y. The limit as (x,y) → (a,a) is 2a, so defining f(a,a) = 2a removes the discontinuity."
+  },
+  "realWorldConnection": "Physical laws require continuity - temperature distributions in materials must be smooth, pressure changes continuously in fluid flow, and electromagnetic fields must be continuous at boundaries. Structural engineers design smooth stress distributions to prevent failure points and material fractures."
+}

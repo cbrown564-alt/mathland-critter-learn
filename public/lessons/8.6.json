@@ -1,0 +1,53 @@
+{
+  "id": "8.6",
+  "title": "MAP vs MLE: Point Estimation Approaches",
+  "duration": "40-45 minutes",
+  "characterId": "bayes",
+  "narrativeHook": {
+    "story": "Bayes encounters a fundamental choice in parameter estimation: Maximum A Posteriori (MAP) versus Maximum Likelihood Estimation (MLE). Like choosing between a detective who considers all evidence including background knowledge (MAP) versus one who focuses purely on crime scene evidence (MLE), each approach has its strengths and appropriate applications.",
+    "characterMessage": "Sometimes we need a single best estimate rather than a full distribution. MAP estimation finds the most probable parameter value given everything we know, while MLE finds the value that best explains just the observed data. Each approach tells a different story about what 'best' means!"
+  },
+  "learningObjectives": [
+    "Define MAP as the mode of the posterior distribution",
+    "Understand MLE as maximizing the likelihood function",
+    "Compare MAP and MLE approaches conceptually and computationally",
+    "Recognize when MAP equals MLE (uniform priors)",
+    "Apply both approaches to practical estimation problems"
+  ],
+  "coreConcepts": [
+    "Maximum A Posteriori (MAP): θ̂_MAP = argmax P(θ|data)",
+    "Maximum Likelihood Estimation (MLE): θ̂_MLE = argmax P(data|θ)",
+    "Relationship: MAP = MLE when prior is uniform",
+    "Regularization interpretation of MAP estimation",
+    "Computational approaches for complex posteriors"
+  ],
+  "readContent": "MAP estimation finds the parameter value that maximizes the posterior distribution: θ̂_MAP = argmax P(θ|data) ∝ argmax P(data|θ)P(θ). This balances fit to data (likelihood) with prior beliefs. MLE maximizes only the likelihood: θ̂_MLE = argmax P(data|θ), ignoring prior information. When priors are uniform, MAP = MLE since the prior doesn't affect the argmax. MAP can be viewed as regularized MLE, where the prior acts as a regularization term preventing overfitting. For complex posteriors, MAP estimation may require numerical optimization. While both give point estimates, they represent different philosophies: MAP incorporates prior knowledge while MLE relies solely on observed data.",
+  "readAnalogy": "MAP vs MLE is like two different detective philosophies. The MAP detective considers both the crime scene evidence AND the suspect's background and prior behavior to determine the most likely perpetrator. The MLE detective focuses purely on which suspect best explains the crime scene evidence, ignoring background information. Both can be right depending on how much you trust your background knowledge.",
+  "readKeyPoints": [
+    "MAP maximizes posterior P(θ|data), incorporating both data and prior knowledge",
+    "MLE maximizes likelihood P(data|θ), using only observed data",
+    "MAP = MLE when prior is uniform; MAP acts as regularized MLE otherwise"
+  ],
+  "readDigDeeper": "In machine learning, MAP estimation corresponds to regularized loss functions: L2 regularization comes from Gaussian priors, L1 regularization from Laplace priors. This connection shows how Bayesian priors relate to modern machine learning regularization techniques.",
+  "readWhyMatters": "Machine learning uses MAP estimation for regularized model fitting, preventing overfitting with prior constraints. Computer vision uses MAP estimation for image reconstruction, balancing data fidelity with smoothness priors. Natural language processing uses MAP estimation for parameter estimation in probabilistic models.",
+  "seeContent": "Visualize MAP and MLE estimates on posterior distributions, explore how different priors affect MAP estimates, and observe the regularization effect of priors in practical estimation problems.",
+  "hearContent": "Listen as I explain the detective philosophy behind MAP vs MLE - whether to trust your instincts and background knowledge (MAP) or focus purely on the evidence at hand (MLE)!",
+  "hearAudioUrl": "/audio/8.6.mp3",
+  "doContent": "Use the MAP vs MLE Calculator with adjustable priors, practice with the Prior Sensitivity Analyzer, and experiment with the Regularization Visualizer showing MAP as penalized MLE.",
+  "memoryAids": {
+    "mantra": "MAP uses all we know, MLE lets data show! Prior plus likelihood for MAP's sight, likelihood alone for MLE's might!",
+    "visual": "Picture Bayes choosing between two detective approaches: one considering both evidence and background files (MAP), another focusing solely on crime scene evidence (MLE), each appropriate for different investigative philosophies."
+  },
+  "conceptCheck": {
+    "question": "For Beta(2,2) prior and 3 successes in 5 trials, how do MAP and MLE estimates compare?",
+    "options": [
+      "MAP = 4/6 = 2/3, MLE = 3/5 = 0.6; MAP is pulled toward prior mean of 0.5",
+      "MAP = MLE = 3/5 since the data dominates",
+      "MAP = 0.5 (prior mean), MLE = 3/5 (sample proportion)",
+      "Need numerical optimization to find MAP estimate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "With Beta(2,2) prior + 3 successes in 5 trials, posterior is Beta(5,4). MAP = mode = (5-1)/(5+4-2) = 4/6 = 2/3. MLE = 3/5 = 0.6. MAP is pulled toward the prior mean (0.5) compared to MLE."
+  },
+  "realWorldConnection": "Deep learning uses MAP estimation with weight decay (L2 regularization) to prevent overfitting in neural networks. Medical imaging uses MAP estimation to reconstruct images from noisy measurements, balancing data fidelity with smoothness priors. Speech recognition uses MAP estimation for parameter estimation in hidden Markov models."
+}

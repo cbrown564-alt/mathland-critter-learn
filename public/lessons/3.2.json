@@ -1,0 +1,53 @@
+{
+  "id": "3.2",
+  "title": "Finding Eigenvalues - The Characteristic Equation",
+  "duration": "40-45 minutes",
+  "characterId": "eileen",
+  "narrativeHook": {
+    "story": "Eileen has found the eigenvectors, but now she needs to crack the code to find their corresponding eigenvalues systematically. The characteristic equation is her master key - a polynomial that holds all of a matrix's eigenvalue secrets locked inside.",
+    "characterMessage": "Time for some mathematical detective work! Every matrix carries its eigenvalues hidden in a special polynomial called the characteristic equation. Once we solve this equation, we unlock all the matrix's eigenvalue secrets at once!"
+  },
+  "learningObjectives": [
+    "Derive the characteristic equation det(A - λI) = 0",
+    "Calculate eigenvalues by solving the characteristic polynomial",
+    "Understand why the determinant equation gives eigenvalues",
+    "Handle 2×2 and simple 3×3 characteristic equations",
+    "Interpret multiple eigenvalues and their geometric significance"
+  ],
+  "coreConcepts": [
+    "Characteristic equation: det(A - λI) = 0",
+    "Characteristic polynomial in λ",
+    "Algebraic multiplicity of eigenvalues",
+    "Real vs complex eigenvalues",
+    "Solving quadratic and cubic characteristic equations"
+  ],
+  "readContent": "Every matrix carries its secrets in a polynomial vault called the characteristic equation: det(A - λI) = 0. This equation emerges because eigenvectors live in the null space of (A - λI), which only exists when that matrix becomes singular (determinant = 0). It's like finding the combination to a mathematical safe - once cracked, all eigenvalues tumble out simultaneously as the polynomial's roots.",
+  "readAnalogy": "The characteristic equation is like a mathematical DNA test. Each matrix has a unique polynomial fingerprint that reveals all its eigenvalue secrets. Solving this polynomial is like running forensic analysis to identify the suspect.",
+  "readKeyPoints": [
+    "Characteristic equation: det(A - λI) = 0 where I is the identity matrix",
+    "For n×n matrices, this creates a degree-n polynomial with n eigenvalues (counting multiplicities)",
+    "Complex eigenvalues appear in conjugate pairs for real matrices"
+  ],
+  "readDigDeeper": "The fundamental theorem of algebra guarantees that every n×n matrix has exactly n eigenvalues in the complex numbers. Real symmetric matrices have the special property that all eigenvalues are real, making them particularly well-behaved.",
+  "readWhyMatters": "Engineers solve characteristic equations to find resonant frequencies - eigenvalues predict when bridges might vibrate dangerously in wind. Quantum physicists use them to find energy levels in atoms, where eigenvalues represent the only allowed energy states that particles can occupy.",
+  "seeContent": "Watch step-by-step characteristic equation derivations, see how the determinant calculation creates polynomials, and observe how solving these polynomials reveals all eigenvalues simultaneously.",
+  "hearContent": "Listen as I explain how the characteristic equation is like breaking a combination lock - once we solve it, all the eigenvalue secrets tumble out at once, revealing the complete mathematical fingerprint!",
+  "hearAudioUrl": "/audio/3.2.mp3",
+  "doContent": "Practice with the Characteristic Equation Solver showing detailed polynomial steps, use the Eigenvalue Calculator for various matrix sizes, and experiment with the Polynomial Root Finder to understand solution patterns.",
+  "memoryAids": {
+    "mantra": "Determinant equals zero unlocks the door - that's where all the eigenvalue treasures hide!",
+    "visual": "Picture Eileen solving a polynomial puzzle where each root reveals another eigenvalue secret, like cracking a mathematical safe with multiple combinations."
+  },
+  "conceptCheck": {
+    "question": "For matrix [[3,1],[0,2]], what is the characteristic equation and what are the eigenvalues?",
+    "options": [
+      "Characteristic equation: (3-λ)(2-λ) = 0, eigenvalues: λ = 3, 2",
+      "Characteristic equation: (3-λ)(2-λ) - 1 = 0, eigenvalues: complex",
+      "Characteristic equation: λ² - 5λ + 6 = 0, eigenvalues: λ = 2, 3",
+      "Cannot find eigenvalues for upper triangular matrices"
+    ],
+    "correctAnswer": 0,
+    "explanation": "For matrix [[3,1],[0,2]], det(A-λI) = det([[3-λ,1],[0,2-λ]]) = (3-λ)(2-λ) - 0×1 = (3-λ)(2-λ). Setting equal to zero gives eigenvalues λ = 3 and λ = 2."
+  },
+  "realWorldConnection": "Engineers solve characteristic equations to find resonant frequencies in structures - eigenvalues predict when buildings or bridges might vibrate dangerously. Quantum physicists use characteristic equations to find energy levels in atoms, where eigenvalues represent measurable energy states."
+}
