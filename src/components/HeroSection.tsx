@@ -1,4 +1,3 @@
-import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
@@ -56,7 +55,7 @@ export const HeroSection = () => {
           {/* Interactive Stats with hover effects */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-blue-100">
             <div className="group text-center p-6 rounded-xl hover:bg-white/50 hover:shadow-lg transition-all duration-300">
-              <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">11</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">10</div>
               <div className="text-gray-600 font-medium">Character Guides</div>
             </div>
             <div className="group text-center p-6 rounded-xl hover:bg-white/50 hover:shadow-lg transition-all duration-300">
@@ -64,7 +63,7 @@ export const HeroSection = () => {
               <div className="text-gray-600 font-medium">Learning Modules</div>
             </div>
             <div className="group text-center p-6 rounded-xl hover:bg-white/50 hover:shadow-lg transition-all duration-300">
-              <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">97</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">96</div>
               <div className="text-gray-600 font-medium">Interactive Lessons</div>
             </div>
           </div>
