@@ -2,10 +2,10 @@
   "id": "0.6",
   "title": "Graphing Functions",
   "duration": "40-45 minutes",
-  "characterId": "felix",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Felix's outputs can be visualized as a path on a graph. Different function types create different shapes - lines, curves, and more complex patterns that tell stories about data relationships.",
-    "characterMessage": "Input processed successfully! When I plot my outputs on a graph, they create beautiful patterns. Each function type has its own signature shape - let me show you!"
+    "story": "Now that Ollie understands how his construction blueprints work, he wants to visualize the results. When he plots his construction outcomes on a graph, different function types create different patterns - straight paths, curved arches, and growth patterns that tell engineering stories.",
+    "characterMessage": "Now here's the really cool part! When I plot my construction results on a blueprint grid, they create beautiful patterns. Each type of project has its own signature shape - let me show you what different engineering functions look like!"
   },
   "learningObjectives": [
     "Graph linear functions and identify slope and y-intercept",
@@ -22,41 +22,41 @@
     "Graph interpretation"
   ],
   "memoryAids": {
-    "mantra": "Each function type has its own shape signature - I can recognize them all!",
-    "visual": "Felix's graph gallery showing the characteristic shapes of different function families"
+    "mantra": "Each construction type has its own blueprint pattern - I can recognize them all by their shapes!",
+    "visual": "Ollie's blueprint gallery showing the characteristic shapes of different construction project types"
   },
-  "realWorldConnection": "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
+  "realWorldConnection": "Graphs help engineers and data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant construction rates, quadratic graphs model structural optimization, and exponential graphs represent population growth, resource usage, or system expansion.",
   "conceptCheck": {
     "question": "What does the graph of y = x² look like, and what does the vertex represent?",
     "options": [
-      "A U-shaped parabola with vertex at (0,0), the minimum point",
-      "A straight line through the origin with slope 2",
-      "An exponential curve growing rapidly",
-      "A horizontal line at y = 0"
+      "A U-shaped arch with vertex at (0,0), the strongest point for load distribution",
+      "A straight construction path through the origin with slope 2",
+      "An exponential growth curve for beaver populations",
+      "A horizontal foundation line at y = 0"
     ],
     "correctAnswer": 0,
-    "explanation": "y = x² creates a U-shaped parabola opening upward. The vertex at (0,0) represents the minimum point where the function reaches its lowest value. This shape is fundamental in optimization problems."
+    "explanation": "y = x² creates a U-shaped parabola opening upward, like a structural arch. The vertex at (0,0) represents the minimum point - the strongest spot for distributing loads. This shape is fundamental in bridge engineering and optimization problems."
   },
-  "readContent": "Felix's mathematical outputs create visual stories when plotted on graphs. Linear functions (y = mx + b) draw straight lines where m controls steepness and b sets the starting height. Quadratic functions create U-shaped parabolas perfect for optimization problems. Exponential functions show rapid growth or decay patterns. Each function type has its own visual signature.",
-  "readAnalogy": "Graphing functions is like watching Felix's work patterns over time. Linear functions show steady, predictable progress. Quadratic functions show acceleration and optimization. Exponential functions show explosive growth or rapid decline.",
+  "readContent": "When I plot my construction results on blueprint grids, they create visual engineering stories. Linear functions (y = mx + b) draw straight construction paths where m controls the grade and b sets the starting elevation. Quadratic functions create arch-shaped parabolas perfect for bridge design and structural optimization. Exponential functions show rapid growth patterns in populations or resource consumption. Each function type has its own engineering signature.",
+  "readAnalogy": "Graphing functions is like tracking my construction progress over time. Linear functions show steady, predictable building rates. Quadratic functions show the curves I need for optimal arch construction. Exponential functions show how beaver populations or wood consumption can grow rapidly.",
   "readKeyPoints": [
-    "Linear functions: y = mx + b creates straight lines (m = slope, b = y-intercept)",
-    "Quadratic functions: y = ax² + bx + c creates parabolas (a controls opening direction)",
-    "Exponential functions: y = abˣ shows growth (b > 1) or decay (0 < b < 1)"
+    "Linear functions: y = mx + b creates straight construction paths (m = grade, b = starting elevation)",
+    "Quadratic functions: y = ax² + bx + c creates arches and parabolas (a controls arch direction)",
+    "Exponential functions: y = ab^x shows growth (b > 1) or decay (0 < b < 1) patterns"
   ],
-  "readDigDeeper": "Function transformations: f(x) + k shifts vertically, f(x + h) shifts horizontally, af(x) stretches vertically, f(bx) stretches horizontally. Understanding these patterns helps predict how parameter changes affect graph shapes.",
-  "readWhyMatters": "Graphs help data scientists visualize trends, identify patterns, and communicate insights. Linear graphs show constant rates of change, quadratic graphs model optimization problems, and exponential graphs represent growth or decay in populations, investments, or viral spread.",
-  "seeContent": "Use an interactive graphing tool to plot different function types, observe how changing parameters affects the graph shape, and explore real-world data visualizations.",
-  "hearContent": "Listen as I explain how reading the story that graphs tell is like understanding the data patterns that drive business decisions and scientific discoveries!",
+  "readDigDeeper": "Function transformations work like modifying blueprints: f(x) + k shifts the foundation up or down, f(x + h) shifts the structure left or right, af(x) stretches the height, f(bx) compresses or stretches horizontally. Understanding these helps predict how design changes affect the final structure.",
+  "readWhyMatters": "Graphs help engineers visualize structural behavior, identify optimal designs, and communicate project plans. Linear graphs show constant rates like steady construction progress, quadratic graphs model arch bridges and optimization problems, and exponential graphs represent population growth, resource depletion, or system expansion over time.",
+  "seeContent": "Use an interactive blueprint tool to plot different construction types, observe how changing design parameters affects the structure shape, and explore real-world engineering data visualizations.",
+  "hearContent": "Listen as I explain how reading the patterns in my construction graphs is like understanding the engineering principles that make structures strong and efficient!",
   "hearAudioUrl": "/audio/0.6.mp3",
-  "doContent": "Practice with the function graphing tool, play the graph matching game where you connect equations to their visual representations, and plot real-world data to see function patterns.",
+  "doContent": "Practice with the construction graphing tool, play the blueprint matching game where you connect equations to their structural shapes, and plot real engineering data to see function patterns in action.",
   "hearTranscript": [
-    "When I plot my outputs on a coordinate system, they create beautiful visual patterns... each function type has its own signature shape that tells a mathematical story.",
-    "Linear functions create straight lines with consistent slope... like y equals 2x plus 3. The slope of 2 means for every 1 unit I move right, I move 2 units up. The y-intercept of 3 tells me where the line crosses the vertical axis. These represent constant rates of change.",
-    "Quadratic functions create U-shaped parabolas... like y equals x squared. The vertex represents the minimum or maximum point, perfect for optimization problems. Business applications use parabolas to model profit maximization and cost minimization.",
-    "Exponential functions show rapid growth or decay... like y equals 2 to the x power. When the base is greater than 1, outputs grow explosively. When the base is between 0 and 1, outputs decay toward zero. These patterns model population growth, compound interest, and viral spread.",
-    "Each function family has its characteristic visual signature. Linear equals steady progress, quadratic equals acceleration and optimization, exponential equals explosive change.",
-    "In data visualization, recognizing these patterns helps you choose appropriate models for your data. Is your relationship linear, quadratic, exponential, or something more complex? The graph reveals the underlying mathematical structure.",
-    "Understanding function shapes enables you to match mathematical models to real-world phenomena systematically."
+    "When I plot my construction results on a blueprint grid, they create beautiful visual patterns... each function type has its own signature shape that tells an engineering story.",
+    "Linear functions create straight construction paths with consistent slope... like y equals 2x plus 3. The slope of 2 means for every 1 unit of material I add, my structure grows by 2 units. The y-intercept of 3 tells me my starting foundation height. These represent steady construction progress.",
+    "Quadratic functions create curved arch shapes... like y equals x squared. The vertex represents the strongest point of my arch, perfect for structural optimization. Bridge engineers use parabolic curves to distribute weight efficiently and maximize load capacity.",
+    "Exponential functions show rapid growth patterns... like y equals 2 to the x power. When the base is greater than 1, my beaver population grows explosively. When the base is between 0 and 1, my wood supply depletes toward zero. These patterns model population growth, resource depletion, and system expansion.",
+    "Each function family has its characteristic blueprint signature. Linear equals steady construction, quadratic equals structural optimization, exponential equals rapid change management.",
+    "In engineering visualization, recognizing these patterns helps me choose appropriate models for my projects. Is the relationship between materials and strength linear, quadratic, exponential, or something more complex? The graph reveals the underlying structural mathematics.",
+    "Understanding function shapes enables me to match mathematical models to real-world engineering challenges systematically."
   ]
 }

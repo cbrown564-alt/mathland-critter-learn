@@ -38,7 +38,7 @@ export const Header = () => {
     }
   }, []);
 
-  const handleContinue = (e) => {
+  const handleContinue = (e: React.MouseEvent) => {
     e.preventDefault();
     navigate(`/lesson/${nextLessonId}`);
   };
@@ -58,6 +58,7 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
+            <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
             <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
           </nav>
 
@@ -82,6 +83,7 @@ export const Header = () => {
           <div className="md:hidden py-4 border-t border-slate-200">
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
+              <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
               <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
               <div className="pt-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" onClick={handleContinue}>

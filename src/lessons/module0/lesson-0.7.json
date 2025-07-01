@@ -2,10 +2,10 @@
   "id": "0.7",
   "title": "Coordinate Geometry Essentials",
   "duration": "25-30 minutes",
-  "characterId": "felix",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Felix needs to calculate distances and find midpoints between his processing stations. These geometric calculations are fundamental to understanding spatial relationships in data.",
-    "characterMessage": "Distance calculations processed successfully! Just like I need to measure connections between my processing stations, coordinate geometry helps us quantify spatial relationships in data science."
+    "story": "Now that Ollie can visualize his construction patterns, he needs to measure precisely on his construction site. How far apart are the anchor points? Where should he place the center support beam? What's the grade of his spillway? These are the essential measuring skills every engineer needs.",
+    "characterMessage": "Time for some precision measuring! When I'm building a dam, I need to measure everything exactly - distances between anchor points, perfect center positions for supports, and drainage slopes. That's where coordinate geometry becomes my essential measuring toolkit!"
   },
   "learningObjectives": [
     "Apply the distance formula to find distances between points",
@@ -20,12 +20,12 @@
     "Parallel and perpendicular lines"
   ],
   "memoryAids": {
-    "mantra": "Distance is like measuring cable length between my processing stations!",
-    "visual": "Felix's coordinate system showing processing stations connected by measured distances and calculated midpoints"
+    "mantra": "Measure twice, build once - that's how I get every construction distance exactly right!",
+    "visual": "Ollie's construction site blueprint showing anchor points connected by measured distances, midpoint support placements, and slope calculations"
   },
-  "realWorldConnection": "Coordinate geometry is essential in data science for clustering algorithms, measuring similarity between data points, finding centroids, and understanding geometric relationships in machine learning feature spaces.",
+  "realWorldConnection": "Coordinate geometry is essential in engineering for structural analysis, surveying, and construction planning. In data science, these same concepts help with clustering algorithms, measuring similarity between data points, finding centroids, and understanding geometric relationships in machine learning feature spaces.",
   "conceptCheck": {
-    "question": "Find the distance between points (3, 4) and (6, 8). What formula do we use?",
+    "question": "Find the distance between construction points (3, 4) and (6, 8). What formula do we use?",
     "options": [
       "5 units, using the distance formula √[(x₂-x₁)² + (y₂-y₁)²]",
       "7 units, by adding the coordinate differences",
@@ -33,28 +33,27 @@
       "12 units, by multiplying the coordinates"
     ],
     "correctAnswer": 0,
-    "explanation": "Using the distance formula: √[(6-3)² + (8-4)²] = √[3² + 4²] = √[9 + 16] = √25 = 5 units. This formula comes from the Pythagorean theorem applied to coordinate geometry."
+    "explanation": "Using the distance formula: √[(6-3)² + (8-4)²] = √[3² + 4²] = √[9 + 16] = √25 = 5 units. This formula comes from the Pythagorean theorem - just like the classic 3-4-5 triangle every builder knows!"
   },
-  "readContent": "Felix needs precise measurements between his processing stations. The distance formula √[(x₂-x₁)² + (y₂-y₁)²] calculates exact distances using the Pythagorean theorem. The midpoint formula ((x₁+x₂)/2, (y₁+y₂)/2) finds perfect center points. Slope (rise/run) measures steepness and direction of connections between stations.",
-  "readAnalogy": "Coordinate geometry is like Felix's precision measurement toolkit. Distance formula measures cable lengths between stations, midpoint formula finds optimal connection points, and slope measures the efficiency of pathways.",
+  "readContent": "When I'm building my dam, precise measurements are everything. The distance formula √[(x₂-x₁)² + (y₂-y₁)²] calculates exact distances using the Pythagorean theorem - like the classic 3-4-5 triangle every builder knows. The midpoint formula ((x₁+x₂)/2, (y₁+y₂)/2) finds perfect center points for support beam placement. Slope (rise/run) measures grade and drainage angles for proper water flow.",
+  "readAnalogy": "Coordinate geometry is like my precision surveying toolkit. Distance formula measures exact spacing between anchor points, midpoint formula finds optimal support positions, and slope calculations ensure proper drainage grades for my dam construction.",
   "readKeyPoints": [
-    "Distance formula: √[(x₂-x₁)² + (y₂-y₁)²] - Pythagorean theorem in coordinates",
-    "Midpoint formula: ((x₁+x₂)/2, (y₁+y₂)/2) - perfect center between two points",
-    "Slope: (y₂-y₁)/(x₂-x₁) - rise over run measures steepness"
+    "Distance formula: √[(x₂-x₁)² + (y₂-y₁)²] - Pythagorean theorem for construction measurements",
+    "Midpoint formula: ((x₁+x₂)/2, (y₁+y₂)/2) - perfect center for support placement",
+    "Slope: (y₂-y₁)/(x₂-x₁) - rise over run for grades and drainage"
   ],
-  "readDigDeeper": "Parallel lines have identical slopes, while perpendicular lines have slopes that are negative reciprocals (m₁ × m₂ = -1). The point-slope form y - y₁ = m(x - x₁) creates line equations from one point and the slope.",
-  "readWhyMatters": "Coordinate geometry is essential for clustering algorithms that measure similarity between data points, finding centroids in machine learning, and understanding geometric relationships in high-dimensional feature spaces.",
-  "seeContent": "Explore an interactive coordinate plane where you can plot points, measure distances, find midpoints, and visualize slope relationships between lines.",
-  "hearContent": "Listen as I explain how measuring relationships in coordinate space is like calculating the efficiency of connections in my processing network!",
+  "readDigDeeper": "Parallel construction lines have identical slopes, while perpendicular supports have slopes that are negative reciprocals (m₁ × m₂ = -1). The point-slope form y - y₁ = m(x - x₁) helps create construction line equations from survey points and measured grades.",
+  "readWhyMatters": "Coordinate geometry is essential for structural engineering, surveying, and construction planning. In data science, these same measurement concepts help with clustering algorithms that group similar data points, finding centroids in machine learning, and understanding geometric relationships in high-dimensional analysis spaces.",
+  "seeContent": "Explore an interactive construction site where you can plot anchor points, measure distances between structures, find optimal midpoint placements, and visualize slope relationships for drainage design.",
+  "hearContent": "Listen as I explain how measuring relationships on my construction site is like the precision surveying that makes every engineering project successful and structurally sound!",
   "hearAudioUrl": "/audio/0.7.mp3",
-  "doContent": "Use the coordinate plane explorer to practice distance and midpoint calculations, experiment with the slope visualization tool, and solve real-world geometry problems.",
+  "doContent": "Use the construction site planner to practice distance and midpoint calculations, experiment with the slope visualization tool for drainage design, and solve real-world engineering geometry problems.",
   "hearTranscript": [
-    "Distance calculations processed successfully! Just like I need to measure connections between my processing stations, coordinate geometry helps us quantify spatial relationships in data.",
-    "The distance formula applies the Pythagorean theorem to coordinate pairs... distance equals the square root of (x2 minus x1) squared plus (y2 minus y1) squared. This calculates exact distances between any two points in my coordinate system.",
-    "For points (3, 4) and (6, 8), I compute: square root of (6 minus 3) squared plus (8 minus 4) squared... equals square root of 9 plus 16... equals square root of 25... equals 5 units. Precision confirmed!",
-    "The midpoint formula finds the exact center between two points... ((x1 plus x2) divided by 2, (y1 plus y2) divided by 2). It's like finding the optimal connection point between my processing stations.",
-    "Slope measures steepness and direction... rise over run, or (y2 minus y1) divided by (x2 minus x1). Positive slope means upward direction, negative slope means downward, zero slope means horizontal, and undefined slope means vertical.",
-    "In data science, these calculations are fundamental. Clustering algorithms measure distances between data points to group similar observations. Machine learning models calculate distances in high-dimensional feature spaces to make predictions.",
-    "Coordinate geometry provides the mathematical foundation for understanding spatial relationships in any dimensional space."
+    "When I'm building a dam, I need to measure everything precisely... how far apart are my anchor points? Where's the exact center for my main support beam? What's the slope of my spillway? That's where coordinate geometry becomes my essential measuring toolkit!",
+    "Think of the coordinate plane like my construction site blueprint. Every important spot gets coordinates... like saying \"the water intake is at position 3, 4 and the outflow is at 6, 8.\"",
+    "Now, how far apart are those two points? I use the distance formula, which is really just the Pythagorean theorem in disguise! I go 3 units right and 4 units up... that makes a right triangle with legs of 3 and 4, so the distance is 5 units. Just like the classic 3-4-5 triangle every builder knows!",
+    "The midpoint formula helps me find the perfect center between any two points... just average the x-coordinates and average the y-coordinates. Super handy for placing support beams exactly halfway between anchor points.",
+    "Slope is my best friend for checking if things are level or figuring out drainage angles. Rise over run... if my spillway drops 2 feet for every 10 feet forward, that's a slope of 2 over 10, or 1 over 5. Perfect for controlled water flow!",
+    "In data science, these same measuring tools help us understand relationships between different variables. Distance tells us how similar data points are, midpoints help us find centers of clusters, and slope shows us rates of change. It's all about building solid foundations, step by step!"
   ]
 }

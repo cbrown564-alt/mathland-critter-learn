@@ -92,7 +92,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-ollie': 'linear-gradient(to bottom right, #f59e42, #fbbf24, #f87171)', // amber to yellow to red
-				'gradient-felix': 'linear-gradient(to bottom right, #3b82f6, #6366f1, #818cf8)', // blue to indigo
+				
 				'gradient-vera': 'linear-gradient(to bottom right, #a78bfa, #f472b6, #f9a8d4)', // purple to pink
 			},
 		}

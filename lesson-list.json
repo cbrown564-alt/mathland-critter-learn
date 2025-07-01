@@ -1,0 +1,582 @@
+{
+  "totalLessons": 96,
+  "generatedAt": "2025-06-30T21:20:58.981Z",
+  "lessons": [
+    {
+      "id": "0.1",
+      "title": "Order of Operations & Algebraic Basics",
+      "moduleId": 0,
+      "lessonNumber": 1
+    },
+    {
+      "id": "0.2",
+      "title": "Factoring & Expanding Expressions",
+      "moduleId": 0,
+      "lessonNumber": 2
+    },
+    {
+      "id": "0.3",
+      "title": "Linear & Quadratic Equations",
+      "moduleId": 0,
+      "lessonNumber": 3
+    },
+    {
+      "id": "0.4",
+      "title": "Inequalities & Absolute Values",
+      "moduleId": 0,
+      "lessonNumber": 4
+    },
+    {
+      "id": "0.5",
+      "title": "Function Notation & Concepts",
+      "moduleId": 0,
+      "lessonNumber": 5
+    },
+    {
+      "id": "0.6",
+      "title": "Graphing Functions",
+      "moduleId": 0,
+      "lessonNumber": 6
+    },
+    {
+      "id": "0.7",
+      "title": "Coordinate Geometry Essentials",
+      "moduleId": 0,
+      "lessonNumber": 7
+    },
+    {
+      "id": "0.8",
+      "title": "Vectors & Greek Symbols Preview",
+      "moduleId": 0,
+      "lessonNumber": 8
+    },
+    {
+      "id": "1.1",
+      "title": "Vector Basics - Arrows with Purpose",
+      "moduleId": 1,
+      "lessonNumber": 1
+    },
+    {
+      "id": "1.2",
+      "title": "Vector Addition & Scalar Multiplication",
+      "moduleId": 1,
+      "lessonNumber": 2
+    },
+    {
+      "id": "1.3",
+      "title": "The Dot Product - Measuring Similarity",
+      "moduleId": 1,
+      "lessonNumber": 3
+    },
+    {
+      "id": "1.4",
+      "title": "Vector Norms - Measuring Distance",
+      "moduleId": 1,
+      "lessonNumber": 4
+    },
+    {
+      "id": "1.5",
+      "title": "Linear Combinations - Building New Vectors",
+      "moduleId": 1,
+      "lessonNumber": 5
+    },
+    {
+      "id": "1.6",
+      "title": "Linear Independence - Fundamental Directions",
+      "moduleId": 1,
+      "lessonNumber": 6
+    },
+    {
+      "id": "1.7",
+      "title": "Basis and Dimension - The Foundation Framework",
+      "moduleId": 1,
+      "lessonNumber": 7
+    },
+    {
+      "id": "1.8",
+      "title": "Vector Spaces - The Abstract Framework",
+      "moduleId": 1,
+      "lessonNumber": 8
+    },
+    {
+      "id": "1.9",
+      "title": "Vera's Forest Mapping Capstone Project",
+      "moduleId": 1,
+      "lessonNumber": 9
+    },
+    {
+      "id": "2.1",
+      "title": "Matrix Basics - Organizing Information Systematically",
+      "moduleId": 2,
+      "lessonNumber": 1
+    },
+    {
+      "id": "2.2",
+      "title": "Matrix Addition & Scalar Multiplication",
+      "moduleId": 2,
+      "lessonNumber": 2
+    },
+    {
+      "id": "2.3",
+      "title": "Matrix Multiplication - Systematic Transformation",
+      "moduleId": 2,
+      "lessonNumber": 3
+    },
+    {
+      "id": "2.4",
+      "title": "Identity Matrix & Matrix Inverses",
+      "moduleId": 2,
+      "lessonNumber": 4
+    },
+    {
+      "id": "2.5",
+      "title": "Determinants & Matrix Properties",
+      "moduleId": 2,
+      "lessonNumber": 5
+    },
+    {
+      "id": "2.6",
+      "title": "Elementary Row Operations & Matrix Rank",
+      "moduleId": 2,
+      "lessonNumber": 6
+    },
+    {
+      "id": "2.7",
+      "title": "Matrix-Vector Products as Transformations",
+      "moduleId": 2,
+      "lessonNumber": 7
+    },
+    {
+      "id": "2.8",
+      "title": "Composition of Linear Maps & Change of Basis",
+      "moduleId": 2,
+      "lessonNumber": 8
+    },
+    {
+      "id": "2.9",
+      "title": "Block Matrices & Advanced Organization",
+      "moduleId": 2,
+      "lessonNumber": 9
+    },
+    {
+      "id": "2.10",
+      "title": "Max's Data Organization Capstone Project",
+      "moduleId": 2,
+      "lessonNumber": 10
+    },
+    {
+      "id": "3.1",
+      "title": "Introduction to Eigenvalues & Eigenvectors",
+      "moduleId": 3,
+      "lessonNumber": 1
+    },
+    {
+      "id": "3.2",
+      "title": "Finding Eigenvalues - The Characteristic Equation",
+      "moduleId": 3,
+      "lessonNumber": 2
+    },
+    {
+      "id": "3.3",
+      "title": "Finding Eigenvectors - Solving the Null Space",
+      "moduleId": 3,
+      "lessonNumber": 3
+    },
+    {
+      "id": "3.4",
+      "title": "Diagonalization - Revealing Matrix Structure",
+      "moduleId": 3,
+      "lessonNumber": 4
+    },
+    {
+      "id": "3.5",
+      "title": "Symmetric Matrices & Orthogonal Diagonalization",
+      "moduleId": 3,
+      "lessonNumber": 5
+    },
+    {
+      "id": "3.6",
+      "title": "Applications: PCA & Data Analysis",
+      "moduleId": 3,
+      "lessonNumber": 6
+    },
+    {
+      "id": "3.7",
+      "title": "Matrix Powers & Exponentials",
+      "moduleId": 3,
+      "lessonNumber": 7
+    },
+    {
+      "id": "3.8",
+      "title": "Complex Eigenvalues & Oscillatory Behavior",
+      "moduleId": 3,
+      "lessonNumber": 8
+    },
+    {
+      "id": "3.9",
+      "title": "Eileen's Pattern Discovery Capstone Project",
+      "moduleId": 3,
+      "lessonNumber": 9
+    },
+    {
+      "id": "4.1",
+      "title": "Introduction to Multivariable Functions",
+      "moduleId": 4,
+      "lessonNumber": 1
+    },
+    {
+      "id": "4.2",
+      "title": "Limits in Multivariable Calculus",
+      "moduleId": 4,
+      "lessonNumber": 2
+    },
+    {
+      "id": "4.3",
+      "title": "Continuity and Surfaces",
+      "moduleId": 4,
+      "lessonNumber": 3
+    },
+    {
+      "id": "4.4",
+      "title": "Introduction to Partial Derivatives",
+      "moduleId": 4,
+      "lessonNumber": 4
+    },
+    {
+      "id": "4.5",
+      "title": "Computing Partial Derivatives",
+      "moduleId": 4,
+      "lessonNumber": 5
+    },
+    {
+      "id": "4.6",
+      "title": "The Gradient Vector",
+      "moduleId": 4,
+      "lessonNumber": 6
+    },
+    {
+      "id": "4.7",
+      "title": "Directional Derivatives",
+      "moduleId": 4,
+      "lessonNumber": 7
+    },
+    {
+      "id": "4.8",
+      "title": "The Jacobian Matrix",
+      "moduleId": 4,
+      "lessonNumber": 8
+    },
+    {
+      "id": "4.9",
+      "title": "Applications: Optimization Preview",
+      "moduleId": 4,
+      "lessonNumber": 9
+    },
+    {
+      "id": "4.10",
+      "title": "Dr. Delta's Multivariable Calculus Capstone",
+      "moduleId": 4,
+      "lessonNumber": 10
+    },
+    {
+      "id": "5.1",
+      "title": "Introduction to Optimization",
+      "moduleId": 5,
+      "lessonNumber": 1
+    },
+    {
+      "id": "5.2",
+      "title": "Critical Points & The First Derivative Test",
+      "moduleId": 5,
+      "lessonNumber": 2
+    },
+    {
+      "id": "5.3",
+      "title": "The Second Derivative Test & Hessian Matrix",
+      "moduleId": 5,
+      "lessonNumber": 3
+    },
+    {
+      "id": "5.4",
+      "title": "Convex vs Non-Convex Functions",
+      "moduleId": 5,
+      "lessonNumber": 4
+    },
+    {
+      "id": "5.5",
+      "title": "Introduction to Gradient Descent",
+      "moduleId": 5,
+      "lessonNumber": 5
+    },
+    {
+      "id": "5.6",
+      "title": "Step Size & Learning Rate Selection",
+      "moduleId": 5,
+      "lessonNumber": 6
+    },
+    {
+      "id": "5.7",
+      "title": "Momentum & Advanced Gradient Methods",
+      "moduleId": 5,
+      "lessonNumber": 7
+    },
+    {
+      "id": "5.8",
+      "title": "Constrained Optimization Preview",
+      "moduleId": 5,
+      "lessonNumber": 8
+    },
+    {
+      "id": "5.9",
+      "title": "Global vs Local Optimization",
+      "moduleId": 5,
+      "lessonNumber": 9
+    },
+    {
+      "id": "5.10",
+      "title": "Greta's Optimization Mastery Capstone",
+      "moduleId": 5,
+      "lessonNumber": 10
+    },
+    {
+      "id": "6.1",
+      "title": "Introduction to Probability & Sample Spaces",
+      "moduleId": 6,
+      "lessonNumber": 1
+    },
+    {
+      "id": "6.2",
+      "title": "Conditional Probability & Independence",
+      "moduleId": 6,
+      "lessonNumber": 2
+    },
+    {
+      "id": "6.3",
+      "title": "Random Variables & Probability Distributions",
+      "moduleId": 6,
+      "lessonNumber": 3
+    },
+    {
+      "id": "6.4",
+      "title": "Common Discrete Distributions",
+      "moduleId": 6,
+      "lessonNumber": 4
+    },
+    {
+      "id": "6.5",
+      "title": "Common Continuous Distributions",
+      "moduleId": 6,
+      "lessonNumber": 5
+    },
+    {
+      "id": "6.6",
+      "title": "Expectation & Variance",
+      "moduleId": 6,
+      "lessonNumber": 6
+    },
+    {
+      "id": "6.7",
+      "title": "Law of Large Numbers & Central Limit Theorem",
+      "moduleId": 6,
+      "lessonNumber": 7
+    },
+    {
+      "id": "6.8",
+      "title": "PDF vs CDF: Complete Distribution Descriptions",
+      "moduleId": 6,
+      "lessonNumber": 8
+    },
+    {
+      "id": "6.9",
+      "title": "Sampling & Sampling Variability",
+      "moduleId": 6,
+      "lessonNumber": 9
+    },
+    {
+      "id": "6.10",
+      "title": "Pippa's Probability & Distributions Capstone",
+      "moduleId": 6,
+      "lessonNumber": 10
+    },
+    {
+      "id": "7.1",
+      "title": "Introduction to Statistical Inference",
+      "moduleId": 7,
+      "lessonNumber": 1
+    },
+    {
+      "id": "7.2",
+      "title": "Sampling Distribution & Standard Error",
+      "moduleId": 7,
+      "lessonNumber": 2
+    },
+    {
+      "id": "7.3",
+      "title": "Confidence Intervals",
+      "moduleId": 7,
+      "lessonNumber": 3
+    },
+    {
+      "id": "7.4",
+      "title": "Introduction to Hypothesis Testing",
+      "moduleId": 7,
+      "lessonNumber": 4
+    },
+    {
+      "id": "7.5",
+      "title": "Test Statistics & P-values",
+      "moduleId": 7,
+      "lessonNumber": 5
+    },
+    {
+      "id": "7.6",
+      "title": "t-tests, χ², & ANOVA Preview",
+      "moduleId": 7,
+      "lessonNumber": 6
+    },
+    {
+      "id": "7.7",
+      "title": "Type I & Type II Errors",
+      "moduleId": 7,
+      "lessonNumber": 7
+    },
+    {
+      "id": "7.8",
+      "title": "Statistical Power",
+      "moduleId": 7,
+      "lessonNumber": 8
+    },
+    {
+      "id": "7.9",
+      "title": "Practical vs Statistical Significance",
+      "moduleId": 7,
+      "lessonNumber": 9
+    },
+    {
+      "id": "7.10",
+      "title": "Sigmund's Hypothesis Testing Mastery Capstone",
+      "moduleId": 7,
+      "lessonNumber": 10
+    },
+    {
+      "id": "8.1",
+      "title": "Introduction to Bayesian Thinking",
+      "moduleId": 8,
+      "lessonNumber": 1
+    },
+    {
+      "id": "8.2",
+      "title": "Prior, Likelihood, and Posterior",
+      "moduleId": 8,
+      "lessonNumber": 2
+    },
+    {
+      "id": "8.3",
+      "title": "Conjugate Priors & Beta-Binomial",
+      "moduleId": 8,
+      "lessonNumber": 3
+    },
+    {
+      "id": "8.4",
+      "title": "Normal-Normal Conjugacy",
+      "moduleId": 8,
+      "lessonNumber": 4
+    },
+    {
+      "id": "8.5",
+      "title": "Posterior Predictive Distribution",
+      "moduleId": 8,
+      "lessonNumber": 5
+    },
+    {
+      "id": "8.6",
+      "title": "MAP vs MLE: Point Estimation Approaches",
+      "moduleId": 8,
+      "lessonNumber": 6
+    },
+    {
+      "id": "8.7",
+      "title": "Bayes Factors & Model Comparison",
+      "moduleId": 8,
+      "lessonNumber": 7
+    },
+    {
+      "id": "8.8",
+      "title": "Real-World Applications: Medical Diagnosis",
+      "moduleId": 8,
+      "lessonNumber": 8
+    },
+    {
+      "id": "8.9",
+      "title": "Real-World Applications: Spam Filtering",
+      "moduleId": 8,
+      "lessonNumber": 9
+    },
+    {
+      "id": "8.10",
+      "title": "Bayes' Bayesian Inference Mastery Capstone",
+      "moduleId": 8,
+      "lessonNumber": 10
+    },
+    {
+      "id": "9.1",
+      "title": "Capstone Project Overview & Planning",
+      "moduleId": 9,
+      "lessonNumber": 1
+    },
+    {
+      "id": "9.2",
+      "title": "Data Acquisition & Exploratory Analysis",
+      "moduleId": 9,
+      "lessonNumber": 2
+    },
+    {
+      "id": "9.3",
+      "title": "Dimensionality Reduction & Feature Engineering",
+      "moduleId": 9,
+      "lessonNumber": 3
+    },
+    {
+      "id": "9.4",
+      "title": "Model Development & Optimization",
+      "moduleId": 9,
+      "lessonNumber": 4
+    },
+    {
+      "id": "9.5",
+      "title": "Statistical Validation & Inference",
+      "moduleId": 9,
+      "lessonNumber": 5
+    },
+    {
+      "id": "9.6",
+      "title": "Bayesian Analysis & Decision Making",
+      "moduleId": 9,
+      "lessonNumber": 6
+    },
+    {
+      "id": "9.7",
+      "title": "Results Communication & Visualization",
+      "moduleId": 9,
+      "lessonNumber": 7
+    },
+    {
+      "id": "9.8",
+      "title": "Portfolio Presentation & Documentation",
+      "moduleId": 9,
+      "lessonNumber": 8
+    },
+    {
+      "id": "9.9",
+      "title": "Peer Review & Feedback Integration",
+      "moduleId": 9,
+      "lessonNumber": 9
+    },
+    {
+      "id": "9.10",
+      "title": "Capstone Reflection & Future Learning Path",
+      "moduleId": 9,
+      "lessonNumber": 10
+    }
+  ]
+}

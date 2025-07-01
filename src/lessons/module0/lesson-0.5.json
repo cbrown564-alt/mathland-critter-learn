@@ -2,10 +2,10 @@
   "id": "0.5",
   "title": "Function Notation & Concepts",
   "duration": "30-35 minutes",
-  "characterId": "felix",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Meet Felix, a helpful robot who takes inputs and produces outputs following specific rules. Felix represents what we call 'functions' - mathematical machines that transform numbers.",
-    "characterMessage": "Input processed successfully! I follow rules to transform inputs into outputs. Every input gets exactly one output - that's what makes me a function!"
+    "story": "Now that Ollie has his dam operating within safe ranges, he needs to understand how his construction process transforms materials into finished structures. Functions are like his reliable construction blueprints - same materials always produce the same result when following the same plan.",
+    "characterMessage": "Now that we've got our ranges sorted out, let's talk about how I actually build things! Functions are like my construction blueprints - I take materials, follow my plans step by step, and get reliable results every time. Same input materials, same finished structure!"
   },
   "learningObjectives": [
     "Understand function notation f(x) and its meaning",
@@ -22,42 +22,40 @@
     "One-to-one vs many-to-one"
   ],
   "memoryAids": {
-    "mantra": "Input → Rule → Output - that's how I process everything!",
-    "visual": "Felix as a machine with input slot, processing unit, and output slot, showing the function transformation process"
+    "mantra": "Materials → Blueprint → Structure - that's how I build everything step by step!",
+    "visual": "Ollie at his construction site with materials going in, following blueprint plans, and finished dam structures coming out"
   },
-  "realWorldConnection": "In data science, functions help us model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the foundation of machine learning algorithms.",
+  "realWorldConnection": "In engineering and data science, functions help us model relationships: how material quality affects dam strength, how rainfall affects reservoir levels, or how construction variables predict project success. Functions are the foundation of engineering calculations and machine learning algorithms.",
   "conceptCheck": {
     "question": "If f(x) = 2x + 3, what is f(4) and what does this notation mean?",
     "options": [
-      "f(4) = 11, meaning input 4 gives output 11",
+      "f(4) = 11, meaning input 4 materials gives output 11 finished pieces",
       "f(4) = 7, meaning multiply 4 by 2 then subtract 3",
       "f(4) = 2x + 7, meaning add 4 to the function",
       "f(4) = 8, meaning only multiply by 2"
     ],
     "correctAnswer": 0,
-    "explanation": "f(4) means substitute 4 for x in the function: f(4) = 2(4) + 3 = 8 + 3 = 11. Function notation tells us what output we get when we input a specific value."
+    "explanation": "f(4) means substitute 4 for x in the function: f(4) = 2(4) + 3 = 8 + 3 = 11. Function notation tells us what output we get when we input a specific value - like following a construction plan with specific materials."
   },
-  "readContent": "Felix the Function Machine follows strict rules: input goes in, transformation happens, output comes out. Function notation f(x) means 'apply function f to input x.' The domain is all valid inputs (what Felix can process), and the range is all possible outputs (what Felix can produce). Every input gets exactly one output - that's what makes Felix reliable!",
-  "readAnalogy": "Think of functions as reliable machines like Felix - you put raw materials in one end, the machine follows its programming to transform them, and finished products come out the other end. Same input always produces the same output.",
+  "readContent": "Ollie the Engineer follows reliable construction plans: materials go in, transformation happens according to blueprints, finished structures come out. Function notation f(x) means 'apply construction plan f to materials x.' The domain is all valid materials (what Ollie can work with), and the range is all possible structures (what Ollie can build). Every input gets exactly one output - that's what makes Ollie's construction reliable!",
+  "readAnalogy": "Think of functions as reliable construction systems like Ollie's - you put raw materials in one end, the system follows its engineering plans to transform them, and finished structures come out the other end. Same materials always produce the same result when following the same blueprint.",
   "readKeyPoints": [
-    "Function notation f(x) reads as 'f of x' - apply function f to input x",
-    "Domain: all possible input values that work",
-    "Range: all possible output values the function can produce"
+    "Function notation f(x) reads as 'f of x' - apply construction plan f to materials x",
+    "Domain: all possible input materials that work with the plan",
+    "Range: all possible structures the plan can produce"
   ],
-  "readDigDeeper": "Function composition f(g(x)) means apply g first, then f to that result. Inverse functions f⁻¹(x) undo what f(x) does. Piecewise functions have different rules for different input ranges.",
-  "readWhyMatters": "In data science, functions model relationships: how advertising spend affects sales, how temperature affects energy consumption, or how user behavior predicts preferences. Functions are the mathematical foundation of machine learning algorithms.",
-  "seeContent": "Watch Felix demonstrate function machines with animated inputs and outputs, showing how different function types transform numbers in predictable ways.",
-  "hearContent": "Listen as I explain how I follow rules to transform inputs - just like how data transformation pipelines work in real data science projects!",
+  "readDigDeeper": "Function composition f(g(x)) means apply construction plan g first, then plan f to that result. Inverse functions f⁻¹(x) undo what f(x) does - like deconstructing a structure back to materials. Piecewise functions have different construction rules for different material types.",
+  "readWhyMatters": "In engineering and data science, functions model relationships: how material quality affects structural strength, how environmental conditions affect construction outcomes, or how design parameters predict performance. Functions are the mathematical foundation of engineering calculations and machine learning algorithms.",
+  "seeContent": "Watch Ollie demonstrate construction processes with animated materials and outputs, showing how different function types transform inputs into predictable engineering results.",
+  "hearContent": "Listen as I explain how I follow construction plans to transform materials - just like how engineering processes and data transformation pipelines work in real projects!",
   "hearAudioUrl": "/audio/0.5.mp3",
-  "doContent": "Use the function machine simulator to see how inputs become outputs, practice function evaluation exercises, and build your own function composition chains.",
+  "doContent": "Use the construction simulator to see how materials become structures, practice function evaluation exercises with engineering examples, and build your own construction process chains.",
   "hearTranscript": [
-    "Input processed successfully! I'm Felix the Function Machine, and I transform inputs into outputs following precise mathematical rules.",
-    "Think of me as a reliable processing system... you put raw data in one end, I follow my programming to transform it, and finished results come out the other end. Same input always produces the same output... that's what makes me a function!",
-    "Function notation f(x) means \"apply function f to input x.\" When you see f(x) equals 2x plus 3, that's my instruction manual. If you input 4, I substitute it everywhere I see x: f(4) equals 2 times 4 plus 3, which equals 11. Input 4, output 11... processing complete!",
-    "My domain is all the valid inputs I can handle... like the types of data my system accepts. My range is all possible outputs I can produce... the complete catalog of results I'm capable of generating.",
-    "The key principle: every input gets exactly one output. I can't be indecisive or produce multiple results from the same input... that would break my function protocols.",
-    "In data science, functions model relationships everywhere. How does advertising spend affect sales? How does temperature affect energy consumption? How do user behaviors predict preferences? These are all function relationships that data scientists use to build predictive models.",
-    "Machine learning algorithms are essentially complex functions... they take input data and transform it into predictions, classifications, or recommendations using systematic mathematical rules.",
-    "Understanding functions prepares you for the systematic thinking that drives all data transformation pipelines."
+    "Hey there! I'm Ollie, and just like I build dams step by step, functions are mathematical processing systems that transform inputs into outputs following precise construction rules.",
+    "Think of functions like my dam-building process... you put raw materials in one end, I follow my engineering plans to transform them, and finished structures come out the other end. Same materials always produce the same result when I follow the same blueprint... that's what makes me reliable!",
+    "Function notation f(x) is like my project label system... it means \"apply construction plan f to materials x.\" When you see f(x) equals 2x plus 3, that's my instruction manual. If you bring me 4 logs, I substitute them everywhere I see x: f(4) equals 2 times 4 plus 3, which equals 11 finished pieces. Input 4 logs, output 11 pieces... construction complete!",
+    "My domain is all the materials I can work with... like the types of wood and stone my tools can handle. My range is all possible structures I can build... the complete catalog of projects I'm capable of completing.",
+    "The key engineering principle: every input gets exactly one output. I can't build two different dams from the same materials following the same plan... that would violate my construction protocols and cause structural problems.",
+    "In data science, functions model relationships everywhere. How does material quality affect dam strength? How does rainfall affect reservoir levels? These are all function relationships that engineers and data scientists use to build predictive models and reliable systems."
   ]
 }

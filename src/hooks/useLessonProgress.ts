@@ -89,7 +89,7 @@ export const useLessonProgress = (lessonId: string): LessonProgress & LessonProg
           event.detail.currentSection !== currentSection
         ) {
           setCompletedSections(newCompleted);
-          setCurrentSectionState(event.detail.currentSection);
+        setCurrentSectionState(event.detail.currentSection);
         }
       }
     };

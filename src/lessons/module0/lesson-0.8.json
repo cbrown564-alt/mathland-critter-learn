@@ -56,7 +56,6 @@
     "Sigma notation provides efficient ways to express sums... sigma from i equals 1 to n of xi means add up all x values from x1 to xn. This notation appears constantly in statistics and data science for expressing formulas concisely.",
     "Vector notation [x, y] represents quantities with both magnitude and direction... like velocity, force, or displacement. Vectors extend our thinking beyond single numbers to multi-dimensional quantities that can represent complex relationships.",
     "In data science, everything becomes vectors. Customer preferences, image pixels, word frequencies, genetic markers... all represented as vectors in high-dimensional spaces. Machine learning algorithms operate on these vector representations to find patterns and make predictions.",
-    "This mathematical vocabulary enables precise communication about complex concepts. When you understand the notation, you can read research papers, implement algorithms, and communicate with other data scientists using the universal language of mathematics.",
-    "Preparing for vector operations... mathematical foundation protocols complete. Ready for advanced multidimensional processing with Vera the Vector!"
+    "This mathematical vocabulary enables precise communication about complex concepts. When you understand the notation, you can read research papers, implement algorithms, and communicate with other data scientists using the universal language of mathematics."
   ]
 }

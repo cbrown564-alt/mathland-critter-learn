@@ -150,13 +150,13 @@ export const ModuleCard = ({ module, index }: ModuleCardProps) => {
 
         {/* Action Button */}
         {isInteractive ? (
-          <Button
-            className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
+            <Button
+              className={`w-full bg-gradient-to-r ${module.color} hover:opacity-90 text-white`}
             onClick={handleButtonClick}
-          >
-            {getStatusText()}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            >
+              {getStatusText()}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
         ) : (
           <Button
             className={`w-full bg-gray-300 cursor-not-allowed text-white`}

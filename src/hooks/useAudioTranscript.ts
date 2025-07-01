@@ -6,7 +6,7 @@ export interface TranscriptWindow {
 }
 
 export const useAudioTranscript = (transcript?: string[], audioDuration: number = 0) => {
-  const audioRef = React.useRef<any>(null);
+  const audioRef = React.useRef<HTMLAudioElement>(null);
   const [currentTranscriptIdx, setCurrentTranscriptIdx] = React.useState(0);
 
   // Helper: calculate word-based time windows for transcript
@@ -28,19 +28,32 @@ export const useAudioTranscript = (transcript?: string[], audioDuration: number 
     });
   }, []);
 
-  const handleAudioTimeUpdate = React.useCallback(() => {
-    if (!audioRef.current || !transcript) return;
-    const currentTime = audioRef.current?.audio?.current?.currentTime || 0;
+  const handleAudioTimeUpdate = React.useCallback((currentTime: number) => {
+    if (!transcript || audioDuration === 0) return;
     const windows = getTranscriptTimeWindows(transcript, audioDuration);
     const idx = windows.findIndex(w => currentTime >= w.start && currentTime < w.end);
     setCurrentTranscriptIdx(idx === -1 ? transcript.length - 1 : idx);
   }, [transcript, audioDuration, getTranscriptTimeWindows]);
 
+  // Debug: Log timing windows when they change
+  React.useEffect(() => {
+    if (transcript && audioDuration > 0) {
+      const windows = getTranscriptTimeWindows(transcript, audioDuration);
+      console.log('Transcript timing windows:', windows.map((w, i) => 
+        `${i}: ${w.start.toFixed(2)}s - ${w.end.toFixed(2)}s`
+      ));
+    }
+  }, [transcript, audioDuration, getTranscriptTimeWindows]);
+
   // Attach timeupdate event for smooth transcript sync
   React.useEffect(() => {
-    const audioEl = audioRef.current?.audio?.current;
+    const audioEl = audioRef.current;
     if (!audioEl) return;
-    const update = () => handleAudioTimeUpdate();
+    
+    const update = () => {
+      handleAudioTimeUpdate(audioEl.currentTime);
+    };
+    
     audioEl.addEventListener('timeupdate', update);
     return () => audioEl.removeEventListener('timeupdate', update);
   }, [audioRef.current, transcript, audioDuration, handleAudioTimeUpdate]);

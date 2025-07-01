@@ -11,7 +11,7 @@ import { DoSection } from "./DoSection";
 import { SectionCompletion } from "./SectionCompletion";
 import { EnhancedConceptCheck } from './conceptCheck/EnhancedConceptCheck';
 import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
-import { LessonAudioPlayer } from './LessonAudioPlayer';
+import { EnhancedAudioPlayer } from './EnhancedAudioPlayer';
 
 interface LessonSectionRendererProps {
   lesson: LessonData;
@@ -129,25 +129,25 @@ export const LessonSectionRenderer: React.FC<LessonSectionRendererProps> = ({
         </div>
       );
       
-    case "hear":
-      return (
-        <div className="prose max-w-none">
-          <div className="text-slate-700 leading-relaxed mb-8">{lesson.hearContent}</div>
-          {lesson.hearAudioUrl && (
-            <LessonAudioPlayer
-              audioUrl={lesson.hearAudioUrl}
-              character={character}
-              transcript={lesson.hearTranscript}
+          case "hear":
+        return (
+          <div className="prose max-w-none">
+            <div className="text-slate-700 leading-relaxed mb-8">{lesson.hearContent}</div>
+            {lesson.hearAudioUrl && (
+              <EnhancedAudioPlayer
+                audioUrl={lesson.hearAudioUrl}
+                character={character}
+                transcript={lesson.hearTranscript}
+              />
+            )}
+            <SectionCompletion
+              onComplete={handleSectionComplete}
+              onNext={onNextSection}
+              isCompleted={isCompleted}
+              isLastSection={isLastSection}
             />
-          )}
-          <SectionCompletion
-            onComplete={handleSectionComplete}
-            onNext={onNextSection}
-            isCompleted={isCompleted}
-            isLastSection={isLastSection}
-          />
-        </div>
-      );
+          </div>
+        );
       
     case "do":
       return (
