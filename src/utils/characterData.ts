@@ -12,7 +12,7 @@ export const characters = [
     color: "from-amber-500 to-orange-500",
     expertise: "Mathematical Foundations",
     description: "Patient and methodical engineer otter, equipped with construction tools and wearing a hard hat. Ollie guides you through algebraic foundations with clear explanations and encouraging support, building mathematical confidence one step at a time.",
-    modules: ["Module 0: Prerequisites & Refresher (Lessons 0.1-0.4)"],
+    modules: ["Module 0: Prerequisites & Refresher"],
     personality: "Methodical, Step-by-step",
     icon: '🔧',
     reactionVerb: 'builds',

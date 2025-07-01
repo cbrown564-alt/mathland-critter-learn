@@ -11,6 +11,7 @@ interface ModuleCharacter {
   color: string;
   image: string;
   lessons: string[];
+  moduleString?: string;
 }
 
 interface ModuleCharacterCardProps {
@@ -18,6 +19,15 @@ interface ModuleCharacterCardProps {
 }
 
 export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => {
+  const lessonCount = character.lessons.length;
+  // Extract module number for link
+  let moduleNumber = "";
+  if (character.moduleString) {
+    const match = character.moduleString.match(/Module (\d+)/);
+    if (match) {
+      moduleNumber = match[1];
+    }
+  }
   return (
     <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden border border-gray-100">
       {/* Character Header */}
@@ -29,7 +39,7 @@ export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => 
         />
         {/* Lessons Badge */}
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 text-xs font-medium text-gray-700">
-          {character.lessons.length} lessons
+          {lessonCount} lesson{lessonCount !== 1 ? 's' : ''}
         </div>
       </div>
 
@@ -55,24 +65,33 @@ export const ModuleCharacterCard = ({ character }: ModuleCharacterCardProps) => 
           {character.description}
         </p>
 
-        {/* Lesson List */}
+        {/* Module Info */}
         <div className="mb-6">
           <h4 className="text-sm font-semibold text-gray-700 mb-2 text-center">Guides you through:</h4>
-          <div className="space-y-1">
-            {character.lessons.map((lesson) => (
-              <div key={lesson} className="text-xs text-gray-600 text-center">
-                Lesson {lesson}
-              </div>
-            ))}
+          <div className="text-xs text-gray-600 text-center">
+            {character.moduleString}
           </div>
         </div>
 
-        <Button 
-          className={`w-full bg-gradient-to-r ${character.color} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
-        >
-          Start with {character.name.split(' ')[0]}
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+        {moduleNumber ? (
+          <Button
+            className={`w-full bg-gradient-to-r ${character.color} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
+            asChild
+          >
+            <a href={`/module/${moduleNumber}`}>
+              Start with {character.name}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+        ) : (
+          <Button 
+            className={`w-full bg-gradient-to-r ${character.color} hover:opacity-90 text-white group-hover:scale-105 transition-transform`}
+            disabled
+          >
+            Start with {character.name}
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        )}
       </div>
 
       {/* Hover Effect Overlay */}

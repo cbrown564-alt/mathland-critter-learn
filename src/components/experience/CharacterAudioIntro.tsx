@@ -5,6 +5,9 @@ import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 import { characters } from "../../utils/characterData";
 import React from "react";
 import clsx from "clsx";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
+import { getLessonOrderForModule } from "@/utils/lessonData";
 
 // Character speaking order with precise timings (in seconds)
 const characterTimings = [
@@ -51,6 +54,10 @@ export const CharacterAudioIntro = ({
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isSeeking, setIsSeeking] = useState(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
+  const [hoveredThumb, setHoveredThumb] = useState<string | null>(null);
+  const [modalCharacter, setModalCharacter] = useState<any | null>(null);
+  const [modalLessons, setModalLessons] = useState<string[]>([]);
+  const [modalModule, setModalModule] = useState<string>("");
 
   // Refs for each transcript paragraph
   const paragraphRefs = useRef(introTranscript.map(() => createRef<HTMLParagraphElement>()));
@@ -154,6 +161,27 @@ export const CharacterAudioIntro = ({
     window.addEventListener("mouseup", onUp);
   };
 
+  // When a thumbnail is clicked, open modal with correct lessons/module
+  const handleThumbnailClick = (char: any) => {
+    // Parse module number and name from modules[0]
+    const moduleString = char.modules?.[0] || "";
+    const match = moduleString.match(/Module (\d+): (.+)/);
+    let moduleNumber = "";
+    let moduleName = "";
+    if (match) {
+      moduleNumber = match[1];
+      moduleName = match[2];
+    }
+    // Get lessons for this module
+    let lessons: string[] = [];
+    if (moduleNumber) {
+      lessons = getLessonOrderForModule(moduleNumber);
+    }
+    setModalCharacter(char);
+    setModalLessons(lessons);
+    setModalModule(moduleString);
+  };
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -216,16 +244,36 @@ export const CharacterAudioIntro = ({
                     }[colorKey] || "ring-blue-400";
                     const isActive = char?.id === currentCharacter.id;
                     return (
-                      <img
+                      <div
                         key={char?.id}
-                        src={char?.image}
-                        alt={char?.name}
-                        className={clsx(
-                          "w-12 h-12 rounded-full object-cover border-2 transition-all duration-200",
-                          isActive ? `ring-4 ${ringColor} scale-110` : "ring-2 ring-slate-200 opacity-70"
+                        className="relative group"
+                        onMouseEnter={() => setHoveredThumb(char?.id || null)}
+                        onMouseLeave={() => setHoveredThumb(null)}
+                        onFocus={() => setHoveredThumb(char?.id || null)}
+                        onBlur={() => setHoveredThumb(null)}
+                        tabIndex={0}
+                        aria-label={char?.name}
+                        onClick={() => handleThumbnailClick(char)}
+                        role="button"
+                        style={{ outline: "none" }}
+                      >
+                        <img
+                          src={char?.image}
+                          alt={char?.name}
+                          className={clsx(
+                            "w-12 h-12 rounded-full object-cover border-2 transition-all duration-200 cursor-pointer",
+                            isActive ? `ring-4 ${ringColor} scale-110` : "ring-2 ring-slate-200 opacity-70",
+                            "group-hover:scale-125 group-hover:shadow-lg group-hover:border-blue-400 group-focus:scale-125 group-focus:shadow-lg"
+                          )}
+                          style={{ background: "#fff" }}
+                        />
+                        {/* Tooltip */}
+                        {hoveredThumb === char?.id && (
+                          <div className="absolute left-1/2 -translate-x-1/2 mt-2 px-3 py-1 bg-slate-800 text-white text-xs rounded shadow-lg z-20 whitespace-nowrap">
+                            {char?.name}
+                          </div>
                         )}
-                        style={{ background: "#fff" }}
-                      />
+                      </div>
                     );
                   })}
                 </div>
@@ -397,6 +445,19 @@ export const CharacterAudioIntro = ({
         onEnded={handleEnded}
         preload="metadata"
       />
+
+      {/* Character Detail Modal */}
+      <Dialog open={!!modalCharacter} onOpenChange={open => !open && setModalCharacter(null)}>
+        <DialogContent>
+          {modalCharacter && (
+            <ModuleCharacterCard character={{
+              ...modalCharacter,
+              lessons: modalLessons,
+              moduleString: modalModule
+            }} />
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }; 
