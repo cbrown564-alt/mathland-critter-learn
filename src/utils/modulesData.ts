@@ -7,7 +7,7 @@ function getCharacterColor(characterName: string) {
 
 export const modulesData = [
   {
-    id: 10,
+    id: 1,
     title: "Prerequisites & Refresher",
     subtitle: "Build Your Foundation",
     description: "Master the mathematical foundations needed for data science",
@@ -42,19 +42,19 @@ export const modulesData = [
       milestone: "🎯 Milestone: Functions & Graphing",
       finish: "🏆 Finish: Mathematical Foundations",
       steps: [
-        { id: "0.1", title: "Order of Operations & Algebraic Basics" },
-        { id: "0.2", title: "Factoring & Expanding Expressions" },
-        { id: "0.3", title: "Linear & Quadratic Equations" },
-        { id: "0.4", title: "Inequalities & Absolute Values" },
-        { id: "0.5", title: "Function Notation & Concepts" },
-        { id: "0.6", title: "Graphing Functions" },
-        { id: "0.7", title: "Coordinate Geometry Essentials" },
-        { id: "0.8", title: "Vectors & Greek Symbols Preview" }
+        { id: "1.1", title: "Order of Operations & Algebraic Basics" },
+        { id: "1.2", title: "Factoring & Expanding Expressions" },
+        { id: "1.3", title: "Linear & Quadratic Equations" },
+        { id: "1.4", title: "Inequalities & Absolute Values" },
+        { id: "1.5", title: "Function Notation & Concepts" },
+        { id: "1.6", title: "Graphing Functions" },
+        { id: "1.7", title: "Coordinate Geometry Essentials" },
+        { id: "1.8", title: "Vectors & Greek Symbols Preview" }
       ]
     }
   },
   {
-    id: 10,
+    id: 2,
     title: "Vectors & Vector Spaces",
     subtitle: "Direction and Magnitude",
     description: "Understanding vectors, linear combinations, and vector spaces",
@@ -83,25 +83,25 @@ export const modulesData = [
       "Linear combinations & span",
       "Vector spaces & subspaces"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 1",
     learningJourney: {
       start: "🌟 Start: Vector Operations",
       milestone: "🎯 Milestone: Linear Independence",
       finish: "🏆 Finish: Vector Spaces",
       steps: [
-        { id: "1.1", title: "Vector Addition & Scalar Multiplication" },
-        { id: "1.2", title: "Dot Product & Norm" },
-        { id: "1.3", title: "Unit Vectors" },
-        { id: "1.4", title: "Linear Combination & Span" },
-        { id: "1.5", title: "Linear Independence" },
-        { id: "1.6", title: "Basis & Dimension" },
-        { id: "1.7", title: "Row/Column Picture" },
-        { id: "1.8", title: "Subspace & Null Space" }
+        { id: "2.1", title: "Vector Addition & Scalar Multiplication" },
+        { id: "2.2", title: "Dot Product & Norm" },
+        { id: "2.3", title: "Unit Vectors" },
+        { id: "2.4", title: "Linear Combination & Span" },
+        { id: "2.5", title: "Linear Independence" },
+        { id: "2.6", title: "Basis & Dimension" },
+        { id: "2.7", title: "Row/Column Picture" },
+        { id: "2.8", title: "Subspace & Null Space" }
       ]
     }
   },
   {
-    id: 10,
+    id: 3,
     title: "Matrices & Linear Mappings",
     subtitle: "Transforming Spaces",
     description: "Matrix operations, transformations, and their properties",
@@ -130,25 +130,25 @@ export const modulesData = [
       "Linear transformations",
       "Determinants & inverses"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 2",
     learningJourney: {
       start: "🌟 Start: Matrix Operations",
       milestone: "🎯 Milestone: Linear Transformations",
       finish: "🏆 Finish: Matrix Spaces",
       steps: [
-        { id: "2.1", title: "Matrix Addition & Multiplication" },
-        { id: "2.2", title: "Identity & Inverse" },
-        { id: "2.3", title: "Determinant & Rank" },
-        { id: "2.4", title: "Elementary Row Operations" },
-        { id: "2.5", title: "Matrix-Vector Product" },
-        { id: "2.6", title: "Composition of Linear Maps" },
-        { id: "2.7", title: "Change of Basis" },
-        { id: "2.8", title: "Block Matrices" }
+        { id: "3.1", title: "Matrix Addition & Multiplication" },
+        { id: "3.2", title: "Identity & Inverse" },
+        { id: "3.3", title: "Determinant & Rank" },
+        { id: "3.4", title: "Elementary Row Operations" },
+        { id: "3.5", title: "Matrix-Vector Product" },
+        { id: "3.6", title: "Composition of Linear Maps" },
+        { id: "3.7", title: "Change of Basis" },
+        { id: "3.8", title: "Block Matrices" }
       ]
     }
   },
   {
-    id: 10,
+    id: 4,
     title: "Eigenvalues & Eigenvectors",
     subtitle: "Special Directions",
     description: "Understanding eigenvalues, eigenvectors, and their applications",
@@ -177,24 +177,24 @@ export const modulesData = [
       "Diagonalisation & spectral decomposition",
       "Real-world applications (PCA, PageRank, SVD)"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 3",
     learningJourney: {
       start: "🌟 Start: Eigenvalues & Eigenvectors",
       milestone: "🎯 Milestone: Diagonalisation",
       finish: "🏆 Finish: Special Directions",
       steps: [
-        { id: "3.1", title: "Characteristic Equation" },
-        { id: "3.2", title: "Algebraic vs Geometric Multiplicity" },
-        { id: "3.3", title: "Diagonalisation" },
-        { id: "3.4", title: "Spectral Decomposition" },
-        { id: "3.5", title: "SVD (Singular Value Decomposition)" },
-        { id: "3.6", title: "Power Iteration" },
-        { id: "3.7", title: "Real-world Uses" }
+        { id: "4.1", title: "Characteristic Equation" },
+        { id: "4.2", title: "Algebraic vs Geometric Multiplicity" },
+        { id: "4.3", title: "Diagonalisation" },
+        { id: "4.4", title: "Spectral Decomposition" },
+        { id: "4.5", title: "SVD (Singular Value Decomposition)" },
+        { id: "4.6", title: "Power Iteration" },
+        { id: "4.7", title: "Real-world Uses" }
       ]
     }
   },
   {
-    id: 10,
+    id: 5,
     title: "Multivariate Calculus Foundations",
     subtitle: "Multiple Variables",
     description: "Calculus with multiple variables for optimization",
@@ -222,23 +222,23 @@ export const modulesData = [
       "Multivariable functions",
       "Jacobian & rates of change"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 4",
     learningJourney: {
       start: "🌟 Start: Multivariable Calculus",
       milestone: "🎯 Milestone: Partial Derivatives",
       finish: "🏆 Finish: Multivariable Foundations",
       steps: [
-        { id: "4.1", title: "Limits in ℝ²/ℝ³" },
-        { id: "4.2", title: "Continuity & Surfaces" },
-        { id: "4.3", title: "Partial Derivatives" },
-        { id: "4.4", title: "Gradient Vector" },
-        { id: "4.5", title: "Directional Derivative" },
-        { id: "4.6", title: "Jacobian Matrix" }
+        { id: "5.1", title: "Limits in ℝ²/ℝ³" },
+        { id: "5.2", title: "Continuity & Surfaces" },
+        { id: "5.3", title: "Partial Derivatives" },
+        { id: "5.4", title: "Gradient Vector" },
+        { id: "5.5", title: "Directional Derivative" },
+        { id: "5.6", title: "Jacobian Matrix" }
       ]
     }
   },
   {
-    id: 10,
+    id: 6,
     title: "Optimisation & Gradient Descent",
     subtitle: "Finding the Best",
     description: "Optimization techniques and gradient-based algorithms",
@@ -266,22 +266,22 @@ export const modulesData = [
       "Gradient descent algorithms",
       "Optimization in practice"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 5",
     learningJourney: {
       start: "🌟 Start: Optimisation",
       milestone: "🎯 Milestone: Gradient Descent",
       finish: "🏆 Finish: Finding the Best",
       steps: [
-        { id: "5.1", title: "Critical Points & Hessian" },
-        { id: "5.2", title: "Second-Derivative Test" },
-        { id: "5.3", title: "Convex vs Non-Convex" },
-        { id: "5.4", title: "Gradient Descent Algorithm" },
-        { id: "5.5", title: "Momentum & Learning-Rate Scheduling" }
+        { id: "6.1", title: "Critical Points & Hessian" },
+        { id: "6.2", title: "Second-Derivative Test" },
+        { id: "6.3", title: "Convex vs Non-Convex" },
+        { id: "6.4", title: "Gradient Descent Algorithm" },
+        { id: "6.5", title: "Momentum & Learning-Rate Scheduling" }
       ]
     }
   },
   {
-    id: 10,
+    id: 7,
     title: "Probability & Distributions",
     subtitle: "Understanding Uncertainty",
     description: "Probability theory and common probability distributions",
@@ -310,25 +310,25 @@ export const modulesData = [
       "Common distributions",
       "Expectation, variance & sampling"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 6",
     learningJourney: {
       start: "🌟 Start: Probability",
       milestone: "🎯 Milestone: Random Variables",
       finish: "🏆 Finish: Understanding Uncertainty",
       steps: [
-        { id: "6.1", title: "Sample Space & Events" },
-        { id: "6.2", title: "Conditional Probability & Independence" },
-        { id: "6.3", title: "Random Variables" },
-        { id: "6.4", title: "Bernoulli, Binomial, Poisson, Uniform, Exponential, Normal" },
-        { id: "6.5", title: "Expectation & Variance" },
-        { id: "6.6", title: "Law of Large Numbers & Central Limit Theorem" },
-        { id: "6.7", title: "Probability Density Function (PDF) vs Cumulative Distribution Function (CDF)" },
-        { id: "6.8", title: "Sampling Variability" }
+        { id: "7.1", title: "Sample Space & Events" },
+        { id: "7.2", title: "Conditional Probability & Independence" },
+        { id: "7.3", title: "Random Variables" },
+        { id: "7.4", title: "Bernoulli, Binomial, Poisson, Uniform, Exponential, Normal" },
+        { id: "7.5", title: "Expectation & Variance" },
+        { id: "7.6", title: "Law of Large Numbers & Central Limit Theorem" },
+        { id: "7.7", title: "Probability Density Function (PDF) vs Cumulative Distribution Function (CDF)" },
+        { id: "7.8", title: "Sampling Variability" }
       ]
     }
   },
   {
-    id: 10,
+    id: 8,
     title: "Hypothesis Testing & Inference",
     subtitle: "Making Decisions",
     description: "Statistical inference and hypothesis testing methods",
@@ -356,24 +356,24 @@ export const modulesData = [
       "Hypothesis testing",
       "Confidence intervals & errors"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 7",
     learningJourney: {
       start: "🌟 Start: Hypothesis Testing",
       milestone: "🎯 Milestone: Sampling Distribution",
       finish: "🏆 Finish: Statistical Inference",
       steps: [
-        { id: "7.1", title: "Sampling Distribution & Standard Error" },
-        { id: "7.2", title: "Confidence Intervals" },
-        { id: "7.3", title: "Null/Alternative Hypotheses" },
-        { id: "7.4", title: "Test Statistics & p-values" },
-        { id: "7.5", title: "t-tests, χ², ANOVA" },
-        { id: "7.6", title: "Type I/II Error" },
-        { id: "7.7", title: "Statistical Power" }
+        { id: "8.1", title: "Sampling Distribution & Standard Error" },
+        { id: "8.2", title: "Confidence Intervals" },
+        { id: "8.3", title: "Null/Alternative Hypotheses" },
+        { id: "8.4", title: "Test Statistics & p-values" },
+        { id: "8.5", title: "t-tests, χ², ANOVA" },
+        { id: "8.6", title: "Type I/II Error" },
+        { id: "8.7", title: "Statistical Power" }
       ]
     }
   },
   {
-    id: 10,
+    id: 9,
     title: "Bayesian Inference",
     subtitle: "Updating Beliefs",
     description: "Bayesian statistics and probabilistic reasoning",
@@ -402,18 +402,18 @@ export const modulesData = [
       "Priors, likelihoods & posteriors",
       "Real-world Bayesian applications"
     ],
-    prerequisites: "Module 10",
+    prerequisites: "Module 8",
     learningJourney: {
       start: "🌟 Start: Bayesian Inference",
       milestone: "🎯 Milestone: Bayesian Statistics",
       finish: "🏆 Finish: Updating Beliefs",
       steps: [
-        { id: "8.1", title: "Prior, Likelihood, Posterior" },
-        { id: "8.2", title: "Conjugate Priors" },
-        { id: "8.3", title: "Posterior Predictive" },
-        { id: "8.4", title: "Maximum A Posteriori (MAP) vs Maximum Likelihood Estimation (MLE)" },
-        { id: "8.5", title: "Bayes Factors" },
-        { id: "8.6", title: "Real-world Applications" }
+        { id: "9.1", title: "Prior, Likelihood, Posterior" },
+        { id: "9.2", title: "Conjugate Priors" },
+        { id: "9.3", title: "Posterior Predictive" },
+        { id: "9.4", title: "Maximum A Posteriori (MAP) vs Maximum Likelihood Estimation (MLE)" },
+        { id: "9.5", title: "Bayes Factors" },
+        { id: "9.6", title: "Real-world Applications" }
       ]
     }
   },
@@ -425,9 +425,9 @@ export const modulesData = [
     duration: "8-10 hours",
     lessons: 1,
     status: "coming-soon",
-    color: getCharacterColor("Sage the Synthesis Owl"),
+    color: getCharacterColor("Sage the Visionary Eagle"),
     character: {
-      name: "Sage the Synthesis Owl",
+      name: "Sage the Visionary Eagle",
       avatar: "/lovable-uploads/sage.png"
     },
     concepts: [
@@ -451,12 +451,12 @@ export const modulesData = [
       milestone: "🎯 Milestone: Data Science Project",
       finish: "🏆 Finish: Real-World Application",
       steps: [
-        { id: "9.1", title: "End-to-End Workflow" },
-        { id: "9.2", title: "Data Wrangling" },
-        { id: "9.3", title: "Dimensionality Reduction" },
-        { id: "9.4", title: "Model Fitting" },
-        { id: "9.5", title: "Diagnostic Inference" },
-        { id: "9.6", title: "Presentation" }
+        { id: "10.1", title: "End-to-End Workflow" },
+        { id: "10.2", title: "Data Wrangling" },
+        { id: "10.3", title: "Dimensionality Reduction" },
+        { id: "10.4", title: "Model Fitting" },
+        { id: "10.5", title: "Diagnostic Inference" },
+         { id: "10.6", title: "Presentation" }
       ]
     }
   }

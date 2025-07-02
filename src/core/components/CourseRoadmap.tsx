@@ -89,12 +89,12 @@ export const CourseRoadmap = () => {
                 <Star className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Ready to Begin?</h3>
                 <p className="text-gray-600 mb-6">
-                  Start with Module 0 or take our placement assessment to find your perfect starting point.
+                  Start with Module 1 or take our placement assessment to find your perfect starting point.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link to="/module-0">
+                  <Link to="/module-1">
                     <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-all">
-                      Start Module 0
+                      Start Module 1
                     </button>
                   </Link>
                   <button className="border-2 border-green-400 text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-semibold transition-all">
