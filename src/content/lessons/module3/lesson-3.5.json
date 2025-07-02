@@ -1,62 +1,62 @@
 {
   "id": "3.5",
-  "title": "Symmetric Matrices & Orthogonal Diagonalization",
-  "duration": "40-45 minutes",
-  "characterId": "eileen",
+  "title": "Determinants & Matrix Properties",
+  "duration": "35-40 minutes",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen discovers that symmetric matrices are the most well-behaved of all matrices - they always have real eigenvalues and perpendicular eigenvectors! These mathematical aristocrats can be diagonalized using orthogonal matrices, creating the most elegant transformations possible.",
-    "characterMessage": "Symmetric matrices are mathematical royalty! They're so well-behaved that their eigenvectors are always perpendicular to each other, and I can diagonalize them using rotations and reflections only - no stretching needed!"
+    "story": "Max needs to measure the 'power' of his transformation matrices. How much do they stretch or shrink areas? Do they flip orientations? The determinant is Max's mathematical measuring tool that captures the essential transformation strength and behavior of any matrix in a single number.",
+    "characterMessage": "Every transformation has a signature number that tells its complete story! The determinant measures transformation power - how much does it stretch or shrink areas (2D) or volumes (3D)? For 2×2 matrices: det(A) = ad - bc. The absolute value |det(A)| shows the scaling factor, while the sign indicates orientation: positive preserves orientation, negative flips it like a mirror. If det(A) = 0, the transformation collapses everything to a lower dimension - it's singular and non-invertible."
   },
   "learningObjectives": [
-    "Understand why symmetric matrices have real eigenvalues",
-    "Recognize that symmetric matrices have orthogonal eigenvectors",
-    "Perform orthogonal diagonalization using orthonormal eigenvectors",
-    "Apply the spectral theorem for symmetric matrices",
-    "Connect orthogonal diagonalization to principal component analysis"
+    "Calculate determinants for 2×2 and 3×3 matrices",
+    "Interpret determinants as area/volume scaling factors",
+    "Understand the relationship between determinants and matrix invertibility",
+    "Recognize how determinants indicate orientation preservation or reversal",
+    "Apply determinant properties to solve practical problems"
   ],
   "coreConcepts": [
-    "Symmetric matrices: A = Aᵀ",
-    "Real eigenvalues for symmetric matrices",
-    "Orthogonal eigenvectors from different eigenvalues",
-    "Orthogonal diagonalization: A = QDQᵀ",
-    "Spectral theorem and applications"
+    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
+    "3×3 determinant using cofactor expansion",
+    "Geometric interpretation: area/volume scaling",
+    "det(A) = 0 ↔ matrix is singular",
+    "Determinant properties and applications"
   ],
-  "readContent": "Symmetric matrices (A = Aᵀ) have special properties: all eigenvalues are real, and eigenvectors from different eigenvalues are orthogonal. Even for repeated eigenvalues, symmetric matrices have orthogonal eigenvector bases. This enables orthogonal diagonalization A = QDQᵀ where Q has orthonormal eigenvectors as columns and QᵀQ = I. The spectral theorem guarantees this decomposition exists for any symmetric matrix. Orthogonal diagonalization represents the transformation as rotation to principal axes (Q), scaling along those axes (D), then rotation back (Qᵀ). This is fundamental to principal component analysis, quadratic forms, and optimization.",
-  "readAnalogy": "Symmetric matrices are like perfectly balanced dancers who can only perform elegant rotations and graceful scalings. They're incapable of the awkward stretching and skewing that other matrices might attempt.",
+  "readContent": "The determinant of a matrix measures how much the matrix transformation scales areas (2D) or volumes (3D). For 2×2 matrix [[a,b],[c,d]], det(A) = ad - bc. For 3×3 matrices, use cofactor expansion along any row or column. Geometrically, |det(A)| gives the scaling factor for areas/volumes, while the sign indicates orientation: positive preserves orientation, negative reverses it. If det(A) = 0, the matrix collapses space to lower dimension and is non-invertible (singular). If det(A) ≠ 0, the matrix is invertible with det(A⁻¹) = 1/det(A).",
+  "readAnalogy": "The determinant is like measuring the transformation DNA of any matrix - it tells you exactly how powerful the transformation is and whether it flips things around!",
   "readKeyPoints": [
-    "Symmetric matrices: A = A^T have real eigenvalues and orthogonal eigenvectors",
-    "Spectral theorem guarantees orthogonal diagonalization: A = QDQ^T",
-    "Transformation separates into rotation → scaling → rotation back"
+    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
+    "3×3 determinant: cofactor expansion - systematic way to calculate",
+    "Geometric interpretation: area/volume scaling",
+    "Sign: positive preserves orientation, negative reverses it",
+    "Singular vs invertible matrices"
   ],
-  "readDigDeeper": "The spectral theorem is one of the most beautiful results in linear algebra. It guarantees that any real symmetric matrix can be diagonalized by an orthogonal matrix, meaning the eigenvectors form a perfect orthonormal basis for the space.",
-  "readWhyMatters": "Principal Component Analysis (PCA) relies on orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems, where eigenvectors represent normal modes and eigenvalues give oscillation frequencies.",
-  "seeContent": "Visualize how symmetric matrices create elliptical transformations with perpendicular principal axes, watch orthogonal diagonalization separate rotation from scaling, and see how this connects to data analysis principal components.",
-  "hearContent": "Listen as I explain why symmetric matrices are the mathematical aristocrats - so elegant and well-behaved that they can always be perfectly organized using pure rotations and reflections!",
-  "hearAudioUrl": "/audio/3.5.mp3",
-  "doContent": "Use the Symmetric Matrix Analyzer to verify orthogonal eigenvectors, practice with the Orthogonal Diagonalization Builder, and experiment with the Principal Axis Visualizer to see geometric interpretations.",
+  "readDigDeeper": "The determinant is a powerful tool for understanding matrix properties: det(A) = 0 means the matrix is singular (non-invertible), det(A) ≠ 0 means the matrix is invertible. Determinant properties like multilinearity and alternating properties help simplify calculations.",
+  "readWhyMatters": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
+  "seeContent": "Visualize how determinants measure area scaling by watching unit squares transform into parallelograms, see how negative determinants flip orientations, and observe how zero determinants collapse space to lines.",
+  "hearContent": "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
+  "hearAudioUrl": "/audio/2.5.mp3",
+  "doContent": "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
   "memoryAids": {
-    "mantra": "Symmetric means elegant - real eigenvalues, perpendicular eigenvectors, pure rotational diagonalization!",
-    "visual": "Picture Eileen working with mathematical royalty: symmetric matrices are so refined they only need elegant rotations and reflections, never messy skewing or shearing."
+    "mantra": "Transformation power in a single number - scaling factor and flip detector all in one!",
+    "visual": "Picture Max measuring transformation strength with a special scale: the number shows how much areas grow or shrink, and the sign shows whether the transformation is a mirror flip."
   },
   "conceptCheck": {
-    "question": "For symmetric matrix [[5,3],[3,1]], why are the eigenvectors guaranteed to be orthogonal?",
+    "question": "A transformation matrix has determinant -3. What does this tell you about the transformation?",
     "options": [
-      "The spectral theorem guarantees symmetric matrices have orthogonal eigenvectors",
-      "Only because this matrix has distinct eigenvalues",
-      "Symmetric matrices always have eigenvalues 0 and 1",
-      "Orthogonality only happens for 2×2 symmetric matrices"
+      "Areas are scaled by factor 3 and orientation is reversed (mirror flip)",
+      "Areas are scaled by factor -3 (impossible negative area)",
+      "The transformation shrinks everything by 1/3",
+      "The matrix is not invertible"
     ],
     "correctAnswer": 0,
-    "explanation": "The spectral theorem states that symmetric matrices always have orthogonal eigenvectors, regardless of whether eigenvalues are distinct or repeated. This is a fundamental property of symmetric matrices."
+    "explanation": "Determinant -3 means: |det| = 3 so areas scale by factor 3 (magnification), and the negative sign means orientation reverses (like a mirror flip). The transformation is invertible since det ≠ 0."
   },
-  "realWorldConnection": "Principal Component Analysis (PCA) uses orthogonal diagonalization of symmetric covariance matrices to find the main directions of data variation. Physicists use symmetric matrices to model vibrating systems where eigenvectors represent normal modes of oscillation with real frequencies.",
+  "realWorldConnection": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
   "hearTranscript": [
-    "Symmetric matrices are mathematical royalty... They're so well-behaved that they always have real eigenvalues and perpendicular eigenvectors.",
-    "When a matrix equals its own transpose, something magical happens. All eigenvalues are guaranteed to be real numbers... no complex rotational behavior, just pure stretching and shrinking along perpendicular directions.",
-    "Even better, eigenvectors from different eigenvalues are automatically orthogonal... they meet at perfect right angles. And for repeated eigenvalues, we can always choose orthogonal eigenvectors within each eigenspace.",
-    "This enables orthogonal diagonalization: A equals Q times D times Q transpose, where Q contains orthonormal eigenvectors. Notice Q transpose instead of Q inverse... that's because orthogonal matrices have the beautiful property that their transpose equals their inverse.",
-    "Geometrically, this means every symmetric matrix represents a pure scaling transformation along perpendicular axes... no rotation, no shearing, just elegant stretching or shrinking in coordinate directions determined by the eigenvectors.",
-    "This is the mathematical foundation of principal component analysis. When data scientists find the main directions of variation in high-dimensional datasets, they're finding the eigenvectors of symmetric covariance matrices.",
-    "Symmetric matrices reveal their secrets willingly... they're the most honest transformations in all of linear algebra."
+    "Every transformation has a signature number that tells its complete story... the determinant.",
+    "For a 2 by 2 matrix, it's beautifully simple: a times d minus b times c. That single number captures the transformation's essential personality.",
+    "The absolute value tells you the scaling factor... how much areas grow or shrink. A determinant of 3 means areas triple in size. A determinant of one-half means areas shrink by half.",
+    "The sign reveals even more: positive means the transformation preserves orientation, negative means it flips everything like a mirror. Zero determinant? That's the ultimate collapse... the transformation squashes everything into a lower dimension.",
+    "When your phone's camera automatically adjusts focus, when economists model how sector changes ripple through entire economies, when engineers calculate structural stability... they're all reading the determinant to understand transformation power."
   ]
 }

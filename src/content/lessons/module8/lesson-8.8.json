@@ -1,62 +1,63 @@
 {
   "id": "8.8",
-  "title": "Real-World Applications: Medical Diagnosis",
-  "duration": "45-50 minutes",
-  "characterId": "bayes",
+  "title": "Statistical Power",
+  "duration": "40-45 minutes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes applies his detective skills to one of the most important real-world domains: medical diagnosis. Every symptom is a clue, every test result is evidence, and every diagnosis requires combining prior knowledge about disease prevalence with patient-specific information. It's Bayesian reasoning with life-and-death consequences.",
-    "characterMessage": "Medical diagnosis is pure Bayesian detective work! Doctors start with base rates (how common is this disease?), observe symptoms (evidence), run tests (more evidence), and systematically update their diagnostic beliefs. Every piece of information changes the probability landscape - it's statistics in service of saving lives!"
+    "story": "Sigmund explores the concept of statistical power - the elegant measure of a test's ability to detect truth when truth exists. Like the swan's keen eyesight that spots distant movements on the water, statistical power represents our test's sensitivity to real effects hiding beneath the surface of random variation.",
+    "characterMessage": "Statistical power embodies our test's elegant sensitivity to truth! It measures how well we can detect real effects when they truly exist. Understanding power helps us design studies that won't miss important discoveries and interpret negative results with appropriate wisdom."
   },
   "learningObjectives": [
-    "Apply Bayesian reasoning to medical diagnostic scenarios",
-    "Understand base rates and their critical importance in diagnosis",
-    "Calculate diagnostic probabilities using sensitivity and specificity",
-    "Recognize common diagnostic fallacies and base rate neglect",
-    "Interpret multiple test results using sequential Bayesian updating"
+    "Define statistical power as the probability of detecting true effects",
+    "Calculate power for various hypothesis testing scenarios",
+    "Understand factors that influence statistical power",
+    "Apply power analysis for sample size determination",
+    "Interpret studies with adequate vs inadequate power"
   ],
   "coreConcepts": [
-    "Base rate: disease prevalence P(Disease) in population",
-    "Sensitivity: P(Test+|Disease) = true positive rate",
-    "Specificity: P(Test-|No Disease) = true negative rate",
-    "Positive predictive value: P(Disease|Test+)",
-    "Sequential updating with multiple tests"
+    "Statistical power: P(reject H₀ | H₀ false) = 1 - β",
+    "Power depends on: effect size, sample size, α level, population variance",
+    "Power analysis for sample size planning",
+    "Interpreting negative results in low-power studies",
+    "Cohen's conventions for effect sizes"
   ],
-  "readContent": "Medical diagnosis exemplifies Bayesian reasoning: P(Disease|Symptoms, Tests) ∝ P(Symptoms, Tests|Disease) × P(Disease). The prior P(Disease) represents base rate prevalence in the relevant population. Test characteristics include sensitivity (true positive rate) and specificity (true negative rate). The posterior probability after a positive test is P(Disease|Test+) = Sensitivity × P(Disease) / [Sensitivity × P(Disease) + (1-Specificity) × (1-P(Disease))]. Base rate neglect - ignoring disease prevalence - leads to systematic overdiagnosis. Multiple tests require sequential updating, with each result modifying the probability for the next test. Rare diseases remain unlikely even after positive tests unless sensitivity is extremely high and specificity near perfect.",
-  "readAnalogy": "Medical diagnosis is like detective work where I start with 'how common is this type of crime in this neighborhood?' (base rate), then look for evidence like fingerprints (symptoms) and DNA tests (diagnostic tests). Each piece of evidence updates my theory, but I always remember that rare crimes stay rare unless the evidence is overwhelming. A positive test for a rare disease is like finding a common fingerprint pattern - suspicious but not conclusive.",
+  "readContent": "Statistical power = 1 - β measures the probability of correctly rejecting a false null hypothesis, i.e., detecting a true effect when it exists. Power increases with: larger effect sizes (easier to detect big differences), larger sample sizes (more precise estimates), higher α levels (less stringent criteria), and smaller population variance (less noise). Cohen's conventions classify effect sizes as small (d = 0.2), medium (d = 0.5), or large (d = 0.8). Power analysis determines required sample sizes to achieve desired power (typically 80%) for expected effect sizes. Studies with low power may fail to detect real effects, leading to false negative conclusions. Power analysis is crucial for study planning and result interpretation.",
+  "readAnalogy": "Statistical power is like the keenness of my eyesight when hunting for subtle movements on the water's surface. With sharp vision (high power), I can detect even small ripples (small effects). Poor vision (low power) means I'll miss everything except the most obvious splashes. The clarity of my vision depends on lighting conditions (sample size), how big the movement is (effect size), and how carefully I'm looking (α level).",
   "readKeyPoints": [
-    "Base rates (disease prevalence) critically affect diagnostic probabilities",
-    "Positive predictive value depends on sensitivity, specificity, AND base rate",
-    "Rare diseases remain unlikely even after positive tests unless tests are nearly perfect"
+    "Power = 1 - β = probability of detecting true effects when they exist",
+    "Increases with larger effect sizes, sample sizes, α levels; decreases with more variance",
+    "Power analysis determines sample sizes needed for adequate sensitivity"
   ],
-  "readDigDeeper": "The diagnostic odds ratio (DOR) = (Sensitivity/(1-Sensitivity)) / ((1-Specificity)/Specificity) provides a single measure of test performance that's independent of disease prevalence, facilitating test comparison across different populations.",
-  "readWhyMatters": "Electronic health records increasingly incorporate Bayesian diagnostic assistance to help doctors avoid base rate neglect and diagnostic errors. Precision medicine uses Bayesian approaches to personalize treatment based on individual risk factors. Public health screening programs use Bayesian analysis to determine optimal testing strategies.",
-  "seeContent": "Work through medical diagnostic scenarios with interactive probability calculations, visualize how base rates affect diagnostic conclusions, and explore common diagnostic fallacies through realistic examples.",
-  "hearContent": "Listen as I walk through medical diagnosis like a detective case - starting with base rates, gathering symptomatic evidence, running tests, and systematically updating diagnostic probabilities!",
-  "hearAudioUrl": "/audio/8.8.mp3",
-  "doContent": "Use the Medical Diagnosis Calculator with real diagnostic scenarios, practice with the Base Rate Impact Simulator, and experiment with the Sequential Testing Analyzer for multiple test results.",
+  "readDigDeeper": "Optimal design theory finds the allocation of resources (e.g., sample sizes across groups) that maximizes power for fixed total cost, or minimizes cost for fixed power. This connects statistical power to experimental economics and efficient research design.",
+  "readWhyMatters": "Clinical trials require power analysis to ensure adequate sample sizes for detecting treatment effects. Tech companies use power analysis to plan A/B tests that won't miss important user behavior changes. Academic research uses power analysis to design studies that can reliably detect theoretically important effects.",
+  "seeContent": "Visualize power curves showing how probability of detection changes with effect size and sample size, explore power analysis calculations for study planning, and observe the relationship between power and other testing parameters.",
+  "hearContent": "Listen as I explain how statistical power measures our elegant ability to distinguish signal from noise - the mathematical expression of our sensitivity to truth when truth is there to be found!",
+  "hearAudioUrl": "/audio/7.8.mp3",
+  "doContent": "Use the Power Calculator for different effect sizes and sample sizes, practice with the Sample Size Planner using power analysis, and experiment with the Power Curve Explorer showing sensitivity relationships.",
   "memoryAids": {
-    "mantra": "Base rate first, then test with care - rare stays rare despite positive scare! Sensitivity, specificity, prevalence combine - Bayesian diagnosis, truly divine!",
-    "visual": "Picture Bayes as a medical detective, consulting case files for base rates (how common is this condition?), examining symptoms as clues, ordering tests as additional evidence, and systematically updating his diagnostic theory with each new piece of information."
+    "mantra": "Power detects what's truly there, with size and samples we prepare! High power means we'll likely see the effects that really be!",
+    "visual": "Picture Sigmund with increasingly powerful telescopes (representing higher statistical power) that let him detect smaller and more distant phenomena on his statistical lake, showing how power enhances our ability to perceive truth."
   },
   "conceptCheck": {
-    "question": "A disease affects 1 in 1000 people. A test has 95% sensitivity and 95% specificity. What's P(Disease|Positive Test)?",
+    "question": "A study has 60% power to detect a medium effect size. What does this mean and how could power be improved?",
     "options": [
-      "About 1.9% - most positive tests are false positives due to low base rate",
-      "95% - the test is 95% accurate",
-      "90% - sensitivity times specificity",
-      "50% - positive test makes disease equally likely as not"
+      "60% chance of detecting the effect if it exists; improve by increasing sample size",
+      "The effect size is 60% of what we expected to find",
+      "60% of the data supports the alternative hypothesis",
+      "There's a 40% chance of making a Type I error"
     ],
     "correctAnswer": 0,
-    "explanation": "P(Disease|+) = (0.95 × 0.001) / [0.95 × 0.001 + 0.05 × 0.999] = 0.00095 / 0.050895 ≈ 0.019 = 1.9%. Low base rate (0.1%) means most positive tests are false positives despite good test characteristics."
+    "explanation": "60% power means if a medium effect truly exists, this study has only a 60% chance of detecting it (40% chance of Type II error). Power can be improved by increasing sample size, using a larger α level, or if the true effect is larger than expected."
   },
-  "realWorldConnection": "IBM Watson Health uses Bayesian diagnostic reasoning to assist oncologists in cancer diagnosis and treatment planning. COVID-19 testing protocols incorporated Bayesian thinking about base rates in different populations to interpret test results. Genetic counseling uses Bayesian analysis to calculate disease risk probabilities based on family history and genetic test results.",
+  "realWorldConnection": "Pharmaceutical companies conduct power analysis to ensure clinical trials can detect meaningful treatment effects with adequate probability. Educational researchers use power analysis to design studies that won't miss important learning improvements. Environmental studies use power analysis to ensure adequate sensitivity for detecting pollution effects.",
   "hearTranscript": [
-    "This is where Bayesian detective work transforms from academic exercise into tools that solve real-world mysteries every day.",
-    "Spam filtering was one of the first major Bayesian success stories. Email systems learn from user behavior, updating probabilities that emails with certain word patterns are spam versus legitimate correspondence. Every time you mark an email as spam, you're providing evidence that updates the system's beliefs.",
-    "Medical diagnosis increasingly relies on Bayesian reasoning. Doctors start with disease base rates for patient populations, then update probabilities as symptoms appear and test results arrive. Electronic health records enable systematic prior specification based on patient demographics and medical history.",
-    "Financial fraud detection uses Bayesian analysis to identify suspicious transaction patterns. Instead of rigid rules that criminals can game, these systems maintain probability distributions over normal versus fraudulent behavior, updating continuously as new transaction data arrives.",
-    "A/B testing in technology companies has moved toward Bayesian methods that provide more interpretable results than classical significance testing. Instead of asking whether there's a statistically significant difference, Bayesian A/B testing estimates the probability that one variant is better and by how much.",
-    "Criminal justice applications include DNA analysis, where Bayes' theorem properly combines DNA match probabilities with other case evidence. Cold case investigations use Bayesian methods to systematically update suspect probabilities as new evidence emerges.",
-    "The power of Bayesian thinking is that it provides a unified framework for reasoning under uncertainty across any domain where evidence accumulates over time and prior knowledge matters."
+    "When conducting multiple statistical tests simultaneously, the probability of false discoveries increases dramatically... sophisticated researchers use multiple comparison procedures to maintain appropriate error control.",
+    "If each individual test has a 5% Type I error rate, conducting twenty independent tests creates approximately a 64% probability of at least one false discovery. This multiple comparisons problem threatens the integrity of scientific conclusions.",
+    "Bonferroni correction provides conservative protection by dividing the desired overall error rate by the number of tests. While simple, this approach can be overly conservative, reducing power to detect genuine effects.",
+    "More sophisticated procedures like the False Discovery Rate approach control the expected proportion of false discoveries among all rejected hypotheses, providing better power while maintaining error control.",
+    "Genomics research demonstrates these challenges at scale. When testing thousands of genes simultaneously for disease associations, multiple comparison corrections are essential to distinguish genuine discoveries from chance findings.",
+    "Pharmaceutical companies face similar challenges when analyzing multiple endpoints in clinical trials. Without proper correction, they might claim drug effectiveness based on chance discoveries among many measured outcomes.",
+    "A/B testing in technology companies requires multiple comparison awareness. When testing numerous website variations simultaneously, companies must adjust significance levels to maintain reliable conclusions about truly effective changes.",
+    "The intellectual sophistication lies in recognizing that statistical significance becomes meaningless without proper adjustment for multiple testing... maintaining the integrity of scientific inference."
   ]
 }

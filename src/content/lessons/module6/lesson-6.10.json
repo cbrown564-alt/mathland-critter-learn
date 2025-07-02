@@ -1,64 +1,64 @@
 {
   "id": "6.10",
-  "title": "Pippa's Probability & Distributions Capstone",
+  "title": "Greta's Optimization Mastery Capstone",
   "duration": "50-60 minutes",
-  "characterId": "pippa",
+  "characterId": "greta",
   "narrativeHook": {
-    "story": "Pippa faces the ultimate probability challenge: a comprehensive magical investigation that requires every technique she's mastered! From basic sample spaces through complex distributions, from expectation calculations to sampling theory - this capstone synthesizes all probability concepts into one integrated exploration of uncertainty and randomness.",
-    "characterMessage": "Time for the grand finale of probability magic! This ultimate challenge brings together everything we've learned - sample spaces, distributions, expectation, variance, limit theorems, and sampling. Let's solve a complex real-world problem that showcases the full power of probability theory!"
+    "story": "Greta faces the ultimate optimization challenge: a comprehensive project that requires every technique she's mastered! From finding critical points to implementing gradient descent with momentum, from analyzing convexity to handling constraints - this capstone synthesizes all optimization skills into one integrated mountaineering expedition.",
+    "characterMessage": "Time for the ultimate optimization expedition! This capstone brings together every technique we've mastered - critical point analysis, gradient descent algorithms, convexity analysis, and constraint handling. Let's tackle a complex real-world optimization problem that showcases the full power of mathematical mountaineering!"
   },
   "learningObjectives": [
-    "Synthesize all probability concepts in one comprehensive project",
-    "Apply multiple distribution types to model real phenomena",
-    "Calculate expectations, variances, and use limit theorems",
-    "Analyze sampling scenarios with proper statistical reasoning",
-    "Connect probability theory to practical decision-making applications"
+    "Synthesize all optimization concepts in one comprehensive project",
+    "Apply multiple optimization techniques to solve complex problems",
+    "Demonstrate computational fluency with gradient descent algorithms",
+    "Analyze optimization landscapes using mathematical and geometric tools",
+    "Connect optimization theory to real-world machine learning applications"
   ],
   "coreConcepts": [
-    "Complete probability analysis workflow",
-    "Distribution selection and parameter estimation",
-    "Expectation and variance calculations",
-    "Limit theorem applications",
-    "Sampling theory and inference"
+    "Complete optimization workflow",
+    "Critical point analysis and classification",
+    "Gradient descent implementation with momentum",
+    "Convexity analysis and landscape characterization",
+    "Constraint handling and real-world applications"
   ],
-  "readContent": "This capstone project synthesizes every probability concept into one comprehensive investigation. You'll analyze complex scenarios from basic sample space construction through advanced limit theorem applications, demonstrating mastery of distributions, expectation, variance, conditional probability, and sampling theory. The project mirrors real-world applications where probability provides the mathematical foundation for decision-making under uncertainty: quality control, financial risk assessment, medical diagnosis, and machine learning. This integrated approach shows how probability theory enables quantitative reasoning about uncertain phenomena across diverse fields.",
-  "readAnalogy": "This capstone is like Pippa conducting the ultimate magical performance! Every probability technique must work together perfectly - from basic sample spaces through complex distributions to advanced sampling theory. It's the complete demonstration of how mathematics transforms uncertainty into actionable insights!",
+  "readContent": "This capstone project synthesizes every optimization technique into one comprehensive investigation. You'll analyze complex functions from critical point identification through advanced algorithmic implementation, demonstrating mastery of mathematical analysis, gradient descent algorithms, momentum methods, and constraint handling. The project mirrors real-world optimization challenges where multiple techniques must work together: understanding the landscape through mathematical analysis, implementing efficient algorithms, and interpreting results in application contexts. This integrated approach shows how optimization theory enables practical problem-solving in machine learning, engineering, and quantitative analysis.",
+  "readAnalogy": "This capstone is like Greta leading the ultimate mountaineering expedition! Every optimization tool must work together perfectly - from reading topographic maps (mathematical analysis) to choosing optimal routes (algorithm selection) to navigating safely (constraint handling). It's the complete demonstration of optimization mastery!",
   "readKeyPoints": [
-    "Complete probability analysis: sample spaces through statistical inference",
-    "Integration of discrete and continuous distributions with real applications",
-    "Expectation, variance, and limit theorems for practical problem-solving"
+    "Complete optimization analysis: landscape characterization through algorithm implementation",
+    "Integration of theory and practice: mathematical analysis plus computational methods",
+    "Real-world problem solving using comprehensive optimization toolkit"
   ],
-  "readDigDeeper": "This project workflow mirrors professional probability applications: data scientists model user behavior with distributions, actuaries use probability for insurance pricing, engineers apply probability for reliability analysis, and economists use probability for market forecasting. The mathematical techniques you're mastering form the foundation of quantitative decision-making.",
-  "readWhyMatters": "This capstone demonstrates career-ready probability skills. Data scientists use these exact techniques for predictive modeling and A/B testing. Actuaries apply probability theory for insurance and pension calculations. Quality engineers use probability for process control and reliability analysis. Your probability mastery translates directly to high-impact careers in data science, finance, engineering, and research.",
-  "seeContent": "Work through comprehensive probability analysis tools that integrate distribution fitting, parameter estimation, expectation calculations, and sampling simulations in realistic application scenarios.",
-  "hearContent": "Listen as I guide you through the ultimate demonstration of probability mastery - every concept working together with the playful precision and magical insight that defines excellent probabilistic reasoning!",
-  "hearAudioUrl": "/audio/6.10.mp3",
-  "doContent": "Complete the comprehensive probability project: construct sample spaces, select and apply appropriate distributions, calculate expectations and variances, apply limit theorems for approximations, and analyze sampling scenarios with proper uncertainty quantification.",
+  "readDigDeeper": "This project workflow mirrors professional optimization applications: data scientists analyze loss function landscapes before choosing algorithms, engineers characterize design spaces before optimization, and quantitative analysts understand market models before implementing trading strategies.",
+  "readWhyMatters": "This capstone demonstrates industry-ready optimization skills. Machine learning engineers use these exact techniques for neural network training. Quantitative analysts apply optimization for portfolio management. Operations researchers use these methods for supply chain optimization. Your mathematical mountaineering skills translate directly to high-impact technical careers.",
+  "seeContent": "Work through comprehensive optimization analysis tools, implement gradient descent algorithms with visualization, and observe how mathematical theory guides practical algorithm selection and tuning.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of optimization mastery - every technique working together with the determination and precision that defines excellent mathematical mountaineering!",
+  "hearAudioUrl": "/audio/5.10.mp3",
+  "doContent": "Complete the comprehensive optimization project: analyze function landscapes mathematically, classify critical points using second-derivative tests, implement gradient descent with momentum, characterize convexity properties, and solve constrained optimization problems with real-world interpretation.",
   "memoryAids": {
-    "mantra": "Every distribution, every theorem, every magical rule - probability mastery is the ultimate tool! From uncertainty to insight with mathematical might!",
-    "visual": "Picture yourself as Pippa's magical apprentice, using every probability technique with playful precision to transform a complex uncertain scenario into clear, quantified insights that guide real-world decisions."
+    "mantra": "Every peak, every valley, every algorithm too - optimization mastery shows what math can do! From theory to practice, summit to base - that's Greta's optimization ace!",
+    "visual": "Picture yourself as Greta's expedition partner, using every optimization technique with mountaineering precision to conquer a complex mathematical landscape that showcases the full power of optimization theory and practice."
   },
   "conceptCheck": {
-    "question": "In Part C, you model customer arrivals as Poisson(λ=5 per hour) and use Normal approximation. What justifies this approximation and what parameters should you use?",
+    "question": "In Part D, your gradient descent algorithm converges to different points depending on the starting location. What does this reveal about the optimization landscape?",
     "options": [
-      "Poisson(5) ≈ Normal(5, 5) since for large λ, Poisson approaches Normal with μ = σ² = λ",
-      "Use Normal(5, √5) since Poisson variance equals the mean",
-      "Cannot use Normal approximation since Poisson is discrete",
-      "Both A and B describe the same approximation with different variance notation"
+      "The function has multiple local minima - it's non-convex with several basins of attraction",
+      "The learning rate is wrong - properly tuned algorithms always find the same solution",
+      "The function is convex but the algorithm implementation has bugs",
+      "This behavior is impossible for properly implemented gradient descent"
     ],
-    "correctAnswer": 3,
-    "explanation": "For large λ, Poisson(λ) ≈ Normal(λ, λ). Here: Poisson(5) ≈ Normal(5, 5). Since Normal uses standard deviation, this is Normal(μ=5, σ=√5). Both A and B are correct - A uses variance notation (σ²=5), B uses standard deviation notation (σ=√5)."
+    "correctAnswer": 0,
+    "explanation": "Different convergence points from different starting locations indicates multiple local minima, confirming the function is non-convex. Each starting point falls into the basin of attraction of a different local minimum, which is typical behavior for complex optimization landscapes."
   },
-  "realWorldConnection": "This project mirrors real data science workflows: modeling user behavior with appropriate distributions, calculating expected outcomes for business planning, using limit theorems for approximations, and applying sampling theory for A/B testing. The probability mastery you've developed applies directly to careers in data science, actuarial science, quality engineering, and quantitative research.",
+  "realWorldConnection": "This project mirrors real machine learning workflows: analyzing loss function properties, implementing optimization algorithms, and interpreting convergence behavior. The optimization mastery you've developed applies directly to careers in AI, quantitative finance, engineering optimization, and data science research.",
   "hearTranscript": [
-    "The ultimate probability adventure... I'm designing a magical performance that demonstrates every probability concept we've mastered through one spectacular show!",
-    "Your mission: create a complete uncertainty analysis for a new business launch. You'll use probability mathematics to model customer behavior, predict sales, and optimize marketing strategies.",
-    "Part A: Define sample spaces and events for customer interactions. Model the complete range of possible outcomes from marketing campaigns, website visits, and purchase decisions. Use conditional probability to understand how different customer segments respond to various approaches.",
-    "Part B: Choose appropriate probability distributions for different business metrics. Model customer arrivals with Poisson distributions, purchase amounts with normal distributions, and conversion rates with binomial distributions. Calculate expected values and variances for revenue forecasting.",
-    "Part C: Apply the Central Limit Theorem to create confidence intervals for projected outcomes. Use sampling theory to determine how much market research data you need for reliable predictions.",
-    "Part D: Build probabilistic models that update predictions as new data arrives. Implement Bayesian approaches that combine prior business knowledge with observed customer behavior.",
-    "Part E: Design probability-based decision rules for marketing optimization. Use expected value calculations to choose between different campaign strategies, accounting for both potential gains and risks.",
-    "This project demonstrates how probability thinking transforms business uncertainty into systematic, mathematical analysis. The same approaches enable data-driven decision making in any domain where outcomes are uncertain but patterns exist.",
-    "You're not just learning mathematics... you're developing the probabilistic intuition that enables intelligent reasoning under uncertainty in our wonderfully unpredictable world!"
+    "The ultimate optimization adventure... I'm designing a comprehensive challenge that uses every optimization technique we've mastered to solve a real-world business problem.",
+    "Your mission: optimize a delivery network for a growing e-commerce company. You need to minimize total costs while maintaining customer satisfaction and adapting to changing demand patterns.",
+    "Part A: Formulate the multi-objective optimization problem. Balance delivery speed, transportation costs, warehouse efficiency, and customer satisfaction. Define objective functions and constraints that capture real business trade-offs.",
+    "Part B: Apply gradient-based methods to optimize warehouse locations and inventory levels. Use the Hessian matrix to verify that your solutions represent true optima rather than saddle points or local minima.",
+    "Part C: Implement stochastic optimization algorithms that can handle uncertainty in customer demand and adapt to seasonal variations. Your optimization strategy must be robust to changing business conditions.",
+    "Part D: Use constrained optimization techniques to respect budget limitations, capacity constraints, and service level agreements. Apply Lagrange multipliers to find optimal trade-offs between competing objectives.",
+    "Part E: Design validation strategies that test your optimization solutions under different scenarios. Ensure that optimal configurations maintain their performance as business conditions evolve.",
+    "This project demonstrates how optimization thinking transforms complex business challenges into systematic, solvable problems with measurable improvements. The same principles apply to any domain where you need to find the best possible outcomes given real-world constraints.",
+    "You're not just learning mathematics... you're developing the strategic mindset that turns optimization theory into practical solutions that create lasting value."
   ]
 }

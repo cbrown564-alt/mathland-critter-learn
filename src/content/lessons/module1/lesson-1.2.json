@@ -1,61 +1,60 @@
 {
   "id": "1.2",
-  "title": "Vector Addition & Scalar Multiplication",
-  "duration": "35-40 minutes",
-  "characterId": "vera",
+  "title": "Factoring & Expanding Expressions",
+  "duration": "30-35 minutes",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Vera's friend Max the Squirrel wants to join her hike. They start from different trees but want to meet at the waterfall. How do we combine their separate journeys? This is where vector addition becomes our superpower - the ability to combine multiple movements into a single, efficient path!",
-    "characterMessage": "Follow clue 1, then clue 2 - where do you end up? That's vector addition! It's like having a magical ability to combine journeys, and the amazing thing is, order doesn't matter - math proves it!"
+    "story": "Ollie's dam can be built in sections, then combined - or taken apart and rebuilt. Algebraic expressions work the same way: we can expand them into parts or factor them back together.",
+    "characterMessage": "Every dam can be taken apart and rebuilt! Just like how I can break down my dam into individual sticks or combine sticks into larger sections, we can factor and expand algebraic expressions."
   },
   "learningObjectives": [
-    "Add vectors using both geometric (tip-to-tail) and algebraic methods",
-    "Apply the commutative property of vector addition",
-    "Multiply vectors by scalars and understand the geometric effect",
-    "Understand vector subtraction as addition of negative vectors",
-    "Apply vector operations to solve real-world problems"
+    "Apply the distributive property to expand expressions",
+    "Factor out common terms from algebraic expressions",
+    "Recognize and factor difference of squares patterns",
+    "Use the FOIL method for multiplying binomials"
   ],
   "coreConcepts": [
-    "Vector addition: geometric and algebraic methods",
-    "Commutative property: **u** + **v** = **v** + **u**",
-    "Scalar multiplication: stretching and shrinking",
-    "Negative vectors and subtraction",
-    "Properties of vector operations"
+    "Distributive property",
+    "Factoring common terms",
+    "Difference of squares",
+    "Perfect square trinomials",
+    "FOIL method"
   ],
-  "readContent": "Combining journeys is where vectors shine! Vector addition uses the tip-to-tail method: start your second vector where the first one ends. Algebraically, just add corresponding components: [a,b] + [c,d] = [a+c, b+d]. The amazing thing? Order doesn't matter - [3,2] + [1,4] = [1,4] + [3,2]. Scalar multiplication stretches or shrinks vectors: 2v doubles the length, -v flips the direction.",
-  "readAnalogy": "Vector addition is like following a treasure map with multiple clues. Whether you follow clue A then clue B, or clue B then clue A, you end up at the same treasure location! That's the commutative property working its magic.",
+  "readContent": "Just like I can break down my dam into individual sticks or combine sticks into larger sections, algebraic expressions can be factored into simpler pieces or expanded into detailed forms. The distributive property a(b + c) = ab + ac is my basic building tool. Key patterns include difference of squares (a² - b² = (a-b)(a+b)) and perfect square trinomials. These patterns appear everywhere in dam engineering calculations.",
+  "readAnalogy": "Factoring is like taking apart a completed dam section to see how it was built from individual components. Expanding is like combining individual sticks and stones into a complete dam structure. Both processes reveal different aspects of the same mathematical construction.",
   "readKeyPoints": [
-    "Tip-to-tail method: place the tail of the second vector at the tip of the first",
-    "Algebraic addition: add corresponding components [a,b] + [c,d] = [a+c, b+d]",
-    "Scalar multiplication: kv stretches (|k| > 1), shrinks (|k| < 1), or flips (k < 0)"
+    "Distributive property: a(b + c) = ab + ac - like distributing materials evenly",
+    "Difference of squares: a² - b² = (a-b)(a+b) - a special structural pattern",
+    "Common factors can be pulled out like identifying reusable building materials"
   ],
-  "readDigDeeper": "Vector addition is commutative (u + v = v + u) and associative (u + (v + w) = (u + v) + w). The parallelogram method gives the same result as tip-to-tail. Vector subtraction u - v equals u + (-v).",
-  "readWhyMatters": "Netflix combines multiple preference vectors to recommend movies. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns in data.",
-  "seeContent": "Explore animated tip-to-tail vector addition and see how the parallelogram method gives the same result. Watch how scalar multiplication transforms vectors by stretching, shrinking, and flipping them.",
-  "hearContent": "Listen as I explain how combining vectors is like planning the ultimate treasure hunt - multiple clues that lead to one destination, and amazingly, the order you follow them doesn't change where you end up!",
-  "hearAudioUrl": "/audio/1.2.mp3",
-  "doContent": "Use the Vector Addition Simulator to drag vectors and see their combinations, practice with the Parallelogram Constructor, and experiment with the Scalar Slider to see how multiplying by different numbers affects vector size and direction.",
+  "readDigDeeper": "Advanced factoring includes techniques like grouping, substitution, and using the rational root theorem for higher-degree polynomials. In calculus, factoring helps with integration by partial fractions, and in number theory, factoring is fundamental to cryptography.",
+  "readWhyMatters": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. Machine learning algorithms often benefit from factored forms that expose underlying structure and reduce computational complexity.",
+  "seeContent": "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
+  "hearContent": "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
+  "hearAudioUrl": "/audio/0.2.mp3",
+  "doContent": "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion.",
   "memoryAids": {
-    "mantra": "Tip-to-tail takes you there - start where the first arrow ends, and draw the second arrow from there!",
-    "visual": "Imagine following a treasure map with multiple clues - each vector is a clue, and vector addition shows your final destination no matter what order you follow them."
+    "mantra": "Every dam can be taken apart and rebuilt - just like algebraic expressions!",
+    "visual": "Ollie's building blocks showing how expressions can be broken down into factors or combined into expanded forms"
   },
   "conceptCheck": {
-    "question": "If Vera walks vector [3, 2] and then vector [1, 4], what's her final displacement? Why does order not matter?",
+    "question": "Factor the expression: x² - 9. What pattern does this represent?",
     "options": [
-      "[4, 6] - order doesn't matter due to the commutative property",
-      "[3, 8] - you multiply the first vector by the second",
-      "[2, 2] - you take the average of both vectors",
-      "[4, 6] - but only if you go in the correct order"
+      "(x - 3)(x + 3), a difference of squares",
+      "(x - 9)(x + 1), a linear factorization",
+      "x(x - 9), factoring out x",
+      "Cannot be factored further"
     ],
     "correctAnswer": 0,
-    "explanation": "Vector addition: [3,2] + [1,4] = [3+1, 2+4] = [4,6]. The commutative property means [3,2] + [1,4] = [1,4] + [3,2] - same final destination regardless of order!"
+    "explanation": "x² - 9 is a difference of squares pattern (a² - b²) where a = x and b = 3. It factors as (x - 3)(x + 3). This pattern appears frequently in data science optimization problems."
   },
-  "realWorldConnection": "Netflix combines multiple preference vectors to recommend movies - your comedy preference + recent viewing + time-of-day patterns. GPS systems add road segment vectors to calculate total routes. In machine learning, we combine feature vectors to make predictions about complex patterns.",
+  "realWorldConnection": "In data science, factoring helps simplify complex formulas and reveal hidden patterns in data relationships. It's like finding the common factors that influence multiple variables in your dataset.",
   "hearTranscript": [
-    "Adding vectors is like following a treasure map with multiple clues... each step builds on the previous one to get you to your final destination.",
-    "Picture this: you walk 3 kilometers east, then 4 kilometers north. Where do you end up? That's vector addition in action! The beautiful thing is, it doesn't matter which order you follow the directions... east then north gives you the same final position as north then east.",
-    "I love the parallelogram rule for vector addition. Place the vectors tip-to-tail like a walking path, and the sum is the direct route from start to finish. It's like discovering the shortcut that connects your entire journey.",
-    "In computer graphics, every smooth animation uses vector addition. When a character walks across the screen while the camera pans, that's adding movement vectors plus camera vectors to create the final motion you see.",
-    "GPS systems add velocity vectors constantly. Your car's velocity plus wind resistance plus road incline... all these vectors combine to predict exactly where you'll be and how long it will take to reach your destination.",
-    "Vector addition follows the same rules as regular addition... it's commutative and associative, making complex multi-step movements predictable and reliable."
+    "Factoring and expanding are like having architectural blueprints that work both ways... you can go from detailed plans to the big picture, or break down complex structures into simpler components.",
+    "When I expand expressions, I'm like an architect taking a compact design and showing all the detailed elements. Take the expression 3 times the quantity x plus 4... when I expand it, I get 3x plus 12. I'm distributing that 3 to each part inside the parentheses, like applying the same construction technique to each section of a building.",
+    "Factoring works in reverse... it's like looking at a complex structure and recognizing the simple pattern that created it. If I see 6x plus 9, I can factor out the common factor of 3 to get 3 times the quantity 2x plus 3. I'm finding the shared blueprint that generates the whole expression.",
+    "Greatest common factors are like finding the standard tools that work throughout a project. When I see 12x squared plus 18x, both terms share 6x as a common factor, giving me 6x times the quantity 2x plus 3.",
+    "Factoring quadratics is like reverse-engineering a design. If I have x squared plus 5x plus 6, I need two numbers that multiply to 6 and add to 5... that's 2 and 3, giving me the factors x plus 2 and x plus 3.",
+    "These skills are essential for data science... when you're optimizing cost functions or simplifying statistical formulas, you're using the same systematic thinking that makes my construction projects successful."
   ]
 }

@@ -1,61 +1,59 @@
 {
   "id": "3.1",
-  "title": "Introduction to Eigenvalues & Eigenvectors",
-  "duration": "35-40 minutes",
-  "characterId": "eileen",
+  "title": "Matrix Basics - Organizing Information Systematically",
+  "duration": "30-35 minutes",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen Eigen, the detective cat, is investigating a mysterious mathematical phenomenon: some vectors, when transformed by matrices, don't change direction at all - they only get longer or shorter! These special vectors hold the key to understanding the hidden structure of any transformation.",
-    "characterMessage": "Every matrix has secrets, and I'm here to help you uncover them! Some vectors are so special that when a matrix transforms them, they keep pointing in exactly the same direction. These are eigenvectors, and they reveal the matrix's true personality!"
+    "story": "Matrix Max the Squirrel has a problem: he needs to organize information about hundreds of forest locations, each with multiple attributes like elevation, tree density, water sources, and wildlife counts. A simple list won't work - he needs a systematic grid where he can find any piece of information instantly. This is where matrices shine: organized, systematic information management.",
+    "characterMessage": "I organize worlds—row by row, column by column! Think of a matrix as the ultimate filing cabinet where every piece of information has a precise address. Row 3, Column 2? I can find that data instantly! Let me show you how systematic organization transforms chaos into clarity."
   },
   "learningObjectives": [
-    "Understand eigenvectors as special directions preserved by matrix transformations",
-    "Define eigenvalues as scaling factors along eigenvector directions",
-    "Recognize the geometric meaning of eigenvalue-eigenvector pairs",
-    "Identify why eigenvalues and eigenvectors reveal matrix structure",
-    "Connect eigenvector concepts to real-world applications"
+    "Define matrices as rectangular arrays of numbers with systematic organization",
+    "Understand matrix dimensions and element addressing using row-column notation",
+    "Distinguish between different types of matrices (square, rectangular, zero, identity)",
+    "Navigate matrix structure and locate specific elements efficiently",
+    "Recognize real-world applications where matrix organization is essential"
   ],
   "coreConcepts": [
-    "Eigenvector definition: Av = λv where v ≠ 0",
-    "Eigenvalue as scaling factor λ",
-    "Geometric interpretation: preserved directions",
-    "Matrix personality through eigenstructure",
-    "Applications in data analysis and physics"
+    "Matrix definition and structure",
+    "Matrix dimensions (m × n)",
+    "Element notation: A[i,j] or aᵢⱼ",
+    "Special matrices: zero, identity, diagonal",
+    "Square vs rectangular matrices"
   ],
-  "readContent": "Picture this: I'm investigating a mathematical crime scene where most vectors get completely scrambled when a matrix transforms them, but some stubborn vectors refuse to change direction! These are eigenvectors - the key witnesses that reveal a matrix's true identity. They only get longer or shorter (scaled by their eigenvalue λ), never turning aside. It's like finding people who can't be influenced to change their fundamental nature, no matter what pressure is applied.",
-  "readAnalogy": "Think of eigenvectors as the matrix's 'favorite directions' - like how a river always flows downhill no matter what obstacles it encounters. The eigenvalue tells you how much the matrix amplifies that direction, but the direction itself remains unchanged.",
+  "readContent": "A matrix is a rectangular array of numbers organized in rows and columns, providing systematic storage and manipulation of multi-dimensional data. Matrix dimensions are expressed as m × n (m rows, n columns). Elements are accessed using notation A[i,j] or aᵢⱼ for the element in row i, column j. Special matrices include the zero matrix (all elements zero), identity matrix (1s on diagonal, 0s elsewhere), and diagonal matrices. Matrices enable efficient organization of data relationships, from simple tables to complex transformations in computer graphics and machine learning.",
+  "readAnalogy": "Imagine the most perfectly organized library ever built - every book has a precise location (row, shelf), and you can find any information instantly by knowing its address. That's what matrices do for mathematical information!",
   "readKeyPoints": [
-    "Eigenvector equation: Av = λv where v ≠ 0 (direction preserved, magnitude scaled)",
-    "Eigenvalue λ can be positive (same direction), negative (opposite), or complex (rotation)",
-    "Every matrix has a unique 'personality' revealed through its eigenvalue-eigenvector pairs"
+    "Matrix dimensions: m × n means m rows by n columns",
+    "Element addressing: A[i,j] means row i, column j - always row first!",
+    "Special types: square (same rows/columns), zero (all zeros), identity (1s on diagonal)"
   ],
-  "readDigDeeper": "Complex eigenvalues indicate rotational behavior - the matrix doesn't just stretch space, it twists it. The magnitude |λ| controls growth/decay while the argument controls rotation speed. This is crucial for understanding oscillatory systems in engineering and physics.",
-  "readWhyMatters": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face images), Google's PageRank finds the principal eigenvector of web connections, and structural engineers use eigenvectors to identify building vibration modes.",
-  "seeContent": "Watch interactive demonstrations where matrices transform vectors, highlighting how most vectors change direction but eigenvectors maintain their orientation while only changing in length by the eigenvalue factor.",
-  "hearContent": "Listen as I explain how eigenvectors are like the matrix's favorite directions - the paths it naturally wants to follow when transforming space, revealing the hidden personality of any mathematical transformation!",
-  "hearAudioUrl": "/audio/3.1.mp3",
-  "doContent": "Use the Eigenvector Detective tool to find special vectors that don't change direction, experiment with the Matrix Personality Analyzer, and practice with the Direction Preservation Checker to identify eigenvector candidates.",
+  "readDigDeeper": "Matrices can represent various mathematical objects: transformation rules, systems of equations, data tables, adjacency graphs, and probability transitions. The organizational structure enables systematic manipulation of complex information.",
+  "readWhyMatters": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems represent road networks as matrices for navigation calculations.",
+  "seeContent": "Explore interactive matrix grids showing how information gets organized systematically. See how changing matrix dimensions affects data storage capacity and watch real-world examples like spreadsheets, image pixels, and database tables.",
+  "hearContent": "Listen as I explain how organizing information systematically is like having a perfectly arranged library - every book has its place, and you can find anything instantly when you know the organizational system!",
+  "hearAudioUrl": "/audio/2.1.mp3",
+  "doContent": "Practice with the Matrix Builder to create different sized matrices, use the Element Locator to find specific positions, and experiment with the Matrix Type Identifier to recognize different matrix categories.",
   "memoryAids": {
-    "mantra": "Same direction, different length - that's the eigenvector fingerprint that reveals every matrix's secrets!",
-    "visual": "Picture Eileen as a detective finding vectors that are so stubborn they refuse to change direction no matter how the matrix tries to transform them."
+    "mantra": "Row by row, column by column - every piece of information has its perfect place in my organized world!",
+    "visual": "Picture Max's filing cabinet: rows are like file drawers, columns are like folders within drawers, and each element is a specific document with a precise address."
   },
   "conceptCheck": {
-    "question": "If vector [3, 6] is an eigenvector of matrix A with eigenvalue 2, what happens when A transforms this vector?",
+    "question": "In a 3×4 matrix representing forest data, what does element A[2,3] represent, and how many total elements are in the matrix?",
     "options": [
-      "The result is [6, 12] - same direction, doubled length",
-      "The result is [5, 8] - different direction and length",
-      "The result is [3, 6] - completely unchanged",
-      "The result is [1.5, 3] - same direction, halved length"
+      "Element in row 2, column 3; total of 12 elements",
+      "Element in row 3, column 2; total of 7 elements",
+      "Element in row 2, column 3; total of 6 elements",
+      "The 23rd element; total of 34 elements"
     ],
     "correctAnswer": 0,
-    "explanation": "If [3,6] is an eigenvector with eigenvalue 2, then A[3,6] = 2[3,6] = [6,12]. The vector maintains its direction but gets scaled by the eigenvalue factor of 2."
+    "explanation": "A[2,3] means row 2, column 3. A 3×4 matrix has 3 rows and 4 columns, so total elements = 3 × 4 = 12. Matrix addressing always follows [row, column] convention."
   },
-  "realWorldConnection": "Eigenvectors reveal the principal directions in data: facial recognition systems use eigenfaces (eigenvectors of face data), Google's PageRank algorithm finds the principal eigenvector of web link matrices, and structural engineers use eigenvectors to identify building vibration modes.",
+  "realWorldConnection": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems use matrices to represent road networks for navigation calculations.",
   "hearTranscript": [
-    "Every matrix has secrets... and I'm here to help you uncover them.",
-    "Picture this: you transform hundreds of vectors with a matrix, and most of them get twisted, rotated, completely scrambled. But then you discover something extraordinary... certain vectors are absolutely stubborn. No matter how hard the matrix tries to transform them, they refuse to change direction.",
-    "These aren't random vectors. These are eigenvectors... the mathematical equivalent of witnesses who can't be intimidated into changing their story.",
-    "When a matrix transforms an eigenvector, something beautiful happens. The vector keeps pointing in exactly the same direction, but it might get longer or shorter. That scaling factor? That's the eigenvalue... the vector's personal transformation signature.",
-    "Think of eigenvalues and eigenvectors as the matrix's true personality revealed. Some matrices love to stretch things in certain directions, others prefer to shrink, and some even flip vectors to point the opposite way.",
-    "When your phone recognizes your face instantly, when Netflix somehow knows exactly what you want to watch next, when Google delivers the perfect search result... they're all using eigenvector analysis to find the hidden patterns that matter most."
+    "Think of matrices as the ultimate filing system... Every piece of information has a precise address. Row 3, Column 2? I can find that data instantly!",
+    "You see, most people think matrices are just grids of numbers. But they're actually organizational masterpieces. Imagine the most perfectly arranged library ever built... every book has its exact location, and you never waste time searching.",
+    "That's what matrices do for mathematical information. The beauty is in the system: m by n means m rows by n columns. Always row first, then column... just like reading directions on a map.",
+    "When Netflix recommends your next binge-watch, when your GPS calculates the fastest route, when your bank processes millions of transactions... they're all using my systematic matrix organization to keep everything perfectly arranged and instantly accessible."
   ]
 }

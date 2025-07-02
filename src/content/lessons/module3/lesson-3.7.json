@@ -1,62 +1,60 @@
 {
   "id": "3.7",
-  "title": "Matrix Powers & Exponentials",
-  "duration": "35-40 minutes",
-  "characterId": "eileen",
+  "title": "Matrix-Vector Products as Transformations",
+  "duration": "40-45 minutes",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen discovers that eigenvalues hold the key to understanding what happens when matrices are multiplied by themselves many times, or even raised to infinite powers! These calculations reveal long-term behavior of dynamic systems and unlock advanced mathematical applications.",
-    "characterMessage": "Want to see mathematical time travel? Eigenvalues let me compute what happens to systems after many time steps, or even predict infinite-time behavior! It's like having a crystal ball for mathematical transformations!"
+    "story": "Max realizes that when he multiplies a matrix by a vector, he's not just calculating numbers - he's systematically transforming the vector into a new location. Every matrix is actually a transformation machine that takes input vectors and produces output vectors according to precise mathematical rules.",
+    "characterMessage": "This is where everything clicks together! When I multiply a matrix by a vector, I'm not just doing arithmetic - I'm applying a systematic transformation. Every matrix is actually a transformation machine with its own personality: some rotate, some stretch, some flip, some project. Let me show you how!"
   },
   "learningObjectives": [
-    "Compute matrix powers efficiently using diagonalization",
-    "Understand matrix exponentials and their eigenvalue computation",
-    "Analyze long-term behavior of discrete dynamical systems",
-    "Apply eigenvalue analysis to Markov chains and population models",
-    "Connect matrix powers to differential equation solutions"
+    "Interpret matrix-vector multiplication as geometric transformation",
+    "Understand how matrix columns determine where basis vectors go",
+    "Analyze different types of transformations: rotation, scaling, reflection, projection",
+    "Compose transformations by multiplying matrices",
+    "Connect linear transformations to real-world applications"
   ],
   "coreConcepts": [
-    "Matrix powers: Aⁿ = PDⁿP⁻¹",
-    "Matrix exponentials: e^At = Pe^{Dt}P⁻¹",
-    "Stability analysis using eigenvalue magnitudes",
-    "Markov chain steady states",
-    "Population dynamics and growth models"
+    "Matrix-vector product as transformation",
+    "Matrix columns as transformed basis vectors",
+    "Types: rotation, scaling, reflection, shear, projection",
+    "Composition of transformations",
+    "Linear transformation properties"
   ],
-  "readContent": "Diagonalization makes matrix powers trivial: if A = PDP⁻¹, then Aⁿ = PDⁿP⁻¹. Matrix exponentials e^{At} = Pe^{Dt}P⁻¹ where e^{Dt} is diagonal with entries e^{λᵢt}. For large n, the behavior of Aⁿ depends on eigenvalue magnitudes: |λ| > 1 grows, |λ| < 1 decays, |λ| = 1 is neutral. This determines stability of dynamical systems. Markov chains reach steady states determined by the eigenvalue λ = 1. Population models use matrix exponentials to predict growth patterns, where eigenvalues determine growth rates and eigenvectors show population distributions.",
-  "readAnalogy": "Eigenvalues are like mathematical DNA that determines long-term behavior! Through diagonalization, matrix powers become trivial: A^n = PD^nP⁻¹, where eigenvalue magnitudes control destiny. If |λ| > 1, that direction grows exponentially; if |λ| < 1, it decays; if |λ| = 1, it remains stable. For matrix exponentials e^{At} = Pe^{Dt}P⁻¹, eigenvalues directly control the exponential growth rates of different directions in the system.",
+  "readContent": "Matrix-vector multiplication Av transforms vector v according to the linear transformation represented by matrix A. The matrix columns show where the standard basis vectors [1,0] and [0,1] get mapped. Common transformations include: rotation (preserves length and angles), scaling (changes size), reflection (flips across lines), shear (slides parallel layers), and projection (flattens to lower dimensions). Transformation composition works by matrix multiplication: applying transformation B then A equals applying transformation AB. All linear transformations preserve vector addition and scalar multiplication: T(u + v) = T(u) + T(v) and T(cu) = cT(u).",
+  "readAnalogy": "Matrix-vector multiplication is like applying a series of transformations to a vector - each transformation is represented by a matrix, and the result is the final transformed vector. This is a fundamental operation in linear algebra and computer graphics.",
   "readKeyPoints": [
-    "Matrix powers: A^n = PD^nP⁻¹ where eigenvalue magnitudes control growth/decay",
-    "Stability: |λ| > 1 grows, |λ| < 1 decays, |λ| = 1 neutral",
-    "Matrix exponentials: e^{At} = Pe^{Dt}P⁻¹ for continuous-time systems"
+    "Matrix-vector multiplication: Av",
+    "Transformation interpretation: each column of A represents a transformed basis vector",
+    "Types of transformations: rotation, scaling, reflection, shear, projection"
   ],
-  "readDigDeeper": "Markov chains reach steady states determined by the eigenvalue λ = 1 and its corresponding eigenvector. The second-largest eigenvalue controls the convergence rate to equilibrium - closer to 1 means slower convergence.",
-  "readWhyMatters": "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Google's PageRank finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
-  "seeContent": "Watch matrix powers evolve over time, see how eigenvalue magnitudes control long-term behavior, and observe how Markov chains converge to steady states determined by principal eigenvectors.",
-  "hearContent": "Listen as I explain how eigenvalues are like mathematical DNA - they determine whether systems grow, shrink, oscillate, or reach equilibrium over time!",
-  "hearAudioUrl": "/audio/3.7.mp3",
-  "doContent": "Use the Matrix Power Predictor to see long-term evolution, experiment with the Stability Analyzer based on eigenvalue magnitudes, and practice with the Markov Chain Simulator to find steady states.",
+  "readDigDeeper": "Matrix-vector multiplication is a powerful tool for understanding linear transformations. It's used in various applications like computer graphics, robotics, and machine learning.",
+  "readWhyMatters": "Matrix-vector multiplication is a fundamental operation in linear algebra and computer graphics: it allows us to apply linear transformations to vectors, which is essential for understanding and manipulating geometric transformations.",
+  "seeContent": "Watch vectors transform in real-time as matrix values change, see how different matrix types create rotation, scaling, reflection, and other transformations, and observe transformation composition through matrix multiplication.",
+  "hearContent": "Listen as I explain how every matrix has its own transformation personality - some are gentle rotators, others are aggressive stretchers, and some are precise projectors. Each one systematically changes vectors according to its mathematical nature!",
+  "hearAudioUrl": "/audio/2.7.mp3",
+  "doContent": "Use the Transformation Visualizer to see matrix-vector products as geometric changes, experiment with the Matrix Personality Detector to identify transformation types, and practice the Transformation Composer to combine multiple transformations.",
   "memoryAids": {
-    "mantra": "Eigenvalue size predicts the future - bigger than 1 grows, smaller than 1 shrinks, exactly 1 stays steady!",
-    "visual": "Picture Eileen with a mathematical time machine where eigenvalues control the speed and direction of time travel through matrix transformations."
+    "mantra": "Every matrix is a transformation machine with its own personality - rotation, scaling, flipping, or projecting vectors systematically!",
+    "visual": "Picture Max as a transformation wizard: each matrix is a different spell that systematically changes vectors - some spells rotate, others stretch, flip, or flatten vectors according to precise magical rules."
   },
   "conceptCheck": {
-    "question": "A population model has eigenvalues 1.2 and 0.8. What happens to populations over many generations?",
+    "question": "Matrix [[0,-1],[1,0]] transforms vector [3,4]. What transformation does this matrix represent and what's the result?",
     "options": [
-      "Population grows exponentially in the direction of the 1.2-eigenvalue eigenvector",
-      "Population shrinks exponentially in all directions",
-      "Population oscillates between growth and decay",
-      "Population reaches immediate equilibrium"
+      "90° counterclockwise rotation, result is [-4,3]",
+      "Reflection across y=x line, result is [4,3]",
+      "Scaling by factor 2, result is [6,8]",
+      "Projection onto x-axis, result is [3,0]"
     ],
     "correctAnswer": 0,
-    "explanation": "Eigenvalue 1.2 > 1 causes exponential growth, while 0.8 < 1 causes decay. Over time, the 1.2-eigenvalue component dominates, so population grows exponentially in the direction of that eigenvector."
+    "explanation": "Matrix [[0,-1],[1,0]] rotates vectors 90° counterclockwise. Applying to [3,4]: [0×3 + (-1)×4, 1×3 + 0×4] = [-4,3]. The columns show where [1,0]→[0,1] and [0,1]→[-1,0], confirming 90° rotation."
   },
-  "realWorldConnection": "Epidemiologists use eigenvalue analysis to predict disease spread - eigenvalues determine whether outbreaks grow or die out. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
+  "realWorldConnection": "Video games use transformation matrices to move, rotate, and scale 3D objects in real-time. Medical imaging applies transformations to reconstruct 3D body scans from 2D slices. Robotics uses transformation matrices to control precise arm movements and calculate positions in space.",
   "hearTranscript": [
-    "Want to see mathematical time travel? I've discovered that eigenvalues hold the key to predicting what happens when matrices are multiplied by themselves many times... or even raised to infinite powers!",
-    "Here's the secret that unlocks temporal mathematics... When A equals P D P inverse, then A to the nth power equals P D to the nth P inverse. Diagonalization makes matrix powers trivial! The eigenvalue magnitudes become crystal balls for long-term behavior.",
-    "If the absolute value of lambda is greater than 1, that direction grows exponentially over time. If it's less than 1, that direction decays toward zero. If it equals exactly 1, that direction remains perfectly stable. It's like having mathematical DNA that determines the destiny of every system.",
-    "Matrix exponentials work the same way... e to the At equals P e to the Dt P inverse, where eigenvalues directly control the exponential growth rates of different directions in continuous time.",
-    "Markov chains use this detective work to find steady states... the eigenvalue of exactly 1 and its eigenvector reveal where the system eventually settles. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance.",
-    "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Climate scientists use matrix exponentials to model long-term temperature evolution.",
-    "The beauty is profound... eigenvalues are like mathematical time machines that let me compute the future behavior of any dynamic system with detective precision!"
+    "When I multiply a matrix by a vector, I'm not just doing arithmetic... I'm applying a systematic transformation with its own unique personality.",
+    "Every matrix is actually a transformation machine. Some are gentle rotators that spin vectors smoothly. Others are aggressive stretchers that change sizes dramatically. Some are precise projectors that flatten dimensions systematically.",
+    "Here's the secret: the matrix columns show you exactly where the standard basis vectors go. Column one shows where the vector [1,0] gets transformed. Column two shows where [0,1] lands. Everything else follows from systematic linear combinations.",
+    "Video games use transformation matrices billions of times per second to move, rotate, and scale 3D objects. Medical imaging applies them to reconstruct body scans from different angles. Robotics uses them to control precise arm movements in manufacturing.",
+    "Each matrix has its own transformation DNA... rotation preserves lengths and angles, scaling changes sizes uniformly, reflection flips across lines, and projection flattens to lower dimensions."
   ]
 }

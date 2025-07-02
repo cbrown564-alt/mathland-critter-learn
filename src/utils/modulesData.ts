@@ -7,7 +7,7 @@ function getCharacterColor(characterName: string) {
 
 export const modulesData = [
   {
-    id: 0,
+    id: 10,
     title: "Prerequisites & Refresher",
     subtitle: "Build Your Foundation",
     description: "Master the mathematical foundations needed for data science",
@@ -54,7 +54,7 @@ export const modulesData = [
     }
   },
   {
-    id: 1,
+    id: 10,
     title: "Vectors & Vector Spaces",
     subtitle: "Direction and Magnitude",
     description: "Understanding vectors, linear combinations, and vector spaces",
@@ -83,7 +83,7 @@ export const modulesData = [
       "Linear combinations & span",
       "Vector spaces & subspaces"
     ],
-    prerequisites: "Module 0",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Vector Operations",
       milestone: "🎯 Milestone: Linear Independence",
@@ -101,7 +101,7 @@ export const modulesData = [
     }
   },
   {
-    id: 2,
+    id: 10,
     title: "Matrices & Linear Mappings",
     subtitle: "Transforming Spaces",
     description: "Matrix operations, transformations, and their properties",
@@ -130,7 +130,7 @@ export const modulesData = [
       "Linear transformations",
       "Determinants & inverses"
     ],
-    prerequisites: "Module 1",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Matrix Operations",
       milestone: "🎯 Milestone: Linear Transformations",
@@ -148,7 +148,7 @@ export const modulesData = [
     }
   },
   {
-    id: 3,
+    id: 10,
     title: "Eigenvalues & Eigenvectors",
     subtitle: "Special Directions",
     description: "Understanding eigenvalues, eigenvectors, and their applications",
@@ -177,7 +177,7 @@ export const modulesData = [
       "Diagonalisation & spectral decomposition",
       "Real-world applications (PCA, PageRank, SVD)"
     ],
-    prerequisites: "Module 2",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Eigenvalues & Eigenvectors",
       milestone: "🎯 Milestone: Diagonalisation",
@@ -194,7 +194,7 @@ export const modulesData = [
     }
   },
   {
-    id: 4,
+    id: 10,
     title: "Multivariate Calculus Foundations",
     subtitle: "Multiple Variables",
     description: "Calculus with multiple variables for optimization",
@@ -222,7 +222,7 @@ export const modulesData = [
       "Multivariable functions",
       "Jacobian & rates of change"
     ],
-    prerequisites: "Module 2",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Multivariable Calculus",
       milestone: "🎯 Milestone: Partial Derivatives",
@@ -238,7 +238,7 @@ export const modulesData = [
     }
   },
   {
-    id: 5,
+    id: 10,
     title: "Optimisation & Gradient Descent",
     subtitle: "Finding the Best",
     description: "Optimization techniques and gradient-based algorithms",
@@ -266,7 +266,7 @@ export const modulesData = [
       "Gradient descent algorithms",
       "Optimization in practice"
     ],
-    prerequisites: "Module 4",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Optimisation",
       milestone: "🎯 Milestone: Gradient Descent",
@@ -281,7 +281,7 @@ export const modulesData = [
     }
   },
   {
-    id: 6,
+    id: 10,
     title: "Probability & Distributions",
     subtitle: "Understanding Uncertainty",
     description: "Probability theory and common probability distributions",
@@ -310,7 +310,7 @@ export const modulesData = [
       "Common distributions",
       "Expectation, variance & sampling"
     ],
-    prerequisites: "Module 0",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Probability",
       milestone: "🎯 Milestone: Random Variables",
@@ -328,7 +328,7 @@ export const modulesData = [
     }
   },
   {
-    id: 7,
+    id: 10,
     title: "Hypothesis Testing & Inference",
     subtitle: "Making Decisions",
     description: "Statistical inference and hypothesis testing methods",
@@ -356,7 +356,7 @@ export const modulesData = [
       "Hypothesis testing",
       "Confidence intervals & errors"
     ],
-    prerequisites: "Module 6",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Hypothesis Testing",
       milestone: "🎯 Milestone: Sampling Distribution",
@@ -373,7 +373,7 @@ export const modulesData = [
     }
   },
   {
-    id: 8,
+    id: 10,
     title: "Bayesian Inference",
     subtitle: "Updating Beliefs",
     description: "Bayesian statistics and probabilistic reasoning",
@@ -402,7 +402,7 @@ export const modulesData = [
       "Priors, likelihoods & posteriors",
       "Real-world Bayesian applications"
     ],
-    prerequisites: "Module 6",
+    prerequisites: "Module 10",
     learningJourney: {
       start: "🌟 Start: Bayesian Inference",
       milestone: "🎯 Milestone: Bayesian Statistics",
@@ -418,7 +418,7 @@ export const modulesData = [
     }
   },
   {
-    id: 9,
+    id: 10,
     title: "Capstone Project",
     subtitle: "Real-World Application",
     description: "Apply all concepts in a comprehensive data science project",

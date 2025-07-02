@@ -1,61 +1,62 @@
 {
   "id": "7.1",
-  "title": "Introduction to Statistical Inference",
+  "title": "Introduction to Probability & Sample Spaces",
   "duration": "35-40 minutes",
-  "characterId": "sigmund",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund the Swan glides gracefully across the still waters of statistical inference, his elegant black form a perfect symbol of rare and significant events. As a creature who understands both beauty and rarity, Sigmund knows that statistical inference is the art of making principled decisions about populations based on limited sample evidence.",
-    "characterMessage": "Welcome to the realm of statistical inference, where elegance meets evidence! I am Sigmund, and I specialize in distinguishing the truly significant from the merely coincidental. Statistical inference allows us to make principled conclusions about populations from samples, always with quantified uncertainty."
+    "story": "Probability Pippa appears in a shower of sparkles, her magician's hat shimmering with mathematical possibilities! As a rabbit who specializes in the unpredictable, she knows that probability is the mathematics of uncertainty - turning the chaos of random events into precise, beautiful patterns that we can understand and predict.",
+    "characterMessage": "Welcome to the wonderful world of uncertainty! I'm Pippa, and I make the unpredictable predictable through the magic of probability! Every coin flip, every die roll, every random event follows beautiful mathematical patterns. Let me show you how to find order in chaos!"
   },
   "learningObjectives": [
-    "Understand statistical inference as population conclusions from sample data",
-    "Distinguish between descriptive and inferential statistics",
-    "Recognize the role of sampling distributions in inference",
-    "Understand uncertainty quantification in statistical conclusions",
-    "Connect inference to scientific method and decision-making"
+    "Define sample spaces as sets of all possible outcomes",
+    "Understand events as subsets of sample spaces",
+    "Calculate basic probabilities using counting principles",
+    "Apply probability rules: addition, multiplication, complement",
+    "Connect probability to real-world uncertainty and decision-making"
   ],
   "coreConcepts": [
-    "Population parameters vs sample statistics",
-    "Statistical inference framework",
-    "Sampling distributions as inference foundation",
-    "Uncertainty and variability in conclusions",
-    "Scientific method and statistical evidence"
+    "Sample space Ω: set of all possible outcomes",
+    "Events as subsets of sample space",
+    "Probability function P: assigns numbers to events",
+    "Basic probability rules and axioms",
+    "Counting principles for finite sample spaces"
   ],
-  "readContent": "Statistical inference draws conclusions about populations from sample data, acknowledging inherent uncertainty. We distinguish between population parameters (unknown, fixed values) and sample statistics (observed, random values that estimate parameters). The inference framework involves: collecting representative samples, computing sample statistics, using sampling distributions to quantify uncertainty, and making probabilistic statements about population parameters. Unlike descriptive statistics that summarize data, inferential statistics make claims beyond the observed sample. The sampling distribution bridges sample and population, showing how statistics vary across possible samples and enabling probability statements about parameter estimates.",
-  "readAnalogy": "Statistical inference is like observing my elegant flight patterns to understand all swans everywhere. You see me glide across one lake (sample), but you want to know about swan behavior in general (population). The key insight is that different observers at different lakes will see slightly different patterns due to natural variation, but mathematical principles let us quantify this uncertainty and still make reliable statements about all swans.",
+  "readContent": "Probability quantifies uncertainty by assigning numbers between 0 and 1 to events. The sample space Ω contains all possible outcomes of an experiment, while events are subsets of this space. The probability function P satisfies three axioms: P(A) ≥ 0 for any event A, P(Ω) = 1, and P(A ∪ B) = P(A) + P(B) when A and B are disjoint. For finite sample spaces with equally likely outcomes, P(A) = |A|/|Ω| (favorable outcomes divided by total outcomes). Key rules include: P(Aᶜ) = 1 - P(A) for complements, and P(A ∪ B) = P(A) + P(B) - P(A ∩ B) for general unions.",
+  "readAnalogy": "Think of probability like my magic hat filled with all possible outcomes! The sample space is everything that could possibly be pulled from the hat, while events are specific collections of outcomes I'm interested in. The probability is simply the fraction of space each event takes up in my magical hat!",
   "readKeyPoints": [
-    "Inference makes population conclusions from sample evidence with quantified uncertainty",
-    "Sampling distributions show how statistics vary across possible samples",
-    "Distinguished from descriptive statistics by making claims beyond observed data"
+    "Sample space Ω contains all possible outcomes of a random experiment",
+    "Events are subsets of the sample space we're interested in",
+    "Probability P(A) = favorable outcomes / total outcomes for equally likely cases"
   ],
-  "readDigDeeper": "The frequentist interpretation of probability underlies classical statistical inference: probability statements refer to long-run frequencies across repeated sampling. This philosophical foundation distinguishes classical inference from Bayesian approaches that treat parameters as random variables.",
-  "readWhyMatters": "Medical researchers use statistical inference to determine drug effectiveness from clinical trials. Political polling uses inference to predict election outcomes from sample surveys. Quality control uses inference to monitor manufacturing processes. A/B testing in tech companies relies on statistical inference to make product decisions.",
-  "seeContent": "Visualize the relationship between populations and samples, observe how sampling distributions enable probability statements about parameters, and explore the conceptual framework that underlies all statistical inference.",
-  "hearContent": "Listen as I explain how statistical inference is like the elegant art of understanding the whole from glimpses of the part - always with the grace to acknowledge our uncertainty while maintaining principled conclusions!",
-  "hearAudioUrl": "/audio/7.1.mp3",
-  "doContent": "Use the Population vs Sample Explorer to understand the inference gap, practice with the Sampling Distribution Visualizer, and experiment with the Uncertainty Quantification Simulator.",
+  "readDigDeeper": "The axiomatic foundation of probability theory, developed by Kolmogorov, builds all probability concepts from three simple axioms. This mathematical framework underlies everything from quantum mechanics to machine learning algorithms.",
+  "readWhyMatters": "Weather forecasting uses probability to predict rain chances from atmospheric data. Medical diagnosis assigns probabilities to diseases based on symptoms. Insurance companies use probability to calculate fair premiums. Machine learning algorithms make predictions using probability distributions over possible outcomes.",
+  "seeContent": "Explore interactive sample space visualizations, see how events correspond to regions in probability spaces, and observe how counting principles determine probabilities in finite cases with equal likelihood.",
+  "hearContent": "Listen as I explain how probability is like organizing all the magic tricks in my hat - some outcomes are more likely to appear than others, but the mathematical rules help us predict the patterns!",
+  "hearAudioUrl": "/audio/6.1.mp3",
+  "doContent": "Use the Sample Space Explorer to visualize different experiments, practice with the Probability Calculator for basic events, and experiment with the Event Combinations tool showing unions, intersections, and complements.",
   "memoryAids": {
-    "mantra": "From sample to population with elegant precision - statistical inference bridges the decision! Uncertainty acknowledged, conclusions principled - that's inference refined!",
-    "visual": "Picture Sigmund gracefully observing his reflection in multiple lakes, understanding that each glimpse reveals something about swan nature in general, while elegantly acknowledging the inherent uncertainty in generalizing from limited observations."
+    "mantra": "Sample space holds all that could be, events are subsets we want to see! Count the favorable, divide by all - that's probability's magical call!",
+    "visual": "Picture Pippa's shimmering magic hat containing all possible outcomes, with events highlighted as glowing regions within the hat, and probabilities determined by how much space each region occupies."
   },
   "conceptCheck": {
-    "question": "A researcher observes that 65% of a sample of 100 voters support a candidate. What distinguishes this from statistical inference?",
+    "question": "Rolling two dice, what's the probability of getting a sum of 7, given that all 36 outcomes are equally likely?",
     "options": [
-      "This is descriptive statistics; inference would make probability statements about the population percentage",
-      "This is already statistical inference since we're using a sample",
-      "This is inference because 65% estimates the population parameter",
-      "There's no difference - sample percentages are always inferential"
+      "P(sum = 7) = 6/36 = 1/6, since there are 6 ways: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)",
+      "P(sum = 7) = 1/11, since sums range from 2 to 12",
+      "P(sum = 7) = 7/36, since we want sum 7 out of 36 outcomes",
+      "P(sum = 7) = 2/12, since 7 is in the middle of possible sums"
     ],
     "correctAnswer": 0,
-    "explanation": "Stating '65% of the sample supports the candidate' is descriptive. Inference would make probability statements like 'we're 95% confident the population support is between 55-75%' using sampling distribution theory."
+    "explanation": "Sample space has 36 equally likely outcomes. Event 'sum = 7' contains 6 outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Therefore P(sum = 7) = 6/36 = 1/6."
   },
-  "realWorldConnection": "Pharmaceutical companies use statistical inference to determine if new drugs are effective based on limited clinical trial data. Netflix uses inference to understand user preferences from viewing samples. Climate scientists use inference to make global conclusions from weather station data across the world.",
+  "realWorldConnection": "Netflix calculates probabilities that users will like different movies based on viewing history. Medical AI systems assign probabilities to different diagnoses based on symptoms. Weather services use probability models to forecast precipitation chances from atmospheric data.",
   "hearTranscript": [
-    "Hello there, fellow seekers of statistical truth. I am Sigmund, and I specialize in distinguishing the truly significant from the merely coincidental.",
-    "Most people think statistics is just about calculating averages and making charts from data. But here's what they don't realize... statistical inference is the elegant art of distinguishing genuine signals from random noise, enabling us to make principled decisions about the world based on limited but carefully analyzed evidence.",
-    "The sampling distribution is the cornerstone of this elegant edifice. When we repeatedly sample from the same population, each sample yields a different statistic... different means, different proportions, different estimates. These statistics form their own probability distribution, revealing the inherent uncertainty in our inference process.",
-    "Standard error quantifies this uncertainty with mathematical precision. It measures how much sample statistics typically vary from the true population parameter. Larger samples yield smaller standard errors... more data reduces uncertainty about population characteristics.",
-    "Clinical trials demonstrate this principle beautifully. When pharmaceutical companies test new medications, they recognize that different patient groups will show different response rates, even for identical treatments. The sampling distribution captures this natural variation, while standard error quantifies the precision of their conclusions.",
-    "This mathematical framework transforms the question from \"what did this particular sample show?\" to the more sophisticated inquiry: \"what can we reliably conclude about the population, given the inherent uncertainty in any finite sample?\""
+    "Hello there, fellow explorers of uncertainty! I'm Probability Pippa, and I make the unpredictable predictable through the magic of probability!",
+    "Every magical trick starts with knowing all the possible outcomes... and that's exactly what sample space is in probability. It's like having a magical hat that contains every possible result of any random experiment.",
+    "When I flip a coin, my sample space is simple: heads or tails. When I roll a six-sided die, the sample space contains six equally magical outcomes: one, two, three, four, five, and six. But when I pull cards from a deck or predict next week's weather, the sample spaces become wonderfully complex.",
+    "Events are the magical subsets we actually care about. Instead of listing every possible outcome, events let us group outcomes that matter for our predictions. \"Rolling an even number\" is an event containing three outcomes: two, four, and six.",
+    "Weather forecasting uses sample spaces constantly. Meteorologists consider all possible temperature, humidity, and wind combinations, then calculate probabilities for events like \"rain tomorrow\" or \"temperature above 75 degrees.\"",
+    "Medical diagnosis works the same way. Doctors consider sample spaces of all possible conditions, then calculate probabilities for events like \"patient has condition X given these symptoms.\"",
+    "The magic happens when we assign probabilities to events... transforming uncertainty into actionable mathematical insights."
   ]
 }

@@ -1,62 +1,61 @@
 {
   "id": "3.8",
-  "title": "Complex Eigenvalues & Oscillatory Behavior",
+  "title": "Composition of Linear Maps & Change of Basis",
   "duration": "40-45 minutes",
-  "characterId": "eileen",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen encounters her most mysterious case yet: matrices with complex eigenvalues! These mathematical mysteries create rotating, oscillating behaviors that spiral through space. Understanding complex eigenvalues unlocks the secrets of vibration, waves, and periodic phenomena.",
-    "characterMessage": "Complex eigenvalues are the most mysterious of all! They create spiraling, rotating behaviors that seem almost magical. But I've cracked their code - they're the mathematical signature of oscillation and periodic motion!"
+    "story": "Max discovers he can chain transformations together like a systematic assembly line, and even change his entire coordinate system to view the same information from different perspectives. It's like having multiple organizational frameworks that can work together or view the same data through different systematic lenses.",
+    "characterMessage": "The ultimate organizational superpower: chaining transformations and changing perspectives! I can create transformation assembly lines where each matrix adds its own systematic change, and I can switch coordinate systems to view the same information through completely different organizational frameworks!"
   },
   "learningObjectives": [
-    "Understand complex eigenvalues as indicators of rotational behavior",
-    "Interpret complex eigenvalue magnitude and argument geometrically",
-    "Analyze oscillatory solutions to differential equation systems",
-    "Connect complex eigenvalues to spiraling and periodic motion",
-    "Apply complex eigenvalue analysis to vibration and wave problems"
+    "Compose linear transformations through matrix multiplication",
+    "Understand how transformation order affects the final result",
+    "Perform change of basis using transition matrices",
+    "Convert between different coordinate systems systematically",
+    "Apply composition and basis change to solve complex problems"
   ],
   "coreConcepts": [
-    "Complex eigenvalues: λ = a ± bi",
-    "Magnitude |λ| determines growth/decay",
-    "Argument arg(λ) determines rotation frequency",
-    "Complex eigenvectors and real solutions",
-    "Applications to oscillatory systems"
+    "Transformation composition: (BA)(v) = B(A(v))",
+    "Order matters: AB ≠ BA generally",
+    "Change of basis using transition matrices",
+    "Coordinate conversion between bases",
+    "Applications in graphics and data analysis"
   ],
-  "readContent": "Complex eigenvalues λ = a ± bi appear in conjugate pairs for real matrices, indicating rotational or oscillatory behavior. The real part 'a' controls growth (a > 0) or decay (a < 0), while the imaginary part 'b' determines rotation frequency. The magnitude |λ| = √(a² + b²) shows overall growth/decay rate, and the argument determines oscillation period. Although eigenvectors are complex, real solutions can be constructed using the real and imaginary parts of complex eigenvectors. This creates spiraling trajectories in phase space, essential for understanding vibrations, electrical circuits, and population cycles.",
-  "readAnalogy": "Complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
+  "readContent": "The ultimate organizational superpower: chaining transformations and changing perspectives! Transformation composition means applying multiple transformations in sequence - if A applies first, then B, the result is BA (note the reverse order). Matrix multiplication represents this: (BA)v = B(Av). Change of basis is even more powerful - it's like having multiple organizational frameworks for viewing the same information. Transition matrix P converts coordinates from one basis to another, while P⁻¹ converts back.",
+  "readAnalogy": "Transformation composition is like running a systematic assembly line where each station adds its own transformation. Change of basis is like having multiple viewing windows that show the same organized information through different systematic perspectives.",
   "readKeyPoints": [
-    "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
-    "Magnitude |λ| shows overall growth/decay rate",
-    "Argument arg(λ) determines rotation frequency"
+    "Composition: applying B then A equals transformation BA (reverse order)",
+    "Matrix multiplication represents transformation composition",
+    "Change of basis: P converts between coordinate systems, P⁻¹ converts back"
   ],
-  "readDigDeeper": "Complex eigenvalues create spiraling motions in phase space. The real part controls whether the system grows or decays, while the imaginary part controls the rotation speed. This is crucial for understanding oscillatory systems in engineering and physics.",
-  "readWhyMatters": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics.",
-  "seeContent": "Visualize how complex eigenvalues create spiraling motions, see how magnitude controls spiral tightness while argument controls rotation speed, and watch oscillatory solutions emerge from complex eigenvalue systems.",
-  "hearContent": "Listen as I explain how complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
-  "hearAudioUrl": "/audio/3.8.mp3",
-  "doContent": "Use the Complex Eigenvalue Analyzer to decompose rotation and growth components, experiment with the Spiral Trajectory Generator, and practice with the Oscillation Predictor for dynamic systems.",
+  "readDigDeeper": "Order matters in composition because transformations don't generally commute. Change of basis reveals that the same vector has different coordinates in different systems, like how the same location has different addresses in different coordinate systems.",
+  "readWhyMatters": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
+  "seeContent": "Watch transformation chains in action, see how changing order produces different results, and observe how the same vector looks different in various coordinate systems through interactive basis switching.",
+  "hearContent": "Listen as I explain how transformation composition is like having a systematic assembly line, and change of basis is like having multiple organizational perspectives for viewing the same information!",
+  "hearAudioUrl": "/audio/2.8.mp3",
+  "doContent": "Use the Transformation Chain Builder to experiment with composition order, practice with the Basis Change Calculator to convert coordinates, and explore the Perspective Switcher to see vectors in different coordinate systems.",
   "memoryAids": {
-    "mantra": "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
-    "visual": "Picture Eileen watching mathematical dancers: complex eigenvalues choreograph spiraling motions where the real part controls how tight the spiral gets and the imaginary part controls how fast it spins."
+    "mantra": "Chain transformations like assembly lines, switch coordinate systems like changing perspective - systematic organization from every angle!",
+    "visual": "Picture Max running a transformation factory with assembly lines (composition) and multiple viewing windows (different bases) that show the same products from different systematic perspectives."
   },
   "conceptCheck": {
-    "question": "A system has complex eigenvalues λ = -0.1 ± 2i. What type of behavior does this predict?",
+    "question": "If transformation A rotates 45° and transformation B scales by 2, what's the difference between AB and BA applied to a vector?",
     "options": [
-      "Decaying oscillations - the system spirals inward while rotating",
-      "Growing oscillations - the system spirals outward while rotating",
-      "Pure rotation without growth or decay",
-      "Exponential decay without oscillation"
+      "AB: rotate 45° then scale by 2; BA: scale by 2 then rotate 45° - different final vectors",
+      "AB and BA produce identical results because both transformations are applied",
+      "AB is undefined because you can't multiply these transformation types",
+      "AB: scale then rotate; BA: rotate then scale - same as option A but backward"
     ],
     "correctAnswer": 0,
-    "explanation": "Real part -0.1 < 0 indicates decay, while imaginary part ±2i indicates oscillation with frequency 2. Combined, this creates decaying oscillations - spiraling inward motion."
+    "explanation": "Order matters in composition. AB means: first apply A (rotate 45°), then apply B (scale by 2). BA means: first apply B (scale by 2), then apply A (rotate 45°). Different orders produce different final vectors."
   },
-  "realWorldConnection": "Mechanical engineers analyze building vibrations using complex eigenvalues to predict earthquake response. Electrical engineers use complex eigenvalue analysis to design stable circuits and filters. Biologists model predator-prey cycles where complex eigenvalues indicate oscillating population dynamics.",
+  "realWorldConnection": "Animation software chains transformation matrices to create complex character movements. Data scientists change basis to find optimal coordinate systems for machine learning. Engineers use composition to model multi-stage manufacturing processes with systematic precision.",
   "hearTranscript": [
-    "When eigenvalues become complex numbers, matrices reveal their most dynamic secrets... rotation combined with scaling, creating spiral behaviors that govern everything from population cycles to engineering stability.",
-    "Complex eigenvalues always come in conjugate pairs for real matrices... if a plus bi is an eigenvalue, then a minus bi is also an eigenvalue. The real part determines whether systems grow or decay, while the imaginary part controls oscillation frequency.",
-    "In population biology, predator-prey systems often have complex eigenvalues that create spiral trajectories... populations cycle through boom and bust phases with mathematical precision.",
-    "Engineering stability analysis relies on eigenvalue location. If all eigenvalues have negative real parts, the system is stable... small perturbations decay back to equilibrium. But if any eigenvalue has positive real part, the system becomes unstable... small disturbances grow exponentially.",
-    "When civil engineers design buildings to withstand earthquakes, they analyze the eigenvalues of structural vibration modes. Complex eigenvalues with positive real parts indicate dangerous resonances that could amplify seismic motion catastrophically.",
-    "Economic models use eigenvalue analysis to study market stability. Complex eigenvalues often indicate boom-bust cycles, while eigenvalues near the unit circle suggest systems on the edge of stability.",
-    "Even seemingly stable systems can harbor complex eigenvalue secrets that predict surprising dynamic behaviors."
+    "The ultimate organizational superpower: chaining transformations and changing perspectives simultaneously.",
+    "Transformation composition is like running a systematic assembly line... each station adds its own transformation step. If transformation A goes first, then B, the combined effect is BA. Notice the reverse order... that's because we read transformations from right to left, just like function composition.",
+    "But here's where it gets even more powerful: change of basis. It's like having multiple organizational frameworks for viewing the same information. The same vector has different coordinates in different systems... like how the same location has different addresses depending on which coordinate system you're using.",
+    "Animation software chains transformation matrices to create complex character movements. First scale, then rotate, then translate... each step building on the previous systematic transformation.",
+    "Data scientists change basis to find optimal coordinate systems for machine learning algorithms. Engineers use composition to model multi-stage manufacturing processes with mathematical precision.",
+    "The beauty is in the systematic control... you can organize transformation sequences and switch perspectives to solve problems from the most efficient angle."
   ]
 }

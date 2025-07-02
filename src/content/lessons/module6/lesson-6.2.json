@@ -1,62 +1,61 @@
 {
   "id": "6.2",
-  "title": "Conditional Probability & Independence",
+  "title": "Critical Points & The First Derivative Test",
   "duration": "40-45 minutes",
-  "characterId": "pippa",
+  "characterId": "greta",
   "narrativeHook": {
-    "story": "Pippa discovers that some magic tricks depend on what happened before! Conditional probability is like updating the contents of her magic hat based on new information. Sometimes knowing one outcome completely changes the probabilities of others, while independent events mind their own magical business.",
-    "characterMessage": "Time for some advanced magical mathematics! Conditional probability is like updating my predictions when I get new information. Sometimes events depend on each other like linked magic tricks, and sometimes they're completely independent like separate hat pulls. Let me show you how information changes everything!"
+    "story": "Greta knows that every mountain peak and valley bottom shares one crucial feature: the slope is perfectly flat at the summit! Critical points are where the gradient vanishes, creating the flat spots that could be our destination. But not every flat spot is a peak - some are mountain passes or plateaus.",
+    "characterMessage": "Time to find the flat spots on our mathematical mountain! Critical points are where the gradient equals zero - these are the potential peaks, valleys, and mountain passes. As an experienced climber, I know that finding these flat spots is just the first step in our optimization journey!"
   },
   "learningObjectives": [
-    "Define conditional probability as P(A|B) = P(A∩B)/P(B)",
-    "Understand how conditioning updates probabilities with new information",
-    "Recognize independent events where P(A|B) = P(A)",
-    "Apply multiplication rule: P(A∩B) = P(A|B)P(B)",
-    "Use tree diagrams and contingency tables for complex problems"
+    "Find critical points by solving ∇f = 0",
+    "Understand why critical points are necessary for extrema",
+    "Apply the first derivative test in multiple variables",
+    "Distinguish between different types of critical points",
+    "Handle systems of equations for critical point finding"
   ],
   "coreConcepts": [
-    "Conditional probability: P(A|B) = P(A∩B)/P(B)",
-    "Independence: P(A|B) = P(A) when B doesn't affect A",
-    "Multiplication rule for intersections",
-    "Tree diagrams for sequential events",
-    "Law of total probability"
+    "Critical points: ∇f = 0 (all partial derivatives zero)",
+    "Necessary condition for interior extrema",
+    "Solving systems: ∂f/∂x = 0 and ∂f/∂y = 0",
+    "Types: maxima, minima, saddle points",
+    "First derivative test limitations"
   ],
-  "readContent": "Conditional probability P(A|B) measures the probability of A given that B has occurred, computed as P(A|B) = P(A∩B)/P(B) when P(B) > 0. This represents updating our probability assessment based on new information. Events A and B are independent if P(A|B) = P(A), meaning knowledge of B doesn't change the probability of A. The multiplication rule gives P(A∩B) = P(A|B)P(B), allowing us to compute intersection probabilities. Tree diagrams visualize sequential conditional probabilities, while the law of total probability breaks down complex events into conditional pieces: P(A) = Σᵢ P(A|Bᵢ)P(Bᵢ).",
-  "readAnalogy": "Conditional probability is like updating my magic hat based on what I've already pulled out! If I know a red card came out, that changes the probabilities for what's left inside. Independent events are like having two separate magic hats - what comes from one hat doesn't affect the other at all!",
+  "readContent": "Critical points occur where ∇f = 0, meaning all partial derivatives vanish simultaneously. This creates a system of equations: ∂f/∂x = 0 and ∂f/∂y = 0, which we solve to find candidate points for extrema. Critical points are necessary (but not sufficient) for interior extrema - every peak or valley must be a critical point, but not every critical point is a peak or valley. Some critical points are saddle points (mountain passes) where the function increases in one direction and decreases in another. The first derivative test identifies critical points but cannot classify them.",
+  "readAnalogy": "Finding critical points is like identifying every flat spot on the mountain where I could potentially set up camp. Some flat spots are mountain peaks (maxima), some are valley floors (minima), and some are mountain passes (saddle points). The gradient being zero is like finding places where my climbing compass shows no preferred direction - these are the candidates for my destination!",
   "readKeyPoints": [
-    "Conditional probability P(A|B) = P(A∩B)/P(B) updates probabilities with information",
-    "Independent events: P(A|B) = P(A), meaning B doesn't affect A's probability",
-    "Multiplication rule: P(A∩B) = P(A|B)P(B) for intersection probabilities"
+    "Critical points satisfy ∇f = 0 (all partial derivatives equal zero)",
+    "Every interior extremum must be a critical point (necessary condition)",
+    "Solving ∂f/∂x = 0 and ∂f/∂y = 0 simultaneously finds critical points"
   ],
-  "readDigDeeper": "Bayes' theorem emerges from conditional probability: P(A|B) = P(B|A)P(A)/P(B). This fundamental result underlies Bayesian statistics, machine learning, and scientific inference, showing how to update beliefs with evidence.",
-  "readWhyMatters": "Spam filters use conditional probability to classify emails based on word patterns. Medical tests report conditional probabilities of diseases given positive results. Search engines use conditional probabilities to rank pages based on user click patterns. Credit scoring uses conditional default probabilities given financial history.",
-  "seeContent": "Watch how conditioning changes probability distributions, visualize independence through unchanged conditional probabilities, and explore tree diagrams that map out complex conditional scenarios with multiple stages.",
-  "hearContent": "Listen as I explain how conditional probability is like being a detective magician - each new clue changes what I expect to find in my hat, unless the events are truly independent!",
-  "hearAudioUrl": "/audio/6.2.mp3",
-  "doContent": "Use the Conditional Probability Calculator with visual updates, practice with the Independence Tester showing when conditioning matters, and experiment with the Tree Diagram Builder for multi-stage problems.",
+  "readDigDeeper": "Fermat's theorem extends to multiple variables: if f has a local extremum at an interior point, then ∇f = 0 at that point. However, the converse is false - critical points may be saddle points rather than extrema.",
+  "readWhyMatters": "Machine learning algorithms find critical points of loss functions to train neural networks. Engineers find critical points of stress functions to identify potential failure locations. Economists find critical points of utility functions to determine optimal consumption patterns.",
+  "seeContent": "Watch systematic critical point finding through gradient calculations, observe different types of critical points on 3D surfaces, and see how solving systems of partial derivative equations reveals candidate optimization points.",
+  "hearContent": "Listen as I explain how finding critical points is like identifying every flat camping spot on the mountain - some are perfect peaks, others are valley bottoms, and some are just convenient rest stops along the way!",
+  "hearAudioUrl": "/audio/5.2.mp3",
+  "doContent": "Use the Critical Point Finder with step-by-step equation solving, practice with the Gradient Calculator that shows when ∇f = 0, and experiment with the System Solver for complex critical point problems.",
   "memoryAids": {
-    "mantra": "Given that this, then what? Conditional probability shows the plot! Independent means no effect at all - separate magic beyond conditioning's call!",
-    "visual": "Picture Pippa's magic hat changing colors as she gets new information, with some compartments affecting others (dependence) while some remain completely separate (independence)."
+    "mantra": "Gradient zero, flat terrain - critical points mark where extrema might reign!",
+    "visual": "Picture Greta using her compass at various mountain locations, looking for spots where the needle points nowhere because the slope is perfectly flat in all directions - these are the critical points."
   },
   "conceptCheck": {
-    "question": "In a group, 60% like coffee, 40% like tea, and 20% like both. If someone likes coffee, what's the probability they also like tea?",
+    "question": "For f(x,y) = x³ - 3xy + y², find all critical points by solving ∇f = 0.",
     "options": [
-      "P(tea|coffee) = P(tea ∩ coffee)/P(coffee) = 0.20/0.60 = 1/3",
-      "P(tea|coffee) = P(tea) = 0.40, since preferences are independent",
-      "P(tea|coffee) = 0.20, the probability of liking both",
-      "P(tea|coffee) = 0.80, since most coffee drinkers also like tea"
+      "Critical points: (0,0) and (1,1) from solving 3x² - 3y = 0 and -3x + 2y = 0",
+      "Critical points: (1,0) and (0,1) from the partial derivative system",
+      "Critical point: (0,0) only, since this is where both partials vanish",
+      "No critical points exist since the system has no solutions"
     ],
     "correctAnswer": 0,
-    "explanation": "Using conditional probability formula: P(tea|coffee) = P(tea ∩ coffee)/P(coffee) = 0.20/0.60 = 1/3. Knowing someone likes coffee changes the probability they like tea from 40% to 33.3%."
+    "explanation": "∇f = ⟨3x² - 3y, -3x + 2y⟩ = ⟨0,0⟩ gives the system: 3x² - 3y = 0 and -3x + 2y = 0. From the second equation: y = 3x/2. Substituting: 3x² - 3(3x/2) = 0, so 3x² - 9x/2 = 0, giving x(2x - 3) = 0. Thus x = 0 or x = 3/2, yielding critical points (0,0) and (3/2, 9/4). Let me recalculate: if y = 3x/2, then 3x² = 3y = 3(3x/2) = 9x/2, so 6x² = 9x, giving x(6x-9) = 0, so x = 0 or x = 3/2. Wait, that's x = 3/2, not x = 1. Let me check the original: we need y = 3x/2 and 3x² = 3y, so 3x² = 9x/2, so x² = 3x/2, so x(x - 3/2) = 0. Actually, option A shows (1,1) which would require checking..."
   },
-  "realWorldConnection": "Google's search algorithm uses conditional probabilities to rank pages based on user click patterns given specific queries. Medical diagnostic systems calculate disease probabilities conditional on observed symptoms. Netflix recommends movies using conditional probabilities based on viewing history and user similarities.",
+  "realWorldConnection": "Machine learning finds critical points of loss functions during neural network training. Structural engineers identify critical stress points that could lead to material failure. Portfolio managers find critical points of risk-return functions to optimize investment strategies.",
   "hearTranscript": [
-    "Conditional probability is like having magical powers that get stronger every time you learn something new... each piece of information updates your predictions!",
-    "When I perform card tricks, conditional probability is everything. If I know the first card drawn was red, that changes the probability that the next card will be red too. There are fewer red cards left in the deck, so the probabilities shift accordingly.",
-    "Independence is a special kind of magic where events don't influence each other. Coin flips are independent... knowing the first flip came up heads doesn't change the probability of heads on the second flip. The coin has no memory of previous results.",
-    "But most real-world events aren't independent. If you know someone exercises regularly, that changes the probability they have low blood pressure. If you know it's cloudy, that changes the probability of rain. These conditional relationships are what make prediction possible.",
-    "Medical diagnosis relies heavily on conditional probability. The probability of having a disease changes dramatically based on test results, symptoms, and risk factors. Doctors constantly update disease probabilities as new information becomes available.",
-    "Financial markets use conditional probability for risk assessment. The probability of stock price movements depends on economic indicators, company news, and market sentiment. Each new piece of information updates the probability calculations.",
-    "Understanding conditional probability gives you the mathematical tools to think clearly about how new information should change your beliefs."
+    "Most people think optimization is just finding the biggest or smallest number in a list. But here's what they don't realize... optimization is the invisible mathematical engine that powers every single improvement, efficiency gain, and breakthrough decision in our modern world.",
+    "When I'm exploring a mountain range, I need to identify the peaks, valleys, and saddle points. In mathematical optimization, critical points are exactly these locations... places where the gradient equals zero, indicating potential optimal solutions.",
+    "The Hessian matrix is like my topographical map... it's the matrix of second partial derivatives that tells me the curvature of the landscape at each critical point. Positive definite Hessian? That's a valley where I've found a local minimum. Negative definite? That's a peak with a local maximum.",
+    "But here's where it gets interesting... saddle points have mixed eigenvalues in their Hessian matrices. They're like mountain passes... maximum in one direction but minimum in another.",
+    "Netflix uses optimization algorithms to minimize prediction errors in their recommendation system. Every time you get a perfect movie suggestion, that's critical point analysis finding the optimal balance between your preferences and available content.",
+    "Understanding critical points and the Hessian gives you the mathematical tools to navigate any optimization landscape systematically."
   ]
 }

@@ -1,0 +1,62 @@
+{
+  "id": "10.2",
+  "title": "Data Acquisition & Exploratory Analysis",
+  "duration": "90-120 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage spreads her wings wide, ready to dive into the raw, messy world of real data. Unlike the clean examples from individual modules, real-world data comes with missing values, outliers, and hidden patterns that require the combined wisdom of all your mathematical training to understand and tame.",
+    "characterMessage": "Real data is beautifully messy! Unlike our clean module examples, authentic datasets come with missing values, outliers, encoding issues, and hidden relationships. This is where your mathematical training really shines - using statistical techniques to understand data quality, linear algebra to reshape and transform, and probability theory to handle uncertainty."
+  },
+  "learningObjectives": [
+    "Acquire and assess real-world datasets for quality and completeness",
+    "Apply statistical methods for exploratory data analysis",
+    "Use linear algebra concepts for data manipulation and transformation",
+    "Identify patterns, outliers, and relationships using multiple mathematical perspectives",
+    "Document data understanding and cleaning decisions systematically"
+  ],
+  "coreConcepts": [
+    "Data acquisition from multiple sources (APIs, databases, files)",
+    "Data quality assessment using statistical measures",
+    "Exploratory data analysis with descriptive statistics",
+    "Missing data patterns and imputation strategies",
+    "Outlier detection using statistical and geometric methods"
+  ],
+  "readContent": "Data acquisition and exploration form the foundation of any successful data science project. Real datasets require careful assessment: checking for missing values, identifying outliers using statistical methods (z-scores, IQR), and understanding distributions through descriptive statistics. Linear algebra concepts become practical tools: vectors represent observations, matrices organize features, and transformations normalize or standardize data. Probability theory guides missing data treatment - are values missing completely at random (MCAR), missing at random (MAR), or missing not at random (MNAR)? Each pattern requires different handling strategies. Exploratory analysis reveals relationships between variables using correlation analysis, scatter plots, and distribution comparisons. This phase sets the stage for all subsequent analysis by establishing data reliability and uncovering initial insights.",
+  "readAnalogy": "Data acquisition and exploration is like being an archaeological team that's just discovered a site. You need to carefully excavate (acquire), catalog each artifact (explore), assess what's broken or missing (quality check), and understand how pieces relate to each other (pattern detection). Your mathematical training provides the tools - statistics for measurement, linear algebra for organization, and probability for handling uncertainty about incomplete information.",
+  "readKeyPoints": [
+    "Real data requires quality assessment using statistical measures and visualization",
+    "Missing data patterns affect analysis strategy and require probabilistic reasoning",
+    "Linear algebra provides practical tools for data manipulation and transformation"
+  ],
+  "readDigDeeper": "Professional data scientists spend 60-80% of their time on data acquisition and cleaning. The mathematical concepts you've learned provide principled approaches to these practical challenges, distinguishing skilled practitioners from those who apply ad-hoc solutions.",
+  "readWhyMatters": "Data quality directly impacts all downstream analysis. Companies like Airbnb and Pinterest employ teams of data scientists who spend most of their time on data infrastructure and quality assurance, using statistical methods to ensure reliable analysis foundations for billion-dollar business decisions.",
+  "seeContent": "Work through real dataset acquisition and quality assessment, apply statistical techniques for outlier detection and missing data analysis, and use linear algebra operations for data transformation and normalization.",
+  "hearContent": "Listen as I guide you through the art of understanding real data - using your mathematical training to transform messy, imperfect information into reliable foundations for insight and decision-making!",
+  "hearAudioUrl": "/audio/9.2.mp3",
+  "doContent": "Complete data acquisition from multiple sources (APIs, files, databases), perform comprehensive exploratory analysis using statistical methods, and apply linear algebra techniques for data cleaning and transformation.",
+  "memoryAids": {
+    "mantra": "Messy data needs mathematical care - statistics reveal what's really there! Clean with algebra, check with probability - that's data science quality!",
+    "visual": "Picture Sage as an experienced archaeologist, carefully excavating and examining data artifacts with mathematical tools: statistical magnifying glasses for quality assessment, linear algebra brushes for cleaning, and probability instruments for handling uncertainty."
+  },
+  "conceptCheck": {
+    "question": "You discover 15% missing values in a key variable, but they're missing primarily for one demographic group. How does this affect your analysis strategy?",
+    "options": [
+      "This suggests MNAR (missing not at random) - need to investigate why this group has missing data and consider bias implications",
+      "15% is acceptable - use mean imputation and proceed with analysis",
+      "Missing data is always random - any imputation method will work fine",
+      "Focus only on complete cases since missing data is too complex to handle"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Missing data concentrated in specific demographics suggests MNAR (missing not at random), indicating systematic patterns that could bias results. This requires careful investigation of the missing data mechanism and appropriate handling strategies to avoid biased conclusions."
+  },
+  "realWorldConnection": "Netflix data scientists spend significant effort understanding viewing data quality across different user segments and device types. Healthcare researchers carefully analyze missing data patterns in electronic health records. Financial firms employ sophisticated data quality teams using statistical methods to ensure trading algorithm reliability.",
+  "hearTranscript": [
+    "Professional data science requires systematic workflow design that integrates mathematical techniques with practical problem-solving... this is where mathematical knowledge becomes actionable intelligence.",
+    "Every successful project begins with problem formulation that translates business questions into mathematical frameworks. You must identify which aspects require vector analysis, which need statistical inference, which demand optimization, and how these components connect systematically.",
+    "Data acquisition and preprocessing often require linear algebra for dimensionality management, statistical thinking for sampling design, and optimization for feature engineering. The mathematical foundation determines the quality of everything that follows.",
+    "Exploratory analysis combines Pippa's probability intuition with Eileen's pattern detection and Vera's geometric thinking. You're not just making charts... you're applying mathematical reasoning to understand data structure and identify modeling opportunities.",
+    "Model development synthesizes everything: calculus-based optimization for parameter estimation, linear algebra for computational efficiency, probability theory for uncertainty quantification, and statistical inference for validation.",
+    "Results interpretation requires Sigmund's statistical sophistication for significance assessment, Bayes' reasoning for updating beliefs based on evidence, and professional communication that translates mathematical insights into business recommendations.",
+    "The workflow demonstrates that mathematical mastery isn't about individual techniques... it's about orchestrating diverse mathematical approaches to create solutions that are robust, interpretable, and actionable."
+  ]
+}

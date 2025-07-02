@@ -1,64 +1,65 @@
 {
   "id": "5.10",
-  "title": "Greta's Optimization Mastery Capstone",
+  "title": "Dr. Delta's Multivariable Calculus Capstone",
   "duration": "50-60 minutes",
-  "characterId": "greta",
+  "characterId": "delta",
   "narrativeHook": {
-    "story": "Greta faces the ultimate optimization challenge: a comprehensive project that requires every technique she's mastered! From finding critical points to implementing gradient descent with momentum, from analyzing convexity to handling constraints - this capstone synthesizes all optimization skills into one integrated mountaineering expedition.",
-    "characterMessage": "Time for the ultimate optimization expedition! This capstone brings together every technique we've mastered - critical point analysis, gradient descent algorithms, convexity analysis, and constraint handling. Let's tackle a complex real-world optimization problem that showcases the full power of mathematical mountaineering!"
+    "story": "Dr. Delta faces the ultimate multivariable calculus challenge: a comprehensive project that synthesizes limits, continuity, partial derivatives, gradients, directional derivatives, Jacobians, and optimization into one integrated mathematical investigation. It's time to demonstrate mastery of precision and change!",
+    "characterMessage": "Time for the ultimate test of multivariable precision! This capstone project brings together every technique we've mastered - from basic partial derivatives to advanced optimization. Let's solve a complex real-world problem that requires all our mathematical tools working in perfect harmony!"
   },
   "learningObjectives": [
-    "Synthesize all optimization concepts in one comprehensive project",
-    "Apply multiple optimization techniques to solve complex problems",
-    "Demonstrate computational fluency with gradient descent algorithms",
-    "Analyze optimization landscapes using mathematical and geometric tools",
-    "Connect optimization theory to real-world machine learning applications"
+    "Synthesize all multivariable calculus concepts in one comprehensive project",
+    "Apply partial derivatives, gradients, and optimization to real scenarios",
+    "Demonstrate computational fluency with complex multivariable functions",
+    "Connect mathematical theory to practical problem-solving",
+    "Prepare for advanced applications in machine learning and engineering"
   ],
   "coreConcepts": [
-    "Complete optimization workflow",
-    "Critical point analysis and classification",
-    "Gradient descent implementation with momentum",
-    "Convexity analysis and landscape characterization",
-    "Constraint handling and real-world applications"
+    "Complete multivariable calculus workflow",
+    "Function analysis: domain, continuity, partial derivatives",
+    "Gradient analysis and directional derivatives",
+    "Optimization with critical point classification",
+    "Real-world modeling and interpretation"
   ],
-  "readContent": "This capstone project synthesizes every optimization technique into one comprehensive investigation. You'll analyze complex functions from critical point identification through advanced algorithmic implementation, demonstrating mastery of mathematical analysis, gradient descent algorithms, momentum methods, and constraint handling. The project mirrors real-world optimization challenges where multiple techniques must work together: understanding the landscape through mathematical analysis, implementing efficient algorithms, and interpreting results in application contexts. This integrated approach shows how optimization theory enables practical problem-solving in machine learning, engineering, and quantitative analysis.",
-  "readAnalogy": "This capstone is like Greta leading the ultimate mountaineering expedition! Every optimization tool must work together perfectly - from reading topographic maps (mathematical analysis) to choosing optimal routes (algorithm selection) to navigating safely (constraint handling). It's the complete demonstration of optimization mastery!",
+  "readContent": "This capstone project synthesizes every multivariable calculus concept into one comprehensive investigation. You'll analyze complex functions from first principles through advanced optimization, demonstrating mastery of limits, continuity, partial derivatives, gradients, directional derivatives, Jacobian matrices, and optimization techniques. The project mirrors real-world applications where multivariable calculus provides the mathematical foundation for engineering design, economic modeling, and machine learning algorithms. This integrated approach shows how mathematical precision enables practical problem-solving.",
+  "readAnalogy": "This capstone is like Dr. Delta conducting the ultimate precision engineering project. Every tool in the multivariable calculus toolkit must work together perfectly - from basic function analysis through advanced optimization - to solve a complex real-world challenge that requires mathematical mastery.",
   "readKeyPoints": [
-    "Complete optimization analysis: landscape characterization through algorithm implementation",
-    "Integration of theory and practice: mathematical analysis plus computational methods",
-    "Real-world problem solving using comprehensive optimization toolkit"
+    "Complete multivariable function analysis from basics through optimization",
+    "Integration of all concepts: limits, continuity, derivatives, gradients, optimization",
+    "Real-world problem solving using mathematical precision"
   ],
-  "readDigDeeper": "This project workflow mirrors professional optimization applications: data scientists analyze loss function landscapes before choosing algorithms, engineers characterize design spaces before optimization, and quantitative analysts understand market models before implementing trading strategies.",
-  "readWhyMatters": "This capstone demonstrates industry-ready optimization skills. Machine learning engineers use these exact techniques for neural network training. Quantitative analysts apply optimization for portfolio management. Operations researchers use these methods for supply chain optimization. Your mathematical mountaineering skills translate directly to high-impact technical careers.",
-  "seeContent": "Work through comprehensive optimization analysis tools, implement gradient descent algorithms with visualization, and observe how mathematical theory guides practical algorithm selection and tuning.",
-  "hearContent": "Listen as I guide you through the ultimate demonstration of optimization mastery - every technique working together with the determination and precision that defines excellent mathematical mountaineering!",
-  "hearAudioUrl": "/audio/5.10.mp3",
-  "doContent": "Complete the comprehensive optimization project: analyze function landscapes mathematically, classify critical points using second-derivative tests, implement gradient descent with momentum, characterize convexity properties, and solve constrained optimization problems with real-world interpretation.",
+  "readDigDeeper": "This project workflow mirrors professional applications: data scientists analyze multivariable loss functions, engineers optimize multivariable performance criteria, and economists model multivariable utility and production functions. The mathematical techniques you're mastering form the foundation of quantitative careers.",
+  "readWhyMatters": "This capstone demonstrates career-ready mathematical skills. Data scientists use these exact techniques for machine learning optimization. Engineers apply multivariable calculus for design optimization. Quantitative analysts use these tools for financial modeling. Your mathematical precision translates directly to high-impact technical careers.",
+  "seeContent": "Work through comprehensive function analysis tools, visualize optimization landscapes with critical point identification, and observe how mathematical theory connects to real-world applications through integrated problem-solving workflows.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of multivariable calculus mastery - every concept working together with the precision and systematic approach that defines excellent mathematical problem-solving!",
+  "hearAudioUrl": "/audio/4.10.mp3",
+  "doContent": "Complete the comprehensive multivariable calculus project: analyze function properties, compute all types of derivatives, perform gradient and directional derivative analysis, construct Jacobian matrices, and solve optimization problems with complete critical point classification.",
   "memoryAids": {
-    "mantra": "Every peak, every valley, every algorithm too - optimization mastery shows what math can do! From theory to practice, summit to base - that's Greta's optimization ace!",
-    "visual": "Picture yourself as Greta's expedition partner, using every optimization technique with mountaineering precision to conquer a complex mathematical landscape that showcases the full power of optimization theory and practice."
+    "mantra": "Every tool, every technique, working with precision - that's multivariable calculus mastery in action!",
+    "visual": "Picture yourself as Dr. Delta's research partner, using every multivariable calculus tool with perfect precision to solve a complex real-world problem that showcases the power of mathematical analysis."
   },
   "conceptCheck": {
-    "question": "In Part D, your gradient descent algorithm converges to different points depending on the starting location. What does this reveal about the optimization landscape?",
+    "question": "In Part C, you find that a function has critical point (2,1) with Hessian eigenvalues λ₁ = 3, λ₂ = -1. What does this tell you about the optimization landscape?",
     "options": [
-      "The function has multiple local minima - it's non-convex with several basins of attraction",
-      "The learning rate is wrong - properly tuned algorithms always find the same solution",
-      "The function is convex but the algorithm implementation has bugs",
-      "This behavior is impossible for properly implemented gradient descent"
+      "Point (2,1) is a saddle point - not optimal for either maximization or minimization",
+      "Point (2,1) is a local minimum since one eigenvalue is positive",
+      "Point (2,1) is a local maximum since one eigenvalue is negative",
+      "Cannot determine without computing the discriminant D"
     ],
     "correctAnswer": 0,
-    "explanation": "Different convergence points from different starting locations indicates multiple local minima, confirming the function is non-convex. Each starting point falls into the basin of attraction of a different local minimum, which is typical behavior for complex optimization landscapes."
+    "explanation": "Mixed eigenvalue signs (λ₁ = 3 > 0, λ₂ = -1 < 0) indicate a saddle point. The function increases in one direction and decreases in another, making (2,1) neither a local maximum nor minimum."
   },
-  "realWorldConnection": "This project mirrors real machine learning workflows: analyzing loss function properties, implementing optimization algorithms, and interpreting convergence behavior. The optimization mastery you've developed applies directly to careers in AI, quantitative finance, engineering optimization, and data science research.",
+  "realWorldConnection": "This project mirrors real data science workflows: analyzing loss function landscapes, computing gradients for optimization algorithms, and finding optimal parameters for machine learning models. The mathematical precision you've developed translates directly to careers in AI, engineering, quantitative finance, and scientific research.",
   "hearTranscript": [
-    "The ultimate optimization adventure... I'm designing a comprehensive challenge that uses every optimization technique we've mastered to solve a real-world business problem.",
-    "Your mission: optimize a delivery network for a growing e-commerce company. You need to minimize total costs while maintaining customer satisfaction and adapting to changing demand patterns.",
-    "Part A: Formulate the multi-objective optimization problem. Balance delivery speed, transportation costs, warehouse efficiency, and customer satisfaction. Define objective functions and constraints that capture real business trade-offs.",
-    "Part B: Apply gradient-based methods to optimize warehouse locations and inventory levels. Use the Hessian matrix to verify that your solutions represent true optima rather than saddle points or local minima.",
-    "Part C: Implement stochastic optimization algorithms that can handle uncertainty in customer demand and adapt to seasonal variations. Your optimization strategy must be robust to changing business conditions.",
-    "Part D: Use constrained optimization techniques to respect budget limitations, capacity constraints, and service level agreements. Apply Lagrange multipliers to find optimal trade-offs between competing objectives.",
-    "Part E: Design validation strategies that test your optimization solutions under different scenarios. Ensure that optimal configurations maintain their performance as business conditions evolve.",
-    "This project demonstrates how optimization thinking transforms complex business challenges into systematic, solvable problems with measurable improvements. The same principles apply to any domain where you need to find the best possible outcomes given real-world constraints.",
-    "You're not just learning mathematics... you're developing the strategic mindset that turns optimization theory into practical solutions that create lasting value."
+    "The ultimate multivariable calculus challenge... I'm designing a complete data science optimization system that uses every calculus concept we've mastered to solve real-world analytical problems.",
+    "Your mission: build a recommendation system that optimizes user engagement while respecting privacy constraints and computational limitations. This requires sophisticated multivariable analysis at every step.",
+    "Part A: Model user preferences as multivariable functions depending on content features, timing patterns, and social factors. Use partial derivatives to understand how each factor influences engagement independently.",
+    "Part B: Calculate gradients to identify directions for improving recommendation accuracy. Implement gradient-based optimization algorithms that systematically adjust model parameters to minimize prediction errors.",
+    "Part C: Apply constrained optimization to balance multiple objectives... maximize user satisfaction while minimizing computational costs and respecting privacy limitations. Use Lagrange multipliers to find optimal trade-offs.",
+    "Part D: Analyze the Jacobian matrix of your recommendation transformation to understand how input changes propagate through your model. This helps ensure stable, predictable system behavior.",
+    "Part E: Implement real-time optimization using directional derivatives to adapt recommendations based on immediate user feedback while staying within system constraints.",
+    "This project demonstrates how multivariable calculus provides the mathematical foundation for sophisticated data science applications. The same techniques power search engines, social media feeds, financial trading algorithms, and scientific modeling.",
+    "You're not just learning mathematics... you're developing the analytical precision that transforms complex, multivariable problems into systematic, optimal solutions.",
+    "Welcome to the ultimate multivariable calculus challenge - where every concept works together to solve real-world problems with mathematical precision!"
   ]
 }

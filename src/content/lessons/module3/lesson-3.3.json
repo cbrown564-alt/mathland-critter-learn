@@ -1,62 +1,63 @@
 {
   "id": "3.3",
-  "title": "Finding Eigenvectors - Solving the Null Space",
+  "title": "Matrix Multiplication - Systematic Transformation",
   "duration": "40-45 minutes",
-  "characterId": "eileen",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "With the eigenvalues discovered, Eileen now hunts for their corresponding eigenvectors. Each eigenvalue has its own family of eigenvectors hiding in the null space of (A - λI). It's like finding all the secret agents who work for each specific eigenvalue boss!",
-    "characterMessage": "Now for the real detective work! Once I know the eigenvalues, I need to find their eigenvector families. Each eigenvalue has its own secret hideout - the null space - where all its eigenvector agents gather!"
+    "story": "Max discovers something profound: when he organizes transformation rules in one matrix and data in another, matrix multiplication systematically applies every transformation to every piece of data simultaneously. It's like having a master processor that can transform entire datasets with mathematical precision.",
+    "characterMessage": "This is where my organizational superpowers really shine! Matrix multiplication isn't just calculation - it's systematic transformation. I can take transformation rules, organize them perfectly, and apply them to entire datasets at once. It's like conducting an orchestra where every instrument knows exactly what to play!"
   },
   "learningObjectives": [
-    "Find eigenvectors by solving (A - λI)v = 0 for each eigenvalue λ",
-    "Understand eigenvectors as null space vectors of (A - λI)",
-    "Handle cases with multiple linearly independent eigenvectors",
-    "Normalize eigenvectors and understand scaling freedom",
-    "Recognize geometric vs algebraic multiplicity differences"
+    "Calculate matrix products using the row-column dot product method",
+    "Understand when matrix multiplication is defined (inner dimensions must match)",
+    "Recognize that matrix multiplication is not commutative",
+    "Interpret matrix multiplication as systematic transformation application",
+    "Apply matrix multiplication to solve systems and perform transformations"
   ],
   "coreConcepts": [
-    "Eigenvector equation: (A - λI)v = 0",
-    "Null space computation using row reduction",
-    "Eigenspace as span of eigenvectors",
-    "Geometric multiplicity vs algebraic multiplicity",
-    "Eigenvector normalization and scaling freedom"
+    "Matrix multiplication algorithm (row × column)",
+    "Dimension compatibility (m×n)(n×p) = (m×p)",
+    "Non-commutative property: AB ≠ BA generally",
+    "Matrix multiplication as transformation",
+    "Applications in systems and graphics"
   ],
-  "readContent": "Once I've cracked the eigenvalue code, the real detective work begins: finding each eigenvalue's family of eigenvectors. They're hiding in the null space of (A - λI), which I uncover through systematic row reduction. Each eigenspace tells a story - some eigenvalues are loners with one-dimensional spaces, others have rich multi-dimensional families. The geometric multiplicity (dimension of eigenspace) can be smaller than algebraic multiplicity, creating 'defective' matrices with personality disorders.",
-  "readAnalogy": "Finding eigenvectors is like mapping out each eigenvalue's secret hideout. Some eigenvalues run large operations (high-dimensional eigenspaces) while others work alone (one-dimensional spaces). Each eigenvector in the family can be scaled by any non-zero amount - they're all equally valid members of the clan.",
+  "readContent": "Matrix multiplication combines two matrices by taking dot products of rows from the first matrix with columns from the second matrix. For A (m×n) and B (n×p), the product AB is (m×p) where element C[i,j] equals the dot product of row i from A with column j from B. The inner dimensions must match (n=n) while outer dimensions (m,p) determine the result size. Unlike addition, matrix multiplication is not commutative: AB ≠ BA in general. Matrix multiplication represents systematic application of transformations, making it fundamental to computer graphics, solving linear systems, and data processing.",
+  "readAnalogy": "Matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules. Every combination gets processed according to precise organizational protocols.",
   "readKeyPoints": [
-    "Solve (A - λI)v = 0 for each eigenvalue λ to find its eigenvector family",
-    "Eigenspace dimension = geometric multiplicity = number of linearly independent eigenvectors",
-    "Any non-zero scalar multiple of an eigenvector is also an eigenvector"
+    "Multiplication rule: C[i,j] = (row i of A) · (column j of B)",
+    "Dimension compatibility: (m×n)(n×p) = (m×p) - inner dimensions must match",
+    "Non-commutative: AB ≠ BA in general - order matters!"
   ],
-  "readDigDeeper": "When geometric multiplicity equals algebraic multiplicity, the eigenvalue is called 'simple' and the matrix is well-behaved. When geometric < algebraic, the matrix is 'defective' and cannot be diagonalized using standard methods.",
-  "readWhyMatters": "Data scientists find eigenvectors of covariance matrices to perform Principal Component Analysis - revealing the main directions of variation in datasets. Image compression algorithms use eigenvectors to identify the most important visual patterns, allowing massive file size reduction while preserving image quality.",
-  "seeContent": "Watch row reduction procedures that systematically find eigenvector families, see how different eigenvalues produce different eigenspaces, and observe the geometric interpretation of eigenspaces as invariant subspaces.",
-  "hearContent": "Listen as I explain how finding eigenvectors is like discovering each eigenvalue's secret family - some eigenvalues have large families (multiple independent eigenvectors) while others are loners with just one direction!",
-  "hearAudioUrl": "/audio/3.3.mp3",
-  "doContent": "Use the Eigenvector Hunter to systematically solve null space problems, practice with the Row Reduction Stepper for detailed eigenvector calculations, and experiment with the Eigenspace Visualizer to see eigenvector families geometrically.",
+  "readDigDeeper": "Matrix multiplication represents function composition, where applying transformation B then A equals applying transformation AB. This operation is associative (A(BC) = (AB)C) but not commutative, reflecting the order-dependent nature of transformations.",
+  "readWhyMatters": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
+  "seeContent": "Watch step-by-step matrix multiplication with highlighted row-column combinations, see how dimension mismatches prevent multiplication, and explore how matrix products represent transformations of geometric objects.",
+  "hearContent": "Listen as I explain how matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules!",
+  "hearAudioUrl": "/audio/2.3.mp3",
+  "doContent": "Practice with the Matrix Multiplier showing step-by-step calculations, use the Dimension Compatibility Checker, and experiment with the Transformation Visualizer to see matrix multiplication as geometric transformation.",
+  "doType": "custom",
+  "doComponent": "max_matrix_transformer",
+  "doInstructions": "Use Max's Transformation Studio to see how matrix multiplication systematically transforms geometric shapes. Adjust matrix elements and watch how they affect rotation, scaling, and reflection in real-time.",
   "memoryAids": {
-    "mantra": "Null space hunting reveals each eigenvalue's family - that's where the eigenvector secrets hide!",
-    "visual": "Picture Eileen as a detective mapping out each eigenvalue's territory (eigenspace) and finding all the vector agents (eigenvectors) that belong to each eigenvalue boss."
+    "mantra": "Row meets column, dot product magic - systematic transformation of organized information!",
+    "visual": "Picture Max as an orchestra conductor: each row represents an instrument section, each column represents a musical phrase, and multiplication creates the perfect harmony of systematic transformation."
   },
   "conceptCheck": {
-    "question": "For eigenvalue λ = 2 of matrix [[3,1],[0,2]], find the eigenvector by solving (A - 2I)v = 0.",
+    "question": "Why can't you multiply a 3×2 matrix by a 3×4 matrix, but you can multiply a 3×2 by a 2×4?",
     "options": [
-      "Eigenvector family: all vectors of form [t, 0] where t ≠ 0",
-      "Eigenvector family: all vectors of form [0, t] where t ≠ 0",
-      "Eigenvector family: all vectors of form [t, t] where t ≠ 0",
-      "No eigenvectors exist for λ = 2"
+      "Inner dimensions must match: (3×2)(2×4) works because 2=2, but (3×2)(3×4) fails because 2≠3",
+      "You can only multiply square matrices",
+      "The first matrix must be larger than the second",
+      "Matrix multiplication requires the same dimensions"
     ],
     "correctAnswer": 0,
-    "explanation": "(A - 2I) = [[1,1],[0,0]]. Solving [[1,1],[0,0]][x,y]ᵀ = [0,0]ᵀ gives x + y = 0, so y = -x. But there's an error in my setup. Let me recalculate: For λ = 2, eigenvectors satisfy [[1,1],[0,0]]v = 0, giving eigenvectors [t,0]."
+    "explanation": "For matrix multiplication A×B, the number of columns in A must equal the number of rows in B. (3×2)(2×4) works: inner dimensions 2=2. (3×2)(3×4) fails: inner dimensions 2≠3."
   },
-  "realWorldConnection": "Data scientists find eigenvectors of covariance matrices to identify principal components - the main directions of data variation. Image compression algorithms use eigenvectors to represent pictures efficiently by focusing on the most important visual directions.",
+  "realWorldConnection": "Computer graphics multiply transformation matrices to rotate, scale, and translate 3D objects. Neural networks use matrix multiplication billions of times during training to process data through layers. Economic models multiply input-output matrices to predict how sector changes affect entire economies.",
   "hearTranscript": [
-    "Now for the real detective work... Once I know the eigenvalues, I need to find their eigenvector families.",
-    "Each eigenvalue has its own secret hideout called the null space. Here's how the investigation works: take your eigenvalue lambda, subtract it from the diagonal of your matrix to get A minus lambda I, then find all the vectors that this new matrix sends to zero.",
-    "This is null space analysis... systematic detective work to find every vector that belongs to each eigenvalue's family.",
-    "Some eigenvalues are loners with just one eigenvector direction. Others have large families with multiple linearly independent eigenvectors spanning entire subspaces. The dimension of each eigenspace tells you how many independent secret agents work for each eigenvalue boss.",
-    "Here's the beautiful part: eigenvectors can be scaled by any non-zero constant and they're still eigenvectors. It's like having a family where everyone shares the same directional DNA, but they can be different sizes.",
-    "When data scientists perform principal component analysis to find the most important patterns in massive datasets, when engineers identify the natural vibration modes of buildings and bridges... they're hunting through null spaces to find the eigenvector families that reveal hidden structure.",
-    "The null space hunting reveals each eigenvalue's complete family tree."
+    "This is where my organizational superpowers really shine... Matrix multiplication isn't just calculation, it's systematic transformation.",
+    "Think of it as the ultimate assembly line. Each row from the first matrix meets each column from the second matrix... they perform their dot product calculation, and out comes the result. Row meets column, dot product magic.",
+    "But here's what makes it profound: when computer graphics rotate that character in your video game, when neural networks process millions of data points during training, when GPS systems calculate optimal routes through traffic... they're all using matrix multiplication to transform information systematically.",
+    "The rule is simple but powerful: the inner dimensions must match. For matrices A and B, if A is m by n and B is n by p, then AB is m by p. The shared dimension n is where the magic happens... that's where the systematic transformation occurs.",
+    "Remember: order matters. AB is usually different from BA. Just like putting on socks then shoes versus shoes then socks... the sequence of transformations creates entirely different results."
   ]
 }

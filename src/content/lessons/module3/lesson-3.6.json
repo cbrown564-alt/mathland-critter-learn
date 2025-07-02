@@ -1,63 +1,61 @@
 {
   "id": "3.6",
-  "title": "Applications: PCA & Data Analysis",
-  "duration": "45-50 minutes",
-  "characterId": "eileen",
+  "title": "Elementary Row Operations & Matrix Rank",
+  "duration": "40-45 minutes",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen puts her detective skills to work on real data! Principal Component Analysis uses her eigenvalue expertise to find the hidden patterns in complex datasets. She can take thousands of measurements and reveal the few key directions that explain most of the variation.",
-    "characterMessage": "Time to solve real mysteries with eigenvalues! Principal Component Analysis is my favorite application - I can take messy, high-dimensional data and find the hidden patterns that explain everything. It's like finding the main plot threads in a complex detective story!"
+    "story": "Max has a messy filing cabinet that needs systematic reorganization. He can swap file drawers, multiply all files in a drawer by a constant factor, or add copies of one drawer's files to another drawer. These 'elementary operations' help Max transform any disorganized matrix into its cleanest, most informative form.",
+    "characterMessage": "Every messy filing system can be perfectly organized using just three simple operations! I can swap rows, scale rows, or add one row to another. With these tools, I can transform any matrix into its clearest, most informative form - revealing its true organizational structure!"
   },
   "learningObjectives": [
-    "Understand PCA as eigenvalue decomposition of covariance matrices",
-    "Compute principal components from data using eigenvalue analysis",
-    "Interpret principal components as directions of maximum variance",
-    "Apply dimensionality reduction using top eigenvalues/eigenvectors",
-    "Recognize PCA applications in data science and machine learning"
+    "Apply the three elementary row operations systematically",
+    "Use row operations to transform matrices to row echelon form",
+    "Understand how row operations preserve matrix information while changing appearance",
+    "Calculate matrix rank as the number of linearly independent rows",
+    "Recognize the relationship between rank and linear independence"
   ],
   "coreConcepts": [
-    "Covariance matrix and its eigenvalue decomposition",
-    "Principal components as eigenvectors",
-    "Explained variance and eigenvalues",
-    "Dimensionality reduction and data compression",
-    "Applications in face recognition, genetics, finance"
+    "Elementary row operations: swap, scale, add",
+    "Row echelon form and reduced row echelon form",
+    "Row operations preserve linear relationships",
+    "Matrix rank as number of independent rows",
+    "Rank and linear independence connection"
   ],
-  "readContent": "Principal Component Analysis (PCA) finds the main directions of variation in data by computing eigenvalues and eigenvectors of the covariance matrix. Each eigenvector (principal component) points in a direction of data variation, with the corresponding eigenvalue measuring the variance in that direction. The first principal component captures maximum variance, the second captures maximum remaining variance (orthogonal to the first), and so on. PCA enables dimensionality reduction by keeping only the top k components that explain most variance. This compresses high-dimensional data while preserving essential structure.",
-  "readAnalogy": "PCA is like being a data detective with X-ray vision. You can see through the chaos of high-dimensional data to spot the few fundamental patterns that explain most of what's happening. It's reducing a complex mystery novel to its essential plot elements.",
+  "readContent": "Elementary row operations transform matrices while preserving their essential linear relationships: (1) Swap two rows, (2) Multiply a row by a non-zero constant, (3) Add a multiple of one row to another row. These operations convert matrices to row echelon form, where each row starts with a leading 1 (pivot) to the right of the previous row's pivot. Matrix rank equals the number of non-zero rows in row echelon form, representing the number of linearly independent rows. Rank determines the dimension of the row space and indicates how much independent information the matrix contains.",
+  "readAnalogy": "Elementary row operations are like the basic tools in a carpenter's toolkit - they allow you to shape and modify the matrix structure without changing the underlying information.",
   "readKeyPoints": [
-    "PCA diagonalizes covariance matrices to find principal directions of data variation",
-    "Eigenvalues rank the importance of each principal component by variance explained",
-    "Dimensionality reduction keeps top k components that capture most variance"
+    "Swap rows: switch two rows to change their order",
+    "Scale rows: multiply a row by a non-zero constant to change its height",
+    "Add rows: add a multiple of one row to another to combine information"
   ],
-  "readDigDeeper": "PCA assumes linear relationships and that variance equals importance. For non-linear patterns, kernel PCA or manifold learning techniques extend the basic eigenvalue approach to curved data structures.",
-  "readWhyMatters": "Netflix uses PCA to compress user preference patterns and identify movie clusters. Geneticists apply PCA to DNA data to trace human migration patterns. Financial analysts use PCA to reduce thousands of stock price movements to a few key market factors.",
-  "seeContent": "Watch real datasets get transformed through PCA, see how principal components reveal hidden data structure, and observe dimensionality reduction that maintains essential information while eliminating noise.",
-  "hearContent": "Listen as I explain how PCA is like being a data detective - finding the few key storylines that explain most of what's happening in complex, messy datasets!",
-  "hearAudioUrl": "/audio/3.6.mp3",
-  "doContent": "Use the PCA Detective tool to analyze real datasets, practice with the Variance Explorer to see how eigenvalues rank importance, and experiment with the Dimension Reducer to compress data optimally.",
+  "readDigDeeper": "Row operations are reversible and can be used to simplify matrix calculations. They're also used to find the rank of a matrix, which is the number of linearly independent rows or columns.",
+  "readWhyMatters": "Row operations are a fundamental part of linear algebra: they allow us to manipulate matrices to find solutions to systems of linear equations, calculate determinants, and understand matrix properties.",
+  "seeContent": "Watch step-by-step row operations transforming messy matrices into clean row echelon form, see how rank reveals the true independent information content, and observe how different matrices can have the same rank.",
+  "hearContent": "Listen as I explain how organizing matrix information is like reorganizing a filing cabinet systematically - the same information is there, but now it's perfectly arranged and easy to understand!",
+  "hearAudioUrl": "/audio/2.6.mp3",
+  "doContent": "Use the Row Operations Simulator to practice systematic matrix transformation, experiment with the Rank Calculator to find independent information content, and try the Echelon Form Converter for automatic organization.",
   "memoryAids": {
-    "mantra": "Biggest eigenvalue, biggest story - PCA finds the main plot threads in any data mystery!",
-    "visual": "Picture Eileen as a data detective using eigenvalue magnifying glasses to spot the most important patterns hidden in clouds of messy data points."
+    "mantra": "Swap, scale, add - three simple tools to organize any matrix into its clearest, most informative form!",
+    "visual": "Picture Max reorganizing his filing cabinet: swapping drawers, adjusting file quantities, and combining information strategically until everything is perfectly ordered and the true information content is revealed."
   },
   "conceptCheck": {
-    "question": "In PCA, if the first principal component explains 60% of variance and the second explains 25%, how much information is preserved using just these two components?",
+    "question": "After row operations, a 4×5 matrix is in row echelon form with 3 non-zero rows. What is the rank and what does it mean?",
     "options": [
-      "85% of the original data variance is captured",
-      "35% of the original data variance is captured",
-      "60% since the first component is most important",
-      "Cannot determine without knowing the original dimensions"
+      "Rank = 3, meaning the matrix has 3 linearly independent rows containing all the unique information",
+      "Rank = 4, because that's the number of original rows",
+      "Rank = 5, because that's the number of columns",
+      "Rank = 1, because row operations reduce complexity"
     ],
     "correctAnswer": 0,
-    "explanation": "The percentage of variance explained is additive for orthogonal principal components. First component: 60%, second component: 25%, total: 60% + 25% = 85% of original variance is preserved."
+    "explanation": "Rank equals the number of non-zero rows in row echelon form. Rank = 3 means exactly 3 rows contain linearly independent information; the 4th row became zero, indicating it was dependent on the others."
   },
-  "realWorldConnection": "Netflix uses PCA to compress movie rating patterns and find user preference clusters. Geneticists use PCA to identify population structures from DNA data. Financial analysts use PCA to find the main risk factors driving stock market movements, reducing thousands of stocks to a few key components.",
+  "realWorldConnection": "Data scientists use row operations to clean datasets and find independent variables. Engineers use them to solve structural analysis problems. Economists use matrix rank to determine if economic models have enough independent equations to find unique solutions.",
   "hearTranscript": [
-    "This is where eigenvector analysis reveals its true power... Principal Component Analysis uses eigenvalues and eigenvectors to find the most important patterns hiding in complex data.",
-    "Imagine you're analyzing customer behavior data with hundreds of variables: purchase history, browsing patterns, demographic information, seasonal preferences. Most of this information is redundant... many variables are correlated and move together.",
-    "PCA finds the principal components... the fundamental directions that capture the most variation in your data. These are the eigenvectors of the data's covariance matrix, ranked by their eigenvalues.",
-    "The first principal component points in the direction of maximum variation. The second component, perpendicular to the first, captures the most remaining variation. Together, just a few principal components often explain 80% or more of all the patterns in your data.",
-    "It's like discovering that a complex symphony with dozens of instruments can be understood through just a few fundamental harmonic themes.",
-    "Facial recognition systems use eigenfaces... the principal components of human face variation. Instead of storing millions of pixels for each person, they store just the coefficients for the most important eigenface directions.",
-    "Geneticists use PCA to trace human migration patterns by analyzing the principal components of DNA variation across populations. Climate scientists use it to identify the few fundamental modes like El Niño that drive most global weather patterns.",
-    "Principal component analysis transforms the curse of dimensionality into the blessing of hidden simplicity."
+    "Every messy filing system can be perfectly organized using just three simple operations... Think of me as the ultimate organizational consultant with the most systematic toolkit ever created.",
+    "Picture the most chaotic filing cabinet you've ever seen... papers everywhere, drawers in the wrong order, information scattered randomly. But I have three magical organizational tools that can transform any mess into perfect clarity.",
+    "Tool one: row swapping. I can exchange any two file drawers instantly. Tool two: row scaling. I can multiply every document in a drawer by the same factor. Tool three: row addition. I can take copies from one drawer and systematically add them to another drawer.",
+    "These three operations are reversible and preserve all the essential information... they just reveal it more clearly. When I'm finished, the matrix is in row echelon form... like a perfectly organized staircase where each row starts further to the right than the one above it.",
+    "But here's the profound discovery: the number of non-zero rows after my systematic organization reveals the matrix's true rank... its independent information content. A 4 by 5 matrix might look complex, but if only 3 rows survive my organizational process, then it truly contains just 3 pieces of independent information.",
+    "Data scientists use these techniques to clean massive datasets, finding which variables actually contain unique information versus redundant copies."
   ]
 }

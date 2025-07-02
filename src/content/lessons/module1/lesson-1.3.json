@@ -1,53 +1,60 @@
 {
   "id": "1.3",
-  "title": "The Dot Product - Measuring Similarity",
-  "duration": "40-45 minutes",
-  "characterId": "vera",
+  "title": "Linear & Quadratic Equations",
+  "duration": "35-40 minutes",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Vera and her friend Pippa the Rabbit are both hiking, but in different directions. How can we measure how 'similar' their paths are? Are they going roughly the same way, or in completely opposite directions? The dot product is our mathematical tool for measuring agreement between vectors!",
-    "characterMessage": "How much do two directions agree with each other? That's what the dot product tells us! Positive means we're heading the same way, zero means we're perpendicular, and negative means we're going in opposite directions. It's like a friendship meter for vectors!"
+    "story": "Sometimes Ollie needs to find the perfect spot where the water level meets his dam height. This is like solving equations - finding where two things are equal.",
+    "characterMessage": "Finding the balance point is like solving equations! Just like I need to find where my dam height meets the water level perfectly, we solve equations to find where expressions are equal."
   },
   "learningObjectives": [
-    "Calculate dot products using both geometric and algebraic formulas",
-    "Interpret dot product results in terms of vector similarity",
-    "Understand the geometric meaning of dot product as projection",
-    "Identify orthogonal vectors using the dot product",
-    "Apply dot products to real-world similarity problems"
+    "Solve linear equations with one variable systematically",
+    "Apply the quadratic formula and factoring to solve quadratic equations",
+    "Solve simple systems of linear equations",
+    "Check solutions and identify extraneous solutions"
   ],
   "coreConcepts": [
-    "Dot product: **u** · **v** = |**u**||**v**|cos(θ)",
-    "Algebraic formula: **u** · **v** = u₁v₁ + u₂v₂ + u₃v₃",
-    "Geometric interpretation: projection and similarity",
-    "Orthogonal vectors (dot product = 0)",
-    "Properties: commutative, distributive"
+    "Solving linear equations",
+    "Quadratic formula",
+    "Factoring quadratic equations",
+    "Systems of linear equations",
+    "Checking solutions"
   ],
-  "readContent": "The dot product measures how much two vectors point in the same direction. Geometrically: **u** · **v** = |**u**||**v**|cos(θ) where θ is the angle between vectors. Algebraically: **u** · **v** = u₁v₁ + u₂v₂ + u₃v₃. Results: positive (similar directions), zero (perpendicular), negative (opposite directions). The dot product equals zero when vectors are orthogonal (perpendicular). It's commutative (**u** · **v** = **v** · **u**) and distributive over addition. For unit vectors, the dot product directly gives cos(θ).",
-  "seeContent": "Visualize how dot products measure the 'projection' of one vector onto another, like measuring shadows. Watch the Similarity Meter show how vector angles affect dot product values from -1 to +1.",
-  "hearContent": "Listen as I explain how the dot product is like measuring how much vectors 'agree' with each other - it's the mathematical way to quantify whether things are pointing in similar directions!",
-  "hearAudioUrl": "/audio/1.3.mp3",
-  "doContent": "Experiment with the Dot Product Visualizer to see how changing vector angles affects results, use the Orthogonal Detector to find perpendicular vectors, and practice with the Projection Calculator.",
   "memoryAids": {
-    "mantra": "Positive = same direction, zero = perpendicular, negative = opposite - it's the agreement scale for vectors!",
-    "visual": "Picture two hikers: if they're walking in similar directions their dot product is positive, if perpendicular it's zero, if opposite it's negative."
+    "mantra": "What you do to one side, do to the other - just like keeping my dam balanced!",
+    "visual": "Balance beam showing how equations stay equal when the same operations are applied to both sides"
   },
+  "realWorldConnection": "Linear equations help us understand trends in data, while quadratic equations model curved relationships like population growth, profit optimization, or the trajectory of projectiles in physics simulations.",
   "conceptCheck": {
-    "question": "Two hiking paths are represented by vectors [3, 4] and [1, 2]. Calculate their dot product and interpret the result.",
+    "question": "Solve for x: 2x + 5 = 13. What principle keeps the equation balanced?",
     "options": [
-      "11 - the paths are going in generally the same direction",
-      "5 - the paths are perpendicular to each other",
-      "-1 - the paths are going in opposite directions",
-      "0 - there's no relationship between the paths"
+      "x = 4, using the balance principle",
+      "x = 9, by adding 5 to both sides",
+      "x = 6.5, by dividing everything by 2",
+      "x = 8, by subtracting 5 from the left side only"
     ],
     "correctAnswer": 0,
-    "explanation": "Dot product: [3,4] · [1,2] = (3)(1) + (4)(2) = 3 + 8 = 11. Since this is positive, the vectors point in generally the same direction - the hikers are heading roughly the same way!"
+    "explanation": "Subtract 5 from both sides: 2x = 8, then divide by 2: x = 4. The balance principle means whatever we do to one side, we must do to the other to maintain equality."
   },
-  "realWorldConnection": "Google uses dot products to measure how similar your search query is to web pages - higher dot products mean more relevant results. Spotify calculates dot products between your listening history and song characteristics to recommend music. Machine learning uses dot products billions of times to find patterns and make predictions.",
+  "readContent": "Finding where two things are equal is like finding the perfect water level for my dam. Linear equations (ax + b = 0) are like finding the right height for a straight beam. Quadratic equations (ax² + bx + c = 0) are like finding the optimal curve for water flow. I solve them systematically: isolation for linear equations, factoring or the quadratic formula for quadratics.",
+  "readAnalogy": "Solving equations is like finding the perfect balance point where all forces are equal. Just like my dam needs to balance water pressure with structural strength, equations balance mathematical expressions to find exact solutions.",
+  "readKeyPoints": [
+    "Linear equations: isolate the variable like adjusting one measurement at a time",
+    "Quadratic formula: x = (-b ± √(b²-4ac))/(2a) - your reliable backup plan",
+    "Always check solutions by substituting back into the original equation"
+  ],
+  "readDigDeeper": "Systems of equations can be solved using substitution, elimination, or matrix methods. The discriminant (b²-4ac) tells you about solution types: positive (2 real solutions), zero (1 repeated solution), negative (2 complex solutions).",
+  "readWhyMatters": "Linear equations model constant relationships in data (like steady growth rates), while quadratic equations model curved relationships like profit optimization, population growth curves, and the trajectory of projectiles in physics simulations.",
+  "seeContent": "Watch balance beam visualizations showing how equation solving maintains equality, and see how quadratic equations create parabolic curves when graphed.",
+  "hearContent": "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
+  "hearAudioUrl": "/audio/0.3.mp3",
+  "doContent": "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step.",
   "hearTranscript": [
-    "Scalar multiplication is like having a magical amplifier for your adventures... you can make any journey longer or shorter while keeping the same direction.",
-    "When I multiply a vector by 2, I'm saying \"go twice as far in the same direction.\" Multiply by one-half? \"Go half the distance but stay on the same path.\" It's beautifully simple and incredibly powerful.",
-    "Here's what's fascinating: scalar multiplication can even reverse directions. Multiply by negative 1, and you're pointing exactly opposite to where you started. Multiply by negative 3, and you're going three times as far in the completely opposite direction.",
-    "Unit vectors are my favorite application of scalar multiplication. Take any vector, divide by its length, and you get a unit vector... a pure direction with magnitude exactly 1. It's like extracting the essence of direction from any movement.",
-    "Machine learning algorithms use scalar multiplication constantly. When training neural networks, they adjust vector weights by multiplying by small scalars... gradually tuning the model's behavior through thousands of tiny scalar adjustments.",
-    "Even in physics, scalar multiplication governs everything. Force vectors get multiplied by time to calculate momentum. Velocity vectors get multiplied by mass to determine kinetic energy."
+    "Solving equations is like being a mathematical detective... you're systematically uncovering the value of unknown variables using logical steps and proven techniques.",
+    "Linear equations are the straightforward cases. If I have 3x plus 7 equals 22, I solve it step by step... subtract 7 from both sides to get 3x equals 15, then divide both sides by 3 to find x equals 5. It's like following a clear construction sequence... each step moves me closer to the solution.",
+    "The key principle is maintaining balance... whatever I do to one side of the equation, I must do to the other side. It's like keeping a bridge level... if I add weight to one side, I need to add equal weight to the other side.",
+    "Quadratic equations require more sophisticated techniques. When I have x squared minus 5x plus 6 equals 0, I can factor it into x minus 2 times x minus 3 equals 0. Then I use the zero product property... if two factors multiply to zero, at least one must be zero. So x equals 2 or x equals 3.",
+    "The quadratic formula is my universal tool for when factoring gets complicated. For any quadratic ax squared plus bx plus c equals 0, the solution is x equals negative b plus or minus the square root of b squared minus 4ac, all divided by 2a.",
+    "In data science, you're constantly solving equations... finding optimal parameters for machine learning models, calculating statistical measures, or determining break-even points for business decisions. These equation-solving skills are your mathematical foundation tools."
   ]
 }

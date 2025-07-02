@@ -1,65 +1,64 @@
 {
   "id": "7.10",
-  "title": "Sigmund's Hypothesis Testing Mastery Capstone",
+  "title": "Pippa's Probability & Distributions Capstone",
   "duration": "50-60 minutes",
-  "characterId": "sigmund",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund faces the ultimate test of statistical elegance: a comprehensive project that synthesizes every aspect of hypothesis testing mastery. From formulating hypotheses through calculating power, from interpreting p-values to assessing practical significance - this capstone demonstrates the complete art of making principled decisions under uncertainty.",
-    "characterMessage": "Time for the ultimate demonstration of hypothesis testing mastery! This comprehensive challenge brings together every element we've studied - hypothesis formulation, test selection, error analysis, power calculations, and the wisdom to distinguish statistical from practical significance. Let's conduct statistical inference with complete elegance!"
+    "story": "Pippa faces the ultimate probability challenge: a comprehensive magical investigation that requires every technique she's mastered! From basic sample spaces through complex distributions, from expectation calculations to sampling theory - this capstone synthesizes all probability concepts into one integrated exploration of uncertainty and randomness.",
+    "characterMessage": "Time for the grand finale of probability magic! This ultimate challenge brings together everything we've learned - sample spaces, distributions, expectation, variance, limit theorems, and sampling. Let's solve a complex real-world problem that showcases the full power of probability theory!"
   },
   "learningObjectives": [
-    "Synthesize all hypothesis testing concepts in comprehensive real-world scenarios",
-    "Apply appropriate tests while considering assumptions and limitations",
-    "Interpret results with full consideration of error types and power",
-    "Distinguish between statistical and practical significance appropriately",
-    "Demonstrate mastery of complete inferential reasoning process"
+    "Synthesize all probability concepts in one comprehensive project",
+    "Apply multiple distribution types to model real phenomena",
+    "Calculate expectations, variances, and use limit theorems",
+    "Analyze sampling scenarios with proper statistical reasoning",
+    "Connect probability theory to practical decision-making applications"
   ],
   "coreConcepts": [
-    "Complete hypothesis testing workflow",
-    "Test selection and assumption checking",
-    "Error analysis and power considerations",
-    "Effect size interpretation and practical significance",
-    "Principled statistical decision-making"
+    "Complete probability analysis workflow",
+    "Distribution selection and parameter estimation",
+    "Expectation and variance calculations",
+    "Limit theorem applications",
+    "Sampling theory and inference"
   ],
-  "readContent": "This capstone project synthesizes every hypothesis testing concept into comprehensive real-world investigations. You'll formulate hypotheses, select appropriate tests, calculate test statistics and p-values, analyze Type I/II errors and power, and distinguish statistical from practical significance. The project mirrors professional statistical practice where technical competence must combine with practical wisdom. You'll work through scenarios that require not just computational skills but also judgment about what constitutes meaningful evidence and important effects. This integrated approach demonstrates how hypothesis testing serves as a principled framework for making decisions under uncertainty while acknowledging the inherent limitations of statistical inference.",
-  "readAnalogy": "This capstone is like Sigmund conducting a complete statistical symphony where every element must work in elegant harmony - from the opening theme of hypothesis formulation through the complex movements of test selection and power analysis, culminating in the graceful finale of practical interpretation. Every note matters, and the beauty lies in the complete composition.",
+  "readContent": "This capstone project synthesizes every probability concept into one comprehensive investigation. You'll analyze complex scenarios from basic sample space construction through advanced limit theorem applications, demonstrating mastery of distributions, expectation, variance, conditional probability, and sampling theory. The project mirrors real-world applications where probability provides the mathematical foundation for decision-making under uncertainty: quality control, financial risk assessment, medical diagnosis, and machine learning. This integrated approach shows how probability theory enables quantitative reasoning about uncertain phenomena across diverse fields.",
+  "readAnalogy": "This capstone is like Pippa conducting the ultimate magical performance! Every probability technique must work together perfectly - from basic sample spaces through complex distributions to advanced sampling theory. It's the complete demonstration of how mathematics transforms uncertainty into actionable insights!",
   "readKeyPoints": [
-    "Complete inferential workflow: hypothesis formulation through practical interpretation",
-    "Integration of technical computation with practical wisdom about significance",
-    "Professional-level statistical reasoning that acknowledges uncertainty and limitations"
+    "Complete probability analysis: sample spaces through statistical inference",
+    "Integration of discrete and continuous distributions with real applications",
+    "Expectation, variance, and limit theorems for practical problem-solving"
   ],
-  "readDigDeeper": "This project workflow mirrors professional statistical consulting where technical expertise must combine with domain knowledge and practical judgment. The ability to synthesize computational skills with interpretive wisdom distinguishes competent statistical practitioners from mere calculators.",
-  "readWhyMatters": "This capstone demonstrates career-ready statistical inference skills. Data scientists use these complete workflows for product analytics and A/B testing. Medical researchers apply comprehensive hypothesis testing for clinical trial analysis. Policy researchers use these skills to evaluate intervention effectiveness with appropriate recognition of statistical and practical significance.",
-  "seeContent": "Work through comprehensive hypothesis testing workflows that integrate all course concepts, visualize complete statistical reasoning processes, and observe how technical analysis connects to practical decision-making in realistic scenarios.",
-  "hearContent": "Listen as I guide you through the ultimate demonstration of hypothesis testing mastery - every concept working together with the elegance and principled reasoning that defines excellent statistical practice!",
-  "hearAudioUrl": "/audio/7.10.mp3",
-  "doContent": "Complete comprehensive hypothesis testing projects: formulate hypotheses for complex scenarios, select and apply appropriate tests, analyze power and error implications, calculate effect sizes, and provide practical interpretations that guide real-world decision-making.",
+  "readDigDeeper": "This project workflow mirrors professional probability applications: data scientists model user behavior with distributions, actuaries use probability for insurance pricing, engineers apply probability for reliability analysis, and economists use probability for market forecasting. The mathematical techniques you're mastering form the foundation of quantitative decision-making.",
+  "readWhyMatters": "This capstone demonstrates career-ready probability skills. Data scientists use these exact techniques for predictive modeling and A/B testing. Actuaries apply probability theory for insurance and pension calculations. Quality engineers use probability for process control and reliability analysis. Your probability mastery translates directly to high-impact careers in data science, finance, engineering, and research.",
+  "seeContent": "Work through comprehensive probability analysis tools that integrate distribution fitting, parameter estimation, expectation calculations, and sampling simulations in realistic application scenarios.",
+  "hearContent": "Listen as I guide you through the ultimate demonstration of probability mastery - every concept working together with the playful precision and magical insight that defines excellent probabilistic reasoning!",
+  "hearAudioUrl": "/audio/6.10.mp3",
+  "doContent": "Complete the comprehensive probability project: construct sample spaces, select and apply appropriate distributions, calculate expectations and variances, apply limit theorems for approximations, and analyze sampling scenarios with proper uncertainty quantification.",
   "memoryAids": {
-    "mantra": "Every hypothesis, every test, every elegant decision manifest! From formulation through interpretation - that's statistical perfection!",
-    "visual": "Picture yourself as Sigmund's accomplished partner, gracefully conducting complete statistical investigations with the elegance and wisdom that transforms raw data into principled insights for important decisions."
+    "mantra": "Every distribution, every theorem, every magical rule - probability mastery is the ultimate tool! From uncertainty to insight with mathematical might!",
+    "visual": "Picture yourself as Pippa's magical apprentice, using every probability technique with playful precision to transform a complex uncertain scenario into clear, quantified insights that guide real-world decisions."
   },
   "conceptCheck": {
-    "question": "In Part B, you find p = 0.001 with Cohen's d = 0.15 in a study of n = 1,000. How should you interpret this result?",
+    "question": "In Part C, you model customer arrivals as Poisson(λ=5 per hour) and use Normal approximation. What justifies this approximation and what parameters should you use?",
     "options": [
-      "Statistically significant but practically trivial effect - large sample detected tiny difference",
-      "Strong evidence for both statistical and practical significance",
-      "The large sample size proves this is an important finding",
-      "The low p-value indicates a meaningful effect regardless of effect size"
+      "Poisson(5) ≈ Normal(5, 5) since for large λ, Poisson approaches Normal with μ = σ² = λ",
+      "Use Normal(5, √5) since Poisson variance equals the mean",
+      "Cannot use Normal approximation since Poisson is discrete",
+      "Both A and B describe the same approximation with different variance notation"
     ],
-    "correctAnswer": 0,
-    "explanation": "p = 0.001 shows statistical significance, but Cohen's d = 0.15 indicates a very small effect size (below 'small' threshold of 0.2). The large sample (n = 1,000) enabled detection of a statistically reliable but practically trivial difference."
+    "correctAnswer": 3,
+    "explanation": "For large λ, Poisson(λ) ≈ Normal(λ, λ). Here: Poisson(5) ≈ Normal(5, 5). Since Normal uses standard deviation, this is Normal(μ=5, σ=√5). Both A and B are correct - A uses variance notation (σ²=5), B uses standard deviation notation (σ=√5)."
   },
-  "realWorldConnection": "This capstone mirrors real statistical consulting workflows: pharmaceutical statisticians conducting clinical trial analyses, tech company data scientists running A/B testing programs, and policy researchers evaluating intervention effectiveness. The complete inferential reasoning skills you've developed apply directly to careers requiring principled decision-making under uncertainty.",
+  "realWorldConnection": "This project mirrors real data science workflows: modeling user behavior with appropriate distributions, calculating expected outcomes for business planning, using limit theorems for approximations, and applying sampling theory for A/B testing. The probability mastery you've developed applies directly to careers in data science, actuarial science, quality engineering, and quantitative research.",
   "hearTranscript": [
-    "The ultimate statistical inference challenge... I'm designing a comprehensive research project that demonstrates the complete elegance of hypothesis testing across multiple domains simultaneously.",
-    "Your mission: evaluate the effectiveness of a new educational technology intervention using the complete statistical inference framework we've mastered.",
-    "Part A: Design null and alternative hypotheses that appropriately capture the research question while acknowledging inherent uncertainty. Calculate required sample sizes using power analysis to ensure adequate ability to detect meaningful educational effects.",
-    "Part B: Collect data using proper randomization procedures, then calculate appropriate test statistics and p-values. Implement multiple comparison corrections when testing several outcome measures simultaneously.",
-    "Part C: Construct confidence intervals that communicate both effect magnitude and uncertainty. Distinguish between statistical significance and practical significance by calculating effect sizes and their educational implications.",
-    "Part D: Address Type I and Type II error considerations by examining the consequences of false discoveries versus missed opportunities in educational contexts.",
-    "Part E: Present results with statistical sophistication that acknowledges limitations while enabling informed decision-making about intervention implementation.",
-    "This project demonstrates how statistical inference transforms subjective impressions about educational effectiveness into principled, evidence-based conclusions that appropriately balance skepticism with openness to genuine improvements.",
-    "You're not just learning statistical techniques... you're developing the intellectual sophistication to evaluate evidence claims across any domain where reliable knowledge must be extracted from uncertain data.",
-    "This represents statistical reasoning at its most mature and elegant form."
+    "The ultimate probability adventure... I'm designing a magical performance that demonstrates every probability concept we've mastered through one spectacular show!",
+    "Your mission: create a complete uncertainty analysis for a new business launch. You'll use probability mathematics to model customer behavior, predict sales, and optimize marketing strategies.",
+    "Part A: Define sample spaces and events for customer interactions. Model the complete range of possible outcomes from marketing campaigns, website visits, and purchase decisions. Use conditional probability to understand how different customer segments respond to various approaches.",
+    "Part B: Choose appropriate probability distributions for different business metrics. Model customer arrivals with Poisson distributions, purchase amounts with normal distributions, and conversion rates with binomial distributions. Calculate expected values and variances for revenue forecasting.",
+    "Part C: Apply the Central Limit Theorem to create confidence intervals for projected outcomes. Use sampling theory to determine how much market research data you need for reliable predictions.",
+    "Part D: Build probabilistic models that update predictions as new data arrives. Implement Bayesian approaches that combine prior business knowledge with observed customer behavior.",
+    "Part E: Design probability-based decision rules for marketing optimization. Use expected value calculations to choose between different campaign strategies, accounting for both potential gains and risks.",
+    "This project demonstrates how probability thinking transforms business uncertainty into systematic, mathematical analysis. The same approaches enable data-driven decision making in any domain where outcomes are uncertain but patterns exist.",
+    "You're not just learning mathematics... you're developing the probabilistic intuition that enables intelligent reasoning under uncertainty in our wonderfully unpredictable world!"
   ]
 }

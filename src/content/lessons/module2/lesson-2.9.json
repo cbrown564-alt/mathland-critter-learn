@@ -1,64 +1,63 @@
 {
   "id": "2.9",
-  "title": "Block Matrices & Advanced Organization",
-  "duration": "35-40 minutes",
-  "characterId": "max",
+  "title": "Vera's Forest Mapping Capstone Project",
+  "duration": "45-60 minutes",
+  "characterId": "vera",
   "narrativeHook": {
-    "story": "Max faces his ultimate organizational challenge: managing massive datasets that are too complex for simple matrix organization. The solution? Block matrices - systematic organization within systematic organization, like having organized sections within an organized filing cabinet, each with its own specialized purpose.",
-    "characterMessage": "When simple organization isn't enough, I use organizational inception - matrices within matrices! Block organization lets me handle massive, complex data by breaking it into specialized, manageable sections while maintaining systematic control over the entire structure."
+    "story": "Vera has been hired to create a comprehensive mapping system for a new national park. She needs to use everything she's learned about vectors - from basic direction and magnitude to advanced concepts like basis and dimension - to solve real navigation, measurement, and optimization problems.",
+    "characterMessage": "Time for the ultimate adventure! I'm putting together everything we've learned to create a complete mapping system. We'll design trails, optimize camera placement, and analyze visitor patterns - all using the power of vector mathematics!"
   },
   "learningObjectives": [
-    "Understand block matrix structure and notation",
-    "Perform block matrix addition and multiplication",
-    "Recognize when block structure simplifies complex calculations",
-    "Apply block matrices to partition complex problems systematically",
-    "Use block matrices for efficient computation and data organization"
+    "Apply vector addition and scalar multiplication to design trail systems",
+    "Use vector norms and dot products for distance and similarity calculations",
+    "Implement linear combinations and independence for optimal resource placement",
+    "Create coordinate systems using basis and dimension concepts",
+    "Synthesize all vector concepts in a comprehensive real-world project"
   ],
   "coreConcepts": [
-    "Block matrix partitioning and structure",
-    "Block addition and multiplication rules",
-    "Special block forms: diagonal, triangular",
-    "Applications in large-scale computation",
-    "Computational efficiency advantages"
+    "Trail system design using vector addition",
+    "Distance calculations using norms",
+    "Optimal positioning using linear combinations",
+    "Coverage analysis using linear independence",
+    "Coordinate system creation using basis theory"
   ],
-  "readContent": "Block matrices partition large matrices into smaller, manageable submatrices called blocks. This enables systematic organization of complex data and efficient computation. Block addition combines corresponding blocks: [A B; C D] + [E F; G H] = [A+E B+F; C+G D+H]. Block multiplication follows the same pattern as regular matrix multiplication but with blocks: the (i,j) block of the product equals the sum of products of corresponding blocks from row i and column j. Special forms include block diagonal matrices (off-diagonal blocks are zero) and block triangular matrices. Block structure often reflects natural problem partitioning and enables parallel computation on different blocks simultaneously.",
-  "readAnalogy": "Block matrices are like having multiple filing cabinets within a single cabinet - each drawer handles a specific type of information, making it easier to find and organize large amounts of data.",
+  "readContent": "Time for the ultimate vector adventure! I'm designing a comprehensive mapping system for a new national park using every vector concept we've mastered. We'll design efficient trail systems with vector addition, optimize wildlife camera placement using linear independence, analyze visitor movement patterns with basis theory, and calculate distances using various norms. This is where all our vector tools come together!",
+  "readAnalogy": "This capstone is like being the chief navigator for an entire national park - using vectors as your universal toolkit to solve complex spatial problems systematically and efficiently.",
   "readKeyPoints": [
-    "Block matrix structure: [A B; C D]",
-    "Block addition: [A+E B+F; C+G D+H]",
-    "Block multiplication: [A B; C D] [E F; G H] = [AE+BG AF+BH; CE+DG CF+DH]",
-    "Special forms: diagonal, triangular",
-    "Applications in large-scale computation"
+    "Trail design using vector addition and scalar multiplication",
+    "Distance optimization using different vector norms",
+    "Camera placement using linear independence principles"
   ],
-  "readDigDeeper": "Block matrices are a powerful tool for managing and manipulating large datasets. They're used in various applications like parallel computing, data compression, and solving systems of linear equations.",
-  "readWhyMatters": "Block matrices are a powerful tool for managing and manipulating large datasets. They're used in various applications like parallel computing, data compression, and solving systems of linear equations.",
-  "seeContent": "Visualize how large matrices get partitioned into meaningful blocks, watch block operations preserve structure while enabling efficient computation, and see how block diagonal matrices represent independent subsystems.",
-  "hearContent": "Listen as I explain how block organization is like having departments within a company - each block handles its specialized function while contributing to the systematic operation of the whole organization!",
-  "hearAudioUrl": "/audio/2.9.mp3",
-  "doContent": "Use the Block Matrix Builder to create and partition large matrices, practice with the Block Operations Calculator to perform addition and multiplication, and experiment with the Block Structure Analyzer to identify efficient partitioning strategies.",
+  "readDigDeeper": "The project demonstrates how vector mathematics provides systematic solutions to complex spatial problems. Each vector concept becomes a practical tool for real-world navigation, measurement, and optimization challenges.",
+  "readWhyMatters": "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science.",
+  "seeContent": "Work through interactive mapping tools that let you design trail systems, place cameras strategically, and visualize visitor flow patterns using all the vector concepts you've mastered.",
+  "hearContent": "Listen as I guide you through each phase of the project, showing how vector thinking transforms complex spatial problems into systematic mathematical solutions!",
+  "hearAudioUrl": "/audio/1.9.mp3",
+  "doContent": "Complete the three-part mapping project: design trail systems with vector addition, optimize camera placement with linear independence, and analyze visitor patterns with basis theory - creating a comprehensive portfolio of your vector mastery.",
   "memoryAids": {
-    "mantra": "Organization within organization - specialized departments working together in perfect systematic harmony!",
-    "visual": "Picture Max's mega filing cabinet with specialized sections: each block is like a department (accounting, engineering, marketing) that operates independently but contributes to the organized whole."
+    "mantra": "Every vector concept becomes a practical tool in this ultimate mapping adventure!",
+    "visual": "Picture yourself as a mathematical cartographer, using vectors as your tools to map, measure, and optimize everything in the national park."
   },
   "conceptCheck": {
-    "question": "A 4×4 block matrix is partitioned as [[A B],[C D]] where each block is 2×2. If A and D are invertible and B=C=0, how does this simplify computation?",
+    "question": "In Part A of the project, you design a trail from the visitor center [0,0] to the waterfall [6,8] with a rest stop at [3,4]. What's the total trail distance using L₂ norm?",
     "options": [
-      "Block diagonal structure: inverse is [[A⁻¹ 0],[0 D⁻¹]], enabling independent computation",
-      "Must invert the entire 4×4 matrix using standard methods",
-      "Cannot compute inverse because of block structure",
-      "B=C=0 means the matrix is singular"
+      "10 units: 5 units to rest stop + 5 units to waterfall",
+      "14 units: straight line distance from start to finish",
+      "18 units: sum of x and y coordinates",
+      "8 units: using the Pythagorean theorem incorrectly"
     ],
     "correctAnswer": 0,
-    "explanation": "When B=C=0, the matrix is block diagonal. Block diagonal matrices have block diagonal inverses: [[A 0],[0 D]]⁻¹ = [[A⁻¹ 0],[0 D⁻¹]]. Each block can be inverted independently, greatly simplifying computation."
+    "explanation": "Distance from [0,0] to [3,4]: √(3² + 4²) = 5. Distance from [3,4] to [6,8]: √((6-3)² + (8-4)²) = √(9 + 16) = 5. Total trail distance: 5 + 5 = 10 units."
   },
-  "realWorldConnection": "Large-scale machine learning models use block matrices to distribute computation across multiple processors. Economic models partition by sectors using block structure. Social network analysis uses blocks to represent communities within larger networks, enabling efficient analysis of massive datasets.",
+  "realWorldConnection": "This project mirrors real applications: GPS systems use vector addition for route planning, wildlife researchers use linear independence for camera networks, and park services analyze visitor flow using vector pattern analysis. Your vector skills directly transfer to careers in GIS, urban planning, and data science.",
   "hearTranscript": [
-    "When simple organization isn't enough, I use organizational inception... matrices within matrices! This is like having the ultimate filing system where each drawer contains its own perfectly organized sub-filing system.",
-    "Picture a massive corporate headquarters with thousands of departments. You can't organize everything as one giant list... you need systematic departments within systematic divisions. That's exactly what block matrices do for mathematical data.",
-    "A block matrix partitions a large matrix into smaller, manageable submatrices called blocks. Instead of dealing with one overwhelming 100 by 100 matrix, I can organize it as four specialized 50 by 50 blocks, each handling its own domain expertise.",
-    "Block addition is beautifully systematic: corresponding blocks combine just like individual elements. Block multiplication follows the same pattern as regular matrix multiplication, but now entire blocks are dancing together in organized harmony.",
-    "The real power emerges with block diagonal matrices... when off-diagonal blocks are zero, each diagonal block operates independently. It's like having separate departments that don't interfere with each other, enabling parallel processing and computational efficiency.",
-    "Large-scale machine learning models use block structure to distribute computation across multiple processors simultaneously. Social networks use blocks to represent communities within massive networks. Economic models partition by industry sectors using block organization.",
-    "When you master block matrices, you gain the superpower to organize and compute with systems of virtually unlimited complexity!"
+    "This is where vector thinking transforms from abstract mathematics into the technology that shapes our daily lives.",
+    "Your GPS uses vectors constantly. Position vectors locate you precisely on Earth's surface. Velocity vectors track your speed and direction. Acceleration vectors from your phone's sensors detect when you're turning, stopping, or speeding up.",
+    "Machine learning represents everything as vectors. Images become pixel intensity vectors. Text becomes word frequency vectors. Customer preferences become multi-dimensional vectors in recommendation space.",
+    "Netflix recommendations work by finding customers with similar preference vectors to yours, then suggesting content that those similar customers enjoyed. It's collaborative filtering using vector similarity measures.",
+    "Computer graphics use vector mathematics for everything. 3D object positions, rotations, lighting directions, color values... all vectors being transformed, combined, and projected to create the visual experiences we see.",
+    "Economic modeling uses vectors to represent market states, with different components representing prices, volumes, volatility measures. Changes in markets become vector operations... addition for combining effects, scalar multiplication for scaling impacts.",
+    "Even search engines use vector representations. Web pages become vectors based on word frequencies and link structures. Your search query becomes a vector, and the engine finds pages with the most similar vectors.",
+    "Vector thinking provides the mathematical foundation for understanding how data flows through complex systems, enabling prediction, optimization, and intelligent automation."
   ]
 }

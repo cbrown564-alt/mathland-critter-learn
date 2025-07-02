@@ -1,62 +1,65 @@
 {
   "id": "9.2",
-  "title": "Data Acquisition & Exploratory Analysis",
-  "duration": "90-120 minutes",
-  "characterId": "sage",
+  "title": "Prior, Likelihood, and Posterior",
+  "duration": "40-45 minutes",
+  "characterId": "bayes",
   "narrativeHook": {
-    "story": "Sage spreads her wings wide, ready to dive into the raw, messy world of real data. Unlike the clean examples from individual modules, real-world data comes with missing values, outliers, and hidden patterns that require the combined wisdom of all your mathematical training to understand and tame.",
-    "characterMessage": "Real data is beautifully messy! Unlike our clean module examples, authentic datasets come with missing values, outliers, encoding issues, and hidden relationships. This is where your mathematical training really shines - using statistical techniques to understand data quality, linear algebra to reshape and transform, and probability theory to handle uncertainty."
+    "story": "Bayes opens his detective case files to reveal the three essential components of every Bayesian investigation: the Prior (what we believed before), the Likelihood (what the evidence tells us), and the Posterior (our updated conclusion). Like any good detective story, each element plays a crucial role in reaching the truth.",
+    "characterMessage": "Every good detective story has three acts! First, the setup - what I believe going in (prior). Second, the investigation - what the evidence reveals (likelihood). Third, the conclusion - my updated theory combining both (posterior). Master these three, and you master Bayesian reasoning!"
   },
   "learningObjectives": [
-    "Acquire and assess real-world datasets for quality and completeness",
-    "Apply statistical methods for exploratory data analysis",
-    "Use linear algebra concepts for data manipulation and transformation",
-    "Identify patterns, outliers, and relationships using multiple mathematical perspectives",
-    "Document data understanding and cleaning decisions systematically"
+    "Define and distinguish prior, likelihood, and posterior distributions",
+    "Calculate posteriors using Bayes' theorem in simple cases",
+    "Understand how different priors affect posterior conclusions",
+    "Interpret likelihood functions as evidence summaries",
+    "Apply the complete Bayesian workflow to real problems"
   ],
   "coreConcepts": [
-    "Data acquisition from multiple sources (APIs, databases, files)",
-    "Data quality assessment using statistical measures",
-    "Exploratory data analysis with descriptive statistics",
-    "Missing data patterns and imputation strategies",
-    "Outlier detection using statistical and geometric methods"
+    "Prior distribution P(θ): beliefs before data",
+    "Likelihood function P(data|θ): evidence given parameters",
+    "Posterior distribution P(θ|data): updated beliefs",
+    "Bayes' theorem calculation workflow",
+    "Sensitivity analysis for different priors"
   ],
-  "readContent": "Data acquisition and exploration form the foundation of any successful data science project. Real datasets require careful assessment: checking for missing values, identifying outliers using statistical methods (z-scores, IQR), and understanding distributions through descriptive statistics. Linear algebra concepts become practical tools: vectors represent observations, matrices organize features, and transformations normalize or standardize data. Probability theory guides missing data treatment - are values missing completely at random (MCAR), missing at random (MAR), or missing not at random (MNAR)? Each pattern requires different handling strategies. Exploratory analysis reveals relationships between variables using correlation analysis, scatter plots, and distribution comparisons. This phase sets the stage for all subsequent analysis by establishing data reliability and uncovering initial insights.",
-  "readAnalogy": "Data acquisition and exploration is like being an archaeological team that's just discovered a site. You need to carefully excavate (acquire), catalog each artifact (explore), assess what's broken or missing (quality check), and understand how pieces relate to each other (pattern detection). Your mathematical training provides the tools - statistics for measurement, linear algebra for organization, and probability for handling uncertainty about incomplete information.",
+  "readContent": "The prior distribution P(θ) represents our beliefs about parameters before observing data, encoding existing knowledge or assumptions. The likelihood function P(data|θ) summarizes what the observed data tells us about different parameter values - it's not a probability distribution over θ but a function showing how likely the data is for each possible θ value. The posterior distribution P(θ|data) combines prior and likelihood via Bayes' theorem: P(θ|data) = P(data|θ)P(θ)/P(data), where P(data) is the normalizing constant. The posterior represents our updated beliefs after seeing the evidence. Different priors can lead to different posteriors, making sensitivity analysis important for understanding how prior assumptions affect conclusions.",
+  "readAnalogy": "Think of each component like elements in my detective work. The prior is my initial theory about the case based on similar cases I've seen before. The likelihood is what each piece of evidence suggests about different theories - some evidence strongly supports certain suspects, other evidence is ambiguous. The posterior is my final theory that combines my initial hunches with all the evidence I've gathered, weighted appropriately.",
   "readKeyPoints": [
-    "Real data requires quality assessment using statistical measures and visualization",
-    "Missing data patterns affect analysis strategy and require probabilistic reasoning",
-    "Linear algebra provides practical tools for data manipulation and transformation"
+    "Prior P(θ): initial beliefs before data; Likelihood P(data|θ): evidence summary",
+    "Posterior P(θ|data): updated beliefs combining prior and likelihood via Bayes' theorem",
+    "Different priors can lead to different posteriors - sensitivity analysis is important"
   ],
-  "readDigDeeper": "Professional data scientists spend 60-80% of their time on data acquisition and cleaning. The mathematical concepts you've learned provide principled approaches to these practical challenges, distinguishing skilled practitioners from those who apply ad-hoc solutions.",
-  "readWhyMatters": "Data quality directly impacts all downstream analysis. Companies like Airbnb and Pinterest employ teams of data scientists who spend most of their time on data infrastructure and quality assurance, using statistical methods to ensure reliable analysis foundations for billion-dollar business decisions.",
-  "seeContent": "Work through real dataset acquisition and quality assessment, apply statistical techniques for outlier detection and missing data analysis, and use linear algebra operations for data transformation and normalization.",
-  "hearContent": "Listen as I guide you through the art of understanding real data - using your mathematical training to transform messy, imperfect information into reliable foundations for insight and decision-making!",
-  "hearAudioUrl": "/audio/9.2.mp3",
-  "doContent": "Complete data acquisition from multiple sources (APIs, files, databases), perform comprehensive exploratory analysis using statistical methods, and apply linear algebra techniques for data cleaning and transformation.",
+  "readDigDeeper": "The likelihood principle states that all information about θ contained in the data is captured by the likelihood function. This principle underlies Bayesian inference and distinguishes it from frequentist methods that may depend on unobserved data or experimental design details.",
+  "readWhyMatters": "Drug discovery uses Bayesian methods where prior knowledge about molecular structures combines with experimental evidence. Climate modeling incorporates prior physical knowledge with observational data. A/B testing increasingly uses Bayesian approaches that naturally incorporate business context as priors.",
+  "seeContent": "Visualize how priors, likelihoods, and posteriors relate mathematically and graphically, explore how different priors affect posterior conclusions, and observe the complete Bayesian updating process step-by-step.",
+  "hearContent": "Listen as I walk you through each component of Bayesian reasoning like a detective explaining the three acts of a perfect case - setup, investigation, and resolution!",
+  "hearAudioUrl": "/audio/8.2.mp3",
+  "doContent": "Use the Prior-Likelihood-Posterior Calculator with interactive sliders, practice with the Sensitivity Analysis Tool for different priors, and experiment with the Bayesian Workflow Simulator.",
+  "doType": "custom",
+  "doComponent": "bayes_medical_diagnosis",
+  "doInstructions": "Join Detective Bayes in solving medical mysteries! Adjust your prior beliefs about disease prevalence, examine test evidence, and watch how Bayesian updating combines both to reach diagnostic conclusions.",
   "memoryAids": {
-    "mantra": "Messy data needs mathematical care - statistics reveal what's really there! Clean with algebra, check with probability - that's data science quality!",
-    "visual": "Picture Sage as an experienced archaeologist, carefully excavating and examining data artifacts with mathematical tools: statistical magnifying glasses for quality assessment, linear algebra brushes for cleaning, and probability instruments for handling uncertainty."
+    "mantra": "Prior sets the stage, likelihood weighs the evidence, posterior shows the sage! Three components in perfect dance - that's Bayesian inference's stance!",
+    "visual": "Picture Bayes' detective office with three distinct areas: a filing cabinet of prior cases, an evidence examination table with magnifying glass (likelihood), and a conclusion board where everything comes together (posterior)."
   },
   "conceptCheck": {
-    "question": "You discover 15% missing values in a key variable, but they're missing primarily for one demographic group. How does this affect your analysis strategy?",
+    "question": "You flip a coin 3 times and get HHH. With a uniform prior on p (probability of heads), what does Bayes' theorem tell us?",
     "options": [
-      "This suggests MNAR (missing not at random) - need to investigate why this group has missing data and consider bias implications",
-      "15% is acceptable - use mean imputation and proceed with analysis",
-      "Missing data is always random - any imputation method will work fine",
-      "Focus only on complete cases since missing data is too complex to handle"
+      "Posterior ∝ p³ × 1, favoring higher values of p but maintaining uncertainty",
+      "The coin is definitely biased since three heads is unlikely",
+      "The posterior equals the likelihood function exactly",
+      "We need more data before making any inferences"
     ],
     "correctAnswer": 0,
-    "explanation": "Missing data concentrated in specific demographics suggests MNAR (missing not at random), indicating systematic patterns that could bias results. This requires careful investigation of the missing data mechanism and appropriate handling strategies to avoid biased conclusions."
+    "explanation": "With uniform prior P(p) = 1 and likelihood P(HHH|p) = p³, the posterior P(p|HHH) ∝ p³ × 1 = p³. This favors higher values of p but maintains uncertainty across all possible values, showing the coin is likely biased toward heads."
   },
-  "realWorldConnection": "Netflix data scientists spend significant effort understanding viewing data quality across different user segments and device types. Healthcare researchers carefully analyze missing data patterns in electronic health records. Financial firms employ sophisticated data quality teams using statistical methods to ensure trading algorithm reliability.",
+  "realWorldConnection": "Financial models combine prior market knowledge with current price data to update investment strategies. Medical diagnosis systems combine disease prevalence priors with symptom likelihoods to calculate diagnostic probabilities. Weather forecasting combines physical model priors with observational data for prediction updates.",
   "hearTranscript": [
-    "Professional data science requires systematic workflow design that integrates mathematical techniques with practical problem-solving... this is where mathematical knowledge becomes actionable intelligence.",
-    "Every successful project begins with problem formulation that translates business questions into mathematical frameworks. You must identify which aspects require vector analysis, which need statistical inference, which demand optimization, and how these components connect systematically.",
-    "Data acquisition and preprocessing often require linear algebra for dimensionality management, statistical thinking for sampling design, and optimization for feature engineering. The mathematical foundation determines the quality of everything that follows.",
-    "Exploratory analysis combines Pippa's probability intuition with Eileen's pattern detection and Vera's geometric thinking. You're not just making charts... you're applying mathematical reasoning to understand data structure and identify modeling opportunities.",
-    "Model development synthesizes everything: calculus-based optimization for parameter estimation, linear algebra for computational efficiency, probability theory for uncertainty quantification, and statistical inference for validation.",
-    "Results interpretation requires Sigmund's statistical sophistication for significance assessment, Bayes' reasoning for updating beliefs based on evidence, and professional communication that translates mathematical insights into business recommendations.",
-    "The workflow demonstrates that mathematical mastery isn't about individual techniques... it's about orchestrating diverse mathematical approaches to create solutions that are robust, interpretable, and actionable."
+    "Every good detective needs a systematic method for combining evidence with prior knowledge. Bayes' Theorem is my mathematical magnifying glass.",
+    "The formula looks deceptively simple: the posterior probability equals the prior times the likelihood, divided by the evidence. But this elegant equation captures something profound about how intelligent reasoning should work.",
+    "Let me walk you through a case. Suppose I'm investigating whether someone committed a crime. My prior probability is based on the circumstances... maybe 10% based on opportunity and motive. Then new evidence appears... DNA at the scene that matches the suspect.",
+    "The likelihood asks: if this person is guilty, how probable is this DNA evidence? Very high. If they're innocent, how probable is this evidence? Much lower, depending on contamination rates and coincidental matches.",
+    "Bayes' Theorem systematically combines these components to give me an updated posterior probability. The DNA evidence doesn't prove guilt absolutely... it updates my probability estimate based on the strength and reliability of the evidence.",
+    "Medical diagnosis works exactly the same way. Doctors start with base rates for diseases, then update probabilities as test results arrive. Each new symptom or lab result shifts the diagnostic probabilities using Bayesian reasoning.",
+    "The genius of this approach is that it makes uncertainty explicit and manageable rather than hiding it behind false certainty."
   ]
 }

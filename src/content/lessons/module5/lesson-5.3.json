@@ -1,62 +1,62 @@
 {
   "id": "5.3",
-  "title": "The Second Derivative Test & Hessian Matrix",
-  "duration": "45-50 minutes",
-  "characterId": "greta",
+  "title": "Continuity and Surfaces",
+  "duration": "35-40 minutes",
+  "characterId": "delta",
   "narrativeHook": {
-    "story": "Greta has found the flat spots, but now she needs to determine which are true peaks, which are valleys, and which are deceptive mountain passes! The second derivative test is like examining the curvature around each flat spot - peaks curve downward in all directions, valleys curve upward, and saddle points curve both ways.",
-    "characterMessage": "Now for the real mountaineering skill - reading the curvature! Once I've found the flat spots, I need to examine how the terrain curves around each one. The Hessian matrix and second derivative test tell me whether I'm standing on a peak, in a valley, or at a mountain pass. Let's master this crucial technique!"
+    "story": "Dr. Delta discovers that continuous multivariable functions create smooth, unbroken surfaces without holes, jumps, or tears. These mathematical landscapes have profound implications for modeling real-world phenomena where abrupt changes would be physically impossible.",
+    "characterMessage": "Continuity in multiple variables creates the most beautiful mathematical surfaces! Just as a hedgehog's quills flow smoothly across its body, continuous functions create surfaces without any sudden jumps or tears. This smoothness is essential for modeling the physical world!"
   },
   "learningObjectives": [
-    "Construct the Hessian matrix of second partial derivatives",
-    "Apply the second derivative test using discriminant analysis",
-    "Classify critical points as maxima, minima, or saddle points",
-    "Understand the geometric meaning of the Hessian eigenvalues",
-    "Handle inconclusive cases in the second derivative test"
+    "Define continuity for multivariable functions using limits",
+    "Visualize continuity as smooth, unbroken surfaces",
+    "Identify points of discontinuity and their geometric interpretation",
+    "Understand how composition preserves continuity",
+    "Connect continuity to physical modeling requirements"
   ],
   "coreConcepts": [
-    "Hessian matrix: H = [fₓₓ fₓᵧ; fᵧₓ fᵧᵧ]",
-    "Discriminant: D = fₓₓfᵧᵧ - (fₓᵧ)²",
-    "Second derivative test classification",
-    "Eigenvalue interpretation of curvature",
-    "Inconclusive cases when D = 0"
+    "Continuity definition: lim(x,y)→(a,b) f(x,y) = f(a,b)",
+    "Continuous surfaces without holes or jumps",
+    "Removable vs non-removable discontinuities",
+    "Continuity of composite functions",
+    "Physical interpretation of smoothness"
   ],
-  "readContent": "The Hessian matrix H contains all second partial derivatives: H = [fₓₓ fₓᵧ; fᵧₓ fᵧᵧ]. The second derivative test uses the discriminant D = fₓₓfᵧᵧ - (fₓᵧ)² to classify critical points. If D > 0 and fₓₓ > 0, the point is a local minimum; if D > 0 and fₓₓ < 0, it's a local maximum. If D < 0, the point is a saddle point. When D = 0, the test is inconclusive. The eigenvalues of H reveal the curvature directions: positive eigenvalues indicate upward curvature, negative indicate downward curvature, and mixed signs create saddle behavior.",
-  "readAnalogy": "The Hessian is like examining the curvature of the mountain terrain around each flat spot! If the ground curves upward in all directions (like sitting in a bowl), I'm at a minimum. If it curves downward in all directions (like standing on a dome), I'm at a maximum. If it curves up in one direction and down in another (like sitting on a horse saddle), I'm at a saddle point!",
+  "readContent": "A function f(x,y) is continuous at point (a,b) if lim(x,y)→(a,b) f(x,y) = f(a,b). This means three conditions: the limit exists, the function value exists, and they're equal. Geometrically, continuity creates smooth surfaces without holes, jumps, or vertical asymptotes. Discontinuities appear as tears in the surface fabric. Elementary functions (polynomials, trigonometric, exponential) are continuous everywhere in their domains. Composition of continuous functions remains continuous, building complex smooth surfaces from simple pieces.",
+  "readAnalogy": "Continuous functions are like a hedgehog's perfectly smooth quill surface - no sudden jumps or gaps that would be uncomfortable or unnatural. The mathematical surface flows smoothly just like how a hedgehog's quills transition seamlessly from one to the next.",
   "readKeyPoints": [
-    "Hessian matrix H contains all second partial derivatives for curvature analysis",
-    "Second derivative test: D > 0 gives extrema, D < 0 gives saddle points",
-    "Sign of fₓₓ when D > 0 determines maximum (negative) vs minimum (positive)"
+    "Continuity: function value equals limit value at every point",
+    "Creates smooth surfaces without holes, jumps, or tears",
+    "Elementary functions are continuous on their domains"
   ],
-  "readDigDeeper": "The Hessian's eigenvalues determine the principal curvatures. All positive eigenvalues mean local minimum, all negative mean local maximum, and mixed signs indicate saddle points. This connects the second derivative test to linear algebra in a profound way.",
-  "readWhyMatters": "Neural networks use Hessian analysis to understand loss function curvature for advanced optimization algorithms. Structural engineers analyze Hessian matrices to predict material behavior under stress. Financial analysts use second-order analysis to understand portfolio risk surfaces.",
-  "seeContent": "Visualize Hessian matrix construction and discriminant calculations, see how different D values correspond to different surface curvatures, and observe the geometric interpretation of eigenvalues as principal curvature directions.",
-  "hearContent": "Listen as I explain how the Hessian matrix is like a sophisticated mountain surveying tool that measures curvature in every direction, helping me distinguish between true peaks, valleys, and misleading mountain passes!",
-  "hearAudioUrl": "/audio/5.3.mp3",
-  "doContent": "Use the Hessian Calculator with automatic discriminant computation, practice with the Critical Point Classifier, and experiment with the Curvature Visualizer to see eigenvalue interpretation geometrically.",
+  "readDigDeeper": "Uniform continuity extends the concept: f is uniformly continuous if the same δ works for all points simultaneously. This is stronger than pointwise continuity and important for theoretical analysis of function behavior across entire domains.",
+  "readWhyMatters": "Physical laws require continuity - temperature can't jump discontinuously across space, pressure changes smoothly in fluids, and electromagnetic fields must be continuous at material boundaries. Engineering designs depend on smooth stress distributions to prevent structural failures.",
+  "seeContent": "Visualize smooth continuous surfaces versus discontinuous functions with holes and jumps, explore how composition creates complex continuous surfaces from simple building blocks, and observe the geometric interpretation of different discontinuity types.",
+  "hearContent": "Listen as I explain how continuity creates mathematical surfaces as smooth as a hedgehog's quills - every point flows seamlessly into its neighbors without any jarring discontinuities!",
+  "hearAudioUrl": "/audio/4.3.mp3",
+  "doContent": "Use the Continuity Checker to test function smoothness, practice with the Surface Explorer that highlights discontinuities, and experiment with the Composition Builder to create complex continuous functions.",
   "memoryAids": {
-    "mantra": "Hessian shows the curve, discriminant reveals the serve - peaks curl down, valleys curl up, saddles do both with mathematical nerve!",
-    "visual": "Picture Greta using a sophisticated surveying instrument that measures how the mountain curves in every direction around a flat spot, determining whether she's on a peak, in a valley, or at a mountain pass."
+    "mantra": "Smooth as hedgehog quills, no jumps or tears - that's continuity everywhere!",
+    "visual": "Picture Dr. Delta running his precise paws across a perfectly smooth mathematical surface, like checking that every quill on his back flows seamlessly into the next without any gaps or jumps."
   },
   "conceptCheck": {
-    "question": "At critical point (1,2), a function has fₓₓ = -4, fᵧᵧ = -2, fₓᵧ = 1. Classify this critical point.",
+    "question": "Function f(x,y) = (x² - y²)/(x - y) appears discontinuous when x = y. How can we make it continuous?",
     "options": [
-      "Local maximum since D = 7 > 0 and fₓₓ = -4 < 0",
-      "Local minimum since D = 7 > 0 and the Hessian is positive definite",
-      "Saddle point since fₓᵧ ≠ 0 creates mixed curvature",
-      "Inconclusive since mixed signs in the Hessian entries"
+      "Define f(x,x) = 2x using the limit, creating a removable discontinuity",
+      "The function cannot be made continuous at x = y",
+      "Define f(x,x) = 0 to avoid division by zero",
+      "The function is already continuous everywhere"
     ],
     "correctAnswer": 0,
-    "explanation": "D = fₓₓfᵧᵧ - (fₓᵧ)² = (-4)(-2) - 1² = 8 - 1 = 7 > 0. Since D > 0 and fₓₓ = -4 < 0, this is a local maximum."
+    "explanation": "For x ≠ y, f(x,y) = (x² - y²)/(x - y) = (x + y)(x - y)/(x - y) = x + y. The limit as (x,y) → (a,a) is 2a, so defining f(a,a) = 2a removes the discontinuity."
   },
-  "realWorldConnection": "Deep learning researchers analyze Hessian matrices to understand neural network loss landscapes and design better optimization algorithms. Aerospace engineers use second-order analysis to ensure aircraft designs have stable flight characteristics. Financial quants analyze Hessian matrices of portfolio risk functions to understand market stability.",
+  "realWorldConnection": "Physical laws require continuity - temperature distributions in materials must be smooth, pressure changes continuously in fluid flow, and electromagnetic fields must be continuous at boundaries. Structural engineers design smooth stress distributions to prevent failure points and material fractures.",
   "hearTranscript": [
-    "The second derivative test is like having a reliable way to confirm whether you've reached a true peak, valley, or just a tricky mountain pass.",
-    "In single-variable optimization, the second derivative test is straightforward. Positive second derivative at a critical point means you're in a valley. Negative means you're on a peak. Zero means you need more investigation.",
-    "But multivariable optimization requires more sophisticated analysis. This is where the Hessian matrix becomes your navigation tool. The eigenvalues of the Hessian determine the nature of each critical point definitively.",
-    "All positive eigenvalues? You've found a local minimum... a mathematical valley where solutions can't get any better in any direction. All negative eigenvalues? That's a local maximum... a peak where every nearby point is worse.",
-    "Mixed eigenvalues create saddle points... fascinating mathematical formations that are optimal in some directions but terrible in others. These can trap optimization algorithms if you're not careful about your climbing strategy.",
-    "Autonomous vehicles use second derivative tests constantly. When planning routes, the algorithms need to verify that proposed paths truly minimize travel time while avoiding obstacles. False peaks in the optimization landscape could lead to suboptimal or unsafe routes.",
-    "The second derivative test transforms uncertainty into mathematical confidence about the quality of your solutions."
+    "Partial derivatives are like having a scientific microscope that can isolate individual causes of change while holding everything else constant.",
+    "Imagine you're studying how customer satisfaction depends on both product quality and customer service. A partial derivative with respect to quality tells you: if we improve quality by one unit while keeping service exactly the same, how much does satisfaction change?",
+    "This is the essential tool for understanding complex systems with multiple variables. In economics, companies use partial derivatives to optimize pricing strategies. They calculate how revenue changes with respect to price while holding advertising spend constant, and separately how revenue changes with advertising while holding price constant.",
+    "Weather prediction relies heavily on partial derivatives. Meteorologists track how temperature changes with respect to altitude while holding time constant, and how it changes with respect to time while holding altitude constant. These isolated rates of change help model complex atmospheric dynamics.",
+    "Machine learning algorithms use partial derivatives billions of times during training. Neural networks calculate how prediction errors change with respect to each individual parameter while holding all others fixed. This enables systematic optimization of incredibly complex models.",
+    "The beauty of partial derivatives is that they decompose complicated multivariable changes into understandable, isolated effects. Instead of being overwhelmed by complexity, we can study one variable's influence at a time.",
+    "This methodical approach transforms chaos into systematic understanding."
   ]
 }

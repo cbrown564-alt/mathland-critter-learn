@@ -1,62 +1,61 @@
 {
   "id": "1.4",
-  "title": "Vector Norms - Measuring Distance",
+  "title": "Inequalities & Absolute Values",
   "duration": "25-30 minutes",
-  "characterId": "vera",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "After a long day of hiking, Vera wants to know exactly how far she's traveled. Not just east-west or north-south, but the total distance. Vector norms help us measure the 'size' or 'length' of any vector, and there are different ways to measure distance depending on what you're trying to accomplish!",
-    "characterMessage": "How far did I actually travel? That's what norms tell us! But here's the cool part - there are different ways to measure distance. Straight line distance, city block distance, or even the longest single direction. Each one is useful for different adventures!"
+    "story": "Ollie's dam needs to be at least 3 feet high to work properly, but no more than 6 feet to avoid flooding. This is like mathematical inequalities - values within a range.",
+    "characterMessage": "The water level must be between these marks! Just like my dam has safe operating ranges, inequalities help us define acceptable ranges of values in mathematics and data science."
   },
   "learningObjectives": [
-    "Calculate the L₂ (Euclidean) norm using the distance formula",
-    "Understand different types of norms: L₁, L₂, and L∞",
-    "Create unit vectors by normalizing any vector",
-    "Compare different distance metrics for practical problems",
-    "Apply norms to measure data similarity and clustering"
+    "Solve linear inequalities and represent solutions on number lines",
+    "Work with compound inequalities and intersection/union concepts",
+    "Solve absolute value equations and inequalities",
+    "Use interval notation to express solution sets"
   ],
   "coreConcepts": [
-    "L₂ norm (Euclidean): ||**v**|| = √(x² + y² + z²)",
-    "L₁ norm (Manhattan): ||**v**|| = |x| + |y| + |z|",
-    "L∞ norm (Maximum): ||**v**|| = max(|x|, |y|, |z|)",
-    "Unit vectors: ||**u**|| = 1",
-    "Normalizing vectors: **u** = **v**/||**v**||"
+    "Linear inequalities",
+    "Compound inequalities",
+    "Absolute value equations",
+    "Absolute value inequalities",
+    "Interval notation"
   ],
-  "readContent": "How far did I actually travel? Different norms measure distance in different ways! The L₂ (Euclidean) norm ||v|| = √(x² + y² + z²) gives straight-line distance. The L₁ (Manhattan) norm ||v|| = |x| + |y| + |z| measures city-block distance. The L∞ (maximum) norm ||v|| = max(|x|, |y|, |z|) gives the longest single coordinate. Each one is useful for different types of adventures!",
-  "readAnalogy": "Think of three ways to measure how far you've traveled: as the crow flies (L₂), walking on city streets with right-angle turns (L₁), or your longest single direction movement (L∞). Each tells a different story about your journey!",
-  "readKeyPoints": [
-    "L₂ (Euclidean) norm: ||v|| = √(x² + y² + z²) - straight-line distance",
-    "L₁ (Manhattan) norm: ||v|| = |x| + |y| + |z| - city-block distance",
-    "L∞ (Maximum) norm: ||v|| = max(|x|, |y|, |z|) - largest coordinate"
-  ],
-  "readDigDeeper": "Unit vectors have norm 1 and represent pure direction. To normalize any vector: u = v/||v||. Different norms create different shaped 'unit balls' - circles for L₂, diamonds for L₁, squares for L∞.",
-  "readWhyMatters": "Machine learning algorithms use different norms to measure 'distance' between data points. Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
-  "seeContent": "Compare different norm visualizations on the same vector, showing how L₁, L₂, and L∞ create different distance measurements. See how normalizing transforms vectors into unit circles.",
-  "hearContent": "Listen as I explain how choosing the right distance measurement is like choosing the right tool for exploration - sometimes you need straight-line distance, sometimes city-block distance!",
-  "hearAudioUrl": "/audio/1.4.mp3",
-  "doContent": "Use the Norm Visualizer to compare different distance metrics, experiment with the Unit Vector Creator, and explore the Distance Comparator to see when each norm type is most useful.",
   "memoryAids": {
-    "mantra": "Straight line vs. city blocks vs. longest coordinate - different adventures need different distance measurements!",
-    "visual": "Picture three ways to measure how far you've traveled: as the crow flies (L₂), walking on city streets (L₁), or your longest single direction (L∞)."
+    "mantra": "The water level must be between these marks - just like inequality ranges!",
+    "visual": "Number line with highlighted ranges showing safe operating zones for Ollie's dam"
   },
+  "realWorldConnection": "Inequalities are everywhere in data science: confidence intervals, acceptable error ranges, constraint optimization, and defining thresholds for classification algorithms. They help us understand when data values are within acceptable limits.",
   "conceptCheck": {
-    "question": "Vector [3, 4] represents Vera's displacement. Find its L₂ norm and create a unit vector in the same direction.",
+    "question": "Solve the inequality: |x - 3| < 5. What does this represent?",
     "options": [
-      "Norm = 5, unit vector = [0.6, 0.8]",
-      "Norm = 7, unit vector = [3/7, 4/7]",
-      "Norm = 12, unit vector = [1, 1]",
-      "Norm = 3.5, unit vector = [0.5, 0.5]"
+      "-2 < x < 8, values within 5 units of 3",
+      "x < -2 or x > 8, values outside the range",
+      "x = 3 ± 5, two specific solutions",
+      "-5 < x < 5, symmetric around zero"
     ],
     "correctAnswer": 0,
-    "explanation": "L₂ norm: √(3² + 4²) = √(9 + 16) = 5. Unit vector: [3,4]/5 = [3/5, 4/5] = [0.6, 0.8]. This preserves direction while making the magnitude exactly 1."
+    "explanation": "The absolute value inequality |x - 3| < 5 means the distance from x to 3 is less than 5, giving us -5 < x - 3 < 5, which simplifies to -2 < x < 8."
   },
-  "realWorldConnection": "Machine learning algorithms use different norms to measure 'distance' between data points - Euclidean for clustering similar customers, Manhattan for recommendation systems, maximum for outlier detection. The choice of norm affects how AI systems group and analyze data.",
+  "readContent": "My dam needs to operate within safe ranges - at least 3 feet high to function, but no more than 6 feet to prevent flooding. Inequalities express these range relationships: x ≥ 3 and x ≤ 6, or combined as 3 ≤ x ≤ 6. Absolute value |x-a| measures distance from point a, so |x-3| < 2 means within 2 units of position 3.",
+  "readAnalogy": "Inequalities are like safety margins for my dam operations. Instead of exact measurements, I need acceptable ranges that keep everything functioning safely within operational limits.",
+  "readKeyPoints": [
+    "Inequality signs: < (less than), ≤ (less than or equal), > (greater than), ≥ (greater than or equal)",
+    "Absolute value |x| measures distance from zero, regardless of direction",
+    "Compound inequalities use 'and' (intersection) or 'or' (union) to combine conditions"
+  ],
+  "readDigDeeper": "When multiplying or dividing inequalities by negative numbers, the inequality sign flips. Absolute value inequalities split into two cases: |x| < a becomes -a < x < a, while |x| > a becomes x < -a or x > a.",
+  "readWhyMatters": "Inequalities define confidence intervals in statistics, acceptable error ranges in engineering, constraint optimization in business, and classification thresholds in machine learning. They help us understand when data values are within acceptable operational limits.",
+  "seeContent": "Visualize inequality solutions on interactive number lines, and see how absolute value creates distance relationships on the coordinate plane.",
+  "hearContent": "Listen as I explain how setting boundaries and ranges for my dam is just like defining inequality constraints - we need safe operating zones for everything to work properly!",
+  "hearAudioUrl": "/audio/0.4.mp3",
+  "doContent": "Build number line representations, solve inequality problems with immediate visual feedback, and practice the range finder game to master interval concepts.",
   "hearTranscript": [
-    "The dot product is like having a mathematical conversation between two vectors... it tells you how much they agree with each other.",
-    "When two vectors point in exactly the same direction, their dot product is maximum. When they're perpendicular, the dot product is zero... they're completely independent. And when they point in opposite directions? The dot product is negative.",
-    "Here's the beautiful geometric interpretation: the dot product measures how much one vector projects onto another. It's like asking \"if I shine a flashlight from the tip of vector A toward vector B, how long is the shadow?\"",
-    "I use dot products all the time for calculating work in physics. Work equals force dot displacement... the dot product naturally captures that only the component of force in the direction of movement does useful work.",
-    "In machine learning, dot products are everywhere. Similarity between data points? Dot product of their feature vectors. Neural network computations? Layers of dot products transforming information step by step.",
-    "Computer graphics use dot products for lighting calculations. The dot product between surface normal vectors and light direction vectors determines how bright each pixel should be... creating realistic shading and shadows.",
-    "The dot product gives you the magnitude of one vector, times the magnitude of the other, times the cosine of the angle between them. It's geometry and algebra working together perfectly."
+    "Inequalities and absolute values help us understand ranges, constraints, and real-world limitations... essential tools for data science applications where exact answers are less important than understanding boundaries.",
+    "Linear inequalities work like equations, with one crucial difference... when you multiply or divide by a negative number, you flip the inequality sign. It's like changing the direction of a construction project... if I'm building downward instead of upward, all my directional references reverse.",
+    "If I have negative 2x plus 6 is greater than 10, I subtract 6 from both sides to get negative 2x greater than 4. Then I divide by negative 2, flipping the inequality to get x less than negative 2.",
+    "Compound inequalities describe ranges. When I write negative 3 less than x less than or equal to 5, I'm describing all values between negative 3 and 5, including 5 but not negative 3. It's like specifying the safe operating range for construction equipment.",
+    "Absolute values measure distance from zero, regardless of direction. The absolute value of negative 7 equals 7, just like the absolute value of positive 7 equals 7. When solving absolute value equations like the absolute value of x minus 3 equals 5, I consider both cases... x minus 3 equals 5 OR x minus 3 equals negative 5, giving me x equals 8 or x equals negative 2.",
+    "In manufacturing, tolerances use inequality thinking... a part might need to be 10 millimeters plus or minus 0.1 millimeters. In data science, confidence intervals and error bounds use the same mathematical reasoning.",
+    "These concepts help you think about uncertainty, constraints, and acceptable ranges... fundamental skills for real-world problem solving."
   ]
 }

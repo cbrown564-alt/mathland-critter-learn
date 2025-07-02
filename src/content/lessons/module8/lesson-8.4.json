@@ -1,62 +1,62 @@
 {
   "id": "8.4",
-  "title": "Normal-Normal Conjugacy",
-  "duration": "40-45 minutes",
-  "characterId": "bayes",
+  "title": "Introduction to Hypothesis Testing",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes encounters another mathematical partnership made in heaven: Normal-Normal conjugacy. When investigating continuous mysteries like heights, weights, or temperatures, the Normal distribution pairs with itself in elegant conjugate harmony, creating posterior updating rules that blend prior knowledge with new evidence in perfectly balanced proportions.",
-    "characterMessage": "The Normal-Normal conjugate pair is mathematical poetry for continuous data! When my prior beliefs and the evidence are both normally distributed, they combine with perfect mathematical harmony. It's like two expert witnesses giving testimony that blends seamlessly into a unified conclusion!"
+    "story": "Sigmund encounters the fundamental challenge of scientific inquiry: distinguishing meaningful signals from random noise. Hypothesis testing provides the elegant framework for making these crucial distinctions, setting up null and alternative hypotheses like a formal debate where evidence must reach a threshold of convincing proof.",
+    "characterMessage": "Hypothesis testing is the heart of scientific reasoning! We set up competing hypotheses - null and alternative - then gather evidence to see if we can elegantly reject the status quo in favor of something new. It's a formal process that maintains statistical dignity while pursuing truth."
   },
   "learningObjectives": [
-    "Understand Normal-Normal conjugacy for continuous parameter estimation",
-    "Calculate Normal posterior means as precision-weighted averages",
-    "Interpret how sample size affects the balance between prior and data",
-    "Apply Normal-Normal updating to real estimation problems",
-    "Understand the role of precision (inverse variance) in Bayesian updating"
+    "Formulate null and alternative hypotheses correctly",
+    "Understand the logic and structure of hypothesis testing",
+    "Define Type I and Type II errors in testing context",
+    "Apply hypothesis testing framework to real problems",
+    "Recognize the burden of proof concept in statistical testing"
   ],
   "coreConcepts": [
-    "Normal-Normal conjugacy for mean estimation with known variance",
-    "Posterior mean as precision-weighted average of prior and sample means",
-    "Precision τ = 1/σ² as weight in Bayesian updating",
-    "Prior and posterior uncertainty quantification",
-    "Limit behavior as sample size increases"
+    "Null hypothesis H₀: status quo or no effect",
+    "Alternative hypothesis H₁: claim to be tested",
+    "Type I error: rejecting true H₀ (false positive)",
+    "Type II error: failing to reject false H₀ (false negative)",
+    "Significance level α and testing logic"
   ],
-  "readContent": "For Normal likelihoods with known variance σ², the Normal prior is conjugate. If the prior is N(μ₀, σ₀²) and we observe sample mean x̄ from n observations, the posterior mean is a precision-weighted average: μₙ = (τ₀μ₀ + nτx̄)/(τ₀ + nτ), where τ = 1/σ² is precision. The posterior variance is 1/(τ₀ + nτ), showing uncertainty decreases as we add data. When the prior is weak (large σ₀²), the posterior is dominated by data. When the prior is strong (small σ₀²), it significantly influences the posterior. As n → ∞, the posterior converges to the sample mean regardless of prior, showing data eventually overwhelms prior beliefs.",
-  "readAnalogy": "Normal-Normal conjugacy is like having two expert witnesses testify about the same fact. The final conclusion (posterior mean) weighs their testimonies based on their credibility (precision). A very confident expert (high precision) gets more weight than an uncertain one. As more independent evidence accumulates, even a confident prior expert gets gradually outweighed by the mounting data.",
+  "readContent": "Hypothesis testing evaluates competing claims about population parameters using sample evidence. The null hypothesis H₀ represents the status quo or 'no effect' position, while the alternative hypothesis H₁ represents the research claim we're testing. The logic follows 'proof by contradiction': assume H₀ is true, then determine if observed data is sufficiently unlikely under this assumption to reject H₀ in favor of H₁. Type I error occurs when we reject a true H₀ (false positive), with probability α (significance level). Type II error occurs when we fail to reject a false H₀ (false negative), with probability β. The framework places burden of proof on the alternative hypothesis, requiring strong evidence to overturn the null.",
+  "readAnalogy": "Hypothesis testing is like a formal court proceeding where the null hypothesis is 'innocent until proven guilty.' The alternative hypothesis makes an accusation that must be supported by strong evidence. Just as courts can make two types of errors - convicting the innocent (Type I) or acquitting the guilty (Type II) - statistical tests face the same elegant challenge of balancing these risks.",
   "readKeyPoints": [
-    "Posterior mean = precision-weighted average of prior mean and sample mean",
-    "Precision τ = 1/σ² determines weight in averaging: more precise gets more influence",
-    "Posterior uncertainty decreases as data accumulates: 1/(τ₀ + nτ)"
+    "H₀ (null): status quo/no effect; H₁ (alternative): research claim to test",
+    "Logic: assume H₀ true, reject only if data sufficiently unlikely under H₀",
+    "Type I error: reject true H₀; Type II error: fail to reject false H₀"
   ],
-  "readDigDeeper": "The precision parameterization reveals the natural mathematical structure of Normal-Normal conjugacy. Precisions add when combining independent Normal information, making the mathematical relationships transparent and computationally efficient.",
-  "readWhyMatters": "Manufacturing quality control uses Normal-Normal updating to monitor process means with historical knowledge. Environmental monitoring combines prior climate knowledge with new temperature measurements. Financial modeling blends historical return estimates with current market data using Normal-Normal conjugacy.",
-  "seeContent": "Visualize how Normal priors and posteriors update with different sample sizes, explore precision-weighted averaging with interactive examples, and observe the balance between prior knowledge and data evidence.",
-  "hearContent": "Listen as I explain how Normal-Normal conjugacy creates the perfect mathematical blend of prior wisdom and new evidence - like expert testimony weighted by credibility!",
-  "hearAudioUrl": "/audio/8.4.mp3",
-  "doContent": "Use the Normal-Normal Calculator with precision-weighted averaging, practice with the Prior Strength Explorer showing weak vs strong priors, and experiment with the Sample Size Impact Simulator.",
+  "readDigDeeper": "The Neyman-Pearson paradigm formalizes hypothesis testing by fixing Type I error rate α and minimizing Type II error rate β for given effect size. This decision-theoretic approach treats hypothesis testing as an optimal decision procedure under uncertainty.",
+  "readWhyMatters": "Drug approval requires hypothesis testing to prove efficacy beyond placebo effects. Quality control uses hypothesis testing to detect manufacturing problems. A/B testing in tech companies uses hypothesis testing to validate product improvements. Scientific research relies on hypothesis testing to establish credible findings.",
+  "seeContent": "Explore the logical structure of hypothesis testing, visualize Type I and Type II errors in context, and observe how the testing framework applies across different scientific domains.",
+  "hearContent": "Listen as I explain how hypothesis testing brings elegant formal logic to the messy world of uncertainty - creating a principled framework for distinguishing signal from noise!",
+  "hearAudioUrl": "/audio/7.4.mp3",
+  "doContent": "Use the Hypothesis Formulation Tool for practice scenarios, experiment with the Error Type Visualizer, and practice with the Testing Logic Simulator showing decision outcomes.",
   "memoryAids": {
-    "mantra": "Precision weighs the evidence fair, prior and data both declare! More precise gets more say - that's the Normal-Normal way!",
-    "visual": "Picture Bayes consulting two expert witnesses (prior and data), each holding scales representing their precision/confidence, with the final verdict being a weighted average of their testimonies based on their expertise."
+    "mantra": "Null says 'nothing new here,' alternative claims 'change is clear!' Evidence must be strong to reject the null - that's hypothesis testing's protocol!",
+    "visual": "Picture Sigmund as an elegant judge presiding over a formal debate between null and alternative hypotheses, requiring compelling evidence before gracefully ruling in favor of change over the status quo."
   },
   "conceptCheck": {
-    "question": "Prior: N(100, 10²), Sample: n=25, x̄=105, σ=15. What happens to the posterior mean as n increases?",
+    "question": "A researcher tests whether a new teaching method improves test scores. What are appropriate null and alternative hypotheses?",
     "options": [
-      "Posterior mean starts between 100 and 105, approaches 105 as n increases",
-      "Posterior mean always equals the sample mean 105",
-      "Posterior mean always equals the prior mean 100",
-      "Posterior mean depends only on the ratio of variances"
+      "H₀: μₙₑw = μₒₗd (no improvement), H₁: μₙₑw > μₒₗd (improvement)",
+      "H₀: μₙₑw > μₒₗd (improvement), H₁: μₙₑw = μₒₗd (no improvement)",
+      "H₀: new method works, H₁: new method doesn't work",
+      "H₀: μₙₑw ≠ μₒₗd (difference), H₁: μₙₑw = μₒₗd (no difference)"
     ],
     "correctAnswer": 0,
-    "explanation": "The posterior mean is a precision-weighted average. Initially it's between the prior mean (100) and sample mean (105). As n increases, the data precision (n/σ²) grows, giving more weight to the sample mean, so the posterior approaches 105."
+    "explanation": "The null hypothesis H₀ represents status quo (no improvement), while alternative H₁ represents the research claim being tested (improvement). The burden of proof lies with demonstrating improvement, not maintaining the status quo."
   },
-  "realWorldConnection": "Manufacturing uses Normal-Normal updating to monitor production line means while incorporating historical process knowledge. Weather forecasting combines prior climate models with current observations using Normal conjugacy. Laboratory testing blends prior instrument calibration with current measurements for improved accuracy.",
+  "realWorldConnection": "FDA drug approval requires hypothesis testing to demonstrate efficacy beyond placebo effects. Tech companies like Google use A/B testing with hypothesis testing to validate new features. Medical researchers use hypothesis testing to establish treatment effectiveness in clinical trials.",
   "hearTranscript": [
-    "The likelihood function is where evidence meets theory... it answers the crucial question: how probable is this evidence under different explanations?",
-    "Think like a detective analyzing fingerprints. The evidence is the print pattern found at the scene. The likelihood function tells you: if suspect A left this print, how probable is this pattern? If suspect B left it, how probable is the pattern? If it's from an unknown person, what's the probability?",
-    "Likelihood is not the probability that a theory is true given the evidence... that's a common mistake. Likelihood is the probability of observing this evidence assuming a particular theory is true.",
-    "In spam filtering, the likelihood function evaluates how probable certain word patterns are in spam emails versus legitimate emails. Words like \"urgent\" and \"limited time\" have high likelihood in spam, low likelihood in normal correspondence.",
-    "Medical testing provides clear likelihood examples. If someone has a disease, what's the probability they test positive? If they're healthy, what's the probability of a false positive? These are likelihood values that help interpret test results properly.",
-    "Strong evidence has likelihood functions that clearly favor one explanation over alternatives. Weak evidence has likelihood functions that are similar across different theories... it doesn't help discriminate between possibilities.",
-    "Understanding likelihood helps you evaluate evidence quality and avoid the trap of treating all evidence as equally informative."
+    "Test statistics and p-values provide the mathematical machinery for quantifying evidence strength... they transform subjective impressions into precise measures of how surprising our data would be under null hypothesis assumptions.",
+    "A test statistic standardizes our sample evidence, typically expressing how many standard errors our observation lies from the null hypothesis expectation. Large test statistics indicate that our data are quite incompatible with null hypothesis assumptions.",
+    "The p-value quantifies this incompatibility with elegant precision. It represents the probability of observing evidence as extreme or more extreme than what we actually observed, assuming the null hypothesis is true.",
+    "Crucially, the p-value is not the probability that the null hypothesis is true. This common misinterpretation reflects a fundamental confusion about conditional probability. The p-value tells us how surprised we should be by our data if the null hypothesis were true.",
+    "Environmental science uses p-values to evaluate pollution reduction claims. When researchers test whether new regulations decreased contamination levels, they calculate the probability of observing such large improvements if the regulations had no actual effect. Small p-values suggest that regulatory improvements are genuine rather than random fluctuation.",
+    "Manufacturing quality control employs p-values to detect process deterioration. When defect rates appear elevated, statistical tests determine whether the increase likely reflects random variation or systematic problems requiring intervention.",
+    "The elegance of p-values lies in their universal interpretability... they provide standardized measures of evidence strength across any domain where hypothesis testing applies."
   ]
 }

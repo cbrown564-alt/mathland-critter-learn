@@ -1,62 +1,62 @@
 {
   "id": "6.1",
-  "title": "Introduction to Probability & Sample Spaces",
+  "title": "Introduction to Optimization",
   "duration": "35-40 minutes",
-  "characterId": "pippa",
+  "characterId": "greta",
   "narrativeHook": {
-    "story": "Probability Pippa appears in a shower of sparkles, her magician's hat shimmering with mathematical possibilities! As a rabbit who specializes in the unpredictable, she knows that probability is the mathematics of uncertainty - turning the chaos of random events into precise, beautiful patterns that we can understand and predict.",
-    "characterMessage": "Welcome to the wonderful world of uncertainty! I'm Pippa, and I make the unpredictable predictable through the magic of probability! Every coin flip, every die roll, every random event follows beautiful mathematical patterns. Let me show you how to find order in chaos!"
+    "story": "Gradient Greta stands at the base of a mathematical mountain range, rope coiled and sunglasses gleaming. As an expert climber, she knows that reaching any peak requires understanding the terrain - where it's steep, where it's flat, and which paths lead to the summit. Optimization is the art of finding the best route to the top!",
+    "characterMessage": "Welcome to the mountains of optimization! I'm Greta, and I've climbed every mathematical peak there is. Whether you're seeking the highest point (maximum) or the deepest valley (minimum), I'll teach you to read the terrain and find the optimal path. Let's gear up for this adventure!"
   },
   "learningObjectives": [
-    "Define sample spaces as sets of all possible outcomes",
-    "Understand events as subsets of sample spaces",
-    "Calculate basic probabilities using counting principles",
-    "Apply probability rules: addition, multiplication, complement",
-    "Connect probability to real-world uncertainty and decision-making"
+    "Understand optimization as finding maximum or minimum function values",
+    "Distinguish between local and global extrema",
+    "Recognize optimization problems in real-world contexts",
+    "Identify the role of gradients in optimization",
+    "Connect optimization to machine learning and engineering applications"
   ],
   "coreConcepts": [
-    "Sample space Ω: set of all possible outcomes",
-    "Events as subsets of sample space",
-    "Probability function P: assigns numbers to events",
-    "Basic probability rules and axioms",
-    "Counting principles for finite sample spaces"
+    "Optimization: finding max/min values of functions",
+    "Local vs global extrema",
+    "Objective functions and constraints",
+    "Feasible regions and boundary conditions",
+    "Real-world optimization examples"
   ],
-  "readContent": "Probability quantifies uncertainty by assigning numbers between 0 and 1 to events. The sample space Ω contains all possible outcomes of an experiment, while events are subsets of this space. The probability function P satisfies three axioms: P(A) ≥ 0 for any event A, P(Ω) = 1, and P(A ∪ B) = P(A) + P(B) when A and B are disjoint. For finite sample spaces with equally likely outcomes, P(A) = |A|/|Ω| (favorable outcomes divided by total outcomes). Key rules include: P(Aᶜ) = 1 - P(A) for complements, and P(A ∪ B) = P(A) + P(B) - P(A ∩ B) for general unions.",
-  "readAnalogy": "Think of probability like my magic hat filled with all possible outcomes! The sample space is everything that could possibly be pulled from the hat, while events are specific collections of outcomes I'm interested in. The probability is simply the fraction of space each event takes up in my magical hat!",
+  "readContent": "Optimization seeks the best possible outcome from a given set of possibilities - finding maximum profits, minimum costs, shortest paths, or optimal designs. We distinguish between local extrema (best in a neighborhood) and global extrema (best overall). The objective function f(x,y) represents what we're optimizing, while constraints define the feasible region where solutions must lie. Unconstrained optimization allows variables to take any values, while constrained optimization restricts variables to specific regions. Understanding the optimization landscape is crucial before choosing solution methods.",
+  "readAnalogy": "Optimization is like mountain climbing with purpose! Sometimes I want the highest peak (maximum), sometimes the deepest valley (minimum). Local peaks are hills in my immediate area, but the global peak is the highest point in the entire range. My objective function is like elevation - it tells me what I'm trying to optimize.",
   "readKeyPoints": [
-    "Sample space Ω contains all possible outcomes of a random experiment",
-    "Events are subsets of the sample space we're interested in",
-    "Probability P(A) = favorable outcomes / total outcomes for equally likely cases"
+    "Optimization finds the best (maximum or minimum) values of objective functions",
+    "Local extrema are best in neighborhoods; global extrema are best overall",
+    "Real problems often involve constraints that limit the feasible region"
   ],
-  "readDigDeeper": "The axiomatic foundation of probability theory, developed by Kolmogorov, builds all probability concepts from three simple axioms. This mathematical framework underlies everything from quantum mechanics to machine learning algorithms.",
-  "readWhyMatters": "Weather forecasting uses probability to predict rain chances from atmospheric data. Medical diagnosis assigns probabilities to diseases based on symptoms. Insurance companies use probability to calculate fair premiums. Machine learning algorithms make predictions using probability distributions over possible outcomes.",
-  "seeContent": "Explore interactive sample space visualizations, see how events correspond to regions in probability spaces, and observe how counting principles determine probabilities in finite cases with equal likelihood.",
-  "hearContent": "Listen as I explain how probability is like organizing all the magic tricks in my hat - some outcomes are more likely to appear than others, but the mathematical rules help us predict the patterns!",
-  "hearAudioUrl": "/audio/6.1.mp3",
-  "doContent": "Use the Sample Space Explorer to visualize different experiments, practice with the Probability Calculator for basic events, and experiment with the Event Combinations tool showing unions, intersections, and complements.",
+  "readDigDeeper": "Convex optimization problems have the special property that any local minimum is also the global minimum. This makes them much easier to solve and guarantees that optimization algorithms will find the true optimum rather than getting stuck in local minima.",
+  "readWhyMatters": "Netflix optimizes recommendation algorithms to maximize user engagement. Tesla optimizes battery design to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints. Every engineering design involves optimization trade-offs.",
+  "seeContent": "Explore 3D optimization landscapes showing peaks, valleys, and saddle points, visualize the difference between local and global extrema, and observe how constraints create feasible regions that limit where optimal solutions can exist.",
+  "hearContent": "Listen as I explain how optimization is like mountaineering with mathematical precision - every peak and valley has meaning, and finding the true summit requires understanding the entire landscape!",
+  "hearAudioUrl": "/audio/5.1.mp3",
+  "doContent": "Use the Optimization Landscape Explorer to identify different types of extrema, practice with the Constraint Sketcher to define feasible regions, and experiment with the Objective Function Analyzer to understand optimization setup.",
   "memoryAids": {
-    "mantra": "Sample space holds all that could be, events are subsets we want to see! Count the favorable, divide by all - that's probability's magical call!",
-    "visual": "Picture Pippa's shimmering magic hat containing all possible outcomes, with events highlighted as glowing regions within the hat, and probabilities determined by how much space each region occupies."
+    "mantra": "Peak or valley, local or global - optimization finds the best with mathematical protocol!",
+    "visual": "Picture Greta surveying a mountain range with her climbing gear, systematically identifying which peaks are just local hills and which represent the true summit of the entire range."
   },
   "conceptCheck": {
-    "question": "Rolling two dice, what's the probability of getting a sum of 7, given that all 36 outcomes are equally likely?",
+    "question": "A function has a local maximum at point A with value f(A) = 10, and another local maximum at point B with value f(B) = 15. What can you conclude?",
     "options": [
-      "P(sum = 7) = 6/36 = 1/6, since there are 6 ways: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)",
-      "P(sum = 7) = 1/11, since sums range from 2 to 12",
-      "P(sum = 7) = 7/36, since we want sum 7 out of 36 outcomes",
-      "P(sum = 7) = 2/12, since 7 is in the middle of possible sums"
+      "Point B gives a higher function value, so it's a better local maximum than A",
+      "Point A is the global maximum since it was found first",
+      "Both points are equally good since they're both local maxima",
+      "Neither point can be trusted without checking all function values"
     ],
     "correctAnswer": 0,
-    "explanation": "Sample space has 36 equally likely outcomes. Event 'sum = 7' contains 6 outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Therefore P(sum = 7) = 6/36 = 1/6."
+    "explanation": "Among local maxima, the one with the highest function value (B with f(B) = 15) is superior. Point B might be the global maximum, but we'd need to check the entire domain to be certain."
   },
-  "realWorldConnection": "Netflix calculates probabilities that users will like different movies based on viewing history. Medical AI systems assign probabilities to different diagnoses based on symptoms. Weather services use probability models to forecast precipitation chances from atmospheric data.",
+  "realWorldConnection": "Netflix optimizes recommendation algorithms to maximize user watch time. SpaceX optimizes rocket trajectories to minimize fuel while reaching orbit. Amazon optimizes warehouse locations to minimize delivery costs while maximizing coverage. Every engineering and business decision involves optimization thinking.",
   "hearTranscript": [
-    "Hello there, fellow explorers of uncertainty! I'm Probability Pippa, and I make the unpredictable predictable through the magic of probability!",
-    "Every magical trick starts with knowing all the possible outcomes... and that's exactly what sample space is in probability. It's like having a magical hat that contains every possible result of any random experiment.",
-    "When I flip a coin, my sample space is simple: heads or tails. When I roll a six-sided die, the sample space contains six equally magical outcomes: one, two, three, four, five, and six. But when I pull cards from a deck or predict next week's weather, the sample spaces become wonderfully complex.",
-    "Events are the magical subsets we actually care about. Instead of listing every possible outcome, events let us group outcomes that matter for our predictions. \"Rolling an even number\" is an event containing three outcomes: two, four, and six.",
-    "Weather forecasting uses sample spaces constantly. Meteorologists consider all possible temperature, humidity, and wind combinations, then calculate probabilities for events like \"rain tomorrow\" or \"temperature above 75 degrees.\"",
-    "Medical diagnosis works the same way. Doctors consider sample spaces of all possible conditions, then calculate probabilities for events like \"patient has condition X given these symptoms.\"",
-    "The magic happens when we assign probabilities to events... transforming uncertainty into actionable mathematical insights."
+    "Welcome to the mountains of optimization! I'm Greta, and I've climbed every mathematical peak there is. Whether you're seeking the highest point or the deepest valley, I'll teach you to read the terrain and find the optimal path to the best possible outcome.",
+    "Optimization is like mountaineering with mathematical precision... Sometimes I want the highest peak - that's maximization. Sometimes I need the deepest valley - that's minimization. But here's the crucial distinction every serious climber must understand: local versus global extrema.",
+    "A local maximum is like a hill in my immediate area - it might be the highest point I can see from here, but there could be much taller peaks beyond the ridge. The global maximum is the true summit of the entire mountain range... the absolute best solution in the whole domain.",
+    "My objective function is like elevation on a topographical map - it tells me exactly what I'm trying to optimize. Constraints are like the boundaries of the climbing area... they define my feasible region where solutions are actually possible.",
+    "Netflix optimizes recommendation algorithms to maximize your engagement time. Tesla optimizes battery chemistry to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints.",
+    "Every engineering design, every business decision, every route you take to work involves optimization thinking. The mathematics of finding the best isn't just academic theory... it's the invisible engine powering every improvement and efficiency gain in our modern world.",
+    "So grab your mathematical climbing gear! We're about to discover how the quest for \"better\" transforms absolutely everything around us!"
   ]
 }

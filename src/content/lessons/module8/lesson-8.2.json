@@ -1,65 +1,62 @@
 {
   "id": "8.2",
-  "title": "Prior, Likelihood, and Posterior",
+  "title": "Sampling Distribution & Standard Error",
   "duration": "40-45 minutes",
-  "characterId": "bayes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes opens his detective case files to reveal the three essential components of every Bayesian investigation: the Prior (what we believed before), the Likelihood (what the evidence tells us), and the Posterior (our updated conclusion). Like any good detective story, each element plays a crucial role in reaching the truth.",
-    "characterMessage": "Every good detective story has three acts! First, the setup - what I believe going in (prior). Second, the investigation - what the evidence reveals (likelihood). Third, the conclusion - my updated theory combining both (posterior). Master these three, and you master Bayesian reasoning!"
+    "story": "Sigmund contemplates the profound beauty of sampling distributions - the mathematical bridges between individual samples and universal truths. Just as a single swan's flight pattern varies slightly each time, sample statistics vary in predictable ways that follow elegant mathematical laws, creating the foundation for all statistical inference.",
+    "characterMessage": "Behold the mathematical elegance of sampling distributions! Every statistic has its own distribution across all possible samples, and understanding these patterns is the key to principled inference. The standard error measures the precision of our statistical estimates with beautiful mathematical grace."
   },
   "learningObjectives": [
-    "Define and distinguish prior, likelihood, and posterior distributions",
-    "Calculate posteriors using Bayes' theorem in simple cases",
-    "Understand how different priors affect posterior conclusions",
-    "Interpret likelihood functions as evidence summaries",
-    "Apply the complete Bayesian workflow to real problems"
+    "Understand sampling distributions as distributions of statistics across samples",
+    "Calculate and interpret standard errors for various statistics",
+    "Apply the Central Limit Theorem to sampling distribution analysis",
+    "Distinguish between population standard deviation and standard error",
+    "Use sampling distributions to quantify estimation uncertainty"
   ],
   "coreConcepts": [
-    "Prior distribution P(θ): beliefs before data",
-    "Likelihood function P(data|θ): evidence given parameters",
-    "Posterior distribution P(θ|data): updated beliefs",
-    "Bayes' theorem calculation workflow",
-    "Sensitivity analysis for different priors"
+    "Sampling distribution: distribution of a statistic across all possible samples",
+    "Standard error: standard deviation of sampling distribution",
+    "Central Limit Theorem for sample means",
+    "Standard error formulas: SE = σ/√n for means",
+    "Relationship to confidence and precision"
   ],
-  "readContent": "The prior distribution P(θ) represents our beliefs about parameters before observing data, encoding existing knowledge or assumptions. The likelihood function P(data|θ) summarizes what the observed data tells us about different parameter values - it's not a probability distribution over θ but a function showing how likely the data is for each possible θ value. The posterior distribution P(θ|data) combines prior and likelihood via Bayes' theorem: P(θ|data) = P(data|θ)P(θ)/P(data), where P(data) is the normalizing constant. The posterior represents our updated beliefs after seeing the evidence. Different priors can lead to different posteriors, making sensitivity analysis important for understanding how prior assumptions affect conclusions.",
-  "readAnalogy": "Think of each component like elements in my detective work. The prior is my initial theory about the case based on similar cases I've seen before. The likelihood is what each piece of evidence suggests about different theories - some evidence strongly supports certain suspects, other evidence is ambiguous. The posterior is my final theory that combines my initial hunches with all the evidence I've gathered, weighted appropriately.",
+  "readContent": "The sampling distribution describes how a statistic varies across all possible samples of fixed size from a population. For sample means, the Central Limit Theorem guarantees that X̄ ~ N(μ, σ²/n) for large n, regardless of population shape. The standard error SE = σ/√n measures the precision of sample mean estimates - smaller SE indicates more precise estimates. Standard error differs from population standard deviation σ: σ measures individual observation variability, while SE measures statistic variability across samples. Other statistics have their own sampling distributions and standard errors. Understanding sampling distributions enables probability statements about how close sample statistics are to population parameters.",
+  "readAnalogy": "Think of sampling distributions like observing the graceful variations in swan flight patterns. Each flight (sample) produces a slightly different pattern (statistic), but these variations follow predictable mathematical laws. The standard error measures how much these flight patterns typically vary - smaller standard error means more consistent, predictable patterns, which gives us more confidence in understanding swan flight in general.",
   "readKeyPoints": [
-    "Prior P(θ): initial beliefs before data; Likelihood P(data|θ): evidence summary",
-    "Posterior P(θ|data): updated beliefs combining prior and likelihood via Bayes' theorem",
-    "Different priors can lead to different posteriors - sensitivity analysis is important"
+    "Sampling distribution shows how statistics vary across all possible samples",
+    "Standard error SE = σ/√n measures sampling precision for means",
+    "Central Limit Theorem ensures Normal sampling distributions for large samples"
   ],
-  "readDigDeeper": "The likelihood principle states that all information about θ contained in the data is captured by the likelihood function. This principle underlies Bayesian inference and distinguishes it from frequentist methods that may depend on unobserved data or experimental design details.",
-  "readWhyMatters": "Drug discovery uses Bayesian methods where prior knowledge about molecular structures combines with experimental evidence. Climate modeling incorporates prior physical knowledge with observational data. A/B testing increasingly uses Bayesian approaches that naturally incorporate business context as priors.",
-  "seeContent": "Visualize how priors, likelihoods, and posteriors relate mathematically and graphically, explore how different priors affect posterior conclusions, and observe the complete Bayesian updating process step-by-step.",
-  "hearContent": "Listen as I walk you through each component of Bayesian reasoning like a detective explaining the three acts of a perfect case - setup, investigation, and resolution!",
-  "hearAudioUrl": "/audio/8.2.mp3",
-  "doContent": "Use the Prior-Likelihood-Posterior Calculator with interactive sliders, practice with the Sensitivity Analysis Tool for different priors, and experiment with the Bayesian Workflow Simulator.",
-  "doType": "custom",
-  "doComponent": "bayes_medical_diagnosis",
-  "doInstructions": "Join Detective Bayes in solving medical mysteries! Adjust your prior beliefs about disease prevalence, examine test evidence, and watch how Bayesian updating combines both to reach diagnostic conclusions.",
+  "readDigDeeper": "The delta method provides standard error approximations for complex statistics using calculus: if g is a differentiable function and √n(θ̂ - θ) → N(0, σ²), then √n(g(θ̂) - g(θ)) → N(0, σ²[g'(θ)]²). This enables standard error calculations for transformed parameters.",
+  "readWhyMatters": "Political polls report margins of error based on standard errors of sample proportions. Medical studies use standard errors to assess the precision of treatment effect estimates. Manufacturing quality control uses standard errors to monitor process stability. Financial models use standard errors to quantify uncertainty in risk estimates.",
+  "seeContent": "Visualize how sample means cluster around population means with standard error precision, observe Central Limit Theorem emergence across different population shapes, and explore how sample size affects standard error magnitude.",
+  "hearContent": "Listen as I explain how sampling distributions reveal the elegant mathematical patterns underlying statistical variation - like discovering the hidden choreography that governs all swan flights!",
+  "hearAudioUrl": "/audio/7.2.mp3",
+  "doContent": "Use the Sampling Distribution Generator to observe statistic variation patterns, practice with the Standard Error Calculator for different scenarios, and experiment with the CLT Demonstrator showing distribution convergence.",
   "memoryAids": {
-    "mantra": "Prior sets the stage, likelihood weighs the evidence, posterior shows the sage! Three components in perfect dance - that's Bayesian inference's stance!",
-    "visual": "Picture Bayes' detective office with three distinct areas: a filing cabinet of prior cases, an evidence examination table with magnifying glass (likelihood), and a conclusion board where everything comes together (posterior)."
+    "mantra": "Statistics dance in patterns true, sampling distributions show their ballet through! Standard error measures the spread - precision elegant, beautifully led!",
+    "visual": "Picture Sigmund watching countless swan flights, each slightly different but following predictable mathematical patterns, with standard error measuring how tightly the flight patterns cluster around the true swan flight archetype."
   },
   "conceptCheck": {
-    "question": "You flip a coin 3 times and get HHH. With a uniform prior on p (probability of heads), what does Bayes' theorem tell us?",
+    "question": "A population has σ = 15. For sample means with n = 25, what is the standard error and what does it represent?",
     "options": [
-      "Posterior ∝ p³ × 1, favoring higher values of p but maintaining uncertainty",
-      "The coin is definitely biased since three heads is unlikely",
-      "The posterior equals the likelihood function exactly",
-      "We need more data before making any inferences"
+      "SE = 15/√25 = 3, measuring how much sample means typically vary around the population mean",
+      "SE = 15/25 = 0.6, showing the precision of individual observations",
+      "SE = 15, since standard error equals population standard deviation",
+      "SE = √(15/25) = √0.6, measuring sampling variability"
     ],
     "correctAnswer": 0,
-    "explanation": "With uniform prior P(p) = 1 and likelihood P(HHH|p) = p³, the posterior P(p|HHH) ∝ p³ × 1 = p³. This favors higher values of p but maintains uncertainty across all possible values, showing the coin is likely biased toward heads."
+    "explanation": "Standard error for sample means: SE = σ/√n = 15/√25 = 15/5 = 3. This measures how much sample means typically vary around the true population mean μ across different samples of size 25."
   },
-  "realWorldConnection": "Financial models combine prior market knowledge with current price data to update investment strategies. Medical diagnosis systems combine disease prevalence priors with symptom likelihoods to calculate diagnostic probabilities. Weather forecasting combines physical model priors with observational data for prediction updates.",
+  "realWorldConnection": "Gallup polls use standard errors to calculate ±3% margins of error for political surveys. Medical researchers report standard errors to show the precision of treatment effect estimates. Market research companies use standard errors to quantify uncertainty in consumer preference estimates from sample surveys.",
   "hearTranscript": [
-    "Every good detective needs a systematic method for combining evidence with prior knowledge. Bayes' Theorem is my mathematical magnifying glass.",
-    "The formula looks deceptively simple: the posterior probability equals the prior times the likelihood, divided by the evidence. But this elegant equation captures something profound about how intelligent reasoning should work.",
-    "Let me walk you through a case. Suppose I'm investigating whether someone committed a crime. My prior probability is based on the circumstances... maybe 10% based on opportunity and motive. Then new evidence appears... DNA at the scene that matches the suspect.",
-    "The likelihood asks: if this person is guilty, how probable is this DNA evidence? Very high. If they're innocent, how probable is this evidence? Much lower, depending on contamination rates and coincidental matches.",
-    "Bayes' Theorem systematically combines these components to give me an updated posterior probability. The DNA evidence doesn't prove guilt absolutely... it updates my probability estimate based on the strength and reliability of the evidence.",
-    "Medical diagnosis works exactly the same way. Doctors start with base rates for diseases, then update probabilities as test results arrive. Each new symptom or lab result shifts the diagnostic probabilities using Bayesian reasoning.",
-    "The genius of this approach is that it makes uncertainty explicit and manageable rather than hiding it behind false certainty."
+    "Confidence intervals represent statistical sophistication at its finest... they provide ranges of plausible values while elegantly acknowledging the inherent uncertainty in any inference from limited data.",
+    "Unlike point estimates that suggest false precision, confidence intervals communicate both what we know and what we don't know. A 95% confidence interval means that if we repeated our sampling procedure many times, 95% of such intervals would contain the true population parameter.",
+    "This interpretation requires intellectual maturity. The interval either contains the true parameter or it doesn't... there's no probability about that fact. The probability refers to the long-run performance of our interval construction procedure.",
+    "Political polling illustrates this elegance perfectly. When surveys report that a candidate has 52% support with a margin of error of ±3%, they're providing a confidence interval. The sophistication lies in acknowledging uncertainty while still enabling informed decision-making.",
+    "Medical research uses confidence intervals to communicate treatment effect sizes with appropriate uncertainty. Instead of claiming a drug reduces symptoms by exactly 15%, researchers might report a 95% confidence interval of 10% to 20% reduction, providing both the estimate and its precision.",
+    "Quality control applications use confidence intervals to assess whether manufacturing processes are operating within specifications. Process engineers can distinguish between random variation and systematic problems by examining whether parameter estimates fall within expected confidence bounds.",
+    "Confidence intervals embody the statistical principle that honest uncertainty is more valuable than false certainty."
   ]
 }

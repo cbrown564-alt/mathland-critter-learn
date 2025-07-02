@@ -1,62 +1,62 @@
 {
   "id": "4.7",
-  "title": "Directional Derivatives",
-  "duration": "40-45 minutes",
-  "characterId": "delta",
+  "title": "Matrix Powers & Exponentials",
+  "duration": "35-40 minutes",
+  "characterId": "eileen",
   "narrativeHook": {
-    "story": "Dr. Delta realizes that while gradients show the steepest direction, sometimes we need to know the rate of change in a specific direction of our choosing. Directional derivatives let us measure change along any path - like determining how quickly temperature changes as we walk northeast across a landscape.",
-    "characterMessage": "Sometimes precision requires knowing the rate of change in a specific direction! While gradients show the steepest path, directional derivatives let me measure change along any direction I choose. It's like having a mathematical speedometer that works along any route!"
+    "story": "Eileen discovers that eigenvalues hold the key to understanding what happens when matrices are multiplied by themselves many times, or even raised to infinite powers! These calculations reveal long-term behavior of dynamic systems and unlock advanced mathematical applications.",
+    "characterMessage": "Want to see mathematical time travel? Eigenvalues let me compute what happens to systems after many time steps, or even predict infinite-time behavior! It's like having a crystal ball for mathematical transformations!"
   },
   "learningObjectives": [
-    "Define directional derivatives as limits in specified directions",
-    "Compute directional derivatives using the gradient formula",
-    "Understand the relationship Dᵤf = ∇f · û",
-    "Interpret directional derivatives geometrically and physically",
-    "Apply directional derivatives to optimization and constraint problems"
+    "Compute matrix powers efficiently using diagonalization",
+    "Understand matrix exponentials and their eigenvalue computation",
+    "Analyze long-term behavior of discrete dynamical systems",
+    "Apply eigenvalue analysis to Markov chains and population models",
+    "Connect matrix powers to differential equation solutions"
   ],
   "coreConcepts": [
-    "Directional derivative definition: Dᵤf = lim(h→0) [f(a+hû) - f(a)]/h",
-    "Gradient formula: Dᵤf = ∇f · û where û is unit vector",
-    "Maximum directional derivative in gradient direction",
-    "Zero directional derivative along level curves",
-    "Applications to constraint optimization"
+    "Matrix powers: Aⁿ = PDⁿP⁻¹",
+    "Matrix exponentials: e^At = Pe^{Dt}P⁻¹",
+    "Stability analysis using eigenvalue magnitudes",
+    "Markov chain steady states",
+    "Population dynamics and growth models"
   ],
-  "readContent": "Directional derivatives measure the rate of change of f in a specified direction û. The formal definition uses limits: Dᵤf = lim(h→0) [f(a+hû) - f(a)]/h, but the practical formula Dᵤf = ∇f · û (dot product with unit direction vector) makes computation straightforward. The maximum directional derivative occurs in the gradient direction with value ||∇f||, while the minimum occurs in the opposite direction with value -||∇f||. Directional derivatives are zero along level curves (perpendicular to gradient) and provide the foundation for constrained optimization.",
-  "readAnalogy": "Directional derivatives are like asking a hedgehog to measure how steep the ground feels when walking in any chosen direction. While the gradient shows where it's steepest overall, directional derivatives tell us the steepness along our chosen path - whether that's northeast, southwest, or any other direction we pick.",
+  "readContent": "Diagonalization makes matrix powers trivial: if A = PDP⁻¹, then Aⁿ = PDⁿP⁻¹. Matrix exponentials e^{At} = Pe^{Dt}P⁻¹ where e^{Dt} is diagonal with entries e^{λᵢt}. For large n, the behavior of Aⁿ depends on eigenvalue magnitudes: |λ| > 1 grows, |λ| < 1 decays, |λ| = 1 is neutral. This determines stability of dynamical systems. Markov chains reach steady states determined by the eigenvalue λ = 1. Population models use matrix exponentials to predict growth patterns, where eigenvalues determine growth rates and eigenvectors show population distributions.",
+  "readAnalogy": "Eigenvalues are like mathematical DNA that determines long-term behavior! Through diagonalization, matrix powers become trivial: A^n = PD^nP⁻¹, where eigenvalue magnitudes control destiny. If |λ| > 1, that direction grows exponentially; if |λ| < 1, it decays; if |λ| = 1, it remains stable. For matrix exponentials e^{At} = Pe^{Dt}P⁻¹, eigenvalues directly control the exponential growth rates of different directions in the system.",
   "readKeyPoints": [
-    "Directional derivative: Dᵤf = ∇f · û measures change in direction û",
-    "Maximum value ||∇f|| occurs in gradient direction",
-    "Zero value occurs perpendicular to gradient (along level curves)"
+    "Matrix powers: A^n = PD^nP⁻¹ where eigenvalue magnitudes control growth/decay",
+    "Stability: |λ| > 1 grows, |λ| < 1 decays, |λ| = 1 neutral",
+    "Matrix exponentials: e^{At} = Pe^{Dt}P⁻¹ for continuous-time systems"
   ],
-  "readDigDeeper": "Directional derivatives in non-unit directions give Dᵥf = (∇f · v)/||v||. This shows that direction matters more than magnitude - the rate depends only on the direction component, scaled by the vector's length.",
-  "readWhyMatters": "Hikers use directional derivatives to assess trail difficulty in chosen directions. Engineers analyze stress changes along specific material orientations. Economics uses directional derivatives to understand how consumption changes when moving along budget constraints with specific preference patterns.",
-  "seeContent": "Watch directional derivative calculations along various paths, see how the dot product formula relates to geometric projections, and observe how directional derivatives vary as the chosen direction changes around a point.",
-  "hearContent": "Listen as I explain how directional derivatives are like a precision instrument that measures steepness along any path you choose - the mathematical equivalent of a customized compass!",
-  "hearAudioUrl": "/audio/4.7.mp3",
-  "doContent": "Use the Directional Derivative Calculator with vector input controls, practice with the Direction Chooser that shows how rates vary with angle, and experiment with the Gradient Projection Visualizer.",
+  "readDigDeeper": "Markov chains reach steady states determined by the eigenvalue λ = 1 and its corresponding eigenvector. The second-largest eigenvalue controls the convergence rate to equilibrium - closer to 1 means slower convergence.",
+  "readWhyMatters": "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Google's PageRank finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
+  "seeContent": "Watch matrix powers evolve over time, see how eigenvalue magnitudes control long-term behavior, and observe how Markov chains converge to steady states determined by principal eigenvectors.",
+  "hearContent": "Listen as I explain how eigenvalues are like mathematical DNA - they determine whether systems grow, shrink, oscillate, or reach equilibrium over time!",
+  "hearAudioUrl": "/audio/3.7.mp3",
+  "doContent": "Use the Matrix Power Predictor to see long-term evolution, experiment with the Stability Analyzer based on eigenvalue magnitudes, and practice with the Markov Chain Simulator to find steady states.",
   "memoryAids": {
-    "mantra": "Dot the gradient with your chosen direction - that's the rate of change with mathematical precision!",
-    "visual": "Picture Dr. Delta walking along any chosen path with a precision gauge that measures exactly how steeply the mathematical landscape rises or falls in that specific direction."
+    "mantra": "Eigenvalue size predicts the future - bigger than 1 grows, smaller than 1 shrinks, exactly 1 stays steady!",
+    "visual": "Picture Eileen with a mathematical time machine where eigenvalues control the speed and direction of time travel through matrix transformations."
   },
   "conceptCheck": {
-    "question": "For f(x,y) = x² + y² with ∇f(1,1) = ⟨2,2⟩, what is the directional derivative in direction û = ⟨1/√2, 1/√2⟩?",
+    "question": "A population model has eigenvalues 1.2 and 0.8. What happens to populations over many generations?",
     "options": [
-      "Dᵤf = 4/√2 = 2√2, the maximum possible directional derivative",
-      "Dᵤf = 2, half the maximum possible directional derivative",
-      "Dᵤf = 4, twice the gradient magnitude",
-      "Dᵤf = 0, since û is perpendicular to the gradient"
+      "Population grows exponentially in the direction of the 1.2-eigenvalue eigenvector",
+      "Population shrinks exponentially in all directions",
+      "Population oscillates between growth and decay",
+      "Population reaches immediate equilibrium"
     ],
     "correctAnswer": 0,
-    "explanation": "Dᵤf = ∇f · û = ⟨2,2⟩ · ⟨1/√2, 1/√2⟩ = 2/√2 + 2/√2 = 4/√2 = 2√2. Since û points in the same direction as ∇f, this gives the maximum directional derivative."
+    "explanation": "Eigenvalue 1.2 > 1 causes exponential growth, while 0.8 < 1 causes decay. Over time, the 1.2-eigenvalue component dominates, so population grows exponentially in the direction of that eigenvector."
   },
-  "realWorldConnection": "Hikers use directional derivatives to assess trail steepness in chosen directions. Aircraft engineers analyze how lift changes along specific flight path directions. Economists study how utility changes when consumers move along budget lines in specific spending directions.",
+  "realWorldConnection": "Epidemiologists use eigenvalue analysis to predict disease spread - eigenvalues determine whether outbreaks grow or die out. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance. Climate scientists use matrix exponentials to model long-term temperature and weather pattern evolution.",
   "hearTranscript": [
-    "The multivariable chain rule is like having a sophisticated tracking system that follows how changes propagate through interconnected networks of variables.",
-    "In single-variable calculus, the chain rule handles simple compositions. But in multivariable calculus, variables can depend on multiple other variables, creating complex webs of interdependence that require systematic analysis.",
-    "Supply chain management uses multivariable chain rule reasoning constantly. Changes in raw material costs affect manufacturing expenses, which influence retail prices, which impact consumer demand, which feeds back to affect production volumes. Each connection requires careful derivative analysis.",
-    "Climate modeling depends on chain rule calculations to track how small changes in solar radiation affect ocean temperatures, which influence atmospheric moisture, which modifies cloud formation, which changes precipitation patterns. The mathematical complexity is staggering, but the chain rule provides systematic methods for tracking these cascading effects.",
-    "Neural network backpropagation is essentially a massive application of the multivariable chain rule. When training deep learning models, error signals propagate backward through layers, with each connection requiring chain rule calculations to determine how to adjust individual parameters.",
-    "The beauty of the multivariable chain rule is that it decomposes complex change analysis into manageable, systematic steps. Instead of being overwhelmed by interconnected complexity, you can trace each pathway methodically.",
-    "This mathematical precision enables accurate modeling of real-world systems where everything depends on everything else."
+    "Want to see mathematical time travel? I've discovered that eigenvalues hold the key to predicting what happens when matrices are multiplied by themselves many times... or even raised to infinite powers!",
+    "Here's the secret that unlocks temporal mathematics... When A equals P D P inverse, then A to the nth power equals P D to the nth P inverse. Diagonalization makes matrix powers trivial! The eigenvalue magnitudes become crystal balls for long-term behavior.",
+    "If the absolute value of lambda is greater than 1, that direction grows exponentially over time. If it's less than 1, that direction decays toward zero. If it equals exactly 1, that direction remains perfectly stable. It's like having mathematical DNA that determines the destiny of every system.",
+    "Matrix exponentials work the same way... e to the At equals P e to the Dt P inverse, where eigenvalues directly control the exponential growth rates of different directions in continuous time.",
+    "Markov chains use this detective work to find steady states... the eigenvalue of exactly 1 and its eigenvector reveal where the system eventually settles. Google's PageRank algorithm finds the principal eigenvector representing steady-state web page importance.",
+    "Epidemiologists use eigenvalue analysis to predict whether disease outbreaks will grow or die out. Climate scientists use matrix exponentials to model long-term temperature evolution.",
+    "The beauty is profound... eigenvalues are like mathematical time machines that let me compute the future behavior of any dynamic system with detective precision!"
   ]
 }

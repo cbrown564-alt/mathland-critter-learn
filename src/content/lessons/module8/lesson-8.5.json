@@ -1,62 +1,63 @@
 {
   "id": "8.5",
-  "title": "Posterior Predictive Distribution",
-  "duration": "40-45 minutes",
-  "characterId": "bayes",
+  "title": "Test Statistics & P-values",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes shifts focus from understanding the past to predicting the future. The posterior predictive distribution answers the detective's ultimate question: 'Given everything I've learned from this case, what should I expect to see next?' It's not just about estimating parameters - it's about forecasting future observations with full uncertainty quantification.",
-    "characterMessage": "The real test of any detective theory is prediction! The posterior predictive distribution tells me what to expect in future observations, accounting for both my uncertainty about parameters AND the natural randomness in new data. It's the complete picture for forward-looking inference!"
+    "story": "Sigmund reveals the mathematical heart of hypothesis testing: test statistics transform sample data into standardized measures of evidence, while p-values quantify exactly how rare the observed result would be if the null hypothesis were true. These elegant tools turn raw data into precise statements about statistical significance.",
+    "characterMessage": "Now we reach the mathematical essence of hypothesis testing! Test statistics standardize our evidence into elegant mathematical form, while p-values answer the crucial question: 'How rare is what we observed?' These tools transform data into dignified statistical conclusions."
   },
   "learningObjectives": [
-    "Understand posterior predictive distribution as future observation forecasts",
-    "Distinguish between parameter uncertainty and observation uncertainty",
-    "Calculate posterior predictive distributions for conjugate cases",
-    "Apply predictive distributions to decision-making scenarios",
-    "Interpret predictive intervals for future observations"
+    "Calculate test statistics for various hypothesis tests",
+    "Understand p-values as conditional probabilities under H₀",
+    "Interpret p-values correctly in hypothesis testing context",
+    "Apply decision rules using p-values and significance levels",
+    "Recognize common misconceptions about p-value interpretation"
   ],
   "coreConcepts": [
-    "Posterior predictive: P(ỹ|y) = ∫ P(ỹ|θ)P(θ|y)dθ",
-    "Parameter uncertainty vs observation uncertainty",
-    "Predictive distributions for Beta-Binomial and Normal-Normal",
-    "Predictive intervals vs credible intervals",
-    "Applications in forecasting and decision-making"
+    "Test statistic: standardized measure of evidence against H₀",
+    "P-value: P(observing data this extreme | H₀ true)",
+    "P-value interpretation and decision rules",
+    "One-tailed vs two-tailed tests",
+    "Statistical significance vs practical significance"
   ],
-  "readContent": "The posterior predictive distribution P(ỹ|y) describes future observations ỹ given observed data y, integrating over parameter uncertainty: P(ỹ|y) = ∫ P(ỹ|θ)P(θ|y)dθ. This captures both sources of uncertainty: what we don't know about parameters θ (epistemic uncertainty) and natural randomness in observations (aleatoric uncertainty). For Beta-Binomial models, if the posterior is Beta(α,β), the predictive distribution for future successes in m trials is Beta-Binomial. For Normal-Normal models, the predictive distribution is a t-distribution with location equal to posterior mean and scale reflecting both parameter and observation uncertainty. Predictive intervals are typically wider than credible intervals because they account for future observation variability, not just parameter uncertainty.",
-  "readAnalogy": "Posterior predictive distribution is like asking 'What should I expect to see in my next case?' It's not just about what I think the true crime rate is (parameter estimation), but what actual crimes I'll observe next month, accounting for both my uncertainty about the true rate AND the natural randomness in criminal behavior. Future predictions are always more uncertain than current parameter estimates.",
+  "readContent": "Test statistics standardize sample evidence into a common scale for comparison with theoretical distributions. For population means: t = (X̄ - μ₀)/(s/√n), which measures how many standard errors the sample mean is from the hypothesized value. The p-value is the probability of observing data at least as extreme as what we observed, assuming H₀ is true. For two-tailed tests, p-value = 2 × P(T > |t|), while one-tailed tests use p-value = P(T > t). Decision rule: reject H₀ if p-value < α. Statistical significance (low p-value) doesn't guarantee practical importance - effect size matters. Common misconceptions: p-value is NOT the probability that H₀ is true, nor the probability of making an error.",
+  "readAnalogy": "Test statistics are like standardized scoring systems that let us compare different types of evidence on the same elegant scale. P-values answer 'If the null hypothesis were true, how shocking would our observation be?' It's like asking: if swans truly can't fly over mountains, how surprising would it be to see what we just observed? The smaller the p-value, the more our evidence contradicts the null hypothesis.",
   "readKeyPoints": [
-    "Posterior predictive integrates parameter uncertainty with observation uncertainty",
-    "P(ỹ|y) = ∫ P(ỹ|θ)P(θ|y)dθ averages predictions over all possible parameter values",
-    "Predictive intervals are wider than credible intervals due to additional observation uncertainty"
+    "Test statistic standardizes evidence: t = (X̄ - μ₀)/(s/√n) for means",
+    "P-value = P(data this extreme | H₀ true), NOT P(H₀ true | data)",
+    "Decision rule: reject H₀ if p-value < α (significance level)"
   ],
-  "readDigDeeper": "The posterior predictive distribution provides the foundation for Bayesian model checking: we can compare observed data to draws from the posterior predictive to assess model adequacy. Systematic discrepancies suggest model misspecification.",
-  "readWhyMatters": "Sales forecasting uses posterior predictive distributions to predict future revenue with uncertainty quantification. Medical prognosis uses predictive distributions to forecast patient outcomes accounting for diagnostic uncertainty. Supply chain management uses predictive distributions for inventory planning under demand uncertainty.",
-  "seeContent": "Visualize how posterior predictive distributions incorporate both parameter and observation uncertainty, compare predictive intervals to credible intervals, and explore forecasting applications with real-world examples.",
-  "hearContent": "Listen as I explain how posterior predictive distributions answer the ultimate detective question - not just 'what happened?' but 'what should I expect to happen next?' with full uncertainty quantification!",
-  "hearAudioUrl": "/audio/8.5.mp3",
-  "doContent": "Use the Posterior Predictive Calculator for various models, practice with the Uncertainty Decomposition Tool showing parameter vs observation uncertainty, and experiment with the Forecasting Simulator.",
+  "readDigDeeper": "The p-value function p(x) = P(T ≥ t(x) | H₀) where t(x) is the test statistic computed from data x, provides a complete summary of evidence against H₀ for all possible observations. This function captures more information than just whether p < α.",
+  "readWhyMatters": "Medical journals require p-values to establish treatment efficacy. Tech companies use p-values in A/B testing to validate product changes. Quality control uses p-values to detect manufacturing defects. Scientific research relies on p-values to establish credible findings, though with increasing awareness of their limitations.",
+  "seeContent": "Watch test statistic calculations step-by-step, visualize p-value areas under probability curves, and observe how p-values relate to evidence strength against null hypotheses.",
+  "hearContent": "Listen as I explain how test statistics and p-values transform messy data into elegant measures of evidence - the mathematical poetry of statistical significance!",
+  "hearAudioUrl": "/audio/7.5.mp3",
+  "doContent": "Use the Test Statistic Calculator for various scenarios, practice with the P-value Visualizer showing tail areas, and experiment with the Significance Decision Simulator.",
   "memoryAids": {
-    "mantra": "Parameter plus observation uncertainty combine - posterior predictive shows future's design! Not just what is, but what will be - forecasting with probability!",
-    "visual": "Picture Bayes looking through a crystal ball that shows not just his best estimate of future events, but a probability cloud representing all possible futures, accounting for both his uncertainty about the true pattern and natural randomness in events."
+    "mantra": "Test statistic measures how far we stray, p-value shows how rare the day! If p-value's small, reject with grace - statistical significance takes its place!",
+    "visual": "Picture Sigmund calculating how far his flight deviates from expected patterns (test statistic), then elegantly determining how rare such a deviation would be in the world of null hypothesis (p-value)."
   },
   "conceptCheck": {
-    "question": "You have a Beta(5,3) posterior for success rate. What's the predictive probability of success in the next single trial?",
+    "question": "A test gives t = 2.1 with p-value = 0.03. What does this mean if α = 0.05?",
     "options": [
-      "5/(5+3) = 5/8 = 0.625, the posterior mean of the success rate",
-      "Always 0.5 since each trial is independent",
-      "Need to specify the sample size for the predictive calculation",
-      "Cannot calculate without knowing the original data"
+      "Reject H₀; if H₀ were true, we'd see data this extreme only 3% of the time",
+      "Accept H₀; the sample mean is 2.1 standard errors above the null value",
+      "There's a 3% chance the null hypothesis is true",
+      "We're making a Type I error with 3% probability"
     ],
     "correctAnswer": 0,
-    "explanation": "For a single future trial with Beta(α,β) posterior, the predictive probability of success is the posterior mean: α/(α+β) = 5/(5+3) = 5/8 = 0.625. This integrates over all possible success rates weighted by their posterior probabilities."
+    "explanation": "Since p-value = 0.03 < α = 0.05, we reject H₀. The p-value means that if H₀ were true, we would observe data this extreme or more extreme only 3% of the time. This is strong evidence against H₀."
   },
-  "realWorldConnection": "E-commerce companies use posterior predictive distributions to forecast next month's sales with uncertainty bands for inventory planning. Healthcare systems use predictive distributions to forecast patient demand for resource allocation. Weather services use Bayesian predictive distributions for probabilistic forecasting beyond point estimates.",
+  "realWorldConnection": "Pharmaceutical trials report p-values to demonstrate drug efficacy to regulatory agencies. Netflix uses p-values in A/B testing to determine if new features significantly improve user engagement. Academic journals require p-values to establish statistical significance of research findings.",
   "hearTranscript": [
-    "The posterior distribution is where the investigation pays off... it's your updated belief after systematically combining prior knowledge with new evidence.",
-    "Unlike classical statistics that gives you point estimates with confidence intervals, Bayesian analysis gives you complete probability distributions over possible values. This captures the full uncertainty about what you're investigating.",
-    "In drug efficacy trials, the posterior distribution shows not just whether the drug works, but the complete range of possible effect sizes and their probabilities. This richer information helps make better decisions about treatment protocols.",
-    "The beautiful thing about posterior distributions is that they become the prior for your next investigation. Bayesian learning is inherently sequential... each new piece of evidence builds on everything you've learned before.",
-    "Credible intervals from posterior distributions have intuitive interpretations. A 95% credible interval means there's a 95% probability that the true value lies within that range, given your evidence and assumptions.",
-    "Financial risk assessment uses posterior distributions extensively. Instead of predicting that a stock will return exactly 8%, Bayesian models provide the full distribution of possible returns, helping investors understand not just expected outcomes but the probability of various scenarios.",
-    "The key insight is that posterior distributions preserve the uncertainty structure in your problem. They tell you what you know, what you don't know, and how confident you should be about different conclusions."
+    "Different research questions require different statistical tests... each designed to address specific types of evidence evaluation with appropriate mathematical sophistication.",
+    "The t-test family handles questions about means. One-sample t-tests compare sample means to known standards. Two-sample t-tests compare means between groups. Paired t-tests analyze before-after differences or matched comparisons.",
+    "Chi-square tests address questions about categorical relationships. They determine whether observed frequency patterns differ significantly from expected patterns under independence assumptions.",
+    "ANOVA extends t-test logic to multiple groups simultaneously, while controlling the probability of false discoveries that would inflate when conducting many pairwise comparisons.",
+    "Medical research illustrates these applications elegantly. Clinical trials use t-tests to compare treatment and control group outcomes. Epidemiological studies use chi-square tests to examine relationships between risk factors and disease occurrence. Multi-site drug trials use ANOVA to compare several treatment regimens simultaneously.",
+    "Market research employs these same tools for business questions. A/B testing uses t-tests to compare conversion rates between website versions. Consumer preference studies use chi-square tests to analyze categorical choice patterns. Marketing campaigns use ANOVA to compare effectiveness across multiple demographic segments.",
+    "The sophistication lies in matching the statistical test to the research question's structure... ensuring that mathematical assumptions align with data characteristics and inferential goals.",
+    "Each test represents a refined tool for specific types of scientific inquiry."
   ]
 }

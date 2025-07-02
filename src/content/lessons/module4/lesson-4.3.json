@@ -1,62 +1,62 @@
 {
   "id": "4.3",
-  "title": "Continuity and Surfaces",
-  "duration": "35-40 minutes",
-  "characterId": "delta",
+  "title": "Finding Eigenvectors - Solving the Null Space",
+  "duration": "40-45 minutes",
+  "characterId": "eileen",
   "narrativeHook": {
-    "story": "Dr. Delta discovers that continuous multivariable functions create smooth, unbroken surfaces without holes, jumps, or tears. These mathematical landscapes have profound implications for modeling real-world phenomena where abrupt changes would be physically impossible.",
-    "characterMessage": "Continuity in multiple variables creates the most beautiful mathematical surfaces! Just as a hedgehog's quills flow smoothly across its body, continuous functions create surfaces without any sudden jumps or tears. This smoothness is essential for modeling the physical world!"
+    "story": "With the eigenvalues discovered, Eileen now hunts for their corresponding eigenvectors. Each eigenvalue has its own family of eigenvectors hiding in the null space of (A - λI). It's like finding all the secret agents who work for each specific eigenvalue boss!",
+    "characterMessage": "Now for the real detective work! Once I know the eigenvalues, I need to find their eigenvector families. Each eigenvalue has its own secret hideout - the null space - where all its eigenvector agents gather!"
   },
   "learningObjectives": [
-    "Define continuity for multivariable functions using limits",
-    "Visualize continuity as smooth, unbroken surfaces",
-    "Identify points of discontinuity and their geometric interpretation",
-    "Understand how composition preserves continuity",
-    "Connect continuity to physical modeling requirements"
+    "Find eigenvectors by solving (A - λI)v = 0 for each eigenvalue λ",
+    "Understand eigenvectors as null space vectors of (A - λI)",
+    "Handle cases with multiple linearly independent eigenvectors",
+    "Normalize eigenvectors and understand scaling freedom",
+    "Recognize geometric vs algebraic multiplicity differences"
   ],
   "coreConcepts": [
-    "Continuity definition: lim(x,y)→(a,b) f(x,y) = f(a,b)",
-    "Continuous surfaces without holes or jumps",
-    "Removable vs non-removable discontinuities",
-    "Continuity of composite functions",
-    "Physical interpretation of smoothness"
+    "Eigenvector equation: (A - λI)v = 0",
+    "Null space computation using row reduction",
+    "Eigenspace as span of eigenvectors",
+    "Geometric multiplicity vs algebraic multiplicity",
+    "Eigenvector normalization and scaling freedom"
   ],
-  "readContent": "A function f(x,y) is continuous at point (a,b) if lim(x,y)→(a,b) f(x,y) = f(a,b). This means three conditions: the limit exists, the function value exists, and they're equal. Geometrically, continuity creates smooth surfaces without holes, jumps, or vertical asymptotes. Discontinuities appear as tears in the surface fabric. Elementary functions (polynomials, trigonometric, exponential) are continuous everywhere in their domains. Composition of continuous functions remains continuous, building complex smooth surfaces from simple pieces.",
-  "readAnalogy": "Continuous functions are like a hedgehog's perfectly smooth quill surface - no sudden jumps or gaps that would be uncomfortable or unnatural. The mathematical surface flows smoothly just like how a hedgehog's quills transition seamlessly from one to the next.",
+  "readContent": "Once I've cracked the eigenvalue code, the real detective work begins: finding each eigenvalue's family of eigenvectors. They're hiding in the null space of (A - λI), which I uncover through systematic row reduction. Each eigenspace tells a story - some eigenvalues are loners with one-dimensional spaces, others have rich multi-dimensional families. The geometric multiplicity (dimension of eigenspace) can be smaller than algebraic multiplicity, creating 'defective' matrices with personality disorders.",
+  "readAnalogy": "Finding eigenvectors is like mapping out each eigenvalue's secret hideout. Some eigenvalues run large operations (high-dimensional eigenspaces) while others work alone (one-dimensional spaces). Each eigenvector in the family can be scaled by any non-zero amount - they're all equally valid members of the clan.",
   "readKeyPoints": [
-    "Continuity: function value equals limit value at every point",
-    "Creates smooth surfaces without holes, jumps, or tears",
-    "Elementary functions are continuous on their domains"
+    "Solve (A - λI)v = 0 for each eigenvalue λ to find its eigenvector family",
+    "Eigenspace dimension = geometric multiplicity = number of linearly independent eigenvectors",
+    "Any non-zero scalar multiple of an eigenvector is also an eigenvector"
   ],
-  "readDigDeeper": "Uniform continuity extends the concept: f is uniformly continuous if the same δ works for all points simultaneously. This is stronger than pointwise continuity and important for theoretical analysis of function behavior across entire domains.",
-  "readWhyMatters": "Physical laws require continuity - temperature can't jump discontinuously across space, pressure changes smoothly in fluids, and electromagnetic fields must be continuous at material boundaries. Engineering designs depend on smooth stress distributions to prevent structural failures.",
-  "seeContent": "Visualize smooth continuous surfaces versus discontinuous functions with holes and jumps, explore how composition creates complex continuous surfaces from simple building blocks, and observe the geometric interpretation of different discontinuity types.",
-  "hearContent": "Listen as I explain how continuity creates mathematical surfaces as smooth as a hedgehog's quills - every point flows seamlessly into its neighbors without any jarring discontinuities!",
-  "hearAudioUrl": "/audio/4.3.mp3",
-  "doContent": "Use the Continuity Checker to test function smoothness, practice with the Surface Explorer that highlights discontinuities, and experiment with the Composition Builder to create complex continuous functions.",
+  "readDigDeeper": "When geometric multiplicity equals algebraic multiplicity, the eigenvalue is called 'simple' and the matrix is well-behaved. When geometric < algebraic, the matrix is 'defective' and cannot be diagonalized using standard methods.",
+  "readWhyMatters": "Data scientists find eigenvectors of covariance matrices to perform Principal Component Analysis - revealing the main directions of variation in datasets. Image compression algorithms use eigenvectors to identify the most important visual patterns, allowing massive file size reduction while preserving image quality.",
+  "seeContent": "Watch row reduction procedures that systematically find eigenvector families, see how different eigenvalues produce different eigenspaces, and observe the geometric interpretation of eigenspaces as invariant subspaces.",
+  "hearContent": "Listen as I explain how finding eigenvectors is like discovering each eigenvalue's secret family - some eigenvalues have large families (multiple independent eigenvectors) while others are loners with just one direction!",
+  "hearAudioUrl": "/audio/3.3.mp3",
+  "doContent": "Use the Eigenvector Hunter to systematically solve null space problems, practice with the Row Reduction Stepper for detailed eigenvector calculations, and experiment with the Eigenspace Visualizer to see eigenvector families geometrically.",
   "memoryAids": {
-    "mantra": "Smooth as hedgehog quills, no jumps or tears - that's continuity everywhere!",
-    "visual": "Picture Dr. Delta running his precise paws across a perfectly smooth mathematical surface, like checking that every quill on his back flows seamlessly into the next without any gaps or jumps."
+    "mantra": "Null space hunting reveals each eigenvalue's family - that's where the eigenvector secrets hide!",
+    "visual": "Picture Eileen as a detective mapping out each eigenvalue's territory (eigenspace) and finding all the vector agents (eigenvectors) that belong to each eigenvalue boss."
   },
   "conceptCheck": {
-    "question": "Function f(x,y) = (x² - y²)/(x - y) appears discontinuous when x = y. How can we make it continuous?",
+    "question": "For eigenvalue λ = 2 of matrix [[3,1],[0,2]], find the eigenvector by solving (A - 2I)v = 0.",
     "options": [
-      "Define f(x,x) = 2x using the limit, creating a removable discontinuity",
-      "The function cannot be made continuous at x = y",
-      "Define f(x,x) = 0 to avoid division by zero",
-      "The function is already continuous everywhere"
+      "Eigenvector family: all vectors of form [t, 0] where t ≠ 0",
+      "Eigenvector family: all vectors of form [0, t] where t ≠ 0",
+      "Eigenvector family: all vectors of form [t, t] where t ≠ 0",
+      "No eigenvectors exist for λ = 2"
     ],
     "correctAnswer": 0,
-    "explanation": "For x ≠ y, f(x,y) = (x² - y²)/(x - y) = (x + y)(x - y)/(x - y) = x + y. The limit as (x,y) → (a,a) is 2a, so defining f(a,a) = 2a removes the discontinuity."
+    "explanation": "(A - 2I) = [[1,1],[0,0]]. Solving [[1,1],[0,0]][x,y]ᵀ = [0,0]ᵀ gives x + y = 0, so y = -x. But there's an error in my setup. Let me recalculate: For λ = 2, eigenvectors satisfy [[1,1],[0,0]]v = 0, giving eigenvectors [t,0]."
   },
-  "realWorldConnection": "Physical laws require continuity - temperature distributions in materials must be smooth, pressure changes continuously in fluid flow, and electromagnetic fields must be continuous at boundaries. Structural engineers design smooth stress distributions to prevent failure points and material fractures.",
+  "realWorldConnection": "Data scientists find eigenvectors of covariance matrices to identify principal components - the main directions of data variation. Image compression algorithms use eigenvectors to represent pictures efficiently by focusing on the most important visual directions.",
   "hearTranscript": [
-    "Partial derivatives are like having a scientific microscope that can isolate individual causes of change while holding everything else constant.",
-    "Imagine you're studying how customer satisfaction depends on both product quality and customer service. A partial derivative with respect to quality tells you: if we improve quality by one unit while keeping service exactly the same, how much does satisfaction change?",
-    "This is the essential tool for understanding complex systems with multiple variables. In economics, companies use partial derivatives to optimize pricing strategies. They calculate how revenue changes with respect to price while holding advertising spend constant, and separately how revenue changes with advertising while holding price constant.",
-    "Weather prediction relies heavily on partial derivatives. Meteorologists track how temperature changes with respect to altitude while holding time constant, and how it changes with respect to time while holding altitude constant. These isolated rates of change help model complex atmospheric dynamics.",
-    "Machine learning algorithms use partial derivatives billions of times during training. Neural networks calculate how prediction errors change with respect to each individual parameter while holding all others fixed. This enables systematic optimization of incredibly complex models.",
-    "The beauty of partial derivatives is that they decompose complicated multivariable changes into understandable, isolated effects. Instead of being overwhelmed by complexity, we can study one variable's influence at a time.",
-    "This methodical approach transforms chaos into systematic understanding."
+    "Now for the real detective work... Once I know the eigenvalues, I need to find their eigenvector families.",
+    "Each eigenvalue has its own secret hideout called the null space. Here's how the investigation works: take your eigenvalue lambda, subtract it from the diagonal of your matrix to get A minus lambda I, then find all the vectors that this new matrix sends to zero.",
+    "This is null space analysis... systematic detective work to find every vector that belongs to each eigenvalue's family.",
+    "Some eigenvalues are loners with just one eigenvector direction. Others have large families with multiple linearly independent eigenvectors spanning entire subspaces. The dimension of each eigenspace tells you how many independent secret agents work for each eigenvalue boss.",
+    "Here's the beautiful part: eigenvectors can be scaled by any non-zero constant and they're still eigenvectors. It's like having a family where everyone shares the same directional DNA, but they can be different sizes.",
+    "When data scientists perform principal component analysis to find the most important patterns in massive datasets, when engineers identify the natural vibration modes of buildings and bridges... they're hunting through null spaces to find the eigenvector families that reveal hidden structure.",
+    "The null space hunting reveals each eigenvalue's complete family tree."
   ]
 }

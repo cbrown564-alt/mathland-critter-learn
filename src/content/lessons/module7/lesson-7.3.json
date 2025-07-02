@@ -1,62 +1,63 @@
 {
   "id": "7.3",
-  "title": "Confidence Intervals",
-  "duration": "45-50 minutes",
-  "characterId": "sigmund",
+  "title": "Random Variables & Probability Distributions",
+  "duration": "40-45 minutes",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund discovers the elegant solution to expressing uncertainty: confidence intervals create graceful ranges that capture unknown parameters with specified probability. Like the swan's flight path traced against the sky, confidence intervals map the probable territory where truth resides, acknowledging uncertainty while maintaining statistical dignity.",
-    "characterMessage": "Confidence intervals embody statistical elegance at its finest! Rather than single-point estimates, we create intervals that capture the unknown parameter with known probability. It's a graceful way to express both our knowledge and our appropriate humility before uncertainty."
+    "story": "Pippa waves her magic wand and transforms chaotic outcomes into neat numerical values! Random variables are like magical translators that turn any random experiment - coin flips, dice rolls, or rabbit appearances - into numbers we can work with mathematically. Each random variable brings its own special distribution pattern!",
+    "characterMessage": "Time for the ultimate magical transformation! Random variables turn any random outcome into numbers, and each one comes with its own beautiful distribution pattern. It's like having different magical formulae that tell me exactly how likely each number is to appear from my hat!"
   },
   "learningObjectives": [
-    "Construct confidence intervals for population means",
-    "Interpret confidence level and confidence interval meaning",
-    "Apply t-distribution for unknown population variance",
-    "Understand the relationship between confidence level and interval width",
-    "Recognize factors affecting confidence interval precision"
+    "Define random variables as functions from outcomes to real numbers",
+    "Distinguish between discrete and continuous random variables",
+    "Understand probability mass functions (PMF) for discrete variables",
+    "Introduce probability density functions (PDF) for continuous variables",
+    "Visualize distributions and interpret their shapes and properties"
   ],
   "coreConcepts": [
-    "Confidence interval: X̄ ± margin of error",
-    "Confidence level interpretation",
-    "Critical values from Normal and t-distributions",
-    "Margin of error: ME = t*SE or z*SE",
-    "Factors affecting interval width"
+    "Random variable: X: Ω → ℝ maps outcomes to numbers",
+    "Discrete vs continuous random variables",
+    "Probability mass function (PMF): P(X = x)",
+    "Probability density function (PDF): f(x)",
+    "Cumulative distribution function (CDF): F(x) = P(X ≤ x)"
   ],
-  "readContent": "A confidence interval provides a range of plausible values for an unknown population parameter. For population means: X̄ ± t(α/2,df) × SE, where t is the critical value from t-distribution with df = n-1 degrees of freedom. The confidence level (e.g., 95%) indicates that if we repeated this procedure many times, 95% of intervals would contain the true parameter. We use t-distribution when population variance is unknown (typical case) and Normal distribution when variance is known. Margin of error ME = t × SE determines interval width. Larger samples, lower confidence levels, and smaller population variance all produce narrower intervals.",
-  "readAnalogy": "Confidence intervals are like gracefully sketching the probable flight zone where I'll appear next. You can't predict my exact location, but statistical principles let you draw elegant boundaries that will contain my flight path 95% of the time if you repeat this process. The confidence level tells you how often these beautiful boundaries succeed in their purpose.",
+  "readContent": "A random variable X is a function that assigns numerical values to experimental outcomes: X: Ω → ℝ. Discrete random variables take countable values (like dice rolls), described by probability mass functions P(X = x) that give exact probabilities for each value. Continuous random variables take uncountable values (like heights), described by probability density functions f(x) where probabilities are computed as integrals: P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx. The cumulative distribution function F(x) = P(X ≤ x) works for both types, giving the probability that X doesn't exceed x. Different random phenomena produce characteristic distribution shapes.",
+  "readAnalogy": "Random variables are like magical number-generating machines! Each experiment gets translated into numbers, and every machine has its own personality (distribution). Some machines prefer certain numbers (discrete distributions), while others spread smoothly across ranges (continuous distributions). The distribution tells me each machine's preferences!",
   "readKeyPoints": [
-    "Confidence interval: X̄ ± t(α/2,df) × SE captures parameter with known probability",
-    "Confidence level: percentage of intervals that contain true parameter in repeated sampling",
-    "Use t-distribution when population variance unknown (typical case)"
+    "Random variables X map experimental outcomes to numerical values",
+    "Discrete: PMF gives P(X = x); Continuous: PDF gives probability densities",
+    "CDF F(x) = P(X ≤ x) works for both discrete and continuous variables"
   ],
-  "readDigDeeper": "The duality between confidence intervals and hypothesis tests: a 95% confidence interval contains all parameter values that would not be rejected in a two-sided hypothesis test at α = 0.05. This connects interval estimation to hypothesis testing through the same mathematical foundation.",
-  "readWhyMatters": "Medical studies report confidence intervals for treatment effects to show clinical significance. Political polls use confidence intervals to communicate uncertainty in candidate support estimates. Engineering uses confidence intervals for quality specifications and safety margins. Business analytics uses confidence intervals for forecasting and decision-making.",
-  "seeContent": "Watch confidence interval construction step-by-step, observe how confidence level affects interval width, and visualize the long-run interpretation through repeated sampling simulations.",
-  "hearContent": "Listen as I explain how confidence intervals provide elegant mathematical dignity to uncertainty - creating beautiful boundaries that honor both our knowledge and our limitations!",
-  "hearAudioUrl": "/audio/7.3.mp3",
-  "doContent": "Use the Confidence Interval Calculator with adjustable parameters, practice with the t-Distribution Critical Value Finder, and experiment with the Confidence Level Simulator showing long-run interpretation.",
+  "readDigDeeper": "The fundamental theorem of calculus connects PDFs and CDFs: f(x) = F'(x) for continuous distributions. This relationship parallels how instantaneous rates relate to accumulated quantities, showing deep connections between probability and calculus.",
+  "readWhyMatters": "Financial models use random variables to represent stock prices and market volatility. Quality control uses distributions to model manufacturing variations. Machine learning treats data features as realizations of random variables with specific distributions. Climate science models temperature as continuous random variables.",
+  "seeContent": "Explore how random variables transform experimental outcomes into numbers, visualize different distribution shapes for discrete and continuous cases, and observe how PDFs and CDFs represent the same information differently.",
+  "hearContent": "Listen as I explain how random variables are like magical translators that turn any chaotic experiment into organized numbers, each with its own beautiful distribution personality!",
+  "hearAudioUrl": "/audio/6.3.mp3",
+  "doContent": "Use the Random Variable Generator to see outcome-to-number mappings, practice with the Distribution Visualizer for PMFs and PDFs, and experiment with the CDF Explorer showing cumulative probabilities.",
   "memoryAids": {
-    "mantra": "Sample plus-minus margin of error - confidence intervals show where truth may lurk! Not the parameter itself we find, but elegant bounds that ease the mind!",
-    "visual": "Picture Sigmund creating graceful boundaries on a lake, knowing that while he can't predict exactly where he'll land, these elegant mathematical boundaries will contain his landing spot with known probability across many flights."
+    "mantra": "Random variables turn chaos to numbers neat, distributions show which values we'll meet! PMF for discrete, PDF for flow - that's how probability patterns grow!",
+    "visual": "Picture Pippa's magic wand transforming random experimental outcomes into streams of numbers, each following its own beautiful distribution pattern with characteristic shape and behavior."
   },
   "conceptCheck": {
-    "question": "A 95% confidence interval for mean height is [168, 172] cm. What does this mean?",
+    "question": "For a discrete random variable X with PMF P(X=1)=0.3, P(X=2)=0.5, P(X=3)=0.2, what is P(X ≤ 2)?",
     "options": [
-      "We're 95% confident the true population mean is between 168-172 cm",
-      "95% of individuals have heights between 168-172 cm",
-      "There's a 95% probability the sample mean is between 168-172 cm",
-      "The true mean has a 95% chance of being exactly 170 cm"
+      "P(X ≤ 2) = P(X=1) + P(X=2) = 0.3 + 0.5 = 0.8",
+      "P(X ≤ 2) = P(X=2) = 0.5, since we want exactly 2",
+      "P(X ≤ 2) = 1 - P(X=3) = 1 - 0.2 = 0.8",
+      "Both A and C are correct methods giving the same answer"
     ],
-    "correctAnswer": 0,
-    "explanation": "The 95% confidence level refers to the long-run success rate of the interval procedure in capturing the true population parameter. We're 95% confident that this specific interval [168, 172] contains the unknown population mean height."
+    "correctAnswer": 3,
+    "explanation": "P(X ≤ 2) includes X=1 and X=2, so P(X ≤ 2) = 0.3 + 0.5 = 0.8. Alternatively, P(X ≤ 2) = 1 - P(X > 2) = 1 - P(X=3) = 1 - 0.2 = 0.8. Both methods give 0.8."
   },
-  "realWorldConnection": "Pharmaceutical companies report confidence intervals for drug efficacy to regulators for approval decisions. Public health agencies use confidence intervals to communicate disease prevalence estimates. Market research uses confidence intervals to guide business strategy decisions with quantified uncertainty about consumer behavior.",
+  "realWorldConnection": "Netflix models user ratings as discrete random variables to predict preferences. Uber models ride request times as continuous random variables for driver allocation. Amazon models package delivery times using continuous distributions for logistics planning. Weather services model precipitation amounts as continuous random variables.",
   "hearTranscript": [
-    "The null and alternative hypothesis framework provides the logical architecture for principled scientific inquiry... a systematic method for evaluating evidence claims while protecting against wishful thinking.",
-    "The null hypothesis typically represents the status quo, the absence of effect, or the skeptical position. It serves as the default assumption that must be overcome by compelling evidence. The alternative hypothesis represents the claim we seek to establish through data.",
-    "This framework embodies intellectual humility. We don't prove our theories correct... we demonstrate that the evidence is inconsistent with the null hypothesis, lending support to our alternative explanation.",
-    "Drug approval exemplifies this sophisticated reasoning. Pharmaceutical companies must demonstrate that their treatments work better than placebo. The null hypothesis assumes no treatment effect, while the alternative proposes genuine therapeutic benefit. Regulatory agencies require overwhelming evidence against the null before approving new medications.",
-    "Educational research follows identical logic when evaluating new teaching methods. The null hypothesis assumes that innovative approaches perform no better than traditional methods. Only compelling evidence against this skeptical position supports implementing costly educational changes.",
-    "The beauty of this framework lies in its built-in conservatism. By requiring strong evidence to reject null hypotheses, we protect against hasty conclusions while still enabling progressive knowledge accumulation when evidence truly supports new claims.",
-    "This represents statistical reasoning at its most intellectually mature."
+    "Random variables are like magical transformers that turn chaotic, uncertain situations into clean, numerical outcomes we can analyze mathematically.",
+    "Think of a random variable as a mathematical function that assigns numbers to random outcomes. When I roll dice, the random variable might be \"sum of both dice.\" When tracking website visitors, the random variable might be \"number of clicks per hour.\"",
+    "Discrete random variables count things: number of customers, number of defective products, number of email clicks. These create neat, separated values like one, two, three, four...",
+    "Continuous random variables measure things: height, weight, temperature, time between events. These flow smoothly across ranges, taking any value within specified intervals.",
+    "The beautiful thing about random variables is that they let us apply mathematical analysis to uncertain situations. Instead of just saying \"customers arrive randomly,\" we can model arrival patterns, calculate expected values, and predict busy periods.",
+    "Quality control uses random variables to monitor manufacturing processes. Instead of inspecting every product, companies sample randomly and use statistical analysis to ensure quality standards.",
+    "Netflix uses random variables to model user behavior. Viewing time, show preferences, and engagement patterns become random variables that drive recommendation algorithms.",
+    "Random variables transform uncertainty from something we endure into something we can measure, model, and optimize."
   ]
 }

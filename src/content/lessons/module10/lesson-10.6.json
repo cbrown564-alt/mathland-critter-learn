@@ -1,0 +1,63 @@
+{
+  "id": "10.6",
+  "title": "Bayesian Analysis & Decision Making",
+  "duration": "90-120 minutes",
+  "characterId": "sage",
+  "narrativeHook": {
+    "story": "Sage channels Bayes the Fox's cunning detective wisdom to incorporate prior knowledge, update beliefs systematically, and make principled decisions under uncertainty. This is where mathematical theory becomes practical wisdom, using Bayesian inference to transform analysis into actionable business intelligence.",
+    "characterMessage": "Time to apply Bayes' detective wisdom to transform our analysis into decision-making intelligence! Bayesian methods let us incorporate prior knowledge, update beliefs systematically as new data arrives, and make principled decisions that acknowledge uncertainty while providing clear guidance for action."
+  },
+  "learningObjectives": [
+    "Apply Bayesian inference to update model beliefs with new evidence",
+    "Incorporate prior knowledge into analysis using appropriate prior distributions",
+    "Make decisions under uncertainty using Bayesian decision theory",
+    "Implement Bayesian model averaging for robust predictions",
+    "Communicate Bayesian results for business decision-making"
+  ],
+  "coreConcepts": [
+    "Bayesian updating of model parameters and predictions",
+    "Prior specification using domain knowledge",
+    "Posterior predictive distributions for decision-making",
+    "Bayesian model averaging and ensemble methods",
+    "Decision theory under uncertainty"
+  ],
+  "readContent": "Bayesian analysis transforms static models into adaptive systems that improve with experience. Prior distributions encode existing knowledge about parameters, data provides evidence through likelihoods, and posterior distributions represent updated beliefs - exactly the framework you mastered with Bayes the Fox! Posterior predictive distributions answer practical questions: 'What should we expect next month?' rather than just 'What are the parameters?' Bayesian model averaging combines predictions from multiple models weighted by their posterior probabilities, providing more robust forecasts than single-model approaches. Decision theory uses expected utility maximization to choose optimal actions given posterior beliefs about unknown quantities. This framework naturally handles uncertainty and provides principled approaches to business decisions.",
+  "readAnalogy": "Bayesian analysis is like having Bayes the Fox as your strategic business advisor. He starts with background knowledge (priors), systematically incorporates new evidence (likelihood updating), maintains uncertainty estimates (posterior distributions), and provides decision recommendations that account for what you don't know (decision theory under uncertainty). Each new piece of data makes the advice more refined and reliable.",
+  "readKeyPoints": [
+    "Bayesian updating incorporates new evidence while maintaining uncertainty quantification",
+    "Posterior predictive distributions focus on practical forecasting questions",
+    "Bayesian decision theory provides principled approaches to choices under uncertainty"
+  ],
+  "readDigDeeper": "Modern applications include Bayesian A/B testing that adapts during experiments, Bayesian optimization for hyperparameter tuning, and Bayesian neural networks for uncertainty-aware deep learning. These advanced techniques build on the fundamental principles you're applying.",
+  "readWhyMatters": "Netflix uses Bayesian methods for recommendation systems that adapt to changing user preferences. Financial firms apply Bayesian portfolio optimization that incorporates market uncertainty. Healthcare AI systems use Bayesian inference for personalized treatment recommendations that account for individual patient variability.",
+  "seeContent": "Implement Bayesian updating with interactive prior-to-posterior visualization, apply Bayesian decision theory to practical business scenarios, and use Bayesian model averaging for robust prediction with uncertainty quantification.",
+  "hearContent": "Listen as I demonstrate how Bayes' detective wisdom transforms mathematical analysis into strategic business intelligence - making decisions under uncertainty with the systematic rationality that defines excellent data science practice!",
+  "hearAudioUrl": "/audio/9.6.mp3",
+  "doContent": "Apply Bayesian inference to update model beliefs with new data, implement Bayesian decision theory for optimal choices under uncertainty, and use Bayesian model averaging for robust predictions with full uncertainty acknowledgment.",
+  "memoryAids": {
+    "mantra": "Update beliefs with Bayes' art, decisions smart from uncertain start! Prior plus data equals wisdom true - Bayesian thinking sees us through!",
+    "visual": "Picture Sage consulting with Bayes the Fox in a strategic war room, using mathematical maps (posterior distributions) and decision trees (Bayesian decision theory) to plan optimal moves in the face of uncertainty and incomplete information."
+  },
+  "conceptCheck": {
+    "question": "Your Bayesian analysis suggests a 70% probability that a new product feature will increase engagement by at least 5%. How should this inform your decision?",
+    "options": [
+      "Use Bayesian decision theory: weigh the 70% probability of success against implementation costs and potential benefits",
+      "Implement immediately since 70% probability indicates likely success",
+      "Don't implement since 30% failure probability is too high",
+      "Ignore probabilities and base decision purely on point estimates"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bayesian decision theory evaluates expected utility considering all possible outcomes weighted by their probabilities. The 70% success probability should be combined with cost-benefit analysis to determine if the expected value justifies implementation."
+  },
+  "realWorldConnection": "Amazon uses Bayesian decision theory for inventory management, balancing stockout risks against holding costs. Pharmaceutical companies apply Bayesian methods in clinical trial design to make go/no-go decisions as data accumulates. Autonomous vehicle companies use Bayesian inference for real-time decision-making under sensor uncertainty.",
+  "hearTranscript": [
+    "Mathematical mastery reaches its fullest expression when complex analytical insights become compelling narratives that drive important decisions... this transformation requires sophisticated communication skills grounded in mathematical understanding.",
+    "Executive communication requires distilling technical complexity into strategic insights that enable informed decision-making. You must preserve mathematical rigor while making results accessible to audiences with different technical backgrounds.",
+    "Visualization design applies mathematical principles about perception, information theory, and cognitive psychology to create graphics that reveal patterns rather than obscure them. Effective data visualization is applied mathematics made visual.",
+    "Uncertainty communication represents a particular challenge... helping decision-makers understand confidence intervals, prediction ranges, and model limitations without oversimplifying or creating false precision.",
+    "Recommendation framing requires integrating statistical evidence with business context to provide actionable guidance. You're not just reporting what the data shows... you're applying mathematical insights to inform strategy.",
+    "Model documentation creates reproducible workflows that enable peer review, regulatory compliance, and knowledge transfer. This requires technical writing skills that make mathematical methods accessible to future practitioners.",
+    "Impact measurement applies experimental design and statistical inference to assess whether your analytical recommendations actually improve business outcomes. This closes the loop from mathematical analysis to measurable value creation.",
+    "The ultimate goal is transforming mathematical sophistication into organizational capability... creating systems that enable better decisions through rigorous quantitative analysis."
+  ]
+}

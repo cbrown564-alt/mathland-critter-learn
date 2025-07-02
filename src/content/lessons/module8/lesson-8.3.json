@@ -1,62 +1,62 @@
 {
   "id": "8.3",
-  "title": "Conjugate Priors & Beta-Binomial",
+  "title": "Confidence Intervals",
   "duration": "45-50 minutes",
-  "characterId": "bayes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes discovers the mathematical elegance of conjugate priors - special prior distributions that play perfectly with certain likelihoods, creating posteriors in the same family. The Beta-Binomial partnership is like a detective duo that always works in perfect harmony, making calculations elegant and interpretations intuitive.",
-    "characterMessage": "Some mathematical partnerships are pure genius! Conjugate priors are like perfect detective partners - they work so smoothly with certain likelihoods that the posterior is always in the same family. The Beta-Binomial duo is my favorite example of this mathematical elegance in action!"
+    "story": "Sigmund discovers the elegant solution to expressing uncertainty: confidence intervals create graceful ranges that capture unknown parameters with specified probability. Like the swan's flight path traced against the sky, confidence intervals map the probable territory where truth resides, acknowledging uncertainty while maintaining statistical dignity.",
+    "characterMessage": "Confidence intervals embody statistical elegance at its finest! Rather than single-point estimates, we create intervals that capture the unknown parameter with known probability. It's a graceful way to express both our knowledge and our appropriate humility before uncertainty."
   },
   "learningObjectives": [
-    "Understand conjugate priors as mathematically convenient prior-likelihood pairs",
-    "Master the Beta-Binomial conjugate relationship",
-    "Interpret Beta distribution parameters as prior successes and failures",
-    "Calculate Beta-Binomial posteriors analytically",
-    "Recognize other common conjugate pairs and their applications"
+    "Construct confidence intervals for population means",
+    "Interpret confidence level and confidence interval meaning",
+    "Apply t-distribution for unknown population variance",
+    "Understand the relationship between confidence level and interval width",
+    "Recognize factors affecting confidence interval precision"
   ],
   "coreConcepts": [
-    "Conjugate prior: prior that yields posterior in same family",
-    "Beta-Binomial: Beta(α,β) prior + Binomial likelihood → Beta posterior",
-    "Beta distribution parameters: α (prior successes), β (prior failures)",
-    "Posterior updating: Beta(α+s, β+f) where s,f are observed successes/failures",
-    "Other conjugate pairs: Normal-Normal, Gamma-Poisson"
+    "Confidence interval: X̄ ± margin of error",
+    "Confidence level interpretation",
+    "Critical values from Normal and t-distributions",
+    "Margin of error: ME = t*SE or z*SE",
+    "Factors affecting interval width"
   ],
-  "readContent": "Conjugate priors create mathematical elegance by producing posteriors in the same distribution family as the prior. For Binomial likelihoods, the Beta distribution is conjugate: if the prior is Beta(α,β) and we observe s successes in n trials, the posterior is Beta(α+s, β+n-s). The Beta parameters have intuitive interpretations: α represents prior 'pseudo-successes' and β represents prior 'pseudo-failures,' reflecting our prior equivalent sample size of α+β. This makes updating trivial - just add observed successes to α and failures to β. Other conjugate pairs include Normal-Normal (known variance), Gamma-Poisson, and Dirichlet-Multinomial. Conjugacy enables analytical solutions and provides intuitive parameter interpretations that aid in prior specification.",
-  "readAnalogy": "Conjugate priors are like having the perfect detective partner who speaks your exact language. When I (Beta prior) team up with Binomial likelihood evidence, we communicate so perfectly that our conclusion (Beta posterior) is expressed in my same language, just with updated parameters. It's like having a conversation where each new piece of evidence simply updates my running tally of successes and failures.",
+  "readContent": "A confidence interval provides a range of plausible values for an unknown population parameter. For population means: X̄ ± t(α/2,df) × SE, where t is the critical value from t-distribution with df = n-1 degrees of freedom. The confidence level (e.g., 95%) indicates that if we repeated this procedure many times, 95% of intervals would contain the true parameter. We use t-distribution when population variance is unknown (typical case) and Normal distribution when variance is known. Margin of error ME = t × SE determines interval width. Larger samples, lower confidence levels, and smaller population variance all produce narrower intervals.",
+  "readAnalogy": "Confidence intervals are like gracefully sketching the probable flight zone where I'll appear next. You can't predict my exact location, but statistical principles let you draw elegant boundaries that will contain my flight path 95% of the time if you repeat this process. The confidence level tells you how often these beautiful boundaries succeed in their purpose.",
   "readKeyPoints": [
-    "Conjugate priors yield posteriors in the same distribution family",
-    "Beta-Binomial: Beta(α,β) + s successes → Beta(α+s, β+n-s)",
-    "Beta parameters: α = prior successes, β = prior failures, α+β = prior sample size"
+    "Confidence interval: X̄ ± t(α/2,df) × SE captures parameter with known probability",
+    "Confidence level: percentage of intervals that contain true parameter in repeated sampling",
+    "Use t-distribution when population variance unknown (typical case)"
   ],
-  "readDigDeeper": "The exponential family structure underlies conjugacy: when both prior and likelihood are in exponential family form, conjugate priors exist naturally. This mathematical structure explains why certain distribution pairs work together so elegantly.",
-  "readWhyMatters": "A/B testing platforms use Beta-Binomial updating for real-time conversion rate analysis. Clinical trials use conjugate priors to incorporate historical data about treatment success rates. Quality control uses conjugate updating to monitor defect rates with accumulating evidence.",
-  "seeContent": "Watch Beta-Binomial updating in action with interactive parameter adjustments, visualize how prior parameters affect posterior conclusions, and explore other conjugate pairs in various applications.",
-  "hearContent": "Listen as I demonstrate the mathematical poetry of conjugate priors - how Beta and Binomial dance together in perfect harmony to create beautifully simple posterior updating!",
-  "hearAudioUrl": "/audio/8.3.mp3",
-  "doContent": "Use the Beta-Binomial Calculator with real-time updating, practice with the Conjugate Prior Explorer for different distribution families, and experiment with the Prior Parameter Interpreter.",
+  "readDigDeeper": "The duality between confidence intervals and hypothesis tests: a 95% confidence interval contains all parameter values that would not be rejected in a two-sided hypothesis test at α = 0.05. This connects interval estimation to hypothesis testing through the same mathematical foundation.",
+  "readWhyMatters": "Medical studies report confidence intervals for treatment effects to show clinical significance. Political polls use confidence intervals to communicate uncertainty in candidate support estimates. Engineering uses confidence intervals for quality specifications and safety margins. Business analytics uses confidence intervals for forecasting and decision-making.",
+  "seeContent": "Watch confidence interval construction step-by-step, observe how confidence level affects interval width, and visualize the long-run interpretation through repeated sampling simulations.",
+  "hearContent": "Listen as I explain how confidence intervals provide elegant mathematical dignity to uncertainty - creating beautiful boundaries that honor both our knowledge and our limitations!",
+  "hearAudioUrl": "/audio/7.3.mp3",
+  "doContent": "Use the Confidence Interval Calculator with adjustable parameters, practice with the t-Distribution Critical Value Finder, and experiment with the Confidence Level Simulator showing long-run interpretation.",
   "memoryAids": {
-    "mantra": "Beta meets Binomial in perfect dance, conjugate priors enhance! Add successes to alpha, failures to beta - posterior updating's perfect theta!",
-    "visual": "Picture Bayes and his perfect detective partner (Beta and Binomial) working seamlessly together, with each new case (data point) simply updating their shared case file in exactly the same format they've always used."
+    "mantra": "Sample plus-minus margin of error - confidence intervals show where truth may lurk! Not the parameter itself we find, but elegant bounds that ease the mind!",
+    "visual": "Picture Sigmund creating graceful boundaries on a lake, knowing that while he can't predict exactly where he'll land, these elegant mathematical boundaries will contain his landing spot with known probability across many flights."
   },
   "conceptCheck": {
-    "question": "Starting with Beta(2,3) prior for conversion rate, you observe 7 successes in 10 trials. What's the posterior?",
+    "question": "A 95% confidence interval for mean height is [168, 172] cm. What does this mean?",
     "options": [
-      "Beta(9,6): α = 2+7 = 9, β = 3+(10-7) = 6",
-      "Beta(7,3): only the successes matter for updating α",
-      "Beta(2,10): add the total trials to β",
-      "Need to calculate using Bayes' theorem - no simple updating rule"
+      "We're 95% confident the true population mean is between 168-172 cm",
+      "95% of individuals have heights between 168-172 cm",
+      "There's a 95% probability the sample mean is between 168-172 cm",
+      "The true mean has a 95% chance of being exactly 170 cm"
     ],
     "correctAnswer": 0,
-    "explanation": "Beta-Binomial conjugate updating: Beta(α,β) + s successes in n trials → Beta(α+s, β+(n-s)). Here: Beta(2,3) + 7 successes in 10 trials → Beta(2+7, 3+3) = Beta(9,6)."
+    "explanation": "The 95% confidence level refers to the long-run success rate of the interval procedure in capturing the true population parameter. We're 95% confident that this specific interval [168, 172] contains the unknown population mean height."
   },
-  "realWorldConnection": "Conversion rate optimization platforms like Optimizely use Beta-Binomial updating to provide real-time A/B test results. Medical device companies use conjugate priors to incorporate historical safety data into new clinical trials. Online advertising uses Beta-Binomial models to optimize click-through rates with streaming data.",
+  "realWorldConnection": "Pharmaceutical companies report confidence intervals for drug efficacy to regulators for approval decisions. Public health agencies use confidence intervals to communicate disease prevalence estimates. Market research uses confidence intervals to guide business strategy decisions with quantified uncertainty about consumer behavior.",
   "hearTranscript": [
-    "Every investigation begins somewhere, and that starting point... your prior distribution... can make or break your case.",
-    "Priors represent what you know before seeing the current evidence. They're not just guesses... they're informed judgments based on historical patterns, domain expertise, and relevant context.",
-    "In criminal investigations, priors come from crime statistics, behavioral patterns, and situational factors. If someone reports a burglary in a high-crime neighborhood, that affects my prior probability compared to the same report from a low-crime area.",
-    "The beauty of Bayesian analysis is that it makes these assumptions explicit. Classical statistics often pretends we start with no prior knowledge... but that's rarely true. Bayesian methods force you to state your assumptions clearly.",
-    "Now, here's where it gets interesting: different priors can lead to different conclusions from the same evidence. This isn't a weakness... it's a feature. It shows how background knowledge legitimately influences interpretation.",
-    "Conjugate priors are particularly elegant. They're mathematical families where the prior and posterior have the same form, making calculations clean and intuitive. For binary outcomes, beta distributions are conjugate to binomial likelihoods. For continuous measurements, normal distributions are conjugate to normal likelihoods.",
-    "The key is choosing priors that reflect genuine prior knowledge while being transparent about their influence on your conclusions."
+    "The null and alternative hypothesis framework provides the logical architecture for principled scientific inquiry... a systematic method for evaluating evidence claims while protecting against wishful thinking.",
+    "The null hypothesis typically represents the status quo, the absence of effect, or the skeptical position. It serves as the default assumption that must be overcome by compelling evidence. The alternative hypothesis represents the claim we seek to establish through data.",
+    "This framework embodies intellectual humility. We don't prove our theories correct... we demonstrate that the evidence is inconsistent with the null hypothesis, lending support to our alternative explanation.",
+    "Drug approval exemplifies this sophisticated reasoning. Pharmaceutical companies must demonstrate that their treatments work better than placebo. The null hypothesis assumes no treatment effect, while the alternative proposes genuine therapeutic benefit. Regulatory agencies require overwhelming evidence against the null before approving new medications.",
+    "Educational research follows identical logic when evaluating new teaching methods. The null hypothesis assumes that innovative approaches perform no better than traditional methods. Only compelling evidence against this skeptical position supports implementing costly educational changes.",
+    "The beauty of this framework lies in its built-in conservatism. By requiring strong evidence to reject null hypotheses, we protect against hasty conclusions while still enabling progressive knowledge accumulation when evidence truly supports new claims.",
+    "This represents statistical reasoning at its most intellectually mature."
   ]
 }

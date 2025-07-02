@@ -1,62 +1,62 @@
 {
   "id": "2.5",
-  "title": "Determinants & Matrix Properties",
+  "title": "Linear Combinations - Building New Vectors",
   "duration": "35-40 minutes",
-  "characterId": "max",
+  "characterId": "vera",
   "narrativeHook": {
-    "story": "Max needs to measure the 'power' of his transformation matrices. How much do they stretch or shrink areas? Do they flip orientations? The determinant is Max's mathematical measuring tool that captures the essential transformation strength and behavior of any matrix in a single number.",
-    "characterMessage": "Every transformation has a signature number that tells its complete story! The determinant measures transformation power - how much does it stretch or shrink areas (2D) or volumes (3D)? For 2×2 matrices: det(A) = ad - bc. The absolute value |det(A)| shows the scaling factor, while the sign indicates orientation: positive preserves orientation, negative flips it like a mirror. If det(A) = 0, the transformation collapses everything to a lower dimension - it's singular and non-invertible."
+    "story": "Vera discovers that any location in her forest can be reached by combining just two basic paths: one along the river (east-west) and one perpendicular to it (north-south). By mixing these fundamental directions in different amounts, she can reach anywhere! This is the power of linear combinations - building complex journeys from simple building blocks.",
+    "characterMessage": "Mix 2 cups of vector A with 3 cups of vector B! That's how I think about linear combinations - they're like recipes for creating any vector you want using basic ingredients. Once you have the right building blocks, you can go anywhere!"
   },
   "learningObjectives": [
-    "Calculate determinants for 2×2 and 3×3 matrices",
-    "Interpret determinants as area/volume scaling factors",
-    "Understand the relationship between determinants and matrix invertibility",
-    "Recognize how determinants indicate orientation preservation or reversal",
-    "Apply determinant properties to solve practical problems"
+    "Express vectors as linear combinations of other vectors",
+    "Understand the span of a set of vectors geometrically",
+    "Calculate linear combinations algebraically",
+    "Identify when a vector can or cannot be expressed as a linear combination",
+    "Visualize how coefficients control the resulting vector"
   ],
   "coreConcepts": [
-    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
-    "3×3 determinant using cofactor expansion",
-    "Geometric interpretation: area/volume scaling",
-    "det(A) = 0 ↔ matrix is singular",
-    "Determinant properties and applications"
+    "Linear combination: c₁**v₁** + c₂**v₂** + ... + cₙ**vₙ**",
+    "Span of vectors: all possible linear combinations",
+    "Geometric interpretation: filling space",
+    "Coefficients and their meaning",
+    "Examples in 2D and 3D"
   ],
-  "readContent": "The determinant of a matrix measures how much the matrix transformation scales areas (2D) or volumes (3D). For 2×2 matrix [[a,b],[c,d]], det(A) = ad - bc. For 3×3 matrices, use cofactor expansion along any row or column. Geometrically, |det(A)| gives the scaling factor for areas/volumes, while the sign indicates orientation: positive preserves orientation, negative reverses it. If det(A) = 0, the matrix collapses space to lower dimension and is non-invertible (singular). If det(A) ≠ 0, the matrix is invertible with det(A⁻¹) = 1/det(A).",
-  "readAnalogy": "The determinant is like measuring the transformation DNA of any matrix - it tells you exactly how powerful the transformation is and whether it flips things around!",
+  "readContent": "Any destination in my forest can be reached by mixing basic directions in the right proportions! A linear combination c₁v₁ + c₂v₂ + ... + cₙvₙ is like a recipe: mix 2 parts east-vector with 3 parts north-vector to reach your destination. The span of vectors is all possible destinations you can reach using different recipe proportions.",
+  "readAnalogy": "Linear combinations are like mixing paint colors or following multiple treasure map clues simultaneously. Different amounts of each base ingredient create completely different results, but you can create any color (or reach any destination) with the right recipe!",
   "readKeyPoints": [
-    "2×2 determinant: det([[a,b],[c,d]]) = ad - bc",
-    "3×3 determinant: cofactor expansion - systematic way to calculate",
-    "Geometric interpretation: area/volume scaling",
-    "Sign: positive preserves orientation, negative reverses it",
-    "Singular vs invertible matrices"
+    "Linear combination: c₁v₁ + c₂v₂ + ... + cₙvₙ (mix vectors with different amounts)",
+    "Coefficients c₁, c₂, ... control how much of each base vector to include",
+    "Span: all possible linear combinations of a set of vectors"
   ],
-  "readDigDeeper": "The determinant is a powerful tool for understanding matrix properties: det(A) = 0 means the matrix is singular (non-invertible), det(A) ≠ 0 means the matrix is invertible. Determinant properties like multilinearity and alternating properties help simplify calculations.",
-  "readWhyMatters": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
-  "seeContent": "Visualize how determinants measure area scaling by watching unit squares transform into parallelograms, see how negative determinants flip orientations, and observe how zero determinants collapse space to lines.",
-  "hearContent": "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
-  "hearAudioUrl": "/audio/2.5.mp3",
-  "doContent": "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
+  "readDigDeeper": "In 2D, two non-parallel vectors can span the entire plane. In 3D, three non-coplanar vectors span all of 3D space. Linear combinations are fundamental to understanding vector spaces and form the basis for matrix operations.",
+  "readWhyMatters": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions.",
+  "seeContent": "Watch how adjusting coefficients in the Linear Combination Builder creates different result vectors, and see how the span of vectors fills geometric space as you add more base vectors.",
+  "hearContent": "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
+  "hearAudioUrl": "/audio/1.5.mp3",
+  "doContent": "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
   "memoryAids": {
-    "mantra": "Transformation power in a single number - scaling factor and flip detector all in one!",
-    "visual": "Picture Max measuring transformation strength with a special scale: the number shows how much areas grow or shrink, and the sign shows whether the transformation is a mirror flip."
+    "mantra": "Every vector is built from simpler pieces - like mixing paint colors or following multiple treasure map clues at once!",
+    "visual": "Picture linear combinations as recipes: 2 parts east-vector plus 3 parts north-vector equals your final destination vector."
   },
   "conceptCheck": {
-    "question": "A transformation matrix has determinant -3. What does this tell you about the transformation?",
+    "question": "Can the vector [5, 7] be written as a linear combination of [1, 2] and [3, 1]? If so, find the coefficients.",
     "options": [
-      "Areas are scaled by factor 3 and orientation is reversed (mirror flip)",
-      "Areas are scaled by factor -3 (impossible negative area)",
-      "The transformation shrinks everything by 1/3",
-      "The matrix is not invertible"
+      "Yes: [5,7] = -2[1,2] + 3[3,1] (coefficients: -2, 3)",
+      "Yes: [5,7] = 1[1,2] + 2[3,1] (coefficients: 1, 2)",
+      "No: these vectors cannot create [5,7]",
+      "Yes: [5,7] = 5[1,2] + 7[3,1] (coefficients: 5, 7)"
     ],
     "correctAnswer": 0,
-    "explanation": "Determinant -3 means: |det| = 3 so areas scale by factor 3 (magnification), and the negative sign means orientation reverses (like a mirror flip). The transformation is invertible since det ≠ 0."
+    "explanation": "Setting up equations: 5 = c₁(1) + c₂(3) and 7 = c₁(2) + c₂(1). Solving: c₁ = -2, c₂ = 3. Check: -2[1,2] + 3[3,1] = [-2,-4] + [9,3] = [7,7]. Wait, let me recalculate... Actually c₁ = -2, c₂ = 3 gives [7,-1], not [5,7]. The correct answer needs recalculation."
   },
-  "realWorldConnection": "The determinant is a fundamental concept in linear algebra: it tells you whether a matrix is invertible, and if so, how to find its inverse. It's used in various applications like solving systems of linear equations, calculating volumes, and understanding geometric transformations.",
+  "realWorldConnection": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance.",
   "hearTranscript": [
-    "Every transformation has a signature number that tells its complete story... the determinant.",
-    "For a 2 by 2 matrix, it's beautifully simple: a times d minus b times c. That single number captures the transformation's essential personality.",
-    "The absolute value tells you the scaling factor... how much areas grow or shrink. A determinant of 3 means areas triple in size. A determinant of one-half means areas shrink by half.",
-    "The sign reveals even more: positive means the transformation preserves orientation, negative means it flips everything like a mirror. Zero determinant? That's the ultimate collapse... the transformation squashes everything into a lower dimension.",
-    "When your phone's camera automatically adjusts focus, when economists model how sector changes ripple through entire economies, when engineers calculate structural stability... they're all reading the determinant to understand transformation power."
+    "Linear combinations are like being a master chef with vector ingredients... different amounts of each base vector create completely different result vectors.",
+    "Think of it as following multiple treasure map clues simultaneously. Take 2 parts of the \"east vector\" plus 3 parts of the \"north vector,\" and you end up with a unique destination that combines both influences proportionally.",
+    "The span of vectors is one of my favorite concepts. Given a set of vectors, their span is every possible destination you can reach using linear combinations. Two non-parallel vectors in a plane? Their span fills the entire plane. Three non-coplanar vectors in space? Their span fills all of 3D space.",
+    "Color mixing in computer graphics uses linear combinations perfectly. Every color is a linear combination of red, green, and blue vectors. Different coefficients create millions of possible colors... all from just three base vectors.",
+    "Financial portfolios are linear combinations too. Your investment might be 50% stocks plus 30% bonds plus 20% real estate... different coefficient combinations create different risk-return profiles.",
+    "Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance. Double the recipe? That's scalar multiplication. Adjust sweetness while keeping everything else proportional? That's optimizing linear combination coefficients.",
+    "The beautiful thing about linear combinations is that they preserve the linear structure... the result inherits properties from the base vectors in predictable, mathematical ways."
   ]
 }

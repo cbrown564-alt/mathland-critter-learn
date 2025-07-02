@@ -1,61 +1,61 @@
 {
   "id": "5.2",
-  "title": "Critical Points & The First Derivative Test",
+  "title": "Limits in Multivariable Calculus",
   "duration": "40-45 minutes",
-  "characterId": "greta",
+  "characterId": "delta",
   "narrativeHook": {
-    "story": "Greta knows that every mountain peak and valley bottom shares one crucial feature: the slope is perfectly flat at the summit! Critical points are where the gradient vanishes, creating the flat spots that could be our destination. But not every flat spot is a peak - some are mountain passes or plateaus.",
-    "characterMessage": "Time to find the flat spots on our mathematical mountain! Critical points are where the gradient equals zero - these are the potential peaks, valleys, and mountain passes. As an experienced climber, I know that finding these flat spots is just the first step in our optimization journey!"
+    "story": "Dr. Delta encounters a fascinating challenge: in single-variable calculus, approaching a point meant moving along a line, but with multiple variables, there are infinitely many paths to approach any point! This creates both beautiful complexity and the need for more precise mathematical tools.",
+    "characterMessage": "Limits become much more interesting with multiple variables! Unlike the single path approach in one dimension, we can now approach any point from infinitely many directions. This requires extra precision and care - exactly the kind of mathematical challenge I love!"
   },
   "learningObjectives": [
-    "Find critical points by solving ∇f = 0",
-    "Understand why critical points are necessary for extrema",
-    "Apply the first derivative test in multiple variables",
-    "Distinguish between different types of critical points",
-    "Handle systems of equations for critical point finding"
+    "Understand multivariable limits as approaching from all possible paths",
+    "Recognize why path-independence is required for limit existence",
+    "Compute limits using direct substitution when possible",
+    "Identify when limits don't exist due to path-dependence",
+    "Apply squeeze theorem and polar coordinates for limit evaluation"
   ],
   "coreConcepts": [
-    "Critical points: ∇f = 0 (all partial derivatives zero)",
-    "Necessary condition for interior extrema",
-    "Solving systems: ∂f/∂x = 0 and ∂f/∂y = 0",
-    "Types: maxima, minima, saddle points",
-    "First derivative test limitations"
+    "Limit definition: lim(x,y)→(a,b) f(x,y) = L",
+    "Path independence requirement",
+    "Direct substitution method",
+    "Path-dependent limits and non-existence",
+    "Polar coordinate substitution technique"
   ],
-  "readContent": "Critical points occur where ∇f = 0, meaning all partial derivatives vanish simultaneously. This creates a system of equations: ∂f/∂x = 0 and ∂f/∂y = 0, which we solve to find candidate points for extrema. Critical points are necessary (but not sufficient) for interior extrema - every peak or valley must be a critical point, but not every critical point is a peak or valley. Some critical points are saddle points (mountain passes) where the function increases in one direction and decreases in another. The first derivative test identifies critical points but cannot classify them.",
-  "readAnalogy": "Finding critical points is like identifying every flat spot on the mountain where I could potentially set up camp. Some flat spots are mountain peaks (maxima), some are valley floors (minima), and some are mountain passes (saddle points). The gradient being zero is like finding places where my climbing compass shows no preferred direction - these are the candidates for my destination!",
+  "readContent": "Multivariable limits require the function to approach the same value L along every possible path to point (a,b). Unlike single-variable limits with only left/right approaches, we now have infinitely many approach paths: straight lines, curves, spirals, and more exotic routes. If any two paths give different limiting values, the limit doesn't exist. When direct substitution works (continuous functions), the limit equals f(a,b). For indeterminate forms, we use techniques like polar coordinates or the squeeze theorem.",
+  "readAnalogy": "Think of multivariable limits like a hedgehog carefully approaching its burrow. In one dimension, there's only a left path and right path, but in two dimensions, the hedgehog can approach from north, south, east, west, or any curved path imaginable. The limit exists only if all possible approach routes lead to the same destination!",
   "readKeyPoints": [
-    "Critical points satisfy ∇f = 0 (all partial derivatives equal zero)",
-    "Every interior extremum must be a critical point (necessary condition)",
-    "Solving ∂f/∂x = 0 and ∂f/∂y = 0 simultaneously finds critical points"
+    "Multivariable limits must be the same along ALL possible approach paths",
+    "If two different paths give different limits, the overall limit doesn't exist",
+    "Direct substitution works when the function is continuous at the point"
   ],
-  "readDigDeeper": "Fermat's theorem extends to multiple variables: if f has a local extremum at an interior point, then ∇f = 0 at that point. However, the converse is false - critical points may be saddle points rather than extrema.",
-  "readWhyMatters": "Machine learning algorithms find critical points of loss functions to train neural networks. Engineers find critical points of stress functions to identify potential failure locations. Economists find critical points of utility functions to determine optimal consumption patterns.",
-  "seeContent": "Watch systematic critical point finding through gradient calculations, observe different types of critical points on 3D surfaces, and see how solving systems of partial derivative equations reveals candidate optimization points.",
-  "hearContent": "Listen as I explain how finding critical points is like identifying every flat camping spot on the mountain - some are perfect peaks, others are valley bottoms, and some are just convenient rest stops along the way!",
-  "hearAudioUrl": "/audio/5.2.mp3",
-  "doContent": "Use the Critical Point Finder with step-by-step equation solving, practice with the Gradient Calculator that shows when ∇f = 0, and experiment with the System Solver for complex critical point problems.",
+  "readDigDeeper": "The ε-δ definition of multivariable limits uses neighborhoods: for every ε > 0, there exists δ > 0 such that whenever 0 < ||(x,y) - (a,b)|| < δ, we have |f(x,y) - L| < ε. This generalizes naturally to higher dimensions.",
+  "readWhyMatters": "Understanding multivariable limits is crucial for analyzing continuity in physical systems. Engineers need these concepts when studying heat transfer, where temperature must vary continuously across material boundaries. Computer graphics relies on continuous surface functions for realistic rendering.",
+  "seeContent": "Watch interactive demonstrations showing different approach paths to the same point, observe cases where limits exist versus cases where path-dependence creates non-existence, and see polar coordinate transformations that simplify complex limit calculations.",
+  "hearContent": "Listen as I explain how multivariable limits are like a hedgehog's careful approach to home - we must check every possible path to ensure they all lead to the same mathematical destination!",
+  "hearAudioUrl": "/audio/4.2.mp3",
+  "doContent": "Use the Path Explorer to test different approach routes, practice with the Limit Calculator that checks path independence, and experiment with the Polar Coordinate Transformer for challenging limit problems.",
   "memoryAids": {
-    "mantra": "Gradient zero, flat terrain - critical points mark where extrema might reign!",
-    "visual": "Picture Greta using her compass at various mountain locations, looking for spots where the needle points nowhere because the slope is perfectly flat in all directions - these are the critical points."
+    "mantra": "All paths must agree for the limit to be - that's multivariable precision, you see!",
+    "visual": "Picture Dr. Delta testing every possible route to a point, like a careful hedgehog ensuring all paths through the mathematical forest lead to the same precise destination."
   },
   "conceptCheck": {
-    "question": "For f(x,y) = x³ - 3xy + y², find all critical points by solving ∇f = 0.",
+    "question": "For f(x,y) = xy/(x² + y²), what happens to the limit as (x,y) → (0,0) along the path y = mx?",
     "options": [
-      "Critical points: (0,0) and (1,1) from solving 3x² - 3y = 0 and -3x + 2y = 0",
-      "Critical points: (1,0) and (0,1) from the partial derivative system",
-      "Critical point: (0,0) only, since this is where both partials vanish",
-      "No critical points exist since the system has no solutions"
+      "The limit is m/(1 + m²), which depends on the slope m",
+      "The limit is always 0 regardless of the slope m",
+      "The limit is always 1 regardless of the slope m",
+      "The limit is undefined because of division by zero"
     ],
     "correctAnswer": 0,
-    "explanation": "∇f = ⟨3x² - 3y, -3x + 2y⟩ = ⟨0,0⟩ gives the system: 3x² - 3y = 0 and -3x + 2y = 0. From the second equation: y = 3x/2. Substituting: 3x² - 3(3x/2) = 0, so 3x² - 9x/2 = 0, giving x(2x - 3) = 0. Thus x = 0 or x = 3/2, yielding critical points (0,0) and (3/2, 9/4). Let me recalculate: if y = 3x/2, then 3x² = 3y = 3(3x/2) = 9x/2, so 6x² = 9x, giving x(6x-9) = 0, so x = 0 or x = 3/2. Wait, that's x = 3/2, not x = 1. Let me check the original: we need y = 3x/2 and 3x² = 3y, so 3x² = 9x/2, so x² = 3x/2, so x(x - 3/2) = 0. Actually, option A shows (1,1) which would require checking..."
+    "explanation": "Along path y = mx, we get f(x,mx) = x(mx)/(x² + (mx)²) = mx²/(x²(1 + m²)) = m/(1 + m²). Since this depends on m, different paths give different limits, so the overall limit doesn't exist."
   },
-  "realWorldConnection": "Machine learning finds critical points of loss functions during neural network training. Structural engineers identify critical stress points that could lead to material failure. Portfolio managers find critical points of risk-return functions to optimize investment strategies.",
+  "realWorldConnection": "Engineers analyze heat distribution where temperature must vary continuously across material boundaries. Computer graphics requires continuous surface functions for realistic rendering. Climate models need continuous atmospheric variable transitions across geographic boundaries.",
   "hearTranscript": [
-    "Most people think optimization is just finding the biggest or smallest number in a list. But here's what they don't realize... optimization is the invisible mathematical engine that powers every single improvement, efficiency gain, and breakthrough decision in our modern world.",
-    "When I'm exploring a mountain range, I need to identify the peaks, valleys, and saddle points. In mathematical optimization, critical points are exactly these locations... places where the gradient equals zero, indicating potential optimal solutions.",
-    "The Hessian matrix is like my topographical map... it's the matrix of second partial derivatives that tells me the curvature of the landscape at each critical point. Positive definite Hessian? That's a valley where I've found a local minimum. Negative definite? That's a peak with a local maximum.",
-    "But here's where it gets interesting... saddle points have mixed eigenvalues in their Hessian matrices. They're like mountain passes... maximum in one direction but minimum in another.",
-    "Netflix uses optimization algorithms to minimize prediction errors in their recommendation system. Every time you get a perfect movie suggestion, that's critical point analysis finding the optimal balance between your preferences and available content.",
-    "Understanding critical points and the Hessian gives you the mathematical tools to navigate any optimization landscape systematically."
+    "Continuity in multiple dimensions is like studying the smoothness of mathematical landscapes... some surfaces are perfectly smooth, others have sudden cliffs or mysterious gaps.",
+    "When I analyze a function of two variables, I'm essentially studying a three-dimensional surface floating in mathematical space. Continuity means this surface has no sudden tears, holes, or jumps... you can walk across it without falling through unexpected gaps.",
+    "Think of elevation maps used by hikers. A continuous elevation function means you can trace any path without encountering impossible vertical cliffs. Discontinuities would represent mathematical waterfalls... places where elevation suddenly drops to different levels.",
+    "Engineering applications depend critically on surface continuity. When designing airplane wings, aerodynamicists need smooth airflow patterns. Discontinuities in the mathematical models could indicate dangerous turbulence zones that would affect flight safety.",
+    "Computer graphics use continuity analysis to create realistic 3D surfaces. Game engines ensure that virtual landscapes have proper continuity so characters can move smoothly without glitching through mathematical holes in the terrain.",
+    "The remarkable thing about continuity is that it bridges the gap between abstract mathematical theory and tangible real-world applications. Every smooth animation, every precisely manufactured surface, every weather prediction relies on our understanding of mathematical continuity."
   ]
 }

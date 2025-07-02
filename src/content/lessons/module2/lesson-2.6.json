@@ -1,61 +1,62 @@
 {
   "id": "2.6",
-  "title": "Elementary Row Operations & Matrix Rank",
-  "duration": "40-45 minutes",
-  "characterId": "max",
+  "title": "Linear Independence - Fundamental Directions",
+  "duration": "35-40 minutes",
+  "characterId": "vera",
   "narrativeHook": {
-    "story": "Max has a messy filing cabinet that needs systematic reorganization. He can swap file drawers, multiply all files in a drawer by a constant factor, or add copies of one drawer's files to another drawer. These 'elementary operations' help Max transform any disorganized matrix into its cleanest, most informative form.",
-    "characterMessage": "Every messy filing system can be perfectly organized using just three simple operations! I can swap rows, scale rows, or add one row to another. With these tools, I can transform any matrix into its clearest, most informative form - revealing its true organizational structure!"
+    "story": "Vera realizes that some of her forest paths are redundant. If she can reach any point using the river path and the perpendicular path, then a third diagonal path doesn't give her any new capabilities. This insight leads to one of the most important concepts in mathematics: linear independence - the art of eliminating redundancy while keeping all essential directions.",
+    "characterMessage": "Independent vectors give you new directions to explore! It's like having the perfect toolkit - no redundant tools, but everything you need to reach anywhere you want to go. Can I get there without this vector? If yes, it's redundant!"
   },
   "learningObjectives": [
-    "Apply the three elementary row operations systematically",
-    "Use row operations to transform matrices to row echelon form",
-    "Understand how row operations preserve matrix information while changing appearance",
-    "Calculate matrix rank as the number of linearly independent rows",
-    "Recognize the relationship between rank and linear independence"
+    "Define linear independence and dependence mathematically",
+    "Test sets of vectors for linear independence",
+    "Understand the geometric meaning of independence",
+    "Identify the maximum number of independent vectors in n dimensions",
+    "Recognize when vectors provide genuinely new information"
   ],
   "coreConcepts": [
-    "Elementary row operations: swap, scale, add",
-    "Row echelon form and reduced row echelon form",
-    "Row operations preserve linear relationships",
-    "Matrix rank as number of independent rows",
-    "Rank and linear independence connection"
+    "Linear independence definition",
+    "Linear dependence: when vectors are redundant",
+    "Testing for independence",
+    "Geometric interpretation",
+    "Maximum independent vectors in n dimensions"
   ],
-  "readContent": "Elementary row operations transform matrices while preserving their essential linear relationships: (1) Swap two rows, (2) Multiply a row by a non-zero constant, (3) Add a multiple of one row to another row. These operations convert matrices to row echelon form, where each row starts with a leading 1 (pivot) to the right of the previous row's pivot. Matrix rank equals the number of non-zero rows in row echelon form, representing the number of linearly independent rows. Rank determines the dimension of the row space and indicates how much independent information the matrix contains.",
-  "readAnalogy": "Elementary row operations are like the basic tools in a carpenter's toolkit - they allow you to shape and modify the matrix structure without changing the underlying information.",
+  "readContent": "Independent vectors give you genuinely new directions to explore! Vectors are linearly independent if none can be built from the others. It's like having the perfect exploration toolkit - no redundant tools, but everything you need to reach anywhere. In 2D, you can have at most 2 independent vectors. In 3D, at most 3. More than that, and some become redundant passengers!",
+  "readAnalogy": "Think of your vector toolkit: independent vectors are essential tools that each do something unique, while dependent vectors are duplicates taking up backpack space. Can I get there without this vector? If yes, it's redundant!",
   "readKeyPoints": [
-    "Swap rows: switch two rows to change their order",
-    "Scale rows: multiply a row by a non-zero constant to change its height",
-    "Add rows: add a multiple of one row to another to combine information"
+    "Linear independence: no vector can be written as a combination of the others",
+    "Test: c₁v₁ + c₂v₂ + ... + cₙvₙ = 0 only when all c's equal zero",
+    "Maximum independent vectors in n dimensions: n vectors"
   ],
-  "readDigDeeper": "Row operations are reversible and can be used to simplify matrix calculations. They're also used to find the rank of a matrix, which is the number of linearly independent rows or columns.",
-  "readWhyMatters": "Row operations are a fundamental part of linear algebra: they allow us to manipulate matrices to find solutions to systems of linear equations, calculate determinants, and understand matrix properties.",
-  "seeContent": "Watch step-by-step row operations transforming messy matrices into clean row echelon form, see how rank reveals the true independent information content, and observe how different matrices can have the same rank.",
-  "hearContent": "Listen as I explain how organizing matrix information is like reorganizing a filing cabinet systematically - the same information is there, but now it's perfectly arranged and easy to understand!",
-  "hearAudioUrl": "/audio/2.6.mp3",
-  "doContent": "Use the Row Operations Simulator to practice systematic matrix transformation, experiment with the Rank Calculator to find independent information content, and try the Echelon Form Converter for automatic organization.",
+  "readDigDeeper": "Linear dependence means at least one vector is redundant. Geometrically, dependent vectors point in directions already covered by other vectors. Testing independence often involves setting up and solving systems of equations.",
+  "readWhyMatters": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding redundancy and improving prediction accuracy.",
+  "seeContent": "Visualize how linearly dependent vectors collapse into lower-dimensional spaces, while independent vectors span full dimensional space. Watch the Independence Checker show when vectors provide genuinely new directions.",
+  "hearContent": "Listen as I explain how finding independent directions is like choosing the perfect exploration toolkit - you want enough tools to handle any situation, but no redundant weight slowing you down!",
+  "hearAudioUrl": "/audio/1.6.mp3",
+  "doContent": "Use the Independence Checker to test vector sets visually, experiment with the Dependency Detector to see how dependent vectors relate, and practice with the Redundancy Eliminator to streamline vector sets.",
   "memoryAids": {
-    "mantra": "Swap, scale, add - three simple tools to organize any matrix into its clearest, most informative form!",
-    "visual": "Picture Max reorganizing his filing cabinet: swapping drawers, adjusting file quantities, and combining information strategically until everything is perfectly ordered and the true information content is revealed."
+    "mantra": "Independent vectors open new paths - dependent vectors just repeat directions you already have!",
+    "visual": "Picture your vector toolkit: independent vectors are essential tools that each do something unique, while dependent vectors are duplicates taking up space."
   },
   "conceptCheck": {
-    "question": "After row operations, a 4×5 matrix is in row echelon form with 3 non-zero rows. What is the rank and what does it mean?",
+    "question": "Are vectors [1, 2], [3, 1], and [4, 3] linearly independent? Explain both algebraically and geometrically.",
     "options": [
-      "Rank = 3, meaning the matrix has 3 linearly independent rows containing all the unique information",
-      "Rank = 4, because that's the number of original rows",
-      "Rank = 5, because that's the number of columns",
-      "Rank = 1, because row operations reduce complexity"
+      "No - [4,3] = [1,2] + [3,1], so they're linearly dependent",
+      "Yes - all three vectors point in different directions",
+      "No - you can only have 2 independent vectors in 2D space",
+      "Yes - the determinant test confirms independence"
     ],
-    "correctAnswer": 0,
-    "explanation": "Rank equals the number of non-zero rows in row echelon form. Rank = 3 means exactly 3 rows contain linearly independent information; the 4th row became zero, indicating it was dependent on the others."
+    "correctAnswer": 2,
+    "explanation": "In 2D space, at most 2 vectors can be linearly independent. With 3 vectors in 2D, at least one must be expressible as a linear combination of the others. Indeed, [4,3] = [1,2] + [3,1], confirming dependence."
   },
-  "realWorldConnection": "Data scientists use row operations to clean datasets and find independent variables. Engineers use them to solve structural analysis problems. Economists use matrix rank to determine if economic models have enough independent equations to find unique solutions.",
+  "realWorldConnection": "In data analysis, independent features provide unique information while dependent features are redundant and can be eliminated. Machine learning algorithms perform better when input features are linearly independent, avoiding the 'curse of dimensionality' and improving prediction accuracy.",
   "hearTranscript": [
-    "Every messy filing system can be perfectly organized using just three simple operations... Think of me as the ultimate organizational consultant with the most systematic toolkit ever created.",
-    "Picture the most chaotic filing cabinet you've ever seen... papers everywhere, drawers in the wrong order, information scattered randomly. But I have three magical organizational tools that can transform any mess into perfect clarity.",
-    "Tool one: row swapping. I can exchange any two file drawers instantly. Tool two: row scaling. I can multiply every document in a drawer by the same factor. Tool three: row addition. I can take copies from one drawer and systematically add them to another drawer.",
-    "These three operations are reversible and preserve all the essential information... they just reveal it more clearly. When I'm finished, the matrix is in row echelon form... like a perfectly organized staircase where each row starts further to the right than the one above it.",
-    "But here's the profound discovery: the number of non-zero rows after my systematic organization reveals the matrix's true rank... its independent information content. A 4 by 5 matrix might look complex, but if only 3 rows survive my organizational process, then it truly contains just 3 pieces of independent information.",
-    "Data scientists use these techniques to clean massive datasets, finding which variables actually contain unique information versus redundant copies."
+    "Independent vectors give you new directions to explore! It's like having the perfect toolkit... no redundant tools, but everything you need to reach anywhere you want to go.",
+    "Here's the key question I always ask: \"Can I get there without this vector?\" If the answer is yes, then that vector is redundant... it's a linear combination of the others and doesn't add any new directional capabilities.",
+    "Linear independence is about eliminating redundancy while keeping all essential directions. In 2D space, you need exactly 2 independent vectors to reach anywhere. In 3D space, you need exactly 3. Any more, and you have redundancy.",
+    "Think of it like exploring with a compass. If you have north and east directions, you can reach any point in the plane. Adding northeast doesn't give you new capabilities... it's just a combination of north and east you already have.",
+    "In data science, linear independence reveals the intrinsic dimensionality of datasets. You might have 100 variables describing customers, but maybe only 5 independent patterns explain most of the variation. The rest is redundancy.",
+    "Machine learning models depend on linear independence. Redundant features can cause numerical instability and overfitting. Independent features provide clean, non-overlapping information that models can learn from effectively.",
+    "When vectors are linearly independent, they form a basis... a minimal set of directions that can reach everywhere in their space through linear combinations."
   ]
 }

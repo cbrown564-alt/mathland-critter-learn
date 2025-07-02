@@ -1,63 +1,62 @@
 {
   "id": "7.8",
-  "title": "Statistical Power",
+  "title": "PDF vs CDF: Complete Distribution Descriptions",
   "duration": "40-45 minutes",
-  "characterId": "sigmund",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund explores the concept of statistical power - the elegant measure of a test's ability to detect truth when truth exists. Like the swan's keen eyesight that spots distant movements on the water, statistical power represents our test's sensitivity to real effects hiding beneath the surface of random variation.",
-    "characterMessage": "Statistical power embodies our test's elegant sensitivity to truth! It measures how well we can detect real effects when they truly exist. Understanding power helps us design studies that won't miss important discoveries and interpret negative results with appropriate wisdom."
+    "story": "Pippa reveals that every distribution has two magical faces! The PDF shows the 'density' of magic at each point - how concentrated the probability is. The CDF shows the 'accumulated' magic up to any point - what fraction of outcomes fall below that value. Together, they give the complete picture of any random phenomenon!",
+    "characterMessage": "Every distribution wears two magical masks! The PDF (or PMF for discrete) shows how dense the probability is at each spot, like seeing where my magic is most concentrated. The CDF accumulates all that magic up to any point, showing what fraction falls below any value. Together, they tell the complete story!"
   },
   "learningObjectives": [
-    "Define statistical power as the probability of detecting true effects",
-    "Calculate power for various hypothesis testing scenarios",
-    "Understand factors that influence statistical power",
-    "Apply power analysis for sample size determination",
-    "Interpret studies with adequate vs inadequate power"
+    "Understand PDF as probability density for continuous variables",
+    "Master CDF as cumulative probability P(X ≤ x)",
+    "Convert between PDF and CDF using calculus relationships",
+    "Interpret percentiles and quantiles using CDF",
+    "Apply both representations to solve probability problems"
   ],
   "coreConcepts": [
-    "Statistical power: P(reject H₀ | H₀ false) = 1 - β",
-    "Power depends on: effect size, sample size, α level, population variance",
-    "Power analysis for sample size planning",
-    "Interpreting negative results in low-power studies",
-    "Cohen's conventions for effect sizes"
+    "PDF f(x): probability density, f(x) = F'(x)",
+    "CDF F(x) = P(X ≤ x): cumulative probability",
+    "Relationship: F(x) = ∫₋∞ˣ f(t)dt",
+    "Percentiles and quantiles from CDF",
+    "Probability calculations using both representations"
   ],
-  "readContent": "Statistical power = 1 - β measures the probability of correctly rejecting a false null hypothesis, i.e., detecting a true effect when it exists. Power increases with: larger effect sizes (easier to detect big differences), larger sample sizes (more precise estimates), higher α levels (less stringent criteria), and smaller population variance (less noise). Cohen's conventions classify effect sizes as small (d = 0.2), medium (d = 0.5), or large (d = 0.8). Power analysis determines required sample sizes to achieve desired power (typically 80%) for expected effect sizes. Studies with low power may fail to detect real effects, leading to false negative conclusions. Power analysis is crucial for study planning and result interpretation.",
-  "readAnalogy": "Statistical power is like the keenness of my eyesight when hunting for subtle movements on the water's surface. With sharp vision (high power), I can detect even small ripples (small effects). Poor vision (low power) means I'll miss everything except the most obvious splashes. The clarity of my vision depends on lighting conditions (sample size), how big the movement is (effect size), and how carefully I'm looking (α level).",
+  "readContent": "The Probability Density Function (PDF) f(x) shows the relative likelihood density at each point for continuous variables. Probabilities require integration: P(a ≤ X ≤ b) = ∫ₐᵇ f(x)dx. The Cumulative Distribution Function (CDF) F(x) = P(X ≤ x) gives the probability that X doesn't exceed x. These connect via calculus: F(x) = ∫₋∞ˣ f(t)dt and f(x) = F'(x). CDF properties: F(-∞) = 0, F(∞) = 1, and F is non-decreasing. Percentiles and quantiles come from CDF: the pth percentile is the value x where F(x) = p/100. Both representations are essential for different probability calculations.",
+  "readAnalogy": "Think of PDF and CDF like two views of my magical mountain! PDF shows the 'steepness' at each elevation - where the magic is most concentrated. CDF shows the 'accumulated elevation' - what fraction of the mountain lies below any height. Both views together give me complete knowledge of the magical landscape!",
   "readKeyPoints": [
-    "Power = 1 - β = probability of detecting true effects when they exist",
-    "Increases with larger effect sizes, sample sizes, α levels; decreases with more variance",
-    "Power analysis determines sample sizes needed for adequate sensitivity"
+    "PDF f(x): shows probability density at each point (steepness)",
+    "CDF F(x): shows cumulative probability up to x (accumulated area)",
+    "Calculus relationship: F(x) = ∫₋∞ˣ f(t)dt and f(x) = F'(x)"
   ],
-  "readDigDeeper": "Optimal design theory finds the allocation of resources (e.g., sample sizes across groups) that maximizes power for fixed total cost, or minimizes cost for fixed power. This connects statistical power to experimental economics and efficient research design.",
-  "readWhyMatters": "Clinical trials require power analysis to ensure adequate sample sizes for detecting treatment effects. Tech companies use power analysis to plan A/B tests that won't miss important user behavior changes. Academic research uses power analysis to design studies that can reliably detect theoretically important effects.",
-  "seeContent": "Visualize power curves showing how probability of detection changes with effect size and sample size, explore power analysis calculations for study planning, and observe the relationship between power and other testing parameters.",
-  "hearContent": "Listen as I explain how statistical power measures our elegant ability to distinguish signal from noise - the mathematical expression of our sensitivity to truth when truth is there to be found!",
-  "hearAudioUrl": "/audio/7.8.mp3",
-  "doContent": "Use the Power Calculator for different effect sizes and sample sizes, practice with the Sample Size Planner using power analysis, and experiment with the Power Curve Explorer showing sensitivity relationships.",
+  "readDigDeeper": "The inverse CDF (quantile function) F⁻¹(p) gives the value x such that F(x) = p. This is used in random number generation: if U ~ Uniform(0,1), then F⁻¹(U) has distribution F, providing a universal method for generating random samples.",
+  "readWhyMatters": "Financial risk management uses CDFs to calculate Value-at-Risk percentiles. Medical research uses CDFs to interpret diagnostic test results and establish normal ranges. Manufacturing uses CDFs to set quality control limits and specification tolerances. Machine learning uses CDFs for model calibration and confidence estimation.",
+  "seeContent": "Visualize the relationship between PDF curves and CDF accumulation, observe how integration connects these representations, and explore how percentiles and quantiles emerge from CDF analysis.",
+  "hearContent": "Listen as I explain how PDF and CDF are like two magical viewing angles of the same distribution - one showing density concentration, the other showing cumulative accumulation!",
+  "hearAudioUrl": "/audio/6.8.mp3",
+  "doContent": "Use the PDF-CDF Converter with interactive integration, practice with the Percentile Calculator using CDF inversions, and experiment with the Distribution Analyzer comparing both representations.",
   "memoryAids": {
-    "mantra": "Power detects what's truly there, with size and samples we prepare! High power means we'll likely see the effects that really be!",
-    "visual": "Picture Sigmund with increasingly powerful telescopes (representing higher statistical power) that let him detect smaller and more distant phenomena on his statistical lake, showing how power enhances our ability to perceive truth."
+    "mantra": "PDF shows where magic's dense, CDF shows what's accumulated hence! Derivative and integral connect the two - that's probability's double view!",
+    "visual": "Picture Pippa examining a magical mountain from two angles: PDF showing the steepness at each point, CDF showing the accumulated height up to any elevation, both revealing the complete topography."
   },
   "conceptCheck": {
-    "question": "A study has 60% power to detect a medium effect size. What does this mean and how could power be improved?",
+    "question": "For continuous distribution with CDF F(x), how do you find P(2 < X ≤ 5) using the CDF?",
     "options": [
-      "60% chance of detecting the effect if it exists; improve by increasing sample size",
-      "The effect size is 60% of what we expected to find",
-      "60% of the data supports the alternative hypothesis",
-      "There's a 40% chance of making a Type I error"
+      "P(2 < X ≤ 5) = F(5) - F(2)",
+      "P(2 < X ≤ 5) = F(5) + F(2)",
+      "P(2 < X ≤ 5) = F(3.5) since that's the midpoint",
+      "P(2 < X ≤ 5) = ∫₂⁵ F(x)dx"
     ],
     "correctAnswer": 0,
-    "explanation": "60% power means if a medium effect truly exists, this study has only a 60% chance of detecting it (40% chance of Type II error). Power can be improved by increasing sample size, using a larger α level, or if the true effect is larger than expected."
+    "explanation": "P(2 < X ≤ 5) = P(X ≤ 5) - P(X ≤ 2) = F(5) - F(2). The CDF gives cumulative probabilities, so we subtract to get the probability in the interval."
   },
-  "realWorldConnection": "Pharmaceutical companies conduct power analysis to ensure clinical trials can detect meaningful treatment effects with adequate probability. Educational researchers use power analysis to design studies that won't miss important learning improvements. Environmental studies use power analysis to ensure adequate sensitivity for detecting pollution effects.",
+  "realWorldConnection": "Financial analysts use CDFs to calculate portfolio Value-at-Risk at specific confidence levels. Medical labs use CDFs to determine if patient test results fall within normal ranges. Quality control engineers use CDFs to set manufacturing tolerance limits that capture desired percentages of production.",
   "hearTranscript": [
-    "When conducting multiple statistical tests simultaneously, the probability of false discoveries increases dramatically... sophisticated researchers use multiple comparison procedures to maintain appropriate error control.",
-    "If each individual test has a 5% Type I error rate, conducting twenty independent tests creates approximately a 64% probability of at least one false discovery. This multiple comparisons problem threatens the integrity of scientific conclusions.",
-    "Bonferroni correction provides conservative protection by dividing the desired overall error rate by the number of tests. While simple, this approach can be overly conservative, reducing power to detect genuine effects.",
-    "More sophisticated procedures like the False Discovery Rate approach control the expected proportion of false discoveries among all rejected hypotheses, providing better power while maintaining error control.",
-    "Genomics research demonstrates these challenges at scale. When testing thousands of genes simultaneously for disease associations, multiple comparison corrections are essential to distinguish genuine discoveries from chance findings.",
-    "Pharmaceutical companies face similar challenges when analyzing multiple endpoints in clinical trials. Without proper correction, they might claim drug effectiveness based on chance discoveries among many measured outcomes.",
-    "A/B testing in technology companies requires multiple comparison awareness. When testing numerous website variations simultaneously, companies must adjust significance levels to maintain reliable conclusions about truly effective changes.",
-    "The intellectual sophistication lies in recognizing that statistical significance becomes meaningless without proper adjustment for multiple testing... maintaining the integrity of scientific inference."
+    "Sampling variability is the magical fact that different samples from the same population will give different results... and understanding this variation is crucial for making reliable inferences.",
+    "When I pull samples from my magic hat, each sample tells a slightly different story about what's inside the hat. Sample means vary around the true population mean. Sample proportions fluctuate around true population proportions. This isn't error... it's the natural mathematics of sampling.",
+    "Standard error measures this magical variability. It tells you how much sample statistics typically vary from sample to sample. Larger samples have smaller standard errors... more data reduces uncertainty about population parameters.",
+    "Polling demonstrates sampling variability perfectly. Different polls of the same election will give different results, even with identical methodology. The differences aren't mistakes... they're sampling variability in action.",
+    "Medical research uses sampling variability to establish treatment effectiveness. Drug trials compare treatment and control groups, accounting for natural sample-to-sample variation to determine if observed differences represent genuine effects.",
+    "Manufacturing quality control uses sampling variability to monitor production processes. Sample defect rates vary naturally, so control charts distinguish between normal sampling variation and genuine process problems.",
+    "Understanding sampling variability prevents overinterpretation of individual samples while enabling proper statistical inference from collected data."
   ]
 }

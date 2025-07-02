@@ -1,62 +1,63 @@
 {
   "id": "8.6",
-  "title": "MAP vs MLE: Point Estimation Approaches",
-  "duration": "40-45 minutes",
-  "characterId": "bayes",
+  "title": "t-tests, χ², & ANOVA Preview",
+  "duration": "45-50 minutes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes encounters a fundamental choice in parameter estimation: Maximum A Posteriori (MAP) versus Maximum Likelihood Estimation (MLE). Like choosing between a detective who considers all evidence including background knowledge (MAP) versus one who focuses purely on crime scene evidence (MLE), each approach has its strengths and appropriate applications.",
-    "characterMessage": "Sometimes we need a single best estimate rather than a full distribution. MAP estimation finds the most probable parameter value given everything we know, while MLE finds the value that best explains just the observed data. Each approach tells a different story about what 'best' means!"
+    "story": "Sigmund surveys the elegant family of hypothesis tests, each designed for specific statistical situations. The t-test for means, chi-square for categorical data, and ANOVA for multiple groups - each test embodies the same fundamental logic while adapting gracefully to different data types and research questions.",
+    "characterMessage": "Behold the elegant family of hypothesis tests! Each test applies our fundamental logic to different situations: t-tests for means, chi-square for categorical relationships, and ANOVA for multiple group comparisons. The mathematical beauty lies in how the same principles adapt to diverse research questions."
   },
   "learningObjectives": [
-    "Define MAP as the mode of the posterior distribution",
-    "Understand MLE as maximizing the likelihood function",
-    "Compare MAP and MLE approaches conceptually and computationally",
-    "Recognize when MAP equals MLE (uniform priors)",
-    "Apply both approaches to practical estimation problems"
+    "Apply one-sample and two-sample t-tests appropriately",
+    "Understand chi-square tests for independence and goodness of fit",
+    "Preview ANOVA for comparing multiple group means",
+    "Recognize when to use each type of test",
+    "Interpret results from different test families"
   ],
   "coreConcepts": [
-    "Maximum A Posteriori (MAP): θ̂_MAP = argmax P(θ|data)",
-    "Maximum Likelihood Estimation (MLE): θ̂_MLE = argmax P(data|θ)",
-    "Relationship: MAP = MLE when prior is uniform",
-    "Regularization interpretation of MAP estimation",
-    "Computational approaches for complex posteriors"
+    "One-sample t-test: t = (X̄ - μ₀)/(s/√n)",
+    "Two-sample t-test for comparing means",
+    "Chi-square test for independence in contingency tables",
+    "Chi-square goodness of fit test",
+    "ANOVA F-test for multiple group comparison"
   ],
-  "readContent": "MAP estimation finds the parameter value that maximizes the posterior distribution: θ̂_MAP = argmax P(θ|data) ∝ argmax P(data|θ)P(θ). This balances fit to data (likelihood) with prior beliefs. MLE maximizes only the likelihood: θ̂_MLE = argmax P(data|θ), ignoring prior information. When priors are uniform, MAP = MLE since the prior doesn't affect the argmax. MAP can be viewed as regularized MLE, where the prior acts as a regularization term preventing overfitting. For complex posteriors, MAP estimation may require numerical optimization. While both give point estimates, they represent different philosophies: MAP incorporates prior knowledge while MLE relies solely on observed data.",
-  "readAnalogy": "MAP vs MLE is like two different detective philosophies. The MAP detective considers both the crime scene evidence AND the suspect's background and prior behavior to determine the most likely perpetrator. The MLE detective focuses purely on which suspect best explains the crime scene evidence, ignoring background information. Both can be right depending on how much you trust your background knowledge.",
+  "readContent": "Different research questions require different hypothesis tests, but all follow the same elegant logic. One-sample t-tests compare a sample mean to a hypothesized value using t = (X̄ - μ₀)/(s/√n) with df = n-1. Two-sample t-tests compare means between groups, requiring careful consideration of equal vs unequal variances. Chi-square tests analyze categorical data: independence tests examine relationships in contingency tables using χ² = Σ(O-E)²/E, while goodness-of-fit tests compare observed frequencies to theoretical distributions. ANOVA extends t-tests to multiple groups using F-statistics, testing whether any group means differ while controlling overall Type I error rate. Each test adapts the fundamental hypothesis testing framework to specific data types and research questions.",
+  "readAnalogy": "Think of hypothesis tests like an elegant collection of specialized dance forms. Each dance (test) follows the same fundamental rhythm and structure (hypothesis testing logic), but adapts gracefully to different music and occasions. T-tests are like classical ballet for comparing means, chi-square is like interpretive dance for categorical relationships, and ANOVA is like orchestral performance for multiple group comparisons.",
   "readKeyPoints": [
-    "MAP maximizes posterior P(θ|data), incorporating both data and prior knowledge",
-    "MLE maximizes likelihood P(data|θ), using only observed data",
-    "MAP = MLE when prior is uniform; MAP acts as regularized MLE otherwise"
+    "T-tests: compare means using t-distribution (one-sample, two-sample)",
+    "Chi-square: analyze categorical data relationships and distributions",
+    "ANOVA: compare multiple group means using F-distribution"
   ],
-  "readDigDeeper": "In machine learning, MAP estimation corresponds to regularized loss functions: L2 regularization comes from Gaussian priors, L1 regularization from Laplace priors. This connection shows how Bayesian priors relate to modern machine learning regularization techniques.",
-  "readWhyMatters": "Machine learning uses MAP estimation for regularized model fitting, preventing overfitting with prior constraints. Computer vision uses MAP estimation for image reconstruction, balancing data fidelity with smoothness priors. Natural language processing uses MAP estimation for parameter estimation in probabilistic models.",
-  "seeContent": "Visualize MAP and MLE estimates on posterior distributions, explore how different priors affect MAP estimates, and observe the regularization effect of priors in practical estimation problems.",
-  "hearContent": "Listen as I explain the detective philosophy behind MAP vs MLE - whether to trust your instincts and background knowledge (MAP) or focus purely on the evidence at hand (MLE)!",
-  "hearAudioUrl": "/audio/8.6.mp3",
-  "doContent": "Use the MAP vs MLE Calculator with adjustable priors, practice with the Prior Sensitivity Analyzer, and experiment with the Regularization Visualizer showing MAP as penalized MLE.",
+  "readDigDeeper": "The general linear model unifies many tests: t-tests, ANOVA, and regression are all special cases of Y = Xβ + ε. This framework shows how different tests are variations on the same mathematical theme, providing elegant theoretical unity to diverse statistical procedures.",
+  "readWhyMatters": "Medical research uses t-tests to compare treatment effects between groups. Market research uses chi-square tests to analyze consumer preference patterns. Educational research uses ANOVA to compare teaching methods across multiple schools. Tech companies use these tests to analyze user behavior across different platforms.",
+  "seeContent": "Explore test selection flowcharts for different research scenarios, visualize test statistics under their respective distributions, and observe how different tests address specific types of research questions.",
+  "hearContent": "Listen as I explain how each test in our elegant statistical family specializes in different questions while maintaining the same fundamental grace and logic of hypothesis testing!",
+  "hearAudioUrl": "/audio/7.6.mp3",
+  "doContent": "Use the Test Selection Guide for various scenarios, practice with the t-Test Calculator for mean comparisons, and experiment with the Chi-Square Test Analyzer for categorical data.",
   "memoryAids": {
-    "mantra": "MAP uses all we know, MLE lets data show! Prior plus likelihood for MAP's sight, likelihood alone for MLE's might!",
-    "visual": "Picture Bayes choosing between two detective approaches: one considering both evidence and background files (MAP), another focusing solely on crime scene evidence (MLE), each appropriate for different investigative philosophies."
+    "mantra": "T for means, chi-square for counts, ANOVA when multiple groups amount! Same logic, different dance - each test has its statistical stance!",
+    "visual": "Picture Sigmund conducting an elegant statistical orchestra where each instrument (test type) plays its specialized part while following the same fundamental musical score of hypothesis testing logic."
   },
   "conceptCheck": {
-    "question": "For Beta(2,2) prior and 3 successes in 5 trials, how do MAP and MLE estimates compare?",
+    "question": "You want to test if a new drug affects blood pressure differently than a placebo. Which test is most appropriate?",
     "options": [
-      "MAP = 4/6 = 2/3, MLE = 3/5 = 0.6; MAP is pulled toward prior mean of 0.5",
-      "MAP = MLE = 3/5 since the data dominates",
-      "MAP = 0.5 (prior mean), MLE = 3/5 (sample proportion)",
-      "Need numerical optimization to find MAP estimate"
+      "Two-sample t-test to compare mean blood pressure between drug and placebo groups",
+      "One-sample t-test to compare drug group mean to a standard value",
+      "Chi-square test to analyze the relationship between treatment and blood pressure",
+      "ANOVA to compare multiple blood pressure measurements"
     ],
     "correctAnswer": 0,
-    "explanation": "With Beta(2,2) prior + 3 successes in 5 trials, posterior is Beta(5,4). MAP = mode = (5-1)/(5+4-2) = 4/6 = 2/3. MLE = 3/5 = 0.6. MAP is pulled toward the prior mean (0.5) compared to MLE."
+    "explanation": "This scenario compares means between two independent groups (drug vs placebo), making the two-sample t-test the appropriate choice. We're testing if μdrug ≠ μplacebo for continuous blood pressure measurements."
   },
-  "realWorldConnection": "Deep learning uses MAP estimation with weight decay (L2 regularization) to prevent overfitting in neural networks. Medical imaging uses MAP estimation to reconstruct images from noisy measurements, balancing data fidelity with smoothness priors. Speech recognition uses MAP estimation for parameter estimation in hidden Markov models.",
+  "realWorldConnection": "Clinical trials use two-sample t-tests to compare treatment outcomes between experimental and control groups. Social media companies use chi-square tests to analyze user engagement patterns across different demographics. Educational researchers use ANOVA to compare test scores across multiple teaching methods or schools.",
   "hearTranscript": [
-    "Some prior-likelihood combinations create mathematical elegance that would make any detective appreciate beautiful reasoning... these are conjugate priors.",
-    "When your prior and likelihood belong to conjugate families, the posterior has the same functional form as the prior. This creates computational beauty and interpretive clarity that makes complex Bayesian analysis tractable.",
-    "The beta-binomial combination is the classic example. Start with a beta prior for a success probability, observe binomial data, and get a beta posterior. The mathematics works out perfectly... you just add successes to one parameter and failures to another.",
-    "This isn't just mathematical convenience. Conjugate priors often represent natural ways to accumulate evidence over time. Each new observation updates your beliefs in a systematic, interpretable way.",
-    "In quality control, conjugate analysis helps track defect rates. Start with historical knowledge encoded in a beta prior, observe new production runs, and get updated beliefs about current quality levels through clean posterior calculations.",
-    "Normal-normal conjugacy handles continuous measurements elegantly. If you're estimating average customer satisfaction from survey data, normal priors and normal likelihoods produce normal posteriors with intuitive parameter updates.",
-    "The beauty of conjugate analysis is that it provides exact analytical solutions rather than requiring computational approximation. This lets you focus on interpretation rather than numerical methods."
+    "Statistical inference involves unavoidable risks... Type I and Type II errors represent the fundamental trade-offs inherent in making decisions under uncertainty.",
+    "Type I error occurs when we reject a true null hypothesis... concluding that an effect exists when it actually doesn't. This represents false discovery, finding significance where none exists.",
+    "Type II error occurs when we fail to reject a false null hypothesis... missing genuine effects that actually exist. This represents false negative results, failing to detect real phenomena.",
+    "These errors are inversely related. Reducing Type I error probability typically increases Type II error probability, and vice versa. This creates an elegant tension requiring thoughtful balance based on the consequences of different mistakes.",
+    "Criminal justice systems embody this trade-off. Convicting innocent defendants represents Type I error... concluding guilt when defendants are actually innocent. Acquitting guilty defendants represents Type II error... failing to convict when defendants are actually guilty.",
+    "Medical screening follows identical logic. False positive results represent Type I errors... diagnosing disease in healthy patients. False negative results represent Type II errors... missing disease in affected patients.",
+    "The alpha level controls Type I error probability, typically set at 5%. This means we accept a 5% chance of false discovery in exchange for reasonable sensitivity to genuine effects.",
+    "Understanding these error types enables sophisticated thinking about evidence standards and decision criteria in any domain where uncertainty is unavoidable."
   ]
 }

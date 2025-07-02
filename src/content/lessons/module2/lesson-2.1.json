@@ -1,59 +1,67 @@
 {
   "id": "2.1",
-  "title": "Matrix Basics - Organizing Information Systematically",
+  "title": "Vector Basics - Arrows with Purpose",
   "duration": "30-35 minutes",
-  "characterId": "max",
+  "characterId": "vera",
   "narrativeHook": {
-    "story": "Matrix Max the Squirrel has a problem: he needs to organize information about hundreds of forest locations, each with multiple attributes like elevation, tree density, water sources, and wildlife counts. A simple list won't work - he needs a systematic grid where he can find any piece of information instantly. This is where matrices shine: organized, systematic information management.",
-    "characterMessage": "I organize worlds—row by row, column by column! Think of a matrix as the ultimate filing cabinet where every piece of information has a precise address. Row 3, Column 2? I can find that data instantly! Let me show you how systematic organization transforms chaos into clarity."
+    "story": "Vera is planning a hiking trip through the forest. She needs to know not just how far to walk, but in which direction. A simple number like '5' isn't enough - she needs '5 kilometers northeast.' This is the essence of a vector: magnitude (how much) plus direction (which way).",
+    "characterMessage": "Hey there, fellow explorer! I'm Vera, and I think about everything in terms of direction and magnitude. When someone tells you to 'go 5 units,' I always ask: 'which way?' That's what makes vectors special - they tell the complete story!"
   },
   "learningObjectives": [
-    "Define matrices as rectangular arrays of numbers with systematic organization",
-    "Understand matrix dimensions and element addressing using row-column notation",
-    "Distinguish between different types of matrices (square, rectangular, zero, identity)",
-    "Navigate matrix structure and locate specific elements efficiently",
-    "Recognize real-world applications where matrix organization is essential"
+    "Define vectors as quantities with both magnitude and direction",
+    "Distinguish between scalars and vectors in real-world contexts",
+    "Use proper vector notation including bold letters and component form",
+    "Calculate vector magnitude using the distance formula",
+    "Identify unit vectors and zero vectors"
   ],
   "coreConcepts": [
-    "Matrix definition and structure",
-    "Matrix dimensions (m × n)",
-    "Element notation: A[i,j] or aᵢⱼ",
-    "Special matrices: zero, identity, diagonal",
-    "Square vs rectangular matrices"
+    "Vector definition: magnitude + direction",
+    "Vector notation: **v**, v⃗, or [x, y]",
+    "Geometric vs. algebraic representation",
+    "Position vectors vs. displacement vectors",
+    "Zero vector and unit vectors"
   ],
-  "readContent": "A matrix is a rectangular array of numbers organized in rows and columns, providing systematic storage and manipulation of multi-dimensional data. Matrix dimensions are expressed as m × n (m rows, n columns). Elements are accessed using notation A[i,j] or aᵢⱼ for the element in row i, column j. Special matrices include the zero matrix (all elements zero), identity matrix (1s on diagonal, 0s elsewhere), and diagonal matrices. Matrices enable efficient organization of data relationships, from simple tables to complex transformations in computer graphics and machine learning.",
-  "readAnalogy": "Imagine the most perfectly organized library ever built - every book has a precise location (row, shelf), and you can find any information instantly by knowing its address. That's what matrices do for mathematical information!",
+  "readContent": "A vector is like giving directions to a fellow explorer - you need both distance and direction! When I say 'walk 5 kilometers,' you'll ask 'which way?' That's the difference between a scalar (just magnitude) and a vector (magnitude plus direction). Vectors can be written as arrows, ordered pairs [x, y], or bold letters v. The magnitude ||v|| = √(x² + y²) tells you how far, while the direction tells you which way.",
+  "readAnalogy": "Think of vectors as GPS instructions that actually work! Instead of just saying 'go 3 miles' (which could be anywhere), vectors say 'go 3 miles northeast' - giving you the complete journey information in one mathematical package.",
   "readKeyPoints": [
-    "Matrix dimensions: m × n means m rows by n columns",
-    "Element addressing: A[i,j] means row i, column j - always row first!",
-    "Special types: square (same rows/columns), zero (all zeros), identity (1s on diagonal)"
+    "Vectors = magnitude + direction, unlike scalars which only have size",
+    "Notation: [x, y], v, or arrows showing direction and length",
+    "Magnitude: ||v|| = √(x² + y²) measures the vector's length"
   ],
-  "readDigDeeper": "Matrices can represent various mathematical objects: transformation rules, systems of equations, data tables, adjacency graphs, and probability transitions. The organizational structure enables systematic manipulation of complex information.",
-  "readWhyMatters": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems represent road networks as matrices for navigation calculations.",
-  "seeContent": "Explore interactive matrix grids showing how information gets organized systematically. See how changing matrix dimensions affects data storage capacity and watch real-world examples like spreadsheets, image pixels, and database tables.",
-  "hearContent": "Listen as I explain how organizing information systematically is like having a perfectly arranged library - every book has its place, and you can find anything instantly when you know the organizational system!",
-  "hearAudioUrl": "/audio/2.1.mp3",
-  "doContent": "Practice with the Matrix Builder to create different sized matrices, use the Element Locator to find specific positions, and experiment with the Matrix Type Identifier to recognize different matrix categories.",
+  "readDigDeeper": "Vectors exist in any dimension: 2D [x, y], 3D [x, y, z], or even higher dimensions for data science applications. Unit vectors have magnitude 1 and show pure direction. The zero vector 0 has zero magnitude and undefined direction.",
+  "readWhyMatters": "Vectors represent everything with direction and magnitude: wind velocity, GPS coordinates, customer preferences in data science, forces in physics, and data points in machine learning feature spaces. They're the mathematical language of directed quantities.",
+  "seeContent": "Watch as we transform everyday directions into mathematical vectors using an interactive coordinate plane. See how GPS coordinates, wind velocity, and force diagrams all use vector thinking to represent real-world quantities.",
+  "seeVideoUrl": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
+  "seePreQuote": "Vera: 'My friend Grant from 3Blue1Brown explains vectors beautifully! He shows three perspectives: arrows (like my compass directions), lists of numbers (like GPS coordinates), and abstract math objects. Watch how he connects the visual and numerical sides - that's the key to mathematical navigation!'",
+  "seePostQuote": "Vera: 'Perfect! Grant captured exactly how I think about navigation - sometimes I visualize the path through the forest, sometimes I calculate with coordinates. Both perspectives tell the same story, just in different languages. Now let's make this hands-on with some interactive exploration!'",
+  "hearContent": "Listen as I explain how thinking in vectors changes everything - from navigation to data science. Every time you give directions or describe movement, you're actually thinking like a vector mathematician!",
+  "doContent": "Practice with the Vector Playground where you can click and drag to create vectors, measure their magnitudes, and see how direction and distance combine to create complete mathematical descriptions of movement.",
+  "doType": "custom",
+  "doComponent": "vera_vector_playground",
+  "doInstructions": "Use the playground below to explore vector addition. Try moving the vectors and see how their properties change!",
+  "hearAudioUrl": "/audio/1.1.mp3",
+  "hearTranscript": [
+    "Hey there, fellow explorer! I'm Vera, and I think about everything in terms of direction and magnitude.",
+    "When someone tells you to go somewhere, I always ask two questions: which way and how far? That's what makes vectors special... they tell the complete story of movement and purpose.",
+    "Imagine you're lost in the forest and someone says \"walk 5 kilometers.\" That's not very helpful, is it? You could end up walking in circles! But if they say \"walk 5 kilometers northeast,\" now you have a vector... both magnitude and direction working together.",
+    "Vectors are like GPS instructions that actually work. Instead of just saying \"go 3 miles\" which could be anywhere, vectors say \"go 3 miles northeast\"... giving you the complete journey information in one mathematical package.",
+    "Your phone uses vectors constantly. GPS calculates displacement vectors to find optimal routes. When you swipe the screen, that's a vector showing direction and speed. Even when games move characters around, they're using velocity vectors to control movement smoothly.",
+    "Every vector has two parts: how much and which way. Once you start thinking this way, you'll see vectors everywhere in the world around you."
+  ],
   "memoryAids": {
-    "mantra": "Row by row, column by column - every piece of information has its perfect place in my organized world!",
-    "visual": "Picture Max's filing cabinet: rows are like file drawers, columns are like folders within drawers, and each element is a specific document with a precise address."
+    "mantra": "Every vector is a journey with distance and direction - just like my forest explorations!",
+    "visual": "Picture vectors as arrows that know where they're going, with the arrow's length showing magnitude and the arrow's direction showing the path to take."
   },
   "conceptCheck": {
-    "question": "In a 3×4 matrix representing forest data, what does element A[2,3] represent, and how many total elements are in the matrix?",
+    "question": "Vera wants to go from her tree house to the river. She walks 4 meters east, then 3 meters north. What is the magnitude of her displacement vector?",
     "options": [
-      "Element in row 2, column 3; total of 12 elements",
-      "Element in row 3, column 2; total of 7 elements",
-      "Element in row 2, column 3; total of 6 elements",
-      "The 23rd element; total of 34 elements"
+      "5 meters, using the Pythagorean theorem",
+      "7 meters, by adding the distances",
+      "1 meter, the difference between 4 and 3",
+      "12 meters, by multiplying 4 × 3"
     ],
     "correctAnswer": 0,
-    "explanation": "A[2,3] means row 2, column 3. A 3×4 matrix has 3 rows and 4 columns, so total elements = 3 × 4 = 12. Matrix addressing always follows [row, column] convention."
+    "explanation": "The displacement vector is [4, 3]. Its magnitude is √(4² + 3²) = √(16 + 9) = √25 = 5 meters. This creates a right triangle where the hypotenuse is the direct distance."
   },
-  "realWorldConnection": "Matrices organize data everywhere: spreadsheets store business information in matrix form, digital images are matrices of pixel values, recommendation systems use matrices to relate users to products, and GPS systems use matrices to represent road networks for navigation calculations.",
-  "hearTranscript": [
-    "Think of matrices as the ultimate filing system... Every piece of information has a precise address. Row 3, Column 2? I can find that data instantly!",
-    "You see, most people think matrices are just grids of numbers. But they're actually organizational masterpieces. Imagine the most perfectly arranged library ever built... every book has its exact location, and you never waste time searching.",
-    "That's what matrices do for mathematical information. The beauty is in the system: m by n means m rows by n columns. Always row first, then column... just like reading directions on a map.",
-    "When Netflix recommends your next binge-watch, when your GPS calculates the fastest route, when your bank processes millions of transactions... they're all using my systematic matrix organization to keep everything perfectly arranged and instantly accessible."
-  ]
+  "realWorldConnection": "Vectors are everywhere in data science! Customer preferences can be represented as vectors where direction shows what they like and magnitude shows how much. GPS systems use vectors for navigation, computer graphics use vectors for 3D animation, and machine learning algorithms represent data points as vectors in high-dimensional space."
 }

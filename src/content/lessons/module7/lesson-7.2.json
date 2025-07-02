@@ -1,62 +1,62 @@
 {
   "id": "7.2",
-  "title": "Sampling Distribution & Standard Error",
+  "title": "Conditional Probability & Independence",
   "duration": "40-45 minutes",
-  "characterId": "sigmund",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund contemplates the profound beauty of sampling distributions - the mathematical bridges between individual samples and universal truths. Just as a single swan's flight pattern varies slightly each time, sample statistics vary in predictable ways that follow elegant mathematical laws, creating the foundation for all statistical inference.",
-    "characterMessage": "Behold the mathematical elegance of sampling distributions! Every statistic has its own distribution across all possible samples, and understanding these patterns is the key to principled inference. The standard error measures the precision of our statistical estimates with beautiful mathematical grace."
+    "story": "Pippa discovers that some magic tricks depend on what happened before! Conditional probability is like updating the contents of her magic hat based on new information. Sometimes knowing one outcome completely changes the probabilities of others, while independent events mind their own magical business.",
+    "characterMessage": "Time for some advanced magical mathematics! Conditional probability is like updating my predictions when I get new information. Sometimes events depend on each other like linked magic tricks, and sometimes they're completely independent like separate hat pulls. Let me show you how information changes everything!"
   },
   "learningObjectives": [
-    "Understand sampling distributions as distributions of statistics across samples",
-    "Calculate and interpret standard errors for various statistics",
-    "Apply the Central Limit Theorem to sampling distribution analysis",
-    "Distinguish between population standard deviation and standard error",
-    "Use sampling distributions to quantify estimation uncertainty"
+    "Define conditional probability as P(A|B) = P(A∩B)/P(B)",
+    "Understand how conditioning updates probabilities with new information",
+    "Recognize independent events where P(A|B) = P(A)",
+    "Apply multiplication rule: P(A∩B) = P(A|B)P(B)",
+    "Use tree diagrams and contingency tables for complex problems"
   ],
   "coreConcepts": [
-    "Sampling distribution: distribution of a statistic across all possible samples",
-    "Standard error: standard deviation of sampling distribution",
-    "Central Limit Theorem for sample means",
-    "Standard error formulas: SE = σ/√n for means",
-    "Relationship to confidence and precision"
+    "Conditional probability: P(A|B) = P(A∩B)/P(B)",
+    "Independence: P(A|B) = P(A) when B doesn't affect A",
+    "Multiplication rule for intersections",
+    "Tree diagrams for sequential events",
+    "Law of total probability"
   ],
-  "readContent": "The sampling distribution describes how a statistic varies across all possible samples of fixed size from a population. For sample means, the Central Limit Theorem guarantees that X̄ ~ N(μ, σ²/n) for large n, regardless of population shape. The standard error SE = σ/√n measures the precision of sample mean estimates - smaller SE indicates more precise estimates. Standard error differs from population standard deviation σ: σ measures individual observation variability, while SE measures statistic variability across samples. Other statistics have their own sampling distributions and standard errors. Understanding sampling distributions enables probability statements about how close sample statistics are to population parameters.",
-  "readAnalogy": "Think of sampling distributions like observing the graceful variations in swan flight patterns. Each flight (sample) produces a slightly different pattern (statistic), but these variations follow predictable mathematical laws. The standard error measures how much these flight patterns typically vary - smaller standard error means more consistent, predictable patterns, which gives us more confidence in understanding swan flight in general.",
+  "readContent": "Conditional probability P(A|B) measures the probability of A given that B has occurred, computed as P(A|B) = P(A∩B)/P(B) when P(B) > 0. This represents updating our probability assessment based on new information. Events A and B are independent if P(A|B) = P(A), meaning knowledge of B doesn't change the probability of A. The multiplication rule gives P(A∩B) = P(A|B)P(B), allowing us to compute intersection probabilities. Tree diagrams visualize sequential conditional probabilities, while the law of total probability breaks down complex events into conditional pieces: P(A) = Σᵢ P(A|Bᵢ)P(Bᵢ).",
+  "readAnalogy": "Conditional probability is like updating my magic hat based on what I've already pulled out! If I know a red card came out, that changes the probabilities for what's left inside. Independent events are like having two separate magic hats - what comes from one hat doesn't affect the other at all!",
   "readKeyPoints": [
-    "Sampling distribution shows how statistics vary across all possible samples",
-    "Standard error SE = σ/√n measures sampling precision for means",
-    "Central Limit Theorem ensures Normal sampling distributions for large samples"
+    "Conditional probability P(A|B) = P(A∩B)/P(B) updates probabilities with information",
+    "Independent events: P(A|B) = P(A), meaning B doesn't affect A's probability",
+    "Multiplication rule: P(A∩B) = P(A|B)P(B) for intersection probabilities"
   ],
-  "readDigDeeper": "The delta method provides standard error approximations for complex statistics using calculus: if g is a differentiable function and √n(θ̂ - θ) → N(0, σ²), then √n(g(θ̂) - g(θ)) → N(0, σ²[g'(θ)]²). This enables standard error calculations for transformed parameters.",
-  "readWhyMatters": "Political polls report margins of error based on standard errors of sample proportions. Medical studies use standard errors to assess the precision of treatment effect estimates. Manufacturing quality control uses standard errors to monitor process stability. Financial models use standard errors to quantify uncertainty in risk estimates.",
-  "seeContent": "Visualize how sample means cluster around population means with standard error precision, observe Central Limit Theorem emergence across different population shapes, and explore how sample size affects standard error magnitude.",
-  "hearContent": "Listen as I explain how sampling distributions reveal the elegant mathematical patterns underlying statistical variation - like discovering the hidden choreography that governs all swan flights!",
-  "hearAudioUrl": "/audio/7.2.mp3",
-  "doContent": "Use the Sampling Distribution Generator to observe statistic variation patterns, practice with the Standard Error Calculator for different scenarios, and experiment with the CLT Demonstrator showing distribution convergence.",
+  "readDigDeeper": "Bayes' theorem emerges from conditional probability: P(A|B) = P(B|A)P(A)/P(B). This fundamental result underlies Bayesian statistics, machine learning, and scientific inference, showing how to update beliefs with evidence.",
+  "readWhyMatters": "Spam filters use conditional probability to classify emails based on word patterns. Medical tests report conditional probabilities of diseases given positive results. Search engines use conditional probabilities to rank pages based on user click patterns. Credit scoring uses conditional default probabilities given financial history.",
+  "seeContent": "Watch how conditioning changes probability distributions, visualize independence through unchanged conditional probabilities, and explore tree diagrams that map out complex conditional scenarios with multiple stages.",
+  "hearContent": "Listen as I explain how conditional probability is like being a detective magician - each new clue changes what I expect to find in my hat, unless the events are truly independent!",
+  "hearAudioUrl": "/audio/6.2.mp3",
+  "doContent": "Use the Conditional Probability Calculator with visual updates, practice with the Independence Tester showing when conditioning matters, and experiment with the Tree Diagram Builder for multi-stage problems.",
   "memoryAids": {
-    "mantra": "Statistics dance in patterns true, sampling distributions show their ballet through! Standard error measures the spread - precision elegant, beautifully led!",
-    "visual": "Picture Sigmund watching countless swan flights, each slightly different but following predictable mathematical patterns, with standard error measuring how tightly the flight patterns cluster around the true swan flight archetype."
+    "mantra": "Given that this, then what? Conditional probability shows the plot! Independent means no effect at all - separate magic beyond conditioning's call!",
+    "visual": "Picture Pippa's magic hat changing colors as she gets new information, with some compartments affecting others (dependence) while some remain completely separate (independence)."
   },
   "conceptCheck": {
-    "question": "A population has σ = 15. For sample means with n = 25, what is the standard error and what does it represent?",
+    "question": "In a group, 60% like coffee, 40% like tea, and 20% like both. If someone likes coffee, what's the probability they also like tea?",
     "options": [
-      "SE = 15/√25 = 3, measuring how much sample means typically vary around the population mean",
-      "SE = 15/25 = 0.6, showing the precision of individual observations",
-      "SE = 15, since standard error equals population standard deviation",
-      "SE = √(15/25) = √0.6, measuring sampling variability"
+      "P(tea|coffee) = P(tea ∩ coffee)/P(coffee) = 0.20/0.60 = 1/3",
+      "P(tea|coffee) = P(tea) = 0.40, since preferences are independent",
+      "P(tea|coffee) = 0.20, the probability of liking both",
+      "P(tea|coffee) = 0.80, since most coffee drinkers also like tea"
     ],
     "correctAnswer": 0,
-    "explanation": "Standard error for sample means: SE = σ/√n = 15/√25 = 15/5 = 3. This measures how much sample means typically vary around the true population mean μ across different samples of size 25."
+    "explanation": "Using conditional probability formula: P(tea|coffee) = P(tea ∩ coffee)/P(coffee) = 0.20/0.60 = 1/3. Knowing someone likes coffee changes the probability they like tea from 40% to 33.3%."
   },
-  "realWorldConnection": "Gallup polls use standard errors to calculate ±3% margins of error for political surveys. Medical researchers report standard errors to show the precision of treatment effect estimates. Market research companies use standard errors to quantify uncertainty in consumer preference estimates from sample surveys.",
+  "realWorldConnection": "Google's search algorithm uses conditional probabilities to rank pages based on user click patterns given specific queries. Medical diagnostic systems calculate disease probabilities conditional on observed symptoms. Netflix recommends movies using conditional probabilities based on viewing history and user similarities.",
   "hearTranscript": [
-    "Confidence intervals represent statistical sophistication at its finest... they provide ranges of plausible values while elegantly acknowledging the inherent uncertainty in any inference from limited data.",
-    "Unlike point estimates that suggest false precision, confidence intervals communicate both what we know and what we don't know. A 95% confidence interval means that if we repeated our sampling procedure many times, 95% of such intervals would contain the true population parameter.",
-    "This interpretation requires intellectual maturity. The interval either contains the true parameter or it doesn't... there's no probability about that fact. The probability refers to the long-run performance of our interval construction procedure.",
-    "Political polling illustrates this elegance perfectly. When surveys report that a candidate has 52% support with a margin of error of ±3%, they're providing a confidence interval. The sophistication lies in acknowledging uncertainty while still enabling informed decision-making.",
-    "Medical research uses confidence intervals to communicate treatment effect sizes with appropriate uncertainty. Instead of claiming a drug reduces symptoms by exactly 15%, researchers might report a 95% confidence interval of 10% to 20% reduction, providing both the estimate and its precision.",
-    "Quality control applications use confidence intervals to assess whether manufacturing processes are operating within specifications. Process engineers can distinguish between random variation and systematic problems by examining whether parameter estimates fall within expected confidence bounds.",
-    "Confidence intervals embody the statistical principle that honest uncertainty is more valuable than false certainty."
+    "Conditional probability is like having magical powers that get stronger every time you learn something new... each piece of information updates your predictions!",
+    "When I perform card tricks, conditional probability is everything. If I know the first card drawn was red, that changes the probability that the next card will be red too. There are fewer red cards left in the deck, so the probabilities shift accordingly.",
+    "Independence is a special kind of magic where events don't influence each other. Coin flips are independent... knowing the first flip came up heads doesn't change the probability of heads on the second flip. The coin has no memory of previous results.",
+    "But most real-world events aren't independent. If you know someone exercises regularly, that changes the probability they have low blood pressure. If you know it's cloudy, that changes the probability of rain. These conditional relationships are what make prediction possible.",
+    "Medical diagnosis relies heavily on conditional probability. The probability of having a disease changes dramatically based on test results, symptoms, and risk factors. Doctors constantly update disease probabilities as new information becomes available.",
+    "Financial markets use conditional probability for risk assessment. The probability of stock price movements depends on economic indicators, company news, and market sentiment. Each new piece of information updates the probability calculations.",
+    "Understanding conditional probability gives you the mathematical tools to think clearly about how new information should change your beliefs."
   ]
 }

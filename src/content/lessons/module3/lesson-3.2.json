@@ -1,61 +1,59 @@
 {
   "id": "3.2",
-  "title": "Finding Eigenvalues - The Characteristic Equation",
-  "duration": "40-45 minutes",
-  "characterId": "eileen",
+  "title": "Matrix Addition & Scalar Multiplication",
+  "duration": "25-30 minutes",
+  "characterId": "max",
   "narrativeHook": {
-    "story": "Eileen has found the eigenvectors, but now she needs to crack the code to find their corresponding eigenvalues systematically. The characteristic equation is her master key - a polynomial that holds all of a matrix's eigenvalue secrets locked inside.",
-    "characterMessage": "Time for some mathematical detective work! Every matrix carries its eigenvalues hidden in a special polynomial called the characteristic equation. Once we solve this equation, we unlock all the matrix's eigenvalue secrets at once!"
+    "story": "Max needs to combine data from two different forest surveys: spring wildlife counts and summer wildlife counts. How do you systematically combine two organized datasets? Matrix addition lets Max merge corresponding information perfectly, while scalar multiplication lets him scale entire datasets when needed.",
+    "characterMessage": "Combining organized information is like merging two perfectly aligned filing systems! Element by element, position by position, we can add corresponding data or scale entire datasets. The systematic organization makes everything predictable and reliable."
   },
   "learningObjectives": [
-    "Derive the characteristic equation det(A - λI) = 0",
-    "Calculate eigenvalues by solving the characteristic polynomial",
-    "Understand why the determinant equation gives eigenvalues",
-    "Handle 2×2 and simple 3×3 characteristic equations",
-    "Interpret multiple eigenvalues and their geometric significance"
+    "Add matrices by combining corresponding elements systematically",
+    "Multiply matrices by scalars to scale entire datasets uniformly",
+    "Understand when matrix addition is possible (same dimensions required)",
+    "Apply the commutative and associative properties of matrix addition",
+    "Recognize the zero matrix as the additive identity"
   ],
   "coreConcepts": [
-    "Characteristic equation: det(A - λI) = 0",
-    "Characteristic polynomial in λ",
-    "Algebraic multiplicity of eigenvalues",
-    "Real vs complex eigenvalues",
-    "Solving quadratic and cubic characteristic equations"
+    "Matrix addition: element-wise operation",
+    "Scalar multiplication: uniform scaling",
+    "Dimension compatibility for addition",
+    "Properties: commutative, associative",
+    "Zero matrix as additive identity"
   ],
-  "readContent": "Every matrix carries its secrets in a polynomial vault called the characteristic equation: det(A - λI) = 0. This equation emerges because eigenvectors live in the null space of (A - λI), which only exists when that matrix becomes singular (determinant = 0). It's like finding the combination to a mathematical safe - once cracked, all eigenvalues tumble out simultaneously as the polynomial's roots.",
-  "readAnalogy": "The characteristic equation is like a mathematical DNA test. Each matrix has a unique polynomial fingerprint that reveals all its eigenvalue secrets. Solving this polynomial is like running forensic analysis to identify the suspect.",
+  "readContent": "Matrix addition combines two matrices of the same dimensions by adding corresponding elements: C[i,j] = A[i,j] + B[i,j]. Matrices must have identical dimensions for addition to be defined. Scalar multiplication multiplies every element by the same number: (kA)[i,j] = k·A[i,j]. Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix (all elements zero) serves as the additive identity. These operations form the foundation for more complex matrix manipulations and linear transformations.",
+  "readAnalogy": "Matrix addition is like combining two identical spreadsheets by adding corresponding cells. Scalar multiplication is like adjusting every number in a spreadsheet by the same percentage - systematic scaling of organized information.",
   "readKeyPoints": [
-    "Characteristic equation: det(A - λI) = 0 where I is the identity matrix",
-    "For n×n matrices, this creates a degree-n polynomial with n eigenvalues (counting multiplicities)",
-    "Complex eigenvalues appear in conjugate pairs for real matrices"
+    "Addition rule: C[i,j] = A[i,j] + B[i,j] for corresponding elements",
+    "Dimension requirement: matrices must be the same size for addition",
+    "Scalar multiplication: multiply every element by the same constant"
   ],
-  "readDigDeeper": "The fundamental theorem of algebra guarantees that every n×n matrix has exactly n eigenvalues in the complex numbers. Real symmetric matrices have the special property that all eigenvalues are real, making them particularly well-behaved.",
-  "readWhyMatters": "Engineers solve characteristic equations to find resonant frequencies - eigenvalues predict when bridges might vibrate dangerously in wind. Quantum physicists use them to find energy levels in atoms, where eigenvalues represent the only allowed energy states that particles can occupy.",
-  "seeContent": "Watch step-by-step characteristic equation derivations, see how the determinant calculation creates polynomials, and observe how solving these polynomials reveals all eigenvalues simultaneously.",
-  "hearContent": "Listen as I explain how the characteristic equation is like breaking a combination lock - once we solve it, all the eigenvalue secrets tumble out at once, revealing the complete mathematical fingerprint!",
-  "hearAudioUrl": "/audio/3.2.mp3",
-  "doContent": "Practice with the Characteristic Equation Solver showing detailed polynomial steps, use the Eigenvalue Calculator for various matrix sizes, and experiment with the Polynomial Root Finder to understand solution patterns.",
+  "readDigDeeper": "Matrix addition is commutative (A + B = B + A) and associative (A + (B + C) = (A + B) + C). The zero matrix serves as the additive identity. These properties make matrix spaces behave like familiar number systems.",
+  "readWhyMatters": "Financial analysts add quarterly matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to systematically improve model performance.",
+  "seeContent": "Watch matrix addition happen element by element in an interactive grid, and see how scalar multiplication uniformly scales all values. Observe how dimension mismatches prevent addition and how the zero matrix behaves as an identity.",
+  "hearContent": "Listen as I explain how combining systematic information is like perfectly aligning two filing cabinets and merging their contents - everything has to match up precisely for the combination to work!",
+  "hearAudioUrl": "/audio/2.2.mp3",
+  "doContent": "Use the Matrix Combiner to practice addition with visual feedback, experiment with the Scalar Multiplier to see uniform scaling effects, and test the Dimension Checker to understand compatibility requirements.",
   "memoryAids": {
-    "mantra": "Determinant equals zero unlocks the door - that's where all the eigenvalue treasures hide!",
-    "visual": "Picture Eileen solving a polynomial puzzle where each root reveals another eigenvalue secret, like cracking a mathematical safe with multiple combinations."
+    "mantra": "Same position, same purpose - that's how organized information combines systematically!",
+    "visual": "Picture two identical filing cabinets where you combine contents of each matching drawer and folder position, or use a photocopier to scale an entire filing system larger or smaller."
   },
   "conceptCheck": {
-    "question": "For matrix [[3,1],[0,2]], what is the characteristic equation and what are the eigenvalues?",
+    "question": "If Matrix A represents spring wildlife counts and Matrix B represents summer counts, what does 2A + B represent ecologically?",
     "options": [
-      "Characteristic equation: (3-λ)(2-λ) = 0, eigenvalues: λ = 3, 2",
-      "Characteristic equation: (3-λ)(2-λ) - 1 = 0, eigenvalues: complex",
-      "Characteristic equation: λ² - 5λ + 6 = 0, eigenvalues: λ = 2, 3",
-      "Cannot find eigenvalues for upper triangular matrices"
+      "Double the spring counts plus summer counts - weighted seasonal analysis",
+      "Spring counts squared plus summer counts",
+      "Average of spring and summer counts",
+      "The difference between seasons"
     ],
     "correctAnswer": 0,
-    "explanation": "For matrix [[3,1],[0,2]], det(A-λI) = det([[3-λ,1],[0,2-λ]]) = (3-λ)(2-λ) - 0×1 = (3-λ)(2-λ). Setting equal to zero gives eigenvalues λ = 3 and λ = 2."
+    "explanation": "2A + B means each spring count is doubled, then added to the corresponding summer count. This could represent giving spring data twice the weight in a seasonal analysis model."
   },
-  "realWorldConnection": "Engineers solve characteristic equations to find resonant frequencies in structures - eigenvalues predict when buildings or bridges might vibrate dangerously. Quantum physicists use characteristic equations to find energy levels in atoms, where eigenvalues represent measurable energy states.",
+  "realWorldConnection": "Financial analysts add quarterly earnings matrices to get annual totals, image processing combines pixel matrices for blending effects, and machine learning algorithms add gradient matrices during optimization to improve model performance systematically.",
   "hearTranscript": [
-    "Time for some mathematical detective work... Every matrix carries its eigenvalue secrets locked inside a special polynomial.",
-    "Here's how we crack the code: we start with the fundamental eigenvector equation... A times v equals lambda times v. Rearrange this cleverly, and you get A minus lambda times I, all multiplied by v, equals zero.",
-    "For this equation to have interesting solutions... non-trivial ones where v isn't just the zero vector... the matrix A minus lambda I must be singular. And singular matrices? They have determinant zero.",
-    "So we set the determinant of A minus lambda I equal to zero. This creates what we call the characteristic equation... a polynomial where lambda is the unknown we're hunting for.",
-    "For a 2 by 2 matrix, this becomes a quadratic equation. For 3 by 3, it's cubic. The roots of this polynomial? Those are our eigenvalues... all of them revealed at once.",
-    "It's like breaking a combination lock where each eigenvalue is a different combination that unlocks the matrix's transformation secrets. Some matrices have real eigenvalues that stretch or shrink... others have complex eigenvalues that indicate rotational behavior with scaling."
+    "Combining organized information is like merging two perfectly aligned filing systems... Element by element, position by position, everything matches up precisely.",
+    "Here's the key: you can only add matrices of the same size. It's like trying to combine two different filing cabinet designs... they have to match perfectly for the system to work.",
+    "Matrix addition is beautifully simple: just add corresponding elements. Same position, same purpose. And scalar multiplication? That's even more elegant... multiply every element by the same number. It's like adjusting your entire filing system by the same percentage.",
+    "The real power shows up when financial analysts combine quarterly data matrices to get annual totals, or when image processing systems blend pixel matrices to create those smooth transitions you see in your favorite apps."
   ]
 }

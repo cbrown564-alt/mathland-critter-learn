@@ -1,62 +1,63 @@
 {
   "id": "7.4",
-  "title": "Introduction to Hypothesis Testing",
+  "title": "Common Discrete Distributions",
   "duration": "45-50 minutes",
-  "characterId": "sigmund",
+  "characterId": "pippa",
   "narrativeHook": {
-    "story": "Sigmund encounters the fundamental challenge of scientific inquiry: distinguishing meaningful signals from random noise. Hypothesis testing provides the elegant framework for making these crucial distinctions, setting up null and alternative hypotheses like a formal debate where evidence must reach a threshold of convincing proof.",
-    "characterMessage": "Hypothesis testing is the heart of scientific reasoning! We set up competing hypotheses - null and alternative - then gather evidence to see if we can elegantly reject the status quo in favor of something new. It's a formal process that maintains statistical dignity while pursuing truth."
+    "story": "Pippa opens her collection of specialized magic hats, each designed for different types of random experiments! The Bernoulli hat for yes/no questions, the Binomial hat for counting successes, the Poisson hat for rare events, and more. Each distribution has its own magical personality and special use cases!",
+    "characterMessage": "Welcome to my distribution collection! Each of these magical patterns appears in different real-world situations. Bernoulli for single trials, Binomial for counting successes, Poisson for rare events - every distribution has its specialty. Let me introduce you to my favorites!"
   },
   "learningObjectives": [
-    "Formulate null and alternative hypotheses correctly",
-    "Understand the logic and structure of hypothesis testing",
-    "Define Type I and Type II errors in testing context",
-    "Apply hypothesis testing framework to real problems",
-    "Recognize the burden of proof concept in statistical testing"
+    "Understand Bernoulli distribution for single success/failure trials",
+    "Master Binomial distribution for counting successes in n trials",
+    "Apply Poisson distribution for modeling rare events",
+    "Recognize when to use each distribution type",
+    "Calculate probabilities and interpret parameters for each distribution"
   ],
   "coreConcepts": [
-    "Null hypothesis H₀: status quo or no effect",
-    "Alternative hypothesis H₁: claim to be tested",
-    "Type I error: rejecting true H₀ (false positive)",
-    "Type II error: failing to reject false H₀ (false negative)",
-    "Significance level α and testing logic"
+    "Bernoulli(p): single trial with success probability p",
+    "Binomial(n,p): number of successes in n independent trials",
+    "Poisson(λ): number of rare events in fixed time/space",
+    "Geometric distribution for waiting times",
+    "Parameter interpretation and real-world applications"
   ],
-  "readContent": "Hypothesis testing evaluates competing claims about population parameters using sample evidence. The null hypothesis H₀ represents the status quo or 'no effect' position, while the alternative hypothesis H₁ represents the research claim we're testing. The logic follows 'proof by contradiction': assume H₀ is true, then determine if observed data is sufficiently unlikely under this assumption to reject H₀ in favor of H₁. Type I error occurs when we reject a true H₀ (false positive), with probability α (significance level). Type II error occurs when we fail to reject a false H₀ (false negative), with probability β. The framework places burden of proof on the alternative hypothesis, requiring strong evidence to overturn the null.",
-  "readAnalogy": "Hypothesis testing is like a formal court proceeding where the null hypothesis is 'innocent until proven guilty.' The alternative hypothesis makes an accusation that must be supported by strong evidence. Just as courts can make two types of errors - convicting the innocent (Type I) or acquitting the guilty (Type II) - statistical tests face the same elegant challenge of balancing these risks.",
+  "readContent": "Bernoulli(p) models single success/failure trials with P(X=1) = p and P(X=0) = 1-p. Binomial(n,p) counts successes in n independent Bernoulli trials: P(X=k) = C(n,k)p^k(1-p)^(n-k). This applies when we have fixed n, constant success probability p, and independent trials. Poisson(λ) models rare events occurring at average rate λ: P(X=k) = e^(-λ)λ^k/k!. It approximates Binomial when n is large and p is small. Geometric distribution models waiting times until first success. Each distribution emerges naturally from specific experimental conditions and assumptions.",
+  "readAnalogy": "Think of my distribution collection like specialized magic tricks! Bernoulli is my coin flip trick - simple success or failure. Binomial counts how many successes in multiple coin flips. Poisson is my surprise trick - it predicts rare events like how many shooting stars we'll see tonight. Each trick works perfectly for its intended situation!",
   "readKeyPoints": [
-    "H₀ (null): status quo/no effect; H₁ (alternative): research claim to test",
-    "Logic: assume H₀ true, reject only if data sufficiently unlikely under H₀",
-    "Type I error: reject true H₀; Type II error: fail to reject false H₀"
+    "Bernoulli(p): single trial, P(success) = p",
+    "Binomial(n,p): count successes in n trials, each with probability p",
+    "Poisson(λ): rare events with average rate λ per time unit"
   ],
-  "readDigDeeper": "The Neyman-Pearson paradigm formalizes hypothesis testing by fixing Type I error rate α and minimizing Type II error rate β for given effect size. This decision-theoretic approach treats hypothesis testing as an optimal decision procedure under uncertainty.",
-  "readWhyMatters": "Drug approval requires hypothesis testing to prove efficacy beyond placebo effects. Quality control uses hypothesis testing to detect manufacturing problems. A/B testing in tech companies uses hypothesis testing to validate product improvements. Scientific research relies on hypothesis testing to establish credible findings.",
-  "seeContent": "Explore the logical structure of hypothesis testing, visualize Type I and Type II errors in context, and observe how the testing framework applies across different scientific domains.",
-  "hearContent": "Listen as I explain how hypothesis testing brings elegant formal logic to the messy world of uncertainty - creating a principled framework for distinguishing signal from noise!",
-  "hearAudioUrl": "/audio/7.4.mp3",
-  "doContent": "Use the Hypothesis Formulation Tool for practice scenarios, experiment with the Error Type Visualizer, and practice with the Testing Logic Simulator showing decision outcomes.",
+  "readDigDeeper": "The Poisson limit theorem shows that Binomial(n,p) → Poisson(np) as n → ∞ and p → 0 while np stays constant. This explains why Poisson appears when modeling rare events as limits of many small-probability trials.",
+  "readWhyMatters": "Quality control uses Binomial to model defect rates in manufacturing. Call centers use Poisson to model customer arrival patterns. Clinical trials use Binomial to analyze treatment success rates. Network engineering uses Poisson to model packet arrivals in data transmission.",
+  "seeContent": "Explore interactive calculators for each distribution, visualize how parameters affect distribution shapes, and observe real-world scenarios where each distribution naturally applies through simulation and examples.",
+  "hearContent": "Listen as I explain how each distribution in my collection has its own magical specialty - from simple yes/no questions to counting successes to predicting rare surprises!",
+  "hearAudioUrl": "/audio/6.4.mp3",
+  "doContent": "Use the Distribution Selector to match scenarios with appropriate distributions, practice with the Parameter Explorer showing how values affect shapes, and experiment with the Real-World Application Simulator.",
   "memoryAids": {
-    "mantra": "Null says 'nothing new here,' alternative claims 'change is clear!' Evidence must be strong to reject the null - that's hypothesis testing's protocol!",
-    "visual": "Picture Sigmund as an elegant judge presiding over a formal debate between null and alternative hypotheses, requiring compelling evidence before gracefully ruling in favor of change over the status quo."
+    "mantra": "Bernoulli for one, Binomial to count, Poisson for rare events that truly amount! Each distribution fits its special case - that's probability's magical ace!",
+    "visual": "Picture Pippa with a collection of specialized magic hats: a simple coin-flip hat (Bernoulli), a counting hat with multiple compartments (Binomial), and a surprise hat for rare events (Poisson)."
   },
   "conceptCheck": {
-    "question": "A researcher tests whether a new teaching method improves test scores. What are appropriate null and alternative hypotheses?",
+    "question": "A factory produces items with 2% defect rate. In a batch of 100 items, what distribution models the number of defects, and what's P(exactly 2 defects)?",
     "options": [
-      "H₀: μₙₑw = μₒₗd (no improvement), H₁: μₙₑw > μₒₗd (improvement)",
-      "H₀: μₙₑw > μₒₗd (improvement), H₁: μₙₑw = μₒₗd (no improvement)",
-      "H₀: new method works, H₁: new method doesn't work",
-      "H₀: μₙₑw ≠ μₒₗd (difference), H₁: μₙₑw = μₒₗd (no difference)"
+      "Binomial(100, 0.02): P(X=2) = C(100,2)(0.02)²(0.98)⁹⁸ ≈ 0.273",
+      "Poisson(2): P(X=2) = e⁻²(2²)/2! ≈ 0.271 (since np = 100×0.02 = 2)",
+      "Both A and B are valid; B uses Poisson approximation since n large, p small",
+      "Bernoulli(0.02): P(X=2) = 0.02² = 0.0004"
     ],
-    "correctAnswer": 0,
-    "explanation": "The null hypothesis H₀ represents status quo (no improvement), while alternative H₁ represents the research claim being tested (improvement). The burden of proof lies with demonstrating improvement, not maintaining the status quo."
+    "correctAnswer": 2,
+    "explanation": "This is Binomial(100, 0.02) exactly. Since n=100 is large and p=0.02 is small with np=2, Poisson(2) provides an excellent approximation. Both approaches are mathematically valid, with Poisson being computationally simpler."
   },
-  "realWorldConnection": "FDA drug approval requires hypothesis testing to demonstrate efficacy beyond placebo effects. Tech companies like Google use A/B testing with hypothesis testing to validate new features. Medical researchers use hypothesis testing to establish treatment effectiveness in clinical trials.",
+  "realWorldConnection": "Amazon uses Poisson distributions to model customer order arrivals for inventory planning. Clinical trials use Binomial distributions to analyze drug efficacy rates. Call centers use Poisson models to predict customer service demand. Quality control systems use Binomial distributions to monitor manufacturing defect rates.",
   "hearTranscript": [
-    "Test statistics and p-values provide the mathematical machinery for quantifying evidence strength... they transform subjective impressions into precise measures of how surprising our data would be under null hypothesis assumptions.",
-    "A test statistic standardizes our sample evidence, typically expressing how many standard errors our observation lies from the null hypothesis expectation. Large test statistics indicate that our data are quite incompatible with null hypothesis assumptions.",
-    "The p-value quantifies this incompatibility with elegant precision. It represents the probability of observing evidence as extreme or more extreme than what we actually observed, assuming the null hypothesis is true.",
-    "Crucially, the p-value is not the probability that the null hypothesis is true. This common misinterpretation reflects a fundamental confusion about conditional probability. The p-value tells us how surprised we should be by our data if the null hypothesis were true.",
-    "Environmental science uses p-values to evaluate pollution reduction claims. When researchers test whether new regulations decreased contamination levels, they calculate the probability of observing such large improvements if the regulations had no actual effect. Small p-values suggest that regulatory improvements are genuine rather than random fluctuation.",
-    "Manufacturing quality control employs p-values to detect process deterioration. When defect rates appear elevated, statistical tests determine whether the increase likely reflects random variation or systematic problems requiring intervention.",
-    "The elegance of p-values lies in their universal interpretability... they provide standardized measures of evidence strength across any domain where hypothesis testing applies."
+    "Different types of uncertainty create their own magical probability patterns... these are the common distributions that appear everywhere in the real world.",
+    "The Bernoulli distribution is the simplest magic: success or failure, heads or tails, click or no click. Every yes-or-no situation follows this pattern.",
+    "Binomial distributions count successes in repeated trials. How many customers will purchase? How many emails will get opened? How many free throws will the player make? These questions create beautiful bell-shaped probability patterns.",
+    "Normal distributions are the most magical of all... they appear everywhere nature creates variation. Heights, weights, test scores, measurement errors... all tend toward the famous bell curve. This isn't coincidence... it's mathematical magic called the Central Limit Theorem.",
+    "Poisson distributions model rare events happening over time. Customer arrivals, equipment failures, natural disasters, website crashes... when events happen randomly but with consistent average rates, Poisson distributions predict their patterns perfectly.",
+    "Exponential distributions model waiting times between events. How long until the next customer? How long until equipment failure? How long until your next social media notification? These create graceful decay curves that help businesses plan for uncertainty.",
+    "Insurance companies use these distributions to set premiums. Each type of risk follows predictable probability patterns that enable accurate pricing.",
+    "Understanding common distributions gives you the mathematical vocabulary to recognize and model uncertainty in any domain."
   ]
 }

@@ -1,67 +1,60 @@
 {
   "id": "1.1",
-  "title": "Vector Basics - Arrows with Purpose",
-  "duration": "30-35 minutes",
-  "characterId": "vera",
+  "title": "Order of Operations & Algebraic Basics",
+  "duration": "25 min",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Vera is planning a hiking trip through the forest. She needs to know not just how far to walk, but in which direction. A simple number like '5' isn't enough - she needs '5 kilometers northeast.' This is the essence of a vector: magnitude (how much) plus direction (which way).",
-    "characterMessage": "Hey there, fellow explorer! I'm Vera, and I think about everything in terms of direction and magnitude. When someone tells you to 'go 5 units,' I always ask: 'which way?' That's what makes vectors special - they tell the complete story!"
+    "story": "Ollie is building a dam and needs to calculate materials precisely. Each measurement must follow the correct order, just like mathematical operations!",
+    "characterMessage": "Hey there! I'm Ollie, and I love building things step by step. Math is just like construction - you need to follow the right order, or everything falls apart! Let's learn how to tackle any mathematical expression with confidence."
   },
   "learningObjectives": [
-    "Define vectors as quantities with both magnitude and direction",
-    "Distinguish between scalars and vectors in real-world contexts",
-    "Use proper vector notation including bold letters and component form",
-    "Calculate vector magnitude using the distance formula",
-    "Identify unit vectors and zero vectors"
+    "Apply the order of operations (PEMDAS/BODMAS) correctly",
+    "Simplify complex algebraic expressions",
+    "Identify and work with like terms",
+    "Understand the distributive property"
   ],
   "coreConcepts": [
-    "Vector definition: magnitude + direction",
-    "Vector notation: **v**, v⃗, or [x, y]",
-    "Geometric vs. algebraic representation",
-    "Position vectors vs. displacement vectors",
-    "Zero vector and unit vectors"
+    "Order of operations (PEMDAS/BODMAS)",
+    "Simplifying expressions",
+    "Like terms",
+    "Distributive property"
   ],
-  "readContent": "A vector is like giving directions to a fellow explorer - you need both distance and direction! When I say 'walk 5 kilometers,' you'll ask 'which way?' That's the difference between a scalar (just magnitude) and a vector (magnitude plus direction). Vectors can be written as arrows, ordered pairs [x, y], or bold letters v. The magnitude ||v|| = √(x² + y²) tells you how far, while the direction tells you which way.",
-  "readAnalogy": "Think of vectors as GPS instructions that actually work! Instead of just saying 'go 3 miles' (which could be anywhere), vectors say 'go 3 miles northeast' - giving you the complete journey information in one mathematical package.",
+  "readContent": "Think of PEMDAS as my construction rulebook. When I build a dam, I can't just slap sticks together randomly - foundation first, walls second, roof last. Same with math: some operations are like foundation work (parentheses), others are like the heavy construction (multiplication), and some are finishing touches (addition). Without this order, mathematical expressions become as unstable as a poorly built dam.",
+  "readAnalogy": "Building a dam requires precise order: foundation stones first (parentheses), then the main structure with power tools (exponents), heavy construction work (multiplication/division), and finally the finishing details (addition/subtraction). Skip the order, and everything collapses!",
   "readKeyPoints": [
-    "Vectors = magnitude + direction, unlike scalars which only have size",
-    "Notation: [x, y], v, or arrows showing direction and length",
-    "Magnitude: ||v|| = √(x² + y²) measures the vector's length"
+    "Parentheses always come first - like reading blueprints before building",
+    "Exponents are power operations - the heavy machinery phase",
+    "Multiplication/Division happen before Addition/Subtraction - structure before details"
   ],
-  "readDigDeeper": "Vectors exist in any dimension: 2D [x, y], 3D [x, y, z], or even higher dimensions for data science applications. Unit vectors have magnitude 1 and show pure direction. The zero vector 0 has zero magnitude and undefined direction.",
-  "readWhyMatters": "Vectors represent everything with direction and magnitude: wind velocity, GPS coordinates, customer preferences in data science, forces in physics, and data points in machine learning feature spaces. They're the mathematical language of directed quantities.",
-  "seeContent": "Watch as we transform everyday directions into mathematical vectors using an interactive coordinate plane. See how GPS coordinates, wind velocity, and force diagrams all use vector thinking to represent real-world quantities.",
-  "seeVideoUrl": "https://www.youtube.com/watch?v=fNk_zzaMoSs",
-  "seePreQuote": "Vera: 'My friend Grant from 3Blue1Brown explains vectors beautifully! He shows three perspectives: arrows (like my compass directions), lists of numbers (like GPS coordinates), and abstract math objects. Watch how he connects the visual and numerical sides - that's the key to mathematical navigation!'",
-  "seePostQuote": "Vera: 'Perfect! Grant captured exactly how I think about navigation - sometimes I visualize the path through the forest, sometimes I calculate with coordinates. Both perspectives tell the same story, just in different languages. Now let's make this hands-on with some interactive exploration!'",
-  "hearContent": "Listen as I explain how thinking in vectors changes everything - from navigation to data science. Every time you give directions or describe movement, you're actually thinking like a vector mathematician!",
-  "doContent": "Practice with the Vector Playground where you can click and drag to create vectors, measure their magnitudes, and see how direction and distance combine to create complete mathematical descriptions of movement.",
-  "doType": "custom",
-  "doComponent": "vera_vector_playground",
-  "doInstructions": "Use the playground below to explore vector addition. Try moving the vectors and see how their properties change!",
-  "hearAudioUrl": "/audio/1.1.mp3",
-  "hearTranscript": [
-    "Hey there, fellow explorer! I'm Vera, and I think about everything in terms of direction and magnitude.",
-    "When someone tells you to go somewhere, I always ask two questions: which way and how far? That's what makes vectors special... they tell the complete story of movement and purpose.",
-    "Imagine you're lost in the forest and someone says \"walk 5 kilometers.\" That's not very helpful, is it? You could end up walking in circles! But if they say \"walk 5 kilometers northeast,\" now you have a vector... both magnitude and direction working together.",
-    "Vectors are like GPS instructions that actually work. Instead of just saying \"go 3 miles\" which could be anywhere, vectors say \"go 3 miles northeast\"... giving you the complete journey information in one mathematical package.",
-    "Your phone uses vectors constantly. GPS calculates displacement vectors to find optimal routes. When you swipe the screen, that's a vector showing direction and speed. Even when games move characters around, they're using velocity vectors to control movement smoothly.",
-    "Every vector has two parts: how much and which way. Once you start thinking this way, you'll see vectors everywhere in the world around you."
-  ],
+  "readDigDeeper": "In programming languages, operator precedence follows PEMDAS but with additional rules for logical operations, assignment operators, and function calls. Some languages use different precedence orders, which is why explicit parentheses are often preferred in production code.",
+  "readWhyMatters": "In Excel, the formula =2+3*4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless. Order of operations isn't just math theory - it's the foundation that keeps your data analysis from crumbling.",
+  "seeContent": "Watch as we break down complex expressions step by step, highlighting each operation as we apply PEMDAS rules.",
+  "hearContent": "Listen as I walk you through each step, explaining why we choose each operation and how it builds toward our final answer.",
+  "hearAudioUrl": "/audio/0.1.mp3",
+  "doContent": "Practice with interactive problems that let you drag and drop operations in the correct order, with immediate feedback on your choices.",
   "memoryAids": {
-    "mantra": "Every vector is a journey with distance and direction - just like my forest explorations!",
-    "visual": "Picture vectors as arrows that know where they're going, with the arrow's length showing magnitude and the arrow's direction showing the path to take."
+    "mantra": "Please Excuse My Dear Aunt Sally - she always follows the rules!",
+    "visual": "Picture a construction site where Ollie builds from the foundation up: first the frame (parentheses), then the roof (exponents), then the walls (multiplication/division), and finally the finishing touches (addition/subtraction)."
   },
   "conceptCheck": {
-    "question": "Vera wants to go from her tree house to the river. She walks 4 meters east, then 3 meters north. What is the magnitude of her displacement vector?",
+    "question": "What is the result of: 3 + 4 × 2²?",
     "options": [
-      "5 meters, using the Pythagorean theorem",
-      "7 meters, by adding the distances",
-      "1 meter, the difference between 4 and 3",
-      "12 meters, by multiplying 4 × 3"
+      "28",
+      "19",
+      "196",
+      "49"
     ],
-    "correctAnswer": 0,
-    "explanation": "The displacement vector is [4, 3]. Its magnitude is √(4² + 3²) = √(16 + 9) = √25 = 5 meters. This creates a right triangle where the hypotenuse is the direct distance."
+    "correctAnswer": 1,
+    "explanation": "Following PEMDAS: First 2² = 4, then 4 × 4 = 16, finally 3 + 16 = 19."
   },
-  "realWorldConnection": "Vectors are everywhere in data science! Customer preferences can be represented as vectors where direction shows what they like and magnitude shows how much. GPS systems use vectors for navigation, computer graphics use vectors for 3D animation, and machine learning algorithms represent data points as vectors in high-dimensional space."
+  "realWorldConnection": "Order of operations appears everywhere in data science: from calculating statistical measures to programming algorithms. Machine learning models rely on precise mathematical calculations where order matters - a misplaced operation can completely change your model's predictions!",
+  "hearTranscript": [
+    "Hey there! I'm Ollie, and I love building things step by step. Math is just like construction... you need to follow the right order, or everything falls apart!",
+    "Think of PEMDAS as my construction rulebook. When I build a dam, I can't just slap sticks together randomly... foundation first, walls second, roof last. Same with math: some operations are like foundation work, others are heavy construction, and some are finishing touches.",
+    "Parentheses always come first... like reading blueprints before building. Then exponents... that's the power tool phase where we handle the heavy lifting. Multiplication and division happen next... the main structural work. Finally, addition and subtraction... the finishing details that complete our project.",
+    "Without this order, mathematical expressions become as unstable as a poorly built dam. In Excel, the formula equals 2 plus 3 times 4 gives you 14, not 20. In Python, a miscalculated feature engineering step can make your entire machine learning model worthless.",
+    "When we combine like terms, it's like organizing similar materials in my workshop. You can't add 3 boards plus 5 nails... but you can add 3 boards plus 5 boards to get 8 boards. Same with algebra: 3x plus 5x equals 8x, but 3x plus 5y stays separate.",
+    "The distributive property is like using a template to cut multiple pieces... 2 times the quantity x plus 3 means 2x plus 6. One pattern, applied systematically.",
+    "Let's take this step by step, and build your mathematical confidence one solid foundation at a time!"
+  ]
 }

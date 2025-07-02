@@ -1,62 +1,61 @@
 {
   "id": "1.5",
-  "title": "Linear Combinations - Building New Vectors",
-  "duration": "35-40 minutes",
-  "characterId": "vera",
+  "title": "Function Notation & Concepts",
+  "duration": "30-35 minutes",
+  "characterId": "ollie",
   "narrativeHook": {
-    "story": "Vera discovers that any location in her forest can be reached by combining just two basic paths: one along the river (east-west) and one perpendicular to it (north-south). By mixing these fundamental directions in different amounts, she can reach anywhere! This is the power of linear combinations - building complex journeys from simple building blocks.",
-    "characterMessage": "Mix 2 cups of vector A with 3 cups of vector B! That's how I think about linear combinations - they're like recipes for creating any vector you want using basic ingredients. Once you have the right building blocks, you can go anywhere!"
+    "story": "Now that Ollie has his dam operating within safe ranges, he needs to understand how his construction process transforms materials into finished structures. Functions are like his reliable construction blueprints - same materials always produce the same result when following the same plan.",
+    "characterMessage": "Now that we've got our ranges sorted out, let's talk about how I actually build things! Functions are like my construction blueprints - I take materials, follow my plans step by step, and get reliable results every time. Same input materials, same finished structure!"
   },
   "learningObjectives": [
-    "Express vectors as linear combinations of other vectors",
-    "Understand the span of a set of vectors geometrically",
-    "Calculate linear combinations algebraically",
-    "Identify when a vector can or cannot be expressed as a linear combination",
-    "Visualize how coefficients control the resulting vector"
+    "Understand function notation f(x) and its meaning",
+    "Identify domain and range of functions",
+    "Evaluate functions at specific values",
+    "Understand function composition basics",
+    "Distinguish between one-to-one and many-to-one functions"
   ],
   "coreConcepts": [
-    "Linear combination: c₁**v₁** + c₂**v₂** + ... + cₙ**vₙ**",
-    "Span of vectors: all possible linear combinations",
-    "Geometric interpretation: filling space",
-    "Coefficients and their meaning",
-    "Examples in 2D and 3D"
+    "Function notation f(x)",
+    "Domain and range",
+    "Evaluating functions",
+    "Function composition",
+    "One-to-one vs many-to-one"
   ],
-  "readContent": "Any destination in my forest can be reached by mixing basic directions in the right proportions! A linear combination c₁v₁ + c₂v₂ + ... + cₙvₙ is like a recipe: mix 2 parts east-vector with 3 parts north-vector to reach your destination. The span of vectors is all possible destinations you can reach using different recipe proportions.",
-  "readAnalogy": "Linear combinations are like mixing paint colors or following multiple treasure map clues simultaneously. Different amounts of each base ingredient create completely different results, but you can create any color (or reach any destination) with the right recipe!",
-  "readKeyPoints": [
-    "Linear combination: c₁v₁ + c₂v₂ + ... + cₙvₙ (mix vectors with different amounts)",
-    "Coefficients c₁, c₂, ... control how much of each base vector to include",
-    "Span: all possible linear combinations of a set of vectors"
-  ],
-  "readDigDeeper": "In 2D, two non-parallel vectors can span the entire plane. In 3D, three non-coplanar vectors span all of 3D space. Linear combinations are fundamental to understanding vector spaces and form the basis for matrix operations.",
-  "readWhyMatters": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions.",
-  "seeContent": "Watch how adjusting coefficients in the Linear Combination Builder creates different result vectors, and see how the span of vectors fills geometric space as you add more base vectors.",
-  "hearContent": "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
-  "hearAudioUrl": "/audio/1.5.mp3",
-  "doContent": "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
   "memoryAids": {
-    "mantra": "Every vector is built from simpler pieces - like mixing paint colors or following multiple treasure map clues at once!",
-    "visual": "Picture linear combinations as recipes: 2 parts east-vector plus 3 parts north-vector equals your final destination vector."
+    "mantra": "Materials → Blueprint → Structure - that's how I build everything step by step!",
+    "visual": "Ollie at his construction site with materials going in, following blueprint plans, and finished dam structures coming out"
   },
+  "realWorldConnection": "In engineering and data science, functions help us model relationships: how material quality affects dam strength, how rainfall affects reservoir levels, or how construction variables predict project success. Functions are the foundation of engineering calculations and machine learning algorithms.",
   "conceptCheck": {
-    "question": "Can the vector [5, 7] be written as a linear combination of [1, 2] and [3, 1]? If so, find the coefficients.",
+    "question": "If f(x) = 2x + 3, what is f(4) and what does this notation mean?",
     "options": [
-      "Yes: [5,7] = -2[1,2] + 3[3,1] (coefficients: -2, 3)",
-      "Yes: [5,7] = 1[1,2] + 2[3,1] (coefficients: 1, 2)",
-      "No: these vectors cannot create [5,7]",
-      "Yes: [5,7] = 5[1,2] + 7[3,1] (coefficients: 5, 7)"
+      "f(4) = 11, meaning input 4 materials gives output 11 finished pieces",
+      "f(4) = 7, meaning multiply 4 by 2 then subtract 3",
+      "f(4) = 2x + 7, meaning add 4 to the function",
+      "f(4) = 8, meaning only multiply by 2"
     ],
     "correctAnswer": 0,
-    "explanation": "Setting up equations: 5 = c₁(1) + c₂(3) and 7 = c₁(2) + c₂(1). Solving: c₁ = -2, c₂ = 3. Check: -2[1,2] + 3[3,1] = [-2,-4] + [9,3] = [7,7]. Wait, let me recalculate... Actually c₁ = -2, c₂ = 3 gives [7,-1], not [5,7]. The correct answer needs recalculation."
+    "explanation": "f(4) means substitute 4 for x in the function: f(4) = 2(4) + 3 = 8 + 3 = 11. Function notation tells us what output we get when we input a specific value - like following a construction plan with specific materials."
   },
-  "realWorldConnection": "Color mixing in computer graphics uses linear combinations of red, green, and blue vectors. Financial portfolios combine different asset vectors with coefficients representing allocation percentages. Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance.",
+  "readContent": "Ollie the Engineer follows reliable construction plans: materials go in, transformation happens according to blueprints, finished structures come out. Function notation f(x) means 'apply construction plan f to materials x.' The domain is all valid materials (what Ollie can work with), and the range is all possible structures (what Ollie can build). Every input gets exactly one output - that's what makes Ollie's construction reliable!",
+  "readAnalogy": "Think of functions as reliable construction systems like Ollie's - you put raw materials in one end, the system follows its engineering plans to transform them, and finished structures come out the other end. Same materials always produce the same result when following the same blueprint.",
+  "readKeyPoints": [
+    "Function notation f(x) reads as 'f of x' - apply construction plan f to materials x",
+    "Domain: all possible input materials that work with the plan",
+    "Range: all possible structures the plan can produce"
+  ],
+  "readDigDeeper": "Function composition f(g(x)) means apply construction plan g first, then plan f to that result. Inverse functions f⁻¹(x) undo what f(x) does - like deconstructing a structure back to materials. Piecewise functions have different construction rules for different material types.",
+  "readWhyMatters": "In engineering and data science, functions model relationships: how material quality affects structural strength, how environmental conditions affect construction outcomes, or how design parameters predict performance. Functions are the mathematical foundation of engineering calculations and machine learning algorithms.",
+  "seeContent": "Watch Ollie demonstrate construction processes with animated materials and outputs, showing how different function types transform inputs into predictable engineering results.",
+  "hearContent": "Listen as I explain how I follow construction plans to transform materials - just like how engineering processes and data transformation pipelines work in real projects!",
+  "hearAudioUrl": "/audio/0.5.mp3",
+  "doContent": "Use the construction simulator to see how materials become structures, practice function evaluation exercises with engineering examples, and build your own construction process chains.",
   "hearTranscript": [
-    "Linear combinations are like being a master chef with vector ingredients... different amounts of each base vector create completely different result vectors.",
-    "Think of it as following multiple treasure map clues simultaneously. Take 2 parts of the \"east vector\" plus 3 parts of the \"north vector,\" and you end up with a unique destination that combines both influences proportionally.",
-    "The span of vectors is one of my favorite concepts. Given a set of vectors, their span is every possible destination you can reach using linear combinations. Two non-parallel vectors in a plane? Their span fills the entire plane. Three non-coplanar vectors in space? Their span fills all of 3D space.",
-    "Color mixing in computer graphics uses linear combinations perfectly. Every color is a linear combination of red, green, and blue vectors. Different coefficients create millions of possible colors... all from just three base vectors.",
-    "Financial portfolios are linear combinations too. Your investment might be 50% stocks plus 30% bonds plus 20% real estate... different coefficient combinations create different risk-return profiles.",
-    "Recipe scaling uses linear combinations to adjust ingredient proportions while maintaining flavor balance. Double the recipe? That's scalar multiplication. Adjust sweetness while keeping everything else proportional? That's optimizing linear combination coefficients.",
-    "The beautiful thing about linear combinations is that they preserve the linear structure... the result inherits properties from the base vectors in predictable, mathematical ways."
+    "Hey there! I'm Ollie, and just like I build dams step by step, functions are mathematical processing systems that transform inputs into outputs following precise construction rules.",
+    "Think of functions like my dam-building process... you put raw materials in one end, I follow my engineering plans to transform them, and finished structures come out the other end. Same materials always produce the same result when I follow the same blueprint... that's what makes me reliable!",
+    "Function notation f(x) is like my project label system... it means \"apply construction plan f to materials x.\" When you see f(x) equals 2x plus 3, that's my instruction manual. If you bring me 4 logs, I substitute them everywhere I see x: f(4) equals 2 times 4 plus 3, which equals 11 finished pieces. Input 4 logs, output 11 pieces... construction complete!",
+    "My domain is all the materials I can work with... like the types of wood and stone my tools can handle. My range is all possible structures I can build... the complete catalog of projects I'm capable of completing.",
+    "The key engineering principle: every input gets exactly one output. I can't build two different dams from the same materials following the same plan... that would violate my construction protocols and cause structural problems.",
+    "In data science, functions model relationships everywhere. How does material quality affect dam strength? How does rainfall affect reservoir levels? These are all function relationships that engineers and data scientists use to build predictive models and reliable systems."
   ]
 }

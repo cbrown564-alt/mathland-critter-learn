@@ -1,62 +1,62 @@
 {
   "id": "5.1",
-  "title": "Introduction to Optimization",
-  "duration": "35-40 minutes",
-  "characterId": "greta",
+  "title": "Introduction to Multivariable Functions",
+  "duration": "30-35 minutes",
+  "characterId": "delta",
   "narrativeHook": {
-    "story": "Gradient Greta stands at the base of a mathematical mountain range, rope coiled and sunglasses gleaming. As an expert climber, she knows that reaching any peak requires understanding the terrain - where it's steep, where it's flat, and which paths lead to the summit. Optimization is the art of finding the best route to the top!",
-    "characterMessage": "Welcome to the mountains of optimization! I'm Greta, and I've climbed every mathematical peak there is. Whether you're seeking the highest point (maximum) or the deepest valley (minimum), I'll teach you to read the terrain and find the optimal path. Let's gear up for this adventure!"
+    "story": "Dr. Delta, the calm and precise hedgehog, observes that the world around us depends on multiple variables simultaneously. Temperature changes with both latitude and altitude, profit depends on price and quantity, and surfaces curve in response to two spatial coordinates. It's time to extend calculus beyond single variables.",
+    "characterMessage": "Welcome to the fascinating world of multiple variables! As a hedgehog who's always been precise about change, I've discovered that most interesting phenomena depend on several factors at once. Let's carefully explore how functions can take multiple inputs and create beautiful, complex outputs!"
   },
   "learningObjectives": [
-    "Understand optimization as finding maximum or minimum function values",
-    "Distinguish between local and global extrema",
-    "Recognize optimization problems in real-world contexts",
-    "Identify the role of gradients in optimization",
-    "Connect optimization to machine learning and engineering applications"
+    "Understand multivariable functions as mappings from ℝⁿ to ℝ",
+    "Visualize functions of two variables using surfaces and level curves",
+    "Interpret domain and range in multivariable contexts",
+    "Recognize real-world applications of multivariable functions",
+    "Develop intuition for how multiple inputs affect single outputs"
   ],
   "coreConcepts": [
-    "Optimization: finding max/min values of functions",
-    "Local vs global extrema",
-    "Objective functions and constraints",
-    "Feasible regions and boundary conditions",
-    "Real-world optimization examples"
+    "Functions f: ℝⁿ → ℝ with multiple inputs",
+    "Surface representations: z = f(x,y)",
+    "Level curves and contour plots",
+    "Domain and range in higher dimensions",
+    "Examples from physics, economics, and engineering"
   ],
-  "readContent": "Optimization seeks the best possible outcome from a given set of possibilities - finding maximum profits, minimum costs, shortest paths, or optimal designs. We distinguish between local extrema (best in a neighborhood) and global extrema (best overall). The objective function f(x,y) represents what we're optimizing, while constraints define the feasible region where solutions must lie. Unconstrained optimization allows variables to take any values, while constrained optimization restricts variables to specific regions. Understanding the optimization landscape is crucial before choosing solution methods.",
-  "readAnalogy": "Optimization is like mountain climbing with purpose! Sometimes I want the highest peak (maximum), sometimes the deepest valley (minimum). Local peaks are hills in my immediate area, but the global peak is the highest point in the entire range. My objective function is like elevation - it tells me what I'm trying to optimize.",
+  "readContent": "Multivariable functions extend our single-variable calculus toolkit to handle the complexity of real-world phenomena. A function f(x,y) takes two inputs and produces one output, creating a surface in three-dimensional space. Level curves show where the function has constant values, like elevation contours on topographic maps. The domain becomes a region in the xy-plane, while the range remains a set of real numbers. These functions model everything from temperature distributions to profit optimization.",
+  "readAnalogy": "Think of a multivariable function like a precise recipe where the final taste depends on multiple ingredients. Just as a cake's flavor depends on both flour amount and baking time, mathematical functions can depend on multiple variables simultaneously, creating rich, complex behaviors.",
   "readKeyPoints": [
-    "Optimization finds the best (maximum or minimum) values of objective functions",
-    "Local extrema are best in neighborhoods; global extrema are best overall",
-    "Real problems often involve constraints that limit the feasible region"
+    "Multivariable functions: f(x,y) creates surfaces in 3D space",
+    "Level curves show constant function values, like topographic contours",
+    "Domain becomes a region in input space, range remains real numbers"
   ],
-  "readDigDeeper": "Convex optimization problems have the special property that any local minimum is also the global minimum. This makes them much easier to solve and guarantees that optimization algorithms will find the true optimum rather than getting stuck in local minima.",
-  "readWhyMatters": "Netflix optimizes recommendation algorithms to maximize user engagement. Tesla optimizes battery design to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints. Every engineering design involves optimization trade-offs.",
-  "seeContent": "Explore 3D optimization landscapes showing peaks, valleys, and saddle points, visualize the difference between local and global extrema, and observe how constraints create feasible regions that limit where optimal solutions can exist.",
-  "hearContent": "Listen as I explain how optimization is like mountaineering with mathematical precision - every peak and valley has meaning, and finding the true summit requires understanding the entire landscape!",
-  "hearAudioUrl": "/audio/5.1.mp3",
-  "doContent": "Use the Optimization Landscape Explorer to identify different types of extrema, practice with the Constraint Sketcher to define feasible regions, and experiment with the Objective Function Analyzer to understand optimization setup.",
+  "readDigDeeper": "Functions of three or more variables (f(x,y,z,w,...)) cannot be directly visualized as surfaces, but level sets become hypersurfaces in higher dimensions. Understanding the two-variable case provides intuition for these higher-dimensional generalizations.",
+  "readWhyMatters": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple shape parameters. Economists model market behavior where outcomes depend on price, supply, demand, and external factors.",
+  "seeContent": "Explore interactive 3D surface plots showing how functions create landscapes, examine level curve visualizations that reveal function structure, and observe how changing input parameters affects surface shape and contour patterns.",
+  "hearContent": "Listen as I explain how multivariable functions are like precise mathematical recipes - each ingredient (variable) contributes to the final result, creating rich behaviors that single-variable functions simply cannot capture!",
+  "hearAudioUrl": "/audio/4.1.mp3",
+  "doContent": "Use the Multivariable Function Explorer to visualize surfaces and level curves, practice with the Domain Sketcher for region identification, and experiment with the Surface Shape Analyzer to see how parameter changes affect function behavior.",
   "memoryAids": {
-    "mantra": "Peak or valley, local or global - optimization finds the best with mathematical protocol!",
-    "visual": "Picture Greta surveying a mountain range with her climbing gear, systematically identifying which peaks are just local hills and which represent the true summit of the entire range."
+    "mantra": "Multiple inputs, single output - surfaces and contours reveal the mathematical route!",
+    "visual": "Picture Dr. Delta carefully examining a 3D landscape where every point represents a precise function value, with contour lines mapping the elevation like a hedgehog's perfectly organized territory."
   },
   "conceptCheck": {
-    "question": "A function has a local maximum at point A with value f(A) = 10, and another local maximum at point B with value f(B) = 15. What can you conclude?",
+    "question": "For function f(x,y) = x² + y², what do the level curves look like and what does this tell us about the surface?",
     "options": [
-      "Point B gives a higher function value, so it's a better local maximum than A",
-      "Point A is the global maximum since it was found first",
-      "Both points are equally good since they're both local maxima",
-      "Neither point can be trusted without checking all function values"
+      "Circles centered at origin - the surface is a paraboloid opening upward",
+      "Parallel lines - the surface is a tilted plane",
+      "Ellipses - the surface is a saddle shape",
+      "Hyperbolas - the surface has a minimum at the origin"
     ],
     "correctAnswer": 0,
-    "explanation": "Among local maxima, the one with the highest function value (B with f(B) = 15) is superior. Point B might be the global maximum, but we'd need to check the entire domain to be certain."
+    "explanation": "f(x,y) = x² + y² has level curves x² + y² = c, which are circles centered at the origin. This creates a circular paraboloid opening upward, like a perfectly symmetric bowl."
   },
-  "realWorldConnection": "Netflix optimizes recommendation algorithms to maximize user watch time. SpaceX optimizes rocket trajectories to minimize fuel while reaching orbit. Amazon optimizes warehouse locations to minimize delivery costs while maximizing coverage. Every engineering and business decision involves optimization thinking.",
+  "realWorldConnection": "Weather forecasting uses multivariable functions where temperature depends on latitude, longitude, and altitude. Engineers design airplane wings using functions that depend on multiple aerodynamic parameters. Economists model market dynamics where profit depends on price, volume, competition, and market conditions.",
   "hearTranscript": [
-    "Welcome to the mountains of optimization! I'm Greta, and I've climbed every mathematical peak there is. Whether you're seeking the highest point or the deepest valley, I'll teach you to read the terrain and find the optimal path to the best possible outcome.",
-    "Optimization is like mountaineering with mathematical precision... Sometimes I want the highest peak - that's maximization. Sometimes I need the deepest valley - that's minimization. But here's the crucial distinction every serious climber must understand: local versus global extrema.",
-    "A local maximum is like a hill in my immediate area - it might be the highest point I can see from here, but there could be much taller peaks beyond the ridge. The global maximum is the true summit of the entire mountain range... the absolute best solution in the whole domain.",
-    "My objective function is like elevation on a topographical map - it tells me exactly what I'm trying to optimize. Constraints are like the boundaries of the climbing area... they define my feasible region where solutions are actually possible.",
-    "Netflix optimizes recommendation algorithms to maximize your engagement time. Tesla optimizes battery chemistry to maximize range while minimizing weight. Airlines optimize flight paths to minimize fuel costs while meeting schedule constraints.",
-    "Every engineering design, every business decision, every route you take to work involves optimization thinking. The mathematics of finding the best isn't just academic theory... it's the invisible engine powering every improvement and efficiency gain in our modern world.",
-    "So grab your mathematical climbing gear! We're about to discover how the quest for \"better\" transforms absolutely everything around us!"
+    "Hello there, fellow explorer of change. I'm Dr. Delta, and I study how things transform over time and space.",
+    "You know, most people think calculus is about memorizing formulas and struggling through derivatives. But here's what they don't tell you... calculus is actually the secret language that runs our entire modern world.",
+    "When we move from single-variable to multivariable calculus, something fascinating happens. Instead of approaching a point along a single line, we can now approach from infinitely many directions... like a bird flying toward a landing spot from any angle in the sky.",
+    "This is where limits become truly sophisticated. In weather forecasting, meteorologists track how temperature changes across both space and time. They need to understand what happens as we approach specific locations from different directions... north, south, east, west, or along curved paths.",
+    "The mathematical beauty is that a multivariable limit exists only when all possible approach paths give the same answer. It's like saying that no matter which direction you walk toward a lighthouse, you should see the same beacon intensity when you arrive.",
+    "Medical imaging relies on this principle. MRI machines calculate gradients across tissue boundaries by taking multidimensional limits to reconstruct precise 3D images of your body.",
+    "The precision required for these calculations is extraordinary... and it's this mathematical rigor that enables the technological miracles we use every day."
   ]
 }

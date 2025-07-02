@@ -1,61 +1,61 @@
 {
   "id": "4.2",
-  "title": "Limits in Multivariable Calculus",
+  "title": "Finding Eigenvalues - The Characteristic Equation",
   "duration": "40-45 minutes",
-  "characterId": "delta",
+  "characterId": "eileen",
   "narrativeHook": {
-    "story": "Dr. Delta encounters a fascinating challenge: in single-variable calculus, approaching a point meant moving along a line, but with multiple variables, there are infinitely many paths to approach any point! This creates both beautiful complexity and the need for more precise mathematical tools.",
-    "characterMessage": "Limits become much more interesting with multiple variables! Unlike the single path approach in one dimension, we can now approach any point from infinitely many directions. This requires extra precision and care - exactly the kind of mathematical challenge I love!"
+    "story": "Eileen has found the eigenvectors, but now she needs to crack the code to find their corresponding eigenvalues systematically. The characteristic equation is her master key - a polynomial that holds all of a matrix's eigenvalue secrets locked inside.",
+    "characterMessage": "Time for some mathematical detective work! Every matrix carries its eigenvalues hidden in a special polynomial called the characteristic equation. Once we solve this equation, we unlock all the matrix's eigenvalue secrets at once!"
   },
   "learningObjectives": [
-    "Understand multivariable limits as approaching from all possible paths",
-    "Recognize why path-independence is required for limit existence",
-    "Compute limits using direct substitution when possible",
-    "Identify when limits don't exist due to path-dependence",
-    "Apply squeeze theorem and polar coordinates for limit evaluation"
+    "Derive the characteristic equation det(A - λI) = 0",
+    "Calculate eigenvalues by solving the characteristic polynomial",
+    "Understand why the determinant equation gives eigenvalues",
+    "Handle 2×2 and simple 3×3 characteristic equations",
+    "Interpret multiple eigenvalues and their geometric significance"
   ],
   "coreConcepts": [
-    "Limit definition: lim(x,y)→(a,b) f(x,y) = L",
-    "Path independence requirement",
-    "Direct substitution method",
-    "Path-dependent limits and non-existence",
-    "Polar coordinate substitution technique"
+    "Characteristic equation: det(A - λI) = 0",
+    "Characteristic polynomial in λ",
+    "Algebraic multiplicity of eigenvalues",
+    "Real vs complex eigenvalues",
+    "Solving quadratic and cubic characteristic equations"
   ],
-  "readContent": "Multivariable limits require the function to approach the same value L along every possible path to point (a,b). Unlike single-variable limits with only left/right approaches, we now have infinitely many approach paths: straight lines, curves, spirals, and more exotic routes. If any two paths give different limiting values, the limit doesn't exist. When direct substitution works (continuous functions), the limit equals f(a,b). For indeterminate forms, we use techniques like polar coordinates or the squeeze theorem.",
-  "readAnalogy": "Think of multivariable limits like a hedgehog carefully approaching its burrow. In one dimension, there's only a left path and right path, but in two dimensions, the hedgehog can approach from north, south, east, west, or any curved path imaginable. The limit exists only if all possible approach routes lead to the same destination!",
+  "readContent": "Every matrix carries its secrets in a polynomial vault called the characteristic equation: det(A - λI) = 0. This equation emerges because eigenvectors live in the null space of (A - λI), which only exists when that matrix becomes singular (determinant = 0). It's like finding the combination to a mathematical safe - once cracked, all eigenvalues tumble out simultaneously as the polynomial's roots.",
+  "readAnalogy": "The characteristic equation is like a mathematical DNA test. Each matrix has a unique polynomial fingerprint that reveals all its eigenvalue secrets. Solving this polynomial is like running forensic analysis to identify the suspect.",
   "readKeyPoints": [
-    "Multivariable limits must be the same along ALL possible approach paths",
-    "If two different paths give different limits, the overall limit doesn't exist",
-    "Direct substitution works when the function is continuous at the point"
+    "Characteristic equation: det(A - λI) = 0 where I is the identity matrix",
+    "For n×n matrices, this creates a degree-n polynomial with n eigenvalues (counting multiplicities)",
+    "Complex eigenvalues appear in conjugate pairs for real matrices"
   ],
-  "readDigDeeper": "The ε-δ definition of multivariable limits uses neighborhoods: for every ε > 0, there exists δ > 0 such that whenever 0 < ||(x,y) - (a,b)|| < δ, we have |f(x,y) - L| < ε. This generalizes naturally to higher dimensions.",
-  "readWhyMatters": "Understanding multivariable limits is crucial for analyzing continuity in physical systems. Engineers need these concepts when studying heat transfer, where temperature must vary continuously across material boundaries. Computer graphics relies on continuous surface functions for realistic rendering.",
-  "seeContent": "Watch interactive demonstrations showing different approach paths to the same point, observe cases where limits exist versus cases where path-dependence creates non-existence, and see polar coordinate transformations that simplify complex limit calculations.",
-  "hearContent": "Listen as I explain how multivariable limits are like a hedgehog's careful approach to home - we must check every possible path to ensure they all lead to the same mathematical destination!",
-  "hearAudioUrl": "/audio/4.2.mp3",
-  "doContent": "Use the Path Explorer to test different approach routes, practice with the Limit Calculator that checks path independence, and experiment with the Polar Coordinate Transformer for challenging limit problems.",
+  "readDigDeeper": "The fundamental theorem of algebra guarantees that every n×n matrix has exactly n eigenvalues in the complex numbers. Real symmetric matrices have the special property that all eigenvalues are real, making them particularly well-behaved.",
+  "readWhyMatters": "Engineers solve characteristic equations to find resonant frequencies - eigenvalues predict when bridges might vibrate dangerously in wind. Quantum physicists use them to find energy levels in atoms, where eigenvalues represent the only allowed energy states that particles can occupy.",
+  "seeContent": "Watch step-by-step characteristic equation derivations, see how the determinant calculation creates polynomials, and observe how solving these polynomials reveals all eigenvalues simultaneously.",
+  "hearContent": "Listen as I explain how the characteristic equation is like breaking a combination lock - once we solve it, all the eigenvalue secrets tumble out at once, revealing the complete mathematical fingerprint!",
+  "hearAudioUrl": "/audio/3.2.mp3",
+  "doContent": "Practice with the Characteristic Equation Solver showing detailed polynomial steps, use the Eigenvalue Calculator for various matrix sizes, and experiment with the Polynomial Root Finder to understand solution patterns.",
   "memoryAids": {
-    "mantra": "All paths must agree for the limit to be - that's multivariable precision, you see!",
-    "visual": "Picture Dr. Delta testing every possible route to a point, like a careful hedgehog ensuring all paths through the mathematical forest lead to the same precise destination."
+    "mantra": "Determinant equals zero unlocks the door - that's where all the eigenvalue treasures hide!",
+    "visual": "Picture Eileen solving a polynomial puzzle where each root reveals another eigenvalue secret, like cracking a mathematical safe with multiple combinations."
   },
   "conceptCheck": {
-    "question": "For f(x,y) = xy/(x² + y²), what happens to the limit as (x,y) → (0,0) along the path y = mx?",
+    "question": "For matrix [[3,1],[0,2]], what is the characteristic equation and what are the eigenvalues?",
     "options": [
-      "The limit is m/(1 + m²), which depends on the slope m",
-      "The limit is always 0 regardless of the slope m",
-      "The limit is always 1 regardless of the slope m",
-      "The limit is undefined because of division by zero"
+      "Characteristic equation: (3-λ)(2-λ) = 0, eigenvalues: λ = 3, 2",
+      "Characteristic equation: (3-λ)(2-λ) - 1 = 0, eigenvalues: complex",
+      "Characteristic equation: λ² - 5λ + 6 = 0, eigenvalues: λ = 2, 3",
+      "Cannot find eigenvalues for upper triangular matrices"
     ],
     "correctAnswer": 0,
-    "explanation": "Along path y = mx, we get f(x,mx) = x(mx)/(x² + (mx)²) = mx²/(x²(1 + m²)) = m/(1 + m²). Since this depends on m, different paths give different limits, so the overall limit doesn't exist."
+    "explanation": "For matrix [[3,1],[0,2]], det(A-λI) = det([[3-λ,1],[0,2-λ]]) = (3-λ)(2-λ) - 0×1 = (3-λ)(2-λ). Setting equal to zero gives eigenvalues λ = 3 and λ = 2."
   },
-  "realWorldConnection": "Engineers analyze heat distribution where temperature must vary continuously across material boundaries. Computer graphics requires continuous surface functions for realistic rendering. Climate models need continuous atmospheric variable transitions across geographic boundaries.",
+  "realWorldConnection": "Engineers solve characteristic equations to find resonant frequencies in structures - eigenvalues predict when buildings or bridges might vibrate dangerously. Quantum physicists use characteristic equations to find energy levels in atoms, where eigenvalues represent measurable energy states.",
   "hearTranscript": [
-    "Continuity in multiple dimensions is like studying the smoothness of mathematical landscapes... some surfaces are perfectly smooth, others have sudden cliffs or mysterious gaps.",
-    "When I analyze a function of two variables, I'm essentially studying a three-dimensional surface floating in mathematical space. Continuity means this surface has no sudden tears, holes, or jumps... you can walk across it without falling through unexpected gaps.",
-    "Think of elevation maps used by hikers. A continuous elevation function means you can trace any path without encountering impossible vertical cliffs. Discontinuities would represent mathematical waterfalls... places where elevation suddenly drops to different levels.",
-    "Engineering applications depend critically on surface continuity. When designing airplane wings, aerodynamicists need smooth airflow patterns. Discontinuities in the mathematical models could indicate dangerous turbulence zones that would affect flight safety.",
-    "Computer graphics use continuity analysis to create realistic 3D surfaces. Game engines ensure that virtual landscapes have proper continuity so characters can move smoothly without glitching through mathematical holes in the terrain.",
-    "The remarkable thing about continuity is that it bridges the gap between abstract mathematical theory and tangible real-world applications. Every smooth animation, every precisely manufactured surface, every weather prediction relies on our understanding of mathematical continuity."
+    "Time for some mathematical detective work... Every matrix carries its eigenvalue secrets locked inside a special polynomial.",
+    "Here's how we crack the code: we start with the fundamental eigenvector equation... A times v equals lambda times v. Rearrange this cleverly, and you get A minus lambda times I, all multiplied by v, equals zero.",
+    "For this equation to have interesting solutions... non-trivial ones where v isn't just the zero vector... the matrix A minus lambda I must be singular. And singular matrices? They have determinant zero.",
+    "So we set the determinant of A minus lambda I equal to zero. This creates what we call the characteristic equation... a polynomial where lambda is the unknown we're hunting for.",
+    "For a 2 by 2 matrix, this becomes a quadratic equation. For 3 by 3, it's cubic. The roots of this polynomial? Those are our eigenvalues... all of them revealed at once.",
+    "It's like breaking a combination lock where each eigenvalue is a different combination that unlocks the matrix's transformation secrets. Some matrices have real eigenvalues that stretch or shrink... others have complex eigenvalues that indicate rotational behavior with scaling."
   ]
 }

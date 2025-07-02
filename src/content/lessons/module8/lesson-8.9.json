@@ -1,62 +1,62 @@
 {
   "id": "8.9",
-  "title": "Real-World Applications: Spam Filtering",
+  "title": "Practical vs Statistical Significance",
   "duration": "40-45 minutes",
-  "characterId": "bayes",
+  "characterId": "sigmund",
   "narrativeHook": {
-    "story": "Bayes turns his detective skills to the digital realm: email spam filtering. Every word in an email is a clue, and Bayesian classifiers learn from experience which word patterns distinguish legitimate emails from spam. It's machine learning powered by Bayesian reasoning, protecting millions of inboxes daily.",
-    "characterMessage": "Email spam filtering showcases Bayesian machine learning in action! Every word is evidence, and my job is learning which combinations point to spam versus legitimate email. As new emails arrive, I continuously update my beliefs about what spam looks like. It's adaptive detective work for the digital age!"
+    "story": "Sigmund discovers a profound distinction that transcends mere mathematical significance. Statistical significance tells us an effect is real, but practical significance asks whether that real effect actually matters. Like distinguishing between detecting a whisper and hearing something worth listening to, this separation embodies statistical wisdom and restraint.",
+    "characterMessage": "Here lies one of statistics' most elegant lessons! Statistical significance proves an effect exists, but practical significance asks whether we should care. A truly wise statistician understands that mathematical precision must be tempered with real-world judgment about what matters."
   },
   "learningObjectives": [
-    "Understand naive Bayes classification for text data",
-    "Apply Bayesian reasoning to feature-based classification",
-    "Recognize the 'naive' independence assumption and its practical effectiveness",
-    "Calculate spam probabilities using word frequency evidence",
-    "Understand how Bayesian classifiers adapt and learn from new data"
+    "Distinguish clearly between statistical and practical significance",
+    "Understand how large samples can make trivial effects statistically significant",
+    "Apply effect size measures to assess practical importance",
+    "Recognize the limitations of p-value-only interpretations",
+    "Make informed decisions combining statistical and practical considerations"
   ],
   "coreConcepts": [
-    "Naive Bayes classifier: P(Spam|Words) ∝ P(Words|Spam) × P(Spam)",
-    "Feature independence assumption: P(Words|Spam) = ∏P(Word_i|Spam)",
-    "Word frequency likelihoods from training data",
-    "Laplace smoothing for unseen words",
-    "Adaptive learning through continuous updating"
+    "Statistical significance: p < α (effect is real)",
+    "Practical significance: effect size large enough to matter",
+    "Effect size measures: Cohen's d, eta-squared, correlation",
+    "Confidence intervals for effect size interpretation",
+    "Context-dependent definitions of practical importance"
   ],
-  "readContent": "Naive Bayes spam filtering classifies emails using P(Spam|Words) ∝ P(Words|Spam) × P(Spam). The 'naive' assumption treats words as independent given the class: P(Words|Spam) = ∏P(Word_i|Spam), greatly simplifying computation. Word probabilities are estimated from training data: P(Word|Spam) = (count of word in spam + α) / (total words in spam + α × vocabulary size), where α provides Laplace smoothing for unseen words. Despite the unrealistic independence assumption, naive Bayes performs remarkably well in practice. The classifier adapts by updating word probabilities as new labeled emails arrive, making it naturally adaptive to evolving spam tactics. Classification involves computing P(Spam|Email) and P(Ham|Email), choosing the class with higher posterior probability.",
-  "readAnalogy": "Spam filtering is like learning to recognize criminal signatures. Each word is like a behavioral clue - some words appear much more often in spam (like 'FREE!' or 'URGENT!') while others are more common in legitimate email (like names and work terms). Although I naively assume these clues are independent (which isn't really true), this simplification works amazingly well for catching digital criminals!",
+  "readContent": "Statistical significance indicates an effect is reliably different from zero, but says nothing about magnitude or importance. With large samples, even trivial differences become statistically significant because standard errors shrink. Practical significance requires effect sizes large enough to matter in real-world contexts. Cohen's d measures standardized effect sizes: small (0.2), medium (0.5), large (0.8). However, practical significance is context-dependent - a small medical effect might be practically significant if it saves lives, while a large effect on trivial outcomes may be practically meaningless. Confidence intervals for effect sizes provide more informative conclusions than p-values alone, showing both statistical significance and practical relevance.",
+  "readAnalogy": "Statistical significance is like having perfect hearing that can detect the faintest whisper, while practical significance asks whether that whisper contains anything worth hearing. With sensitive enough equipment (large samples), we can detect virtually any difference, but wisdom lies in distinguishing between 'detectable' and 'meaningful.' A statistically significant but tiny effect is like hearing someone whisper '2+2=4' - real but not revolutionary.",
   "readKeyPoints": [
-    "Naive Bayes assumes word independence: P(Words|Class) = ∏P(Word_i|Class)",
-    "Word probabilities learned from training data with Laplace smoothing",
-    "Continuously adaptive: updates beliefs as new labeled emails arrive"
+    "Statistical significance (p < α): effect is real; Practical significance: effect is meaningful",
+    "Large samples make trivial effects statistically significant",
+    "Effect sizes and confidence intervals provide more complete information than p-values"
   ],
-  "readDigDeeper": "Despite violating the independence assumption (words in emails are clearly dependent), naive Bayes remains effective because it only needs to rank classes correctly, not estimate probabilities accurately. The decision boundary is often robust to assumption violations.",
-  "readWhyMatters": "Gmail and other email providers use Bayesian-inspired spam filters to protect billions of users daily. Text classification applications extend to sentiment analysis, news categorization, and content moderation. The principles apply broadly to any classification problem with high-dimensional categorical features.",
-  "seeContent": "Explore spam classification with interactive word probability calculations, visualize how different words contribute evidence for spam vs ham classification, and observe adaptive learning as the classifier sees new examples.",
-  "hearContent": "Listen as I explain how Bayesian spam filtering turns every email into a detective case, using word patterns as evidence to distinguish digital criminals from legitimate correspondents!",
-  "hearAudioUrl": "/audio/8.9.mp3",
-  "doContent": "Use the Spam Classifier Simulator with real email examples, practice with the Word Evidence Analyzer showing probability contributions, and experiment with the Adaptive Learning Demonstrator.",
+  "readDigDeeper": "The minimum clinically important difference (MCID) in medical research exemplifies context-dependent practical significance. Regulatory agencies often require both statistical significance and clinically meaningful effect sizes for drug approval, recognizing that statistical and practical significance must align.",
+  "readWhyMatters": "Medical research distinguishes between statistically significant and clinically meaningful treatment effects. Educational interventions must show practically significant learning improvements, not just statistical differences. Business analytics seeks effect sizes large enough to impact revenue, not just statistically detectable changes.",
+  "seeContent": "Explore scenarios where statistical and practical significance diverge, visualize effect size interpretations alongside p-values, and observe how sample size affects the relationship between statistical and practical significance.",
+  "hearContent": "Listen as I explain how true statistical wisdom lies in understanding that detecting an effect and caring about an effect are beautifully distinct questions requiring different types of judgment!",
+  "hearAudioUrl": "/audio/7.9.mp3",
+  "doContent": "Use the Significance Comparison Tool showing statistical vs practical importance, practice with the Effect Size Calculator for various scenarios, and experiment with the Sample Size Impact Simulator.",
   "memoryAids": {
-    "mantra": "Words are clues in digital crime, Bayes filters spam every time! Independence naive but works so well - email protection's Bayesian spell!",
-    "visual": "Picture Bayes examining emails like crime scenes, with each word highlighted as evidence pointing toward spam or legitimate email, continuously updating his criminal profiling database with each new case."
+    "mantra": "Statistical says 'it's real and true,' practical asks 'what does it do?' Big samples find tiny effects - but do tiny effects earn respect?",
+    "visual": "Picture Sigmund using an extremely powerful magnifying glass (large sample) that can detect the tiniest scratches on the water's surface, while asking the deeper question of whether those scratches actually matter for navigation."
   },
   "conceptCheck": {
-    "question": "An email contains 'FREE' and 'money'. If P(FREE|Spam)=0.8, P(FREE|Ham)=0.1, P(money|Spam)=0.6, P(money|Ham)=0.3, and P(Spam)=0.4, what's P(Spam|FREE,money)?",
+    "question": "A large study (n=10,000) finds a statistically significant difference in test scores: treatment group M=75.2, control M=75.0, p=0.03. What should you conclude?",
     "options": [
-      "Higher than P(Ham|FREE,money) since spam likelihoods are higher for both words",
-      "Exactly 0.4 since that's the prior probability of spam",
-      "Cannot calculate without knowing the exact normalization constant",
-      "Equal to P(Ham|FREE,money) since we need more evidence"
+      "The effect is statistically significant but the 0.2-point difference is likely not practically meaningful",
+      "This is strong evidence for a meaningful educational improvement",
+      "The large sample size proves this is an important finding",
+      "The significant p-value shows the treatment has practical value"
     ],
     "correctAnswer": 0,
-    "explanation": "P(Spam|Words) ∝ P(FREE|Spam) × P(money|Spam) × P(Spam) = 0.8 × 0.6 × 0.4 = 0.192. P(Ham|Words) ∝ 0.1 × 0.3 × 0.6 = 0.018. Since 0.192 > 0.018, the email is classified as spam."
+    "explanation": "While p=0.03 indicates statistical significance, the tiny effect size (0.2 points) is practically meaningless in educational contexts. Large samples (n=10,000) can detect trivial differences that have no real-world importance."
   },
-  "realWorldConnection": "Google's Gmail uses sophisticated Bayesian-inspired filters that have evolved beyond simple naive Bayes to protect over 1.5 billion users from spam. Social media platforms use similar techniques for content moderation and fake news detection. Customer service systems use Bayesian classification to route support tickets to appropriate departments.",
+  "realWorldConnection": "Pharmaceutical companies must demonstrate both statistical significance and clinically meaningful effect sizes for drug approval. Educational technology companies seek effect sizes large enough to improve learning outcomes meaningfully, not just statistical detectability. Business A/B tests require effect sizes that translate to meaningful revenue impacts.",
   "hearTranscript": [
-    "Email spam filtering... where Bayesian detective work meets the digital underworld. Every inbox is a crime scene, and I'm the investigator using mathematical precision to catch digital criminals.",
-    "Here's how my detective work operates in the shadows of your email system... Every word in an email becomes evidence. Words like \"FREE!\" and \"URGENT!\" appear much more frequently in spam, while professional terms and personal names show up more often in legitimate correspondence.",
-    "The naive Bayes classifier treats each word as an independent clue... which isn't really true, but this \"naive\" assumption works remarkably well for catching digital deceptions. I estimate word probabilities from training data using Laplace smoothing for words I've never encountered.",
-    "When a new email arrives, I calculate P(Spam|Words) using every word as evidence. The naive independence assumption simplifies this to the product of individual word probabilities... P(Words|Spam) equals the product of P(Word_i|Spam) for each word.",
-    "Despite violating the independence assumption, naive Bayes remains devastatingly effective because it only needs to rank spam versus legitimate email correctly... not estimate exact probabilities.",
-    "Gmail uses sophisticated Bayesian-inspired filters protecting over 1.5 billion users daily. Social media platforms apply similar detective techniques for content moderation and fake news detection.",
-    "The beauty is in the adaptive learning... as new spam tactics emerge, the classifier updates its criminal profiling database, always staying one step ahead of digital deception!"
+    "Statistical significance and practical significance represent distinct concepts... sophisticated analysis requires evaluating both the reliability and the magnitude of observed effects.",
+    "Effect sizes quantify the magnitude of differences or relationships, independent of sample size. Cohen's d measures standardized mean differences. Correlation coefficients indicate relationship strength. Explained variance measures practical importance.",
+    "Large samples can detect trivially small effects with high statistical significance. Conversely, small samples might miss large effects due to insufficient power. Effect sizes help interpret whether statistically significant results are practically meaningful.",
+    "Clinical research illustrates this distinction elegantly. A blood pressure medication might produce statistically significant reductions that are too small to improve patient outcomes meaningfully. Alternatively, promising treatments might show large effect sizes that fail to reach significance in small pilot studies.",
+    "Educational interventions face similar interpretation challenges. New teaching methods might show statistically significant improvement that represents only a few additional points on standardized tests... significant statistically but perhaps not educationally meaningful.",
+    "Business analytics requires effect size thinking for resource allocation decisions. Marketing campaigns might generate statistically significant sales increases that are too small to justify their costs. Conversely, large effect sizes might warrant investment even when significance tests are inconclusive.",
+    "The sophistication lies in combining statistical and practical significance assessments to make informed decisions about research findings and their real-world implications."
   ]
 }
