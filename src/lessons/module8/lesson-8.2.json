@@ -34,6 +34,9 @@
   "hearContent": "Listen as I walk you through each component of Bayesian reasoning like a detective explaining the three acts of a perfect case - setup, investigation, and resolution!",
   "hearAudioUrl": "/audio/8.2.mp3",
   "doContent": "Use the Prior-Likelihood-Posterior Calculator with interactive sliders, practice with the Sensitivity Analysis Tool for different priors, and experiment with the Bayesian Workflow Simulator.",
+  "doType": "custom",
+  "doComponent": "bayes_medical_diagnosis",
+  "doInstructions": "Join Detective Bayes in solving medical mysteries! Adjust your prior beliefs about disease prevalence, examine test evidence, and watch how Bayesian updating combines both to reach diagnostic conclusions.",
   "memoryAids": {
     "mantra": "Prior sets the stage, likelihood weighs the evidence, posterior shows the sage! Three components in perfect dance - that's Bayesian inference's stance!",
     "visual": "Picture Bayes' detective office with three distinct areas: a filing cabinet of prior cases, an evidence examination table with magnifying glass (likelihood), and a conclusion board where everything comes together (posterior)."

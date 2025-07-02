@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how matrix multiplication is like having a perfectly organized assembly line where each worker (row) processes multiple products (columns) simultaneously using systematic rules!",
   "hearAudioUrl": "/audio/2.3.mp3",
   "doContent": "Practice with the Matrix Multiplier showing step-by-step calculations, use the Dimension Compatibility Checker, and experiment with the Transformation Visualizer to see matrix multiplication as geometric transformation.",
+  "doType": "custom",
+  "doComponent": "max_matrix_transformer",
+  "doInstructions": "Use Max's Transformation Studio to see how matrix multiplication systematically transforms geometric shapes. Adjust matrix elements and watch how they affect rotation, scaling, and reflection in real-time.",
   "memoryAids": {
     "mantra": "Row meets column, dot product magic - systematic transformation of organized information!",
     "visual": "Picture Max as an orchestra conductor: each row represents an instrument section, each column represents a musical phrase, and multiplication creates the perfect harmony of systematic transformation."

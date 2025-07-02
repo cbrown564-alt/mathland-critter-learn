@@ -58,6 +58,11 @@ export const CharacterAudioIntro = ({
   const [modalCharacter, setModalCharacter] = useState<any | null>(null);
   const [modalLessons, setModalLessons] = useState<string[]>([]);
   const [modalModule, setModalModule] = useState<string>("");
+  const [autoplay, setAutoplay] = useState(false);
+  const [autoScroll, setAutoScroll] = useState(true);
+  // For fade transition
+  const [displayedCharacter, setDisplayedCharacter] = useState(characters.find(c => c.id === characterTimings[currentCharacterIndex]?.id));
+  const [fadeState, setFadeState] = useState<'in' | 'out'>('in');
 
   // Refs for each transcript paragraph
   const paragraphRefs = useRef(introTranscript.map(() => createRef<HTMLParagraphElement>()));
@@ -77,13 +82,23 @@ export const CharacterAudioIntro = ({
     }
   }, [currentTime, duration]);
 
+  // Autoplay effect
+  useEffect(() => {
+    if (autoplay && audioRef.current && !isPlaying) {
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
+    // eslint-disable-next-line
+  }, [autoplay]);
+
   // Scroll highlighted paragraph into view when character changes
   useEffect(() => {
+    if (!autoScroll) return;
     const ref = paragraphRefs.current[currentCharacterIndex];
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
-  }, [currentCharacterIndex]);
+  }, [currentCharacterIndex, autoScroll]);
 
   const currentCharacter = characters.find(c => c.id === characterTimings[currentCharacterIndex]?.id);
 
@@ -92,6 +107,17 @@ export const CharacterAudioIntro = ({
     .map(t => t.id)
     .filter((id, idx, arr) => arr.indexOf(id) === idx && id !== "sage" || idx === 0);
   const thumbnailCharacters = uniqueCharacterIds.map(id => characters.find(c => c.id === id)).filter(Boolean);
+
+  // Fade transition when character changes
+  useEffect(() => {
+    if (!currentCharacter || currentCharacter.id === displayedCharacter?.id) return;
+    setFadeState('out');
+    const timeout = setTimeout(() => {
+      setDisplayedCharacter(currentCharacter);
+      setFadeState('in');
+    }, 250); // 250ms fade out, then fade in
+    return () => clearTimeout(timeout);
+  }, [currentCharacter, displayedCharacter]);
 
   const handlePlayPause = () => {
     if (audioRef.current) {
@@ -194,30 +220,52 @@ export const CharacterAudioIntro = ({
           </p>
         </div>
 
+        {/* Toggles */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+          <label className="flex items-center gap-2 cursor-pointer text-slate-700">
+            <input
+              type="checkbox"
+              checked={autoplay}
+              onChange={e => setAutoplay(e.target.checked)}
+              className="accent-blue-600 w-4 h-4"
+            />
+            Autoplay audio
+          </label>
+          <label className="flex items-center gap-2 cursor-pointer text-slate-700">
+            <input
+              type="checkbox"
+              checked={autoScroll}
+              onChange={e => setAutoScroll(e.target.checked)}
+              className="accent-blue-600 w-4 h-4"
+            />
+            Auto-scroll transcript
+          </label>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           {/* Character Display */}
           <div className="lg:col-span-1 flex flex-col items-center">
-            {currentCharacter && (
+            {displayedCharacter && (
               <div className="text-center sticky top-8">
-                <div className="relative inline-block">
+                <div className={`relative inline-block transition-opacity duration-300 ${fadeState === 'out' ? 'opacity-0' : 'opacity-100'}`}> 
                   {/* Glow Effect */}
                   <div 
                     className="absolute inset-0 rounded-full blur-2xl opacity-30 animate-pulse"
                     style={{
-                      background: `linear-gradient(45deg, ${currentCharacter.color.match(/([a-z]+-[0-9]+)/g)?.[0] || '#60a5fa'}, ${currentCharacter.color.match(/([a-z]+-[0-9]+)/g)?.[1] || '#818cf8'})`
+                      background: `linear-gradient(45deg, ${displayedCharacter.color.match(/([a-z]+-[0-9]+)/g)?.[0] || '#60a5fa'}, ${displayedCharacter.color.match(/([a-z]+-[0-9]+)/g)?.[1] || '#818cf8'})`
                     }}
                   ></div>
                   {/* Character Image (always static) */}
                   <img
-                    src={currentCharacter.image}
-                    alt={currentCharacter.name}
+                    src={displayedCharacter.image}
+                    alt={displayedCharacter.name}
                     className="relative z-10 w-80 h-80 object-contain drop-shadow-xl transition-all duration-300 ease-in-out"
                   />
                 </div>
-                <div className="mt-6">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-2">{currentCharacter.name}</h3>
-                  <p className="text-lg text-slate-600 mb-1">{currentCharacter.concept}</p>
-                  <p className="text-md text-slate-500 italic">"{currentCharacter.catchphrase}"</p>
+                <div className={`mt-6 transition-opacity duration-300 ${fadeState === 'out' ? 'opacity-0' : 'opacity-100'}`}>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-2">{displayedCharacter.name}</h3>
+                  <p className="text-lg text-slate-600 mb-1">{displayedCharacter.concept}</p>
+                  <p className="text-md text-slate-500 italic">"{displayedCharacter.catchphrase}"</p>
                 </div>
                 {/* Thumbnails Row */}
                 <div className="mt-8 flex flex-row flex-wrap justify-center gap-3">
@@ -242,7 +290,7 @@ export const CharacterAudioIntro = ({
                       "cyan-600": "ring-cyan-400",
                       "blue-500": "ring-blue-400"
                     }[colorKey] || "ring-blue-400";
-                    const isActive = char?.id === currentCharacter.id;
+                    const isActive = char?.id === displayedCharacter.id;
                     return (
                       <div
                         key={char?.id}
@@ -291,7 +339,8 @@ export const CharacterAudioIntro = ({
                     <Button
                       onClick={handlePlayPause}
                       size="lg"
-                      className="bg-blue-600 hover:bg-blue-700 text-white"
+                      className="bg-blue-600 hover:bg-blue-700 text-white shadow-md focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-all duration-200"
+                      aria-label={isPlaying ? "Pause audio" : "Play audio"}
                     >
                       {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
                     </Button>
@@ -301,13 +350,15 @@ export const CharacterAudioIntro = ({
                       variant="ghost"
                       size="lg"
                       className="text-slate-600 hover:bg-slate-100"
+                      aria-label={isMuted ? "Unmute audio" : "Mute audio"}
                     >
                       {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
                     </Button>
                   </div>
 
-                  <div className="text-sm text-slate-500">
-                    {Math.floor(currentTime / 60)}:{(currentTime % 60).toFixed(0).padStart(2, '0')} / 
+                  <div className="text-sm px-3 py-1 rounded-lg bg-white/70 border border-slate-200 shadow-sm font-mono text-slate-700 flex items-center min-w-[90px] justify-center">
+                    {Math.floor(currentTime / 60)}:{(currentTime % 60).toFixed(0).padStart(2, '0')}
+                    <span className="mx-1 text-slate-400">/</span>
                     {Math.floor(duration / 60)}:{(duration % 60).toFixed(0).padStart(2, '0')}
                   </div>
                 </div>
