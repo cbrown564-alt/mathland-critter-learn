@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterConfig, ChallengeConfig, ApproachConfig } from '@/types/conceptCheck';
+import { CharacterConfig, ChallengeConfig, ApproachConfig } from '@/core/types/conceptCheck';
 import { characterConfigMap } from '@/utils/characterData';
 import { SectionCompletion } from '../SectionCompletion';
 

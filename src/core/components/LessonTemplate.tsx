@@ -1,21 +1,21 @@
 import React, { useRef, useState } from 'react';
-import { Card, CardContent } from "@/components/ui/card";
-import { LessonData } from "@/types/lesson";
+import { Card, CardContent } from "@/core/components/ui/card";
+import { LessonData } from "@/core/types/lesson";
 import { LessonHeader } from "./lesson/LessonHeader";
 import { LessonSidebar } from "./lesson/LessonSidebar";
 import { LessonNavigation } from "./lesson/LessonNavigation";
 import { LearningObjectivesBanner } from "./lesson/LearningObjectivesBanner";
 import { BreadcrumbNavigation } from "./Breadcrumb";
-import { characters } from "../utils/characterData";
+import { characters } from "@/utils/characterData";
 import { ReadSection } from "./lesson/ReadSection";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { CharacterAvatar } from "@/core/components/CharacterAvatar";
 import { SeeSection } from "./lesson/SeeSection";
 import { DoSection } from "./lesson/DoSection";
 import { EnhancedConceptCheck } from './lesson/conceptCheck/EnhancedConceptCheck';
-import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
-import { useLessonProgress } from '@/hooks/useLessonProgress';
+import { EXAMPLE_CONCEPT_CHECKS } from '@/content/data/exampleConceptChecks';
+import { useLessonProgress } from '@/core/hooks/useLessonProgress';
 import { LessonSectionRenderer } from './lesson/LessonSectionRenderer';
 
 interface LessonTemplateProps {

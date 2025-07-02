@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CheckCircle, X, AlertCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { CharacterAvatar } from "@/components/CharacterAvatar";
+import { Button } from "@/core/components/ui/button";
+import { CharacterAvatar } from "@/core/components/CharacterAvatar";
 import { SectionCompletion } from "./SectionCompletion";
 
 interface ConceptCheckProps {

@@ -1,6 +1,6 @@
 import { Globe, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/core/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/core/components/ui/card";
 import { SectionCompletion } from "./SectionCompletion";
 
 interface RealWorldConnectionProps {

@@ -1,5 +1,5 @@
 import { Lock, CheckCircle, PlayCircle, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/core/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 
 interface Module {

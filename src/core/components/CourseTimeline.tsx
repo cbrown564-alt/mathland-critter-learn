@@ -1,6 +1,6 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/core/components/ui/badge";
 import { ChevronRight } from "lucide-react";
-import { characters } from "../utils/characterData";
+import { characters } from "@/utils/characterData";
 
 const CourseTimeline = () => {
   const modules = [

@@ -1,7 +1,7 @@
 import { CheckCircle, Circle, PlayCircle } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { CharacterAvatar } from "@/components/CharacterAvatar";
-import { cn } from "@/lib/utils";
+import { Card, CardContent } from "@/core/components/ui/card";
+import { CharacterAvatar } from "@/core/components/CharacterAvatar";
+import { cn } from "@/core/lib/utils";
 import { motion } from "framer-motion";
 
 interface LessonSidebarProps {

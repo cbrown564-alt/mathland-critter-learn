@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Target, Lightbulb, TrendingUp } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/core/components/ui/card";
 
 interface JourneyStep {
   icon: React.ReactNode;

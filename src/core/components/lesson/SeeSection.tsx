@@ -1,5 +1,5 @@
-import { CharacterAvatar } from "@/components/CharacterAvatar";
-import { LessonData } from "@/types/lesson";
+import { CharacterAvatar } from "@/core/components/CharacterAvatar";
+import { LessonData } from "@/core/types/lesson";
 
 interface SeeSectionProps {
   lesson: LessonData;

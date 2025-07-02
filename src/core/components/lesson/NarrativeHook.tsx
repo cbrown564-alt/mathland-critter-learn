@@ -1,8 +1,8 @@
 import { Play, CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CharacterAvatar } from "@/components/CharacterAvatar";
-import { LessonData } from "@/types/lesson";
+import { Button } from "@/core/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/core/components/ui/card";
+import { CharacterAvatar } from "@/core/components/CharacterAvatar";
+import { LessonData } from "@/core/types/lesson";
 import { SectionCompletion } from "./SectionCompletion";
 
 interface NarrativeHookProps {

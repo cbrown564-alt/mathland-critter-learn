@@ -2,7 +2,7 @@ import React from 'react';
 import { MultiStepTemplate } from './MultiStepTemplate';
 import { ScenarioTemplate } from './ScenarioTemplate';
 import { characterConfigMap } from '@/utils/characterData';
-import { CharacterConfig, ScenarioConfig, StepConfig, VisualConfig, ChallengeConfig, ApproachConfig } from '@/types/conceptCheck';
+import { CharacterConfig, ScenarioConfig, StepConfig, VisualConfig, ChallengeConfig, ApproachConfig } from '@/core/types/conceptCheck';
 
 interface EnhancedConceptCheckProps {
   conceptCheck: {

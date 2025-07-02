@@ -2,10 +2,10 @@ import { Lock, CheckCircle, PlayCircle, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ModuleCard } from "./ModuleCard";
 import { useEffect, useState } from "react";
-import { modulesData } from "../utils/modulesData";
+import { modulesData } from "@/utils/modulesData";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { getLessonProgress } from "@/hooks/useLessonProgress";
+import { getLessonProgress } from "@/core/hooks/useLessonProgress";
 
 export const CourseRoadmap = () => {
   const [modules, setModules] = useState<any[]>([]);

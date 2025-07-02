@@ -1,16 +1,19 @@
 import { Clock, Play, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { LessonRoadmap } from "@/components/LessonRoadmap";
+import { Button } from "@/core/components/ui/button";
+import { LessonRoadmap } from "@/core/components/LessonRoadmap";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { characters } from "../utils/characterData";
-import { Header } from "@/components/Header";
-import { modulesData } from "../utils/modulesData";
-import { getLessonOrderForModule, getLessonDataForModule } from "../utils/lessonData";
-import { getLessonProgress } from "@/hooks/useLessonProgress";
+import { characters } from "@/utils/characterData";
+import { Header } from "@/core/components/Header";
+import { modulesData } from "@/utils/modulesData";
+import { getLessonOrderForModuleAsync, getLessonDataForModuleAsync } from "@/utils/lessonData";
+import { getLessonProgress } from "@/core/hooks/useLessonProgress";
 
-const getModuleLessons = (moduleId: string) => {
-  return getLessonOrderForModule(moduleId).map(id => getLessonDataForModule(moduleId, id));
+const getModuleLessons = async (moduleId: string) => {
+  const lessonOrder = await getLessonOrderForModuleAsync(moduleId);
+  const lessonPromises = lessonOrder.map(id => getLessonDataForModuleAsync(moduleId, id));
+  const lessonData = await Promise.all(lessonPromises);
+  return lessonData.filter(Boolean);
 };
 
 const getModuleMeta = (moduleId: string) => {
@@ -42,23 +45,34 @@ const ModulePage = () => {
 
   useEffect(() => {
     if (!moduleId) return;
-    const lessonObjs = getModuleLessons(moduleId).map(data => {
-      if (!data) return null;
-      const charObj = characters.find(c => c.id === data.characterId);
-      const progress = getLessonProgress(data.id);
-      const sectionCount = getLessonSectionCount(data);
-      const moduleCompleted = progress.completedSections.size >= sectionCount;
-      return {
-        id: data.id,
-        title: data.title,
-        character: charObj ? charObj.name.split(' ')[0] : '',
-        duration: data.duration,
-        status: 'available', // unlock all for testing
-        description: data.narrativeHook?.story || data.readContent || "",
-        moduleCompleted
-      };
-    }).filter(Boolean);
-    setLessons(lessonObjs);
+    
+    const loadLessons = async () => {
+      try {
+        const lessonData = await getModuleLessons(moduleId);
+        const lessonObjs = lessonData.map(data => {
+          if (!data) return null;
+          const charObj = characters.find(c => c.id === data.characterId);
+          const progress = getLessonProgress(data.id);
+          const sectionCount = getLessonSectionCount(data);
+          const moduleCompleted = progress.completedSections.size >= sectionCount;
+          return {
+            id: data.id,
+            title: data.title,
+            character: charObj ? charObj.name.split(' ')[0] : '',
+            duration: data.duration,
+            status: 'available', // unlock all for testing
+            description: data.narrativeHook?.story || data.readContent || "",
+            moduleCompleted
+          };
+        }).filter(Boolean);
+        setLessons(lessonObjs);
+      } catch (error) {
+        console.error('Failed to load lessons:', error);
+        setLessons([]);
+      }
+    };
+    
+    loadLessons();
   }, [moduleId]);
 
   if (!moduleMeta) return <div className="p-8 text-center">Module not found.</div>;

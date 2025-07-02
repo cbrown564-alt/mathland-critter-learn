@@ -1,5 +1,5 @@
 import { Target } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/core/components/ui/card";
 
 interface LearningObjectivesBannerProps {
   objectives: string[];

@@ -1,10 +1,10 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { ExperienceHero } from "@/components/experience/ExperienceHero";
-import { CharacterAudioIntro } from "@/components/experience/CharacterAudioIntro";
-import { CharacterPreviewCarousel } from "@/components/experience/CharacterPreviewCarousel";
-import { JourneyTransformation } from "@/components/experience/JourneyTransformation";
-import { ExperienceCTA } from "@/components/experience/ExperienceCTA";
+import { Header } from "@/core/components/Header";
+import { Footer } from "@/core/components/Footer";
+import { ExperienceHero } from "@/core/components/experience/ExperienceHero";
+import { CharacterAudioIntro } from "@/core/components/experience/CharacterAudioIntro";
+import { CharacterPreviewCarousel } from "@/core/components/experience/CharacterPreviewCarousel";
+import { JourneyTransformation } from "@/core/components/experience/JourneyTransformation";
+import { ExperienceCTA } from "@/core/components/experience/ExperienceCTA";
 
 const Experience = () => {
   return (

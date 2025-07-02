@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterConfig, ScenarioConfig, StepConfig, VisualConfig } from '@/types/conceptCheck';
+import { CharacterConfig, ScenarioConfig, StepConfig, VisualConfig } from '@/core/types/conceptCheck';
 import { characterConfigMap } from '@/utils/characterData';
 import { SectionCompletion } from '../SectionCompletion';
 

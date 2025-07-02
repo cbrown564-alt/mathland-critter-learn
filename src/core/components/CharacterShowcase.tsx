@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { CharacterCard } from "./CharacterCard";
-import { characters } from "../utils/characterData";
+import { characters } from "@/utils/characterData";
 
 export const CharacterShowcase = () => {
   return (

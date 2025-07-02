@@ -7,7 +7,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+} from "@/core/components/ui/breadcrumb";
 
 interface BreadcrumbNavigationProps {
   lessonId: string;

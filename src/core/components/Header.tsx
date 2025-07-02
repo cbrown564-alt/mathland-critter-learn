@@ -1,9 +1,9 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { getLessonOrderForModule } from "../utils/lessonData";
-import { getLessonProgress, isLessonCompleted } from "@/hooks/useLessonProgress";
+import { Button } from "@/core/components/ui/button";
+import { getLessonOrderForModule } from "@/utils/lessonData";
+import { getLessonProgress, isLessonCompleted } from "@/core/hooks/useLessonProgress";
 
 function getNextLessonId() {
   const lessonOrder = getLessonOrderForModule("0");

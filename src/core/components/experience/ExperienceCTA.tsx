@@ -1,7 +1,7 @@
 import { ArrowRight, Users, Star, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/core/components/ui/button";
+import { Card, CardContent } from "@/core/components/ui/card";
 
 export const ExperienceCTA = () => {
   return (

@@ -1,4 +1,4 @@
-import { LessonData } from "@/types/lesson";
+import { LessonData } from "@/core/types/lesson";
 
 interface ModuleIndex {
   moduleId: number;
@@ -24,7 +24,7 @@ export async function loadLesson(moduleId: string, lessonId: string): Promise<Le
 
   try {
     // Dynamically import the lesson JSON
-    const lessonModule = await import(`../lessons/module${moduleId}/lesson-${lessonId}.json`);
+    const lessonModule = await import(`../content/lessons/module${moduleId}/lesson-${lessonId}.json`);
     const lessonData = lessonModule.default as LessonData;
     
     // Cache the result
@@ -47,7 +47,7 @@ export async function loadModuleIndex(moduleId: string): Promise<ModuleIndex | n
   }
 
   try {
-    const indexModule = await import(`../lessons/module${moduleId}/index.json`);
+    const indexModule = await import(`../content/lessons/module${moduleId}/index.json`);
     const index = indexModule.default as ModuleIndex;
     
     // Cache the result

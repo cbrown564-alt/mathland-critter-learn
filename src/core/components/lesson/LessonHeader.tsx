@@ -1,4 +1,4 @@
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@/core/components/ui/progress";
 
 interface LessonHeaderProps {
   progressPercentage: number;

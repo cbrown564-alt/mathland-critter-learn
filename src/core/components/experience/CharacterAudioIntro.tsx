@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect, createRef } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/core/components/ui/card";
+import { Button } from "@/core/components/ui/button";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
-import { characters } from "../../utils/characterData";
+import { characters } from "@/utils/characterData";
 import React from "react";
 import clsx from "clsx";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { ModuleCharacterCard } from "@/components/ModuleCharacterCard";
+import { Dialog, DialogContent } from "@/core/components/ui/dialog";
+import { ModuleCharacterCard } from "@/core/components/ModuleCharacterCard";
 import { getLessonOrderForModule } from "@/utils/lessonData";
 
 // Character speaking order with precise timings (in seconds)

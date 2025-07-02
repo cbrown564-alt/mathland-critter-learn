@@ -1,6 +1,6 @@
 import * as React from "react";
-import { LessonData } from "@/types/lesson";
-import { Character } from "@/types/character";
+import { LessonData } from "@/core/types/lesson";
+import { Character } from "@/core/types/character";
 import { NarrativeHook } from "./NarrativeHook";
 import { MemoryAids } from "./MemoryAids";
 import { ConceptCheck } from "./ConceptCheck";
@@ -10,7 +10,7 @@ import { SeeSection } from "./SeeSection";
 import { DoSection } from "./DoSection";
 import { SectionCompletion } from "./SectionCompletion";
 import { EnhancedConceptCheck } from './conceptCheck/EnhancedConceptCheck';
-import { EXAMPLE_CONCEPT_CHECKS } from '@/data/exampleConceptChecks';
+import { EXAMPLE_CONCEPT_CHECKS } from '@/content/data/exampleConceptChecks';
 import { EnhancedAudioPlayer } from './EnhancedAudioPlayer';
 
 interface LessonSectionRendererProps {

@@ -1,13 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { modulesData } from "../utils/modulesData";
-import { characters } from "../utils/characterData";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { modulesData } from "@/utils/modulesData";
+import { characters } from "@/utils/characterData";
+import { Header } from "@/core/components/Header";
+import { Footer } from "@/core/components/Footer";
+import { Card, CardContent } from "@/core/components/ui/card";
+import { Button } from "@/core/components/ui/button";
 import { ArrowLeft, BookOpen, Clock, Users, Map, Star, Briefcase } from "lucide-react";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { IconForApp } from "@/components/ui/IconForApp";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/core/components/ui/tabs";
+import { IconForApp } from "@/core/components/ui/IconForApp";
 
 export default function ModuleDetail() {
   const { id } = useParams();
