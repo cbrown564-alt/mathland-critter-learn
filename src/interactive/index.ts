@@ -1,8 +1,8 @@
 import React from 'react';
-import VeraVectorPlayground from './vera_vector_playground';
-import MaxMatrixTransformer from './max_matrix_transformer';
-import BayesMedicalDiagnosis from './bayes_medical_diagnosis';
-import { LessonData } from '@/types/lesson';
+import VeraVectorPlayground from './components/vera_vector_playground';
+import MaxMatrixTransformer from './components/max_matrix_transformer';
+import BayesMedicalDiagnosis from './components/bayes_medical_diagnosis';
+import { LessonData } from '@/core/types/lesson';
 
 interface CustomComponentProps {
   lesson: LessonData;

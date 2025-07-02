@@ -1,5 +1,23 @@
 # Mathland: Character-Driven Math Learning Platform
 
+> **📚 Complete documentation available at [docs/README.md](docs/README.md)**  
+> **🏗️ Clean project structure implemented - see documentation for details**
+
+## Quick Start
+
+```bash
+git clone <repository>
+npm install
+npm run dev
+```
+
+**New Project Structure:**
+- **Core Application**: `src/core/` - UI components, pages, hooks, types
+- **Educational Content**: `src/content/` - Lessons, data
+- **Interactive Components**: `src/interactive/` - Educational demos and activities
+- **Documentation**: `docs/` - All project documentation
+- **Tools**: `tools/` - Build scripts and utilities
+
 ## Project Overview
 
 Mathland is an interactive, web-based mathematics learning platform designed to make advanced mathematical concepts engaging and accessible for adult learners transitioning to data science. The platform features a comprehensive curriculum covering algebra, calculus, linear algebra, probability, and statistics through the lens of character-driven storytelling and real-world applications.

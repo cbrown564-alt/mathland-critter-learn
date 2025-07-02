@@ -1,4 +1,4 @@
-import { LessonData } from "@/types/lesson";
+import { LessonData } from "@/core/types/lesson";
 
 // This file provides a synchronous interface for backward compatibility
 // It requires pre-loading the data before use

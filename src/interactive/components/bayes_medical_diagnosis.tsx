@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Slider } from '@/components/ui/slider';
-import { Progress } from '@/components/ui/progress';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Button } from '@/core/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/core/components/ui/card';
+import { Slider } from '@/core/components/ui/slider';
+import { Progress } from '@/core/components/ui/progress';
+import { Avatar, AvatarImage, AvatarFallback } from '@/core/components/ui/avatar';
 import { Stethoscope, Calculator, AlertTriangle, CheckCircle } from 'lucide-react';
 
 interface BayesMedicalDiagnosisProps {

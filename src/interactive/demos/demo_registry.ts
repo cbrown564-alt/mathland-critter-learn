@@ -1,8 +1,8 @@
 import React from 'react';
-import { Character } from '@/types/character';
-import VeraVectorPlayground from './vera_vector_playground';
-import MaxMatrixTransformer from './max_matrix_transformer';
-import BayesMedicalDiagnosis from './bayes_medical_diagnosis';
+import { Character } from '@/core/types/character';
+import VeraVectorPlayground from '../components/vera_vector_playground';
+import MaxMatrixTransformer from '../components/max_matrix_transformer';
+import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
 
 // Placeholder component for demos in development
 const PlaceholderDemo: React.ComponentType<{

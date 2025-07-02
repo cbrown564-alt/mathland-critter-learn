@@ -1,4 +1,4 @@
-import { LessonData } from "@/types/lesson";
+import { LessonData } from "@/core/types/lesson";
 import { 
   loadModuleLessons, 
   getLessonOrderForModule as getLessonOrderAsync,

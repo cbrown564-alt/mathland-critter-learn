@@ -1,5 +1,5 @@
-import { LessonData } from "@/types/lesson";
-import { customDoComponents } from "../../interactive_elements";
+import { LessonData } from "@/core/types/lesson";
+import { customDoComponents } from "@/interactive";
 
 interface DoSectionProps {
   lesson: LessonData;

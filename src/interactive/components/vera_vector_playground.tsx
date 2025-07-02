@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Compass, Calculator, RotateCcw, Target } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Switch } from '@/components/ui/switch';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { Label } from '@/components/ui/label';
+import { Button } from '@/core/components/ui/button';
+import { Input } from '@/core/components/ui/input';
+import { Switch } from '@/core/components/ui/switch';
+import { Alert, AlertTitle, AlertDescription } from '@/core/components/ui/alert';
+import { Avatar, AvatarImage, AvatarFallback } from '@/core/components/ui/avatar';
+import { Label } from '@/core/components/ui/label';
 
 // SVG grid/axes constants
 const GRID_SIZE = 10; // units in each direction from origin
