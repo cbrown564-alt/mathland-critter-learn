@@ -308,3 +308,11 @@ const BaseTemplate: React.FC<BaseTemplateProps> = ({
 };
 
 export default BaseTemplate;
+
+// Export types for use in other components
+export type {
+  BaseTemplateProps,
+  CharacterInsightProps,
+  ProgressIndicatorProps,
+  SectionDividerProps
+};

@@ -9,6 +9,7 @@ import NotFound from "./core/pages/NotFound";
 import Course from "./core/pages/Course";
 import ModuleDetail from "./core/pages/ModuleDetail";
 import Experience from "./core/pages/Experience";
+import Tier2Gallery from "./core/pages/Tier2Gallery";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/lesson/:lessonId" element={<LessonPage />} />
           <Route path="/course" element={<Course />} />
           <Route path="/module-detail/:id" element={<ModuleDetail />} />
+          <Route path="/tier2-gallery" element={<Tier2Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

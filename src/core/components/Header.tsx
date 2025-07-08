@@ -60,6 +60,7 @@ export const Header = () => {
             <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
             <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
             <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
+            <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Gallery</Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -85,6 +86,7 @@ export const Header = () => {
               <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
               <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
               <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
+              <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Gallery</Link>
               <div className="pt-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" onClick={handleContinue}>
                   {isNew ? "Start Learning" : "Continue Learning"}
