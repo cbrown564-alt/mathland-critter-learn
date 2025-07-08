@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how mixing vectors is like combining ingredients in a recipe - different amounts of each ingredient create completely different results, but you can make anything with the right proportions!",
   "hearAudioUrl": "/audio/1.5.mp3",
   "doContent": "Experiment with the Linear Combination Builder using sliders to adjust coefficients, explore the Span Visualizer to see what space vectors can fill, and practice the Vector Mixer for hands-on combination practice.",
+  "doType": "custom",
+  "doComponent": "vera_linear_combination",
+  "doInstructions": "Explore linear combinations by adjusting coefficients a and b! Try different base vectors, experiment with the presets, and see how vectors combine to span different spaces. Can you create linearly dependent vectors?",
   "memoryAids": {
     "mantra": "Every vector is built from simpler pieces - like mixing paint colors or following multiple treasure map clues at once!",
     "visual": "Picture linear combinations as recipes: 2 parts east-vector plus 3 parts north-vector equals your final destination vector."

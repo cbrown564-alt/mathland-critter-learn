@@ -1,5 +1,7 @@
 import React from 'react';
 import VeraVectorPlayground from './components/vera_vector_playground';
+import VeraVectorArithmetic from './components/vera_vector_arithmetic';
+import VeraLinearCombination from './components/vera_linear_combination';
 import MaxMatrixTransformer from './components/max_matrix_transformer';
 import BayesMedicalDiagnosis from './components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from './components/eileen_eigenvalue_detective';
@@ -60,8 +62,20 @@ const SageDataSynthesizerWrapper: React.ComponentType<CustomComponentProps> = ()
   return React.createElement(SageDataSynthesizer, { isPreview: false });
 };
 
+// Wrapper for VeraVectorArithmetic to match interface
+const VeraVectorArithmeticWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(VeraVectorArithmetic, { isPreview: false });
+};
+
+// Wrapper for VeraLinearCombination to match interface
+const VeraLinearCombinationWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(VeraLinearCombination, { isPreview: false });
+};
+
 export const customDoComponents: Record<string, React.ComponentType<CustomComponentProps>> = {
   vera_vector_playground: VeraVectorPlayground,
+  vera_vector_arithmetic: VeraVectorArithmeticWrapper,
+  vera_linear_combination: VeraLinearCombinationWrapper,
   max_matrix_transformer: MaxMatrixTransformerWrapper,
   bayes_medical_diagnosis: BayesMedicalDiagnosisWrapper,
   eileen_eigenvalue_detective: EileenEigenvalueDetectiveWrapper,
@@ -71,4 +85,20 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
   ollie_foundation_builder: OllieFoundationBuilderWrapper,
   sage_data_synthesizer: SageDataSynthesizerWrapper,
+};
+
+// Export individual components for the gallery
+export {
+  VeraVectorPlayground,
+  VeraVectorArithmetic,
+  VeraLinearCombination,
+  MaxMatrixTransformer,
+  BayesMedicalDiagnosis,
+  EileenEigenvalueDetective,
+  DeltaPartialDerivativeExplorer,
+  GretaGradientDescentClimber,
+  PippaProbabilityMagic,
+  SigmundHypothesisArena,
+  OllieFoundationBuilder,
+  SageDataSynthesizer
 }; 

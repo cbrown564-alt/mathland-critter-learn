@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how combining vectors is like planning the ultimate treasure hunt - multiple clues that lead to one destination, and amazingly, the order you follow them doesn't change where you end up!",
   "hearAudioUrl": "/audio/1.2.mp3",
   "doContent": "Use the Vector Addition Simulator to drag vectors and see their combinations, practice with the Parallelogram Constructor, and experiment with the Scalar Slider to see how multiplying by different numbers affects vector size and direction.",
+  "doType": "custom",
+  "doComponent": "vera_vector_arithmetic",
+  "doInstructions": "Explore vector addition, subtraction, and dot products! Try different operations, adjust the scalar multipliers, and see how mathematical operations translate to geometric transformations.",
   "memoryAids": {
     "mantra": "Tip-to-tail takes you there - start where the first arrow ends, and draw the second arrow from there!",
     "visual": "Imagine following a treasure map with multiple clues - each vector is a clue, and vector addition shows your final destination no matter what order you follow them."

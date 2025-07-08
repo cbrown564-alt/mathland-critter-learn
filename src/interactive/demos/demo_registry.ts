@@ -1,5 +1,7 @@
 import React from 'react';
 import VeraVectorPlayground from '../components/vera_vector_playground';
+import VeraVectorArithmetic from '../components/vera_vector_arithmetic';
+import VeraLinearCombination from '../components/vera_linear_combination';
 import MaxMatrixTransformer from '../components/max_matrix_transformer';
 import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from '../components/eileen_eigenvalue_detective';
@@ -62,6 +64,40 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: VeraVectorPlayground,
     status: 'ready',
     tags: ['vectors', 'coordinates', 'interactive', 'visualization']
+  },
+  {
+    id: 'vera-vector-arithmetic',
+    characterId: 'vera',
+    title: 'Vector Arithmetic Adventure',
+    description: 'Master vector addition, subtraction, and dot products with interactive exploration!',
+    difficulty: 'beginner',
+    estimatedTime: '8-12 minutes',
+    learningObjectives: [
+      'Understand vector addition and subtraction geometrically',
+      'Calculate and visualize dot products',
+      'Explore scalar multiplication effects',
+      'Connect algebraic operations to geometric interpretations'
+    ],
+    component: VeraVectorArithmetic,
+    status: 'ready',
+    tags: ['vectors', 'arithmetic', 'dot-product', 'geometric']
+  },
+  {
+    id: 'vera-linear-combination',
+    characterId: 'vera',
+    title: 'Linear Combination Laboratory',
+    description: 'Explore how vectors combine to span spaces and understand linear independence!',
+    difficulty: 'intermediate',
+    estimatedTime: '10-15 minutes',
+    learningObjectives: [
+      'Understand linear combinations geometrically',
+      'Visualize vector span and linear independence',
+      'Explore coefficient effects on vector combinations',
+      'Distinguish between dependent and independent vectors'
+    ],
+    component: VeraLinearCombination,
+    status: 'ready',
+    tags: ['vectors', 'linear-combination', 'span', 'independence']
   },
   {
     id: 'max-matrix-transformer',
