@@ -220,15 +220,15 @@ const BayesMedicalDiagnosis: React.FC<BayesMedicalDiagnosisProps> = ({
 
           {/* Key Insight */}
           {testApplied && (
-            <Card className="border-amber-200 bg-amber-50">
+            <Card className="border-indigo-200 bg-gradient-to-br from-indigo-50 to-purple-50">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5" />
+                  <AlertTriangle className="w-5 h-5 text-indigo-600 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-amber-800 mb-2">Fox's Insight</h4>
-                    <p className="text-sm text-amber-700">
+                    <h4 className="font-semibold text-indigo-800 mb-2">🧪 Bayes' Detective Insight</h4>
+                    <p className="text-sm text-indigo-700">
                       Even with a 95% accurate test, a positive result doesn't mean 95% chance of disease! 
-                      Base rates matter enormously in medical diagnosis.
+                      Base rates matter enormously in medical diagnosis. This is what smart detectives always investigate first.
                     </p>
                   </div>
                 </div>
@@ -237,15 +237,15 @@ const BayesMedicalDiagnosis: React.FC<BayesMedicalDiagnosisProps> = ({
           )}
 
           {!isPreview && (
-            <Card>
+            <Card className="bg-gradient-to-br from-purple-50 to-indigo-50 border-purple-200">
               <CardContent className="pt-6">
-                <div className="text-sm text-slate-600 space-y-2">
-                  <p><strong>Experiment:</strong></p>
+                <div className="text-sm text-purple-700 space-y-2">
+                  <p><strong>🔍 Detective's Investigation Guide:</strong></p>
                   <ol className="list-decimal list-inside space-y-1 text-xs">
-                    <li>Try different prior probabilities</li>
-                    <li>Notice how low base rates affect results</li>
-                    <li>See why context matters in medicine</li>
-                    <li>Understand the false positive problem</li>
+                    <li>Try different prior probabilities (your initial hunches)</li>
+                    <li>Notice how low base rates affect results (rare cases are tricky!)</li>
+                    <li>See why context matters in diagnosis (smart detectives gather all clues)</li>
+                    <li>Understand the false positive problem (evidence can mislead)</li>
                   </ol>
                 </div>
               </CardContent>

@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how gradient descent is like navigating through fog using only a compass - step by step, always heading downhill, until we reach the valley bottom!",
   "hearAudioUrl": "/audio/5.5.mp3",
   "doContent": "Use the Gradient Descent Simulator with adjustable learning rates, practice with the Step-by-Step Optimizer showing algorithm traces, and experiment with the Convergence Analyzer to understand stopping criteria.",
+  "doType": "custom",
+  "doComponent": "greta_gradient_descent_climber",
+  "doInstructions": "Join Greta on her mountain climbing expedition! Choose different landscapes to explore, adjust your learning rate (step size), and watch as Greta follows the gradient downhill step by step. Click anywhere on the mountain to set a new starting position, then hit 'Climb' to begin the descent. Can you find the optimal path to the valley bottom?",
   "memoryAids": {
     "mantra": "Step downhill with gradient guide, learning rate sets the stride - repeat until the bottom you find!",
     "visual": "Picture Greta in thick fog, using her compass to point downhill, taking careful steps in that direction, then rechecking her compass for the next step - systematically descending toward the hidden valley bottom."

@@ -33,7 +33,10 @@
   "seeContent": "Apply statistical tests to validate model performance with interactive significance testing, construct confidence intervals for predictions with uncertainty visualization, and use bootstrap methods for empirical uncertainty quantification.",
   "hearContent": "Listen as I demonstrate how Sigmund's statistical elegance and Pippa's probability wisdom transform model predictions into trustworthy insights with proper uncertainty acknowledgment - the hallmark of professional data science!",
   "hearAudioUrl": "/audio/9.5.mp3",
-  "doContent": "Conduct comprehensive statistical validation using hypothesis tests and confidence intervals, implement bootstrap methods for uncertainty quantification, and apply statistical significance testing for rigorous model comparison.",
+  "doContent": "Welcome to Sage's Data Science Synthesizer! Experience the culmination of your Mathland journey by integrating all mathematical concepts into real-world data science projects. Choose from customer churn prediction, medical image classification, or financial risk assessment - each requiring synthesis of multiple character techniques.",
+  "doType": "custom",
+  "doComponent": "sage_data_synthesizer",
+  "doInstructions": "Soar to the heights of mathematical synthesis with Sage! Select a capstone project and progress through the complete data science workflow. Apply techniques from every character - Vera's vectors, Max's matrices, Greta's optimization, Sigmund's testing, and more. Watch as individual mathematical concepts unite into powerful integrated solutions that create real-world impact!",
   "memoryAids": {
     "mantra": "Test with Sigmund's grace, uncertainty we must face! Bootstrap for bounds unclear, statistical rigor makes truth appear!",
     "visual": "Picture Sage working with Sigmund (conducting elegant statistical tests) and Pippa (quantifying uncertainty with probability distributions) to transform model outputs into statistically validated insights worthy of important business decisions."

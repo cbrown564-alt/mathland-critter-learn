@@ -33,7 +33,10 @@
   "seeContent": "Explore the logical structure of hypothesis testing, visualize Type I and Type II errors in context, and observe how the testing framework applies across different scientific domains.",
   "hearContent": "Listen as I explain how hypothesis testing brings elegant formal logic to the messy world of uncertainty - creating a principled framework for distinguishing signal from noise!",
   "hearAudioUrl": "/audio/7.4.mp3",
-  "doContent": "Use the Hypothesis Formulation Tool for practice scenarios, experiment with the Error Type Visualizer, and practice with the Testing Logic Simulator showing decision outcomes.",
+  "doContent": "Welcome to Sigmund's Hypothesis Testing Arena! Investigate different scenarios from the famous black swan discovery to medical trials. Configure sample sizes and significance levels, then watch as elegant statistical logic unfolds through repeated hypothesis testing.",
+  "doType": "custom",
+  "doComponent": "sigmund_hypothesis_arena",
+  "doInstructions": "Enter Sigmund's arena of statistical investigation! Choose from scenarios including the legendary black swan discovery, medical drug trials, coin fairness tests, and quality control. Adjust your testing parameters and conduct multiple tests to observe Type I and Type II error rates in action. Each investigation reveals the elegant dance between evidence and statistical decision-making.",
   "memoryAids": {
     "mantra": "Null says 'nothing new here,' alternative claims 'change is clear!' Evidence must be strong to reject the null - that's hypothesis testing's protocol!",
     "visual": "Picture Sigmund as an elegant judge presiding over a formal debate between null and alternative hypotheses, requiring compelling evidence before gracefully ruling in favor of change over the status quo."

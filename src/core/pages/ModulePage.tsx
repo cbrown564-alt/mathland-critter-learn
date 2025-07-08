@@ -50,22 +50,22 @@ const ModulePage = () => {
       try {
         const lessonData = await getModuleLessons(moduleId);
         const lessonObjs = lessonData.map(data => {
-          if (!data) return null;
-          const charObj = characters.find(c => c.id === data.characterId);
-          const progress = getLessonProgress(data.id);
-          const sectionCount = getLessonSectionCount(data);
-          const moduleCompleted = progress.completedSections.size >= sectionCount;
-          return {
-            id: data.id,
-            title: data.title,
-            character: charObj ? charObj.name.split(' ')[0] : '',
-            duration: data.duration,
-            status: 'available', // unlock all for testing
-            description: data.narrativeHook?.story || data.readContent || "",
-            moduleCompleted
-          };
-        }).filter(Boolean);
-        setLessons(lessonObjs);
+      if (!data) return null;
+      const charObj = characters.find(c => c.id === data.characterId);
+      const progress = getLessonProgress(data.id);
+      const sectionCount = getLessonSectionCount(data);
+      const moduleCompleted = progress.completedSections.size >= sectionCount;
+      return {
+        id: data.id,
+        title: data.title,
+        character: charObj ? charObj.name.split(' ')[0] : '',
+        duration: data.duration,
+        status: 'available', // unlock all for testing
+        description: data.narrativeHook?.story || data.readContent || "",
+        moduleCompleted
+      };
+    }).filter(Boolean);
+    setLessons(lessonObjs);
       } catch (error) {
         console.error('Failed to load lessons:', error);
         setLessons([]);

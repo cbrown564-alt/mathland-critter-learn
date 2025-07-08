@@ -106,7 +106,7 @@ const MaxMatrixTransformer: React.FC<MatrixTransformerProps> = ({
     ctx.moveTo(CENTER_X, 0);
     ctx.lineTo(CENTER_X, CANVAS_HEIGHT);
     ctx.stroke();
-  }, [showGrid]);
+  }, [showGrid, CENTER_X, CENTER_Y]);
 
   // Draw shape
   const drawShape = useCallback((ctx: CanvasRenderingContext2D, vertices: number[][], color: string, filled: boolean = false) => {
@@ -138,7 +138,7 @@ const MaxMatrixTransformer: React.FC<MatrixTransformerProps> = ({
       ctx.fillStyle = color;
       ctx.fill();
     });
-  }, []);
+  }, [toCanvasCoords]);
 
   // Animation function
   const animateTransformation = useCallback(async (targetMatrix: number[][]) => {
@@ -219,7 +219,7 @@ const MaxMatrixTransformer: React.FC<MatrixTransformerProps> = ({
     ctx.moveTo(yCanvas[0][0], yCanvas[0][1]);
     ctx.lineTo(yCanvas[1][0], yCanvas[1][1]);
     ctx.stroke();
-  }, [matrix, drawGrid, drawShape]);
+  }, [matrix, drawGrid, drawShape, originalShape, toCanvasCoords]);
 
   // Update canvas when matrix changes
   useEffect(() => {
@@ -410,15 +410,15 @@ const MaxMatrixTransformer: React.FC<MatrixTransformerProps> = ({
           </Card>
 
           {!isPreview && (
-            <Card>
+            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
               <CardContent className="pt-6">
-                <div className="text-sm text-slate-600 space-y-2">
-                  <p><strong>Try this:</strong></p>
+                <div className="text-sm text-blue-700 space-y-2">
+                  <p><strong>⊞ Max's Organization Tips:</strong></p>
                   <ol className="list-decimal list-inside space-y-1 text-xs">
                     <li>Start with different preset transformations</li>
-                    <li>Notice how the determinant affects area</li>
+                    <li>Notice how the determinant affects area systematically</li>
                     <li>Experiment with your own matrix values</li>
-                    <li>Watch how basis vectors (red/green) move</li>
+                    <li>Watch how basis vectors organize the transformation</li>
                   </ol>
                 </div>
               </CardContent>

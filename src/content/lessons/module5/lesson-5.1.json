@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how multivariable functions are like precise mathematical recipes - each ingredient (variable) contributes to the final result, creating rich behaviors that single-variable functions simply cannot capture!",
   "hearAudioUrl": "/audio/4.1.mp3",
   "doContent": "Use the Multivariable Function Explorer to visualize surfaces and level curves, practice with the Domain Sketcher for region identification, and experiment with the Surface Shape Analyzer to see how parameter changes affect function behavior.",
+  "doType": "custom",
+  "doComponent": "delta_partial_derivative_explorer",
+  "doInstructions": "Welcome to Dr. Delta's Change Analysis Lab! Explore different multivariable functions by clicking on the colored landscape to move your analysis point. Watch how the partial derivatives (red and green arrows) change as you move around. Try different mathematical specimens to see how various functions behave!",
   "memoryAids": {
     "mantra": "Multiple inputs, single output - surfaces and contours reveal the mathematical route!",
     "visual": "Picture Dr. Delta carefully examining a 3D landscape where every point represents a precise function value, with contour lines mapping the elevation like a hedgehog's perfectly organized territory."

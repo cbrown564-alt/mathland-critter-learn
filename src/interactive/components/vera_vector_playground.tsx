@@ -61,9 +61,10 @@ const VeraVectorPlayground = () => {
     };
   }
 
-  // Handle drag events
+  // Handle drag events (now with better mobile support)
   function onPointerDown(vecId: number, e: React.PointerEvent) {
     e.preventDefault();
+    e.stopPropagation();
     setSelectedVector(vecId);
     const svg = svgRef.current;
     if (!svg) return;
@@ -73,6 +74,7 @@ const VeraVectorPlayground = () => {
 
   function onPointerMove(e: React.PointerEvent) {
     if (!dragging) return;
+    e.preventDefault();
     const svg = svgRef.current;
     if (!svg) return;
     const rect = svg.getBoundingClientRect();
@@ -91,7 +93,9 @@ const VeraVectorPlayground = () => {
   function onPointerUp(e: React.PointerEvent) {
     setDragging(null);
     const svg = svgRef.current;
-    if (svg) svg.releasePointerCapture(e.pointerId);
+    if (svg && e.pointerId !== undefined) {
+      svg.releasePointerCapture(e.pointerId);
+    }
   }
 
   useEffect(() => {
@@ -138,8 +142,9 @@ const VeraVectorPlayground = () => {
     ctx.fillText('y', originX + 10, 20);
   }, [vectors, showGrid, showMagnitude]);
 
-  const handleCanvasClick = (e) => {
+  const handleCanvasClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
     const clickY = e.clientY - rect.top;
@@ -148,7 +153,7 @@ const VeraVectorPlayground = () => {
     setVectors(prev => prev.map(v => v.id === selectedVector ? { ...v, x: vectorX, y: vectorY } : v));
   };
 
-  const updateVector = (id, field, value) => {
+  const updateVector = (id: number, field: string, value: string) => {
     setVectors(prev => prev.map(v => v.id === id ? { ...v, [field]: parseFloat(value) || 0 } : v));
   };
 
@@ -321,11 +326,11 @@ const VeraVectorPlayground = () => {
                       >
                         {vec.label}
                       </text>
-                      {/* Drag handle at tip */}
+                      {/* Drag handle at tip - larger for mobile */}
                       <circle
                         cx={tip.x}
                         cy={tip.y}
-                        r={isActive ? 18 : isSelected ? 14 : 11}
+                        r={isActive ? 24 : isSelected ? 18 : 15}
                         fill="#fff"
                         stroke={vec.color}
                         strokeWidth={3}
@@ -333,6 +338,7 @@ const VeraVectorPlayground = () => {
                           cursor: 'grab',
                           transition: 'r 0.15s, stroke 0.15s',
                           filter: isActive || isSelected ? 'drop-shadow(0 2px 8px rgba(59,130,246,0.18))' : undefined,
+                          touchAction: 'none', // Prevents scroll on mobile
                         }}
                         onPointerDown={e => onPointerDown(vec.id, e)}
                         tabIndex={0}
@@ -437,10 +443,10 @@ const VeraVectorPlayground = () => {
       {/* Bottom row: tips and challenges, side by side */}
       <div className="flex flex-col md:flex-row gap-4 mt-4">
         <div className="flex-1">
-          <Alert className="bg-slate-50 border-slate-200 h-full">
-            <AlertTitle className="text-slate-800">🧭 Vera's Navigation Tips</AlertTitle>
+          <Alert className="bg-gradient-to-br from-red-50 to-orange-50 border-red-200 h-full">
+            <AlertTitle className="text-red-800">🧭 Vera's Navigation Tips</AlertTitle>
             <AlertDescription>
-              <ul className="text-sm text-slate-700 space-y-1">
+              <ul className="text-sm text-red-700 space-y-1">
                 <li>• Vectors have both magnitude (length) and direction</li>
                 <li>• Components [x, y] show how far in each direction</li>
                 <li>• Magnitude = √(x² + y²) gives the total distance</li>
@@ -450,14 +456,14 @@ const VeraVectorPlayground = () => {
           </Alert>
         </div>
         <div className="flex-1">
-          <Alert className="bg-slate-50 border-slate-200 h-full">
-            <AlertTitle className="text-slate-800">🎯 Exploration Challenges</AlertTitle>
+          <Alert className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200 h-full">
+            <AlertTitle className="text-orange-800">🎯 Vera's Exploration Challenges</AlertTitle>
             <AlertDescription>
-              <ul className="text-sm text-slate-700 space-y-1">
-                <li><b>1. Unit Vector Challenge:</b> Can you create a vector with magnitude exactly 1?</li>
-                <li><b>2. Opposite Directions:</b> Make two vectors that point in exactly opposite directions.</li>
-                <li><b>3. Right Angle:</b> Position vectors so they form a 90° angle.</li>
-                <li><b>4. Compass Directions:</b> Create vectors pointing North, South, East, and West.</li>
+              <ul className="text-sm text-orange-700 space-y-1">
+                <li><b>1. Unit Vector Quest:</b> Can you navigate to a vector with magnitude exactly 1?</li>
+                <li><b>2. Opposite Paths:</b> Make two vectors that point in exactly opposite directions.</li>
+                <li><b>3. Right Angle Route:</b> Position vectors so they form a 90° angle.</li>
+                <li><b>4. Compass Master:</b> Create vectors pointing North, South, East, and West.</li>
               </ul>
             </AlertDescription>
           </Alert>

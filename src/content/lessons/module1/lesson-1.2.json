@@ -32,7 +32,10 @@
   "seeContent": "Watch Ollie demonstrate factoring using physical building blocks, showing how expressions can be rearranged and regrouped just like dam construction materials.",
   "hearContent": "Listen as I explain how breaking down and building up expressions is just like how I organize my dam materials - sometimes it's easier to work with pieces, sometimes with the whole structure!",
   "hearAudioUrl": "/audio/0.2.mp3",
-  "doContent": "Practice with drag-and-drop factoring exercises where you'll match expressions with their factored forms and use area models to visualize expansion.",
+  "doContent": "Welcome to Ollie's Foundation Builder! Practice expanding and factoring expressions step by step. Choose between Expand mode (building out from compact forms) or Factor mode (breaking down into building blocks). Work through beginner to advanced projects with instant feedback and construction guidance!",
+  "doType": "custom",
+  "doComponent": "ollie_foundation_builder",
+  "doInstructions": "Step into Ollie's construction workshop! Choose your building mode - expand expressions into their full form or factor them into their component parts. Select from projects organized by difficulty level, from basic distributive property to advanced trinomial factoring. Get hints and step-by-step guidance when you need help building your mathematical foundation!",
   "memoryAids": {
     "mantra": "Every dam can be taken apart and rebuilt - just like algebraic expressions!",
     "visual": "Ollie's building blocks showing how expressions can be broken down into factors or combined into expanded forms"

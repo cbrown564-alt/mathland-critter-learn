@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how the characteristic equation is like breaking a combination lock - once we solve it, all the eigenvalue secrets tumble out at once, revealing the complete mathematical fingerprint!",
   "hearAudioUrl": "/audio/3.2.mp3",
   "doContent": "Practice with the Characteristic Equation Solver showing detailed polynomial steps, use the Eigenvalue Calculator for various matrix sizes, and experiment with the Polynomial Root Finder to understand solution patterns.",
+  "doType": "custom",
+  "doComponent": "eileen_eigenvalue_detective",
+  "doInstructions": "Join Detective Eileen in investigating different matrix cases! Try each case file to see how different matrices reveal their eigenvalue secrets. Watch how the blue vectors transform and notice the special red and green eigenvector directions.",
   "memoryAids": {
     "mantra": "Determinant equals zero unlocks the door - that's where all the eigenvalue treasures hide!",
     "visual": "Picture Eileen solving a polynomial puzzle where each root reveals another eigenvalue secret, like cracking a mathematical safe with multiple combinations."

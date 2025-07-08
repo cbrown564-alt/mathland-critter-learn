@@ -1,8 +1,14 @@
 import React from 'react';
-import { Character } from '@/core/types/character';
 import VeraVectorPlayground from '../components/vera_vector_playground';
 import MaxMatrixTransformer from '../components/max_matrix_transformer';
 import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
+import EileenEigenvalueDetective from '../components/eileen_eigenvalue_detective';
+import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
+import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
+import PippaProbabilityMagic from '../components/pippa_probability_magic';
+import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
+import OllieFoundationBuilder from '../components/ollie_foundation_builder';
+import SageDataSynthesizer from '../components/sage_data_synthesizer';
 
 // Placeholder component for demos in development
 const PlaceholderDemo: React.ComponentType<{
@@ -104,8 +110,8 @@ export const interactiveDemos: InteractiveDemo[] = [
       'Explore principal component analysis basics',
       'Connect linear algebra to data science'
     ],
-    component: PlaceholderDemo,
-    status: 'in-development',
+    component: EileenEigenvalueDetective,
+    status: 'ready',
     tags: ['eigenvalues', 'eigenvectors', 'linear-algebra', 'pca']
   },
   {
@@ -121,8 +127,8 @@ export const interactiveDemos: InteractiveDemo[] = [
       'Connect calculus to optimization',
       'Practice gradient interpretation'
     ],
-    component: PlaceholderDemo,
-    status: 'in-development',
+    component: DeltaPartialDerivativeExplorer,
+    status: 'ready',
     tags: ['calculus', 'derivatives', 'gradients', 'optimization']
   },
   {
@@ -138,8 +144,8 @@ export const interactiveDemos: InteractiveDemo[] = [
       'Identify local vs global optima',
       'Connect optimization to machine learning'
     ],
-    component: PlaceholderDemo,
-    status: 'planned',
+    component: GretaGradientDescentClimber,
+    status: 'ready',
     tags: ['optimization', 'gradient-descent', 'machine-learning', 'algorithms']
   },
   {
@@ -150,14 +156,14 @@ export const interactiveDemos: InteractiveDemo[] = [
     difficulty: 'intermediate',
     estimatedTime: '10-14 minutes',
     learningObjectives: [
-      'Understand common probability distributions',
+      'Understand common discrete probability distributions',
+      'Explore Bernoulli, Binomial, and Poisson distributions',
       'Visualize expected value and variance',
-      'Practice probability calculations',
-      'Connect probability to real-world scenarios'
+      'Connect theory to simulation results'
     ],
-    component: PlaceholderDemo,
-    status: 'planned',
-    tags: ['probability', 'distributions', 'statistics', 'games']
+    component: PippaProbabilityMagic,
+    status: 'ready',
+    tags: ['probability', 'distributions', 'discrete', 'simulation']
   },
   {
     id: 'sigmund-hypothesis-tester',
@@ -167,14 +173,14 @@ export const interactiveDemos: InteractiveDemo[] = [
     difficulty: 'advanced',
     estimatedTime: '15-20 minutes',
     learningObjectives: [
-      'Understand hypothesis testing concepts',
-      'Visualize p-values and confidence intervals',
-      'Explore Type I and Type II errors',
-      'Apply statistical thinking to real problems'
+      'Understand hypothesis testing framework and logic',
+      'Explore null vs alternative hypotheses',
+      'Visualize Type I and Type II errors in context',
+      'Apply statistical testing to real scenarios'
     ],
-    component: PlaceholderDemo,
-    status: 'planned',
-    tags: ['statistics', 'hypothesis-testing', 'inference', 'p-values']
+    component: SigmundHypothesisArena,
+    status: 'ready',
+    tags: ['statistics', 'hypothesis-testing', 'inference', 'black-swan']
   },
   {
     id: 'ollie-foundation-builder',
@@ -184,14 +190,14 @@ export const interactiveDemos: InteractiveDemo[] = [
     difficulty: 'beginner',
     estimatedTime: '8-12 minutes',
     learningObjectives: [
-      'Strengthen algebraic manipulation skills',
-      'Practice equation solving systematically',
-      'Build mathematical confidence',
-      'Develop step-by-step problem solving'
+      'Master expanding and factoring algebraic expressions',
+      'Apply distributive property and FOIL method',
+      'Recognize common algebraic patterns',
+      'Build mathematical confidence step by step'
     ],
-    component: PlaceholderDemo,
-    status: 'planned',
-    tags: ['algebra', 'foundations', 'equations', 'problem-solving']
+    component: OllieFoundationBuilder,
+    status: 'ready',
+    tags: ['algebra', 'foundations', 'factoring', 'expanding']
   },
   {
     id: 'sage-data-integrator',
@@ -201,14 +207,14 @@ export const interactiveDemos: InteractiveDemo[] = [
     difficulty: 'advanced',
     estimatedTime: '20-30 minutes',
     learningObjectives: [
-      'Apply multiple mathematical concepts together',
-      'Understand data science workflow',
-      'Practice real-world problem solving',
-      'Synthesize learning across domains'
+      'Synthesize all mathematical concepts into integrated workflows',
+      'Apply complete data science pipeline from preprocessing to validation',
+      'Experience character collaboration across mathematical domains',
+      'Achieve master-level mathematical integration and real-world impact'
     ],
-    component: PlaceholderDemo,
-    status: 'planned',
-    tags: ['data-science', 'integration', 'real-world', 'synthesis']
+    component: SageDataSynthesizer,
+    status: 'ready',
+    tags: ['data-science', 'synthesis', 'capstone', 'integration']
   }
 ];
 

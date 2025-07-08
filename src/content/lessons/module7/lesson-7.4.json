@@ -33,7 +33,10 @@
   "seeContent": "Explore interactive calculators for each distribution, visualize how parameters affect distribution shapes, and observe real-world scenarios where each distribution naturally applies through simulation and examples.",
   "hearContent": "Listen as I explain how each distribution in my collection has its own magical specialty - from simple yes/no questions to counting successes to predicting rare surprises!",
   "hearAudioUrl": "/audio/6.4.mp3",
-  "doContent": "Use the Distribution Selector to match scenarios with appropriate distributions, practice with the Parameter Explorer showing how values affect shapes, and experiment with the Real-World Application Simulator.",
+  "doContent": "Welcome to Pippa's Probability Magic Show! Choose from three magical distribution tricks: Coin Flip Magic (Bernoulli), Success Counter Spell (Binomial), and Rare Event Surprise (Poisson). Adjust the magical parameters, perform tricks, and see how theory matches simulation results!",
+  "doType": "custom",
+  "doComponent": "pippa_probability_magic",
+  "doInstructions": "Step right up to Pippa's magic show! Select different distribution tricks, adjust their magical parameters, and watch as mathematics and magic combine. Click 'Perform Magic Trick' to run 100 simulations and see how empirical results match theoretical predictions. Each distribution has its own special use case!",
   "memoryAids": {
     "mantra": "Bernoulli for one, Binomial to count, Poisson for rare events that truly amount! Each distribution fits its special case - that's probability's magical ace!",
     "visual": "Picture Pippa with a collection of specialized magic hats: a simple coin-flip hat (Bernoulli), a counting hat with multiple compartments (Binomial), and a surprise hat for rare events (Poisson)."
