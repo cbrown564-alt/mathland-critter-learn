@@ -10,6 +10,7 @@ import EileenDiagonalizationExplorer from '../components/eileen_diagonalization_
 import EileenPCADimensionReducer from '../components/eileen_pca_dimension_reducer';
 import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from '../components/delta_gradient_explorer';
+import DeltaConstrainedOptimization from '../components/delta_constrained_optimization';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from '../components/pippa_probability_magic';
 import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
@@ -238,6 +239,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: DeltaGradientExplorer,
     status: 'ready',
     tags: ['gradients', 'directional-derivatives', 'contours', 'optimization']
+  },
+  {
+    id: 'delta-constrained-optimization',
+    characterId: 'delta',
+    title: 'Constrained Optimization Lab',
+    description: 'Master Lagrange multipliers and solve optimization problems with real-world constraints!',
+    difficulty: 'advanced',
+    estimatedTime: '25-35 minutes',
+    learningObjectives: [
+      'Understand Lagrange multipliers for constrained optimization',
+      'Solve optimization problems with equality constraints',
+      'Visualize constraint curves and objective contours',
+      'Apply optimization to real-world problems'
+    ],
+    component: DeltaConstrainedOptimization,
+    status: 'ready',
+    tags: ['optimization', 'lagrange-multipliers', 'constraints', 'real-world']
   },
   {
     id: 'greta-gradient-climber',

@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how optimization combines all our multivariable calculus tools into a systematic approach for finding the best solutions to complex real-world problems!",
   "hearAudioUrl": "/audio/4.9.mp3",
   "doContent": "Use the Critical Point Finder with gradient calculations, practice with the Optimization Classifier using second derivative tests, and experiment with the Gradient Descent Simulator for machine learning applications.",
+  "doType": "custom",
+  "doComponent": "delta_constrained_optimization",
+  "doInstructions": "Master constrained optimization with Lagrange multipliers! Experiment with different objective functions and constraints, observe how gradients interact at optimal points, and solve real-world optimization problems.",
   "memoryAids": {
     "mantra": "Set gradients to zero, then test with care - that's how optimization finds solutions everywhere!",
     "visual": "Picture Dr. Delta with a mathematical surveying kit, first finding all the flat spots in the landscape, then carefully measuring the curvature to identify the true peaks, valleys, and mountain passes."

@@ -10,6 +10,7 @@ import EileenDiagonalizationExplorer from './components/eileen_diagonalization_e
 import EileenPCADimensionReducer from './components/eileen_pca_dimension_reducer';
 import DeltaPartialDerivativeExplorer from './components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from './components/delta_gradient_explorer';
+import DeltaConstrainedOptimization from './components/delta_constrained_optimization';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from './components/pippa_probability_magic';
 import SigmundHypothesisArena from './components/sigmund_hypothesis_arena';
@@ -54,6 +55,11 @@ const DeltaPartialDerivativeExplorerWrapper: React.ComponentType<CustomComponent
 // Wrapper for DeltaGradientExplorer to match interface
 const DeltaGradientExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(DeltaGradientExplorer, { isPreview: false });
+};
+
+// Wrapper for DeltaConstrainedOptimization to match interface
+const DeltaConstrainedOptimizationWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaConstrainedOptimization, { isPreview: false });
 };
 
 // Wrapper for GretaGradientDescentClimber to match interface
@@ -108,6 +114,7 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   eileen_pca_dimension_reducer: EileenPCADimensionReducerWrapper,
   delta_partial_derivative_explorer: DeltaPartialDerivativeExplorerWrapper,
   delta_gradient_explorer: DeltaGradientExplorerWrapper,
+  delta_constrained_optimization: DeltaConstrainedOptimizationWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
   pippa_probability_magic: PippaProbabilityMagicWrapper,
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
@@ -128,6 +135,7 @@ export {
   EileenPCADimensionReducer,
   DeltaPartialDerivativeExplorer,
   DeltaGradientExplorer,
+  DeltaConstrainedOptimization,
   GretaGradientDescentClimber,
   PippaProbabilityMagic,
   SigmundHypothesisArena,
