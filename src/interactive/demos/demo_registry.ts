@@ -3,9 +3,11 @@ import VeraVectorPlayground from '../components/vera_vector_playground';
 import VeraVectorArithmetic from '../components/vera_vector_arithmetic';
 import VeraLinearCombination from '../components/vera_linear_combination';
 import MaxMatrixTransformer from '../components/max_matrix_transformer';
+import MaxDeterminantExplorer from '../components/max_determinant_explorer';
 import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from '../components/eileen_eigenvalue_detective';
 import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
+import DeltaGradientExplorer from '../components/delta_gradient_explorer';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from '../components/pippa_probability_magic';
 import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
@@ -117,6 +119,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     tags: ['matrices', 'transformations', 'geometry', 'determinant']
   },
   {
+    id: 'max-determinant-explorer',
+    characterId: 'max',
+    title: 'Determinant Detective Agency',
+    description: 'Investigate how matrices transform shapes and discover the geometric meaning of determinants!',
+    difficulty: 'intermediate',
+    estimatedTime: '12-18 minutes',
+    learningObjectives: [
+      'Understand determinants as area scaling factors',
+      'Visualize matrix transformations geometrically',
+      'Recognize singular vs invertible matrices',
+      'Explore orientation preservation and reversal'
+    ],
+    component: MaxDeterminantExplorer,
+    status: 'ready',
+    tags: ['determinant', 'geometry', 'transformations', 'area']
+  },
+  {
     id: 'bayes-medical-diagnosis',
     characterId: 'bayes',
     title: 'Medical Mystery Solver',
@@ -166,6 +185,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: DeltaPartialDerivativeExplorer,
     status: 'ready',
     tags: ['calculus', 'derivatives', 'gradients', 'optimization']
+  },
+  {
+    id: 'delta-gradient-explorer',
+    characterId: 'delta',
+    title: 'Gradient Direction Laboratory',
+    description: 'Explore directional derivatives and discover how gradients point in the direction of steepest ascent!',
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes',
+    learningObjectives: [
+      'Understand gradients as direction of steepest ascent',
+      'Explore directional derivatives in different directions',
+      'Visualize contour lines and gradient fields',
+      'Connect partial derivatives to directional derivatives'
+    ],
+    component: DeltaGradientExplorer,
+    status: 'ready',
+    tags: ['gradients', 'directional-derivatives', 'contours', 'optimization']
   },
   {
     id: 'greta-gradient-climber',

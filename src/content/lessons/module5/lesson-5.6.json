@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how the gradient is like a mathematical compass and speedometer combined - always pointing toward steepest increase while measuring the rate of that climb!",
   "hearAudioUrl": "/audio/4.6.mp3",
   "doContent": "Use the Gradient Calculator to compute and visualize gradient vectors, practice with the Contour and Gradient Explorer, and experiment with the Gradient Field Visualizer to see vector patterns across domains.",
+  "doType": "custom",
+  "doComponent": "delta_gradient_explorer",
+  "doInstructions": "Explore how gradients point in the direction of steepest ascent! Experiment with different functions, observe contour lines, and discover how directional derivatives relate to the gradient vector. Try different points and see how the gradient changes.",
   "memoryAids": {
     "mantra": "Gradient points uphill with maximum skill - the steepest path with mathematical will!",
     "visual": "Picture Dr. Delta holding a precise mathematical compass that always points toward the steepest upward slope, with the arrow's length showing exactly how steep that climb will be."

@@ -3,9 +3,11 @@ import VeraVectorPlayground from './components/vera_vector_playground';
 import VeraVectorArithmetic from './components/vera_vector_arithmetic';
 import VeraLinearCombination from './components/vera_linear_combination';
 import MaxMatrixTransformer from './components/max_matrix_transformer';
+import MaxDeterminantExplorer from './components/max_determinant_explorer';
 import BayesMedicalDiagnosis from './components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from './components/eileen_eigenvalue_detective';
 import DeltaPartialDerivativeExplorer from './components/delta_partial_derivative_explorer';
+import DeltaGradientExplorer from './components/delta_gradient_explorer';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from './components/pippa_probability_magic';
 import SigmundHypothesisArena from './components/sigmund_hypothesis_arena';
@@ -35,6 +37,11 @@ const EileenEigenvalueDetectiveWrapper: React.ComponentType<CustomComponentProps
 // Wrapper for DeltaPartialDerivativeExplorer to match interface
 const DeltaPartialDerivativeExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(DeltaPartialDerivativeExplorer, { isPreview: false });
+};
+
+// Wrapper for DeltaGradientExplorer to match interface
+const DeltaGradientExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaGradientExplorer, { isPreview: false });
 };
 
 // Wrapper for GretaGradientDescentClimber to match interface
@@ -72,14 +79,21 @@ const VeraLinearCombinationWrapper: React.ComponentType<CustomComponentProps> = 
   return React.createElement(VeraLinearCombination, { isPreview: false });
 };
 
+// Wrapper for MaxDeterminantExplorer to match interface
+const MaxDeterminantExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(MaxDeterminantExplorer, { isPreview: false });
+};
+
 export const customDoComponents: Record<string, React.ComponentType<CustomComponentProps>> = {
   vera_vector_playground: VeraVectorPlayground,
   vera_vector_arithmetic: VeraVectorArithmeticWrapper,
   vera_linear_combination: VeraLinearCombinationWrapper,
   max_matrix_transformer: MaxMatrixTransformerWrapper,
+  max_determinant_explorer: MaxDeterminantExplorerWrapper,
   bayes_medical_diagnosis: BayesMedicalDiagnosisWrapper,
   eileen_eigenvalue_detective: EileenEigenvalueDetectiveWrapper,
   delta_partial_derivative_explorer: DeltaPartialDerivativeExplorerWrapper,
+  delta_gradient_explorer: DeltaGradientExplorerWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
   pippa_probability_magic: PippaProbabilityMagicWrapper,
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
@@ -93,9 +107,11 @@ export {
   VeraVectorArithmetic,
   VeraLinearCombination,
   MaxMatrixTransformer,
+  MaxDeterminantExplorer,
   BayesMedicalDiagnosis,
   EileenEigenvalueDetective,
   DeltaPartialDerivativeExplorer,
+  DeltaGradientExplorer,
   GretaGradientDescentClimber,
   PippaProbabilityMagic,
   SigmundHypothesisArena,

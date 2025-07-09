@@ -36,6 +36,9 @@
   "hearContent": "Listen as I explain how determinants are like measuring the transformation DNA of any matrix - they tell you exactly how powerful the transformation is and whether it flips things around!",
   "hearAudioUrl": "/audio/2.5.mp3",
   "doContent": "Practice with the Determinant Calculator for step-by-step calculations, use the Area Scaling Visualizer to see geometric meaning, and experiment with the Orientation Detector to understand sign significance.",
+  "doType": "custom",
+  "doComponent": "max_determinant_explorer",
+  "doInstructions": "Investigate how matrices transform shapes and explore the geometric meaning of determinants! Adjust matrix elements, try different shapes, and discover how determinants measure area scaling and orientation changes.",
   "memoryAids": {
     "mantra": "Transformation power in a single number - scaling factor and flip detector all in one!",
     "visual": "Picture Max measuring transformation strength with a special scale: the number shows how much areas grow or shrink, and the sign shows whether the transformation is a mirror flip."
