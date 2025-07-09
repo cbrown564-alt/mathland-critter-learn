@@ -8,15 +8,20 @@ import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from '../components/eileen_eigenvalue_detective';
 import EileenDiagonalizationExplorer from '../components/eileen_diagonalization_explorer';
 import EileenPCADimensionReducer from '../components/eileen_pca_dimension_reducer';
+import EileenMatrixPowers from '../components/eileen_matrix_powers';
+import EileenComplexEigenvalues from '../components/eileen_complex_eigenvalues';
 import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from '../components/delta_gradient_explorer';
 import DeltaConstrainedOptimization from '../components/delta_constrained_optimization';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
+import GretaHessianAnalyzer from '../components/greta_hessian_analyzer';
 import PippaProbabilityMagic from '../components/pippa_probability_magic';
 import PippaCLTDemonstration from '../components/pippa_clt_demonstration';
+import PippaRandomVariables from '../components/pippa_random_variables';
 import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from '../components/ollie_foundation_builder';
 import OllieEquationSolver from '../components/ollie_equation_solver';
+import OllieFunctionGrapher from '../components/ollie_function_grapher';
 import SageDataSynthesizer from '../components/sage_data_synthesizer';
 
 // Placeholder component for demos in development
@@ -209,6 +214,40 @@ export const interactiveDemos: InteractiveDemo[] = [
     tags: ['pca', 'eigenvalues', 'data-analysis', 'dimensionality-reduction']
   },
   {
+    id: 'eileen-matrix-powers',
+    characterId: 'eileen',
+    title: 'Matrix Time Machine',
+    description: 'Discover how eigenvalues control the future! Watch systems evolve over time and predict long-term behavior.',
+    difficulty: 'advanced',
+    estimatedTime: '30-40 minutes',
+    learningObjectives: [
+      'Compute matrix powers efficiently using diagonalization',
+      'Understand matrix exponentials and their eigenvalue computation',
+      'Analyze long-term behavior of discrete dynamical systems',
+      'Apply eigenvalue analysis to Markov chains and population models'
+    ],
+    component: EileenMatrixPowers,
+    status: 'ready',
+    tags: ['matrix-powers', 'eigenvalues', 'dynamic-systems', 'stability']
+  },
+  {
+    id: 'eileen-complex-eigenvalues',
+    characterId: 'eileen',
+    title: 'Complex Eigenvalue Dance Studio',
+    description: 'Uncover the mysteries of complex eigenvalues! Watch how they choreograph spiraling, oscillating motions.',
+    difficulty: 'advanced',
+    estimatedTime: '35-45 minutes',
+    learningObjectives: [
+      'Understand complex eigenvalues as indicators of rotational behavior',
+      'Interpret complex eigenvalue magnitude and argument geometrically',
+      'Analyze oscillatory solutions to differential equation systems',
+      'Connect complex eigenvalues to spiraling and periodic motion'
+    ],
+    component: EileenComplexEigenvalues,
+    status: 'ready',
+    tags: ['complex-eigenvalues', 'oscillations', 'spiral-motion', 'stability']
+  },
+  {
     id: 'delta-derivative-explorer',
     characterId: 'delta',
     title: 'Calculus Change Tracker',
@@ -277,6 +316,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     tags: ['optimization', 'gradient-descent', 'machine-learning', 'algorithms']
   },
   {
+    id: 'greta-hessian-analyzer',
+    characterId: 'greta',
+    title: 'Hessian Mountain Surveyor',
+    description: 'Master the art of curvature analysis! Use the Hessian matrix to distinguish between peaks, valleys, and mountain passes.',
+    difficulty: 'advanced',
+    estimatedTime: '40-50 minutes',
+    learningObjectives: [
+      'Construct the Hessian matrix of second partial derivatives',
+      'Apply the second derivative test using discriminant analysis',
+      'Classify critical points as maxima, minima, or saddle points',
+      'Understand the geometric meaning of the Hessian eigenvalues'
+    ],
+    component: GretaHessianAnalyzer,
+    status: 'ready',
+    tags: ['hessian', 'second-derivative-test', 'critical-points', 'curvature']
+  },
+  {
     id: 'pippa-probability-magic',
     characterId: 'pippa',
     title: 'Probability Magic Show',
@@ -309,6 +365,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: PippaCLTDemonstration,
     status: 'ready',
     tags: ['clt', 'sampling', 'normal-distribution', 'theorem']
+  },
+  {
+    id: 'pippa-random-variables',
+    characterId: 'pippa',
+    title: 'Random Variable Magic Show',
+    description: 'Transform chaotic outcomes into mathematical magic! Learn how random variables create beautiful distribution patterns.',
+    difficulty: 'intermediate',
+    estimatedTime: '25-35 minutes',
+    learningObjectives: [
+      'Define random variables as functions from outcomes to real numbers',
+      'Distinguish between discrete and continuous random variables',
+      'Understand probability mass functions and probability density functions',
+      'Visualize distributions and interpret their properties'
+    ],
+    component: PippaRandomVariables,
+    status: 'ready',
+    tags: ['random-variables', 'pmf', 'pdf', 'distributions']
   },
   {
     id: 'sigmund-hypothesis-tester',
@@ -360,6 +433,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: OllieEquationSolver,
     status: 'ready',
     tags: ['equations', 'algebra', 'linear', 'quadratic']
+  },
+  {
+    id: 'ollie-function-grapher',
+    characterId: 'ollie',
+    title: 'Blueprint Function Grapher',
+    description: 'Visualize functions as engineering blueprints and master different construction patterns!',
+    difficulty: 'beginner',
+    estimatedTime: '20-30 minutes',
+    learningObjectives: [
+      'Graph linear functions and identify slope and y-intercept',
+      'Graph quadratic functions and identify vertex and axis of symmetry',
+      'Graph exponential functions and understand growth patterns',
+      'Connect algebraic and graphical representations'
+    ],
+    component: OllieFunctionGrapher,
+    status: 'ready',
+    tags: ['functions', 'graphing', 'linear', 'quadratic', 'exponential']
   },
   {
     id: 'sage-data-integrator',

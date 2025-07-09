@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/16</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/16</span>
             </div>
         
             
@@ -96,7 +96,11 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -106,6 +110,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -128,17 +134,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { Toaster as Sonner } from "@/components/ui/sonner";</span>
-<span class="cstat-no" title="statement not covered" >import { TooltipProvider } from "@/components/ui/tooltip";</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { Toaster as Sonner } from "@/core/components/ui/sonner";</span>
+<span class="cstat-no" title="statement not covered" >import { TooltipProvider } from "@/core/components/ui/tooltip";</span>
 <span class="cstat-no" title="statement not covered" >import { QueryClient, QueryClientProvider } from "@tanstack/react-query";</span>
 <span class="cstat-no" title="statement not covered" >import { BrowserRouter, Routes, Route } from "react-router-dom";</span>
-<span class="cstat-no" title="statement not covered" >import Index from "./pages/Index";</span>
-<span class="cstat-no" title="statement not covered" >import ModulePage from "./pages/ModulePage";</span>
-<span class="cstat-no" title="statement not covered" >import LessonPage from "./pages/LessonPage";</span>
-<span class="cstat-no" title="statement not covered" >import NotFound from "./pages/NotFound";</span>
-<span class="cstat-no" title="statement not covered" >import Course from "./pages/Course";</span>
-<span class="cstat-no" title="statement not covered" >import ModuleDetail from "./pages/ModuleDetail";</span>
+<span class="cstat-no" title="statement not covered" >import Index from "./core/pages/Index";</span>
+<span class="cstat-no" title="statement not covered" >import ModulePage from "./core/pages/ModulePage";</span>
+<span class="cstat-no" title="statement not covered" >import LessonPage from "./core/pages/LessonPage";</span>
+<span class="cstat-no" title="statement not covered" >import NotFound from "./core/pages/NotFound";</span>
+<span class="cstat-no" title="statement not covered" >import Course from "./core/pages/Course";</span>
+<span class="cstat-no" title="statement not covered" >import ModuleDetail from "./core/pages/ModuleDetail";</span>
+<span class="cstat-no" title="statement not covered" >import Experience from "./core/pages/Experience";</span>
+<span class="cstat-no" title="statement not covered" >import Tier2Gallery from "./core/pages/Tier2Gallery";</span>
 &nbsp;
 const queryClient = <span class="cstat-no" title="statement not covered" >new QueryClient();</span>
 &nbsp;
@@ -149,10 +159,12 @@ const App = <span class="cstat-no" title="statement not covered" ><span class="f
       &lt;BrowserRouter&gt;
         &lt;Routes&gt;
           &lt;Route path="/" element={&lt;Index /&gt;} /&gt;
+          &lt;Route path="/experience" element={&lt;Experience /&gt;} /&gt;
           &lt;Route path="/module/:moduleId" element={&lt;ModulePage /&gt;} /&gt;
           &lt;Route path="/lesson/:lessonId" element={&lt;LessonPage /&gt;} /&gt;
           &lt;Route path="/course" element={&lt;Course /&gt;} /&gt;
           &lt;Route path="/module-detail/:id" element={&lt;ModuleDetail /&gt;} /&gt;
+          &lt;Route path="/tier2-gallery" element={&lt;Tier2Gallery /&gt;} /&gt;
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           &lt;Route path="*" element={&lt;NotFound /&gt;} /&gt;
         &lt;/Routes&gt;
@@ -169,7 +181,7 @@ const App = <span class="cstat-no" title="statement not covered" ><span class="f
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-06-30T10:34:17.195Z
+                at 2025-07-08T18:40:36.441Z
             </div>
         <script src="../prettify.js"></script>
         <script>

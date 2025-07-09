@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how the Hessian matrix is like a sophisticated mountain surveying tool that measures curvature in every direction, helping me distinguish between true peaks, valleys, and misleading mountain passes!",
   "hearAudioUrl": "/audio/5.3.mp3",
   "doContent": "Use the Hessian Calculator with automatic discriminant computation, practice with the Critical Point Classifier, and experiment with the Curvature Visualizer to see eigenvalue interpretation geometrically.",
+  "doType": "custom",
+  "doComponent": "greta_hessian_analyzer",
+  "doInstructions": "Master Greta's mountain surveying techniques! Use the Hessian matrix to analyze curvature and classify critical points. Experiment with different functions and manual Hessian entry to understand how the second derivative test distinguishes between peaks, valleys, and saddle points. Remember: the Hessian shows the curve!",
   "memoryAids": {
     "mantra": "Hessian shows the curve, discriminant reveals the serve - peaks curl down, valleys curl up, saddles do both with mathematical nerve!",
     "visual": "Picture Greta using a sophisticated surveying instrument that measures how the mountain curves in every direction around a flat spot, determining whether she's on a peak, in a valley, or at a mountain pass."

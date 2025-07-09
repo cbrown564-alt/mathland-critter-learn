@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how eigenvalues are like mathematical DNA - they determine whether systems grow, shrink, oscillate, or reach equilibrium over time!",
   "hearAudioUrl": "/audio/3.7.mp3",
   "doContent": "Use the Matrix Power Predictor to see long-term evolution, experiment with the Stability Analyzer based on eigenvalue magnitudes, and practice with the Markov Chain Simulator to find steady states.",
+  "doType": "custom",
+  "doComponent": "eileen_matrix_powers",
+  "doInstructions": "Step into Eileen's time machine and discover how eigenvalues control the future! Watch systems evolve over time, predict long-term behavior, and master the art of stability analysis. Remember: eigenvalue magnitude is destiny!",
   "memoryAids": {
     "mantra": "Eigenvalue size predicts the future - bigger than 1 grows, smaller than 1 shrinks, exactly 1 stays steady!",
     "visual": "Picture Eileen with a mathematical time machine where eigenvalues control the speed and direction of time travel through matrix transformations."

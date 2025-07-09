@@ -46,7 +46,7 @@ const DiagramSVG: React.FC<DiagramSVGProps> = ({
   const theme = getCharacterTheme(characterId);
   
   const applyInteractionValues = (element: DiagramElement) => {
-    let updatedElement = { ...element };
+    const updatedElement = { ...element };
     
     if (element.interactionEffects) {
       element.interactionEffects.forEach(effect => {
@@ -161,7 +161,7 @@ const DiagramSVG: React.FC<DiagramSVGProps> = ({
           />
         );
         
-      case 'arrow':
+      case 'arrow': {
         const arrowLength = Math.sqrt(
           Math.pow((updatedElement.x2 || 0) - (updatedElement.x || 0), 2) +
           Math.pow((updatedElement.y2 || 0) - (updatedElement.y || 0), 2)
@@ -195,7 +195,8 @@ const DiagramSVG: React.FC<DiagramSVGProps> = ({
             />
           </g>
         );
-        
+      }
+      
       default:
         return null;
     }

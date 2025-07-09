@@ -50,6 +50,9 @@
   "hearContent": "Listen as I explain how reading the patterns in my construction graphs is like understanding the engineering principles that make structures strong and efficient!",
   "hearAudioUrl": "/audio/0.6.mp3",
   "doContent": "Practice with the construction graphing tool, play the blueprint matching game where you connect equations to their structural shapes, and plot real engineering data to see function patterns in action.",
+  "doType": "custom",
+  "doComponent": "ollie_function_grapher",
+  "doInstructions": "Master function graphing with Ollie's blueprint visualizer! Explore linear, quadratic, and exponential functions, see how parameters affect their shapes, and identify construction patterns. Remember: each function type has its own engineering signature!",
   "hearTranscript": [
     "When I plot my construction results on a blueprint grid, they create beautiful visual patterns... each function type has its own signature shape that tells an engineering story.",
     "Linear functions create straight construction paths with consistent slope... like y equals 2x plus 3. The slope of 2 means for every 1 unit of material I add, my structure grows by 2 units. The y-intercept of 3 tells me my starting foundation height. These represent steady construction progress.",

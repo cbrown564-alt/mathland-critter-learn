@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how complex eigenvalues are like mathematical dance instructors - they choreograph spiraling, rotating, and oscillating movements in mathematical space!",
   "hearAudioUrl": "/audio/3.8.mp3",
   "doContent": "Use the Complex Eigenvalue Analyzer to decompose rotation and growth components, experiment with the Spiral Trajectory Generator, and practice with the Oscillation Predictor for dynamic systems.",
+  "doType": "custom",
+  "doComponent": "eileen_complex_eigenvalues",
+  "doInstructions": "Step into Eileen's dance studio and discover the magic of complex eigenvalues! Watch them choreograph spiraling, oscillating motions in mathematical space. Experiment with different eigenvalue pairs and see how they create everything from stable spirals to chaotic growth patterns. Remember: complex eigenvalues mean spiraling motion!",
   "memoryAids": {
     "mantra": "Complex eigenvalues mean spiraling motion - real part controls growth, imaginary part controls spinning!",
     "visual": "Picture Eileen watching mathematical dancers: complex eigenvalues choreograph spiraling motions where the real part controls how tight the spiral gets and the imaginary part controls how fast it spins."

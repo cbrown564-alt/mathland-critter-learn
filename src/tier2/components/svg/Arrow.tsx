@@ -104,8 +104,8 @@ const Arrow: React.FC<ArrowProps> = ({
 
     let labelX: number;
     let labelY: number;
-    let textAnchor = 'middle';
-    let dominantBaseline = 'middle';
+    const textAnchor = 'middle';
+    const dominantBaseline = 'middle';
 
     if (curved) {
       // For curved arrows, place label at the curve midpoint

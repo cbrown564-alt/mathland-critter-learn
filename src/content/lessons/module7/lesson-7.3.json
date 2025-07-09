@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how random variables are like magical translators that turn any chaotic experiment into organized numbers, each with its own beautiful distribution personality!",
   "hearAudioUrl": "/audio/6.3.mp3",
   "doContent": "Use the Random Variable Generator to see outcome-to-number mappings, practice with the Distribution Visualizer for PMFs and PDFs, and experiment with the CDF Explorer showing cumulative probabilities.",
+  "doType": "custom",
+  "doComponent": "pippa_random_variables",
+  "doInstructions": "Step into Pippa's magical world of random variables! Transform chaotic outcomes into organized numbers, explore discrete and continuous distributions, and master the art of PMFs and PDFs. Remember: random variables turn uncertainty into mathematical beauty!",
   "memoryAids": {
     "mantra": "Random variables turn chaos to numbers neat, distributions show which values we'll meet! PMF for discrete, PDF for flow - that's how probability patterns grow!",
     "visual": "Picture Pippa's magic wand transforming random experimental outcomes into streams of numbers, each following its own beautiful distribution pattern with characteristic shape and behavior."

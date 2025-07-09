@@ -3,17 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/core/components/ui/button";
 import { getLessonOrderForModule } from "@/utils/lessonData";
-import { getLessonProgress, isLessonCompleted } from "@/core/hooks/useLessonProgress";
-
-function getNextLessonId() {
-  const lessonOrder = getLessonOrderForModule("0");
-  for (const id of lessonOrder) {
-    if (!isLessonCompleted(id, 8)) {
-      return id;
-    }
-  }
-  return lessonOrder[lessonOrder.length - 1]; // fallback to last lesson if all complete
-}
+import { isLessonCompleted } from "@/core/hooks/useLessonProgress";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,7 +50,8 @@ export const Header = () => {
             <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
             <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
             <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
-            <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Gallery</Link>
+            <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Templates</Link>
+            <Link to="/interactive-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Interactive</Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -86,7 +77,8 @@ export const Header = () => {
               <Link to="/" className="text-slate-600 hover:text-blue-600 transition-colors">Home</Link>
               <Link to="/experience" className="text-slate-600 hover:text-blue-600 transition-colors">Experience</Link>
               <Link to="/course" className="text-slate-600 hover:text-blue-600 transition-colors">Roadmap</Link>
-              <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Gallery</Link>
+              <Link to="/tier2-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Templates</Link>
+              <Link to="/interactive-gallery" className="text-slate-600 hover:text-blue-600 transition-colors">Interactive</Link>
               <div className="pt-4">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full" onClick={handleContinue}>
                   {isNew ? "Start Learning" : "Continue Learning"}

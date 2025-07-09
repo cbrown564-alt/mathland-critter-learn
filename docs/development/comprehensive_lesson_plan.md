@@ -288,9 +288,9 @@ This document provides a comprehensive plan for implementing content across all 
 
 **Priority 2 - Advanced Visualizations**:
 5. Diagonalization explorer (4.4) - Complex linear algebra concept
-6. PCA dimension reducer (4.7) - High-value data science application
-7. Constrained optimization (5.6) - Advanced optimization technique
-8. CLT demonstration (7.8) - Fundamental statistical concept
+6. PCA dimension reducer (4.6) - High-value data science application
+7. Constrained optimization (5.9) - Advanced optimization technique
+8. CLT demonstration (7.7) - Fundamental statistical concept
 
 **Priority 3 - Specialized Applications**:
 9. MCMC sampler (9.3) - Advanced Bayesian technique

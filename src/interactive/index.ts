@@ -8,15 +8,20 @@ import BayesMedicalDiagnosis from './components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from './components/eileen_eigenvalue_detective';
 import EileenDiagonalizationExplorer from './components/eileen_diagonalization_explorer';
 import EileenPCADimensionReducer from './components/eileen_pca_dimension_reducer';
+import EileenMatrixPowers from './components/eileen_matrix_powers';
+import EileenComplexEigenvalues from './components/eileen_complex_eigenvalues';
 import DeltaPartialDerivativeExplorer from './components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from './components/delta_gradient_explorer';
 import DeltaConstrainedOptimization from './components/delta_constrained_optimization';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
+import GretaHessianAnalyzer from './components/greta_hessian_analyzer';
 import PippaProbabilityMagic from './components/pippa_probability_magic';
 import PippaCLTDemonstration from './components/pippa_clt_demonstration';
+import PippaRandomVariables from './components/pippa_random_variables';
 import SigmundHypothesisArena from './components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from './components/ollie_foundation_builder';
 import OllieEquationSolver from './components/ollie_equation_solver';
+import OllieFunctionGrapher from './components/ollie_function_grapher';
 import SageDataSynthesizer from './components/sage_data_synthesizer';
 import { LessonData } from '@/core/types/lesson';
 
@@ -49,6 +54,16 @@ const EileenPCADimensionReducerWrapper: React.ComponentType<CustomComponentProps
   return React.createElement(EileenPCADimensionReducer, { isPreview: false });
 };
 
+// Wrapper for EileenMatrixPowers to match interface
+const EileenMatrixPowersWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(EileenMatrixPowers, { isPreview: false });
+};
+
+// Wrapper for EileenComplexEigenvalues to match interface
+const EileenComplexEigenvaluesWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(EileenComplexEigenvalues, { isPreview: false });
+};
+
 // Wrapper for DeltaPartialDerivativeExplorer to match interface
 const DeltaPartialDerivativeExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(DeltaPartialDerivativeExplorer, { isPreview: false });
@@ -69,6 +84,11 @@ const GretaGradientDescentClimberWrapper: React.ComponentType<CustomComponentPro
   return React.createElement(GretaGradientDescentClimber, { isPreview: false });
 };
 
+// Wrapper for GretaHessianAnalyzer to match interface
+const GretaHessianAnalyzerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(GretaHessianAnalyzer, { isPreview: false });
+};
+
 // Wrapper for PippaProbabilityMagic to match interface
 const PippaProbabilityMagicWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(PippaProbabilityMagic, { isPreview: false });
@@ -77,6 +97,11 @@ const PippaProbabilityMagicWrapper: React.ComponentType<CustomComponentProps> = 
 // Wrapper for PippaCLTDemonstration to match interface
 const PippaCLTDemonstrationWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(PippaCLTDemonstration, { isPreview: false });
+};
+
+// Wrapper for PippaRandomVariables to match interface
+const PippaRandomVariablesWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(PippaRandomVariables, { isPreview: false });
 };
 
 // Wrapper for SigmundHypothesisArena to match interface
@@ -92,6 +117,11 @@ const OllieFoundationBuilderWrapper: React.ComponentType<CustomComponentProps> =
 // Wrapper for OllieEquationSolver to match interface
 const OllieEquationSolverWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(OllieEquationSolver, { isPreview: false });
+};
+
+// Wrapper for OllieFunctionGrapher to match interface
+const OllieFunctionGrapherWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(OllieFunctionGrapher, { isPreview: false });
 };
 
 // Wrapper for SageDataSynthesizer to match interface
@@ -124,15 +154,20 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   eileen_eigenvalue_detective: EileenEigenvalueDetectiveWrapper,
   eileen_diagonalization_explorer: EileenDiagonalizationExplorerWrapper,
   eileen_pca_dimension_reducer: EileenPCADimensionReducerWrapper,
+  eileen_matrix_powers: EileenMatrixPowersWrapper,
+  eileen_complex_eigenvalues: EileenComplexEigenvaluesWrapper,
   delta_partial_derivative_explorer: DeltaPartialDerivativeExplorerWrapper,
   delta_gradient_explorer: DeltaGradientExplorerWrapper,
   delta_constrained_optimization: DeltaConstrainedOptimizationWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
+  greta_hessian_analyzer: GretaHessianAnalyzerWrapper,
   pippa_probability_magic: PippaProbabilityMagicWrapper,
   pippa_clt_demonstration: PippaCLTDemonstrationWrapper,
+  pippa_random_variables: PippaRandomVariablesWrapper,
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
   ollie_foundation_builder: OllieFoundationBuilderWrapper,
   ollie_equation_solver: OllieEquationSolverWrapper,
+  ollie_function_grapher: OllieFunctionGrapherWrapper,
   sage_data_synthesizer: SageDataSynthesizerWrapper,
 };
 
@@ -147,14 +182,19 @@ export {
   EileenEigenvalueDetective,
   EileenDiagonalizationExplorer,
   EileenPCADimensionReducer,
+  EileenMatrixPowers,
+  EileenComplexEigenvalues,
   DeltaPartialDerivativeExplorer,
   DeltaGradientExplorer,
   DeltaConstrainedOptimization,
   GretaGradientDescentClimber,
+  GretaHessianAnalyzer,
   PippaProbabilityMagic,
   PippaCLTDemonstration,
+  PippaRandomVariables,
   SigmundHypothesisArena,
   OllieFoundationBuilder,
   OllieEquationSolver,
+  OllieFunctionGrapher,
   SageDataSynthesizer
 }; 

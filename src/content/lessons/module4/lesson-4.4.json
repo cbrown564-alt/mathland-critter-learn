@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how diagonalization is like having X-ray vision for matrices - suddenly you can see through all the complexity to the simple scaling structure hidden underneath!",
   "hearAudioUrl": "/audio/3.4.mp3",
   "doContent": "Use the Diagonalization Constructor to build PDP⁻¹ decompositions, practice with the Matrix Power Calculator that uses diagonal forms, and experiment with the Basis Change Visualizer to see diagonalization geometrically.",
+  "doType": "custom",
+  "doComponent": "eileen_diagonalization_explorer",
+  "doInstructions": "Investigate how matrices can be diagonalized! Adjust matrix parameters, explore different types of matrices, and discover the step-by-step process of constructing P and D matrices. See how diagonalization simplifies matrix powers!",
   "memoryAids": {
     "mantra": "P holds the eigenvectors, D holds the eigenvalues - together they reveal the matrix's true mathematical soul!",
     "visual": "Picture Eileen using mathematical X-ray glasses: the messy matrix becomes transparent, revealing its clean diagonal skeleton with eigenvalues lined up perfectly."
