@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain how PCA is like being a data detective - finding the few key storylines that explain most of what's happening in complex, messy datasets!",
   "hearAudioUrl": "/audio/3.6.mp3",
   "doContent": "Use the PCA Detective tool to analyze real datasets, practice with the Variance Explorer to see how eigenvalues rank importance, and experiment with the Dimension Reducer to compress data optimally.",
+  "doType": "custom",
+  "doComponent": "eileen_pca_dimension_reducer",
+  "doInstructions": "Solve data mysteries with PCA! Generate different datasets, explore how principal components capture variance, and discover how dimensionality reduction preserves essential information while eliminating noise.",
   "memoryAids": {
     "mantra": "Biggest eigenvalue, biggest story - PCA finds the main plot threads in any data mystery!",
     "visual": "Picture Eileen as a data detective using eigenvalue magnifying glasses to spot the most important patterns hidden in clouds of messy data points."

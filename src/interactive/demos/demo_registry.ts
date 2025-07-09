@@ -6,6 +6,8 @@ import MaxMatrixTransformer from '../components/max_matrix_transformer';
 import MaxDeterminantExplorer from '../components/max_determinant_explorer';
 import BayesMedicalDiagnosis from '../components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from '../components/eileen_eigenvalue_detective';
+import EileenDiagonalizationExplorer from '../components/eileen_diagonalization_explorer';
+import EileenPCADimensionReducer from '../components/eileen_pca_dimension_reducer';
 import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from '../components/delta_gradient_explorer';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
@@ -168,6 +170,40 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: EileenEigenvalueDetective,
     status: 'ready',
     tags: ['eigenvalues', 'eigenvectors', 'linear-algebra', 'pca']
+  },
+  {
+    id: 'eileen-diagonalization-explorer',
+    characterId: 'eileen',
+    title: 'Diagonalization Detective Lab',
+    description: 'Investigate how matrices can be diagonalized and discover the power of eigenvalue decomposition!',
+    difficulty: 'advanced',
+    estimatedTime: '18-25 minutes',
+    learningObjectives: [
+      'Understand matrix diagonalization A = PDP⁻¹',
+      'Visualize eigenspaces and eigenvector relationships',
+      'Explore the process of constructing P and D matrices',
+      'Connect diagonalization to matrix powers and applications'
+    ],
+    component: EileenDiagonalizationExplorer,
+    status: 'ready',
+    tags: ['diagonalization', 'eigenvalues', 'matrix-decomposition', 'linear-algebra']
+  },
+  {
+    id: 'eileen-pca-dimension-reducer',
+    characterId: 'eileen',
+    title: 'PCA Dimension Reducer',
+    description: 'Discover hidden patterns in data and reduce dimensions while preserving variance!',
+    difficulty: 'advanced',
+    estimatedTime: '20-30 minutes',
+    learningObjectives: [
+      'Understand PCA as eigenvalue decomposition of covariance matrices',
+      'Compute principal components from real data',
+      'Visualize dimensionality reduction and variance preservation',
+      'Apply PCA to different types of datasets'
+    ],
+    component: EileenPCADimensionReducer,
+    status: 'ready',
+    tags: ['pca', 'eigenvalues', 'data-analysis', 'dimensionality-reduction']
   },
   {
     id: 'delta-derivative-explorer',

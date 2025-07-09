@@ -6,6 +6,8 @@ import MaxMatrixTransformer from './components/max_matrix_transformer';
 import MaxDeterminantExplorer from './components/max_determinant_explorer';
 import BayesMedicalDiagnosis from './components/bayes_medical_diagnosis';
 import EileenEigenvalueDetective from './components/eileen_eigenvalue_detective';
+import EileenDiagonalizationExplorer from './components/eileen_diagonalization_explorer';
+import EileenPCADimensionReducer from './components/eileen_pca_dimension_reducer';
 import DeltaPartialDerivativeExplorer from './components/delta_partial_derivative_explorer';
 import DeltaGradientExplorer from './components/delta_gradient_explorer';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
@@ -32,6 +34,16 @@ const BayesMedicalDiagnosisWrapper: React.ComponentType<CustomComponentProps> = 
 // Wrapper for EileenEigenvalueDetective to match interface
 const EileenEigenvalueDetectiveWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(EileenEigenvalueDetective, { isPreview: false });
+};
+
+// Wrapper for EileenDiagonalizationExplorer to match interface
+const EileenDiagonalizationExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(EileenDiagonalizationExplorer, { isPreview: false });
+};
+
+// Wrapper for EileenPCADimensionReducer to match interface
+const EileenPCADimensionReducerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(EileenPCADimensionReducer, { isPreview: false });
 };
 
 // Wrapper for DeltaPartialDerivativeExplorer to match interface
@@ -92,6 +104,8 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   max_determinant_explorer: MaxDeterminantExplorerWrapper,
   bayes_medical_diagnosis: BayesMedicalDiagnosisWrapper,
   eileen_eigenvalue_detective: EileenEigenvalueDetectiveWrapper,
+  eileen_diagonalization_explorer: EileenDiagonalizationExplorerWrapper,
+  eileen_pca_dimension_reducer: EileenPCADimensionReducerWrapper,
   delta_partial_derivative_explorer: DeltaPartialDerivativeExplorerWrapper,
   delta_gradient_explorer: DeltaGradientExplorerWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
@@ -110,6 +124,8 @@ export {
   MaxDeterminantExplorer,
   BayesMedicalDiagnosis,
   EileenEigenvalueDetective,
+  EileenDiagonalizationExplorer,
+  EileenPCADimensionReducer,
   DeltaPartialDerivativeExplorer,
   DeltaGradientExplorer,
   GretaGradientDescentClimber,
