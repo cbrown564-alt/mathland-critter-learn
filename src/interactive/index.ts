@@ -16,6 +16,7 @@ import PippaProbabilityMagic from './components/pippa_probability_magic';
 import PippaCLTDemonstration from './components/pippa_clt_demonstration';
 import SigmundHypothesisArena from './components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from './components/ollie_foundation_builder';
+import OllieEquationSolver from './components/ollie_equation_solver';
 import SageDataSynthesizer from './components/sage_data_synthesizer';
 import { LessonData } from '@/core/types/lesson';
 
@@ -88,6 +89,11 @@ const OllieFoundationBuilderWrapper: React.ComponentType<CustomComponentProps> =
   return React.createElement(OllieFoundationBuilder, { isPreview: false });
 };
 
+// Wrapper for OllieEquationSolver to match interface
+const OllieEquationSolverWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(OllieEquationSolver, { isPreview: false });
+};
+
 // Wrapper for SageDataSynthesizer to match interface
 const SageDataSynthesizerWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(SageDataSynthesizer, { isPreview: false });
@@ -126,6 +132,7 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   pippa_clt_demonstration: PippaCLTDemonstrationWrapper,
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
   ollie_foundation_builder: OllieFoundationBuilderWrapper,
+  ollie_equation_solver: OllieEquationSolverWrapper,
   sage_data_synthesizer: SageDataSynthesizerWrapper,
 };
 
@@ -148,5 +155,6 @@ export {
   PippaCLTDemonstration,
   SigmundHypothesisArena,
   OllieFoundationBuilder,
+  OllieEquationSolver,
   SageDataSynthesizer
 }; 

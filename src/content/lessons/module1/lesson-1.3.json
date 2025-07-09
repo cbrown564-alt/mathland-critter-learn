@@ -49,6 +49,9 @@
   "hearContent": "Listen as I explain how finding the balance point in equations is just like finding the perfect water level for my dam - everything has to be in perfect equilibrium!",
   "hearAudioUrl": "/audio/0.3.mp3",
   "doContent": "Use an interactive equation solver with visual feedback, practice with the quadratic formula calculator, and solve real-world word problems step by step.",
+  "doType": "custom",
+  "doComponent": "ollie_equation_solver",
+  "doInstructions": "Master equation solving with Ollie's balance principle! Practice linear and quadratic equations, see step-by-step solutions, and learn to check your answers. Remember: what you do to one side, do to the other!",
   "hearTranscript": [
     "Solving equations is like being a mathematical detective... you're systematically uncovering the value of unknown variables using logical steps and proven techniques.",
     "Linear equations are the straightforward cases. If I have 3x plus 7 equals 22, I solve it step by step... subtract 7 from both sides to get 3x equals 15, then divide both sides by 3 to find x equals 5. It's like following a clear construction sequence... each step moves me closer to the solution.",

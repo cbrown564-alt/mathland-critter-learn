@@ -16,6 +16,7 @@ import PippaProbabilityMagic from '../components/pippa_probability_magic';
 import PippaCLTDemonstration from '../components/pippa_clt_demonstration';
 import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from '../components/ollie_foundation_builder';
+import OllieEquationSolver from '../components/ollie_equation_solver';
 import SageDataSynthesizer from '../components/sage_data_synthesizer';
 
 // Placeholder component for demos in development
@@ -342,6 +343,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: OllieFoundationBuilder,
     status: 'ready',
     tags: ['algebra', 'foundations', 'factoring', 'expanding']
+  },
+  {
+    id: 'ollie-equation-solver',
+    characterId: 'ollie',
+    title: 'Equation Balance Builder',
+    description: 'Master linear and quadratic equations with step-by-step solutions and balance principles!',
+    difficulty: 'beginner',
+    estimatedTime: '15-25 minutes',
+    learningObjectives: [
+      'Solve linear equations systematically',
+      'Apply the quadratic formula to solve quadratic equations',
+      'Understand the balance principle in equation solving',
+      'Check solutions by substitution'
+    ],
+    component: OllieEquationSolver,
+    status: 'ready',
+    tags: ['equations', 'algebra', 'linear', 'quadratic']
   },
   {
     id: 'sage-data-integrator',
