@@ -13,6 +13,7 @@ import DeltaGradientExplorer from '../components/delta_gradient_explorer';
 import DeltaConstrainedOptimization from '../components/delta_constrained_optimization';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from '../components/pippa_probability_magic';
+import PippaCLTDemonstration from '../components/pippa_clt_demonstration';
 import SigmundHypothesisArena from '../components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from '../components/ollie_foundation_builder';
 import SageDataSynthesizer from '../components/sage_data_synthesizer';
@@ -290,6 +291,23 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: PippaProbabilityMagic,
     status: 'ready',
     tags: ['probability', 'distributions', 'discrete', 'simulation']
+  },
+  {
+    id: 'pippa-clt-demonstration',
+    characterId: 'pippa',
+    title: 'Central Limit Theorem Magic Show',
+    description: 'Witness the most magical theorem in probability! Watch any distribution become bell-shaped through averaging!',
+    difficulty: 'advanced',
+    estimatedTime: '20-30 minutes',
+    learningObjectives: [
+      'Understand the Central Limit Theorem in action',
+      'Observe how sample means approach normality',
+      'Explore CLT with different starting distributions',
+      'Connect sample size to standard error reduction'
+    ],
+    component: PippaCLTDemonstration,
+    status: 'ready',
+    tags: ['clt', 'sampling', 'normal-distribution', 'theorem']
   },
   {
     id: 'sigmund-hypothesis-tester',

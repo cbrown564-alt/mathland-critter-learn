@@ -13,6 +13,7 @@ import DeltaGradientExplorer from './components/delta_gradient_explorer';
 import DeltaConstrainedOptimization from './components/delta_constrained_optimization';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
 import PippaProbabilityMagic from './components/pippa_probability_magic';
+import PippaCLTDemonstration from './components/pippa_clt_demonstration';
 import SigmundHypothesisArena from './components/sigmund_hypothesis_arena';
 import OllieFoundationBuilder from './components/ollie_foundation_builder';
 import SageDataSynthesizer from './components/sage_data_synthesizer';
@@ -72,6 +73,11 @@ const PippaProbabilityMagicWrapper: React.ComponentType<CustomComponentProps> = 
   return React.createElement(PippaProbabilityMagic, { isPreview: false });
 };
 
+// Wrapper for PippaCLTDemonstration to match interface
+const PippaCLTDemonstrationWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(PippaCLTDemonstration, { isPreview: false });
+};
+
 // Wrapper for SigmundHypothesisArena to match interface
 const SigmundHypothesisArenaWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(SigmundHypothesisArena, { isPreview: false });
@@ -117,6 +123,7 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   delta_constrained_optimization: DeltaConstrainedOptimizationWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
   pippa_probability_magic: PippaProbabilityMagicWrapper,
+  pippa_clt_demonstration: PippaCLTDemonstrationWrapper,
   sigmund_hypothesis_arena: SigmundHypothesisArenaWrapper,
   ollie_foundation_builder: OllieFoundationBuilderWrapper,
   sage_data_synthesizer: SageDataSynthesizerWrapper,
@@ -138,6 +145,7 @@ export {
   DeltaConstrainedOptimization,
   GretaGradientDescentClimber,
   PippaProbabilityMagic,
+  PippaCLTDemonstration,
   SigmundHypothesisArena,
   OllieFoundationBuilder,
   SageDataSynthesizer

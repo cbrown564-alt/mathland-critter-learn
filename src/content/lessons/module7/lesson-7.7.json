@@ -34,6 +34,9 @@
   "hearContent": "Listen as I explain the most magical theorems in probability - how randomness becomes predictable through averaging, and how the bell curve emerges from any starting distribution like nature's universal pattern!",
   "hearAudioUrl": "/audio/6.7.mp3",
   "doContent": "Use the LLN Simulator showing convergence with increasing sample sizes, practice with the CLT Demonstrator for different starting distributions, and experiment with the Normal Approximation Calculator.",
+  "doType": "custom",
+  "doComponent": "pippa_clt_demonstration",
+  "doInstructions": "Experience the magic of the Central Limit Theorem! Start with any distribution - uniform, exponential, skewed, or bimodal - and watch how sample means always become bell-shaped. Experiment with different sample sizes to see how the magic strengthens!",
   "memoryAids": {
     "mantra": "Large numbers make averages true, Central Limit makes them Normal too! Any start becomes bell-shaped when averaged with mathematical grace!",
     "visual": "Picture Pippa repeatedly pulling from any magical distribution, watching the averages converge to a predictable center (LLN) and form a beautiful bell curve shape (CLT) regardless of the original chaos."
