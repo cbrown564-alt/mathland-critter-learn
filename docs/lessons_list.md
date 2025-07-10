@@ -3,6 +3,7 @@
 Generated on: 2025-07-09T09:19:20.322Z
 
 Total Lessons: 96
+Total Interactive Components: 37 (24 completed, 13 remaining)
 
 
 ## Module 1
@@ -11,10 +12,10 @@ Total Lessons: 96
 |-----------|-------|----------|-----------|----------------------|
 | 1.1 | Order of Operations & Algebraic Basics | 25 min | ollie | N/A |
 | 1.2 | Factoring & Expanding Expressions | 30-35 minutes | ollie | ollie_foundation_builder |
-| 1.3 | Linear & Quadratic Equations | 35-40 minutes | ollie | N/A |
+| 1.3 | Linear & Quadratic Equations | 35-40 minutes | ollie | ollie_equation_solver |
 | 1.4 | Inequalities & Absolute Values | 25-30 minutes | ollie | N/A |
 | 1.5 | Function Notation & Concepts | 30-35 minutes | ollie | N/A |
-| 1.6 | Graphing Functions | 40-45 minutes | ollie | N/A |
+| 1.6 | Graphing Functions | 40-45 minutes | ollie | ollie_function_grapher |
 | 1.7 | Coordinate Geometry Essentials | 25-30 minutes | ollie | N/A |
 | 1.8 | Vectors & Greek Symbols Preview | 20-25 minutes | vera | N/A |
 
@@ -30,7 +31,7 @@ Total Lessons: 96
 | 2.6 | Linear Independence - Fundamental Directions | 35-40 minutes | vera | N/A |
 | 2.7 | Basis and Dimension - The Foundation Framework | 40-45 minutes | vera | N/A |
 | 2.8 | Vector Spaces - The Abstract Framework | 35-40 minutes | vera | N/A |
-| 2.9 | Vera's Forest Mapping Capstone Project | 45-60 minutes | vera | N/A |
+| 2.9 | Vera's Forest Mapping Capstone Project | 45-60 minutes | vera | *planned* |
 
 ## Module 3
 
@@ -57,24 +58,24 @@ Total Lessons: 96
 | 4.4 | Diagonalization - Revealing Matrix Structure | 45-50 minutes | eileen | eileen_diagonalization_explorer |
 | 4.5 | Symmetric Matrices & Orthogonal Diagonalization | 40-45 minutes | eileen | N/A |
 | 4.6 | Applications: PCA & Data Analysis | 45-50 minutes | eileen | eileen_pca_dimension_reducer |
-| 4.7 | Matrix Powers & Exponentials | 35-40 minutes | eileen | N/A |
-| 4.8 | Complex Eigenvalues & Oscillatory Behavior | 40-45 minutes | eileen | N/A |
-| 4.9 | Eileen's Pattern Discovery Capstone Project | 50-60 minutes | eileen | N/A |
+| 4.7 | Matrix Powers & Exponentials | 35-40 minutes | eileen | eileen_matrix_powers |
+| 4.8 | Complex Eigenvalues & Oscillatory Behavior | 40-45 minutes | eileen | eileen_complex_eigenvalues |
+| 4.9 | Eileen's Pattern Discovery Capstone Project | 50-60 minutes | eileen | *planned* |
 
 ## Module 5
 
 | Lesson ID | Title | Duration | Character | Interactive Component |
 |-----------|-------|----------|-----------|----------------------|
 | 5.1 | Introduction to Multivariable Functions | 30-35 minutes | delta | delta_partial_derivative_explorer |
-| 5.2 | Limits in Multivariable Calculus | 40-45 minutes | delta | N/A |
-| 5.3 | Continuity and Surfaces | 35-40 minutes | delta | N/A |
-| 5.4 | Introduction to Partial Derivatives | 40-45 minutes | delta | N/A |
+| 5.2 | Limits in Multivariable Calculus | 40-45 minutes | delta | *planned* |
+| 5.3 | Continuity and Surfaces | 35-40 minutes | delta | *planned* |
+| 5.4 | Introduction to Partial Derivatives | 40-45 minutes | delta | *planned* |
 | 5.5 | Computing Partial Derivatives | 35-40 minutes | delta | N/A |
 | 5.6 | The Gradient Vector | 45-50 minutes | delta | delta_gradient_explorer |
-| 5.7 | Directional Derivatives | 40-45 minutes | delta | N/A |
-| 5.8 | The Jacobian Matrix | 45-50 minutes | delta | N/A |
+| 5.7 | Directional Derivatives | 40-45 minutes | delta | *planned* |
+| 5.8 | The Jacobian Matrix | 45-50 minutes | delta | *planned* |
 | 5.9 | Applications: Optimization Preview | 40-45 minutes | delta | delta_constrained_optimization |
-| 5.10 | Dr. Delta's Multivariable Calculus Capstone | 50-60 minutes | delta | N/A |
+| 5.10 | Dr. Delta's Multivariable Calculus Capstone | 50-60 minutes | delta | *planned* |
 
 ## Module 6
 
@@ -82,14 +83,14 @@ Total Lessons: 96
 |-----------|-------|----------|-----------|----------------------|
 | 6.1 | Introduction to Optimization | 35-40 minutes | greta | N/A |
 | 6.2 | Critical Points & The First Derivative Test | 40-45 minutes | greta | N/A |
-| 6.3 | The Second Derivative Test & Hessian Matrix | 45-50 minutes | greta | N/A |
+| 6.3 | The Second Derivative Test & Hessian Matrix | 45-50 minutes | greta | greta_hessian_analyzer |
 | 6.4 | Convex vs Non-Convex Functions | 40-45 minutes | greta | N/A |
 | 6.5 | Introduction to Gradient Descent | 45-50 minutes | greta | greta_gradient_descent_climber |
 | 6.6 | Step Size & Learning Rate Selection | 40-45 minutes | greta | N/A |
-| 6.7 | Momentum & Advanced Gradient Methods | 45-50 minutes | greta | N/A |
+| 6.7 | Momentum & Advanced Gradient Methods | 45-50 minutes | greta | *planned* |
 | 6.8 | Constrained Optimization Preview | 40-45 minutes | greta | N/A |
 | 6.9 | Global vs Local Optimization | 40-45 minutes | greta | N/A |
-| 6.10 | Greta's Optimization Mastery Capstone | 50-60 minutes | greta | N/A |
+| 6.10 | Greta's Optimization Mastery Capstone | 50-60 minutes | greta | *planned* |
 
 ## Module 7
 
@@ -97,14 +98,14 @@ Total Lessons: 96
 |-----------|-------|----------|-----------|----------------------|
 | 7.1 | Introduction to Probability & Sample Spaces | 35-40 minutes | pippa | N/A |
 | 7.2 | Conditional Probability & Independence | 40-45 minutes | pippa | N/A |
-| 7.3 | Random Variables & Probability Distributions | 40-45 minutes | pippa | N/A |
+| 7.3 | Random Variables & Probability Distributions | 40-45 minutes | pippa | pippa_random_variables |
 | 7.4 | Common Discrete Distributions | 45-50 minutes | pippa | pippa_probability_magic |
 | 7.5 | Common Continuous Distributions | 45-50 minutes | pippa | N/A |
 | 7.6 | Expectation & Variance | 40-45 minutes | pippa | N/A |
 | 7.7 | Law of Large Numbers & Central Limit Theorem | 45-50 minutes | pippa | pippa_clt_demonstration |
 | 7.8 | PDF vs CDF: Complete Distribution Descriptions | 40-45 minutes | pippa | N/A |
-| 7.9 | Sampling & Sampling Variability | 40-45 minutes | pippa | N/A |
-| 7.10 | Pippa's Probability & Distributions Capstone | 50-60 minutes | pippa | N/A |
+| 7.9 | Sampling & Sampling Variability | 40-45 minutes | pippa | *planned* |
+| 7.10 | Pippa's Probability & Distributions Capstone | 50-60 minutes | pippa | *planned* |
 
 ## Module 8
 
@@ -134,7 +135,7 @@ Total Lessons: 96
 | 9.7 | Bayes Factors & Model Comparison | 45-50 minutes | bayes | N/A |
 | 9.8 | Real-World Applications: Medical Diagnosis | 45-50 minutes | bayes | N/A |
 | 9.9 | Real-World Applications: Spam Filtering | 40-45 minutes | bayes | N/A |
-| 9.10 | Bayes' Bayesian Inference Mastery Capstone | 50-60 minutes | bayes | N/A |
+| 9.10 | Bayes' Bayesian Inference Mastery Capstone | 50-60 minutes | bayes | *planned* |
 
 ## Module 10
 

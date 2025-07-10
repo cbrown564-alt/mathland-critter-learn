@@ -197,8 +197,10 @@ This document provides a comprehensive development plan for creating interactive
 
 ### Interactive Components Status
 
-**Completed (18/37)**:
+**Completed (24/37)**:
 - 1.2: ollie_foundation_builder (ollie)
+- 1.3: ollie_equation_solver (ollie)
+- 1.6: ollie_function_grapher (ollie)
 - 2.1: vera_vector_playground (vera)
 - 2.2: vera_vector_arithmetic (vera)
 - 2.5: vera_linear_combination (vera)
@@ -207,33 +209,30 @@ This document provides a comprehensive development plan for creating interactive
 - 4.2: eileen_eigenvalue_detective (eileen)
 - 4.4: eileen_diagonalization_explorer (eileen)
 - 4.6: eileen_pca_dimension_reducer (eileen)
+- 4.7: eileen_matrix_powers (eileen)
+- 4.8: eileen_complex_eigenvalues (eileen)
 - 5.1: delta_partial_derivative_explorer (delta)
 - 5.6: delta_gradient_explorer (delta)
 - 5.9: delta_constrained_optimization (delta)
+- 6.3: greta_hessian_analyzer (greta)
 - 6.5: greta_gradient_descent_climber (greta)
+- 7.3: pippa_random_variables (pippa)
 - 7.4: pippa_probability_magic (pippa)
 - 7.7: pippa_clt_demonstration (pippa)
 - 8.4: sigmund_hypothesis_arena (sigmund)
 - 9.2: bayes_medical_diagnosis (bayes)
 - 10.5: sage_data_synthesizer (sage)
 
-**Remaining (19/37)**:
-- 1.3: Linear & Quadratic Equations (ollie)
-- 1.6: Graphing Functions (ollie)
+**Remaining (13/37)**:
 - 2.9: Vera's Forest Mapping Capstone Project (vera)
-- 4.7: Matrix Powers & Exponentials (eileen)
-- 4.8: Complex Eigenvalues & Oscillatory Behavior (eileen)
 - 4.9: Eileen's Pattern Discovery Capstone Project (eileen)
 - 5.2: Limits in Multivariable Calculus (delta)
 - 5.3: Continuity and Surfaces (delta)
-- 5.4: Introduction to Partial Derivatives (delta)
 - 5.7: Directional Derivatives (delta)
 - 5.8: The Jacobian Matrix (delta)
 - 5.10: Dr. Delta's Multivariable Calculus Capstone (delta)
-- 6.3: The Second Derivative Test & Hessian Matrix (greta)
 - 6.7: Momentum & Advanced Gradient Methods (greta)
 - 6.10: Greta's Optimization Mastery Capstone (greta)
-- 7.3: Random Variables & Probability Distributions (pippa)
 - 7.9: Sampling & Sampling Variability (pippa)
 - 7.10: Pippa's Probability & Distributions Capstone (pippa)
 - 9.10: Bayes' Bayesian Inference Mastery Capstone (bayes)
