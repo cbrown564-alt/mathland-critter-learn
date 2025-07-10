@@ -11,8 +11,12 @@ import EileenPCADimensionReducer from '../components/eileen_pca_dimension_reduce
 import EileenMatrixPowers from '../components/eileen_matrix_powers';
 import EileenComplexEigenvalues from '../components/eileen_complex_eigenvalues';
 import DeltaPartialDerivativeExplorer from '../components/delta_partial_derivative_explorer';
+import DeltaLimitsExplorer from '../components/delta_limits_explorer';
+import DeltaContinuitySurfaces from '../components/delta_continuity_surfaces';
 import DeltaGradientExplorer from '../components/delta_gradient_explorer';
 import DeltaConstrainedOptimization from '../components/delta_constrained_optimization';
+import DeltaDirectionalDerivatives from '../components/delta_directional_derivatives';
+import DeltaJacobianMatrix from '../components/delta_jacobian_matrix';
 import GretaGradientDescentClimber from '../components/greta_gradient_descent_climber';
 import GretaHessianAnalyzer from '../components/greta_hessian_analyzer';
 import PippaProbabilityMagic from '../components/pippa_probability_magic';
@@ -265,6 +269,40 @@ export const interactiveDemos: InteractiveDemo[] = [
     tags: ['calculus', 'derivatives', 'gradients', 'optimization']
   },
   {
+    id: 'delta-limits-explorer',
+    characterId: 'delta',
+    title: 'Multivariable Limits Explorer',
+    description: 'Master multivariable limits! Test path independence and discover when limits exist or fail',
+    difficulty: 'advanced',
+    estimatedTime: '18-25 minutes',
+    learningObjectives: [
+      'Understand limits require agreement along all approach paths',
+      'Identify path-dependent functions where limits don\'t exist',
+      'Apply direct substitution for continuous functions',
+      'Use polar coordinates and squeeze theorem for complex limits'
+    ],
+    component: DeltaLimitsExplorer,
+    status: 'ready',
+    tags: ['limits', 'multivariable', 'path-independence', 'continuity']
+  },
+  {
+    id: 'delta-continuity-surfaces',
+    characterId: 'delta',
+    title: 'Continuity & Surfaces Explorer',
+    description: 'Visualize continuity as smooth surfaces! Discover discontinuities and their geometric interpretations',
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes',
+    learningObjectives: [
+      'Define continuity for multivariable functions using limits',
+      'Visualize continuity as smooth, unbroken surfaces',
+      'Identify and classify different types of discontinuities',
+      'Understand the geometric interpretation of surface smoothness'
+    ],
+    component: DeltaContinuitySurfaces,
+    status: 'ready',
+    tags: ['continuity', 'surfaces', 'discontinuities', '3d-visualization']
+  },
+  {
     id: 'delta-gradient-explorer',
     characterId: 'delta',
     title: 'Gradient Direction Laboratory',
@@ -280,6 +318,40 @@ export const interactiveDemos: InteractiveDemo[] = [
     component: DeltaGradientExplorer,
     status: 'ready',
     tags: ['gradients', 'directional-derivatives', 'contours', 'optimization']
+  },
+  {
+    id: 'delta-directional-derivatives',
+    characterId: 'delta',
+    title: 'Directional Derivative Laboratory',
+    description: 'Master directional derivatives! Explore how functions change in any direction using D_û f = ∇f · û',
+    difficulty: 'advanced',
+    estimatedTime: '15-20 minutes',
+    learningObjectives: [
+      'Understand directional derivatives as D_û f = ∇f · û',
+      'Find maximum and minimum directional derivatives',
+      'Identify directions of zero change (perpendicular to gradient)',
+      'Explore relationship between gradient and directional derivatives'
+    ],
+    component: DeltaDirectionalDerivatives,
+    status: 'ready',
+    tags: ['directional-derivatives', 'gradients', 'dot-product', 'calculus']
+  },
+  {
+    id: 'delta-jacobian-matrix',
+    characterId: 'delta',
+    title: 'Jacobian Matrix Laboratory',
+    description: 'Master the Jacobian matrix! Organize all partial derivatives and visualize vector transformations',
+    difficulty: 'advanced',
+    estimatedTime: '20-30 minutes',
+    learningObjectives: [
+      'Understand Jacobian matrix structure for vector functions',
+      'Compute and interpret Jacobian determinants',
+      'Visualize linear approximations using the Jacobian',
+      'Apply Jacobians to transformation analysis'
+    ],
+    component: DeltaJacobianMatrix,
+    status: 'ready',
+    tags: ['jacobian', 'vector-functions', 'transformations', 'linear-approximation']
   },
   {
     id: 'delta-constrained-optimization',

@@ -33,7 +33,9 @@
   "seeContent": "Watch interactive demonstrations showing different approach paths to the same point, observe cases where limits exist versus cases where path-dependence creates non-existence, and see polar coordinate transformations that simplify complex limit calculations.",
   "hearContent": "Listen as I explain how multivariable limits are like a hedgehog's careful approach to home - we must check every possible path to ensure they all lead to the same mathematical destination!",
   "hearAudioUrl": "/audio/4.2.mp3",
-  "doContent": "Use the Path Explorer to test different approach routes, practice with the Limit Calculator that checks path independence, and experiment with the Polar Coordinate Transformer for challenging limit problems.",
+  "doType": "custom",
+  "doComponent": "delta_limits_explorer",
+  "doContent": "Use Dr. Delta's Multivariable Limits Explorer to test path independence! Try different functions and approach paths to discover when limits exist.",
   "memoryAids": {
     "mantra": "All paths must agree for the limit to be - that's multivariable precision, you see!",
     "visual": "Picture Dr. Delta testing every possible route to a point, like a careful hedgehog ensuring all paths through the mathematical forest lead to the same precise destination."

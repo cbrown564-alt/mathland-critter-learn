@@ -11,7 +11,11 @@ import EileenPCADimensionReducer from './components/eileen_pca_dimension_reducer
 import EileenMatrixPowers from './components/eileen_matrix_powers';
 import EileenComplexEigenvalues from './components/eileen_complex_eigenvalues';
 import DeltaPartialDerivativeExplorer from './components/delta_partial_derivative_explorer';
+import DeltaLimitsExplorer from './components/delta_limits_explorer';
+import DeltaContinuitySurfaces from './components/delta_continuity_surfaces';
 import DeltaGradientExplorer from './components/delta_gradient_explorer';
+import DeltaDirectionalDerivatives from './components/delta_directional_derivatives';
+import DeltaJacobianMatrix from './components/delta_jacobian_matrix';
 import DeltaConstrainedOptimization from './components/delta_constrained_optimization';
 import GretaGradientDescentClimber from './components/greta_gradient_descent_climber';
 import GretaHessianAnalyzer from './components/greta_hessian_analyzer';
@@ -69,9 +73,29 @@ const DeltaPartialDerivativeExplorerWrapper: React.ComponentType<CustomComponent
   return React.createElement(DeltaPartialDerivativeExplorer, { isPreview: false });
 };
 
+// Wrapper for DeltaLimitsExplorer to match interface
+const DeltaLimitsExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaLimitsExplorer, { isPreview: false });
+};
+
+// Wrapper for DeltaContinuitySurfaces to match interface
+const DeltaContinuitySurfacesWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaContinuitySurfaces, { isPreview: false });
+};
+
 // Wrapper for DeltaGradientExplorer to match interface
 const DeltaGradientExplorerWrapper: React.ComponentType<CustomComponentProps> = () => {
   return React.createElement(DeltaGradientExplorer, { isPreview: false });
+};
+
+// Wrapper for DeltaDirectionalDerivatives to match interface
+const DeltaDirectionalDerivativesWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaDirectionalDerivatives, { isPreview: false });
+};
+
+// Wrapper for DeltaJacobianMatrix to match interface
+const DeltaJacobianMatrixWrapper: React.ComponentType<CustomComponentProps> = () => {
+  return React.createElement(DeltaJacobianMatrix, { isPreview: false });
 };
 
 // Wrapper for DeltaConstrainedOptimization to match interface
@@ -157,7 +181,11 @@ export const customDoComponents: Record<string, React.ComponentType<CustomCompon
   eileen_matrix_powers: EileenMatrixPowersWrapper,
   eileen_complex_eigenvalues: EileenComplexEigenvaluesWrapper,
   delta_partial_derivative_explorer: DeltaPartialDerivativeExplorerWrapper,
+  delta_limits_explorer: DeltaLimitsExplorerWrapper,
+  delta_continuity_surfaces: DeltaContinuitySurfacesWrapper,
   delta_gradient_explorer: DeltaGradientExplorerWrapper,
+  delta_directional_derivatives: DeltaDirectionalDerivativesWrapper,
+  delta_jacobian_matrix: DeltaJacobianMatrixWrapper,
   delta_constrained_optimization: DeltaConstrainedOptimizationWrapper,
   greta_gradient_descent_climber: GretaGradientDescentClimberWrapper,
   greta_hessian_analyzer: GretaHessianAnalyzerWrapper,
@@ -185,7 +213,11 @@ export {
   EileenMatrixPowers,
   EileenComplexEigenvalues,
   DeltaPartialDerivativeExplorer,
+  DeltaLimitsExplorer,
+  DeltaContinuitySurfaces,
   DeltaGradientExplorer,
+  DeltaDirectionalDerivatives,
+  DeltaJacobianMatrix,
   DeltaConstrainedOptimization,
   GretaGradientDescentClimber,
   GretaHessianAnalyzer,

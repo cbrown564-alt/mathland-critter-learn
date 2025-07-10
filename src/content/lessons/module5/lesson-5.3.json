@@ -33,7 +33,9 @@
   "seeContent": "Visualize smooth continuous surfaces versus discontinuous functions with holes and jumps, explore how composition creates complex continuous surfaces from simple building blocks, and observe the geometric interpretation of different discontinuity types.",
   "hearContent": "Listen as I explain how continuity creates mathematical surfaces as smooth as a hedgehog's quills - every point flows seamlessly into its neighbors without any jarring discontinuities!",
   "hearAudioUrl": "/audio/4.3.mp3",
-  "doContent": "Use the Continuity Checker to test function smoothness, practice with the Surface Explorer that highlights discontinuities, and experiment with the Composition Builder to create complex continuous functions.",
+  "doType": "custom",
+  "doComponent": "delta_continuity_surfaces",
+  "doContent": "Use Dr. Delta's Continuity & Surfaces Explorer to visualize mathematical smoothness! Toggle between 3D and 2D views to discover discontinuities.",
   "memoryAids": {
     "mantra": "Smooth as hedgehog quills, no jumps or tears - that's continuity everywhere!",
     "visual": "Picture Dr. Delta running his precise paws across a perfectly smooth mathematical surface, like checking that every quill on his back flows seamlessly into the next without any gaps or jumps."

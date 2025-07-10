@@ -33,7 +33,9 @@
   "seeContent": "Watch Jacobian matrix construction for various vector functions, see how linear approximations relate to actual transformations, and observe how Jacobian determinants predict area scaling in coordinate transformations.",
   "hearContent": "Listen as I explain how the Jacobian matrix is like the ultimate organizational tool - every possible input-output relationship gets its own precise location in this systematic mathematical filing system!",
   "hearAudioUrl": "/audio/4.8.mp3",
-  "doContent": "Use the Jacobian Matrix Builder for vector functions, practice with the Linear Approximation Visualizer, and experiment with the Transformation Analyzer that shows area scaling through determinants.",
+  "doType": "custom",
+  "doComponent": "delta_jacobian_matrix",
+  "doContent": "Use Dr. Delta's Jacobian Matrix Laboratory to explore vector-valued functions! Build Jacobian matrices, visualize transformations, and discover how determinants scale areas.",
   "memoryAids": {
     "mantra": "Every input, every output, organized with care - that's the Jacobian matrix, systematic and fair!",
     "visual": "Picture Dr. Delta with a perfectly organized matrix filing cabinet where every drawer contains exactly one partial derivative, systematically arranged by input variable and output function."

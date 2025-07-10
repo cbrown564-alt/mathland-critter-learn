@@ -33,7 +33,9 @@
   "seeContent": "Watch directional derivative calculations along various paths, see how the dot product formula relates to geometric projections, and observe how directional derivatives vary as the chosen direction changes around a point.",
   "hearContent": "Listen as I explain how directional derivatives are like a precision instrument that measures steepness along any path you choose - the mathematical equivalent of a customized compass!",
   "hearAudioUrl": "/audio/4.7.mp3",
-  "doContent": "Use the Directional Derivative Calculator with vector input controls, practice with the Direction Chooser that shows how rates vary with angle, and experiment with the Gradient Projection Visualizer.",
+  "doType": "custom",
+  "doComponent": "delta_directional_derivatives",
+  "doContent": "Use Dr. Delta's Directional Derivative Laboratory to explore how functions change in any direction! Adjust the direction angle and watch how D_û f = ∇f · û changes. Find the maximum, minimum, and zero directional derivatives.",
   "memoryAids": {
     "mantra": "Dot the gradient with your chosen direction - that's the rate of change with mathematical precision!",
     "visual": "Picture Dr. Delta walking along any chosen path with a precision gauge that measures exactly how steeply the mathematical landscape rises or falls in that specific direction."
